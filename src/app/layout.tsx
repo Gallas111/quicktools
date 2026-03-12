@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    other: {
+      "naver-site-verification": "5c4ae463a9b30dd1d2a73fc880af77c01ec1959c",
+    },
+  },
   title: {
     default: "QuickTools - 무료 온라인 도구 모음 | Free Online Tools",
     template: "%s | QuickTools",
