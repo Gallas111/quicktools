@@ -17,14 +17,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://toolkio.com"),
   verification: {
     other: {
       "naver-site-verification": "5c4ae463a9b30dd1d2a73fc880af77c01ec1959c",
     },
   },
   title: {
-    default: "QuickTools - 무료 온라인 도구 모음 | Free Online Tools",
-    template: "%s | QuickTools",
+    default: "Toolkio - 무료 온라인 도구 모음 | Free Online Tools",
+    template: "%s | Toolkio",
   },
   description:
     "글자수 세기, 이미지 압축, QR코드 생성, JSON 포맷터, 비밀번호 생성기 등 무료 온라인 도구. Free online tools: character counter, image compressor, QR generator, JSON formatter, password generator.",
@@ -42,10 +43,36 @@ export const metadata: Metadata = {
     "free online tools",
     "무료 온라인 도구",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
-    title: "QuickTools - 무료 온라인 도구 모음",
+    title: "Toolkio - 무료 온라인 도구 모음 | Free Online Tools",
     description: "필요한 도구를 빠르게. 모든 도구는 무료이며 브라우저에서 바로 실행됩니다.",
+    url: "https://toolkio.com",
+    siteName: "Toolkio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Toolkio - 무료 온라인 도구 모음",
+      },
+    ],
     type: "website",
+    locale: "ko_KR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Toolkio - 무료 온라인 도구 모음 | Free Online Tools",
+    description: "필요한 도구를 빠르게. 모든 도구는 무료이며 브라우저에서 바로 실행됩니다.",
+    images: ["/og-image.png"],
   },
 };
 

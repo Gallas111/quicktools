@@ -2,7 +2,7 @@ export type Locale = "ko" | "en";
 
 export const translations = {
   ko: {
-    siteName: "QuickTools",
+    siteName: "Toolkio",
     siteDescription: "무료 온라인 도구 모음 - 글자수 세기, 이미지 압축, QR코드 생성 등",
     hero: "필요한 도구를 빠르게",
     heroSub: "모든 도구는 무료이며, 브라우저에서 바로 실행됩니다.",
@@ -14,7 +14,7 @@ export const translations = {
     footer: "모든 도구는 브라우저에서 실행되며 데이터가 서버로 전송되지 않습니다.",
   },
   en: {
-    siteName: "QuickTools",
+    siteName: "Toolkio",
     siteDescription: "Free Online Tools - Character Counter, Image Compressor, QR Generator & More",
     hero: "The right tool, right away",
     heroSub: "All tools are free and run directly in your browser.",

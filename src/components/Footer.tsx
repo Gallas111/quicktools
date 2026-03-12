@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="border-t border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-gray-950">
       <div className="mx-auto max-w-5xl px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
         <p>{t.footer}</p>
-        <p className="mt-2">&copy; {new Date().getFullYear()} QuickTools</p>
+        <p className="mt-2">&copy; {new Date().getFullYear()} Toolkio</p>
       </div>
     </footer>
   );
