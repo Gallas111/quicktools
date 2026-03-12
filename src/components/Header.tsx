@@ -11,8 +11,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-950/80">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-        <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-          ⚡ {t.siteName}
+        <Link href="/" className="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white">
+          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-xs font-bold text-white">T</span>
+          {t.siteName}
         </Link>
         <div className="flex items-center gap-4">
           {pathname !== "/" && (

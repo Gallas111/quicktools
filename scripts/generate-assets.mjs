@@ -10,23 +10,51 @@ const publicDir = path.join(process.cwd(), "public");
 
 // --- Favicon (32x32, 16x16, 180x180, 192x192, 512x512) ---
 function drawFavicon(ctx, size) {
-  // Background - rounded square with gradient
-  const gradient = ctx.createLinearGradient(0, 0, size, size);
-  gradient.addColorStop(0, "#3b82f6");
-  gradient.addColorStop(1, "#8b5cf6");
+  const s = size;
+  const pad = s * 0.08;
 
-  const radius = size * 0.2;
+  // Background - emerald/teal gradient (completely different from hotdeal)
+  const gradient = ctx.createLinearGradient(0, 0, s, s);
+  gradient.addColorStop(0, "#10b981");
+  gradient.addColorStop(1, "#0d9488");
+
+  const radius = s * 0.22;
   ctx.beginPath();
-  ctx.roundRect(0, 0, size, size, radius);
+  ctx.roundRect(pad, pad, s - pad * 2, s - pad * 2, radius);
   ctx.fillStyle = gradient;
   ctx.fill();
 
-  // Lightning bolt ⚡
+  // Draw "T" letter with wrench-style notch
   ctx.fillStyle = "#ffffff";
-  ctx.font = `bold ${size * 0.55}px Arial`;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.fillText("⚡", size / 2, size / 2 + size * 0.02);
+  const cx = s / 2;
+  const cy = s / 2;
+
+  // T horizontal bar
+  const barW = s * 0.5;
+  const barH = s * 0.12;
+  const barX = cx - barW / 2;
+  const barY = cy - s * 0.22;
+  ctx.beginPath();
+  ctx.roundRect(barX, barY, barW, barH, barH / 2);
+  ctx.fill();
+
+  // T vertical stem
+  const stemW = s * 0.14;
+  const stemH = s * 0.38;
+  const stemX = cx - stemW / 2;
+  const stemY = barY + barH - 1;
+  ctx.beginPath();
+  ctx.roundRect(stemX, stemY, stemW, stemH, stemW / 3);
+  ctx.fill();
+
+  // Small dot accent (like a tool joint)
+  ctx.fillStyle = "rgba(255,255,255,0.4)";
+  ctx.beginPath();
+  ctx.arc(cx + barW / 2 - s * 0.04, barY + barH / 2, s * 0.035, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(cx - barW / 2 + s * 0.04, barY + barH / 2, s * 0.035, 0, Math.PI * 2);
+  ctx.fill();
 }
 
 const faviconSizes = [
@@ -49,12 +77,15 @@ for (const { name, size } of faviconSizes) {
 const svgFavicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="100%" style="stop-color:#8b5cf6"/>
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#0d9488"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="6" fill="url(#g)"/>
-  <text x="16" y="22" font-size="20" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">⚡</text>
+  <rect x="2.5" y="2.5" width="27" height="27" rx="7" fill="url(#g)"/>
+  <rect x="8" y="8.5" width="16" height="3.8" rx="1.9" fill="white"/>
+  <rect x="13.8" y="11.5" width="4.4" height="12.5" rx="1.5" fill="white"/>
+  <circle cx="22" cy="10.4" r="1.1" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="10" cy="10.4" r="1.1" fill="rgba(255,255,255,0.4)"/>
 </svg>`;
 fs.writeFileSync(path.join(publicDir, "favicon.svg"), svgFavicon);
 console.log("Created favicon.svg");
@@ -89,19 +120,25 @@ const iconSize = 80;
 const iconX = ogWidth / 2 - iconSize / 2;
 const iconY = 160;
 const iconGradient = ogCtx.createLinearGradient(iconX, iconY, iconX + iconSize, iconY + iconSize);
-iconGradient.addColorStop(0, "#3b82f6");
-iconGradient.addColorStop(1, "#8b5cf6");
+iconGradient.addColorStop(0, "#10b981");
+iconGradient.addColorStop(1, "#0d9488");
 ogCtx.beginPath();
 ogCtx.roundRect(iconX, iconY, iconSize, iconSize, 16);
 ogCtx.fillStyle = iconGradient;
 ogCtx.fill();
 
-// Icon text
+// Icon "T" letter
 ogCtx.fillStyle = "#ffffff";
-ogCtx.font = "bold 44px Arial";
-ogCtx.textAlign = "center";
-ogCtx.textBaseline = "middle";
-ogCtx.fillText("⚡", ogWidth / 2, iconY + iconSize / 2 + 2);
+const icx = ogWidth / 2;
+const icy = iconY + iconSize / 2;
+// T bar
+ogCtx.beginPath();
+ogCtx.roundRect(icx - 20, icy - 16, 40, 9, 4);
+ogCtx.fill();
+// T stem
+ogCtx.beginPath();
+ogCtx.roundRect(icx - 5, icy - 8, 10, 28, 4);
+ogCtx.fill();
 
 // Title
 ogCtx.fillStyle = "#ffffff";
