@@ -57,6 +57,90 @@ const BLOG_POSTS = [
     description: "텍스트 비교, diff 도구, 코드 리뷰",
     keywords: "text comparison document diff code review",
   },
+  {
+    slug: "how-to-format-json",
+    title: "JSON 포맷터 사용법",
+    description: "JSON 데이터 정렬, 유효성 검사",
+    keywords: "JSON formatting data structure code editor",
+  },
+  {
+    slug: "how-to-convert-colors",
+    title: "색상 변환 가이드",
+    description: "HEX RGB HSL 색상 코드 변환",
+    keywords: "color palette design RGB hex conversion",
+  },
+  {
+    slug: "how-to-encode-base64",
+    title: "Base64 인코딩 방법",
+    description: "Base64 인코딩 디코딩 변환",
+    keywords: "encoding decoding data binary digital",
+  },
+  {
+    slug: "how-to-encode-urls",
+    title: "URL 인코딩 방법",
+    description: "URL 인코딩, 한글 URL 처리",
+    keywords: "URL web address link encoding browser",
+  },
+  {
+    slug: "how-to-generate-lorem-ipsum",
+    title: "Lorem Ipsum 더미 텍스트 생성",
+    description: "더미 텍스트, 디자인 시안 활용",
+    keywords: "typography design placeholder layout text",
+  },
+  {
+    slug: "how-to-convert-timestamps",
+    title: "타임스탬프 변환 방법",
+    description: "Unix 타임스탬프 날짜 변환",
+    keywords: "time clock calendar timestamp unix epoch",
+  },
+  {
+    slug: "how-to-generate-hash",
+    title: "해시 생성 방법",
+    description: "MD5 SHA-256 해시값 생성",
+    keywords: "hash cryptography security fingerprint digital",
+  },
+  {
+    slug: "how-to-preview-markdown",
+    title: "마크다운 미리보기 가이드",
+    description: "마크다운 문법, 실시간 미리보기",
+    keywords: "markdown document writing preview formatting",
+  },
+  {
+    slug: "how-to-test-regex",
+    title: "정규표현식 테스트 방법",
+    description: "정규표현식 작성, 패턴 매칭",
+    keywords: "regex pattern matching code search text",
+  },
+  {
+    slug: "how-to-convert-text-case",
+    title: "영문 대소문자 변환 방법",
+    description: "대소문자, camelCase, snake_case 변환",
+    keywords: "text case uppercase lowercase typography",
+  },
+  {
+    slug: "how-to-generate-uuid",
+    title: "UUID 생성 방법",
+    description: "고유 식별자 UUID 생성",
+    keywords: "UUID identifier unique code database",
+  },
+  {
+    slug: "how-to-minify-css",
+    title: "CSS 압축(Minify) 방법",
+    description: "CSS 압축, 웹사이트 속도 최적화",
+    keywords: "CSS optimization minify web performance speed",
+  },
+  {
+    slug: "how-to-convert-number-bases",
+    title: "진법 변환 방법",
+    description: "2진수 8진수 10진수 16진수 변환",
+    keywords: "binary hexadecimal number system conversion math",
+  },
+  {
+    slug: "how-to-count-text",
+    title: "텍스트 카운터 사용법",
+    description: "단어수 문장수 문단수 세기",
+    keywords: "word count text analysis writing statistics",
+  },
 ];
 
 // ─── Gemini prompt generation ────────────────────────────────────────────────
@@ -317,7 +401,7 @@ function generatePlaceholderSVG(title) {
 
 // ─── Main Orchestrator ───────────────────────────────────────────────────────
 async function generateImage(post) {
-  const filepath = path.join(OUTPUT_DIR, `${post.slug}.png`);
+  const filepath = path.join(OUTPUT_DIR, `${post.slug}.webp`);
 
   // Skip if already exists and valid
   if (fs.existsSync(filepath)) {
