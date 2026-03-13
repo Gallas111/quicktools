@@ -1,11 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { tools } from "@/lib/tools";
+import { tools, categories, type Category } from "@/lib/tools";
 import { useLocale } from "@/components/LocaleProvider";
 
 export default function Home() {
   const { locale, t } = useLocale();
+  const [activeCategory, setActiveCategory] = useState<Category | "all">("all");
+
+  const filteredTools =
+    activeCategory === "all"
+      ? tools
+      : tools.filter((tool) => tool.category === activeCategory);
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16">
@@ -19,11 +26,37 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className="mb-8 text-2xl font-semibold text-gray-900 dark:text-white">
-          {t.allTools}
-        </h2>
+        <div className="mb-8 flex flex-wrap items-center gap-2">
+          <button
+            onClick={() => setActiveCategory("all")}
+            className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+              activeCategory === "all"
+                ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            }`}
+          >
+            {locale === "ko" ? "전체" : "All"} ({tools.length})
+          </button>
+          {categories.map((cat) => {
+            const count = tools.filter((t) => t.category === cat.id).length;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  activeCategory === cat.id
+                    ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+                }`}
+              >
+                {cat.icon} {cat.name[locale]} ({count})
+              </button>
+            );
+          })}
+        </div>
+
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {tools.map((tool) => (
+          {filteredTools.map((tool) => (
             <Link
               key={tool.id}
               href={tool.href}
