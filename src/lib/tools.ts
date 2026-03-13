@@ -273,6 +273,18 @@ export const tools: Tool[] = [
 
   // === 이미지 & 미디어 ===
   {
+    id: "youtube-thumbnail",
+    name: { ko: "유튜브 썸네일 만들기", en: "YouTube Thumbnail Maker" },
+    description: {
+      ko: "템플릿으로 유튜브 썸네일(1280×720)을 무료로 만드세요",
+      en: "Create YouTube thumbnails with templates for free",
+    },
+    icon: "🎬",
+    href: "/tools/youtube-thumbnail",
+    color: "from-red-500 to-rose-500",
+    category: "media",
+  },
+  {
     id: "image-compressor",
     name: { ko: "이미지 압축", en: "Image Compressor" },
     description: {
@@ -295,6 +307,20 @@ export const tools: Tool[] = [
     href: "/tools/qr-generator",
     color: "from-purple-500 to-pink-500",
     category: "media",
+  },
+
+  // === AI ===
+  {
+    id: "ai-prompt-generator",
+    name: { ko: "AI 프롬프트 생성기", en: "AI Prompt Generator" },
+    description: {
+      ko: "ChatGPT, Midjourney 등에서 쓸 고품질 프롬프트를 만드세요",
+      en: "Generate high-quality prompts for ChatGPT, Midjourney & more",
+    },
+    icon: "🤖",
+    href: "/tools/ai-prompt-generator",
+    color: "from-violet-500 to-purple-500",
+    category: "text",
   },
 
   // === 개발자 도구 ===

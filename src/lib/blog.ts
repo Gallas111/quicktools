@@ -1104,7 +1104,7 @@ export const blogPosts: BlogPost[] = [
         },
       ],
     },
-  },,
+  },
   {
     slug: "file-integrity-verification-hash",
     title: {
@@ -1138,28 +1138,15 @@ export const blogPosts: BlogPost[] = [
         },
         {
           heading: "단계별 가이드: MD5/SHA256 해시값으로 파일 무결성을 검증하는 법",
-          body: "그렇다면 실제로 MD5나 SHA256 같은 해시값을 이용하여 파일 무결성을 어떻게 검증할 수 있을까요? 과정은 생각보다 간단합니다. '해시값 비교'를 통해 '데이터 변조 방지'를 실현하는 핵심적인 3단계 과정을 따라 해보세요.
-
-- 1단계: 원본 해시값 확보
-가장 먼저, 다운로드할 파일의 공식적인 원본 해시값을 확보해야 합니다. 이는 주로 파일 제공자의 웹사이트(예: 소프트웨어 개발사, 운영체제 배포처)에서 MD5 또는 SHA256 체크섬(checksum) 형태로 제공됩니다. 이 값이 여러분이 비교할 '기준점'이 됩니다.
-
-- 2단계: 다운로드한 파일의 해시값 생성
-다음으로, 여러분이 실제로 다운로드한 파일의 해시값을 직접 생성해야 합니다. 이 과정은 별도의 해시 생성 프로그램이나 웹 기반 도구를 사용해 파일을 불러오기만 하면 됩니다. 잠시 후 Toolkio의 해시 생성기로 이 과정을 얼마나 쉽게 할 수 있는지 자세히 설명해 드릴게요.
-
-- 3단계: 두 해시값 비교 및 확인
-마지막으로, 1단계에서 얻은 원본 해시값과 2단계에서 생성한 여러분의 파일 해시값을 비교합니다. 두 해시값이 한 글자도 틀리지 않고 완전히 일치한다면, 여러분의 파일은 원본과 동일하며 손상되거나 변조되지 않았음을 의미합니다. 만약 단 한 글자라도 다르다면, 파일이 손상되었거나 악의적으로 변조되었을 가능성이 있으므로 해당 파일을 사용하지 않는 것이 안전합니다. 이처럼 간단한 절차만으로도 중요한 파일의 안전성을 확보할 수 있습니다.",
+          body: "그렇다면 실제로 MD5나 SHA256 같은 해시값을 이용하여 파일 무결성을 어떻게 검증할 수 있을까요? 과정은 생각보다 간단합니다. '해시값 비교'를 통해 '데이터 변조 방지'를 실현하는 핵심적인 3단계 과정을 따라 해보세요.\n\n- 1단계: 원본 해시값 확보\n가장 먼저, 다운로드할 파일의 공식적인 원본 해시값을 확보해야 합니다. 이는 주로 파일 제공자의 웹사이트(예: 소프트웨어 개발사, 운영체제 배포처)에서 MD5 또는 SHA256 체크섬(checksum) 형태로 제공됩니다. 이 값이 여러분이 비교할 '기준점'이 됩니다.\n\n- 2단계: 다운로드한 파일의 해시값 생성\n다음으로, 여러분이 실제로 다운로드한 파일의 해시값을 직접 생성해야 합니다. 이 과정은 별도의 해시 생성 프로그램이나 웹 기반 도구를 사용해 파일을 불러오기만 하면 됩니다. 잠시 후 Toolkio의 해시 생성기로 이 과정을 얼마나 쉽게 할 수 있는지 자세히 설명해 드릴게요.\n\n- 3단계: 두 해시값 비교 및 확인\n마지막으로, 1단계에서 얻은 원본 해시값과 2단계에서 생성한 여러분의 파일 해시값을 비교합니다. 두 해시값이 한 글자도 틀리지 않고 완전히 일치한다면, 여러분의 파일은 원본과 동일하며 손상되거나 변조되지 않았음을 의미합니다. 만약 단 한 글자라도 다르다면, 파일이 손상되었거나 악의적으로 변조되었을 가능성이 있으므로 해당 파일을 사용하지 않는 것이 안전합니다. 이처럼 간단한 절차만으로도 중요한 파일의 안전성을 확보할 수 있습니다.",
         },
         {
           heading: "어떤 해시 알고리즘을 사용해야 할까? MD5 vs SHA256 심층 비교",
-          body: "파일 무결성 검증을 위해 MD5와 SHA256 중 어떤 알고리즘을 선택해야 할지는 상황에 따라 달라질 수 있습니다. MD5는 처리 속도가 빠르다는 장점이 있어, 과거에는 대용량 파일의 전송 오류 여부를 빠르게 확인하는 데 주로 사용되었습니다. 하지만 이론적으로나 실제적으로 해시 충돌(collision) 가능성이 입증되어, 보안이 중요한 영역에서는 MD5 검사만으로는 충분하지 않다는 것이 정설입니다. 예를 들어, 단순히 파일이 깨지지 않고 제대로 다운로드되었는지 확인하는 정도라면 MD5로도 충분할 수 있습니다.
-
-반면 SHA256 확인은 MD5보다 훨씬 복잡한 계산 과정을 거쳐 더 긴 해시값을 생성하며, 현재까지 알려진 해시 충돌 공격에 안전한 것으로 평가받고 있습니다. 따라서 운영체제 이미지 파일, 중요한 소프트웨어 설치 파일, 블록체인 기반의 데이터 등 높은 수준의 'file integrity check'가 요구되는 모든 상황에서는 SHA256 사용을 강력히 권장합니다. 악의적인 해커가 특정 파일을 변조한 후에도 원본과 동일한 해시값을 만들어내는 것은 SHA256의 경우 사실상 불가능에 가깝기 때문입니다. 핵심은 '보안'이 최우선이라면 SHA256, '속도'나 '간단한 무결성 확인'이라면 MD5도 고려할 수 있다는 것입니다. 하지만 점차 MD5의 사용은 지양하고 SHA256으로 전환하는 것이 일반적인 추세입니다.",
+          body: "파일 무결성 검증을 위해 MD5와 SHA256 중 어떤 알고리즘을 선택해야 할지는 상황에 따라 달라질 수 있습니다. MD5는 처리 속도가 빠르다는 장점이 있어, 과거에는 대용량 파일의 전송 오류 여부를 빠르게 확인하는 데 주로 사용되었습니다. 하지만 이론적으로나 실제적으로 해시 충돌(collision) 가능성이 입증되어, 보안이 중요한 영역에서는 MD5 검사만으로는 충분하지 않다는 것이 정설입니다. 예를 들어, 단순히 파일이 깨지지 않고 제대로 다운로드되었는지 확인하는 정도라면 MD5로도 충분할 수 있습니다.\n\n반면 SHA256 확인은 MD5보다 훨씬 복잡한 계산 과정을 거쳐 더 긴 해시값을 생성하며, 현재까지 알려진 해시 충돌 공격에 안전한 것으로 평가받고 있습니다. 따라서 운영체제 이미지 파일, 중요한 소프트웨어 설치 파일, 블록체인 기반의 데이터 등 높은 수준의 'file integrity check'가 요구되는 모든 상황에서는 SHA256 사용을 강력히 권장합니다. 악의적인 해커가 특정 파일을 변조한 후에도 원본과 동일한 해시값을 만들어내는 것은 SHA256의 경우 사실상 불가능에 가깝기 때문입니다. 핵심은 '보안'이 최우선이라면 SHA256, '속도'나 '간단한 무결성 확인'이라면 MD5도 고려할 수 있다는 것입니다. 하지만 점차 MD5의 사용은 지양하고 SHA256으로 전환하는 것이 일반적인 추세입니다.",
         },
         {
           heading: "Toolkio 해시 생성기로 파일 무결성 검증을 1초 만에!",
-          body: "파일의 무결성을 검증해야 하는데, 복잡한 명령어를 입력하거나 별도의 프로그램을 설치하는 것이 번거롭게 느껴지시나요? Toolkio의 해시 생성기는 이러한 고민을 한 번에 해결해 드립니다. 저희 웹 기반 해시 생성기는 누구나 쉽고 빠르게 파일의 MD5, SHA1, SHA256 해시값을 생성하고 확인할 수 있도록 설계되었습니다. 별도의 설치 과정 없이 웹 브라우저만 있다면 언제 어디서든 이용할 수 있다는 것이 가장 큰 장점입니다.
-
-사용법 또한 매우 직관적입니다. 파일을 드래그앤드롭하거나, '파일 선택' 버튼을 클릭하여 검증하고 싶은 파일을 업로드하기만 하면 됩니다. 그러면 Toolkio 해시 생성기가 순식간에 해당 파일의 MD5, SHA256 등 다양한 해시값을 자동으로 계산하여 보여줍니다. 이제 여러분은 이 생성된 해시값을 원본 제공자가 제시한 해시값과 비교하기만 하면 됩니다. 이처럼 '해시값 비교' 과정이 간편해지면서 '파일 무결성 검증'이 일상적인 디지털 습관이 될 수 있습니다. 지금 바로 toolkio.com에서 무료로 사용할 수 있습니다. 복잡한 과정 없이 파일을 올려놓기만 하면 끝이니, 지금 바로 경험해보세요!",
+          body: "파일의 무결성을 검증해야 하는데, 복잡한 명령어를 입력하거나 별도의 프로그램을 설치하는 것이 번거롭게 느껴지시나요? Toolkio의 해시 생성기는 이러한 고민을 한 번에 해결해 드립니다. 저희 웹 기반 해시 생성기는 누구나 쉽고 빠르게 파일의 MD5, SHA1, SHA256 해시값을 생성하고 확인할 수 있도록 설계되었습니다. 별도의 설치 과정 없이 웹 브라우저만 있다면 언제 어디서든 이용할 수 있다는 것이 가장 큰 장점입니다.\n\n사용법 또한 매우 직관적입니다. 파일을 드래그앤드롭하거나, '파일 선택' 버튼을 클릭하여 검증하고 싶은 파일을 업로드하기만 하면 됩니다. 그러면 Toolkio 해시 생성기가 순식간에 해당 파일의 MD5, SHA256 등 다양한 해시값을 자동으로 계산하여 보여줍니다. 이제 여러분은 이 생성된 해시값을 원본 제공자가 제시한 해시값과 비교하기만 하면 됩니다. 이처럼 '해시값 비교' 과정이 간편해지면서 '파일 무결성 검증'이 일상적인 디지털 습관이 될 수 있습니다. 지금 바로 toolkio.com에서 무료로 사용할 수 있습니다. 복잡한 과정 없이 파일을 올려놓기만 하면 끝이니, 지금 바로 경험해보세요!",
         },
         {
           heading: "안전한 디지털 생활을 위한 필수 습관, 파일 무결성 검증!",
@@ -1177,28 +1164,15 @@ export const blogPosts: BlogPost[] = [
         },
         {
           heading: "Step-by-Step Guide: How to Verify File Integrity with MD5/SHA256 Hash Values",
-          body: "So, how can you actually use hash values like MD5 or SHA256 to verify file integrity? The process is simpler than you might think. Follow these three essential steps to achieve 'preventing data alteration' through 'hash value comparison'.
-
-- Step 1: Obtain the Original Hash Value
-First, you need to acquire the official original hash value of the file you intend to download. This is typically provided by the file's source website (e.g., software developers, operating system distributors) in the form of an MD5 or SHA256 checksum. This value will serve as your 'baseline'.
-
-- Step 2: Generate the Hash Value of Your Downloaded File
-Next, you need to generate the hash value of the file you have actually downloaded. This process can be done by simply loading the file into a dedicated hash generator program or a web-based tool. We'll explain in a moment how easily this can be done with Toolkio's hash generator.
-
-- Step 3: Compare and Confirm the Two Hash Values
-Finally, compare the original hash value obtained in Step 1 with the hash value you generated in Step 2. If the two hash values match perfectly, without a single character difference, it means your file is identical to the original and has not been corrupted or tampered with. If even one character differs, there's a possibility the file is damaged or maliciously altered, and it is safest not to use that file. Even with such a simple procedure, you can ensure the safety of your important files.",
+          body: "So, how can you actually use hash values like MD5 or SHA256 to verify file integrity? The process is simpler than you might think. Follow these three essential steps to achieve 'preventing data alteration' through 'hash value comparison'.\n\n- Step 1: Obtain the Original Hash Value\nFirst, you need to acquire the official original hash value of the file you intend to download. This is typically provided by the file's source website (e.g., software developers, operating system distributors) in the form of an MD5 or SHA256 checksum. This value will serve as your 'baseline'.\n\n- Step 2: Generate the Hash Value of Your Downloaded File\nNext, you need to generate the hash value of the file you have actually downloaded. This process can be done by simply loading the file into a dedicated hash generator program or a web-based tool. We'll explain in a moment how easily this can be done with Toolkio's hash generator.\n\n- Step 3: Compare and Confirm the Two Hash Values\nFinally, compare the original hash value obtained in Step 1 with the hash value you generated in Step 2. If the two hash values match perfectly, without a single character difference, it means your file is identical to the original and has not been corrupted or tampered with. If even one character differs, there's a possibility the file is damaged or maliciously altered, and it is safest not to use that file. Even with such a simple procedure, you can ensure the safety of your important files.",
         },
         {
           heading: "Which Hash Algorithm to Choose? MD5 vs. SHA256 In-Depth Comparison",
-          body: "When it comes to verifying file integrity, the choice between MD5 and SHA256 can depend on the specific situation. MD5 offers the advantage of faster processing speed, which historically made it popular for quickly checking large files for transfer errors. However, since the possibility of hash collisions has been proven both theoretically and practically, it's generally accepted that an 'MD5 check' alone is insufficient for security-critical areas. For example, if you're merely confirming that a file hasn't been corrupted during download, MD5 might suffice.
-
-On the other hand, 'SHA256 verification' undergoes a much more complex computational process, generating a longer hash value, and is considered secure against all known hash collision attacks to date. Therefore, for all situations requiring a high level of 'file integrity check,' such as operating system image files, crucial software installers, or blockchain-based data, SHA256 is strongly recommended. For a malicious hacker to alter a specific file and still produce the same hash value using SHA256 is virtually impossible. The key takeaway is: if 'security' is the top priority, choose SHA256; if 'speed' or 'simple integrity confirmation' is the goal, MD5 might be considered. However, the general trend is to move away from MD5 and transition towards SHA256.",
+          body: "When it comes to verifying file integrity, the choice between MD5 and SHA256 can depend on the specific situation. MD5 offers the advantage of faster processing speed, which historically made it popular for quickly checking large files for transfer errors. However, since the possibility of hash collisions has been proven both theoretically and practically, it's generally accepted that an 'MD5 check' alone is insufficient for security-critical areas. For example, if you're merely confirming that a file hasn't been corrupted during download, MD5 might suffice.\n\nOn the other hand, 'SHA256 verification' undergoes a much more complex computational process, generating a longer hash value, and is considered secure against all known hash collision attacks to date. Therefore, for all situations requiring a high level of 'file integrity check,' such as operating system image files, crucial software installers, or blockchain-based data, SHA256 is strongly recommended. For a malicious hacker to alter a specific file and still produce the same hash value using SHA256 is virtually impossible. The key takeaway is: if 'security' is the top priority, choose SHA256; if 'speed' or 'simple integrity confirmation' is the goal, MD5 might be considered. However, the general trend is to move away from MD5 and transition towards SHA256.",
         },
         {
           heading: "Verify File Integrity in Seconds with Toolkio's Hash Generator!",
-          body: "Do you find it cumbersome to type complex commands or install separate programs just to verify file integrity? Toolkio's Hash Generator solves these problems instantly. Our web-based hash generator is designed to allow anyone to quickly and easily generate and confirm MD5, SHA1, and SHA256 hash values for their files. The biggest advantage is that you can use it anytime, anywhere, with just a web browser, requiring no installation.
-
-Its usage is also incredibly intuitive. Simply drag-and-drop your file or click the 'Select File' button to upload the file you wish to verify. Toolkio's Hash Generator will then instantly calculate and display various hash values, including MD5 and SHA256, for that file. Now, all you need to do is compare these generated hash values with the ones provided by the original source. This simplified 'hash value comparison' process can make 'file integrity verification' a routine digital habit. It's available for free at toolkio.com. With no complicated steps, just upload your file, and you're done! Experience it now!",
+          body: "Do you find it cumbersome to type complex commands or install separate programs just to verify file integrity? Toolkio's Hash Generator solves these problems instantly. Our web-based hash generator is designed to allow anyone to quickly and easily generate and confirm MD5, SHA1, and SHA256 hash values for their files. The biggest advantage is that you can use it anytime, anywhere, with just a web browser, requiring no installation.\n\nIts usage is also incredibly intuitive. Simply drag-and-drop your file or click the 'Select File' button to upload the file you wish to verify. Toolkio's Hash Generator will then instantly calculate and display various hash values, including MD5 and SHA256, for that file. Now, all you need to do is compare these generated hash values with the ones provided by the original source. This simplified 'hash value comparison' process can make 'file integrity verification' a routine digital habit. It's available for free at toolkio.com. With no complicated steps, just upload your file, and you're done! Experience it now!",
         },
         {
           heading: "File Integrity Verification: An Essential Habit for a Secure Digital Life!",
@@ -1224,7 +1198,7 @@ Its usage is also incredibly intuitive. Simply drag-and-drop your file or click 
     faq: [
       { question: "자주 사용하는 정규표현식 패턴에는 어떤 것들이 있나요?", answer: "웹 개발에서 자주 쓰이는 정규표현식 패턴으로는 이메일 주소, 휴대폰 번호, 숫자만 입력, 비밀번호 강도 검사 등이 있습니다. 이러한 패턴들은 사용자 입력 데이터의 유효성을 검사하거나 특정 문자열을 검색하고 대체하는 데 매우 유용하게 활용됩니다. 본 게시물에서는 개발자들이 실제 프로젝트에서 바로 적용할 수 있는 10가지 핵심 정규표현식 패턴을 자세히 소개하고 있습니다." },
       { question: "이메일 주소의 유효성을 검사하는 정규표현식은 어떻게 작성하나요?", answer: "이메일 주소 유효성 검사를 위한 정규표현식은 일반적으로 \`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\`와 같은 형태를 가집니다. 이는 사용자 이름 부분(로컬 파트), '@' 기호, 그리고 도메인 부분(도메인 파트)을 포함하는 표준적인 이메일 형식을 따르는지 확인합니다. 이 패턴을 사용하면 대부분의 유효한 이메일 주소를 걸러내고 잘못된 형식의 입력을 방지할 수 있습니다." },
-      { question: "한국 휴대폰 번호를 검증하는 정규표현식은 어떻게 사용하나요?", answer: "한국 휴대폰 번호는 주로 '010-XXXX-XXXX' 형태를 가집니다. 이를 검증하는 정규표현식은 \`^01(?:0|1|[6-9])-(?:\\d{3}|\\d{4})-\\d{4}\$\`와 같이 작성할 수 있습니다. 이 패턴은 첫 세 자리(010, 011, 016~019), 중간 네 자리 또는 세 자리, 마지막 네 자리 숫자를 정확히 검사하여 유효한 한국 휴대폰 번호 형식인지 확인합니다. 하이픈 없이 숫자로만 된 형식(\`^01(?:0|1|[6-9])(?:\\d{3}|\\d{4})\\d{4}\$\`) 또한 가능합니다." },
+      { question: "한국 휴대폰 번호를 검증하는 정규표현식은 어떻게 사용하나요?", answer: "한국 휴대폰 번호는 주로 '010-XXXX-XXXX' 형태를 가집니다. 이를 검증하는 정규표현식은 \`^01(?:0|1|[6-9])-(?:\\d{3}|\\d{4})-\\d{4}$$\`와 같이 작성할 수 있습니다. 이 패턴은 첫 세 자리(010, 011, 016~019), 중간 네 자리 또는 세 자리, 마지막 네 자리 숫자를 정확히 검사하여 유효한 한국 휴대폰 번호 형식인지 확인합니다. 하이픈 없이 숫자로만 된 형식(\`^01(?:0|1|[6-9])(?:\\d{3}|\\d{4})\\d{4}$$\`) 또한 가능합니다." },
       { question: "정규표현식 패턴을 직접 테스트하고 검증할 수 있는 도구가 있나요?", answer: "네, 정규표현식 패턴을 작성한 후 실제로 잘 작동하는지 테스트하고 검증할 수 있는 다양한 온라인 도구들이 존재합니다. 본 게시물에서도 언급된 Toolkio의 정규표현식 테스터는 사용자가 입력한 정규표현식과 텍스트를 실시간으로 대조하여 일치 여부를 즉시 확인할 수 있도록 돕습니다. 이를 통해 복잡한 패턴도 쉽게 실험하고 오류를 수정할 수 있어 개발 시간을 크게 단축할 수 있습니다." },
       { question: "웹 개발에서 정규표현식을 사용하면 어떤 이점이 있나요?", answer: "웹 개발에서 정규표현식을 사용하면 데이터 유효성 검사, 문자열 검색 및 대체 작업의 효율성을 극대화할 수 있습니다. 예를 들어, 사용자 회원가입 시 이메일, 비밀번호, 전화번호 등의 입력 형식을 일관되고 정확하게 검증하여 데이터 무결성을 보장합니다. 또한, 특정 패턴의 텍스트를 대량으로 찾아 바꾸거나 추출하는 등 복잡한 문자열 처리 작업을 간결한 코드로 해결할 수 있어 개발 생산성을 높이는 데 기여합니다." }
     ],
@@ -1236,36 +1210,15 @@ Its usage is also incredibly intuitive. Simply drag-and-drop your file or click 
         },
         {
           heading: "기본기를 탄탄하게! 자주 쓰는 정규표현식 핵심 패턴 5가지",
-          body: "정규표현식의 핵심은 특정 규칙을 가진 문자열을 찾아내는 것입니다. 여기 자주 쓰는 정규표현식 중 가장 기본적인 패턴 5가지를 소개합니다. 이를 통해 대부분의 데이터 유효성 검사를 시작할 수 있습니다.
-- 숫자만 검증: ^\\d+\$
-  - 예시: 12345, 010
-- 영문자만 검증: ^[a-zA-Z]+\$
-  - 예시: hello, World
-- 한글만 검증: ^[가-힣]+\$
-  - 예시: 안녕하세요, 한글
-- 특정 문자 포함 여부: .*문자열.*
-  - 예시: \"Toolkio\" 문자열 포함 여부
-- 공백 제거: \\s
-  - 예시: 문자열 내 모든 공백을 찾아 제거할 때
-이 패턴들은 문자열의 구조를 파악하고 원하는 정보만 추출하거나 걸러낼 때 매우 유용하게 활용됩니다. 각 패턴의 의미를 이해하고 조합하는 연습을 해보세요.",
+          body: "정규표현식의 핵심은 특정 규칙을 가진 문자열을 찾아내는 것입니다. 여기 자주 쓰는 정규표현식 중 가장 기본적인 패턴 5가지를 소개합니다. 이를 통해 대부분의 데이터 유효성 검사를 시작할 수 있습니다.\n- 숫자만 검증: ^\\d+$$\n- 예시: 12345, 010\n- 영문자만 검증: ^[a-zA-Z]+$$\n- 예시: hello, World\n- 한글만 검증: ^[가-힣]+$$\n- 예시: 안녕하세요, 한글\n- 특정 문자 포함 여부: .*문자열.*\n- 예시: \"Toolkio\" 문자열 포함 여부\n- 공백 제거: \\s\n- 예시: 문자열 내 모든 공백을 찾아 제거할 때\n이 패턴들은 문자열의 구조를 파악하고 원하는 정보만 추출하거나 걸러낼 때 매우 유용하게 활용됩니다. 각 패턴의 의미를 이해하고 조합하는 연습을 해보세요.",
         },
         {
           heading: "웹 필수! 이메일 및 휴대폰 번호 정규표현식 완벽 이해",
-          body: "사용자 회원가입이나 정보 입력 시 가장 많이 사용되는 것이 바로 이메일 주소와 휴대폰 번호입니다. 이 두 가지를 정확하게 검증하는 것은 서비스의 신뢰도를 높이는 데 필수적이죠.
-- 이메일 정규표현식: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}\$
-  - 설명: 이 패턴은 아이디 부분에 영문, 숫자, 특수문자를 허용하고, 도메인 부분에 영문, 숫자, 하이픈을 허용하며, 최상위 도메인이 2~6글자인 일반적인 이메일 형식을 검증합니다. 완벽한 이메일 검증은 매우 복잡하지만, 이 패턴은 대부분의 유효한 이메일을 커버합니다.
-- 휴대폰 번호 정규표현식 (한국): ^(01[016789])[-]?([0-9]{3,4})[-]?([0-9]{4})\$
-  - 설명: 한국 휴대폰 번호는 010, 011 등으로 시작하며 중간 번호와 끝 번호가 정해진 자릿수를 가집니다. 이 패턴은 하이픈 유무에 관계없이 번호를 검증할 수 있도록 설계되었습니다. 이처럼 특정 지역의 데이터 형식에 맞는 정규표현식은 개발 효율성을 크게 높여줍니다.",
+          body: "사용자 회원가입이나 정보 입력 시 가장 많이 사용되는 것이 바로 이메일 주소와 휴대폰 번호입니다. 이 두 가지를 정확하게 검증하는 것은 서비스의 신뢰도를 높이는 데 필수적이죠.\n- 이메일 정규표현식: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$$\n- 설명: 이 패턴은 아이디 부분에 영문, 숫자, 특수문자를 허용하고, 도메인 부분에 영문, 숫자, 하이픈을 허용하며, 최상위 도메인이 2~6글자인 일반적인 이메일 형식을 검증합니다. 완벽한 이메일 검증은 매우 복잡하지만, 이 패턴은 대부분의 유효한 이메일을 커버합니다.\n- 휴대폰 번호 정규표현식 (한국): ^(01[016789])[-]?([0-9]{3,4})[-]?([0-9]{4})$$\n- 설명: 한국 휴대폰 번호는 010, 011 등으로 시작하며 중간 번호와 끝 번호가 정해진 자릿수를 가집니다. 이 패턴은 하이픈 유무에 관계없이 번호를 검증할 수 있도록 설계되었습니다. 이처럼 특정 지역의 데이터 형식에 맞는 정규표현식은 개발 효율성을 크게 높여줍니다.",
         },
         {
           heading: "데이터 유효성 검증을 위한 심화 정규표현식 패턴 3가지",
-          body: "앞서 살펴본 기본 패턴들을 넘어, 더 복잡한 데이터 유효성 검증에 필요한 심화 정규표현식 패턴들을 알아보겠습니다. 이는 시스템의 보안과 데이터 무결성을 지키는 데 중요한 역할을 합니다.
-- URL 정규표현식: ^(https?://)?([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,6})([/\\w .-]*)*\\/?\$
-  - 설명: 웹사이트 주소는 http/https 프로토콜, 도메인, 최상위 도메인, 경로 등을 포함합니다. 이 패턴은 이 모든 요소를 포괄하여 유효한 URL인지 확인합니다.
-- IP 주소 정규표현식: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\$
-  - 설명: IPv4 주소는 0부터 255까지의 네 개의 숫자를 점(.)으로 구분하는 형태입니다. 이 패턴은 각 옥텟의 유효 범위를 정확히 검증합니다.
-- 비밀번호 강도 검증 (영문, 숫자, 특수문자 포함 8자 이상): ^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!@#\$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?]).{8,}\$ 
-  - 설명: 사용자 보안을 위해 강력한 비밀번호는 필수입니다. 이 패턴은 최소 8자 이상, 영문, 숫자, 특수문자가 각각 하나 이상 포함되었는지 검증하여 복잡한 비밀번호 요구사항을 충족시킵니다.",
+          body: "앞서 살펴본 기본 패턴들을 넘어, 더 복잡한 데이터 유효성 검증에 필요한 심화 정규표현식 패턴들을 알아보겠습니다. 이는 시스템의 보안과 데이터 무결성을 지키는 데 중요한 역할을 합니다.\n- URL 정규표현식: ^(https?://)?([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,6})([/\\w .-]*)*\\/?$$\n- 설명: 웹사이트 주소는 http/https 프로토콜, 도메인, 최상위 도메인, 경로 등을 포함합니다. 이 패턴은 이 모든 요소를 포괄하여 유효한 URL인지 확인합니다.\n- IP 주소 정규표현식: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$$\n- 설명: IPv4 주소는 0부터 255까지의 네 개의 숫자를 점(.)으로 구분하는 형태입니다. 이 패턴은 각 옥텟의 유효 범위를 정확히 검증합니다.\n- 비밀번호 강도 검증 (영문, 숫자, 특수문자 포함 8자 이상): ^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!@#$$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?]).{8,}$$\n- 설명: 사용자 보안을 위해 강력한 비밀번호는 필수입니다. 이 패턴은 최소 8자 이상, 영문, 숫자, 특수문자가 각각 하나 이상 포함되었는지 검증하여 복잡한 비밀번호 요구사항을 충족시킵니다.",
         },
         {
           heading: "Toolkio Regex Tester로 정규표현식 패턴 즉시 검증하기",
@@ -1283,36 +1236,15 @@ Its usage is also incredibly intuitive. Simply drag-and-drop your file or click 
         },
         {
           heading: "Building a Solid Foundation: 5 Core Regex Patterns for Common Tasks",
-          body: "The essence of regular expressions is to find strings that match a specific set of rules. Here are 5 of the most basic and frequently used regex patterns to get you started. These can form the basis of most data validation checks.
-- Numbers only: ^\\d+\$
-  - Example: 12345, 010
-- Alphabets only: ^[a-zA-Z]+\$
-  - Example: hello, World
-- Korean characters only: ^[가-힣]+\$
-  - Example: 안녕하세요, 한글 (Korean for \"Hello\", \"Korean\")
-- Contains specific string: .*string.*
-  - Example: Checking if \"Toolkio\" is present in a string
-- Removing whitespace: \\s
-  - Example: Used to find and remove all whitespace within a string
-These patterns are incredibly useful for understanding string structures, extracting specific information, or filtering unwanted data. Practice understanding and combining the meanings of each pattern to enhance your skills.",
+          body: "The essence of regular expressions is to find strings that match a specific set of rules. Here are 5 of the most basic and frequently used regex patterns to get you started. These can form the basis of most data validation checks.\n- Numbers only: ^\\d+$$\n- Example: 12345, 010\n- Alphabets only: ^[a-zA-Z]+$$\n- Example: hello, World\n- Korean characters only: ^[가-힣]+$$\n- Example: 안녕하세요, 한글 (Korean for \"Hello\", \"Korean\")\n- Contains specific string: .*string.*\n- Example: Checking if \"Toolkio\" is present in a string\n- Removing whitespace: \\s\n- Example: Used to find and remove all whitespace within a string\nThese patterns are incredibly useful for understanding string structures, extracting specific information, or filtering unwanted data. Practice understanding and combining the meanings of each pattern to enhance your skills.",
         },
         {
           heading: "Web Development Essentials: Mastering Email and Phone Number Regex",
-          body: "Email addresses and phone numbers are among the most common pieces of information users provide during registration or data input. Accurately validating these two types of data is crucial for building trust in your service.
-- Email Regex: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}\$
-  - Explanation: This pattern validates common email formats, allowing alphanumeric characters and specific symbols in the username, alphanumeric characters and hyphens in the domain, and a top-level domain of 2-6 characters. While a perfectly comprehensive email validation is extremely complex, this pattern covers most valid emails.
-- Korean Mobile Phone Number Regex: ^(01[016789])[-]?([0-9]{3,4})[-]?([0-9]{4})\$
-  - Explanation: Korean mobile numbers typically start with 010, 011, etc., followed by specific digit counts for the middle and end parts. This regex pattern is designed to validate numbers regardless of hyphen presence. Using regex patterns tailored to specific regional data formats significantly boosts development efficiency.",
+          body: "Email addresses and phone numbers are among the most common pieces of information users provide during registration or data input. Accurately validating these two types of data is crucial for building trust in your service.\n- Email Regex: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$$\n- Explanation: This pattern validates common email formats, allowing alphanumeric characters and specific symbols in the username, alphanumeric characters and hyphens in the domain, and a top-level domain of 2-6 characters. While a perfectly comprehensive email validation is extremely complex, this pattern covers most valid emails.\n- Korean Mobile Phone Number Regex: ^(01[016789])[-]?([0-9]{3,4})[-]?([0-9]{4})$$\n- Explanation: Korean mobile numbers typically start with 010, 011, etc., followed by specific digit counts for the middle and end parts. This regex pattern is designed to validate numbers regardless of hyphen presence. Using regex patterns tailored to specific regional data formats significantly boosts development efficiency.",
         },
         {
           heading: "Advanced Regex Patterns for Robust Data Validation",
-          body: "Moving beyond the basic patterns, let's explore more advanced regular expression patterns essential for robust data validation. These play a critical role in maintaining system security and data integrity.
-- URL Regex: ^(https?://)?([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,6})([/\\w .-]*)*\\/?\$
-  - Explanation: Website addresses include protocols (http/https), domains, top-level domains, and paths. This pattern encompasses all these elements to verify if a URL is valid.
-- IP Address Regex: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\$
-  - Explanation: An IPv4 address consists of four numbers, each ranging from 0 to 255, separated by dots. This pattern accurately validates the permissible range for each octet.
-- Password Strength Validation (8+ chars, with letters, numbers, special chars): ^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!@#\$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?]).{8,}\$ 
-  - Explanation: Strong passwords are vital for user security. This pattern verifies if a password is at least 8 characters long and includes at least one letter, one number, and one special character, meeting complex password requirements.",
+          body: "Moving beyond the basic patterns, let's explore more advanced regular expression patterns essential for robust data validation. These play a critical role in maintaining system security and data integrity.\n- URL Regex: ^(https?://)?([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,6})([/\\w .-]*)*\\/?$$\n- Explanation: Website addresses include protocols (http/https), domains, top-level domains, and paths. This pattern encompasses all these elements to verify if a URL is valid.\n- IP Address Regex: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$$\n- Explanation: An IPv4 address consists of four numbers, each ranging from 0 to 255, separated by dots. This pattern accurately validates the permissible range for each octet.\n- Password Strength Validation (8+ chars, with letters, numbers, special chars): ^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!@#$$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?]).{8,}$$\n- Explanation: Strong passwords are vital for user security. This pattern verifies if a password is at least 8 characters long and includes at least one letter, one number, and one special character, meeting complex password requirements.",
         },
         {
           heading: "Instantly Validate Your Regex Patterns with Toolkio Regex Tester",
@@ -1354,40 +1286,19 @@ These patterns are incredibly useful for understanding string structures, extrac
         },
         {
           heading: "와이파이 QR코드, 왜 필요할까요? 불편함 없는 연결의 시작",
-          body: "와이파이 비밀번호를 공유하는 과정에서 겪었던 번거로움은 누구나 공감할 것입니다. 잘못된 스펠링이나 대소문자 구분 오류로 인해 여러 번 시도해야 했던 경험, 손님에게 비밀번호를 알려주느라 업무 흐름이 끊겼던 순간들. 이 모든 불편함을 와이파이 QR코드가 해결해줍니다.
--   편의성 극대화: 더 이상 긴 비밀번호를 기억하거나 입력할 필요가 없습니다. 스마트폰으로 QR코드를 스캔하는 순간 자동으로 와이파이에 연결됩니다.
--   시간 절약: 손님은 물론 호스트의 시간을 절약하여 더욱 효율적인 서비스 제공이 가능합니다. 평균적으로 비밀번호 입력에 소요되는 시간은 15초 이상이지만, QR코드는 2초 이내로 단축됩니다.
--   오류 감소: 수동 입력 시 발생하는 오타나 대소문자 오류를 원천적으로 방지하여, 한 번에 정확한 연결을 보장합니다.
--   보안 강화 및 사생활 보호: 불필요하게 비밀번호를 소리 내어 말하거나 적어줄 필요가 없어, 보안 노출 위험을 줄이고 개인 정보를 더욱 안전하게 관리할 수 있습니다. 특히, 가게나 사무실에서는 직원들이 매번 비밀번호를 알려주는 수고를 덜 수 있습니다.
--   전문적인 이미지 구축: 카페, 레스토랑, 사무실 등에서 와이파이 QR코드를 비치하면, 고객들에게 편리하고 현대적인 서비스를 제공하는 이미지를 줄 수 있습니다. 이는 고객 만족도 향상으로 직결됩니다.",
+          body: "와이파이 비밀번호를 공유하는 과정에서 겪었던 번거로움은 누구나 공감할 것입니다. 잘못된 스펠링이나 대소문자 구분 오류로 인해 여러 번 시도해야 했던 경험, 손님에게 비밀번호를 알려주느라 업무 흐름이 끊겼던 순간들. 이 모든 불편함을 와이파이 QR코드가 해결해줍니다.\n-   편의성 극대화: 더 이상 긴 비밀번호를 기억하거나 입력할 필요가 없습니다. 스마트폰으로 QR코드를 스캔하는 순간 자동으로 와이파이에 연결됩니다.\n-   시간 절약: 손님은 물론 호스트의 시간을 절약하여 더욱 효율적인 서비스 제공이 가능합니다. 평균적으로 비밀번호 입력에 소요되는 시간은 15초 이상이지만, QR코드는 2초 이내로 단축됩니다.\n-   오류 감소: 수동 입력 시 발생하는 오타나 대소문자 오류를 원천적으로 방지하여, 한 번에 정확한 연결을 보장합니다.\n-   보안 강화 및 사생활 보호: 불필요하게 비밀번호를 소리 내어 말하거나 적어줄 필요가 없어, 보안 노출 위험을 줄이고 개인 정보를 더욱 안전하게 관리할 수 있습니다. 특히, 가게나 사무실에서는 직원들이 매번 비밀번호를 알려주는 수고를 덜 수 있습니다.\n-   전문적인 이미지 구축: 카페, 레스토랑, 사무실 등에서 와이파이 QR코드를 비치하면, 고객들에게 편리하고 현대적인 서비스를 제공하는 이미지를 줄 수 있습니다. 이는 고객 만족도 향상으로 직결됩니다.",
         },
         {
           heading: "툴키오로 와이파이 QR코드 만드는 초간단 3단계",
-          body: "복잡하게 생각할 필요 없이, 툴키오(Toolkio)의 직관적인 QR코드 생성기는 누구나 쉽고 빠르게 와이파이 QR코드를 만들 수 있도록 설계되었습니다. 단 3단계만 거치면 됩니다.
-1.  툴키오 QR 생성기 접속: toolkio.com에 접속하여 상단 메뉴 또는 검색창을 통해 'QR 생성기 (qr-generator)' 도구를 찾아 클릭합니다. 여러 QR코드 유형 중 '와이파이 (Wi-Fi)' 옵션을 선택해주세요.
-2.  와이파이 정보 입력: 연결할 와이파이의 이름(SSID)과 비밀번호(Password)를 정확하게 입력합니다. 만약 비밀번호가 없는 개방형 와이파이라면 '비밀번호 없음' 옵션을 선택하면 됩니다. 보안 유형(WPA/WPA2, WEP 등)도 함께 선택하는 것이 좋습니다. 대부분의 가정 및 상업용 와이파이는 WPA/WPA2 방식을 사용합니다.
-3.  QR코드 생성 및 다운로드: 모든 정보를 입력한 후 'QR코드 생성' 버튼을 누르면, 몇 초 내에 맞춤형 와이파이 QR코드가 화면에 나타납니다. 생성된 QR코드를 이미지 파일(PNG, JPG)로 다운로드하여 필요에 따라 인쇄하거나 디지털 형태로 활용하면 됩니다. 카페 카운터나 집 거실에 예쁘게 출력하여 비치하면 방문객들이 편리하게 이용할 수 있습니다.",
+          body: "복잡하게 생각할 필요 없이, 툴키오(Toolkio)의 직관적인 QR코드 생성기는 누구나 쉽고 빠르게 와이파이 QR코드를 만들 수 있도록 설계되었습니다. 단 3단계만 거치면 됩니다.\n1.  툴키오 QR 생성기 접속: toolkio.com에 접속하여 상단 메뉴 또는 검색창을 통해 'QR 생성기 (qr-generator)' 도구를 찾아 클릭합니다. 여러 QR코드 유형 중 '와이파이 (Wi-Fi)' 옵션을 선택해주세요.\n2.  와이파이 정보 입력: 연결할 와이파이의 이름(SSID)과 비밀번호(Password)를 정확하게 입력합니다. 만약 비밀번호가 없는 개방형 와이파이라면 '비밀번호 없음' 옵션을 선택하면 됩니다. 보안 유형(WPA/WPA2, WEP 등)도 함께 선택하는 것이 좋습니다. 대부분의 가정 및 상업용 와이파이는 WPA/WPA2 방식을 사용합니다.\n3.  QR코드 생성 및 다운로드: 모든 정보를 입력한 후 'QR코드 생성' 버튼을 누르면, 몇 초 내에 맞춤형 와이파이 QR코드가 화면에 나타납니다. 생성된 QR코드를 이미지 파일(PNG, JPG)로 다운로드하여 필요에 따라 인쇄하거나 디지털 형태로 활용하면 됩니다. 카페 카운터나 집 거실에 예쁘게 출력하여 비치하면 방문객들이 편리하게 이용할 수 있습니다.",
         },
         {
           heading: "툴키오(Toolkio) QR 생성기의 특별한 장점들",
-          body: "시중에 다양한 QR코드 생성기가 있지만, 툴키오의 qr-generator는 사용자 친화적인 인터페이스와 강력한 기능으로 단연 돋보입니다. 저희 툴키오는 단순히 와이파이 QR코드를 만드는 것을 넘어, 여러분의 필요에 꼭 맞는 최적의 솔루션을 제공합니다.
--   완전 무료 서비스: 모든 기능을 무료로 사용할 수 있어 비용 부담 없이 고품질의 QR코드를 생성할 수 있습니다. 숨겨진 결제나 유료 전환 요구가 전혀 없습니다.
--   초고속 생성: 복잡한 정보 입력에도 불구하고 단 몇 초 만에 QR코드를 생성하여 시간을 절약할 수 있습니다.
--   다양한 QR코드 유형 지원: 와이파이 QR코드뿐만 아니라 URL, 텍스트, 이메일, 전화번호, SMS, 명함(vCard) 등 다양한 목적의 QR코드를 한 곳에서 만들 수 있습니다. 개인적인 용도는 물론 비즈니스 마케팅에도 유용합니다.
--   사용자 정의 옵션: QR코드의 색상, 로고 삽입, 배경색 변경 등 디자인을 커스터마이징하여 브랜드 이미지를 강화하거나 특정 이벤트에 맞춰 디자인할 수 있습니다. (예: 카페 로고를 QR코드 중앙에 삽입)
--   안정적인 연결 보장: 생성된 QR코드는 국제 표준에 따라 제작되어, 대부분의 스마트폰에서 문제없이 스캔되고 안정적인 네트워크 연결을 보장합니다.
--   보안 우선: 입력된 와이파이 정보는 암호화되어 처리되며, 생성된 QR코드는 안전하게 보호됩니다.
-이 모든 강력한 기능들을 toolkio.com에서 무료로 사용할 수 있습니다. 지금 바로 접속하여 나만의 와이파이 QR코드를 만들어보세요!",
+          body: "시중에 다양한 QR코드 생성기가 있지만, 툴키오의 qr-generator는 사용자 친화적인 인터페이스와 강력한 기능으로 단연 돋보입니다. 저희 툴키오는 단순히 와이파이 QR코드를 만드는 것을 넘어, 여러분의 필요에 꼭 맞는 최적의 솔루션을 제공합니다.\n-   완전 무료 서비스: 모든 기능을 무료로 사용할 수 있어 비용 부담 없이 고품질의 QR코드를 생성할 수 있습니다. 숨겨진 결제나 유료 전환 요구가 전혀 없습니다.\n-   초고속 생성: 복잡한 정보 입력에도 불구하고 단 몇 초 만에 QR코드를 생성하여 시간을 절약할 수 있습니다.\n-   다양한 QR코드 유형 지원: 와이파이 QR코드뿐만 아니라 URL, 텍스트, 이메일, 전화번호, SMS, 명함(vCard) 등 다양한 목적의 QR코드를 한 곳에서 만들 수 있습니다. 개인적인 용도는 물론 비즈니스 마케팅에도 유용합니다.\n-   사용자 정의 옵션: QR코드의 색상, 로고 삽입, 배경색 변경 등 디자인을 커스터마이징하여 브랜드 이미지를 강화하거나 특정 이벤트에 맞춰 디자인할 수 있습니다. (예: 카페 로고를 QR코드 중앙에 삽입)\n-   안정적인 연결 보장: 생성된 QR코드는 국제 표준에 따라 제작되어, 대부분의 스마트폰에서 문제없이 스캔되고 안정적인 네트워크 연결을 보장합니다.\n-   보안 우선: 입력된 와이파이 정보는 암호화되어 처리되며, 생성된 QR코드는 안전하게 보호됩니다.\n이 모든 강력한 기능들을 toolkio.com에서 무료로 사용할 수 있습니다. 지금 바로 접속하여 나만의 와이파이 QR코드를 만들어보세요!",
         },
         {
           heading: "와이파이 QR코드 활용 팁과 주의사항: 더 안전하고 스마트하게",
-          body: "와이파이 QR코드를 효과적으로 사용하기 위한 몇 가지 팁과 주의사항을 알려드립니다. 단순히 QR코드를 만드는 것을 넘어, 안전하고 편리하게 활용하는 것이 중요합니다.
--   접근성 높은 곳에 비치: 카페나 식당의 경우 카운터, 테이블, 문 입구 등 고객의 눈에 잘 띄는 곳에 QR코드를 비치하세요. 집에서는 현관이나 거실에 액자 형태로 두면 좋습니다.
--   정확한 정보 확인: QR코드 생성 전 입력한 SSID와 비밀번호가 정확한지 반드시 두 번 이상 확인하세요. 오타는 연결 실패로 이어집니다. 생성 후에는 본인의 스마트폰으로 스캔하여 정상 작동하는지 테스트해보는 것이 가장 확실합니다.
--   보안 강화: 공용 와이파이의 경우, 게스트 네트워크를 별도로 생성하여 QR코드를 공유하는 것이 좋습니다. 메인 네트워크는 관리용으로 분리하여 보안 위험을 최소화할 수 있습니다. 또한, QR코드 스캔 시 불필요한 정보 노출을 막기 위해 QR코드 자체에 너무 많은 정보를 담지 않도록 주의해야 합니다.
--   디자인과 브랜드 일치: QR코드를 인쇄할 때 주변 환경이나 브랜드 이미지에 어울리는 디자인을 선택하세요. 툴키오 생성기에서 제공하는 색상 및 로고 삽입 기능을 활용하면 더욱 세련된 와이파이 QR코드를 만들 수 있습니다.
--   주기적인 업데이트: 와이파이 비밀번호를 변경했다면, 반드시 새로운 QR코드를 생성하여 교체해야 합니다. 낡은 QR코드는 오히려 사용자에게 혼란을 줄 수 있습니다. 6개월에서 1년 주기로 비밀번호를 변경하고 QR코드를 업데이트하는 것을 권장합니다.
--   인쇄 시 해상도 고려: 작은 크기로 출력하거나 너무 낮은 해상도로 인쇄하면 스캔이 어려울 수 있습니다. 고해상도 이미지로 다운로드하여 선명하게 인쇄하는 것이 중요합니다.",
+          body: "와이파이 QR코드를 효과적으로 사용하기 위한 몇 가지 팁과 주의사항을 알려드립니다. 단순히 QR코드를 만드는 것을 넘어, 안전하고 편리하게 활용하는 것이 중요합니다.\n-   접근성 높은 곳에 비치: 카페나 식당의 경우 카운터, 테이블, 문 입구 등 고객의 눈에 잘 띄는 곳에 QR코드를 비치하세요. 집에서는 현관이나 거실에 액자 형태로 두면 좋습니다.\n-   정확한 정보 확인: QR코드 생성 전 입력한 SSID와 비밀번호가 정확한지 반드시 두 번 이상 확인하세요. 오타는 연결 실패로 이어집니다. 생성 후에는 본인의 스마트폰으로 스캔하여 정상 작동하는지 테스트해보는 것이 가장 확실합니다.\n-   보안 강화: 공용 와이파이의 경우, 게스트 네트워크를 별도로 생성하여 QR코드를 공유하는 것이 좋습니다. 메인 네트워크는 관리용으로 분리하여 보안 위험을 최소화할 수 있습니다. 또한, QR코드 스캔 시 불필요한 정보 노출을 막기 위해 QR코드 자체에 너무 많은 정보를 담지 않도록 주의해야 합니다.\n-   디자인과 브랜드 일치: QR코드를 인쇄할 때 주변 환경이나 브랜드 이미지에 어울리는 디자인을 선택하세요. 툴키오 생성기에서 제공하는 색상 및 로고 삽입 기능을 활용하면 더욱 세련된 와이파이 QR코드를 만들 수 있습니다.\n-   주기적인 업데이트: 와이파이 비밀번호를 변경했다면, 반드시 새로운 QR코드를 생성하여 교체해야 합니다. 낡은 QR코드는 오히려 사용자에게 혼란을 줄 수 있습니다. 6개월에서 1년 주기로 비밀번호를 변경하고 QR코드를 업데이트하는 것을 권장합니다.\n-   인쇄 시 해상도 고려: 작은 크기로 출력하거나 너무 낮은 해상도로 인쇄하면 스캔이 어려울 수 있습니다. 고해상도 이미지로 다운로드하여 선명하게 인쇄하는 것이 중요합니다.",
         },
         {
           heading: "2024년, 와이파이 QR코드로 스마트한 연결을 시작하세요!",
@@ -1401,40 +1312,19 @@ These patterns are incredibly useful for understanding string structures, extrac
         },
         {
           heading: "Why Do You Need a WiFi QR Code? The Start of Effortless Connection",
-          body: "Anyone who has dealt with the hassle of sharing WiFi passwords can relate to the frustration. The repeated attempts due to typos, case sensitivity issues, or the interruption of workflow while telling a guest the password – a WiFi QR code resolves all these inconveniences.
--   Maximized Convenience: No more remembering or typing long passwords. A quick scan with a smartphone instantly connects you to the WiFi.
--   Time-Saving: It saves time for both guests and hosts, allowing for more efficient service delivery. On average, typing a password can take over 15 seconds, but a QR code shortens this to under 2 seconds.
--   Error Reduction: It eliminates manual entry errors like typos and case sensitivity issues, ensuring an accurate connection on the first attempt.
--   Enhanced Security & Privacy: There's no need to verbally share or write down passwords, reducing security exposure risks and protecting personal information more safely. Especially for businesses, it saves employees the trouble of repeatedly sharing passwords.
--   Professional Image: Displaying WiFi QR codes in cafes, restaurants, or offices presents a modern and convenient service image to customers, directly leading to increased customer satisfaction.",
+          body: "Anyone who has dealt with the hassle of sharing WiFi passwords can relate to the frustration. The repeated attempts due to typos, case sensitivity issues, or the interruption of workflow while telling a guest the password – a WiFi QR code resolves all these inconveniences.\n-   Maximized Convenience: No more remembering or typing long passwords. A quick scan with a smartphone instantly connects you to the WiFi.\n-   Time-Saving: It saves time for both guests and hosts, allowing for more efficient service delivery. On average, typing a password can take over 15 seconds, but a QR code shortens this to under 2 seconds.\n-   Error Reduction: It eliminates manual entry errors like typos and case sensitivity issues, ensuring an accurate connection on the first attempt.\n-   Enhanced Security & Privacy: There's no need to verbally share or write down passwords, reducing security exposure risks and protecting personal information more safely. Especially for businesses, it saves employees the trouble of repeatedly sharing passwords.\n-   Professional Image: Displaying WiFi QR codes in cafes, restaurants, or offices presents a modern and convenient service image to customers, directly leading to increased customer satisfaction.",
         },
         {
           heading: "Toolkio: Your 3-Step Guide to Creating a WiFi QR Code",
-          body: "There's no need to overcomplicate things; Toolkio's intuitive QR code generator is designed for anyone to create a WiFi QR code quickly and easily. Just follow these three simple steps:
-1.  Access Toolkio's QR Generator: Visit toolkio.com and navigate to the 'QR Generator (qr-generator)' tool via the top menu or search bar. Among the various QR code types, select the 'Wi-Fi' option.
-2.  Enter WiFi Information: Accurately input the WiFi network name (SSID) and password. If it's an open network without a password, select the 'No Password' option. It's also recommended to choose the security type (WPA/WPA2, WEP, etc.). Most home and commercial WiFi networks use WPA/WPA2.
-3.  Generate and Download QR Code: After entering all the information, click the 'Generate QR Code' button. Your custom WiFi QR code will appear on the screen within seconds. Download the generated QR code as an image file (PNG, JPG) to print or use digitally as needed. Printing it neatly for display at a cafe counter or in your living room will allow visitors to connect conveniently.",
+          body: "There's no need to overcomplicate things; Toolkio's intuitive QR code generator is designed for anyone to create a WiFi QR code quickly and easily. Just follow these three simple steps:\n1.  Access Toolkio's QR Generator: Visit toolkio.com and navigate to the 'QR Generator (qr-generator)' tool via the top menu or search bar. Among the various QR code types, select the 'Wi-Fi' option.\n2.  Enter WiFi Information: Accurately input the WiFi network name (SSID) and password. If it's an open network without a password, select the 'No Password' option. It's also recommended to choose the security type (WPA/WPA2, WEP, etc.). Most home and commercial WiFi networks use WPA/WPA2.\n3.  Generate and Download QR Code: After entering all the information, click the 'Generate QR Code' button. Your custom WiFi QR code will appear on the screen within seconds. Download the generated QR code as an image file (PNG, JPG) to print or use digitally as needed. Printing it neatly for display at a cafe counter or in your living room will allow visitors to connect conveniently.",
         },
         {
           heading: "The Unique Advantages of Toolkio's QR Generator",
-          body: "While many QR code generators exist, Toolkio's qr-generator stands out with its user-friendly interface and powerful features. At Toolkio, we go beyond simply creating a WiFi QR code, offering an optimal solution perfectly tailored to your needs.
--   Completely Free Service: All features are available at no cost, allowing you to generate high-quality QR codes without financial burden. There are no hidden payments or demands for premium upgrades.
--   Ultra-Fast Generation: Despite complex information input, QR codes are generated in just a few seconds, saving you valuable time.
--   Support for Diverse QR Code Types: Beyond WiFi QR codes, you can create QR codes for URLs, text, email, phone numbers, SMS, business cards (vCard), and more, all in one place. This is useful for both personal use and business marketing.
--   Customization Options: Customize the design by changing colors, embedding logos, or altering background colors to strengthen your brand image or match specific event themes (e.g., embedding a cafe logo in the center of the QR code).
--   Guaranteed Stable Connection: Generated QR codes are created according to international standards, ensuring seamless scanning by most smartphones and reliable network connection.
--   Security First: Inputted WiFi information is processed with encryption, and the generated QR codes are securely protected.
-All these powerful features are available for free at toolkio.com. Visit us now and create your personalized WiFi QR code!",
+          body: "While many QR code generators exist, Toolkio's qr-generator stands out with its user-friendly interface and powerful features. At Toolkio, we go beyond simply creating a WiFi QR code, offering an optimal solution perfectly tailored to your needs.\n-   Completely Free Service: All features are available at no cost, allowing you to generate high-quality QR codes without financial burden. There are no hidden payments or demands for premium upgrades.\n-   Ultra-Fast Generation: Despite complex information input, QR codes are generated in just a few seconds, saving you valuable time.\n-   Support for Diverse QR Code Types: Beyond WiFi QR codes, you can create QR codes for URLs, text, email, phone numbers, SMS, business cards (vCard), and more, all in one place. This is useful for both personal use and business marketing.\n-   Customization Options: Customize the design by changing colors, embedding logos, or altering background colors to strengthen your brand image or match specific event themes (e.g., embedding a cafe logo in the center of the QR code).\n-   Guaranteed Stable Connection: Generated QR codes are created according to international standards, ensuring seamless scanning by most smartphones and reliable network connection.\n-   Security First: Inputted WiFi information is processed with encryption, and the generated QR codes are securely protected.\nAll these powerful features are available for free at toolkio.com. Visit us now and create your personalized WiFi QR code!",
         },
         {
           heading: "WiFi QR Code Usage Tips and Precautions: Safer and Smarter",
-          body: "Here are some tips and precautions for effectively using your WiFi QR code. Beyond simply creating the QR code, it's crucial to utilize it safely and conveniently.
--   Place in Accessible Locations: For cafes or restaurants, display the QR code in highly visible areas like the counter, tables, or entrance. At home, a framed QR code in the entryway or living room works well.
--   Verify Information Accuracy: Before generating the QR code, always double-check that the entered SSID and password are correct. Typos will lead to connection failures. The most reliable method is to scan it with your own smartphone after creation to ensure it works properly.
--   Enhance Security: For public WiFi, it's advisable to create a separate guest network and share its QR code. Keep your main network separate for administrative purposes to minimize security risks. Also, avoid embedding excessive information within the QR code itself to prevent unnecessary data exposure upon scanning.
--   Design and Brand Consistency: When printing QR codes, choose a design that complements your environment or brand image. Utilize Toolkio's color and logo embedding features to create a more sophisticated WiFi QR code.
--   Regular Updates: If you change your WiFi password, you must generate and replace the old QR code with a new one. An outdated QR code can confuse users. It's recommended to change passwords and update QR codes every 6 to 12 months.
--   Consider Resolution for Printing: Printing at too small a size or low resolution can make scanning difficult. It's important to download high-resolution images and print them clearly.",
+          body: "Here are some tips and precautions for effectively using your WiFi QR code. Beyond simply creating the QR code, it's crucial to utilize it safely and conveniently.\n-   Place in Accessible Locations: For cafes or restaurants, display the QR code in highly visible areas like the counter, tables, or entrance. At home, a framed QR code in the entryway or living room works well.\n-   Verify Information Accuracy: Before generating the QR code, always double-check that the entered SSID and password are correct. Typos will lead to connection failures. The most reliable method is to scan it with your own smartphone after creation to ensure it works properly.\n-   Enhance Security: For public WiFi, it's advisable to create a separate guest network and share its QR code. Keep your main network separate for administrative purposes to minimize security risks. Also, avoid embedding excessive information within the QR code itself to prevent unnecessary data exposure upon scanning.\n-   Design and Brand Consistency: When printing QR codes, choose a design that complements your environment or brand image. Utilize Toolkio's color and logo embedding features to create a more sophisticated WiFi QR code.\n-   Regular Updates: If you change your WiFi password, you must generate and replace the old QR code with a new one. An outdated QR code can confuse users. It's recommended to change passwords and update QR codes every 6 to 12 months.\n-   Consider Resolution for Printing: Printing at too small a size or low resolution can make scanning difficult. It's important to download high-resolution images and print them clearly.",
         },
         {
           heading: "2024: Embrace Smart Connectivity with WiFi QR Codes!",
@@ -1458,9 +1348,9 @@ All these powerful features are available for free at toolkio.com. Visit us now 
     image: "/images/blog/email-regex-validation.webp",
     keywords: ["이메일 정규식","이메일 유효성 검사","email regex","자바스크립트 이메일 정규식","정규표현식","이메일 패턴"],
     faq: [
-      { question: "2024년에 가장 정확한 이메일 정규식 패턴은 무엇인가요?", answer: "2024년 최신 이메일 정규식은 다양한 복잡성을 가진 패턴들이 존재하며, 가장 정확한 패턴은 국제 도메인, 서브 도메인, 특정 기호 등을 모두 포함하며 RFC 5322 표준을 기반으로 합니다. 예를 들어, \`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$\`와 같은 기본적인 패턴에서 더 확장된 형태를 사용합니다. 이 패턴은 일반적인 이메일 주소 대부분을 유효하게 검증합니다. 실제 적용 시에는 추가적인 비즈니스 로직을 고려해야 합니다." },
+      { question: "2024년에 가장 정확한 이메일 정규식 패턴은 무엇인가요?", answer: "2024년 최신 이메일 정규식은 다양한 복잡성을 가진 패턴들이 존재하며, 가장 정확한 패턴은 국제 도메인, 서브 도메인, 특정 기호 등을 모두 포함하며 RFC 5322 표준을 기반으로 합니다. 예를 들어, \`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$$\`와 같은 기본적인 패턴에서 더 확장된 형태를 사용합니다. 이 패턴은 일반적인 이메일 주소 대부분을 유효하게 검증합니다. 실제 적용 시에는 추가적인 비즈니스 로직을 고려해야 합니다." },
       { question: "이메일 주소 유효성 검사는 왜 필요한가요?", answer: "이메일 주소 유효성 검사는 웹 애플리케이션의 데이터 무결성을 보장하고 사용자 경험을 개선하는 데 필수적입니다. 잘못된 형식의 이메일 주소 입력으로 인한 가입 오류를 방지하고, 스팸 등록 및 오타를 줄일 수 있습니다. 이를 통해 이메일을 통한 커뮤니케이션 성공률을 높여 서비스의 신뢰도를 향상시킵니다." },
-      { question: "자바스크립트에서 이메일 정규식을 어떻게 활용할 수 있나요?", answer: "자바스크립트에서는 \`RegExp\` 객체와 \`test()\` 메서드를 사용하여 이메일 정규식을 쉽게 적용할 수 있습니다. 예를 들어, \`const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$/\`와 같이 정규식을 정의하고, \`emailRegex.test(\"test@example.com\")\`처럼 사용하여 유효성을 검사합니다. 이 방법으로 사용자 입력 유효성 검사 로직을 구현하여 약 95% 이상의 일반적인 이메일 주소를 검증할 수 있습니다." },
+      { question: "자바스크립트에서 이메일 정규식을 어떻게 활용할 수 있나요?", answer: "자바스크립트에서는 \`RegExp\` 객체와 \`test()\` 메서드를 사용하여 이메일 정규식을 쉽게 적용할 수 있습니다. 예를 들어, \`const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$$/\`와 같이 정규식을 정의하고, \`emailRegex.test(\"test@example.com\")\`처럼 사용하여 유효성을 검사합니다. 이 방법으로 사용자 입력 유효성 검사 로직을 구현하여 약 95% 이상의 일반적인 이메일 주소를 검증할 수 있습니다." },
       { question: "이메일 정규식 사용 시 주의해야 할 점은 무엇인가요?", answer: "이메일 정규식은 모든 종류의 유효한 이메일 주소를 100% 완벽하게 검사하기 어렵다는 한계가 있습니다. 지나치게 복잡한 정규식은 성능 저하를 유발할 수 있으며, 최신 RFC 표준의 모든 예외 상황을 반영하지 못할 수도 있습니다. 따라서 너무 엄격하기보다는 대부분의 일반적인 유효성을 만족하는 선에서 타협하고, 추가적으로 이메일 인증 절차(예: 확인 이메일 발송)를 함께 사용하는 것이 좋습니다." },
       { question: "간단한 이메일 정규식과 복잡한 정규식의 차이점은 무엇인가요?", answer: "간단한 이메일 정규식은 일반적인 이메일 형식(예: \`user@domain.com\`)만 검사하여 구현이 쉽고 성능 부하가 적습니다. 반면, 복잡한 정규식은 \`user.name+tag@sub.domain.co.kr\`와 같이 특수 문자, 서브 도메인, 국제화 도메인(IDN) 등을 광범위하게 지원하여 더 많은 유효한 케이스를 포괄합니다. 어떤 것을 선택할지는 프로젝트의 요구사항과 성능 고려 사항에 따라 달라지며, 대부분의 경우 중간 수준의 정규식이 효율적입니다." }
     ],
@@ -1472,55 +1362,23 @@ All these powerful features are available for free at toolkio.com. Visit us now 
         },
         {
           heading: "이메일 유효성 검사를 위한 기본 정규표현식 원리",
-          body: "이메일 주소는 '사용자명@도메인명'의 구조를 가지며, 이 각 부분을 정확하게 검증하는 것이 이메일 유효성 검사의 핵심입니다. 기본적인 정규표현식은 대개 이러한 구조를 기반으로 설계됩니다. 사용자명 부분은 일반적으로 알파벳, 숫자, 특정 특수문자(., _, -, +)를 포함할 수 있으며, 도메인명은 서브도메인, 메인 도메인, 최상위 도메인(TLD)으로 구성됩니다. 예를 들어, \`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$\`와 같은 패턴은 가장 널리 사용되는 기본 이메일 정규식 중 하나입니다. 이 패턴을 분석해보면, '@' 이전의 사용자명 부분은 알파벳, 숫자, \`. _ % + -\` 문자가 하나 이상 반복될 수 있도록 하고, '@' 이후의 도메인 부분은 알파벳, 숫자, \`.\` 문자로 구성된 서브도메인과 메인 도메인을 허용하며, 마지막에 최소 두 글자 이상의 TLD를 요구합니다. 이처럼 각 구성 요소를 세밀하게 정의함으로써 광범위한 이메일 형식을 포괄하면서도 유효하지 않은 패턴을 걸러낼 수 있습니다. 하지만 이 기본 패턴만으로는 모든 복잡한 케이스를 완벽하게 처리하기 어렵다는 점을 인지해야 합니다.",
+          body: "이메일 주소는 '사용자명@도메인명'의 구조를 가지며, 이 각 부분을 정확하게 검증하는 것이 이메일 유효성 검사의 핵심입니다. 기본적인 정규표현식은 대개 이러한 구조를 기반으로 설계됩니다. 사용자명 부분은 일반적으로 알파벳, 숫자, 특정 특수문자(., _, -, +)를 포함할 수 있으며, 도메인명은 서브도메인, 메인 도메인, 최상위 도메인(TLD)으로 구성됩니다. 예를 들어, \`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$$\`와 같은 패턴은 가장 널리 사용되는 기본 이메일 정규식 중 하나입니다. 이 패턴을 분석해보면, '@' 이전의 사용자명 부분은 알파벳, 숫자, \`. _ % + -\` 문자가 하나 이상 반복될 수 있도록 하고, '@' 이후의 도메인 부분은 알파벳, 숫자, \`.\` 문자로 구성된 서브도메인과 메인 도메인을 허용하며, 마지막에 최소 두 글자 이상의 TLD를 요구합니다. 이처럼 각 구성 요소를 세밀하게 정의함으로써 광범위한 이메일 형식을 포괄하면서도 유효하지 않은 패턴을 걸러낼 수 있습니다. 하지만 이 기본 패턴만으로는 모든 복잡한 케이스를 완벽하게 처리하기 어렵다는 점을 인지해야 합니다.",
         },
         {
           heading: "자바스크립트 이메일 정규식: 실제 코드 예시와 주의사항",
-          body: "프론트엔드 개발에서 이메일 유효성 검사는 주로 자바스크립트를 통해 이루어집니다. 사용자 경험을 위해 서버로 데이터가 전송되기 전에 일차적인 검증을 수행하는 것이 일반적입니다. 다음은 2024년 현재 권장되는 자바스크립트 이메일 정규식 패턴 중 하나입니다.
-
-\`\`\`javascript
-const emailRegex = /^(?=.{1,254}\$)(?=.{1,64}@)[a-zA-Z0-9!#\$%&'*+/=?^_\`{|}~-]+(?:\\.[a-zA-Z0-9!#\$%&'*+/=?^_\`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,6}\$/;
-
-function validateEmail(email) {
-  return emailRegex.test(email);
-}
-
-// 사용 예시
-console.log(validateEmail('test@example.com'));     // true
-console.log(validateEmail('invalid-email'));       // false
-console.log(validateEmail('user.name+tag@sub.domain.co.kr')); // true
-\`\`\`
-
-이 패턴은 기존의 간단한 정규식보다 훨씬 엄격하며, RFC 표준을 더 잘 준수하려고 노력합니다. 특히 \`(?=.{1,254}\$)\`는 이메일 전체 길이가 254자를 넘지 않도록 제한하고, \`(?=.{1,64}@)\`는 사용자명 부분이 64자를 넘지 않도록 합니다. 또한, \`[a-zA-Z0-9!#\$%&'*+/=?^_\`{|}~-]+\`를 통해 사용자명에 허용되는 다양한 특수문자를 포함하며, 도메인 부분의 구조를 더욱 정교하게 검증합니다. 하지만 이 정규식 역시 모든 RFC 표준을 100% 만족시키지는 못합니다. 예를 들어, IP 주소를 도메인으로 사용하는 이메일 형식이나 국제화된 도메인명(IDN)을 완벽하게 지원하기는 어렵습니다. 따라서 애플리케이션의 요구사항에 맞춰 유연하게 조정하는 것이 중요합니다.",
+          body: "프론트엔드 개발에서 이메일 유효성 검사는 주로 자바스크립트를 통해 이루어집니다. 사용자 경험을 위해 서버로 데이터가 전송되기 전에 일차적인 검증을 수행하는 것이 일반적입니다. 다음은 2024년 현재 권장되는 자바스크립트 이메일 정규식 패턴 중 하나입니다.\n\n\`\`\`javascript\nconst emailRegex = /^(?=.{1,254}$$)(?=.{1,64}@)[a-zA-Z0-9!#$$%&'*+/=?^_\`{|}~-]+(?:\\.[a-zA-Z0-9!#$$%&'*+/=?^_\`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,6}$$/;\n\nfunction validateEmail(email) {\nreturn emailRegex.test(email);\n}\n\n// 사용 예시\nconsole.log(validateEmail('test@example.com'));     // true\nconsole.log(validateEmail('invalid-email'));       // false\nconsole.log(validateEmail('user.name+tag@sub.domain.co.kr')); // true\n\`\`\`\n\n이 패턴은 기존의 간단한 정규식보다 훨씬 엄격하며, RFC 표준을 더 잘 준수하려고 노력합니다. 특히 \`(?=.{1,254}$$)\`는 이메일 전체 길이가 254자를 넘지 않도록 제한하고, \`(?=.{1,64}@)\`는 사용자명 부분이 64자를 넘지 않도록 합니다. 또한, \`[a-zA-Z0-9!#$$%&'*+/=?^_\`{|}~-]+\`를 통해 사용자명에 허용되는 다양한 특수문자를 포함하며, 도메인 부분의 구조를 더욱 정교하게 검증합니다. 하지만 이 정규식 역시 모든 RFC 표준을 100% 만족시키지는 못합니다. 예를 들어, IP 주소를 도메인으로 사용하는 이메일 형식이나 국제화된 도메인명(IDN)을 완벽하게 지원하기는 어렵습니다. 따라서 애플리케이션의 요구사항에 맞춰 유연하게 조정하는 것이 중요합니다.",
         },
         {
           heading: "완벽에 가까운 이메일 패턴: RFC 표준과 현실적인 접근",
-          body: "이메일 주소의 유효성 검사는 생각보다 복잡한 문제입니다. RFC 5322(Internet Message Format)와 RFC 5321(Simple Mail Transfer Protocol) 등의 표준 문서는 이메일 주소의 거의 모든 가능한 형식을 정의하고 있지만, 이 모든 규칙을 단 하나의 정규표현식으로 완벽하게 구현하는 것은 사실상 불가능에 가깝습니다. 너무 엄격한 정규식은 유효한 이메일 주소를 거부할 수 있고, 너무 느슨한 정규식은 잘못된 주소를 허용할 수 있습니다. 예를 들어, \`\"비정상적인 이름\"@도메인.com\`과 같은 유효한 이메일 주소도 일반적인 정규식으로는 걸러내기 어렵습니다. 따라서 '완벽한' 이메일 패턴을 찾는 대신, 현실적인 접근 방식이 권장됩니다.
-
-- **실용성 우선:** 대부분의 웹 애플리케이션에서는 사용자 경험을 해치지 않으면서 일반적인 오류를 걸러내는 수준의 정규식이면 충분합니다.
-- **다단계 검증:** 클라이언트 측 정규식 검증은 빠른 피드백을 제공하고, 서버 측에서는 더 엄격한 정규식 또는 이메일 전송을 통한 실제 유효성 검사를 수행하는 것이 좋습니다. 이메일 인증 코드를 보내는 방식은 가장 확실한 방법 중 하나입니다.
-- **최신 표준 고려:** 국제화 도메인명(IDN)과 같이 새로운 표준이 등장함에 따라, 정규식도 시대에 맞춰 업데이트될 필요가 있습니다. \`[\\p{L}0-9!#\$%&'*+/=?^_\`{|}~-]+\`와 같이 유니코드 문자를 지원하는 방식을 고려해볼 수 있습니다. 하지만 이는 정규식 엔진의 지원 여부에 따라 달라질 수 있습니다.",
+          body: "이메일 주소의 유효성 검사는 생각보다 복잡한 문제입니다. RFC 5322(Internet Message Format)와 RFC 5321(Simple Mail Transfer Protocol) 등의 표준 문서는 이메일 주소의 거의 모든 가능한 형식을 정의하고 있지만, 이 모든 규칙을 단 하나의 정규표현식으로 완벽하게 구현하는 것은 사실상 불가능에 가깝습니다. 너무 엄격한 정규식은 유효한 이메일 주소를 거부할 수 있고, 너무 느슨한 정규식은 잘못된 주소를 허용할 수 있습니다. 예를 들어, \`\"비정상적인 이름\"@도메인.com\`과 같은 유효한 이메일 주소도 일반적인 정규식으로는 걸러내기 어렵습니다. 따라서 '완벽한' 이메일 패턴을 찾는 대신, 현실적인 접근 방식이 권장됩니다.\n\n- **실용성 우선:** 대부분의 웹 애플리케이션에서는 사용자 경험을 해치지 않으면서 일반적인 오류를 걸러내는 수준의 정규식이면 충분합니다.\n- **다단계 검증:** 클라이언트 측 정규식 검증은 빠른 피드백을 제공하고, 서버 측에서는 더 엄격한 정규식 또는 이메일 전송을 통한 실제 유효성 검사를 수행하는 것이 좋습니다. 이메일 인증 코드를 보내는 방식은 가장 확실한 방법 중 하나입니다.\n- **최신 표준 고려:** 국제화 도메인명(IDN)과 같이 새로운 표준이 등장함에 따라, 정규식도 시대에 맞춰 업데이트될 필요가 있습니다. \`[\\p{L}0-9!#$$%&'*+/=?^_\`{|}~-]+\`와 같이 유니코드 문자를 지원하는 방식을 고려해볼 수 있습니다. 하지만 이는 정규식 엔진의 지원 여부에 따라 달라질 수 있습니다.",
         },
         {
           heading: "이메일 정규식 테스트와 디버깅: Toolkio regex-tester 활용법",
-          body: "아무리 잘 만들어진 이메일 정규식이라도 다양한 테스트 케이스에 대해 실제로 어떻게 동작하는지 검증하는 과정은 필수적입니다. 수많은 이메일 형식과 예외 사항을 수동으로 테스트하기란 거의 불가능에 가깝습니다. 이때 정규표현식 테스트 도구를 활용하면 시간을 절약하고 오류를 줄일 수 있습니다. Toolkio의 regex-tester는 이러한 작업을 위한 강력하고 직관적인 온라인 도구입니다. 여러분이 만든 이메일 정규식을 입력하고, 다양한 이메일 주소 샘플을 넣어 실시간으로 매칭 결과를 확인할 수 있습니다.
-
-- **실시간 피드백:** 패턴 수정 시마다 즉각적으로 매칭 여부가 업데이트되어 빠르게 패턴을 최적화할 수 있습니다.
-- **예제 데이터 활용:** 유효하거나 유효하지 않은 이메일 주소 목록을 미리 준비하여 한 번에 여러 케이스를 테스트할 수 있습니다.
-- **설명 및 시각화:** 복잡한 정규식의 각 부분이 어떤 역할을 하는지 시각적으로 이해하는 데 도움을 줄 수 있습니다.
-
-정규표현식은 오타 하나에도 동작 방식이 완전히 달라질 수 있기 때문에, 정확한 이메일 유효성 검사를 위해서는 반복적인 테스트와 디버깅이 필수적입니다. Toolkio의 regex-tester는 toolkio.com에서 무료로 사용할 수 있으며, 여러분의 이메일 정규식 패턴 개발 및 검증 과정을 훨씬 효율적으로 만들어 줄 것입니다. 지금 바로 방문하여 여러분의 이메일 패턴을 테스트해 보세요!",
+          body: "아무리 잘 만들어진 이메일 정규식이라도 다양한 테스트 케이스에 대해 실제로 어떻게 동작하는지 검증하는 과정은 필수적입니다. 수많은 이메일 형식과 예외 사항을 수동으로 테스트하기란 거의 불가능에 가깝습니다. 이때 정규표현식 테스트 도구를 활용하면 시간을 절약하고 오류를 줄일 수 있습니다. Toolkio의 regex-tester는 이러한 작업을 위한 강력하고 직관적인 온라인 도구입니다. 여러분이 만든 이메일 정규식을 입력하고, 다양한 이메일 주소 샘플을 넣어 실시간으로 매칭 결과를 확인할 수 있습니다.\n\n- **실시간 피드백:** 패턴 수정 시마다 즉각적으로 매칭 여부가 업데이트되어 빠르게 패턴을 최적화할 수 있습니다.\n- **예제 데이터 활용:** 유효하거나 유효하지 않은 이메일 주소 목록을 미리 준비하여 한 번에 여러 케이스를 테스트할 수 있습니다.\n- **설명 및 시각화:** 복잡한 정규식의 각 부분이 어떤 역할을 하는지 시각적으로 이해하는 데 도움을 줄 수 있습니다.\n\n정규표현식은 오타 하나에도 동작 방식이 완전히 달라질 수 있기 때문에, 정확한 이메일 유효성 검사를 위해서는 반복적인 테스트와 디버깅이 필수적입니다. Toolkio의 regex-tester는 toolkio.com에서 무료로 사용할 수 있으며, 여러분의 이메일 정규식 패턴 개발 및 검증 과정을 훨씬 효율적으로 만들어 줄 것입니다. 지금 바로 방문하여 여러분의 이메일 패턴을 테스트해 보세요!",
         },
         {
           heading: "2024년 이메일 유효성 검사, 현명하게 마무리하는 방법",
-          body: "지금까지 2024년 최신 이메일 정규식 패턴과 활용법, 그리고 주의사항에 대해 자세히 살펴보았습니다. 이메일 정규식은 단순히 문자열을 매칭하는 것을 넘어, 서비스의 안정성과 사용자 경험에 직접적인 영향을 미치는 중요한 요소입니다. '완벽한' 정규식을 찾기보다는, 여러분의 애플리케이션이 요구하는 보안 수준과 사용자 편의성 사이에서 최적의 균형점을 찾는 것이 중요합니다. 너무 엄격한 정규식은 유효한 사용자의 가입을 막을 수 있고, 너무 느슨한 정규식은 스팸과 데이터 품질 저하를 초래할 수 있습니다. 따라서 핵심은 다음과 같습니다.
-
-- **정규식은 첫 번째 방어선:** 클라이언트 측 검증으로 기본적인 이메일 형식을 빠르게 걸러냅니다.
-- **서버 측 검증 강화:** 더 엄격한 로직 또는 실제 이메일 전송을 통한 인증으로 최종 유효성을 확인합니다.
-- **주기적인 업데이트:** 이메일 표준과 사용 패턴은 변화하므로, 정규식 패턴도 주기적으로 검토하고 업데이트해야 합니다.
-- **테스트의 중요성:** Toolkio의 regex-tester와 같은 도구를 활용하여 다양한 시나리오에서 정규식이 올바르게 작동하는지 항상 검증하세요.
-
-이 가이드가 여러분의 이메일 유효성 검사 전략을 수립하고 강화하는 데 도움이 되었기를 바랍니다. 현명한 이메일 정규식 적용을 통해 더욱 견고하고 신뢰할 수 있는 서비스를 구축하시길 응원합니다!",
+          body: "지금까지 2024년 최신 이메일 정규식 패턴과 활용법, 그리고 주의사항에 대해 자세히 살펴보았습니다. 이메일 정규식은 단순히 문자열을 매칭하는 것을 넘어, 서비스의 안정성과 사용자 경험에 직접적인 영향을 미치는 중요한 요소입니다. '완벽한' 정규식을 찾기보다는, 여러분의 애플리케이션이 요구하는 보안 수준과 사용자 편의성 사이에서 최적의 균형점을 찾는 것이 중요합니다. 너무 엄격한 정규식은 유효한 사용자의 가입을 막을 수 있고, 너무 느슨한 정규식은 스팸과 데이터 품질 저하를 초래할 수 있습니다. 따라서 핵심은 다음과 같습니다.\n\n- **정규식은 첫 번째 방어선:** 클라이언트 측 검증으로 기본적인 이메일 형식을 빠르게 걸러냅니다.\n- **서버 측 검증 강화:** 더 엄격한 로직 또는 실제 이메일 전송을 통한 인증으로 최종 유효성을 확인합니다.\n- **주기적인 업데이트:** 이메일 표준과 사용 패턴은 변화하므로, 정규식 패턴도 주기적으로 검토하고 업데이트해야 합니다.\n- **테스트의 중요성:** Toolkio의 regex-tester와 같은 도구를 활용하여 다양한 시나리오에서 정규식이 올바르게 작동하는지 항상 검증하세요.\n\n이 가이드가 여러분의 이메일 유효성 검사 전략을 수립하고 강화하는 데 도움이 되었기를 바랍니다. 현명한 이메일 정규식 적용을 통해 더욱 견고하고 신뢰할 수 있는 서비스를 구축하시길 응원합니다!",
         }
       ],
       en: [
@@ -1530,55 +1388,23 @@ console.log(validateEmail('user.name+tag@sub.domain.co.kr')); // true
         },
         {
           heading: "Understanding the Basic Principles of Email Validation Regex",
-          body: "An email address follows the structure 'username@domainname', and accurately validating each part is the core of email validation. Basic regular expressions are typically designed based on this structure. The username part can generally include alphanumeric characters and specific special characters (., _, -, +), while the domain name consists of subdomains, the main domain, and the top-level domain (TLD). For instance, a pattern like \`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$\` is one of the most widely used basic email regex patterns. Analyzing this pattern, the username part before '@' allows one or more repetitions of alphanumeric characters, '.', '_', '%', '+', '-'. The domain part after '@' permits subdomains and main domains composed of alphanumeric characters and '.', and finally requires a TLD of at least two characters. By precisely defining each component in this manner, it's possible to cover a wide range of valid email formats while filtering out invalid ones. However, it's important to recognize that this basic pattern cannot perfectly handle all complex cases.",
+          body: "An email address follows the structure 'username@domainname', and accurately validating each part is the core of email validation. Basic regular expressions are typically designed based on this structure. The username part can generally include alphanumeric characters and specific special characters (., _, -, +), while the domain name consists of subdomains, the main domain, and the top-level domain (TLD). For instance, a pattern like \`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$$\` is one of the most widely used basic email regex patterns. Analyzing this pattern, the username part before '@' allows one or more repetitions of alphanumeric characters, '.', '_', '%', '+', '-'. The domain part after '@' permits subdomains and main domains composed of alphanumeric characters and '.', and finally requires a TLD of at least two characters. By precisely defining each component in this manner, it's possible to cover a wide range of valid email formats while filtering out invalid ones. However, it's important to recognize that this basic pattern cannot perfectly handle all complex cases.",
         },
         {
           heading: "JavaScript Email Regex: Practical Code Examples and Caveats",
-          body: "In frontend development, email validation is primarily performed using JavaScript. It's common practice to conduct initial validation before data is sent to the server, improving the user experience. Below is one of the recommended JavaScript email regex patterns for 2024:
-
-\`\`\`javascript
-const emailRegex = /^(?=.{1,254}\$)(?=.{1,64}@)[a-zA-Z0-9!#\$%&'*+/=?^_\`{|}~-]+(?:\\.[a-zA-Z0-9!#\$%&'*+/=?^_\`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,6}\$/;
-
-function validateEmail(email) {
-  return emailRegex.test(email);
-}
-
-// Usage examples
-console.log(validateEmail('test@example.com'));     // true
-console.log(validateEmail('invalid-email'));       // false
-console.log(validateEmail('user.name+tag@sub.domain.co.kr')); // true
-\`\`\`
-
-This pattern is significantly stricter than simpler regexes and strives to better adhere to RFC standards. Specifically, \`(?=.{1,254}\$)\` limits the total email length to 254 characters, and \`(?=.{1,64}@)\` restricts the username part to 64 characters. Furthermore, \`[a-zA-Z0-9!#\$%&'*+/=?^_\`{|}~-]+\` includes various allowed special characters in the username, and the domain part's structure is validated more precisely. However, this regular expression still does not 100% satisfy all RFC standards. For example, it struggles to perfectly support email formats using IP addresses as domains or Internationalized Domain Names (IDN). Therefore, it's crucial to flexibly adjust the pattern according to your application's specific requirements.",
+          body: "In frontend development, email validation is primarily performed using JavaScript. It's common practice to conduct initial validation before data is sent to the server, improving the user experience. Below is one of the recommended JavaScript email regex patterns for 2024:\n\n\`\`\`javascript\nconst emailRegex = /^(?=.{1,254}$$)(?=.{1,64}@)[a-zA-Z0-9!#$$%&'*+/=?^_\`{|}~-]+(?:\\.[a-zA-Z0-9!#$$%&'*+/=?^_\`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,6}$$/;\n\nfunction validateEmail(email) {\nreturn emailRegex.test(email);\n}\n\n// Usage examples\nconsole.log(validateEmail('test@example.com'));     // true\nconsole.log(validateEmail('invalid-email'));       // false\nconsole.log(validateEmail('user.name+tag@sub.domain.co.kr')); // true\n\`\`\`\n\nThis pattern is significantly stricter than simpler regexes and strives to better adhere to RFC standards. Specifically, \`(?=.{1,254}$$)\` limits the total email length to 254 characters, and \`(?=.{1,64}@)\` restricts the username part to 64 characters. Furthermore, \`[a-zA-Z0-9!#$$%&'*+/=?^_\`{|}~-]+\` includes various allowed special characters in the username, and the domain part's structure is validated more precisely. However, this regular expression still does not 100% satisfy all RFC standards. For example, it struggles to perfectly support email formats using IP addresses as domains or Internationalized Domain Names (IDN). Therefore, it's crucial to flexibly adjust the pattern according to your application's specific requirements.",
         },
         {
           heading: "Near-Perfect Email Pattern: RFC Standards vs. Realistic Approaches",
-          body: "Validating email addresses is a more complex issue than one might initially think. Standard documents like RFC 5322 (Internet Message Format) and RFC 5321 (Simple Mail Transfer Protocol) define almost all possible email address formats. However, perfectly implementing all these rules with a single regular expression is practically impossible. An overly strict regex might reject valid email addresses, while an overly lenient one could allow invalid ones. For instance, a valid email address like \`\"a.b@c.com\"\` or \`\"unusual name\"@domain.com\` might be difficult for common regex patterns to handle. Therefore, instead of seeking a 'perfect' email pattern, a realistic approach is recommended:
-
-- **Prioritize Practicality:** For most web applications, a regex that catches common errors without hindering the user experience is sufficient.
-- **Multi-stage Validation:** Client-side regex validation provides quick feedback, while server-side validation should employ stricter regex or actual email transmission for verification. Sending an email with a verification code is one of the most reliable methods.
-- **Consider Latest Standards:** As new standards emerge, such as Internationalized Domain Names (IDN), regex patterns also need to be updated. Consider approaches that support Unicode characters, such as \`[\\p{L}0-9!#\$%&'*+/=?^_\`{|}~-]+\`. However, this depends on the regex engine's support.",
+          body: "Validating email addresses is a more complex issue than one might initially think. Standard documents like RFC 5322 (Internet Message Format) and RFC 5321 (Simple Mail Transfer Protocol) define almost all possible email address formats. However, perfectly implementing all these rules with a single regular expression is practically impossible. An overly strict regex might reject valid email addresses, while an overly lenient one could allow invalid ones. For instance, a valid email address like \`\"a.b@c.com\"\` or \`\"unusual name\"@domain.com\` might be difficult for common regex patterns to handle. Therefore, instead of seeking a 'perfect' email pattern, a realistic approach is recommended:\n\n- **Prioritize Practicality:** For most web applications, a regex that catches common errors without hindering the user experience is sufficient.\n- **Multi-stage Validation:** Client-side regex validation provides quick feedback, while server-side validation should employ stricter regex or actual email transmission for verification. Sending an email with a verification code is one of the most reliable methods.\n- **Consider Latest Standards:** As new standards emerge, such as Internationalized Domain Names (IDN), regex patterns also need to be updated. Consider approaches that support Unicode characters, such as \`[\\p{L}0-9!#$$%&'*+/=?^_\`{|}~-]+\`. However, this depends on the regex engine's support.",
         },
         {
           heading: "Email Regex Testing and Debugging: Using Toolkio's Regex-Tester",
-          body: "Regardless of how well an email regular expression is crafted, verifying its behavior against various test cases is essential. Manually testing countless email formats and edge cases is almost impossible. Utilizing a regex testing tool can save time and reduce errors. Toolkio's regex-tester is a powerful and intuitive online tool designed for this purpose. You can input your email regex and various email address samples to see real-time matching results.
-
-- **Real-time Feedback:** Matching status updates instantly with every pattern modification, allowing for rapid optimization.
-- **Utilize Example Data:** Prepare lists of valid and invalid email addresses in advance to test multiple cases at once.
-- **Explanation and Visualization:** It can help visually understand what each part of a complex regex does.
-
-Because a single typo can completely change how a regex operates, iterative testing and debugging are crucial for accurate email validation. Toolkio's regex-tester is available for free at toolkio.com and will make your email regex pattern development and verification process much more efficient. Visit now and test your email patterns!",
+          body: "Regardless of how well an email regular expression is crafted, verifying its behavior against various test cases is essential. Manually testing countless email formats and edge cases is almost impossible. Utilizing a regex testing tool can save time and reduce errors. Toolkio's regex-tester is a powerful and intuitive online tool designed for this purpose. You can input your email regex and various email address samples to see real-time matching results.\n\n- **Real-time Feedback:** Matching status updates instantly with every pattern modification, allowing for rapid optimization.\n- **Utilize Example Data:** Prepare lists of valid and invalid email addresses in advance to test multiple cases at once.\n- **Explanation and Visualization:** It can help visually understand what each part of a complex regex does.\n\nBecause a single typo can completely change how a regex operates, iterative testing and debugging are crucial for accurate email validation. Toolkio's regex-tester is available for free at toolkio.com and will make your email regex pattern development and verification process much more efficient. Visit now and test your email patterns!",
         },
         {
           heading: "Smartly Concluding Email Validation in 2024",
-          body: "We've thoroughly explored the latest email regular expression patterns for 2024, their applications, and important considerations. An email regex is more than just string matching; it's a critical component directly impacting service stability and user experience. Rather than seeking a 'perfect' regular expression, it's crucial to find the optimal balance between the security level and user convenience required by your application. An overly strict regex can prevent valid users from signing up, while an overly lenient one can lead to spam and compromised data quality. Therefore, the key takeaways are:
-
-- **Regex as the First Line of Defense:** Client-side validation quickly filters out basic email format errors.
-- **Strengthen Server-Side Validation:** Confirm final validity with stricter logic or actual email sending for authentication.
-- **Regular Updates:** Email standards and usage patterns evolve, so regex patterns should be periodically reviewed and updated.
-- **Importance of Testing:** Always verify that your regex works correctly in various scenarios using tools like Toolkio's regex-tester.
-
-We hope this guide has been helpful in formulating and strengthening your email validation strategy. We encourage you to build a more robust and reliable service through smart email regex implementation!",
+          body: "We've thoroughly explored the latest email regular expression patterns for 2024, their applications, and important considerations. An email regex is more than just string matching; it's a critical component directly impacting service stability and user experience. Rather than seeking a 'perfect' regular expression, it's crucial to find the optimal balance between the security level and user convenience required by your application. An overly strict regex can prevent valid users from signing up, while an overly lenient one can lead to spam and compromised data quality. Therefore, the key takeaways are:\n\n- **Regex as the First Line of Defense:** Client-side validation quickly filters out basic email format errors.\n- **Strengthen Server-Side Validation:** Confirm final validity with stricter logic or actual email sending for authentication.\n- **Regular Updates:** Email standards and usage patterns evolve, so regex patterns should be periodically reviewed and updated.\n- **Importance of Testing:** Always verify that your regex works correctly in various scenarios using tools like Toolkio's regex-tester.\n\nWe hope this guide has been helpful in formulating and strengthening your email validation strategy. We encourage you to build a more robust and reliable service through smart email regex implementation!",
         }
       ],
     },
@@ -1598,10 +1424,10 @@ We hope this guide has been helpful in formulating and strengthening your email 
     image: "/images/blog/korean-phone-number-regex.webp",
     keywords: ["한국 전화번호 정규식","휴대폰 번호 정규표현식","korean phone number regex","전화번호 유효성 검사","국내 전화번호 형식","정규식 추출"],
     faq: [
-      { question: "한국 전화번호를 완벽하게 검증하고 추출하는 최신 정규식은 무엇인가요?", answer: "한국의 휴대폰과 유선 전화번호를 모두 포괄하는 정규식은 일반적으로 \`^0\\d{1,2}-?\\d{3,4}-?\\d{4}\$\` 패턴을 기반으로 유연하게 설계됩니다. Toolkio에서 제공하는 2024년 최신 정규식은 하이픈 유무, 지역번호의 길이(2~3자리) 및 휴대폰 국번을 고려하여 여러 패턴을 조합하여 사용합니다. 이를 통해 서울 02-1234-5678부터 휴대폰 010-1234-5678까지 다양한 형식을 정확히 검증하고 추출할 수 있습니다." },
-      { question: "한국 휴대폰 번호의 유효성을 정규식으로 어떻게 검사하나요?", answer: "한국 휴대폰 번호는 주로 \`010\`으로 시작하며, 총 10자리 또는 11자리 형식을 가집니다. 일반적인 휴대폰 정규식은 \`^01[0-9]{1}-?\\d{3,4}-?\\d{4}\$\`와 같이 표현할 수 있습니다. 예를 들어, \`010-1234-5678\`과 같은 형식은 \`^010-\\d{4}-\\d{4}\$\` 패턴으로 정확히 일치하며, 하이픈이 없는 \`01012345678\` 형식은 \`^01[0-9]{1}\\d{7,8}\$\`와 같은 패턴으로 검사할 수 있습니다." },
-      { question: "유선 전화번호 정규식은 휴대폰 번호와 어떤 점이 다른가요?", answer: "유선 전화번호 정규식은 지역 번호를 포함해야 한다는 점에서 휴대폰 번호와 다릅니다. 지역 번호는 서울 02, 경기도 031, 부산 051 등 2자리 또는 3자리로 시작하며, 이어서 국번과 가입자 번호가 옵니다. 따라서 유선 정규식은 이처럼 다양한 지역 번호를 모두 포함하도록 OR(\`|\`) 연산자를 활용하여 \`^(0(2|3[1-3]|4[1-4]|5[1-5]|6[1-4]))-?\\d{3,4}-?\\d{4}\$\`와 같이 구성하는 것이 일반적입니다." },
-      { question: "하이픈 유무에 상관없이 한국 전화번호를 검증하는 정규식은 어떻게 만드나요?", answer: "하이픈이 있거나 없는 전화번호를 모두 처리하려면 하이픈 부분을 선택적으로 처리하도록 정규식을 구성해야 합니다. 이는 하이픈 바로 뒤에 \`?\` (0번 또는 1번 등장) 기호를 사용하면 됩니다. 예를 들어, 휴대폰 번호의 경우 \`^010-?\\d{4}-?\\d{4}\$\`와 같이 작성하면 \`010-1234-5678\`과 \`01012345678\`을 모두 검증할 수 있습니다. 이렇게 하면 사용자가 어떤 형식으로 입력하든 유효성 검사가 가능해집니다." },
+      { question: "한국 전화번호를 완벽하게 검증하고 추출하는 최신 정규식은 무엇인가요?", answer: "한국의 휴대폰과 유선 전화번호를 모두 포괄하는 정규식은 일반적으로 \`^0\\d{1,2}-?\\d{3,4}-?\\d{4}$$\` 패턴을 기반으로 유연하게 설계됩니다. Toolkio에서 제공하는 2024년 최신 정규식은 하이픈 유무, 지역번호의 길이(2~3자리) 및 휴대폰 국번을 고려하여 여러 패턴을 조합하여 사용합니다. 이를 통해 서울 02-1234-5678부터 휴대폰 010-1234-5678까지 다양한 형식을 정확히 검증하고 추출할 수 있습니다." },
+      { question: "한국 휴대폰 번호의 유효성을 정규식으로 어떻게 검사하나요?", answer: "한국 휴대폰 번호는 주로 \`010\`으로 시작하며, 총 10자리 또는 11자리 형식을 가집니다. 일반적인 휴대폰 정규식은 \`^01[0-9]{1}-?\\d{3,4}-?\\d{4}$$\`와 같이 표현할 수 있습니다. 예를 들어, \`010-1234-5678\`과 같은 형식은 \`^010-\\d{4}-\\d{4}$$\` 패턴으로 정확히 일치하며, 하이픈이 없는 \`01012345678\` 형식은 \`^01[0-9]{1}\\d{7,8}$$\`와 같은 패턴으로 검사할 수 있습니다." },
+      { question: "유선 전화번호 정규식은 휴대폰 번호와 어떤 점이 다른가요?", answer: "유선 전화번호 정규식은 지역 번호를 포함해야 한다는 점에서 휴대폰 번호와 다릅니다. 지역 번호는 서울 02, 경기도 031, 부산 051 등 2자리 또는 3자리로 시작하며, 이어서 국번과 가입자 번호가 옵니다. 따라서 유선 정규식은 이처럼 다양한 지역 번호를 모두 포함하도록 OR(\`|\`) 연산자를 활용하여 \`^(0(2|3[1-3]|4[1-4]|5[1-5]|6[1-4]))-?\\d{3,4}-?\\d{4}$$\`와 같이 구성하는 것이 일반적입니다." },
+      { question: "하이픈 유무에 상관없이 한국 전화번호를 검증하는 정규식은 어떻게 만드나요?", answer: "하이픈이 있거나 없는 전화번호를 모두 처리하려면 하이픈 부분을 선택적으로 처리하도록 정규식을 구성해야 합니다. 이는 하이픈 바로 뒤에 \`?\` (0번 또는 1번 등장) 기호를 사용하면 됩니다. 예를 들어, 휴대폰 번호의 경우 \`^010-?\\d{4}-?\\d{4}$$\`와 같이 작성하면 \`010-1234-5678\`과 \`01012345678\`을 모두 검증할 수 있습니다. 이렇게 하면 사용자가 어떤 형식으로 입력하든 유효성 검사가 가능해집니다." },
       { question: "정규식을 사용하여 전화번호에서 숫자만 추출하려면 어떻게 해야 하나요?", answer: "전화번호에서 하이픈 등 비숫자 문자를 제거하고 숫자만 추출하려면 정규식의 \`replace\` 또는 \`replaceAll\` 함수와 함께 \`[^0-9]\` 패턴을 사용하면 효과적입니다. 이 패턴은 숫자가 아닌 모든 문자를 의미합니다. 예를 들어, 프로그래밍 언어에서 \`String.replaceAll(\"[^0-9]\", \"\")\`를 사용하면 \"010-1234-5678\" 문자열에서 \"01012345678\"만 남게 됩니다. 이는 데이터 정규화 및 저장 시 유용하게 활용될 수 있습니다." }
     ],
     content: {
