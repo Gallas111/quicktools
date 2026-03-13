@@ -437,12 +437,11 @@ function updateRSS(topic) {
   console.log(`   ✅ rss.xml updated`);
 }
 
-// ─── Main ────────────────────────────────────────────────────────────────────
-async function main() {
-  console.log("🚀 Toolkio Daily Blog Post Generator\n");
-
-  const existingSlugs = getExistingSlugs();
-  console.log(`📝 Existing posts: ${existingSlugs.size}`);
+// ─── Generate single post ─────────────────────────────────────────────────────
+async function generateOnePost(postNum, totalPosts, existingSlugs) {
+  console.log(`\n${"═".repeat(50)}`);
+  console.log(`📝 Post ${postNum}/${totalPosts}`);
+  console.log("═".repeat(50));
 
   // 1. Generate topic
   console.log("\n1️⃣ Generating topic...");
@@ -454,6 +453,7 @@ async function main() {
     console.log(`   ⚠️ Slug "${topic.slug}" already exists, adding suffix`);
     topic.slug += "-" + Date.now().toString(36).slice(-4);
   }
+  existingSlugs.add(topic.slug);
 
   // 2. Generate content
   console.log("\n2️⃣ Generating content...");
@@ -475,16 +475,52 @@ async function main() {
   updateSitemap(topic.slug);
   updateRSS(topic);
 
-  console.log("\n═══════════════════════════════════════");
-  console.log(`✅ New post created: ${topic.slug}`);
-  console.log(`   Title: ${topic.titleKo}`);
-  console.log(`   URL: https://toolkio.com/blog/${topic.slug}`);
-  console.log("═══════════════════════════════════════");
+  console.log(`\n✅ Post ${postNum} done: ${topic.slug}`);
+  return topic;
+}
+
+// ─── Main ────────────────────────────────────────────────────────────────────
+const POST_COUNT = parseInt(process.env.POST_COUNT || "5", 10);
+
+async function main() {
+  console.log("🚀 Toolkio Daily Blog Post Generator\n");
+  console.log(`📊 Generating ${POST_COUNT} posts\n`);
+
+  const existingSlugs = getExistingSlugs();
+  console.log(`📝 Existing posts: ${existingSlugs.size}`);
+
+  const results = [];
+
+  for (let i = 1; i <= POST_COUNT; i++) {
+    try {
+      const topic = await generateOnePost(i, POST_COUNT, existingSlugs);
+      results.push(topic);
+      // Rate limit between posts
+      if (i < POST_COUNT) {
+        console.log(`\n⏳ Waiting 5s before next post...`);
+        await new Promise((r) => setTimeout(r, 5000));
+      }
+    } catch (err) {
+      console.error(`❌ Post ${i} failed: ${err.message}`);
+      // Continue with remaining posts
+    }
+  }
+
+  console.log(`\n${"═".repeat(50)}`);
+  console.log(`🎉 Done! ${results.length}/${POST_COUNT} posts created:`);
+  results.forEach((t, i) => {
+    console.log(`   ${i + 1}. ${t.titleKo}`);
+    console.log(`      https://toolkio.com/blog/${t.slug}`);
+  });
+  console.log("═".repeat(50));
 
   // Output for GitHub Actions
   if (process.env.GITHUB_OUTPUT) {
-    fs.appendFileSync(process.env.GITHUB_OUTPUT, `POST_SLUG=${topic.slug}\n`);
-    fs.appendFileSync(process.env.GITHUB_OUTPUT, `POST_TITLE=${topic.titleKo}\n`);
+    const slugs = results.map((t) => t.slug).join(",");
+    const titles = results.map((t) => t.titleKo).join(" | ");
+    fs.appendFileSync(process.env.GITHUB_OUTPUT, `POST_SLUGS=${slugs}\n`);
+    fs.appendFileSync(process.env.GITHUB_OUTPUT, `POST_COUNT=${results.length}\n`);
+    fs.appendFileSync(process.env.GITHUB_OUTPUT, `POST_TITLE=${titles}\n`);
   }
 }
 
