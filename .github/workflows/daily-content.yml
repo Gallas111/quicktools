@@ -22,7 +22,14 @@ jobs:
       - name: Install dependencies
         run: npm install sharp
 
+      - name: Notify Telegram (Start)
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d text="🚀 [Toolkio] 블로그 자동 포스팅 시작..."
+
       - name: Generate daily blog post
+        id: generate
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
@@ -45,3 +52,26 @@ jobs:
       - name: Ping Google Sitemap
         if: success()
         run: curl -s "https://www.google.com/ping?sitemap=https://toolkio.com/sitemap.xml" || true
+
+      - name: Notify Telegram (Success)
+        if: success()
+        run: |
+          POST_SLUG="${{ steps.generate.outputs.POST_SLUG }}"
+          POST_TITLE="${{ steps.generate.outputs.POST_TITLE }}"
+          if [ -z "$POST_SLUG" ]; then
+            MSG="✅ [Toolkio] 자동 포스팅 완료 (변경사항 없음)"
+          else
+            MSG="✅ [Toolkio] 새 포스트 발행!
+          📝 ${POST_TITLE}
+          🔗 https://toolkio.com/blog/${POST_SLUG}"
+          fi
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d text="$MSG"
+
+      - name: Notify Telegram (Failure)
+        if: failure()
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d text="❌ [Toolkio] 자동 포스팅 실패! GitHub Actions 로그를 확인하세요."
