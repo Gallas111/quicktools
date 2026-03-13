@@ -99,36 +99,36 @@ const GENERAL_TOPICS = [
 async function generateTopic(existingSlugs) {
   const existingList = Array.from(existingSlugs).join(", ");
 
-  const prompt = `You are a content strategist for toolkio.com, a free online tools website.
+  const prompt = `You are a Korean SEO content strategist for toolkio.com, a free online tools website.
 
-Existing blog slugs (DO NOT repeat these): ${existingList}
+Existing blog slugs (DO NOT repeat these or similar topics): ${existingList}
 
-Available tools and their areas:
+Available tools on Toolkio:
 ${TOOL_TOPICS.map((t) => `- ${t.tool}: ${t.area}`).join("\n")}
 
-General topic ideas:
-${GENERAL_TOPICS.join("\n")}
-
-Generate ONE new blog post topic. It can be:
-1. A new angle on one of the tools (advanced tips, specific use case, comparison)
-2. A general topic about online tools, web development, or productivity
+Generate ONE new blog post topic. Strategy:
+1. Pick a SPECIFIC long-tail keyword that people search for on Google/Naver
+2. The topic should be related to one of the tools above OR general web/dev productivity
+3. Think about search intent — what problem is the searcher trying to solve?
+4. Avoid generic topics — be specific (e.g., "엑셀 JSON 변환 방법" not "JSON 사용법")
 
 Output ONLY valid JSON (no markdown fences):
 {
-  "slug": "kebab-case-slug-in-english",
+  "slug": "kebab-case-slug-in-english-max-5-words",
   "toolId": "tool-id-or-empty-string",
-  "titleKo": "SEO optimized Korean title (40-60 chars)",
+  "titleKo": "SEO optimized Korean title with main keyword (35-55 chars)",
   "titleEn": "English title",
-  "descKo": "Korean meta description (80-120 chars)",
+  "descKo": "Korean meta description — 검색 결과에 보이는 설명, 클릭 유도 (80-120 chars)",
   "descEn": "English meta description",
-  "keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5"]
+  "keywords": ["메인키워드", "관련키워드1", "related-english", "롱테일키워드", "LSI키워드", "추가키워드"]
 }
 
 Rules:
-- slug must be unique (not in existing list)
-- Korean title should include target keyword naturally
-- Keywords should mix Korean and English terms
-- Focus on topics people actually search for`;
+- slug must be unique and descriptive (not in existing list)
+- titleKo: 메인 키워드를 앞쪽에 배치, 숫자/연도 포함 시 CTR 상승 (예: "2026년", "5가지 방법")
+- descKo: 검색 결과에서 클릭을 유도하는 매력적인 설명
+- keywords: 6개, 한국어/영어 혼합, 네이버+구글 모두 커버
+- 실제 검색 볼륨이 있을 만한 실용적 주제만 선택`;
 
   const result = await callGemini(prompt, "Blog topic generator for Korean online tools website");
   const cleaned = result.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
@@ -137,60 +137,77 @@ Rules:
 
 // ─── Content generation ──────────────────────────────────────────────────────
 async function generateContent(topic) {
-  const prompt = `Write a blog post for toolkio.com (Korean online tools website).
+  const toolMention = topic.toolId
+    ? `\n- 반드시 하나의 섹션에서 Toolkio의 "${topic.toolId}" 도구를 자연스럽게 언급하고, "toolkio.com에서 무료로 사용할 수 있습니다" 같은 CTA 포함`
+    : `\n- 관련 있는 Toolkio 도구가 있으면 자연스럽게 언급 (예: "toolkio.com의 OO 도구를 활용하면...")`;
+
+  const prompt = `You are a senior SEO content writer for toolkio.com, a Korean online tools website.
 
 Topic: ${topic.titleKo}
 Description: ${topic.descKo}
-Related tool: ${topic.toolId || "none"}
+Target keywords: ${topic.keywords.join(", ")}
+Related tool: ${topic.toolId || "general topic"}
 
 Output ONLY valid JSON (no markdown fences):
 {
   "ko": [
-    { "heading": "한국어 섹션 제목 1", "body": "한국어 본문 (200-400자, 자연스러운 한국어)..." },
-    { "heading": "한국어 섹션 제목 2", "body": "..." },
-    { "heading": "한국어 섹션 제목 3", "body": "..." },
-    { "heading": "한국어 섹션 제목 4", "body": "..." }
+    { "heading": "섹션 제목", "body": "본문..." },
+    ... (5-6 sections)
   ],
   "en": [
-    { "heading": "English Section Title 1", "body": "English body text (100-200 words)..." },
-    { "heading": "English Section Title 2", "body": "..." },
-    { "heading": "English Section Title 3", "body": "..." },
-    { "heading": "English Section Title 4", "body": "..." }
+    { "heading": "Section Title", "body": "Body text..." },
+    ... (5-6 sections)
   ]
 }
 
-Rules:
-- Write 4 sections in each language
-- Korean must be natural, NOT machine-translated
-- Include practical, useful information
-- Target keywords should appear naturally in headings and body
-- Each section body should be 200-400 characters in Korean
-- If a tool is related, include a section about using it on Toolkio
-- Do NOT include any markdown formatting in body text
-- Lists should use \\n- format (dash with newline)`;
+=== 핵심 SEO 규칙 ===
 
-  const result = await callGemini(prompt, "SEO blog content writer for Korean online tools website. Write natural Korean, not translated text.");
+1. 글 전체 길이: 한국어 기준 최소 2000자 이상 (구글 상위 노출에 필수)
+2. 각 섹션 본문: 한국어 400-700자, 영어 150-300단어
+3. 섹션 수: 5-6개 (도입 → 핵심 정보 → 실용 팁 → 심화 → 도구 활용 → 마무리)
+4. 키워드 배치:
+   - 메인 키워드를 첫 번째 섹션 본문 첫 2문장 안에 포함
+   - 각 섹션 heading에 관련 키워드 자연스럽게 포함
+   - 전체 글에서 메인 키워드 3-5회 자연스럽게 반복
+   - 키워드 스터핑 절대 금지 — 자연스러운 문맥에서만 사용
+5. 구조:
+   - heading은 H2 역할 — 구체적이고 검색 의도에 맞게 작성
+   - 본문에 리스트가 적합한 경우 \\n- 형식 사용 (구글 추천 스니펫에 유리)
+   - 숫자 데이터, 구체적 예시, 실전 팁 포함 (신뢰도 향상)
+6. 내부 링크:${toolMention}
+7. 톤: 전문적이지만 친근한 블로그 톤, ~체 사용
+8. 한국어는 반드시 자연스러운 원어민 수준 — 번역체 절대 금지
+9. 영어도 자연스럽고 전문적인 톤
+10. 본문에 마크다운 문법(**, ##, [] 등) 사용 금지 — 순수 텍스트만`;
+
+  const result = await callGemini(prompt, "You are Korea's top SEO blog writer. Write comprehensive, high-quality content that ranks #1 on Google and Naver. Every sentence must provide value. Use natural Korean that sounds like a human expert wrote it.");
   const cleaned = result.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
   return JSON.parse(cleaned);
 }
 
 // ─── FAQ generation ──────────────────────────────────────────────────────────
 async function generateFAQ(topic) {
-  const prompt = `Generate 3 FAQ items for this blog post.
+  const prompt = `Generate 5 FAQ items for this blog post. These will be used as Google FAQ Rich Snippets (FAQPage schema).
+
 Title: ${topic.titleKo}
 Description: ${topic.descKo}
+Keywords: ${topic.keywords.join(", ")}
 
 Output ONLY valid JSON (no markdown fences):
 [
-  { "question": "한국어 질문?", "answer": "한국어 답변 (2-3문장)" },
-  { "question": "한국어 질문?", "answer": "한국어 답변 (2-3문장)" },
-  { "question": "한국어 질문?", "answer": "한국어 답변 (2-3문장)" }
+  { "question": "한국어 질문?", "answer": "한국어 답변 (3-4문장, 구체적이고 유용한 정보)" },
+  { "question": "한국어 질문?", "answer": "..." },
+  { "question": "한국어 질문?", "answer": "..." },
+  { "question": "한국어 질문?", "answer": "..." },
+  { "question": "한국어 질문?", "answer": "..." }
 ]
 
 Rules:
-- Questions people actually search for
-- Concise, helpful answers (2-3 sentences each)
-- Natural Korean`;
+- 실제 사람들이 네이버/구글에 검색하는 질문 형태로 작성
+- 답변은 3-4문장, 구체적 수치/예시 포함
+- 첫 번째 FAQ에 메인 키워드 포함
+- 자연스러운 한국어 (번역체 금지)
+- "~입니다", "~합니다" 체 사용`;
 
   try {
     const result = await callGemini(prompt, "FAQ generator");
@@ -213,15 +230,23 @@ async function generateImage(topic) {
   let imagePrompt;
   try {
     const promptResult = await callGemini(
-      `Generate ONE English image prompt for a blog thumbnail about: "${topic.titleKo}".
-Style: clean modern illustration, vibrant colors, dark background, professional quality, 8K.
-Max 100 words. End with: "ABSOLUTELY NO text, letters, numbers, words, or characters of any language in the image."
-Output ONLY the prompt.`,
-      "Image prompt generator"
+      `Generate ONE English image prompt for a blog thumbnail about: "${topic.titleKo}" (${topic.titleEn}).
+
+Requirements:
+- Style: clean modern 3D illustration, isometric perspective preferred
+- Colors: vibrant gradient colors (blue, purple, teal, orange), dark navy/charcoal background
+- Content: visual metaphor that represents the topic (e.g., tools → toolbox, security → shield, code → floating code blocks)
+- Quality: professional quality, 8K, smooth lighting, subtle shadows
+- Composition: centered subject, clean negative space around edges for text overlay
+- Max 80 words
+
+CRITICAL: End with this exact sentence: "ABSOLUTELY NO text, letters, numbers, words, characters, labels, watermarks, or symbols of any language anywhere in the image."
+Output ONLY the prompt, nothing else.`,
+      "Professional blog thumbnail prompt generator"
     );
     imagePrompt = promptResult.trim();
   } catch {
-    imagePrompt = `Clean modern digital illustration about ${topic.titleEn}. Professional quality, vibrant colors, dark background, 8K. ABSOLUTELY NO text, letters, numbers, words, or characters of any language in the image.`;
+    imagePrompt = `Clean modern 3D isometric illustration about ${topic.titleEn}. Professional quality, vibrant gradient colors (blue, purple, teal), dark charcoal background, smooth lighting, centered composition. ABSOLUTELY NO text, letters, numbers, words, characters, labels, watermarks, or symbols of any language anywhere in the image.`;
   }
 
   console.log(`   📝 Image prompt: "${imagePrompt.slice(0, 80)}..."`);
