@@ -620,7 +620,7 @@ export default function YouTubeThumbnail() {
         <label className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
           {locale === "ko" ? "템플릿 선택" : "Choose Template"}
         </label>
-        <div className="grid grid-cols-5 gap-3 sm:grid-cols-5 md:grid-cols-10">
+        <div className="grid grid-cols-3 gap-2 sm:grid-cols-5 md:grid-cols-10 sm:gap-3">
           {templates.map((tpl) => (
             <button
               key={tpl.id}

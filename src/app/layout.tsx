@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Toolkio",
   },
   description:
-    "글자수 세기, 이미지 압축, QR코드 생성, JSON 포맷터, 비밀번호 생성기, 마크다운 미리보기, 정규식 테스터 등 19가지 무료 온라인 도구. Free online tools: character counter, image compressor, QR generator, JSON formatter, and more.",
+    "글자수 세기, 이미지 압축, QR코드 생성, 만나이 계산기, 연봉 실수령액 계산기, BMI 계산기, 단위 변환기, AI 프롬프트 생성기 등 30가지 무료 온라인 도구. Free online tools for everyday life and development.",
   keywords: [
     "글자수 세기",
     "이미지 압축",

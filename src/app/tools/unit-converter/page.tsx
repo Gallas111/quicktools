@@ -154,18 +154,18 @@ export default function UnitConverter() {
           <label className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
             {locale === "ko" ? "변환할 값" : "From"}
           </label>
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2 sm:flex-row">
             <input
               type="number"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
-              className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-lg dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+              className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-lg dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:flex-1"
               placeholder="0"
             />
             <select
               value={fromUnit}
               onChange={(e) => setFromUnit(Number(e.target.value))}
-              className="min-w-[160px] rounded-lg border border-gray-200 bg-gray-50 px-3 py-3 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+              className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-3 dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:w-auto sm:min-w-[160px]"
             >
               {units.map((u, i) => (
                 <option key={u.key} value={i}>
@@ -194,14 +194,14 @@ export default function UnitConverter() {
           <label className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
             {locale === "ko" ? "변환 결과" : "To"}
           </label>
-          <div className="flex gap-2">
-            <div className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-lg dark:border-gray-700 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col gap-2 sm:flex-row">
+            <div className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-lg dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:flex-1">
               {convert() || "\u00A0"}
             </div>
             <select
               value={toUnit}
               onChange={(e) => setToUnit(Number(e.target.value))}
-              className="min-w-[160px] rounded-lg border border-gray-200 bg-gray-50 px-3 py-3 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+              className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-3 dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:w-auto sm:min-w-[160px]"
             >
               {units.map((u, i) => (
                 <option key={u.key} value={i}>

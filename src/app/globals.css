@@ -23,4 +23,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent iOS zoom on input focus (font-size must be >= 16px) */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* Smooth scrolling for category pills */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Touch-friendly tap targets */
+@media (max-width: 640px) {
+  button, a, select {
+    min-height: 44px;
+  }
 }
