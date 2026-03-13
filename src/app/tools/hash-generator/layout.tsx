@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSON 포맷터 - JSON Formatter & Validator",
+  title: "해시 생성기 - Hash Generator",
   description:
-    "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online for free.",
-  keywords: ["JSON 포맷터", "JSON 정렬", "JSON formatter", "JSON beautifier", "JSON validator", "JSON minifier"],
+    "텍스트의 SHA-1, SHA-256, SHA-512 해시를 생성하세요. Generate SHA-1, SHA-256, SHA-512 hashes from text.",
+  keywords: ["해시 생성기", "SHA-256", "SHA-512", "hash generator", "해시 변환", "SHA-1"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "JSON 포맷터 - JSON Formatter & Validator",
-  url: "https://toolkio.com/tools/json-formatter",
-  description: "JSON을 정렬, 검증, 압축하는 무료 온라인 도구",
+  name: "해시 생성기 - Hash Generator",
+  url: "https://toolkio.com/tools/hash-generator",
+  description: "SHA-1, SHA-256, SHA-512 해시를 생성하는 무료 온라인 도구",
   applicationCategory: "DeveloperApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },

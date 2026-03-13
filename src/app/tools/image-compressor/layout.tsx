@@ -7,6 +7,26 @@ export const metadata: Metadata = {
   keywords: ["이미지 압축", "이미지 리사이즈", "image compressor", "image resize", "webp converter"],
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "이미지 압축 - Image Compressor",
+  url: "https://toolkio.com/tools/image-compressor",
+  description: "이미지를 무료로 압축하고 포맷을 변환하는 온라인 도구",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "All",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
+  inLanguage: ["ko", "en"],
+};
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {children}
+    </>
+  );
 }

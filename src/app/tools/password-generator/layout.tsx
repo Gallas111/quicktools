@@ -7,6 +7,26 @@ export const metadata: Metadata = {
   keywords: ["비밀번호 생성기", "비밀번호 만들기", "password generator", "strong password", "random password"],
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "비밀번호 생성기 - Password Generator",
+  url: "https://toolkio.com/tools/password-generator",
+  description: "강력하고 안전한 비밀번호를 생성하는 무료 온라인 도구",
+  applicationCategory: "SecurityApplication",
+  operatingSystem: "All",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
+  inLanguage: ["ko", "en"],
+};
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {children}
+    </>
+  );
 }

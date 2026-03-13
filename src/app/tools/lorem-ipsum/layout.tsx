@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "글자수 세기 - Character Counter",
+  title: "Lorem Ipsum 생성기 - Lorem Ipsum Generator",
   description:
-    "글자수, 공백 제외 글자수, 단어수, 문장수, 바이트 수를 실시간으로 세어보세요. Count characters, words, sentences, and bytes in real-time.",
-  keywords: ["글자수 세기", "글자수 계산", "character counter", "word counter", "byte counter"],
+    "더미 텍스트를 원하는 양만큼 생성하세요. Generate placeholder text for your designs and layouts.",
+  keywords: ["Lorem Ipsum 생성기", "더미 텍스트", "lorem ipsum generator", "placeholder text", "임시 텍스트"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "글자수 세기 - Character Counter",
-  url: "https://toolkio.com/tools/character-counter",
-  description: "글자수, 단어수, 바이트 수를 실시간으로 세는 무료 온라인 도구",
+  name: "Lorem Ipsum 생성기 - Lorem Ipsum Generator",
+  url: "https://toolkio.com/tools/lorem-ipsum",
+  description: "디자인 및 레이아웃용 더미 텍스트를 생성하는 무료 온라인 도구",
   applicationCategory: "UtilityApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },

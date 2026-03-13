@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSON 포맷터 - JSON Formatter & Validator",
+  title: "타임스탬프 변환기 - Timestamp Converter",
   description:
-    "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online for free.",
-  keywords: ["JSON 포맷터", "JSON 정렬", "JSON formatter", "JSON beautifier", "JSON validator", "JSON minifier"],
+    "Unix 타임스탬프를 날짜로 변환하거나 날짜를 타임스탬프로 변환하세요. Convert between Unix timestamps and human-readable dates.",
+  keywords: ["타임스탬프 변환", "Unix timestamp", "epoch 변환기", "timestamp converter", "유닉스 시간"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "JSON 포맷터 - JSON Formatter & Validator",
-  url: "https://toolkio.com/tools/json-formatter",
-  description: "JSON을 정렬, 검증, 압축하는 무료 온라인 도구",
+  name: "타임스탬프 변환기 - Timestamp Converter",
+  url: "https://toolkio.com/tools/timestamp-converter",
+  description: "Unix 타임스탬프와 날짜를 변환하는 무료 온라인 도구",
   applicationCategory: "DeveloperApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },

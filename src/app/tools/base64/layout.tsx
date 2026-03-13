@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSON 포맷터 - JSON Formatter & Validator",
+  title: "Base64 인코더/디코더 - Base64 Encoder/Decoder",
   description:
-    "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online for free.",
-  keywords: ["JSON 포맷터", "JSON 정렬", "JSON formatter", "JSON beautifier", "JSON validator", "JSON minifier"],
+    "텍스트를 Base64로 인코딩하거나 디코딩하세요. Encode or decode text with Base64 instantly in your browser.",
+  keywords: ["Base64 인코딩", "Base64 디코딩", "base64 encoder", "base64 decoder", "base64 변환"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "JSON 포맷터 - JSON Formatter & Validator",
-  url: "https://toolkio.com/tools/json-formatter",
-  description: "JSON을 정렬, 검증, 압축하는 무료 온라인 도구",
+  name: "Base64 인코더/디코더 - Base64 Encoder/Decoder",
+  url: "https://toolkio.com/tools/base64",
+  description: "텍스트를 Base64로 인코딩/디코딩하는 무료 온라인 도구",
   applicationCategory: "DeveloperApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },

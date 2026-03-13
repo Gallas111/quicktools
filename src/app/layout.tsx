@@ -28,18 +28,44 @@ export const metadata: Metadata = {
     template: "%s | Toolkio",
   },
   description:
-    "글자수 세기, 이미지 압축, QR코드 생성, JSON 포맷터, 비밀번호 생성기 등 무료 온라인 도구. Free online tools: character counter, image compressor, QR generator, JSON formatter, password generator.",
+    "글자수 세기, 이미지 압축, QR코드 생성, JSON 포맷터, 비밀번호 생성기, 마크다운 미리보기, 정규식 테스터 등 19가지 무료 온라인 도구. Free online tools: character counter, image compressor, QR generator, JSON formatter, and more.",
   keywords: [
     "글자수 세기",
     "이미지 압축",
     "QR코드 생성기",
     "JSON 포맷터",
     "비밀번호 생성기",
+    "Base64 인코딩",
+    "URL 인코딩",
+    "Lorem Ipsum 생성기",
+    "타임스탬프 변환",
+    "해시 생성기",
     "character counter",
     "image compressor",
     "QR code generator",
     "JSON formatter",
     "password generator",
+    "base64 encoder",
+    "url encoder",
+    "lorem ipsum generator",
+    "timestamp converter",
+    "hash generator",
+    "마크다운 미리보기",
+    "정규식 테스터",
+    "텍스트 비교",
+    "대소문자 변환",
+    "UUID 생성기",
+    "CSS 압축",
+    "진법 변환기",
+    "텍스트 분석",
+    "markdown preview",
+    "regex tester",
+    "diff checker",
+    "case converter",
+    "uuid generator",
+    "css minifier",
+    "number base converter",
+    "text analyzer",
     "free online tools",
     "무료 온라인 도구",
   ],
@@ -76,6 +102,25 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Toolkio",
+  url: "https://toolkio.com",
+  description:
+    "글자수 세기, 이미지 압축, QR코드 생성, JSON 포맷터 등 무료 온라인 도구 모음. Free online tools.",
+  inLanguage: ["ko", "en"],
+  publisher: {
+    "@type": "Organization",
+    name: "Toolkio",
+    url: "https://toolkio.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://toolkio.com/android-chrome-512x512.png",
+    },
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -83,6 +128,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-F13BRWNM09"
         strategy="afterInteractive"

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSON 포맷터 - JSON Formatter & Validator",
+  title: "URL 인코더/디코더 - URL Encoder/Decoder",
   description:
-    "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online for free.",
-  keywords: ["JSON 포맷터", "JSON 정렬", "JSON formatter", "JSON beautifier", "JSON validator", "JSON minifier"],
+    "URL을 인코딩하거나 디코딩하세요. Encode or decode URLs instantly in your browser.",
+  keywords: ["URL 인코딩", "URL 디코딩", "url encoder", "url decoder", "URL 변환", "percent encoding"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "JSON 포맷터 - JSON Formatter & Validator",
-  url: "https://toolkio.com/tools/json-formatter",
-  description: "JSON을 정렬, 검증, 압축하는 무료 온라인 도구",
+  name: "URL 인코더/디코더 - URL Encoder/Decoder",
+  url: "https://toolkio.com/tools/url-encoder",
+  description: "URL을 인코딩/디코딩하는 무료 온라인 도구",
   applicationCategory: "DeveloperApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },

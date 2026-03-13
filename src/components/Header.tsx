@@ -24,6 +24,12 @@ export default function Header() {
               {t.allTools}
             </Link>
           )}
+          <Link
+            href="/blog"
+            className="text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          >
+            {locale === "ko" ? "블로그" : "Blog"}
+          </Link>
           <button
             onClick={() => setLocale(locale === "ko" ? "en" : "ko")}
             className="rounded-lg border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSON 포맷터 - JSON Formatter & Validator",
+  title: "정규식 테스터 - Regex Tester",
   description:
-    "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online for free.",
-  keywords: ["JSON 포맷터", "JSON 정렬", "JSON formatter", "JSON beautifier", "JSON validator", "JSON minifier"],
+    "정규식을 테스트하고 매칭 결과를 확인하세요. 무료 온라인 정규표현식 테스터. Test regular expressions and see matches instantly. Free online regex tester.",
+  keywords: ["정규식 테스터", "정규표현식", "regex tester", "regular expression", "regex matcher", "정규식 검사"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "JSON 포맷터 - JSON Formatter & Validator",
-  url: "https://toolkio.com/tools/json-formatter",
-  description: "JSON을 정렬, 검증, 압축하는 무료 온라인 도구",
+  name: "정규식 테스터 - Regex Tester",
+  url: "https://toolkio.com/tools/regex-tester",
+  description: "정규식을 테스트하고 매칭 결과를 확인하는 무료 온라인 도구",
   applicationCategory: "DeveloperApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },

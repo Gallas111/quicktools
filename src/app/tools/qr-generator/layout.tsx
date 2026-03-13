@@ -7,6 +7,26 @@ export const metadata: Metadata = {
   keywords: ["QR코드 생성기", "QR코드 만들기", "QR code generator", "QR code maker", "free QR code"],
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "QR코드 생성기 - QR Code Generator",
+  url: "https://toolkio.com/tools/qr-generator",
+  description: "URL, 텍스트로 QR코드를 무료로 생성하는 온라인 도구",
+  applicationCategory: "UtilityApplication",
+  operatingSystem: "All",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
+  inLanguage: ["ko", "en"],
+};
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {children}
+    </>
+  );
 }

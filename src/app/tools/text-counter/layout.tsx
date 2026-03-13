@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "글자수 세기 - Character Counter",
+  title: "텍스트 분석기 - Text Analyzer",
   description:
-    "글자수, 공백 제외 글자수, 단어수, 문장수, 바이트 수를 실시간으로 세어보세요. Count characters, words, sentences, and bytes in real-time.",
-  keywords: ["글자수 세기", "글자수 계산", "character counter", "word counter", "byte counter"],
+    "텍스트의 글자수, 단어수, 문장수, 읽기 시간, 단어 빈도를 분석하세요. Analyze text for character count, word count, sentences, reading time, and word frequency.",
+  keywords: ["텍스트 분석", "읽기 시간", "단어 빈도", "text analyzer", "reading time", "word frequency"],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "글자수 세기 - Character Counter",
-  url: "https://toolkio.com/tools/character-counter",
-  description: "글자수, 단어수, 바이트 수를 실시간으로 세는 무료 온라인 도구",
+  name: "텍스트 분석기 - Text Analyzer",
+  url: "https://toolkio.com/tools/text-counter",
+  description: "텍스트의 글자수, 단어수, 읽기 시간, 단어 빈도를 분석하는 무료 온라인 도구",
   applicationCategory: "UtilityApplication",
   operatingSystem: "All",
   offers: { "@type": "Offer", price: "0", priceCurrency: "KRW" },
