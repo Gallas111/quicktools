@@ -73,6 +73,23 @@ function generateJsonLd(slug: string) {
         { "@type": "ListItem", position: 3, name: post.title.ko, item: url },
       ],
     },
+    // FAQPage schema (conditionally added)
+    ...(post.faq
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: post.faq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
+          },
+        ]
+      : []),
   ];
 }
 

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toolkio 블로그</title>
+    <link>https://toolkio.com/blog</link>
+    <description>무료 온라인 도구 사용법과 팁을 소개하는 Toolkio 블로그</description>
+    <language>ko</language>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://toolkio.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>글자수 세기 완벽 가이드 - 네이버 블로그, 자기소개서 글자수 제한 확인법</title>
+      <link>https://toolkio.com/blog/how-to-count-characters</link>
+      <description>네이버 블로그, 자기소개서, SNS 글자수 제한을 빠르게 확인하는 방법. 공백 포함/제외, 바이트 계산까지 한번에.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-count-characters</guid>
+    </item>
+    <item>
+      <title>이미지 압축 방법 총정리 - 화질 손실 없이 용량 줄이기</title>
+      <link>https://toolkio.com/blog/how-to-compress-images</link>
+      <description>웹사이트 속도 개선, 이메일 첨부를 위한 이미지 압축 방법. JPG, PNG, WebP 포맷별 특징과 최적 압축률.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-compress-images</guid>
+    </item>
+    <item>
+      <title>QR코드 만드는 법 - 무료로 QR코드 생성하고 활용하기</title>
+      <link>https://toolkio.com/blog/how-to-create-qr-code</link>
+      <description>명함, 메뉴판, 이벤트 포스터에 QR코드를 넣는 방법. 무료 QR코드 생성기 사용법과 활용 팁.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-create-qr-code</guid>
+    </item>
+    <item>
+      <title>안전한 비밀번호 만드는 법 - 해킹당하지 않는 비밀번호 가이드</title>
+      <link>https://toolkio.com/blog/how-to-create-strong-password</link>
+      <description>해킹에 안전한 비밀번호 만드는 방법. 비밀번호 길이, 특수문자 조합, 관리 팁까지 총정리.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-create-strong-password</guid>
+    </item>
+    <item>
+      <title>텍스트 비교하는 방법 - 두 문서의 차이점 빠르게 찾기</title>
+      <link>https://toolkio.com/blog/how-to-compare-text</link>
+      <description>코드 리뷰, 문서 수정, 번역 검수에 유용한 텍스트 비교 방법. 온라인 Diff 도구 사용법.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-compare-text</guid>
+    </item>
+    <item>
+      <title>JSON 포맷터 사용법 - JSON 데이터를 보기 좋게 정리하는 방법</title>
+      <link>https://toolkio.com/blog/how-to-format-json</link>
+      <description>복잡한 JSON 데이터를 깔끔하게 정렬하고 유효성을 검사하는 방법. 개발자를 위한 JSON 포맷터 활용 가이드.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-format-json</guid>
+    </item>
+    <item>
+      <title>색상 변환 가이드 - HEX, RGB, HSL 색상 코드 변환하는 법</title>
+      <link>https://toolkio.com/blog/how-to-convert-colors</link>
+      <description>디자인과 개발에 필요한 색상 코드 변환 방법. HEX, RGB, HSL 차이점과 사용법 총정리.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-convert-colors</guid>
+    </item>
+    <item>
+      <title>Base64 인코딩 방법 - 텍스트와 파일을 Base64로 변환하기</title>
+      <link>https://toolkio.com/blog/how-to-encode-base64</link>
+      <description>Base64 인코딩과 디코딩의 원리와 활용법. 이메일 첨부, API 통신, 이미지 삽입에 쓰이는 Base64 가이드.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-encode-base64</guid>
+    </item>
+    <item>
+      <title>URL 인코딩 방법 - 특수문자와 한글이 포함된 URL 처리하기</title>
+      <link>https://toolkio.com/blog/how-to-encode-urls</link>
+      <description>URL에 한글, 공백, 특수문자가 포함될 때 안전하게 인코딩하는 방법. 퍼센트 인코딩 원리와 활용법.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-encode-urls</guid>
+    </item>
+    <item>
+      <title>Lorem Ipsum 더미 텍스트 생성 방법 - 디자인 시안에 활용하기</title>
+      <link>https://toolkio.com/blog/how-to-generate-lorem-ipsum</link>
+      <description>웹 디자인, 인쇄물, 프레젠테이션에 사용할 더미 텍스트 생성 방법. Lorem Ipsum의 유래와 활용 팁.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-generate-lorem-ipsum</guid>
+    </item>
+    <item>
+      <title>타임스탬프 변환 방법 - Unix 타임스탬프와 날짜 변환 가이드</title>
+      <link>https://toolkio.com/blog/how-to-convert-timestamps</link>
+      <description>Unix 타임스탬프를 사람이 읽을 수 있는 날짜로 변환하는 방법. 타임존 처리와 개발 실무 활용법.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-convert-timestamps</guid>
+    </item>
+    <item>
+      <title>해시 생성 방법 - MD5, SHA-256 해시값 만들기와 활용법</title>
+      <link>https://toolkio.com/blog/how-to-generate-hash</link>
+      <description>파일 무결성 검증, 비밀번호 저장에 사용되는 해시 함수의 원리와 활용법. MD5, SHA-256 차이점 비교.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-generate-hash</guid>
+    </item>
+    <item>
+      <title>마크다운 미리보기 가이드 - 실시간으로 Markdown 문법 확인하기</title>
+      <link>https://toolkio.com/blog/how-to-preview-markdown</link>
+      <description>마크다운 문법을 실시간으로 미리보기하는 방법. 깃허브 README, 블로그 글 작성에 필요한 Markdown 문법 총정리.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-preview-markdown</guid>
+    </item>
+    <item>
+      <title>정규표현식 테스트 방법 - 초보자를 위한 Regex 가이드</title>
+      <link>https://toolkio.com/blog/how-to-test-regex</link>
+      <description>정규표현식(Regex) 작성과 테스트 방법. 이메일 검증, 전화번호 추출 등 실무에서 바로 쓰는 패턴 모음.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-test-regex</guid>
+    </item>
+    <item>
+      <title>영문 대소문자 변환 방법 - 텍스트 케이스 한번에 바꾸기</title>
+      <link>https://toolkio.com/blog/how-to-convert-text-case</link>
+      <description>영문 대소문자를 한번에 변환하는 방법. UPPERCASE, lowercase, camelCase, Title Case 등 다양한 케이스 변환.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-convert-text-case</guid>
+    </item>
+    <item>
+      <title>UUID 생성 방법 - 고유 식별자의 모든 것</title>
+      <link>https://toolkio.com/blog/how-to-generate-uuid</link>
+      <description>UUID(범용 고유 식별자)의 개념과 생성 방법. v1, v4, v7 차이점과 실무 활용법 총정리.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-generate-uuid</guid>
+    </item>
+    <item>
+      <title>CSS 압축(Minify) 방법 - 웹사이트 속도를 높이는 CSS 최적화</title>
+      <link>https://toolkio.com/blog/how-to-minify-css</link>
+      <description>CSS 파일을 압축하여 웹사이트 로딩 속도를 높이는 방법. CSS Minification의 원리와 실전 적용법.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-minify-css</guid>
+    </item>
+    <item>
+      <title>진법 변환 방법 - 2진수, 8진수, 10진수, 16진수 쉽게 바꾸기</title>
+      <link>https://toolkio.com/blog/how-to-convert-number-bases</link>
+      <description>2진수, 8진수, 10진수, 16진수 간의 진법 변환 방법. 프로그래밍과 컴퓨터 과학의 필수 지식.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-convert-number-bases</guid>
+    </item>
+    <item>
+      <title>텍스트 카운터 사용법 - 단어수, 문장수, 문단수 한번에 세기</title>
+      <link>https://toolkio.com/blog/how-to-count-text</link>
+      <description>단어수, 문장수, 문단수, 읽기 시간을 한번에 확인하는 방법. 리포트, 논문, 블로그 글 작성에 필수.</description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-count-text</guid>
+    </item>
+  </channel>
+</rss>

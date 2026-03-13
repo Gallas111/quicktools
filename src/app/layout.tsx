@@ -129,6 +129,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Toolkio 블로그"
+          href="/rss.xml"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
