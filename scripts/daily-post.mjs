@@ -339,7 +339,7 @@ function updateBlogFile(topic, content, faq) {
   const hasImage = fs.existsSync(path.join(ROOT, "public", imagePath.slice(1)));
 
   // Escape content for TypeScript string
-  const escapeTS = (s) => s.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$").replace(/"/g, '\\"');
+  const escapeTS = (s) => s.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$").replace(/"/g, '\\"').replace(/\n/g, "\\n").replace(/\r/g, "");
 
   const faqStr = faq
     ? `\n    faq: [\n${faq
