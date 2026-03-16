@@ -132,7 +132,11 @@ Rules:
 
   const result = await callGemini(prompt, "Blog topic generator for Korean online tools website");
   const cleaned = result.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
-  return JSON.parse(cleaned);
+  const topic = JSON.parse(cleaned);
+  if (!topic.slug || !topic.titleKo || !topic.titleEn || !topic.descKo || !topic.descEn || !Array.isArray(topic.keywords)) {
+    throw new Error(`Invalid topic JSON: missing required fields (got keys: ${Object.keys(topic).join(", ")})`);
+  }
+  return topic;
 }
 
 // ─── Content generation ──────────────────────────────────────────────────────
@@ -182,7 +186,11 @@ Output ONLY valid JSON (no markdown fences):
 
   const result = await callGemini(prompt, "You are Korea's top SEO blog writer. Write comprehensive, high-quality content that ranks #1 on Google and Naver. Every sentence must provide value. Use natural Korean that sounds like a human expert wrote it.");
   const cleaned = result.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
-  return JSON.parse(cleaned);
+  const content = JSON.parse(cleaned);
+  if (!Array.isArray(content.ko) || !Array.isArray(content.en) || content.ko.length === 0 || content.en.length === 0) {
+    throw new Error(`Invalid content JSON: ko=${content.ko?.length || 0} sections, en=${content.en?.length || 0} sections`);
+  }
+  return content;
 }
 
 // ─── FAQ generation ──────────────────────────────────────────────────────────
@@ -390,8 +398,10 @@ function updateSitemap(slug) {
   const sitemapPath = path.join(ROOT, "public/sitemap.xml");
   let sitemap = fs.readFileSync(sitemapPath, "utf-8");
 
+  const today = new Date().toISOString().split("T")[0];
   const newEntry = `  <url>
     <loc>https://toolkio.com/blog/${slug}</loc>
+    <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`;
@@ -407,7 +417,8 @@ function updateRSS(topic) {
   if (!fs.existsSync(rssPath)) return;
 
   let rss = fs.readFileSync(rssPath, "utf-8");
-  const today = new Date().toUTCString();
+  const now = new Date();
+  const today = now.toISOString().replace(/\.\d{3}Z$/, "+00:00");
 
   const escapeXml = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -490,6 +501,7 @@ async function main() {
   console.log(`📝 Existing posts: ${existingSlugs.size}`);
 
   const results = [];
+  const failures = [];
 
   for (let i = 1; i <= POST_COUNT; i++) {
     try {
@@ -502,6 +514,7 @@ async function main() {
       }
     } catch (err) {
       console.error(`❌ Post ${i} failed: ${err.message}`);
+      failures.push({ postNum: i, error: err.message });
       // Continue with remaining posts
     }
   }
@@ -512,6 +525,10 @@ async function main() {
     console.log(`   ${i + 1}. ${t.titleKo}`);
     console.log(`      https://toolkio.com/blog/${t.slug}`);
   });
+  if (failures.length > 0) {
+    console.log(`\n⚠️ ${failures.length} post(s) failed:`);
+    failures.forEach((f) => console.log(`   Post ${f.postNum}: ${f.error}`));
+  }
   console.log("═".repeat(50));
 
   // Output for GitHub Actions
