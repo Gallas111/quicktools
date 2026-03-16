@@ -50,10 +50,6 @@ jobs:
           git commit -m "Add daily blog post: $(date +%Y-%m-%d)"
           git push
 
-      - name: Ping Google Sitemap
-        if: success()
-        run: curl -s "https://www.google.com/ping?sitemap=https://toolkio.com/sitemap.xml" || true
-
       - name: Notify Telegram (Success)
         if: success()
         run: |
