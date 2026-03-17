@@ -5,9 +5,44 @@
     <link>https://toolkio.com/blog</link>
     <description>무료 온라인 도구 사용법과 팁을 소개하는 Toolkio 블로그</description>
     <language>ko</language>
-    <lastBuildDate>2026-03-16T22:30:11+00:00</lastBuildDate>
+    <lastBuildDate>2026-03-17T22:30:21+00:00</lastBuildDate>
     <atom:link href="https://toolkio.com/rss.xml" rel="self" type="application/rss+xml"/>
-                                                                                                    <item>
+                                                                                                                        <item>
+      <title>개발자 이력서, 마크다운으로 깔끔하게 작성하는 법</title>
+      <link>https://toolkio.com/blog/markdown-developer-resume/</link>
+      <description>개발자라면 주목! GitHub 친화적인 마크다운으로 이력서를 작성하고 미리보기까지. 깔끔하고 효과적인 이력서 작성 팁을 얻어가세요!</description>
+      <pubDate>2026-03-17T22:30:21+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/markdown-developer-resume/</guid>
+    </item>
+    <item>
+      <title>UUID 버전별 차이와 적절한 사용법: v1, v4, v5</title>
+      <link>https://toolkio.com/blog/uuid-version-differences/</link>
+      <description>UUID v1, v4, v5는 어떻게 다를까요? 각 버전의 특징과 개발 시 올바른 UUID 선택 가이드를 Toolkio와 함께 알아보세요.</description>
+      <pubDate>2026-03-17T22:29:07+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/uuid-version-differences/</guid>
+    </item>
+    <item>
+      <title>마케팅 QR코드 제작, 2024년 효과적인 활용법 5가지</title>
+      <link>https://toolkio.com/blog/marketing-qr-code-guide/</link>
+      <description>2024년 마케팅 캠페인에 필수적인 QR코드! 툴키오 QR 생성기로 쉽게 만들고, 고객 참여를 유도하는 5가지 마케팅 활용 전략을 알아보세요.</description>
+      <pubDate>2026-03-17T22:27:56+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/marketing-qr-code-guide/</guid>
+    </item>
+    <item>
+      <title>엑셀 JSON 변환 방법: 데이터 구조화 및 API 활용 가이드</title>
+      <link>https://toolkio.com/blog/excel-to-json-conversion/</link>
+      <description>엑셀 데이터를 JSON 형식으로 손쉽게 변환하는 방법을 알아보세요. API 연동, 데이터 전송에 최적화된 JSON 파일 생성 팁을 제공합니다.</description>
+      <pubDate>2026-03-17T22:26:46+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/excel-to-json-conversion/</guid>
+    </item>
+    <item>
+      <title>API 한글 URL 인코딩 오류 해결법: Toolkio 변환 가이드</title>
+      <link>https://toolkio.com/blog/api-korean-url-encoding-fix/</link>
+      <description>API 호출 시 한글 URL 인코딩 문제로 어려움을 겪으셨나요? Toolkio의 URL 인코더로 정확하게 변환하고 오류를 해결하는 방법을 자세히 알려드립니다.</description>
+      <pubDate>2026-03-17T22:25:51+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/api-korean-url-encoding-fix/</guid>
+    </item>
+    <item>
       <title>IP 주소 정규표현식: IPv4/IPv6 유효성 검사 및 추출 방법</title>
       <link>https://toolkio.com/blog/ip-address-regex-validation/</link>
       <description>IP 주소(IPv4, IPv6)를 정확하게 검증하고 텍스트에서 추출하는 정규표현식 패턴을 알아보세요. Toolkio 정규표현식 테스터에서 바로 활용 가능합니다.</description>
