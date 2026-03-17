@@ -1,0 +1,33 @@
+name: 3-Day Growth Report
+
+on:
+  schedule:
+    # 3일마다 KST 09:00 (UTC 00:00)에 실행
+    - cron: '0 0 */3 * *'
+  workflow_dispatch: # 수동 실행 가능
+
+jobs:
+  growth-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install googleapis @google/generative-ai nodemailer marked
+
+      - name: Run Growth Report
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GOOGLE_CREDENTIALS_BASE64: ${{ secrets.GOOGLE_CREDENTIALS_BASE64 }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
+        run: node scripts/growth-report.mjs
