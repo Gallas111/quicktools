@@ -14,6 +14,13 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
+// KST (UTC+9) 기준 날짜
+function getKSTDate() {
+  const now = new Date();
+  const kst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  return kst.toISOString().split("T")[0];
+}
+
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 if (!GEMINI_API_KEY) {
   console.error("❌ GEMINI_API_KEY is required");
@@ -334,7 +341,7 @@ function updateBlogFile(topic, content, faq) {
   const blogPath = path.join(ROOT, "src/lib/blog.ts");
   let blogFile = fs.readFileSync(blogPath, "utf-8");
 
-  const today = new Date().toISOString().split("T")[0];
+  const today = getKSTDate();
   const imagePath = `/images/blog/${topic.slug}.webp`;
   const hasImage = fs.existsSync(path.join(ROOT, "public", imagePath.slice(1)));
 
@@ -398,9 +405,9 @@ function updateSitemap(slug) {
   const sitemapPath = path.join(ROOT, "public/sitemap.xml");
   let sitemap = fs.readFileSync(sitemapPath, "utf-8");
 
-  const today = new Date().toISOString().split("T")[0];
+  const today = getKSTDate();
   const newEntry = `  <url>
-    <loc>https://toolkio.com/blog/${slug}</loc>
+    <loc>https://toolkio.com/blog/${slug}/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -424,10 +431,10 @@ function updateRSS(topic) {
 
   const newItem = `    <item>
       <title>${escapeXml(topic.titleKo)}</title>
-      <link>https://toolkio.com/blog/${topic.slug}</link>
+      <link>https://toolkio.com/blog/${topic.slug}/</link>
       <description>${escapeXml(topic.descKo)}</description>
       <pubDate>${today}</pubDate>
-      <guid isPermaLink="true">https://toolkio.com/blog/${topic.slug}</guid>
+      <guid isPermaLink="true">https://toolkio.com/blog/${topic.slug}/</guid>
     </item>`;
 
   // Insert after the first <item> (after channel metadata)

@@ -52,7 +52,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "Add daily blog post: $(date +%Y-%m-%d)"
+          git commit -m "Add daily blog post: $(TZ=Asia/Seoul date +%Y-%m-%d)"
           git push
 
       - name: Notify Telegram (Success)
