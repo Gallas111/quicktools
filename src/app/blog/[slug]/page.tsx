@@ -29,6 +29,11 @@ export default function BlogPost() {
   const tool = tools.find((t) => t.id === post.toolId);
   const sections = post.content[locale];
 
+  // Calculate reading time
+  const totalText = sections.map((s) => s.body).join(" ");
+  const wordCount = totalText.trim().split(/\s+/).length;
+  const readingTimeMin = Math.max(1, Math.ceil(wordCount / 200));
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
       <div className="mb-8">
@@ -42,7 +47,13 @@ export default function BlogPost() {
 
       <article>
         <header className="mb-10">
-          <time className="text-sm text-gray-500 dark:text-gray-400">{post.date}</time>
+          <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
+            <time>{post.date}</time>
+            <span>·</span>
+            <span>
+              {locale === "ko" ? `${readingTimeMin}분 읽기` : `${readingTimeMin} min read`}
+            </span>
+          </div>
           <h1 className="mt-2 text-3xl font-bold leading-tight text-gray-900 dark:text-white sm:text-4xl">
             {post.title[locale]}
           </h1>

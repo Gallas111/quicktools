@@ -5,6 +5,7 @@ import "./globals.css";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
   verification: {
     other: {
       "naver-site-verification": "5c4ae463a9b30dd1d2a73fc880af77c01ec1959c",
+      "google-adsense-account": "ca-pub-1022869499967960",
     },
   },
   title: {
@@ -158,6 +160,7 @@ export default function RootLayout({
         <LocaleProvider>
           <div className="flex min-h-screen flex-col">
             <Header />
+            <Breadcrumb />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>

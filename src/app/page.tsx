@@ -23,6 +23,20 @@ export default function Home() {
         <p className="text-base text-gray-600 dark:text-gray-400 sm:text-lg">
           {t.heroSub}
         </p>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm text-gray-500 dark:text-gray-400">
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block h-2 w-2 rounded-full bg-green-500" />
+            {locale === "ko" ? "회원가입 불필요" : "No sign-up"}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block h-2 w-2 rounded-full bg-blue-500" />
+            {locale === "ko" ? "완전 무료" : "100% Free"}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block h-2 w-2 rounded-full bg-purple-500" />
+            {locale === "ko" ? "데이터 서버 전송 없음" : "Privacy first"}
+          </span>
+        </div>
       </section>
 
       <section>

@@ -36,8 +36,16 @@ export default function BlogList() {
               </div>
             )}
             <div className="p-6">
-              <div className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                {post.date}
+              <div className="mb-2 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+                <span>{post.date}</span>
+                <span>·</span>
+                <span>
+                  {(() => {
+                    const text = post.content[locale].map((s) => s.body).join(" ");
+                    const mins = Math.max(1, Math.ceil(text.trim().split(/\s+/).length / 200));
+                    return locale === "ko" ? `${mins}분` : `${mins} min`;
+                  })()}
+                </span>
               </div>
               <h2 className="mb-2 text-xl font-semibold text-gray-900 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
                 {post.title[locale]}
