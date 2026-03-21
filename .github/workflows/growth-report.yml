@@ -2,8 +2,8 @@ name: 3-Day Growth Report
 
 on:
   schedule:
-    # 3일마다 KST 09:00 (UTC 00:00)에 실행
-    - cron: '0 0 */3 * *'
+    # 매주 월요일 KST 09:00 (UTC 00:00)에 실행
+    - cron: '0 0 * * 1'
   workflow_dispatch: # 수동 실행 가능
 
 jobs:
