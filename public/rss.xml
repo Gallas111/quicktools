@@ -5,9 +5,44 @@
     <link>https://toolkio.com/blog</link>
     <description>무료 온라인 도구 사용법과 팁을 소개하는 Toolkio 블로그</description>
     <language>ko</language>
-    <lastBuildDate>2026-03-21T22:20:50+00:00</lastBuildDate>
+    <lastBuildDate>2026-03-22T22:22:42+00:00</lastBuildDate>
     <atom:link href="https://toolkio.com/rss.xml" rel="self" type="application/rss+xml"/>
-                                                                                                                                                                                    <item>
+                                                                                                                                                                                                        <item>
+      <title>CMYK RGB 변환 완벽 가이드: 인쇄용 색상을 웹에 맞게 변환하는 팁</title>
+      <link>https://toolkio.com/blog/cmyk-rgb-color-conversion/</link>
+      <description>인쇄물 색상을 웹에서 그대로 구현하고 싶으신가요? CMYK 색상 모델을 RGB로 정확하게 변환하여 일관된 브랜드 컬러를 유지하는 방법을 알아보세요.</description>
+      <pubDate>2026-03-22T22:22:42+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/cmyk-rgb-color-conversion/</guid>
+    </item>
+    <item>
+      <title>정규표현식 치환: 텍스트 패턴 변경 및 수정 완벽 가이드</title>
+      <link>https://toolkio.com/blog/regex-text-replace/</link>
+      <description>정규표현식을 활용하여 특정 텍스트 패턴을 찾아 바꾸는 방법을 알아봅니다. 문자열 치환 예시와 고급 기술로 데이터 처리 효율을 높여보세요.</description>
+      <pubDate>2026-03-22T22:21:15+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/regex-text-replace/</guid>
+    </item>
+    <item>
+      <title>결제 QR코드 만들기: 카카오페이/네이버페이 간편 생성 가이드</title>
+      <link>https://toolkio.com/blog/payment-qr-code-generation/</link>
+      <description>온라인 결제, 송금, 개인 사업에 활용되는 결제 QR코드! 카카오페이, 네이버페이 QR코드 만드는 방법과 활용 팁을 Toolkio에서 알아보세요.</description>
+      <pubDate>2026-03-22T22:20:09+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/payment-qr-code-generation/</guid>
+    </item>
+    <item>
+      <title>Base64 디코딩 방법: 인코딩된 문자열 원본 복원 가이드</title>
+      <link>https://toolkio.com/blog/how-to-decode-base64/</link>
+      <description>Base64 인코딩된 데이터를 원본 문자열이나 파일로 복원하는 방법을 단계별로 안내합니다. 개발 및 데이터 분석 시 필수적인 Base64 디코딩 팁을 확인하세요.</description>
+      <pubDate>2026-03-22T22:19:10+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/how-to-decode-base64/</guid>
+    </item>
+    <item>
+      <title>한글 더미 텍스트 생성기: 웹/앱 디자인에 완벽한 더미 텍스트 만들기</title>
+      <link>https://toolkio.com/blog/korean-dummy-text-generator/</link>
+      <description>영어 Lorem Ipsum 대신, 한국어 더미 텍스트로 웹/앱 디자인 시안을 더욱 사실적으로! 쉽고 빠르게 한글 더미 텍스트를 생성하는 방법을 알아보세요.</description>
+      <pubDate>2026-03-22T22:17:56+00:00</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/korean-dummy-text-generator/</guid>
+    </item>
+    <item>
       <title>보고서/에세이 단어 수 세기: 정확하고 빠르게 확인하는 팁</title>
       <link>https://toolkio.com/blog/report-essay-word-count/</link>
       <description>보고서, 에세이, 논문 작성 시 단어 수 기준을 정확히 맞추는 방법은? 툴키오의 글자수 세기 도구로 효율적인 단어 수 검사 및 글쓰기 팁을 확인하세요.</description>
