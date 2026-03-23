@@ -65,7 +65,31 @@ async function callGemini(prompt, systemInstruction) {
     }
   }
 
-  // 2nd: CF Workers AI fallback
+  // 2nd: Try Groq
+  const groqKey = process.env.GROQ_API_KEY;
+  if (groqKey) {
+    try {
+      const messages = [];
+      if (systemInstruction) messages.push({ role: 'system', content: systemInstruction });
+      messages.push({ role: 'user', content: prompt });
+      const groqResp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${groqKey}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: 'llama-3.3-70b-versatile', messages, max_tokens: 8192 }),
+      });
+      if (groqResp.status === 429) {
+        console.warn('⚡ Groq 한도 초과 → CF Workers AI로 전환');
+      } else if (groqResp.ok) {
+        const groqData = await groqResp.json();
+        const text = groqData.choices?.[0]?.message?.content?.trim() || '';
+        if (text) return text;
+      }
+    } catch (err) {
+      console.warn(`⚠️ Groq 실패 → CF Workers AI로 전환: ${err.message}`);
+    }
+  }
+
+  // 3rd: CF Workers AI fallback
   if (CF_ACCOUNT_ID && CF_API_TOKEN) {
     const cfUrl = `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/run/${CF_MODEL}`;
     const messages = [];
