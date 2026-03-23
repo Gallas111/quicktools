@@ -10,7 +10,7 @@
  */
 
 import { google } from "googleapis";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+// Cloudflare Workers AI (replaces Google Generative AI)
 import nodemailer from "nodemailer";
 import { marked } from "marked";
 import fs from "fs";
@@ -98,11 +98,14 @@ async function fetchAnalyticsData(authClient) {
   return response.data.rows || [];
 }
 
-// ─── Gemini AI 분석 ─────────────────────────────────────────────────────────
+// ─── Cloudflare Workers AI 분석 ──────────────────────────────────────────────
 async function generateInsights(gscData, gaData) {
-  if (!GEMINI_API_KEY) throw new Error("환경변수 GEMINI_API_KEY가 설정되지 않았습니다.");
-  const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+  const cfAccountId = process.env.CF_ACCOUNT_ID;
+  const cfApiToken = process.env.CF_API_TOKEN;
+  if (!cfAccountId || !cfApiToken) throw new Error("CF_ACCOUNT_ID와 CF_API_TOKEN이 설정되지 않았습니다.");
+
+  const CF_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+  const url = `https://api.cloudflare.com/client/v4/accounts/${cfAccountId}/ai/run/${CF_MODEL}`;
 
   const prompt = `
 당신은 'Toolkio' 프로젝트 전담 SEO 및 웹 도구 사이트 성장 컨설턴트입니다.
@@ -134,8 +137,20 @@ ${JSON.stringify(gaData.slice(0, 25), null, 2)}
 톤앤매너는 전문적이면서도 응원하는 분위기로 작성해주시고, 이메일로 읽기 좋게 마크다운 형식을 잘 활용해주세요.
 `;
 
-  const result = await model.generateContent(prompt);
-  return result.response.text();
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${cfApiToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      messages: [{ role: "user", content: prompt }],
+      max_tokens: 8192,
+    }),
+  });
+  if (!response.ok) throw new Error(`CF Workers AI error (${response.status}): ${await response.text()}`);
+  const data = await response.json();
+  return data.result?.response || "";
 }
 
 // ─── 이메일 발송 ────────────────────────────────────────────────────────────
