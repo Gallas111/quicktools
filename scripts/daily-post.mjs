@@ -23,45 +23,66 @@ function getKSTDate() {
 
 const CF_ACCOUNT_ID = process.env.CF_ACCOUNT_ID;
 const CF_API_TOKEN = process.env.CF_API_TOKEN;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // kept for image generation only
-if (!CF_ACCOUNT_ID || !CF_API_TOKEN) {
-  console.error("❌ CF_ACCOUNT_ID and CF_API_TOKEN are required");
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+if (!GEMINI_API_KEY && (!CF_ACCOUNT_ID || !CF_API_TOKEN)) {
+  console.error("❌ GEMINI_API_KEY or CF_ACCOUNT_ID+CF_API_TOKEN required");
   process.exit(1);
 }
 
-// ─── Cloudflare Workers AI helper ────────────────────────────────────────────
+// ─── AI helper: Gemini first → CF Workers AI fallback ────────────────────────
 const CF_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 async function callGemini(prompt, systemInstruction) {
-  const url = `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/run/${CF_MODEL}`;
-  const messages = [];
-  if (systemInstruction) messages.push({ role: "system", content: systemInstruction });
-  messages.push({ role: "user", content: prompt });
-
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    try {
-      const resp = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${CF_API_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ messages, max_tokens: 8192 }),
-        signal: AbortSignal.timeout(60000),
-      });
-      if (resp.status === 429 || resp.status === 503) {
-        const wait = Math.pow(2, attempt) * 2000;
-        console.log(`   ⏳ Rate limited, waiting ${wait / 1000}s...`);
-        await new Promise((r) => setTimeout(r, wait));
-        continue;
+  // 1st: Try Gemini free tier
+  if (GEMINI_API_KEY) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        const resp = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            ...(systemInstruction && { systemInstruction: { parts: [{ text: systemInstruction }] } }),
+          }),
+          signal: AbortSignal.timeout(60000),
+        });
+        if (resp.status === 429) {
+          console.warn("⚡ Gemini 한도 초과 → CF Workers AI로 전환");
+          break;
+        }
+        if (resp.status === 503 && attempt < 3) {
+          await new Promise(r => setTimeout(r, Math.pow(2, attempt) * 2000));
+          continue;
+        }
+        if (!resp.ok) throw new Error(`Gemini ${resp.status}: ${await resp.text()}`);
+        const data = await resp.json();
+        return data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || "";
+      } catch (err) {
+        if (err.message?.includes("429")) break;
+        if (attempt === 3) console.warn(`⚠️ Gemini 실패 → CF 전환: ${err.message}`);
+        else await new Promise(r => setTimeout(r, 2000));
       }
-      if (!resp.ok) throw new Error(`CF AI ${resp.status}: ${await resp.text()}`);
-      const data = await resp.json();
-      return data?.result?.response?.trim() || "";
-    } catch (err) {
-      if (attempt === 3) throw err;
-      await new Promise((r) => setTimeout(r, 2000));
     }
   }
+
+  // 2nd: CF Workers AI fallback
+  if (CF_ACCOUNT_ID && CF_API_TOKEN) {
+    const cfUrl = `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/run/${CF_MODEL}`;
+    const messages = [];
+    if (systemInstruction) messages.push({ role: "system", content: systemInstruction });
+    messages.push({ role: "user", content: prompt });
+    const resp = await fetch(cfUrl, {
+      method: "POST",
+      headers: { "Authorization": `Bearer ${CF_API_TOKEN}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ messages, max_tokens: 8192 }),
+      signal: AbortSignal.timeout(60000),
+    });
+    if (!resp.ok) throw new Error(`CF AI ${resp.status}: ${await resp.text()}`);
+    const data = await resp.json();
+    return data?.result?.response?.trim() || "";
+  }
+
+  throw new Error("No AI provider available");
 }
 
 // ─── Read existing slugs to avoid duplicates ─────────────────────────────────

@@ -98,14 +98,11 @@ async function fetchAnalyticsData(authClient) {
   return response.data.rows || [];
 }
 
-// ─── Cloudflare Workers AI 분석 ──────────────────────────────────────────────
+// ─── AI 분석: Gemini first → CF Workers AI fallback ─────────────────────────
 async function generateInsights(gscData, gaData) {
   const cfAccountId = process.env.CF_ACCOUNT_ID;
   const cfApiToken = process.env.CF_API_TOKEN;
-  if (!cfAccountId || !cfApiToken) throw new Error("CF_ACCOUNT_ID와 CF_API_TOKEN이 설정되지 않았습니다.");
-
-  const CF_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
-  const url = `https://api.cloudflare.com/client/v4/accounts/${cfAccountId}/ai/run/${CF_MODEL}`;
+  const CF_MODEL_REPORT = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
   const prompt = `
 당신은 'Toolkio' 프로젝트 전담 SEO 및 웹 도구 사이트 성장 컨설턴트입니다.
@@ -137,7 +134,36 @@ ${JSON.stringify(gaData.slice(0, 25), null, 2)}
 톤앤매너는 전문적이면서도 응원하는 분위기로 작성해주시고, 이메일로 읽기 좋게 마크다운 형식을 잘 활용해주세요.
 `;
 
-  const response = await fetch(url, {
+  // 1st: Try Gemini
+  if (GEMINI_API_KEY) {
+    try {
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+      const resp = await fetch(geminiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { maxOutputTokens: 8192 },
+        }),
+      });
+      if (resp.status === 429) {
+        console.warn("⚡ Gemini 한도 초과 → CF Workers AI로 전환");
+      } else if (resp.ok) {
+        const data = await resp.json();
+        const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+        if (text) return text;
+      } else {
+        console.warn(`⚠️ Gemini 실패 (${resp.status}) → CF Workers AI로 전환`);
+      }
+    } catch (err) {
+      console.warn(`⚠️ Gemini 에러 → CF Workers AI로 전환: ${err.message}`);
+    }
+  }
+
+  // 2nd: CF Workers AI fallback
+  if (!cfAccountId || !cfApiToken) throw new Error("GEMINI_API_KEY 또는 CF_ACCOUNT_ID+CF_API_TOKEN이 필요합니다.");
+  const cfUrl = `https://api.cloudflare.com/client/v4/accounts/${cfAccountId}/ai/run/${CF_MODEL_REPORT}`;
+  const response = await fetch(cfUrl, {
     method: "POST",
     headers: {
       "Authorization": `Bearer ${cfApiToken}`,
