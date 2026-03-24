@@ -4811,5 +4811,340 @@ export const blogPosts: BlogPost[] = [
         }
       ],
     },
-  }
+  },
+  {
+    slug: "how-to-calculate-bmi",
+    title: {
+      ko: "BMI 계산기 사용법 - 체질량지수로 건강 상태 확인하기",
+      en: "How to Calculate BMI - Check Your Health Status with Body Mass Index",
+    },
+    description: {
+      ko: "BMI(체질량지수)란 무엇이며 어떻게 계산하나요? BMI 계산법, 정상 범위, 한계점, 건강한 체중 관리 팁까지 완벽 정리.",
+      en: "What is BMI and how to calculate it? Complete guide to BMI formula, normal ranges, limitations, and healthy weight management tips.",
+    },
+    date: "2026-03-24",
+    toolId: "bmi-calculator",
+    image: "/images/blog/how-to-calculate-bmi.webp",
+    keywords: ["BMI 계산", "체질량지수", "BMI 계산기", "정상 체중", "BMI 뜻", "건강 체중"],
+    content: {
+      ko: [
+        {
+          heading: "BMI(체질량지수)란 무엇인가?",
+          body: "BMI(Body Mass Index, 체질량지수)는 체중(kg)을 키(m)의 제곱으로 나눈 값으로, 비만도를 판단하는 가장 널리 사용되는 지표입니다. 1832년 벨기에의 수학자 아돌프 케틀레가 처음 고안했으며, 현재 세계보건기구(WHO)에서도 비만 분류의 기준으로 사용하고 있습니다.\n\nBMI 공식: BMI = 체중(kg) / 키(m)²\n\n예를 들어 키 170cm, 체중 65kg인 사람의 BMI는 65 / (1.7 × 1.7) = 22.49입니다.",
+        },
+        {
+          heading: "BMI 수치별 분류 기준",
+          body: "대한비만학회 기준으로 한국인의 BMI 분류는 다음과 같습니다:\n\n- 저체중: 18.5 미만\n- 정상: 18.5 ~ 22.9\n- 비만 전 단계(과체중): 23.0 ~ 24.9\n- 1단계 비만: 25.0 ~ 29.9\n- 2단계 비만: 30.0 ~ 34.9\n- 3단계 비만(고도비만): 35.0 이상\n\nWHO의 국제 기준과 한국 기준은 다소 차이가 있습니다. 아시아인은 같은 BMI에서도 서양인보다 체지방률이 높고 대사질환 위험이 크기 때문에, 한국 기준이 더 엄격합니다. WHO 기준에서는 25 이상을 과체중, 30 이상을 비만으로 분류합니다.",
+        },
+        {
+          heading: "BMI의 한계와 보완 지표",
+          body: "BMI는 간편하고 유용하지만 몇 가지 한계가 있습니다:\n\n- 근육량 미반영: 근육이 많은 운동선수는 BMI가 높게 나올 수 있지만 건강한 상태입니다.\n- 체지방 분포 미반영: 같은 BMI라도 내장지방이 많은 사람은 건강 위험이 더 높습니다.\n- 나이/성별 미반영: 노인이나 어린이에게는 별도의 기준이 필요합니다.\n\nBMI를 보완하는 지표들:\n- 허리둘레: 남성 90cm, 여성 85cm 이상이면 복부비만\n- 체지방률: 남성 25% 이상, 여성 30% 이상이면 비만\n- 허리-엉덩이 비율(WHR): 내장지방 수준을 간접적으로 파악",
+        },
+        {
+          heading: "Toolkio BMI 계산기로 간편하게 확인하기",
+          body: "Toolkio의 BMI 계산기는 키와 체중을 입력하면 즉시 BMI 수치와 함께 비만도 분류를 알려줍니다. 한국 기준과 WHO 기준을 모두 확인할 수 있어 편리합니다.\n\n1. 키(cm)와 체중(kg) 입력\n2. BMI 수치 및 비만도 분류 즉시 확인\n3. 정상 체중 범위 안내\n\n모든 계산은 브라우저에서 이루어지며, 개인 정보가 서버로 전송되지 않습니다. toolkio.com에서 무료로 사용해보세요!",
+        },
+      ],
+      en: [
+        {
+          heading: "What is BMI (Body Mass Index)?",
+          body: "BMI (Body Mass Index) is calculated by dividing weight (kg) by height (m) squared. It's the most widely used indicator for assessing obesity, developed by Belgian mathematician Adolphe Quetelet in 1832 and endorsed by the WHO.\n\nBMI Formula: BMI = weight(kg) / height(m)²\n\nFor example, a person 170cm tall weighing 65kg has a BMI of 65 / (1.7 × 1.7) = 22.49.",
+        },
+        {
+          heading: "BMI Classification Ranges",
+          body: "Standard WHO BMI classifications:\n\n- Underweight: Below 18.5\n- Normal weight: 18.5 – 24.9\n- Overweight: 25.0 – 29.9\n- Obesity Class I: 30.0 – 34.9\n- Obesity Class II: 35.0 – 39.9\n- Obesity Class III: 40.0 and above\n\nNote: Asian populations often use stricter thresholds (23+ for overweight, 25+ for obesity) due to higher metabolic risk at lower BMI values.",
+        },
+        {
+          heading: "BMI Limitations and Complementary Metrics",
+          body: "While BMI is convenient, it has limitations:\n\n- Doesn't account for muscle mass — athletes may have high BMI but be healthy\n- Doesn't reflect body fat distribution — visceral fat is more dangerous\n- Doesn't consider age or gender differences\n\nComplementary metrics include:\n- Waist circumference: indicates abdominal obesity\n- Body fat percentage: more accurate measure of fatness\n- Waist-to-hip ratio (WHR): estimates visceral fat levels",
+        },
+        {
+          heading: "Calculate Your BMI Easily with Toolkio",
+          body: "Toolkio's BMI Calculator instantly shows your BMI and obesity classification when you enter your height and weight.\n\n1. Enter height (cm) and weight (kg)\n2. Get instant BMI and classification\n3. See your healthy weight range\n\nAll calculations run in your browser with zero data sent to any server. Try it free at toolkio.com!",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "BMI가 정상인데 뱃살이 나온다면?",
+        answer: "BMI는 전체적인 체중 대비 키의 비율만 보기 때문에, 체지방 분포를 반영하지 못합니다. BMI가 정상이더라도 허리둘레가 남성 90cm, 여성 85cm 이상이면 복부비만에 해당하며, 대사증후군 위험이 높아집니다. BMI와 함께 허리둘레를 함께 관리하는 것이 중요합니다.",
+      },
+      {
+        question: "어린이 BMI는 어떻게 다른가요?",
+        answer: "어린이와 청소년(2~18세)의 경우 성장 과정에 있기 때문에, 성인과 같은 절대적 BMI 기준을 적용하지 않습니다. 대신 같은 연령, 같은 성별 집단에서의 백분위수를 사용합니다. 85백분위수 이상이면 과체중, 95백분위수 이상이면 비만으로 분류합니다.",
+      },
+      {
+        question: "BMI를 낮추려면 어떻게 해야 하나요?",
+        answer: "BMI를 건강한 범위로 낮추려면 식이요법과 운동을 병행하는 것이 가장 효과적입니다. 주당 0.5~1kg 정도의 점진적인 감량이 안전하며, 극단적인 다이어트는 요요 현상을 유발할 수 있습니다. 전문가와 상담하여 개인에게 맞는 건강 관리 계획을 세우는 것을 권장합니다.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-calculate-take-home-pay",
+    title: {
+      ko: "연봉 실수령액 계산하는 법 - 4대 보험과 세금 공제 완벽 이해",
+      en: "How to Calculate Take-Home Pay - Understanding Taxes and Deductions",
+    },
+    description: {
+      ko: "연봉 실수령액이 궁금하신가요? 4대 보험료, 소득세, 지방소득세 계산 방법과 2026년 최신 기준을 정리했습니다.",
+      en: "Wondering about your actual take-home pay? Learn how social insurance, income tax, and local tax deductions work with 2026 rates.",
+    },
+    date: "2026-03-24",
+    toolId: "salary-calculator",
+    image: "/images/blog/how-to-calculate-take-home-pay.webp",
+    keywords: ["연봉 실수령액", "연봉 계산기", "4대 보험", "소득세 계산", "실수령액 계산", "월급 실수령액"],
+    content: {
+      ko: [
+        {
+          heading: "연봉과 실수령액, 왜 차이가 날까?",
+          body: "취업 합격 통보와 함께 받는 연봉 금액, 하지만 실제 통장에 찍히는 금액은 기대보다 훨씬 적습니다. 연봉 3,000만 원이라면 월급이 250만 원일 것 같지만, 실제 수령액은 약 220만 원 정도입니다.\n\n이 차이가 발생하는 이유는 4대 사회보험료와 소득세, 지방소득세가 매달 공제되기 때문입니다. 이 공제 항목을 정확히 이해하면 재정 계획을 더 현실적으로 세울 수 있습니다.",
+        },
+        {
+          heading: "4대 사회보험료 계산법 (2026년 기준)",
+          body: "직장인이 매달 납부하는 4대 사회보험은 다음과 같습니다:\n\n1. 국민연금: 월급의 4.5% (회사도 4.5% 부담, 총 9%)\n2. 건강보험: 월급의 3.545% (2026년 기준)\n3. 장기요양보험: 건강보험료의 12.95%\n4. 고용보험: 월급의 0.9%\n\n예를 들어 월급(세전) 250만 원인 경우:\n- 국민연금: 112,500원\n- 건강보험: 88,625원\n- 장기요양보험: 약 11,477원\n- 고용보험: 22,500원\n- 합계: 약 235,102원\n\n이것만으로도 월급의 약 9.4%가 공제됩니다.",
+        },
+        {
+          heading: "소득세와 지방소득세 이해하기",
+          body: "4대 보험 외에 소득세와 지방소득세도 공제됩니다. 소득세는 누진세율 구조로, 소득이 높을수록 높은 세율이 적용됩니다.\n\n2026년 소득세 간이세액표 기준으로 매달 원천징수되며, 연말정산을 통해 정산됩니다.\n\n- 소득세: 간이세액표에 따라 원천징수\n- 지방소득세: 소득세의 10%\n\n부양가족 수에 따라 공제액이 달라지므로, 같은 연봉이라도 1인 가구와 4인 가구의 실수령액은 차이가 있습니다.\n\n연봉별 대략적인 월 실수령액(1인 가구 기준):\n- 3,000만 원: 약 222만 원\n- 4,000만 원: 약 290만 원\n- 5,000만 원: 약 352만 원\n- 6,000만 원: 약 410만 원\n- 1억 원: 약 633만 원",
+        },
+        {
+          heading: "Toolkio 연봉 실수령액 계산기 사용법",
+          body: "Toolkio의 연봉 실수령액 계산기는 연봉을 입력하면 4대 보험료, 소득세, 지방소득세를 자동으로 계산하여 정확한 월 실수령액을 보여줍니다.\n\n1. 연봉(세전) 입력\n2. 부양가족 수 선택 (선택사항)\n3. 월 실수령액, 공제 항목별 금액 즉시 확인\n\n급여 협상, 이직, 재정 계획 수립 시 유용하게 활용할 수 있습니다. 모든 계산은 브라우저에서 처리되어 개인 정보가 안전합니다. toolkio.com에서 무료로 확인하세요!",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Is Take-Home Pay Different From Salary?",
+          body: "Your actual paycheck is always less than your stated salary due to mandatory deductions. In Korea, these include four types of social insurance, income tax, and local income tax. Understanding these deductions helps you plan your finances realistically.",
+        },
+        {
+          heading: "Social Insurance Deductions (2026 Rates)",
+          body: "Korean employees pay four types of social insurance:\n\n1. National Pension: 4.5% of salary (employer matches 4.5%)\n2. Health Insurance: 3.545% of salary\n3. Long-term Care Insurance: 12.95% of health insurance\n4. Employment Insurance: 0.9% of salary\n\nThese alone account for roughly 9.4% of your gross salary.",
+        },
+        {
+          heading: "Understanding Income Tax",
+          body: "In addition to social insurance, income tax and local income tax are withheld monthly. Korea uses a progressive tax system where higher earners pay higher rates.\n\n- Income tax: Withheld monthly based on simplified tax tables\n- Local income tax: 10% of income tax\n- Deductions vary by number of dependents\n\nYear-end tax settlement adjusts for over/under-payment.",
+        },
+        {
+          heading: "Calculate Your Take-Home Pay with Toolkio",
+          body: "Toolkio's Salary Calculator automatically computes all deductions to show your exact monthly take-home pay.\n\n1. Enter your annual salary\n2. Select number of dependents (optional)\n3. See instant breakdown of all deductions\n\nPerfect for salary negotiations, job changes, and financial planning. Free at toolkio.com!",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "연봉에 퇴직금이 포함되어 있나요?",
+        answer: "일반적으로 연봉에는 퇴직금이 포함되어 있지 않습니다. 다만 일부 회사에서는 '퇴직금 포함 연봉'으로 계약하는 경우가 있으므로, 채용 시 반드시 확인해야 합니다. 퇴직금 포함 연봉의 경우 실수령액이 더 적어지게 됩니다.",
+      },
+      {
+        question: "연말정산으로 세금을 돌려받을 수 있나요?",
+        answer: "네, 연말정산을 통해 과납된 세금을 돌려받거나 추가 납부할 수 있습니다. 의료비, 교육비, 기부금, 신용카드 사용액 등의 공제 항목이 많을수록 환급 가능성이 높아집니다. 반대로 공제 항목이 적으면 추가 세금을 납부해야 할 수도 있습니다.",
+      },
+      {
+        question: "비과세 항목에는 어떤 것이 있나요?",
+        answer: "대표적인 비과세 항목으로는 식대(월 20만 원), 자가운전보조금(월 20만 원), 출산/보육수당(월 10만 원), 야간근로수당(생산직, 월 240만 원 이하) 등이 있습니다. 비과세 항목이 많을수록 실수령액이 높아지므로 급여명세서를 꼼꼼히 확인하세요.",
+      },
+    ],
+  },
+  {
+    slug: "dday-calculator-practical-uses",
+    title: {
+      ko: "D-day 계산기 활용법 - 기념일, 시험, 프로젝트 일수 계산",
+      en: "D-Day Calculator Practical Uses - Count Days for Events, Exams, and Projects",
+    },
+    description: {
+      ko: "D-day 계산기로 기념일, 시험일, 프로젝트 마감일까지 남은 일수를 정확히 계산하세요. 실생활 활용법과 날짜 계산 팁을 정리했습니다.",
+      en: "Calculate exact days remaining until anniversaries, exams, and deadlines. Practical tips for date counting in everyday life.",
+    },
+    date: "2026-03-24",
+    toolId: "dday-calculator",
+    image: "/images/blog/dday-calculator-practical-uses.webp",
+    keywords: ["D-day 계산", "디데이 계산기", "날짜 계산", "남은 일수", "기념일 계산", "날짜 세기"],
+    content: {
+      ko: [
+        {
+          heading: "D-day, 언제 필요할까?",
+          body: "D-day(디데이)는 특정 날짜까지 남은 일수 또는 지난 일수를 세는 것을 의미합니다. 우리 일상에서 D-day 계산이 필요한 순간은 생각보다 많습니다.\n\n- 연인과의 기념일: 100일, 200일, 1000일 기념일은 언제일까?\n- 수능/공무원 시험: 시험까지 남은 일수로 학습 계획 수립\n- 프로젝트 마감: 데드라인까지의 정확한 업무일수 계산\n- 출산 예정일: 임신 주수와 출산 예정일 카운트다운\n- 전역일: 군 복무 중 전역일까지 남은 날짜\n- 여행/이벤트: 특별한 날까지의 기대감 카운트다운",
+        },
+        {
+          heading: "D-day 계산, 생각보다 헷갈리는 이유",
+          body: "D-day 계산에서 가장 흔한 혼동은 '당일을 포함하느냐, 제외하느냐'입니다.\n\n예를 들어 3월 1일부터 3월 3일까지:\n- 당일 포함: 3일 (3/1, 3/2, 3/3)\n- 당일 제외: 2일 (3/1에서 3/3까지의 간격)\n\n커플 기념일은 보통 '만남 당일을 1일로 포함'하여 계산합니다. 즉, 3월 1일에 사귀기 시작했다면 3월 1일이 D+1이 됩니다.\n\n반면 시험 D-day는 '시험 당일을 D-day(0일)'으로 계산합니다. 시험이 3월 10일이면 3월 9일은 D-1이 됩니다.\n\n윤년(2월 29일)이 포함되면 계산이 더 복잡해질 수 있으니, 정확한 계산을 위해 계산기를 활용하는 것이 좋습니다.",
+        },
+        {
+          heading: "날짜 계산 실전 활용 팁",
+          body: "D-day 계산을 더 효과적으로 활용하는 방법:\n\n1. 학습 계획: 시험까지 남은 일수를 주 단위로 나누어 과목별 공부 시간 배분\n2. 프로젝트 관리: 마일스톤별 D-day를 설정하여 진행률 관리\n3. 기념일 미리 알림: 100일, 200일, 365일 등 주요 기념일을 미리 계산해두기\n4. 건강 관리: 운동 시작일로부터 경과일 추적, 금연/금주 일수 카운팅\n5. 재정 계획: 적금 만기일, 대출 상환일까지의 남은 기간 확인\n\n특히 여러 D-day를 동시에 관리해야 할 때는 각 이벤트의 우선순위를 정하고, 가장 가까운 D-day부터 집중하는 전략이 효과적입니다.",
+        },
+        {
+          heading: "Toolkio D-day 계산기 사용법",
+          body: "Toolkio의 D-day 계산기는 두 날짜 사이의 일수를 정확하게 계산해줍니다.\n\n1. 시작 날짜와 종료 날짜 선택\n2. 남은 일수 또는 경과 일수 즉시 확인\n3. 주/월 단위 변환도 자동 표시\n\n커플 기념일 계산, 시험 D-day 카운트다운, 프로젝트 마감일 관리 등 다양한 용도로 활용할 수 있습니다. toolkio.com에서 무료로 사용하세요!",
+        },
+      ],
+      en: [
+        {
+          heading: "When Do You Need a D-Day Calculator?",
+          body: "D-Day counting is needed more often than you think:\n\n- Anniversary milestones (100 days, 1000 days, etc.)\n- Exam countdowns for study planning\n- Project deadlines and milestone tracking\n- Due dates and event countdowns\n- Travel planning and anticipation building",
+        },
+        {
+          heading: "Why Date Counting Gets Confusing",
+          body: "The most common confusion: should you include the start day or not?\n\nFor example, March 1 to March 3:\n- Including start day: 3 days\n- Excluding start day: 2 days\n\nAnniversary counting typically includes the first day (Day 1), while exam D-Days use the exam date as D-0.\n\nLeap years add complexity, making a calculator essential for accuracy.",
+        },
+        {
+          heading: "Practical Tips for Date Counting",
+          body: "Make D-Day counting more useful:\n\n1. Study planning: Divide remaining days into weekly blocks per subject\n2. Project management: Set milestone D-Days for progress tracking\n3. Anniversary reminders: Pre-calculate major milestones\n4. Health tracking: Count days since starting exercise or quitting habits\n5. Financial planning: Track days to savings maturity or loan payoff",
+        },
+        {
+          heading: "Use Toolkio's D-Day Calculator",
+          body: "Toolkio's D-Day Calculator precisely counts days between any two dates.\n\n1. Select start and end dates\n2. See remaining or elapsed days instantly\n3. Auto-converts to weeks and months\n\nPerfect for anniversaries, exam prep, and deadline management. Free at toolkio.com!",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "커플 100일은 만남 당일부터 세나요?",
+        answer: "네, 한국에서 커플 기념일은 보통 만남 당일을 1일로 포함하여 계산합니다. 예를 들어 1월 1일에 사귀기 시작했다면, 100일은 4월 10일이 됩니다. 다만 커플마다 기준이 다를 수 있으니 서로 합의하는 것이 좋습니다.",
+      },
+      {
+        question: "윤년은 어떻게 반영되나요?",
+        answer: "Toolkio의 D-day 계산기는 윤년(2월 29일)을 자동으로 반영하여 정확한 일수를 계산합니다. 직접 계산할 때는 4로 나누어지는 해가 윤년(단, 100으로 나누어지면 평년, 400으로 나누어지면 다시 윤년)임을 기억하세요.",
+      },
+      {
+        question: "업무일수만 계산할 수 있나요?",
+        answer: "Toolkio의 D-day 계산기는 전체 일수(달력일)를 기본으로 계산합니다. 주말과 공휴일을 제외한 순수 업무일수가 필요하다면, 전체 일수에서 주말 수(주 수 × 2)를 빼고 해당 기간의 공휴일을 추가로 제외하면 대략적인 업무일수를 구할 수 있습니다.",
+      },
+    ],
+  },
+  {
+    slug: "instagram-line-break-guide",
+    title: {
+      ko: "인스타그램 줄바꿈 하는 법 - 깔끔한 게시물 작성 꿀팁",
+      en: "How to Add Line Breaks on Instagram - Tips for Clean Post Formatting",
+    },
+    description: {
+      ko: "인스타그램에서 줄바꿈이 안 될 때 해결 방법! 인스타 캡션, 프로필 바이오에서 줄바꿈을 깔끔하게 넣는 방법을 총정리합니다.",
+      en: "Fix Instagram line break issues! Complete guide to adding clean line breaks in captions, bios, and comments.",
+    },
+    date: "2026-03-24",
+    toolId: "instagram-line-break",
+    image: "/images/blog/instagram-line-break-guide.webp",
+    keywords: ["인스타 줄바꿈", "인스타그램 줄바꿈", "인스타 캡션 줄바꿈", "인스타 바이오 줄바꿈", "인스타 엔터"],
+    content: {
+      ko: [
+        {
+          heading: "인스타그램 줄바꿈이 안 되는 이유",
+          body: "인스타그램에서 게시물이나 바이오를 작성할 때 엔터(Enter)를 눌러 줄바꿈을 했는데, 업로드 후 줄바꿈이 사라지는 경험을 해보셨을 겁니다. 이것은 인스타그램이 연속된 빈 줄을 자동으로 제거하는 정책 때문입니다.\n\n특히 다음과 같은 상황에서 줄바꿈이 사라집니다:\n\n- 줄 끝에 공백(스페이스)이 있는 경우\n- 연속으로 빈 줄을 여러 개 넣은 경우\n- 특정 특수문자 뒤에 줄바꿈을 한 경우\n\n결과적으로 정성껏 작성한 캡션이 한 덩어리로 뭉쳐져 가독성이 크게 떨어지게 됩니다.",
+        },
+        {
+          heading: "인스타그램 줄바꿈 해결 방법 3가지",
+          body: "1. 보이지 않는 특수문자 사용\n빈 줄에 보이지 않는 특수문자(Zero-Width Space 등)를 넣으면 인스타그램이 빈 줄로 인식하지 않아 줄바꿈이 유지됩니다. Toolkio의 인스타 줄바꿈 도구가 바로 이 방법을 사용합니다.\n\n2. 메모장 활용\n스마트폰의 기본 메모 앱에서 텍스트를 작성한 뒤 복사하여 인스타그램에 붙여넣기하면 줄바꿈이 유지되는 경우가 많습니다.\n\n3. 점(.) 또는 하이픈(-) 사용\n빈 줄에 점(.)이나 하이픈(-)을 넣는 방법도 있지만, 시각적으로 깔끔하지 않다는 단점이 있습니다.\n\n이 중 가장 깔끔하고 효과적인 방법은 보이지 않는 특수문자를 활용하는 것입니다.",
+        },
+        {
+          heading: "인스타그램 바이오/프로필 줄바꿈 팁",
+          body: "인스타그램 바이오(프로필 소개)는 캡션과 다른 규칙이 적용됩니다.\n\n바이오 줄바꿈 팁:\n- 모바일 앱보다 웹(instagram.com)에서 편집하면 줄바꿈이 더 잘 유지됩니다\n- 각 줄 끝에 공백 없이 바로 엔터를 치세요\n- 이모지를 줄 구분자로 활용하면 시각적으로 깔끔합니다\n- 연락처, 링크, 해시태그 등을 줄별로 정리하면 전문적인 인상을 줍니다\n\n프로필 예시:\n📍 서울 | 맛집 탐방\n📷 일상 & 여행 기록\n✉️ 협업 문의: DM\n🔗 블로그 링크 아래\n\n이렇게 정리하면 방문자에게 한눈에 정보를 전달할 수 있습니다.",
+        },
+        {
+          heading: "Toolkio 인스타 줄바꿈 도구로 간편하게",
+          body: "Toolkio의 인스타그램 줄바꿈 도구는 텍스트를 입력하면 자동으로 인스타그램에서 줄바꿈이 유지되는 형태로 변환해줍니다.\n\n1. 원하는 텍스트를 입력 (엔터로 줄바꿈)\n2. '변환' 버튼 클릭\n3. 변환된 텍스트 복사\n4. 인스타그램에 붙여넣기\n\n별도의 앱 설치 없이 브라우저에서 바로 사용할 수 있으며, 입력한 텍스트가 서버로 전송되지 않아 안전합니다. toolkio.com에서 지금 바로 사용해보세요!",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Instagram Removes Your Line Breaks",
+          body: "Instagram automatically strips consecutive empty lines from captions and bios. This means your carefully formatted text gets squished into a single block. It happens because:\n\n- Trailing spaces at end of lines\n- Multiple consecutive empty lines\n- Certain special characters before line breaks\n\nThe result: your well-crafted caption loses all its readability.",
+        },
+        {
+          heading: "3 Ways to Fix Instagram Line Breaks",
+          body: "1. Invisible special characters: Insert zero-width spaces in empty lines. Toolkio's tool does this automatically.\n\n2. Notes app method: Write text in your phone's notes app, then copy-paste to Instagram.\n\n3. Dot or dash method: Place a period (.) or dash (-) on empty lines, though this looks less clean.\n\nThe invisible character method is the cleanest and most reliable solution.",
+        },
+        {
+          heading: "Bio and Profile Line Break Tips",
+          body: "Instagram bios follow different rules than captions:\n\n- Edit on web (instagram.com) for better line break preservation\n- No trailing spaces before pressing Enter\n- Use emojis as visual line separators\n- Organize contact info, links, and hashtags on separate lines for a professional look",
+        },
+        {
+          heading: "Use Toolkio's Instagram Line Break Tool",
+          body: "Toolkio's Instagram Line Break tool automatically converts your text to preserve formatting on Instagram.\n\n1. Type your text with line breaks\n2. Click Convert\n3. Copy the converted text\n4. Paste into Instagram\n\nNo app installation needed. Runs entirely in your browser. Try it free at toolkio.com!",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "인스타그램 댓글에서도 줄바꿈이 가능한가요?",
+        answer: "네, 인스타그램 댓글에서도 줄바꿈이 가능합니다. 모바일 앱에서 댓글 작성 시 키보드의 엔터(줄바꿈) 키를 사용하면 됩니다. 다만 연속 빈 줄은 캡션과 마찬가지로 제거될 수 있으므로, Toolkio의 줄바꿈 도구를 활용하면 더 깔끔하게 줄바꿈할 수 있습니다.",
+      },
+      {
+        question: "줄바꿈 후 공백이 생기는 것은 왜 그런가요?",
+        answer: "줄바꿈 후 여분의 공백이 보이는 것은 보이지 않는 특수문자가 공간을 차지하기 때문일 수 있습니다. Toolkio의 줄바꿈 도구는 최소한의 특수문자만 사용하여 이 문제를 최소화합니다. 점(.)을 사용하는 방법보다 훨씬 깔끔한 결과를 얻을 수 있습니다.",
+      },
+      {
+        question: "인스타그램 스토리에서도 줄바꿈 도구가 필요한가요?",
+        answer: "인스타그램 스토리의 텍스트 편집기는 줄바꿈을 잘 지원하므로 별도의 도구가 필요하지 않습니다. 스토리 편집 화면에서 엔터를 치면 그대로 줄바꿈이 적용됩니다. 줄바꿈 문제는 주로 캡션(피드 게시물)과 바이오(프로필)에서 발생합니다.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-calculate-age-korean-vs-international",
+    title: {
+      ko: "만나이 계산법 총정리 - 한국 나이 vs 만 나이 차이와 변환",
+      en: "Age Calculation Guide - Korean Age vs International Age Explained",
+    },
+    description: {
+      ko: "만나이 계산이 헷갈리시나요? 한국식 나이와 만 나이의 차이, 2023년 만나이 통일법 시행 이후 달라진 점, 정확한 만나이 계산 방법을 정리합니다.",
+      en: "Confused about Korean age vs international age? Complete guide to age calculation methods, the 2023 unified age law, and how to convert between systems.",
+    },
+    date: "2026-03-24",
+    toolId: "age-calculator",
+    image: "/images/blog/how-to-calculate-age-korean-vs-international.webp",
+    keywords: ["만나이 계산", "한국 나이", "만나이 계산기", "나이 계산", "만나이 통일법", "한국나이 만나이 차이"],
+    content: {
+      ko: [
+        {
+          heading: "한국의 나이 계산법, 왜 복잡할까?",
+          body: "한국은 세계에서 거의 유일하게 독특한 나이 계산 방식을 사용해왔습니다. 2023년 6월부터 법적으로 '만 나이'로 통일되었지만, 여전히 일상에서는 다양한 나이 표현이 혼용되고 있습니다.\n\n한국에서 사용되어 온 나이 계산법 3가지:\n\n1. 세는 나이(한국 나이): 태어나면 1살, 매년 1월 1일에 한 살 추가\n2. 만 나이(국제 나이): 태어나면 0살, 생일이 지나야 한 살 추가\n3. 연 나이: 현재 연도 - 출생 연도\n\n같은 사람이라도 계산법에 따라 1~2살 차이가 납니다. 예를 들어 2000년 12월 생인 사람은 2026년 3월 기준으로 세는 나이 27세, 만 나이 25세(생일 전), 연 나이 26세입니다.",
+        },
+        {
+          heading: "만나이 통일법, 무엇이 달라졌나?",
+          body: "2023년 6월 28일부터 시행된 '만나이 통일법'에 따라, 법률과 행정 문서에서는 모두 만 나이를 사용합니다.\n\n달라진 주요 영역:\n- 법적 서류: 모든 법률, 계약서, 행정 서류에서 만 나이 사용\n- 의료: 처방, 예방접종 기준이 만 나이로 통일\n- 교육: 초등학교 입학 기준은 기존과 동일(출생연도 기준)\n- 병역: 만 18세 기준\n- 주류/담배 구매: 만 19세 기준\n\n다만 일상 대화에서는 여전히 세는 나이를 사용하는 경우가 많으며, 완전한 전환에는 시간이 필요할 것으로 보입니다.\n\n특히 주의할 점은 '연 나이'도 법적으로 사용하지 않게 되었다는 것입니다. 과거 징병 검사 등에서 사용하던 연 나이도 모두 만 나이로 변경되었습니다.",
+        },
+        {
+          heading: "만나이 정확히 계산하는 방법",
+          body: "만 나이를 정확히 계산하는 공식:\n\n아직 올해 생일이 안 지났으면: 현재 연도 - 출생 연도 - 1\n올해 생일이 지났으면: 현재 연도 - 출생 연도\n\n예시 (2026년 3월 24일 기준):\n- 1998년 1월 생: 만 28세 (생일 지남)\n- 1998년 5월 생: 만 27세 (생일 안 지남)\n- 1998년 3월 24일 생: 만 28세 (당일 생일)\n\n한국 나이를 만 나이로 변환:\n- 생일이 지났으면: 한국 나이 - 1\n- 생일이 안 지났으면: 한국 나이 - 2\n\n매번 계산하기 번거롭다면 Toolkio의 만나이 계산기를 활용하세요.",
+        },
+        {
+          heading: "Toolkio 만나이 계산기 사용법",
+          body: "Toolkio의 만나이 계산기는 생년월일만 입력하면 만 나이, 한국 나이, 연 나이를 한눈에 보여줍니다.\n\n1. 생년월일 입력 (년, 월, 일)\n2. 만 나이, 한국 나이, 연 나이 즉시 확인\n3. 다음 생일까지 남은 일수도 표시\n\n법적 서류 작성, 나이 확인이 필요한 각종 상황에서 유용하게 활용할 수 있습니다. toolkio.com에서 무료로 사용하세요!",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Korean Age Calculation Is Unique",
+          body: "Korea has traditionally used a unique age counting system. While the law was unified to international age in June 2023, multiple age systems still coexist in daily life.\n\nThree age systems used in Korea:\n1. Korean age: Born at 1, add 1 every January 1st\n2. International age (만 나이): Born at 0, add 1 on birthday\n3. Year age: Current year minus birth year\n\nThe same person can be 1-2 years older in Korean age than international age.",
+        },
+        {
+          heading: "Korea's Age Unification Law (2023)",
+          body: "Since June 28, 2023, all legal and administrative documents use international age.\n\nKey changes:\n- Legal documents: All use international age\n- Medical: Prescriptions and vaccinations based on international age\n- Military service: Based on age 18 (international)\n- Alcohol/tobacco purchase: Age 19 (international)\n\nDaily conversation still often uses Korean age, but the legal framework is now unified.",
+        },
+        {
+          heading: "How to Calculate International Age Accurately",
+          body: "International age formula:\n- Birthday hasn't passed this year: Current year - Birth year - 1\n- Birthday has passed: Current year - Birth year\n\nConverting from Korean to international age:\n- Birthday passed: Korean age - 1\n- Birthday not passed: Korean age - 2",
+        },
+        {
+          heading: "Use Toolkio's Age Calculator",
+          body: "Toolkio's Age Calculator shows international age, Korean age, and year age from your birthdate.\n\n1. Enter your date of birth\n2. See all three age calculations instantly\n3. Days until next birthday also displayed\n\nPerfect for legal documents and official purposes. Free at toolkio.com!",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "만나이 통일법 이후에도 한국 나이를 쓸 수 있나요?",
+        answer: "일상 대화에서 한국 나이(세는 나이)를 사용하는 것은 자유입니다. 만나이 통일법은 법률, 행정, 공식 문서에서의 나이 표기를 만 나이로 통일한 것이며, 사적인 영역에서의 나이 표현까지 규제하지는 않습니다.",
+      },
+      {
+        question: "초등학교 입학 기준은 어떻게 되나요?",
+        answer: "초등학교 입학은 만 6세가 되는 해의 3월에 입학하는 것이 원칙입니다. 즉, 해당 연도 1월 1일~12월 31일 사이에 만 6세가 되는 아동이 입학 대상입니다. 이는 기존의 출생연도 기준과 실질적으로 동일합니다.",
+      },
+      {
+        question: "생일 당일은 나이가 바뀌는 날인가요?",
+        answer: "네, 만 나이 기준으로 생일 당일에 나이가 한 살 올라갑니다. 예를 들어 3월 24일이 생일이라면, 3월 24일 0시부터 새로운 나이가 됩니다. Toolkio의 만나이 계산기는 이를 정확하게 반영하여 계산합니다.",
+      },
+    ],
+  },
 ];
