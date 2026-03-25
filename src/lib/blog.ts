@@ -5147,4 +5147,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "website-image-optimization-speed",
+    title: {
+      ko: "웹사이트 이미지 최적화 5단계 - 로딩 속도 3초 이내로 만들기",
+      en: "5 Steps to Optimize Website Images - Get Load Times Under 3 Seconds",
+    },
+    description: {
+      ko: "웹사이트 로딩이 느린 원인 80%는 이미지예요. 이미지 압축으로 로딩 속도를 확 줄이는 방법을 알려드릴게요.",
+      en: "80% of slow website load times are caused by images. Learn how to compress images and dramatically speed up your site.",
+    },
+    date: "2026-03-25",
+    toolId: "image-compressor",
+    image: "/images/blog/website-image-optimization-speed.webp",
+    keywords: ["이미지 최적화", "웹사이트 로딩 속도", "이미지 압축", "사이트 속도 개선", "image optimization", "page speed"],
+    content: {
+      ko: [
+        {
+          heading: "사이트가 느린 이유, 이미지 때문이에요",
+          body: "블로그나 쇼핑몰을 운영하다 보면 페이지 로딩이 느려지는 경험 해보셨죠? 원인의 80%는 이미지 용량이에요. 스마트폰으로 찍은 사진 한 장이 5MB가 넘거든요. 이런 이미지를 10장만 올려도 50MB예요.\n\n구글은 로딩 시간 3초가 넘으면 방문자의 53%가 이탈한다고 발표했어요. 검색 순위에도 직접 영향을 미쳐요. 그래서 이미지 최적화는 선택이 아니라 필수예요.",
+        },
+        {
+          heading: "이미지 용량, 어디까지 줄여야 할까?",
+          body: "블로그 본문 이미지는 200KB 이하가 적당해요. 썸네일은 50KB 이하로 맞추면 좋고요.\n\n포맷별 특징도 알아두세요:\n- WebP: 가장 가벼워요. JPG 대비 30% 작아요\n- JPG: 사진에 적합해요. 품질 80%면 눈으로 차이 못 느껴요\n- PNG: 투명 배경이 필요할 때만 쓰세요. 용량이 커요\n- AVIF: 최신 포맷이에요. WebP보다 20% 더 작지만 지원 브라우저가 적어요\n\n저도 블로그 이미지는 전부 WebP로 변환해서 쓰거든요. 체감 로딩 속도가 확 달라져요.",
+        },
+        {
+          heading: "이미지 압축 실전 가이드",
+          body: "Toolkio 이미지 압축 도구로 바로 해보세요:\n\n1. toolkio.com에서 이미지 압축 도구 선택\n2. 이미지 파일을 드래그 앤 드롭\n3. 압축 품질 조절 (80% 추천)\n4. 변환된 이미지 다운로드\n\n브라우저에서 바로 처리되니까 이미지가 서버로 전송되지 않아요. 개인정보 걱정 없이 쓸 수 있어요.\n\n꿀팁: 블로그용 이미지는 가로 1200px, 품질 80%로 맞추면 용량도 적고 화질도 깨끗해요.",
+        },
+        {
+          heading: "지금 당장 해보세요",
+          body: "오늘 할 일 하나 드릴게요. 내 웹사이트에서 가장 큰 이미지 3개를 찾아서 압축해보세요.\n\nChrome 개발자 도구(F12) > Network 탭에서 이미지 크기를 확인할 수 있어요. 500KB 넘는 이미지가 있다면 바로 Toolkio에서 압축하세요.\n\n이것만 해도 페이지 로딩 시간이 1~2초는 줄어들어요. 구글 PageSpeed Insights에서 점수가 올라가는 걸 직접 확인해보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Your Site Is Slow Because of Images",
+          body: "If your website takes forever to load, images are probably the culprit. A single smartphone photo can be over 5MB. Upload 10 of those and you're looking at 50MB of images alone.\n\nGoogle reports that 53% of visitors leave if a page takes more than 3 seconds to load. Page speed also directly affects search rankings. Image optimization isn't optional anymore.",
+        },
+        {
+          heading: "How Small Should Your Images Be?",
+          body: "For blog content images, aim for under 200KB. Thumbnails should be under 50KB.\n\nHere's a quick format guide:\n- WebP: Lightest option. 30% smaller than JPG\n- JPG: Great for photos. Quality at 80% looks identical to the original\n- PNG: Only use when you need transparency. File sizes are large\n- AVIF: Newest format. 20% smaller than WebP but limited browser support\n\nWebP is the sweet spot for most use cases right now.",
+        },
+        {
+          heading: "Step-by-Step Image Compression",
+          body: "Try it now with Toolkio's image compressor:\n\n1. Go to the Image Compressor tool on toolkio.com\n2. Drag and drop your image file\n3. Adjust compression quality (80% recommended)\n4. Download the compressed image\n\nEverything is processed in your browser. Your images never leave your device.\n\nPro tip: For blog images, use 1200px width and 80% quality. Great balance between size and clarity.",
+        },
+        {
+          heading: "Try It Right Now",
+          body: "Here's one thing you can do today: find the 3 largest images on your website and compress them.\n\nOpen Chrome DevTools (F12) > Network tab to check image sizes. Anything over 500KB should be compressed immediately with Toolkio.\n\nThis alone can shave 1-2 seconds off your page load time. Check your Google PageSpeed Insights score before and after to see the difference.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지를 압축하면 화질이 많이 떨어지나요?",
+        answer: "80% 품질로 압축하면 육안으로 차이를 거의 못 느껴요. 원본 대비 용량은 60~70% 줄어드는데 화질 차이는 미미해요. 블로그나 웹사이트용이라면 80% 품질이면 충분해요.",
+      },
+      {
+        question: "WebP 포맷을 모든 브라우저에서 지원하나요?",
+        answer: "2026년 기준 주요 브라우저(Chrome, Safari, Firefox, Edge) 모두 WebP를 지원해요. IE11만 미지원인데, IE는 이미 서비스 종료됐으니 걱정 안 하셔도 돼요.",
+      },
+      {
+        question: "한 번에 여러 이미지를 압축할 수 있나요?",
+        answer: "Toolkio 이미지 압축 도구에서 여러 파일을 한 번에 드래그해서 올리면 일괄 압축이 돼요. 브라우저에서 처리되니까 속도도 빠르고요.",
+      },
+    ],
+  },
+  {
+    slug: "qr-code-practical-uses-guide",
+    title: {
+      ko: "QR코드 활용법 7가지 - 명함, 메뉴판, 마케팅까지 완벽 가이드",
+      en: "7 Practical QR Code Uses - Business Cards, Menus, and Marketing Guide",
+    },
+    description: {
+      ko: "QR코드, 만들기만 하면 끝이 아니에요. 명함, 음식점 메뉴판, 마케팅 캠페인에 제대로 활용하는 방법을 정리했어요.",
+      en: "Creating a QR code is just the start. Learn how to effectively use QR codes for business cards, restaurant menus, and marketing campaigns.",
+    },
+    date: "2026-03-25",
+    toolId: "qr-code-generator",
+    image: "/images/blog/qr-code-practical-uses-guide.webp",
+    keywords: ["QR코드 활용법", "QR코드 만들기", "명함 QR코드", "메뉴판 QR코드", "QR코드 마케팅", "qr code generator"],
+    content: {
+      ko: [
+        {
+          heading: "QR코드, 이제 어디서나 보이죠",
+          body: "카페에서 메뉴 주문할 때, 명함 받을 때, 공연 입장할 때... QR코드 안 쓰는 곳이 없어요. 코로나 이후로 비대면 문화가 자리잡으면서 QR코드 사용량이 4배나 늘었거든요.\n\n근데 막상 QR코드를 만들려고 하면 어디서 만들지, 어떤 내용을 넣을지 고민되죠? 오늘 7가지 실전 활용법을 알려드릴게요.",
+        },
+        {
+          heading: "실전 활용법 7가지",
+          body: "1. 디지털 명함: 이름, 전화번호, 이메일, 링크드인 URL을 QR코드에 담으세요. 종이 명함 뒷면에 인쇄하면 완벽해요.\n\n2. 음식점 메뉴판: 테이블마다 QR코드를 붙이면 메뉴판 인쇄비를 아낄 수 있어요. 메뉴가 바뀌면 링크만 수정하면 되거든요.\n\n3. 제품 패키지: 사용 설명서나 리뷰 페이지로 연결하세요.\n\n4. 이벤트 초대장: 구글 캘린더 링크를 QR코드로 만들면 참석자가 바로 일정에 추가해요.\n\n5. Wi-Fi 공유: 와이파이 접속 정보를 QR코드로 만들면 비밀번호 알려줄 필요 없어요.\n\n6. 결제 링크: 소상공인은 카카오페이나 토스 결제 링크를 QR코드로 만들어서 쓰면 편해요.\n\n7. SNS 팔로우: 인스타그램이나 유튜브 채널 링크를 QR코드로 만들어서 오프라인 홍보에 활용하세요.",
+        },
+        {
+          heading: "Toolkio로 QR코드 30초 만에 만들기",
+          body: "Toolkio QR코드 생성기로 바로 만들어보세요:\n\n1. toolkio.com에서 QR코드 생성기 선택\n2. URL이나 텍스트 입력\n3. QR코드가 실시간으로 생성돼요\n4. PNG로 다운로드\n\n저도 블로그 명함에 QR코드를 넣었는데, 네트워킹 행사에서 반응이 좋더라고요. 종이 명함만 주는 것보다 훨씬 인상적이에요.\n\n팁: QR코드 주변에 1cm 이상 여백을 두세요. 여백이 없으면 스캔이 잘 안 돼요.",
+        },
+        {
+          heading: "QR코드 만들 때 이것만 주의하세요",
+          body: "QR코드가 제대로 작동하려면 몇 가지 체크할 게 있어요:\n\n- URL이 깨지면 안 돼요: 인쇄 전에 반드시 스캔 테스트하세요\n- 크기: 인쇄물에서 최소 2cm x 2cm 이상이어야 스캔이 잘 돼요\n- 색상: 배경은 밝게, QR코드는 어둡게. 반대로 하면 인식률이 떨어져요\n- 여백: QR코드 주변에 흰색 여백이 꼭 필요해요\n\n지금 바로 Toolkio에서 QR코드 하나 만들어보세요. 30초면 끝나요.",
+        },
+      ],
+      en: [
+        {
+          heading: "QR Codes Are Everywhere Now",
+          body: "Ordering coffee, exchanging business cards, entering events... QR codes are part of daily life. Usage has quadrupled since the pandemic as contactless interactions became the norm.\n\nBut when you actually need to create one, where do you start? Here are 7 practical ways to use QR codes.",
+        },
+        {
+          heading: "7 Practical QR Code Uses",
+          body: "1. Digital Business Cards: Encode your name, phone, email, and LinkedIn URL. Print it on the back of your paper card.\n\n2. Restaurant Menus: Place QR codes on tables to save printing costs. Update the menu by just changing the linked page.\n\n3. Product Packaging: Link to user manuals or review pages.\n\n4. Event Invitations: Create a QR code linking to Google Calendar so attendees can instantly add the event.\n\n5. Wi-Fi Sharing: Generate a QR code with your Wi-Fi credentials. No more spelling out passwords.\n\n6. Payment Links: Small businesses can create QR codes for payment services for quick checkout.\n\n7. Social Media Follow: Create QR codes for your Instagram or YouTube channel for offline promotion.",
+        },
+        {
+          heading: "Create a QR Code in 30 Seconds with Toolkio",
+          body: "Try Toolkio's QR Code Generator:\n\n1. Go to the QR Code Generator on toolkio.com\n2. Enter your URL or text\n3. Watch the QR code generate in real time\n4. Download as PNG\n\nTip: Always leave at least 1cm of white space around your QR code. Without margins, scanners may fail to read it.",
+        },
+        {
+          heading: "Things to Watch Out For",
+          body: "Make sure your QR code works properly:\n\n- Test before printing: Always scan the QR code to verify the link works\n- Size: Minimum 2cm x 2cm for printed materials\n- Colors: Light background, dark QR code. Inverting this reduces scan accuracy\n- Margins: White space around the QR code is essential for readability\n\nHead to Toolkio and create your first QR code right now. It takes 30 seconds.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "QR코드에 담을 수 있는 정보량에 한계가 있나요?",
+        answer: "네, QR코드는 최대 약 3,000바이트(한글 기준 약 1,000자)까지 담을 수 있어요. 하지만 정보가 많을수록 QR코드가 복잡해져서 스캔이 어려워져요. URL 하나를 담는 게 가장 효과적이에요.",
+      },
+      {
+        question: "QR코드에 유효기간이 있나요?",
+        answer: "QR코드 자체는 유효기간이 없어요. 이미지 파일이거든요. 다만 QR코드에 담긴 URL이 만료되거나 삭제되면 당연히 작동하지 않아요. 그래서 영구적인 URL을 사용하는 게 좋아요.",
+      },
+      {
+        question: "흑백이 아닌 컬러 QR코드도 만들 수 있나요?",
+        answer: "네, 가능해요. 다만 배경은 밝은 색, QR코드 패턴은 어두운 색을 유지해야 인식률이 높아요. 밝은 파란색이나 밝은 빨간색으로 QR코드를 만들면 스캔이 안 될 수 있으니 주의하세요.",
+      },
+    ],
+  },
+  {
+    slug: "json-data-cleanup-developer-tool",
+    title: {
+      ko: "JSON 데이터 정리하는 법 - 개발자라면 매일 쓰는 필수 도구",
+      en: "How to Clean Up JSON Data - An Essential Daily Tool for Developers",
+    },
+    description: {
+      ko: "API 응답이 한 줄로 뭉쳐서 읽을 수가 없죠? JSON 포맷터로 깔끔하게 정리하는 방법을 알려드릴게요.",
+      en: "API responses crammed into one line are unreadable. Learn how to use a JSON formatter to clean up messy data instantly.",
+    },
+    date: "2026-03-25",
+    toolId: "json-formatter",
+    image: "/images/blog/json-data-cleanup-developer-tool.webp",
+    keywords: ["JSON 정리", "JSON 포맷터", "JSON 보기 좋게", "API 응답 정리", "개발자 도구", "json formatter"],
+    content: {
+      ko: [
+        {
+          heading: "API 응답이 한 줄로 오면 답답하죠",
+          body: "개발하다 보면 API 응답을 확인해야 할 때가 많잖아요. 근데 서버에서 오는 JSON이 이렇게 생겼어요:\n\n[\"name\":\"홍길동\",\"age\":30,\"address\":[\"city\":\"서울\",\"zip\":\"12345\"]]\n\n한 줄에 다 붙어 있으면 어디가 뭔지 알 수가 없거든요. 특히 데이터가 중첩되면 머리가 아파요.\n\n저도 매번 이런 상황이라 JSON 포맷터를 즐겨찾기에 넣어두고 쓰거든요.",
+        },
+        {
+          heading: "JSON 포맷팅이 필요한 3가지 상황",
+          body: "1. API 디버깅: REST API 응답을 분석할 때 정리된 JSON이 필수예요. 중첩된 객체 구조를 한눈에 파악할 수 있거든요.\n\n2. 설정 파일 수정: package.json, tsconfig.json 같은 설정 파일을 수정할 때 들여쓰기가 엉켜 있으면 실수하기 쉬워요.\n\n3. 데이터 검증: JSON 문법 오류를 찾을 때도 포맷터가 유용해요. 쉼표 빠진 거, 따옴표 안 닫은 거 바로 잡아내거든요.\n\n특히 프론트엔드 개발자는 하루에도 몇 번씩 JSON을 확인해야 해서 포맷터 없으면 일이 안 돼요.",
+        },
+        {
+          heading: "Toolkio JSON 포맷터 사용법",
+          body: "Toolkio JSON 포맷터는 브라우저에서 바로 사용할 수 있어요:\n\n1. toolkio.com에서 JSON 포맷터 선택\n2. JSON 데이터를 붙여넣기\n3. 자동으로 들여쓰기 정리가 돼요\n4. 문법 오류가 있으면 바로 알려줘요\n\n들여쓰기 크기도 2칸, 4칸 중에 선택할 수 있고, 압축(Minify) 기능도 있어요. 배포할 때는 압축해서 용량을 줄이고, 개발할 때는 포맷팅해서 읽기 좋게 만드세요.\n\n데이터가 서버로 전송되지 않으니 회사 내부 데이터도 안심하고 쓸 수 있어요.",
+        },
+        {
+          heading: "JSON 다룰 때 자주 하는 실수",
+          body: "JSON 작업할 때 이런 실수 자주 하거든요:\n\n- 마지막 항목 뒤에 쉼표: JavaScript는 허용하는데 JSON은 안 돼요\n- 작은따옴표 사용: JSON은 반드시 큰따옴표만 써야 해요\n- 주석 넣기: JSON에는 주석을 넣을 수 없어요\n- undefined 사용: JSON에서는 null만 가능해요\n\nToolkio 포맷터에 붙여넣으면 이런 오류를 바로 잡아내니까 시간을 아낄 수 있어요. 개발하면서 JSON 볼 일 있으면 바로 써보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Unformatted API Responses Are a Headache",
+          body: "As a developer, you constantly need to check API responses. But server responses often look like this:\n\n[\"name\":\"John\",\"age\":30,\"address\":[\"city\":\"Seoul\",\"zip\":\"12345\"]]\n\nWhen everything is crammed into one line, it's impossible to read. Nested data makes it even worse.\n\nA JSON formatter is one of those tools you'll use every single day.",
+        },
+        {
+          heading: "3 Situations Where JSON Formatting Is Essential",
+          body: "1. API Debugging: Clean JSON is essential for analyzing REST API responses. You can instantly see nested object structures.\n\n2. Config File Editing: When editing package.json or tsconfig.json, messy indentation leads to mistakes.\n\n3. Data Validation: Formatters catch syntax errors like missing commas or unclosed quotes instantly.\n\nFrontend developers check JSON multiple times a day. A formatter isn't a luxury, it's a necessity.",
+        },
+        {
+          heading: "How to Use Toolkio JSON Formatter",
+          body: "Toolkio's JSON Formatter works right in your browser:\n\n1. Go to JSON Formatter on toolkio.com\n2. Paste your JSON data\n3. It auto-formats with proper indentation\n4. Syntax errors are highlighted immediately\n\nYou can choose 2-space or 4-space indentation, and there's a Minify option too. Minify for production, format for development.\n\nYour data never leaves your browser, so it's safe for internal company data.",
+        },
+        {
+          heading: "Common JSON Mistakes to Avoid",
+          body: "Watch out for these frequent JSON errors:\n\n- Trailing commas: JavaScript allows them, JSON doesn't\n- Single quotes: JSON requires double quotes only\n- Comments: JSON doesn't support comments\n- undefined: Use null instead in JSON\n\nToolkio's formatter catches all of these instantly. Next time you're working with JSON, give it a try.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "JSON과 JavaScript 객체의 차이는 뭔가요?",
+        answer: "JSON은 데이터 교환 포맷이고 JavaScript 객체는 프로그래밍 언어의 데이터 타입이에요. JSON은 키에 반드시 큰따옴표를 써야 하고, 함수나 undefined를 담을 수 없어요. JavaScript 객체는 이런 제약이 없고요.",
+      },
+      {
+        question: "JSON 포맷터에 넣은 데이터가 유출될 수 있나요?",
+        answer: "Toolkio JSON 포맷터는 브라우저에서만 처리돼요. 입력한 데이터가 서버로 전송되지 않으니 회사 내부 데이터나 개인정보가 포함된 JSON도 안심하고 사용할 수 있어요.",
+      },
+      {
+        question: "JSON Minify는 언제 사용하나요?",
+        answer: "서버에 저장하거나 API로 전송할 때 JSON을 압축(Minify)하면 데이터 크기가 줄어들어요. 들여쓰기와 줄바꿈을 제거하는 거예요. 개발 중에는 포맷팅해서 읽기 좋게, 배포할 때는 압축해서 가볍게 사용하세요.",
+      },
+    ],
+  },
+  {
+    slug: "secure-password-creation-tips",
+    title: {
+      ko: "안전한 비밀번호 만드는 법 - 해킹 당하기 전에 꼭 읽으세요",
+      en: "How to Create Secure Passwords - Read This Before You Get Hacked",
+    },
+    description: {
+      ko: "비밀번호 1234는 0.001초면 뚫려요. 해커가 못 뚫는 비밀번호를 만드는 방법과 관리 팁을 알려드릴게요.",
+      en: "The password 1234 can be cracked in 0.001 seconds. Learn how to create passwords that hackers can't break and tips to manage them.",
+    },
+    date: "2026-03-25",
+    toolId: "password-generator",
+    image: "/images/blog/secure-password-creation-tips.webp",
+    keywords: ["비밀번호 만들기", "안전한 비밀번호", "비밀번호 생성기", "해킹 방지", "패스워드 보안", "password generator"],
+    content: {
+      ko: [
+        {
+          heading: "내 비밀번호, 해커가 뚫는 데 얼마나 걸릴까?",
+          body: "솔직히 말하면 대부분의 비밀번호는 몇 초면 뚫려요. 2025년 기준 가장 많이 쓰이는 비밀번호 TOP 5가 이거거든요:\n\n1. 123456\n2. password\n3. 12345678\n4. qwerty\n5. abc123\n\n이런 비밀번호는 해커의 사전 공격(dictionary attack)에 0.001초 만에 뚫려요. 8자리 숫자 조합도 1초면 끝나고요.\n\n반면 대소문자 + 숫자 + 특수문자를 섞은 16자리 비밀번호는 뚫는 데 수십억 년이 걸려요. 길이와 복잡도가 핵심이에요.",
+        },
+        {
+          heading: "안전한 비밀번호의 3가지 조건",
+          body: "해커가 못 뚫는 비밀번호에는 공통점이 있어요:\n\n1. 길이 12자 이상: 짧은 비밀번호는 무차별 대입으로 금방 뚫려요. 최소 12자, 가능하면 16자 이상으로 설정하세요.\n\n2. 문자 종류 혼합: 대문자, 소문자, 숫자, 특수문자를 전부 섞으세요. 종류가 다양할수록 경우의 수가 기하급수적으로 늘어나요.\n\n3. 예측 불가능: 생일, 전화번호, 이름 같은 개인정보는 절대 쓰지 마세요. 해커는 SNS에서 이런 정보를 수집하거든요.\n\n그리고 제일 중요한 건 사이트마다 다른 비밀번호를 쓰는 거예요. 하나 뚫리면 연쇄적으로 다 뚫리거든요.",
+        },
+        {
+          heading: "Toolkio로 강력한 비밀번호 만들기",
+          body: "직접 만들면 패턴이 생기게 돼 있어요. Toolkio 비밀번호 생성기를 쓰세요:\n\n1. toolkio.com에서 비밀번호 생성기 선택\n2. 길이 설정 (16자 추천)\n3. 포함할 문자 종류 선택 (전부 체크 추천)\n4. 생성 버튼 클릭\n5. 복사해서 바로 사용\n\n저도 새 계정 만들 때마다 이 도구로 비밀번호를 생성하거든요. 머리 아프게 직접 만들 필요가 없어요.\n\n생성된 비밀번호는 브라우저의 비밀번호 관리자나 1Password 같은 앱에 저장해두세요.",
+        },
+        {
+          heading: "비밀번호 관리, 이렇게 하세요",
+          body: "강력한 비밀번호를 만들었으면 관리도 잘해야겠죠?\n\n- 비밀번호 관리 앱 사용: Chrome 내장 비밀번호 관리자, 1Password, Bitwarden 중 하나를 쓰세요\n- 2단계 인증(2FA) 설정: 비밀번호가 유출돼도 추가 인증이 있으면 안전해요\n- 3개월마다 변경: 주요 계정(이메일, 은행)은 주기적으로 바꾸세요\n- 공용 PC에서 로그인 금지: 키로거가 설치돼 있을 수 있어요\n\n지금 바로 가장 중요한 계정 3개의 비밀번호를 Toolkio로 새로 만들어보세요. 5분이면 돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "How Long Would It Take to Crack Your Password?",
+          body: "Most passwords can be cracked in seconds. The top 5 most common passwords in 2025:\n\n1. 123456\n2. password\n3. 12345678\n4. qwerty\n5. abc123\n\nThese are cracked by dictionary attacks in 0.001 seconds. An 8-digit number combination takes about 1 second.\n\nBut a 16-character password mixing uppercase, lowercase, numbers, and symbols would take billions of years. Length and complexity are everything.",
+        },
+        {
+          heading: "3 Rules for Unbreakable Passwords",
+          body: "Strong passwords share these traits:\n\n1. At least 12 characters: Short passwords fall to brute force attacks quickly. Aim for 16+ characters.\n\n2. Mix character types: Combine uppercase, lowercase, numbers, and special characters. Each type exponentially increases possible combinations.\n\n3. Be unpredictable: Never use birthdays, phone numbers, or names. Hackers collect personal info from social media.\n\nMost importantly, use a different password for every site. One breach shouldn't compromise all your accounts.",
+        },
+        {
+          heading: "Generate Strong Passwords with Toolkio",
+          body: "When you create passwords manually, patterns emerge. Use Toolkio's Password Generator instead:\n\n1. Go to Password Generator on toolkio.com\n2. Set the length (16 characters recommended)\n3. Select character types (check all for maximum security)\n4. Click Generate\n5. Copy and use immediately\n\nSave generated passwords in your browser's password manager or an app like 1Password or Bitwarden.",
+        },
+        {
+          heading: "Password Management Best Practices",
+          body: "Creating a strong password is step one. Managing them well is step two:\n\n- Use a password manager: Chrome's built-in manager, 1Password, or Bitwarden\n- Enable 2FA: Two-factor authentication protects you even if a password leaks\n- Change every 3 months: Rotate passwords for critical accounts (email, banking)\n- Avoid public computers: Keyloggers may be installed\n\nStart now: update the passwords for your 3 most important accounts using Toolkio. It takes 5 minutes.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "비밀번호를 종이에 적어두면 안 되나요?",
+        answer: "종이에 적는 건 온라인 해킹으로부터는 안전하지만 분실이나 도난 위험이 있어요. 비밀번호 관리 앱을 사용하는 게 가장 안전해요. 꼭 종이에 적어야 한다면 금고 같은 안전한 곳에 보관하세요.",
+      },
+      {
+        question: "비밀번호를 자주 바꾸는 게 정말 필요한가요?",
+        answer: "최근 보안 전문가들은 '강력한 비밀번호를 한 번 잘 만들어서 오래 쓰는 게 낫다'고 말해요. 자주 바꾸면 오히려 패턴이 생기거든요. 다만 유출 의심이 있거나 주요 계정이라면 바로 변경하세요.",
+      },
+      {
+        question: "생체 인증(지문, 얼굴)이 비밀번호보다 안전한가요?",
+        answer: "생체 인증은 편리하지만 완벽하지는 않아요. 지문은 복제가 가능하고, 얼굴 인식도 사진으로 속일 수 있거든요. 가장 안전한 방법은 강력한 비밀번호 + 2단계 인증(2FA)의 조합이에요.",
+      },
+    ],
+  },
+  {
+    slug: "web-design-color-code-conversion",
+    title: {
+      ko: "웹 디자인 색상 코드 변환 가이드 - HEX, RGB, HSL 한번에 이해하기",
+      en: "Web Design Color Code Conversion Guide - Understanding HEX, RGB, and HSL",
+    },
+    description: {
+      ko: "디자이너가 준 색상 코드가 HEX인데 CSS에서 RGB가 필요할 때, 헷갈리지 않게 변환하는 방법을 정리했어요.",
+      en: "When the designer gives you HEX but your CSS needs RGB, here's how to convert color codes without confusion.",
+    },
+    date: "2026-03-25",
+    toolId: "color-converter",
+    image: "/images/blog/web-design-color-code-conversion.webp",
+    keywords: ["색상 코드 변환", "HEX RGB 변환", "HSL 색상", "웹 디자인 색상", "CSS 색상 코드", "color converter"],
+    content: {
+      ko: [
+        {
+          heading: "색상 코드가 왜 이렇게 여러 개일까?",
+          body: "웹 개발하다 보면 같은 빨간색인데 표현 방식이 다 달라서 헷갈리죠?\n\n- HEX: #FF0000\n- RGB: rgb(255, 0, 0)\n- HSL: hsl(0, 100%, 50%)\n\n전부 같은 빨간색이에요. 그런데 왜 이렇게 여러 가지가 있을까요?\n\nHEX는 디자인 툴에서 주로 쓰이고, RGB는 CSS와 프로그래밍에서, HSL은 색상 조절이 직관적이라 UI 작업에서 많이 써요. 상황에 따라 필요한 형식이 다르거든요.",
+        },
+        {
+          heading: "HEX, RGB, HSL 쉽게 이해하기",
+          body: "각 색상 체계를 쉽게 설명해드릴게요:\n\nHEX (16진수): #RRGGBB 형태예요. R(빨강), G(초록), B(파랑) 값을 16진수로 표현한 거예요. 00이 가장 어둡고 FF가 가장 밝아요.\n\nRGB (빨강-초록-파랑): rgb(0~255, 0~255, 0~255) 형태예요. 세 가지 빛을 섞어서 색을 만드는 방식이에요. 모니터가 빛을 쏘는 원리와 같아요.\n\nHSL (색상-채도-명도): hsl(0~360, 0~100%, 0~100%) 형태예요. 색상환에서 각도를 골라서 색을 정해요. 사람의 직관과 가장 가까워요.\n\n저는 개인적으로 HSL을 좋아해요. '이 색을 좀 더 밝게' 하려면 명도 값만 올리면 되거든요.",
+        },
+        {
+          heading: "Toolkio 색상 변환기로 바로 변환하기",
+          body: "Toolkio 색상 변환기는 하나만 입력하면 나머지를 전부 보여줘요:\n\n1. toolkio.com에서 색상 변환기 선택\n2. HEX, RGB, HSL 중 아무거나 입력\n3. 나머지 형식이 자동으로 변환돼요\n4. 색상 미리보기도 바로 확인\n\n디자이너한테 #3B82F6 받았는데 CSS에서 투명도가 필요하면? RGB로 변환해서 rgba(59, 130, 246, 0.5) 이렇게 쓰면 돼요.\n\n매번 구글에 'HEX to RGB' 검색할 필요 없이 Toolkio 즐겨찾기 해두세요.",
+        },
+        {
+          heading: "실무에서 바로 쓰는 색상 팁",
+          body: "웹 디자인에서 색상 다룰 때 알아두면 좋은 팁이에요:\n\n- 투명도가 필요하면 RGBA 사용: rgba(255, 0, 0, 0.5)로 반투명 처리\n- 색상 톤 조절은 HSL이 편해요: 명도(L)만 바꾸면 같은 계열의 밝은/어두운 색을 만들 수 있어요\n- CSS 변수에 HSL 저장하면 테마 변경이 쉬워요\n- 접근성 체크: 배경과 글자 색상의 대비 비율이 4.5:1 이상인지 확인하세요\n\n지금 작업 중인 프로젝트의 주요 색상 코드를 Toolkio에서 변환해보세요. HEX, RGB, HSL을 한눈에 정리할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Are There So Many Color Code Formats?",
+          body: "The same red color can be written three different ways:\n\n- HEX: #FF0000\n- RGB: rgb(255, 0, 0)\n- HSL: hsl(0, 100%, 50%)\n\nAll represent the exact same red. But why so many formats?\n\nHEX is popular in design tools, RGB is standard in CSS and programming, and HSL is intuitive for color adjustments in UI work. Different situations call for different formats.",
+        },
+        {
+          heading: "HEX, RGB, and HSL Explained Simply",
+          body: "HEX (Hexadecimal): Format is #RRGGBB. Red, Green, and Blue values in hexadecimal. 00 is darkest, FF is brightest.\n\nRGB (Red-Green-Blue): Format is rgb(0-255, 0-255, 0-255). Mixes three light colors to create any color. Matches how monitors actually display colors.\n\nHSL (Hue-Saturation-Lightness): Format is hsl(0-360, 0-100%, 0-100%). Picks a color from the color wheel by angle. Most intuitive for humans.\n\nHSL is especially handy. Want a lighter shade? Just increase the lightness value.",
+        },
+        {
+          heading: "Convert Instantly with Toolkio Color Converter",
+          body: "Toolkio's Color Converter shows all formats from a single input:\n\n1. Go to Color Converter on toolkio.com\n2. Enter any HEX, RGB, or HSL value\n3. All other formats auto-convert instantly\n4. See a live color preview\n\nGot #3B82F6 from your designer but need transparency? Convert to RGB and use rgba(59, 130, 246, 0.5).\n\nNo more Googling 'HEX to RGB' every time. Bookmark Toolkio.",
+        },
+        {
+          heading: "Practical Color Tips for Web Design",
+          body: "Useful tips for working with colors in web design:\n\n- Need transparency? Use RGBA: rgba(255, 0, 0, 0.5) for semi-transparent red\n- Adjusting tones? HSL is easiest: change Lightness for lighter/darker shades of the same hue\n- Store colors as HSL in CSS variables for easy theme switching\n- Accessibility: Ensure text-to-background contrast ratio is at least 4.5:1\n\nTry converting your current project's main colors in Toolkio. See HEX, RGB, and HSL side by side.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "HEX 코드에서 #을 빼고 입력해도 되나요?",
+        answer: "네, Toolkio 색상 변환기에서는 # 없이 FF0000만 입력해도 인식해요. CSS에서는 #을 반드시 붙여야 하지만 도구에서는 유연하게 처리해줘요.",
+      },
+      {
+        question: "CMYK 색상도 변환할 수 있나요?",
+        answer: "CMYK는 인쇄용 색상 체계라서 웹용 RGB/HEX와 정확히 1:1 대응이 안 돼요. 웹 디자인에서는 HEX, RGB, HSL만 사용하면 충분해요. 인쇄물 작업이라면 전용 디자인 도구를 사용하세요.",
+      },
+      {
+        question: "다크 모드에서 색상은 어떻게 조절하나요?",
+        answer: "HSL 형식을 쓰면 쉬워요. 라이트 모드의 색상에서 명도(L) 값만 반전시키면 다크 모드 색상을 만들 수 있거든요. 예를 들어 hsl(220, 90%, 90%)을 hsl(220, 90%, 20%)으로 바꾸면 돼요.",
+      },
+    ],
+  },
 ];
