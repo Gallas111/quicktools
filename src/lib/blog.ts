@@ -5482,4 +5482,347 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "css-code-cleanup-workflow",
+    title: {
+      ko: "CSS 코드 정리 워크플로우 — 압축, 포맷팅, 배포까지 3단계",
+      en: "CSS Code Cleanup Workflow — Minify, Format, and Deploy in 3 Steps",
+    },
+    description: {
+      ko: "CSS 파일이 지저분해서 유지보수가 힘드셨죠? 압축부터 포맷팅까지 깔끔하게 정리하는 워크플로우를 알려드릴게요.",
+      en: "Struggling with messy CSS files? Here's a clean workflow for minifying, formatting, and organizing your stylesheets.",
+    },
+    date: "2026-03-26",
+    toolId: "css-minifier",
+    image: "/images/blog/css-code-cleanup-workflow.webp",
+    keywords: ["CSS 압축", "CSS 정리", "CSS minify", "코드 포맷팅", "CSS 최적화", "웹 성능"],
+    content: {
+      ko: [
+        {
+          heading: "CSS 파일, 왜 정리해야 할까?",
+          body: "프로젝트 하다 보면 CSS 파일이 점점 커지거든요. 처음엔 깔끔했는데 기능 추가하고 수정하다 보면 1,000줄이 넘어가요.\n\n그러면 어떤 문제가 생기냐면요:\n\n- 같은 스타일이 여기저기 중복돼요\n- 안 쓰는 클래스가 쌓여요\n- 파일 크기가 커져서 페이지 로딩이 느려져요\n\n저도 예전에 CSS 파일 하나가 200KB 넘어간 적이 있었어요. 정리하고 압축했더니 60KB로 줄었더라고요.",
+        },
+        {
+          heading: "1단계: 포맷팅으로 읽기 좋게 만들기",
+          body: "먼저 코드를 읽기 좋게 정리하세요. 들여쓰기가 뒤죽박죽이면 수정할 때 실수하기 쉽거든요.\n\n좋은 포맷팅 규칙:\n\n- 속성 하나당 한 줄\n- 중괄호 앞에 스페이스\n- 관련 속성끼리 그룹핑 (레이아웃 → 박스 모델 → 타이포그래피 → 비주얼)\n\nToolkio CSS 압축기에 코드를 붙여넣으면 정리된 결과를 바로 볼 수 있어요.",
+        },
+        {
+          heading: "2단계: 중복 제거하고 최적화하기",
+          body: "포맷팅 했으면 이제 중복을 잡을 차례예요.\n\n체크리스트:\n\n- 같은 선택자가 여러 번 나오면 하나로 합치세요\n- 공통 스타일은 클래스로 분리하세요\n- !important가 3개 이상이면 구조를 다시 생각해보세요\n- 미디어 쿼리를 한곳에 모으세요\n\n이 과정만 해도 파일 크기가 20~30% 줄어들더라고요.",
+        },
+        {
+          heading: "3단계: 배포용으로 압축하기",
+          body: "개발할 때는 읽기 좋은 코드가 좋지만, 배포할 때는 압축해야 해요.\n\nCSS 압축이 하는 일:\n\n- 공백, 줄바꿈 제거\n- 주석 삭제\n- 색상 코드 단축 (#ffffff → #fff)\n- 불필요한 세미콜론 제거\n\nToolkio CSS 압축기에 붙여넣고 압축 버튼 누르면 끝이에요. 보통 30~50% 용량이 줄어요.\n\n지금 프로젝트의 CSS 파일을 한번 넣어보세요. 얼마나 줄어드는지 바로 확인돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Clean Up Your CSS?",
+          body: "CSS files grow messy over time. You start clean, but after months of features and fixes, you end up with 1,000+ lines of tangled styles.\n\nCommon problems:\n\n- Duplicate styles scattered everywhere\n- Unused classes piling up\n- Bloated file sizes slowing page loads\n\nI once had a CSS file over 200KB. After cleanup and minification, it dropped to 60KB.",
+        },
+        {
+          heading: "Step 1: Format for Readability",
+          body: "Start by making the code readable. Messy indentation leads to mistakes during edits.\n\nGood formatting rules:\n\n- One property per line\n- Space before opening brace\n- Group related properties (layout, box model, typography, visual)\n\nPaste your code into Toolkio's CSS Minifier to see a formatted result instantly.",
+        },
+        {
+          heading: "Step 2: Remove Duplicates and Optimize",
+          body: "Once formatted, hunt down duplicates.\n\nChecklist:\n\n- Merge duplicate selectors\n- Extract common styles into shared classes\n- If you have 3+ !important rules, rethink your structure\n- Consolidate media queries\n\nThis alone can reduce file size by 20-30%.",
+        },
+        {
+          heading: "Step 3: Minify for Production",
+          body: "Readable code is great for development, but production needs minification.\n\nWhat CSS minification does:\n\n- Removes whitespace and line breaks\n- Strips comments\n- Shortens color codes (#ffffff to #fff)\n- Removes unnecessary semicolons\n\nPaste into Toolkio's CSS Minifier, hit compress, done. Typical savings: 30-50%.\n\nTry it with your current project's CSS file and see the difference.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "CSS 압축하면 원본 코드는 어떻게 되나요?",
+        answer: "압축한 코드는 별도로 저장하세요. 원본은 개발용으로 유지하고, 압축 버전을 배포에 사용하면 돼요. 빌드 도구를 쓰면 자동으로 해주지만, 간단한 프로젝트에서는 Toolkio로 수동 압축해도 충분해요.",
+      },
+      {
+        question: "CSS 압축하면 브라우저 호환성에 문제가 생기나요?",
+        answer: "아니요, 문제없어요. 압축은 공백과 주석만 제거하는 거라서 기능에 영향을 주지 않아요. CSS 문법 자체는 그대로 유지되거든요.",
+      },
+      {
+        question: "압축 후 용량이 얼마나 줄어드나요?",
+        answer: "코드 스타일에 따라 다르지만, 보통 30~50% 줄어요. 주석이 많고 들여쓰기가 깊은 코드일수록 효과가 크더라고요.",
+      },
+    ],
+  },
+  {
+    slug: "regex-email-phone-validation-guide",
+    title: {
+      ko: "정규식으로 이메일, 전화번호 한번에 검증하기 — 실전 패턴 모음",
+      en: "Validate Emails and Phone Numbers with Regex — Practical Pattern Collection",
+    },
+    description: {
+      ko: "회원가입 폼에서 이메일이랑 전화번호 검증, 매번 구글링하셨죠? 바로 복사해서 쓸 수 있는 정규식 패턴 모아봤어요.",
+      en: "Tired of Googling email and phone regex patterns for every signup form? Here are copy-paste-ready patterns that actually work.",
+    },
+    date: "2026-03-26",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-email-phone-validation-guide.webp",
+    keywords: ["이메일 정규식", "전화번호 정규식", "regex 검증", "폼 유효성 검사", "정규표현식 패턴", "email regex"],
+    content: {
+      ko: [
+        {
+          heading: "폼 검증, 왜 정규식이 필요할까?",
+          body: "회원가입 폼 만들 때마다 같은 고민이 반복되죠?\n\n'이메일 형식 맞는지 어떻게 체크하지?'\n'전화번호에 하이픈 있어도 되게 하려면?'\n\n서버에서 검증하는 것도 중요하지만, 프론트엔드에서 먼저 걸러주면 사용자 경험이 좋아지거든요. 잘못된 입력을 바로 알려주니까요.\n\n정규식(Regex)이 이걸 해줘요. 한번 패턴을 익혀두면 어디서든 재사용 가능하더라고요.",
+        },
+        {
+          heading: "이메일 검증 정규식 — 복사해서 바로 쓰세요",
+          body: "가장 많이 쓰는 이메일 정규식이에요:\n\n기본 패턴: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n\n이 패턴이 체크하는 것:\n\n- @ 앞에 영문, 숫자, 특수문자(._%+-) 허용\n- @ 뒤에 도메인 이름\n- 마지막에 .com, .co.kr 같은 최상위 도메인\n\n주의할 점이 있어요. 이 패턴은 100% 완벽하진 않아요. 진짜 이메일인지는 인증 메일을 보내봐야 알 수 있거든요. 하지만 명백한 오타는 잡아줘요.",
+        },
+        {
+          heading: "전화번호 검증 정규식 — 한국 번호 기준",
+          body: "한국 전화번호 패턴이에요:\n\n휴대폰: ^01[016789]-?\\d{3,4}-?\\d{4}$\n일반전화: ^0\\d{1,2}-?\\d{3,4}-?\\d{4}$\n\n-? 부분이 포인트예요. 하이픈이 있어도 되고 없어도 되게 해주거든요.\n\n그래서 이런 입력이 전부 통과돼요:\n\n- 01012345678\n- 010-1234-5678\n- 02-123-4567\n- 0212345678\n\nToolkio 정규식 테스터에서 패턴 넣고 테스트 문자열을 여러 개 입력해보세요. 어떤 게 매칭되는지 바로 확인돼요.",
+        },
+        {
+          heading: "실전에서 바로 쓰는 팁",
+          body: "정규식 검증할 때 알아두면 좋은 것들이에요:\n\n- 이메일은 소문자 변환 후 검증하세요. User@Email.com도 유효하거든요\n- 전화번호는 하이픈, 공백 먼저 제거하고 검증하면 패턴이 간단해져요\n- 에러 메시지는 구체적으로 써주세요. '형식이 올바르지 않습니다' 대신 '@ 뒤에 도메인을 입력해주세요'\n- 정규식을 외울 필요 없어요. Toolkio에 저장해두고 필요할 때 복사하세요\n\n지금 프로젝트의 폼 검증 코드에 한번 적용해보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Regex for Form Validation?",
+          body: "Every signup form needs the same checks:\n\n'Is this a valid email?'\n'Should phone numbers allow dashes?'\n\nServer-side validation is essential, but client-side regex checks improve UX by catching errors instantly.\n\nRegex patterns are reusable once you learn them. Write once, use everywhere.",
+        },
+        {
+          heading: "Email Validation Regex — Copy and Paste Ready",
+          body: "The most common email regex:\n\nPattern: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n\nWhat it checks:\n\n- Letters, numbers, and special chars (._%+-) before @\n- Domain name after @\n- Top-level domain like .com or .org\n\nNote: No regex can guarantee an email exists. But this catches obvious typos. For real verification, send a confirmation email.",
+        },
+        {
+          heading: "Phone Number Regex — International Tips",
+          body: "A flexible phone number pattern:\n\nUS format: ^\\+?1?[-.\\s]?\\(?\\d{3}\\)?[-.\\s]?\\d{3}[-.\\s]?\\d{4}$\n\nThis accepts:\n\n- 1234567890\n- 123-456-7890\n- (123) 456-7890\n- +1 123-456-7890\n\nThe key is making separators optional with -? or [-.\\s]?\n\nTest your patterns in Toolkio's Regex Tester. Enter the pattern and multiple test strings to see which ones match.",
+        },
+        {
+          heading: "Practical Tips for Production",
+          body: "Things to remember when using regex validation:\n\n- Normalize email to lowercase before validation\n- Strip dashes and spaces from phone numbers first for simpler patterns\n- Write specific error messages: 'Please include a domain after @' instead of 'Invalid format'\n- No need to memorize patterns. Save them in Toolkio and copy when needed\n\nTry applying these patterns to your current project's forms today.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이메일 정규식으로 100% 검증이 가능한가요?",
+        answer: "완벽한 검증은 불가능해요. 형식은 맞지만 존재하지 않는 이메일일 수 있거든요. 정규식은 명백한 오타를 잡는 용도로 쓰고, 실제 존재 여부는 인증 메일로 확인하세요.",
+      },
+      {
+        question: "전화번호 하이픈을 자동으로 넣어주려면 어떻게 하나요?",
+        answer: "입력값에서 숫자만 추출한 다음 포맷팅하면 돼요. replace(/\\D/g, '')로 숫자만 남기고, 길이에 따라 하이픈을 삽입하는 함수를 만들면 깔끔해요.",
+      },
+      {
+        question: "정규식 테스터에서 동작하는데 코드에서 안 되는 이유는?",
+        answer: "자바스크립트에서 문자열로 정규식을 쓸 때 역슬래시를 이중으로 써야 해요. /\\d/는 되는데 new RegExp('\\d')는 '\\\\d'로 써야 하거든요. Toolkio에서 테스트한 패턴을 코드에 넣을 때 이 점만 주의하세요.",
+      },
+    ],
+  },
+  {
+    slug: "base64-image-embedding-guide",
+    title: {
+      ko: "Base64로 이미지 임베딩하기 — HTML에 이미지 직접 넣는 법",
+      en: "Embed Images with Base64 — How to Inline Images Directly in HTML",
+    },
+    description: {
+      ko: "이미지 파일 없이 HTML에 바로 이미지를 넣고 싶으셨죠? Base64 인코딩으로 이미지를 텍스트로 변환해서 코드에 삽입하는 방법이에요.",
+      en: "Want to embed images directly in HTML without separate files? Here's how to convert images to Base64 text and inline them in your code.",
+    },
+    date: "2026-03-26",
+    toolId: "base64",
+    image: "/images/blog/base64-image-embedding-guide.webp",
+    keywords: ["Base64 이미지", "이미지 인코딩", "HTML 이미지 임베딩", "Data URI", "인라인 이미지", "base64 변환"],
+    content: {
+      ko: [
+        {
+          heading: "Base64 이미지 임베딩이 뭐예요?",
+          body: "보통 HTML에서 이미지를 넣으려면 img 태그에 파일 경로를 써야 하잖아요?\n\n그런데 Base64를 쓰면 이미지 자체를 텍스트로 변환해서 HTML 코드 안에 직접 넣을 수 있어요.\n\n이런 식이에요: data:image/png;base64,iVBORw0KGgo...\n\n이 긴 텍스트가 이미지 전체 데이터예요. 별도 파일 없이 HTML 하나로 이미지가 표시되거든요.\n\n이메일 템플릿이나 단일 HTML 파일을 만들 때 정말 유용하더라고요.",
+        },
+        {
+          heading: "언제 Base64 이미지를 써야 할까?",
+          body: "모든 이미지를 Base64로 바꾸면 안 돼요. 적합한 상황이 따로 있거든요:\n\n쓰면 좋은 경우:\n\n- 아이콘, 로고 같은 작은 이미지 (5KB 이하)\n- 이메일 HTML 템플릿 (외부 이미지가 차단될 수 있어요)\n- CSS background-image에 작은 패턴 넣을 때\n- 단일 HTML 파일로 배포해야 할 때\n\n쓰면 안 좋은 경우:\n\n- 사진처럼 큰 이미지 (Base64로 바꾸면 33% 더 커져요)\n- 같은 이미지를 여러 페이지에서 쓸 때 (캐싱이 안 돼요)\n\n핵심은 '작은 이미지, 독립적인 파일'일 때 쓰는 거예요.",
+        },
+        {
+          heading: "Toolkio로 이미지를 Base64로 변환하기",
+          body: "변환 방법은 간단해요:\n\n1. Toolkio의 Base64 도구로 이동\n2. 인코딩 모드 선택\n3. 이미지 텍스트나 바이너리 데이터 입력\n4. 변환 결과를 복사\n\n실제로 쓸 때는 이렇게 넣으면 돼요:\n\nimg 태그의 src에 data:image/png;base64, 뒤에 변환된 텍스트를 붙이면 끝이에요.\n\nCSS에서도 background-image: url(data:image/png;base64,...) 이렇게 쓸 수 있어요.",
+        },
+        {
+          heading: "Base64 이미지 사용 시 주의사항",
+          body: "실전에서 알아둬야 할 것들이에요:\n\n- 파일 크기가 33% 늘어나요. 10KB 이미지가 약 13.3KB가 돼요\n- HTML 파일 자체가 커져서 첫 로딩이 느려질 수 있어요\n- 브라우저 캐싱이 안 돼요. 매번 HTML과 함께 다운로드돼요\n- 이미지 수정하면 Base64 코드도 다시 만들어야 해요\n\n그래서 5KB 이하의 작은 이미지만 Base64로 쓰는 게 좋아요. 그 이상은 일반 이미지 파일이 낫더라고요.\n\n지금 프로젝트에서 아이콘 파일이 있다면 Toolkio에서 변환해보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Base64 Image Embedding?",
+          body: "Normally, HTML images need a file path in the img tag.\n\nWith Base64, you convert the image itself into text and embed it directly in your HTML code.\n\nIt looks like: data:image/png;base64,iVBORw0KGgo...\n\nThat long text string IS the entire image. No separate file needed. The HTML displays the image on its own.\n\nThis is incredibly useful for email templates and standalone HTML files.",
+        },
+        {
+          heading: "When Should You Use Base64 Images?",
+          body: "Don't convert every image to Base64. It's best for specific situations:\n\nGood use cases:\n\n- Small images like icons and logos (under 5KB)\n- Email HTML templates (external images may be blocked)\n- CSS background-image with small patterns\n- Single HTML file deployments\n\nBad use cases:\n\n- Large photos (Base64 adds 33% to file size)\n- Images used across multiple pages (no caching benefit)\n\nThe rule: use it for small images in self-contained files.",
+        },
+        {
+          heading: "Convert Images to Base64 with Toolkio",
+          body: "The conversion is simple:\n\n1. Go to Toolkio's Base64 tool\n2. Select encode mode\n3. Input your image data or text\n4. Copy the result\n\nFor HTML: put the result in an img tag's src with data:image/png;base64, prefix.\n\nFor CSS: use background-image: url(data:image/png;base64,...) syntax.",
+        },
+        {
+          heading: "Important Caveats to Know",
+          body: "Key things to keep in mind:\n\n- File size increases by 33%. A 10KB image becomes about 13.3KB\n- HTML files get larger, potentially slowing initial page load\n- Browser caching doesn't work. The image downloads with every HTML request\n- Any image change requires regenerating the Base64 code\n\nStick to images under 5KB for Base64 embedding. Anything larger should remain as a regular image file.\n\nTry converting a small icon from your project in Toolkio to see the result.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Base64 이미지가 깨져서 안 보이는 이유는?",
+        answer: "data:image/ 뒤의 형식이 실제 이미지와 맞는지 확인하세요. PNG 이미지인데 image/jpeg로 써놓으면 안 보여요. 그리고 Base64 문자열 중간에 줄바꿈이 들어가면 깨지거든요.",
+      },
+      {
+        question: "Base64 인코딩된 이미지를 다시 파일로 되돌릴 수 있나요?",
+        answer: "네, Toolkio의 Base64 도구에서 디코딩하면 원본 데이터로 돌아와요. Base64는 암호화가 아니라 인코딩이라서 양방향 변환이 가능해요.",
+      },
+      {
+        question: "SVG 이미지도 Base64로 변환해야 하나요?",
+        answer: "SVG는 이미 텍스트 기반이라서 Base64로 안 바꿔도 돼요. CSS에서 url('data:image/svg+xml,...')로 직접 쓸 수 있거든요. 오히려 Base64로 바꾸면 크기만 커져요.",
+      },
+    ],
+  },
+  {
+    slug: "online-timer-productivity-guide",
+    title: {
+      ko: "타임스탬프 활용법 — 개발자가 알아야 할 시간 데이터 다루기",
+      en: "Timestamp Tips for Developers — How to Handle Time Data Like a Pro",
+    },
+    description: {
+      ko: "API 응답에 1711234567890 같은 숫자가 오면 뭔지 모르겠죠? Unix 타임스탬프 읽는 법부터 디버깅 팁까지 정리했어요.",
+      en: "Confused by numbers like 1711234567890 in API responses? Here's how to read Unix timestamps and debug time-related issues.",
+    },
+    date: "2026-03-26",
+    toolId: "timestamp-converter",
+    image: "/images/blog/online-timer-productivity-guide.webp",
+    keywords: ["타임스탬프 변환", "Unix timestamp", "시간 데이터", "API 시간", "epoch time", "개발자 도구"],
+    content: {
+      ko: [
+        {
+          heading: "타임스탬프, 왜 이렇게 생겼을까?",
+          body: "API 응답을 보다 보면 이런 숫자가 있죠: 1711234567890\n\n이게 뭐냐면 Unix 타임스탬프예요. 1970년 1월 1일 자정(UTC)부터 지금까지 흐른 시간을 숫자로 표현한 거거든요.\n\n왜 이런 형식을 쓸까요?\n\n- 시간대(timezone) 문제가 없어요. 전 세계가 같은 숫자예요\n- 정렬, 비교가 쉬워요. 그냥 숫자 크기만 비교하면 돼요\n- 저장 공간이 적어요. 문자열보다 효율적이에요\n\n처음엔 불편하지만, 익숙해지면 오히려 편하더라고요.",
+        },
+        {
+          heading: "초 단위 vs 밀리초 단위 구분법",
+          body: "타임스탬프에서 가장 흔한 실수가 단위 헷갈리는 거예요.\n\n- 10자리 숫자 (1711234567): 초(seconds) 단위\n- 13자리 숫자 (1711234567890): 밀리초(milliseconds) 단위\n\nJavaScript의 Date.now()는 밀리초를 반환하거든요. 그런데 Python의 time.time()은 초 단위예요.\n\n서로 다른 언어나 API 사이에서 데이터를 주고받을 때 이걸 놓치면 2025년이 아니라 55,000년이 나와요.\n\nToolkio 타임스탬프 변환기에 숫자를 넣으면 알아서 단위를 판단해서 날짜를 보여줘요.",
+        },
+        {
+          heading: "시간대(Timezone) 문제 해결하기",
+          body: "서버는 UTC인데 화면에는 KST로 보여줘야 하잖아요. 이때 흔한 실수:\n\n- DB에 로컬 시간을 저장하면 안 돼요. 항상 UTC로 저장하세요\n- 변환은 화면에 표시할 때만 하세요\n- UTC 오프셋: 한국은 +9시간이에요\n\n디버깅할 때 Toolkio 타임스탬프 변환기를 켜두면 좋아요. 타임스탬프 넣으면 UTC, KST 둘 다 보여주거든요.\n\n'이 데이터가 UTC인지 KST인지' 헷갈릴 때 바로 확인할 수 있어요.",
+        },
+        {
+          heading: "실전 디버깅 팁 모음",
+          body: "시간 관련 버그 잡을 때 쓰는 팁이에요:\n\n- API 응답의 타임스탬프가 이상하면 단위부터 확인하세요\n- 날짜가 1970년 1월 1일로 나오면 타임스탬프가 0이란 뜻이에요 (null이나 빈 값)\n- 날짜가 먼 미래로 나오면 초/밀리초 단위가 잘못된 거예요\n- 시간이 딱 9시간 차이나면 UTC/KST 변환이 빠진 거예요\n\n저는 Toolkio를 항상 탭에 열어두고 쓰거든요. 타임스탬프 복사해서 붙여넣으면 바로 사람이 읽을 수 있는 날짜로 변환해줘요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Do Timestamps Look Like This?",
+          body: "You've seen numbers like 1711234567890 in API responses.\n\nThat's a Unix timestamp. It counts time elapsed since January 1, 1970 (UTC midnight).\n\nWhy this format?\n\n- No timezone ambiguity. Same number worldwide\n- Easy to sort and compare. Just compare numbers\n- Space efficient. Smaller than date strings\n\nIt feels weird at first, but becomes natural with practice.",
+        },
+        {
+          heading: "Seconds vs Milliseconds — The #1 Mistake",
+          body: "The most common timestamp mistake is mixing up units.\n\n- 10-digit number (1711234567): seconds\n- 13-digit number (1711234567890): milliseconds\n\nJavaScript's Date.now() returns milliseconds. Python's time.time() returns seconds.\n\nMix them up when passing data between systems and you'll see year 55,000 instead of 2025.\n\nToolkio's Timestamp Converter auto-detects the unit and shows the correct date.",
+        },
+        {
+          heading: "Solving Timezone Problems",
+          body: "Your server runs UTC but the UI needs local time. Common mistakes:\n\n- Never store local time in the database. Always use UTC\n- Convert only when displaying to users\n- UTC offsets vary by region\n\nKeep Toolkio's Timestamp Converter open during debugging. Enter any timestamp to see both UTC and local time instantly.\n\nIt quickly answers 'Is this UTC or local time?'",
+        },
+        {
+          heading: "Practical Debugging Tips",
+          body: "Tips for fixing time-related bugs:\n\n- Weird API timestamp? Check the unit first\n- Date showing January 1, 1970? The timestamp is 0 (null or empty value)\n- Date in the far future? Wrong seconds/milliseconds unit\n- Time off by exactly N hours? Missing timezone conversion\n\nI keep Toolkio open in a tab at all times. Paste a timestamp and instantly get a human-readable date.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "타임스탬프가 음수일 수도 있나요?",
+        answer: "네, 1970년 1월 1일 이전의 날짜는 음수 타임스탬프예요. 예를 들어 1969년 12월 31일은 -86400이에요. 대부분의 시스템에서 정상 처리되지만 일부 오래된 시스템은 음수를 지원 안 하기도 해요.",
+      },
+      {
+        question: "2038년 문제가 뭔가요?",
+        answer: "32비트 시스템에서 Unix 타임스탬프를 저장하면 2038년 1월 19일에 오버플로우가 발생해요. 64비트 시스템에서는 문제없지만, 임베디드 시스템이나 레거시 코드에서는 주의해야 해요.",
+      },
+      {
+        question: "타임스탬프를 사람이 읽을 수 있는 날짜로 바꾸려면?",
+        answer: "Toolkio 타임스탬프 변환기에 숫자를 입력하면 바로 변환돼요. 코드에서는 JavaScript의 new Date(timestamp), Python의 datetime.fromtimestamp(timestamp) 등을 쓰면 돼요.",
+      },
+      {
+        question: "ISO 8601이랑 Unix 타임스탬프 중 뭘 써야 하나요?",
+        answer: "API를 설계한다면 ISO 8601 (2026-03-26T12:00:00Z) 형식을 추천해요. 사람이 읽을 수 있고 시간대 정보도 포함되거든요. 내부 저장이나 계산에는 Unix 타임스탬프가 효율적이에요.",
+      },
+    ],
+  },
+  {
+    slug: "text-case-conversion-practical-uses",
+    title: {
+      ko: "텍스트 대소문자 변환 실전 활용법 — 개발, 글쓰기, SEO까지",
+      en: "Practical Text Case Conversion — For Development, Writing, and SEO",
+    },
+    description: {
+      ko: "변수명은 camelCase, 파일명은 kebab-case, 제목은 Title Case... 대소문자 규칙이 헷갈릴 때 정리해드릴게요.",
+      en: "camelCase for variables, kebab-case for files, Title Case for headings... Here's your guide to text case conventions.",
+    },
+    date: "2026-03-26",
+    toolId: "case-converter",
+    image: "/images/blog/text-case-conversion-practical-uses.webp",
+    keywords: ["대소문자 변환", "camelCase", "kebab-case", "텍스트 변환", "개발자 네이밍", "Title Case"],
+    content: {
+      ko: [
+        {
+          heading: "대소문자 변환, 어디에 쓰일까?",
+          body: "코딩할 때 변수명을 뭘로 할지 고민해본 적 있죠?\n\nusername으로 할까, userName으로 할까, user_name으로 할까...\n\n사실 이건 언어와 프레임워크마다 규칙이 있어요:\n\n- JavaScript 변수: camelCase (userName)\n- Python 변수: snake_case (user_name)\n- CSS 클래스: kebab-case (user-name)\n- 상수: UPPER_CASE (MAX_COUNT)\n- React 컴포넌트: PascalCase (UserProfile)\n\n이 규칙을 지키면 코드 가독성이 확 올라가거든요. 다른 개발자가 봤을 때 바로 이해할 수 있어요.",
+        },
+        {
+          heading: "케이스별 상세 설명",
+          body: "각 케이스를 자세히 알아볼게요:\n\ncamelCase: 첫 단어는 소문자, 나머지 단어의 첫 글자를 대문자로 써요. JavaScript, Java에서 표준이에요.\n\nsnake_case: 단어 사이에 밑줄(_)을 넣어요. Python, Ruby에서 많이 써요.\n\nkebab-case: 단어 사이에 하이픈(-)을 넣어요. URL, CSS, 파일명에서 써요.\n\nPascalCase: 모든 단어의 첫 글자를 대문자로 써요. 클래스명, React 컴포넌트에 사용해요.\n\nUPPER_CASE: 전부 대문자에 밑줄로 구분해요. 상수값에 써요.\n\nTitle Case: 각 단어의 첫 글자만 대문자예요. 영문 제목에 써요.",
+        },
+        {
+          heading: "Toolkio로 한번에 변환하기",
+          body: "일일이 타이핑하면서 바꾸면 오타가 나기 쉽거든요.\n\nToolkio 텍스트 케이스 변환기 사용법:\n\n1. 변환할 텍스트를 입력하세요\n2. 원하는 케이스를 선택하세요\n3. 변환 결과를 복사해서 쓰면 끝이에요\n\n예를 들어 'user profile settings'를 넣으면:\n\n- camelCase: userProfileSettings\n- snake_case: user_profile_settings\n- kebab-case: user-profile-settings\n- PascalCase: UserProfileSettings\n\n저는 API 응답 필드명을 프론트엔드 변수명으로 바꿀 때 자주 쓰거든요.",
+        },
+        {
+          heading: "실전 꿀팁 — 이것만 기억하세요",
+          body: "대소문자 관련해서 알아두면 좋은 팁이에요:\n\n- SEO: URL은 소문자 kebab-case가 좋아요. Google이 대소문자를 구분하거든요\n- 파일명: 운영체제에 따라 대소문자 처리가 달라요. Mac은 구분 안 하는데 Linux는 구분해요\n- Git: 파일명 대소문자만 바꾸면 Git이 인식 못 할 수 있어요\n- 이메일: 이메일 주소는 대소문자 구분 안 해요. user@email.com이나 USER@EMAIL.COM이나 같아요\n\n팀 프로젝트에서는 네이밍 컨벤션을 문서화해두세요. 나중에 코드 리뷰 시간이 줄어들어요.\n\nToolkio 케이스 변환기를 즐겨찾기 해두면 편하더라고요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Where Is Case Conversion Used?",
+          body: "Choosing between username, userName, and user_name is more than preference.\n\nEach language has conventions:\n\n- JavaScript variables: camelCase (userName)\n- Python variables: snake_case (user_name)\n- CSS classes: kebab-case (user-name)\n- Constants: UPPER_CASE (MAX_COUNT)\n- React components: PascalCase (UserProfile)\n\nFollowing these conventions makes code instantly readable to other developers.",
+        },
+        {
+          heading: "Case Types Explained",
+          body: "A detailed look at each case type:\n\ncamelCase: First word lowercase, capitalize subsequent words. Standard in JavaScript and Java.\n\nsnake_case: Words separated by underscores. Standard in Python and Ruby.\n\nkebab-case: Words separated by hyphens. Used in URLs, CSS, and filenames.\n\nPascalCase: Capitalize every word's first letter. Used for class names and React components.\n\nUPPER_CASE: All caps with underscores. Used for constants.\n\nTitle Case: Capitalize the first letter of each word. Used for English titles and headings.",
+        },
+        {
+          heading: "Convert Instantly with Toolkio",
+          body: "Manual conversion leads to typos.\n\nUsing Toolkio's Text Case Converter:\n\n1. Enter your text\n2. Select the target case\n3. Copy the result\n\nExample input: 'user profile settings'\n\n- camelCase: userProfileSettings\n- snake_case: user_profile_settings\n- kebab-case: user-profile-settings\n- PascalCase: UserProfileSettings\n\nI use this constantly when converting API response fields to frontend variable names.",
+        },
+        {
+          heading: "Pro Tips to Remember",
+          body: "Practical case conversion tips:\n\n- SEO: Use lowercase kebab-case for URLs. Google treats case as different URLs\n- Filenames: Case sensitivity varies by OS. Mac ignores case, Linux doesn't\n- Git: Renaming files by case alone may not be detected by Git\n- Email: Email addresses are case-insensitive. user@email.com equals USER@EMAIL.COM\n\nDocument naming conventions in team projects. It saves time during code reviews.\n\nBookmark Toolkio's Case Converter for quick access.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "camelCase와 PascalCase의 차이가 뭔가요?",
+        answer: "camelCase는 첫 단어가 소문자(userName)이고, PascalCase는 첫 단어도 대문자(UserName)예요. JavaScript에서는 변수에 camelCase, 클래스/컴포넌트에 PascalCase를 쓰는 게 관례예요.",
+      },
+      {
+        question: "URL에서 대소문자가 중요한가요?",
+        answer: "네, 중요해요. example.com/About과 example.com/about은 서로 다른 페이지로 인식될 수 있어요. SEO를 위해 URL은 소문자 kebab-case로 통일하는 게 좋아요.",
+      },
+      {
+        question: "한국어 텍스트도 케이스 변환이 되나요?",
+        answer: "한국어에는 대소문자 개념이 없어서 케이스 변환이 적용되지 않아요. 영문 텍스트에만 해당하는 기능이에요. 한영 혼합 텍스트에서는 영문 부분만 변환돼요.",
+      },
+      {
+        question: "snake_case와 kebab-case 중 뭘 써야 하나요?",
+        answer: "언어와 상황에 따라 달라요. Python이면 snake_case, URL이나 CSS면 kebab-case를 쓰세요. 프로젝트 내에서 일관성을 지키는 게 가장 중요해요.",
+      },
+    ],
+  },
 ];
