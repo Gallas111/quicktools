@@ -80,6 +80,14 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "https://toolkio.com",
+    languages: {
+      "ko": "https://toolkio.com",
+      "en": "https://toolkio.com",
+      "x-default": "https://toolkio.com",
+    },
+  },
   openGraph: {
     title: "Toolkio - 무료 온라인 도구 모음 | Free Online Tools",
     description: "필요한 도구를 빠르게. 모든 도구는 무료이며 브라우저에서 바로 실행됩니다.",
