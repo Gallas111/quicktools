@@ -5825,4 +5825,355 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "website-image-optimization-speed-guide",
+    title: {
+      ko: "웹사이트 이미지 최적화 가이드 – 로딩 속도 3초 줄이는 5가지 방법",
+      en: "Website Image Optimization Guide – 5 Ways to Cut Loading Time by 3 Seconds",
+    },
+    description: {
+      ko: "웹사이트 이미지 최적화로 로딩 속도를 줄이는 방법을 정리했어요. 압축, 포맷 변환, lazy loading까지 실전 가이드입니다.",
+      en: "Learn how to optimize website images for faster loading. Covers compression, format conversion, lazy loading and more.",
+    },
+    date: "2026-03-27",
+    toolId: "image-compressor",
+    image: "/images/blog/website-image-optimization-speed-guide.webp",
+    keywords: ["이미지 최적화", "웹사이트 속도", "이미지 압축", "WebP 변환", "image optimization"],
+    content: {
+      ko: [
+        {
+          heading: "이미지가 웹사이트를 느리게 만들어요",
+          body: "웹페이지 용량의 50-70%가 이미지예요. 최적화 안 된 5MB 사진 하나가 로딩 시간을 3-5초 늘릴 수 있어요.\n\n구글은 로딩이 3초 넘으면 방문자의 53%가 이탈한다고 해요. SEO 순위에도 직접적인 영향을 줘요.\n\n이미지 최적화만 해도 체감 속도가 확 달라져요.",
+        },
+        {
+          heading: "방법 1: 이미지 압축하기",
+          body: "가장 쉽고 효과적인 방법이에요.\n\n- JPEG: 품질 80%로 설정하면 파일 크기 60-70% 감소\n- PNG: 색상이 적은 이미지는 PNG-8로 변환\n- Toolkio 이미지 압축 도구로 드래그 앤 드롭만 하면 끝\n\n대부분의 사진은 80% 품질과 원본의 차이를 눈으로 구별하기 어려워요. 하지만 파일 크기는 절반 이하로 줄어들어요.",
+        },
+        {
+          heading: "방법 2: WebP 포맷 사용하기",
+          body: "WebP는 구글이 만든 이미지 포맷이에요. JPEG보다 25-35% 작으면서 품질은 동일해요.\n\n- 크롬, 사파리, 파이어폭스 모든 브라우저 지원\n- 투명 배경(알파 채널)도 지원\n- 애니메이션도 가능 (GIF 대체)\n\n이미 모든 주요 브라우저가 WebP를 지원하니까 안심하고 사용하세요.",
+        },
+        {
+          heading: "방법 3: 적절한 해상도 사용하기",
+          body: "블로그 본문에 4000x3000 원본 사진을 넣을 필요가 없어요.\n\n- 블로그 본문: 최대 1200px 너비\n- 썸네일: 400-600px\n- 모바일: 800px이면 충분\n\nCSS의 srcset 속성을 사용하면 기기별로 다른 크기 이미지를 제공할 수 있어요.",
+        },
+        {
+          heading: "방법 4-5: Lazy Loading과 CDN",
+          body: "Lazy Loading은 화면에 보이는 이미지만 먼저 로드하는 기술이에요. img 태그에 loading='lazy'만 추가하면 돼요.\n\nCDN(Content Delivery Network)을 사용하면 전 세계 서버에서 가장 가까운 곳에서 이미지를 전송해요. Cloudflare, AWS CloudFront가 대표적이에요.\n\nToolkio의 이미지 압축 도구로 먼저 용량을 줄이고, WebP로 변환한 후 lazy loading을 적용하세요. 이것만으로 로딩 시간이 확 줄어들어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Images Are Slowing Down Your Website",
+          body: "Images account for 50-70% of total page weight. A single unoptimized 5MB photo can add 3-5 seconds to load time.\n\nGoogle reports 53% of visitors leave if a page takes over 3 seconds to load. This directly impacts your SEO rankings.\n\nImage optimization alone can make a dramatic difference.",
+        },
+        {
+          heading: "Method 1: Compress Your Images",
+          body: "The easiest and most effective approach.\n\n- JPEG: Set quality to 80% for 60-70% size reduction\n- PNG: Convert to PNG-8 for images with few colors\n- Use Toolkio's Image Compressor — just drag and drop\n\nMost photos at 80% quality are visually identical to the original, but the file size is cut in half or more.",
+        },
+        {
+          heading: "Method 2: Use WebP Format",
+          body: "WebP is an image format created by Google. It's 25-35% smaller than JPEG with the same quality.\n\n- Supported by Chrome, Safari, Firefox — all major browsers\n- Supports transparency (alpha channel)\n- Supports animation (replaces GIF)\n\nAll major browsers now support WebP, so you can safely adopt it.",
+        },
+        {
+          heading: "Method 3: Use Proper Resolution",
+          body: "You don't need a 4000x3000 original photo for a blog post.\n\n- Blog content: max 1200px width\n- Thumbnails: 400-600px\n- Mobile: 800px is sufficient\n\nUse CSS srcset to serve different image sizes for different devices.",
+        },
+        {
+          heading: "Methods 4-5: Lazy Loading and CDN",
+          body: "Lazy Loading only loads images visible on screen. Just add loading='lazy' to your img tags.\n\nA CDN delivers images from the nearest server worldwide. Cloudflare and AWS CloudFront are popular options.\n\nUse Toolkio's Image Compressor first, convert to WebP, then add lazy loading. This combination will drastically cut your load times.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지 압축하면 화질이 많이 떨어지나요?",
+        answer: "JPEG 80% 품질은 원본과 육안으로 구별하기 어려워요. 웹용 이미지는 70-85% 품질이면 충분해요.",
+      },
+      {
+        question: "WebP를 지원하지 않는 브라우저가 있나요?",
+        answer: "2026년 기준 모든 주요 브라우저가 WebP를 지원해요. IE11만 안 되는데, 이미 지원 종료된 브라우저예요.",
+      },
+      {
+        question: "이미지 최적화로 SEO가 정말 좋아지나요?",
+        answer: "네, 구글은 Core Web Vitals에서 LCP(Largest Contentful Paint)를 핵심 지표로 봐요. 이미지 최적화는 LCP를 직접적으로 개선해요.",
+      },
+    ],
+  },
+  {
+    slug: "secure-password-creation-tips-2026",
+    title: {
+      ko: "안전한 비밀번호 만드는 법 2026 – 해킹 안 당하는 비밀번호 규칙 5가지",
+      en: "How to Create Secure Passwords in 2026 – 5 Rules to Prevent Hacking",
+    },
+    description: {
+      ko: "해킹을 막는 안전한 비밀번호 만드는 규칙 5가지를 정리했어요. 비밀번호 강도 체크, 관리 방법까지 알려드려요.",
+      en: "5 rules for creating hack-proof passwords. Learn about password strength, management, and best practices for 2026.",
+    },
+    date: "2026-03-27",
+    toolId: "password-generator",
+    image: "/images/blog/secure-password-creation-tips-2026.webp",
+    keywords: ["비밀번호 만들기", "안전한 비밀번호", "비밀번호 규칙", "비밀번호 강도", "password security"],
+    content: {
+      ko: [
+        {
+          heading: "당신의 비밀번호, 안전한가요?",
+          body: "가장 많이 쓰이는 비밀번호 1위가 아직도 '123456'이에요. 2위는 'password', 3위는 'qwerty'예요.\n\n이런 비밀번호는 해커가 1초 만에 뚫어요. AI 기반 해킹 도구가 발전하면서 단순한 비밀번호는 더 위험해졌어요.\n\n오늘은 진짜 안전한 비밀번호를 만드는 방법을 알려드릴게요.",
+        },
+        {
+          heading: "규칙 1-2: 길이와 복잡성",
+          body: "규칙 1: 최소 12자 이상으로 만드세요.\n\n8자리 비밀번호는 현대 컴퓨터로 몇 시간이면 뚫려요. 12자리는 수백 년이 걸려요. 길이가 보안의 핵심이에요.\n\n규칙 2: 대문자, 소문자, 숫자, 특수문자를 섞으세요.\n\n'mypassword'보다 'My!P4ssw0rd#2026'이 훨씬 안전해요. Toolkio의 비밀번호 생성기를 사용하면 이런 복잡한 비밀번호를 자동으로 만들어줘요.",
+        },
+        {
+          heading: "규칙 3: 문장형 비밀번호 사용하기",
+          body: "기억하기 쉽고 안전한 방법이 있어요. 문장을 비밀번호로 만드는 거예요.\n\n예시: '나는 매일 아침 7시에 커피를 마신다' → 'N@me7sc-km!'\n\n각 단어의 첫 글자를 따고 숫자와 특수문자를 섞으면 기억하기 쉬우면서도 매우 안전한 비밀번호가 완성돼요.\n\n또는 무관한 단어 4개를 조합하는 방법도 있어요: 'correct-horse-battery-staple' (이건 유명한 XKCD 만화에서 나온 방법이에요)",
+        },
+        {
+          heading: "규칙 4-5: 재사용 금지와 2단계 인증",
+          body: "규칙 4: 같은 비밀번호를 여러 사이트에 쓰지 마세요.\n\n한 곳이 뚫리면 다른 모든 계정이 위험해져요. 사이트마다 다른 비밀번호를 사용하세요. 비밀번호 관리자(1Password, Bitwarden)를 쓰면 편해요.\n\n규칙 5: 2단계 인증(2FA)을 반드시 켜세요.\n\nSMS 인증보다는 인증 앱(Google Authenticator, Authy)이 더 안전해요. 비밀번호가 유출돼도 2FA가 있으면 로그인이 차단돼요.",
+        },
+        {
+          heading: "Toolkio 비밀번호 생성기 활용법",
+          body: "Toolkio의 비밀번호 생성기를 사용하면 안전한 비밀번호를 1초 만에 만들 수 있어요.\n\n1. 원하는 길이 설정 (12자 이상 권장)\n2. 포함할 문자 유형 선택 (대문자, 소문자, 숫자, 특수문자)\n3. 생성 버튼 클릭\n4. 복사해서 사용\n\n모든 생성은 브라우저에서 이루어져요. 서버로 전송되지 않아서 안전해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Is Your Password Really Secure?",
+          body: "The most common password is still '123456'. Second is 'password', third is 'qwerty'.\n\nHackers crack these in under a second. With AI-powered tools, simple passwords are more vulnerable than ever.\n\nLet's learn how to create truly secure passwords.",
+        },
+        {
+          heading: "Rules 1-2: Length and Complexity",
+          body: "Rule 1: Use at least 12 characters.\n\nAn 8-character password can be cracked in hours. 12 characters would take centuries. Length is the key to security.\n\nRule 2: Mix uppercase, lowercase, numbers, and special characters.\n\n'mypassword' is weak. 'My!P4ssw0rd#2026' is much stronger. Toolkio's Password Generator creates these complex passwords automatically.",
+        },
+        {
+          heading: "Rule 3: Use Passphrase Method",
+          body: "Make memorable yet secure passwords using sentences.\n\nExample: 'I drink coffee every morning at 7' → 'Idce@m@7!'\n\nTake first letters, add numbers and symbols. Easy to remember, hard to crack.\n\nAlternatively, combine 4 random words: 'correct-horse-battery-staple' (from the famous XKCD comic).",
+        },
+        {
+          heading: "Rules 4-5: No Reuse and Enable 2FA",
+          body: "Rule 4: Never reuse passwords across sites.\n\nIf one site is breached, all your accounts are at risk. Use different passwords everywhere. Password managers (1Password, Bitwarden) make this easy.\n\nRule 5: Always enable two-factor authentication (2FA).\n\nAuth apps (Google Authenticator, Authy) are safer than SMS. Even if your password leaks, 2FA blocks unauthorized login.",
+        },
+        {
+          heading: "Using Toolkio's Password Generator",
+          body: "Generate secure passwords in 1 second with Toolkio.\n\n1. Set desired length (12+ recommended)\n2. Select character types\n3. Click Generate\n4. Copy and use\n\nEverything happens in your browser. Nothing is sent to any server.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "비밀번호를 자주 바꿔야 하나요?",
+        answer: "최신 보안 가이드라인(NIST)에서는 정기적 변경을 더 이상 권장하지 않아요. 유출이 의심될 때만 바꾸면 돼요. 대신 강력한 비밀번호 + 2FA가 더 중요해요.",
+      },
+      {
+        question: "비밀번호 관리자는 안전한가요?",
+        answer: "네, 비밀번호 관리자는 군사급 암호화를 사용해요. 마스터 비밀번호 하나만 기억하면 나머지는 자동으로 관리돼요. 메모장에 적어두는 것보다 훨씬 안전해요.",
+      },
+      {
+        question: "비밀번호 강도를 어떻게 확인하나요?",
+        answer: "Toolkio 비밀번호 생성기에서 강도 표시를 확인할 수 있어요. 약함/보통/강함/매우 강함으로 표시돼요. 최소 '강함' 이상을 목표로 하세요.",
+      },
+    ],
+  },
+  {
+    slug: "bmi-calculator-health-guide",
+    title: {
+      ko: "BMI 계산기 활용법 – 내 체질량지수가 알려주는 건강 신호",
+      en: "BMI Calculator Guide – What Your Body Mass Index Tells About Your Health",
+    },
+    description: {
+      ko: "BMI 계산법과 의미를 쉽게 설명해요. 정상 범위, 한계점, 체중 관리 팁까지 알려드려요.",
+      en: "Learn how to calculate and interpret your BMI. Normal ranges, limitations, and weight management tips included.",
+    },
+    date: "2026-03-27",
+    toolId: "bmi-calculator",
+    image: "/images/blog/bmi-calculator-health-guide.webp",
+    keywords: ["BMI 계산", "체질량지수", "BMI 정상범위", "BMI 계산기", "체중 관리"],
+    content: {
+      ko: [
+        {
+          heading: "BMI가 뭔가요?",
+          body: "BMI(Body Mass Index)는 체질량지수예요. 키와 체중으로 비만도를 간단하게 측정하는 방법이에요.\n\n계산식: BMI = 체중(kg) / 키(m)의 제곱\n\n예를 들어 키 170cm, 체중 70kg이면: 70 / (1.7 x 1.7) = 24.2\n\nToolkio의 BMI 계산기에 키와 체중만 입력하면 자동으로 계산돼요.",
+        },
+        {
+          heading: "BMI 수치별 의미",
+          body: "대한비만학회 기준(아시아-태평양 기준)이에요.\n\n- 18.5 미만: 저체중\n- 18.5 ~ 22.9: 정상\n- 23.0 ~ 24.9: 과체중\n- 25.0 ~ 29.9: 비만 (1단계)\n- 30.0 이상: 고도비만 (2단계)\n\n아시아인은 서양인보다 같은 BMI에서 내장지방이 더 많기 때문에 기준이 더 엄격해요. WHO 기준에서는 25 이상이 과체중이지만 아시아 기준은 23부터예요.",
+        },
+        {
+          heading: "BMI의 한계점",
+          body: "BMI가 만능은 아니에요. 알아둘 한계점이 있어요.\n\n- 근육량이 많은 사람: 운동선수는 BMI가 높아도 건강할 수 있어요\n- 노인: 나이가 들면 근육이 줄어서 BMI가 낮아도 건강하지 않을 수 있어요\n- 체지방 분포: BMI는 내장지방과 피하지방을 구별하지 못해요\n\nBMI는 참고 지표예요. 허리둘레, 체지방률과 함께 봐야 더 정확해요. 남성 허리둘레 90cm, 여성 85cm 이상이면 복부비만이에요.",
+        },
+        {
+          heading: "건강한 체중 관리 팁",
+          body: "BMI가 과체중이나 비만 범위라면 생활습관부터 바꿔보세요.\n\n- 하루 30분 걷기부터 시작하세요\n- 탄수화물을 줄이고 단백질과 채소를 늘리세요\n- 물을 하루 2L 이상 마시세요\n- 수면을 7-8시간 확보하세요 (수면 부족은 체중 증가의 원인)\n\n급격한 다이어트보다 한 달에 1-2kg씩 천천히 빼는 게 요요 없이 건강해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is BMI?",
+          body: "BMI (Body Mass Index) measures body fat based on height and weight.\n\nFormula: BMI = weight(kg) / height(m) squared\n\nExample: 170cm, 70kg → 70 / (1.7 × 1.7) = 24.2\n\nUse Toolkio's BMI Calculator — just enter height and weight.",
+        },
+        {
+          heading: "What BMI Numbers Mean",
+          body: "WHO standard classification:\n\n- Under 18.5: Underweight\n- 18.5 - 24.9: Normal weight\n- 25.0 - 29.9: Overweight\n- 30.0+: Obese\n\nNote: Asian-Pacific guidelines use stricter cutoffs (23+ for overweight) due to higher visceral fat at lower BMI levels.",
+        },
+        {
+          heading: "Limitations of BMI",
+          body: "BMI isn't perfect. Key limitations:\n\n- Muscular people: Athletes may have high BMI but low body fat\n- Elderly: Lower BMI doesn't always mean healthy due to muscle loss\n- Fat distribution: BMI can't distinguish visceral fat from subcutaneous fat\n\nUse BMI as a reference alongside waist circumference and body fat percentage for a more complete picture.",
+        },
+        {
+          heading: "Healthy Weight Management Tips",
+          body: "If your BMI is in the overweight range, start with lifestyle changes:\n\n- Walk 30 minutes daily\n- Reduce carbs, increase protein and vegetables\n- Drink 2L+ of water daily\n- Get 7-8 hours of sleep\n\nAim for 1-2kg loss per month for sustainable results without yo-yo effect.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "BMI와 체지방률 중 어떤 게 더 정확한가요?",
+        answer: "체지방률이 더 정확해요. BMI는 근육과 지방을 구별하지 못하거든요. 하지만 BMI는 키와 체중만으로 간편하게 측정할 수 있다는 장점이 있어요.",
+      },
+      {
+        question: "아이들의 BMI도 같은 기준인가요?",
+        answer: "아니에요, 소아청소년은 같은 나이/성별 집단에서의 백분위수로 판단해요. 성인 BMI 기준을 적용하면 안 돼요.",
+      },
+      {
+        question: "BMI가 정상이면 건강한 건가요?",
+        answer: "반드시 그렇진 않아요. BMI가 정상이어도 내장지방이 많을 수 있어요(마른 비만). 허리둘레와 혈액검사도 함께 확인하는 게 좋아요.",
+      },
+    ],
+  },
+  {
+    slug: "salary-after-tax-calculation-guide",
+    title: {
+      ko: "연봉 실수령액 계산 가이드 – 4대보험, 소득세 공제 후 월급 알아보기",
+      en: "Salary After Tax Guide – Calculate Your Take-Home Pay After Deductions",
+    },
+    description: {
+      ko: "연봉에서 4대보험과 소득세를 빼면 실제 받는 월급은 얼마일까요? 연봉별 실수령액 표와 공제 항목을 정리했어요.",
+      en: "How much do you actually take home from your salary? Learn about tax deductions, insurance premiums, and net pay calculation.",
+    },
+    date: "2026-03-27",
+    toolId: "salary-calculator",
+    image: "/images/blog/salary-after-tax-calculation-guide.webp",
+    keywords: ["연봉 실수령액", "월급 계산", "4대보험 공제", "소득세 계산", "실수령액 계산기"],
+    content: {
+      ko: [
+        {
+          heading: "연봉 5000만원인데 실수령액은?",
+          body: "연봉 5000만원이면 매달 416만원을 받을 것 같지만, 실제로는 약 340-350만원 정도예요.\n\n약 70만원이 공제되는 거예요. 어디로 빠지는 걸까요?\n\n4대보험(국민연금, 건강보험, 고용보험, 장기요양보험)과 소득세, 지방소득세가 매달 월급에서 빠져요.\n\nToolkio의 연봉 계산기에 연봉만 입력하면 공제 항목별로 정확하게 계산해줘요.",
+        },
+        {
+          heading: "4대보험 공제 항목 정리",
+          body: "4대보험은 근로자와 회사가 반반씩 부담해요. 근로자 부담분만 정리하면:\n\n- 국민연금: 월급의 4.5%\n- 건강보험: 월급의 3.545%\n- 장기요양보험: 건강보험의 12.95%\n- 고용보험: 월급의 0.9%\n\n합하면 월급의 약 9.4%가 4대보험으로 나가요. 월급 400만원이면 약 37.6만원이에요.",
+        },
+        {
+          heading: "소득세와 지방소득세",
+          body: "소득세는 연봉 구간에 따라 세율이 달라요(누진세).\n\n- 1,400만원 이하: 6%\n- 1,400만원 ~ 5,000만원: 15%\n- 5,000만원 ~ 8,800만원: 24%\n- 8,800만원 ~ 1.5억원: 35%\n\n지방소득세는 소득세의 10%예요. 연말정산에서 각종 공제를 적용하면 실제 세부담은 줄어들어요.\n\n부양가족, 신용카드, 의료비 등 공제 항목을 잘 챙기면 환급금도 받을 수 있어요.",
+        },
+        {
+          heading: "연봉별 실수령액 표",
+          body: "2026년 기준 예상 월 실수령액이에요 (부양가족 1인, 비과세 제외 기준).\n\n- 연봉 3,000만원: 월 약 224만원\n- 연봉 4,000만원: 월 약 291만원\n- 연봉 5,000만원: 월 약 347만원\n- 연봉 6,000만원: 월 약 399만원\n- 연봉 7,000만원: 월 약 448만원\n- 연봉 8,000만원: 월 약 494만원\n- 연봉 1억원: 월 약 580만원\n\n정확한 금액은 Toolkio 연봉 계산기에서 확인하세요. 부양가족 수, 비과세 수당에 따라 달라져요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Your Salary vs Take-Home Pay",
+          body: "A 50 million KRW salary doesn't mean 4.16 million per month. After deductions, you'll receive about 3.4-3.5 million KRW.\n\nAbout 700,000 KRW is deducted monthly for social insurance (National Pension, Health Insurance, Employment Insurance, Long-term Care) plus income tax.\n\nUse Toolkio's Salary Calculator for an exact breakdown.",
+        },
+        {
+          heading: "Social Insurance Deductions",
+          body: "Social insurance is split 50/50 between employee and employer. Employee's share:\n\n- National Pension: 4.5% of salary\n- Health Insurance: 3.545%\n- Long-term Care: 12.95% of health insurance\n- Employment Insurance: 0.9%\n\nTotal: about 9.4% of your monthly salary goes to social insurance.",
+        },
+        {
+          heading: "Income Tax Brackets",
+          body: "Korea uses progressive tax rates:\n\n- Up to 14M KRW: 6%\n- 14M - 50M: 15%\n- 50M - 88M: 24%\n- 88M - 150M: 35%\n\nLocal income tax is 10% of income tax. Year-end tax adjustments can reduce your actual tax burden through various deductions.",
+        },
+        {
+          heading: "Salary to Take-Home Pay Table",
+          body: "Estimated monthly take-home (single, no tax-free allowances):\n\n- 30M KRW annual: ~2.24M monthly\n- 40M: ~2.91M\n- 50M: ~3.47M\n- 60M: ~3.99M\n- 80M: ~4.94M\n- 100M: ~5.80M\n\nExact amounts vary by dependents and tax-free allowances. Check Toolkio's Salary Calculator for precise figures.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "비과세 수당이 뭔가요?",
+        answer: "식대(월 20만원), 차량유지비(월 20만원) 등 세금이 안 붙는 수당이에요. 비과세 수당이 많으면 실수령액이 더 높아져요.",
+      },
+      {
+        question: "연봉 협상할 때 실수령액 기준으로 해야 하나요?",
+        answer: "네, 연봉 자체보다 실수령액이 중요해요. 같은 연봉이라도 비과세 수당 구성에 따라 실수령액이 달라질 수 있어요.",
+      },
+      {
+        question: "프리랜서도 같은 방식으로 계산하나요?",
+        answer: "프리랜서는 4대보험 대신 3.3% 원천징수를 하고, 5월에 종합소득세 신고를 해요. 계산 구조가 다르므로 프리랜서 전용 계산기를 사용하세요.",
+      },
+    ],
+  },
+  {
+    slug: "dday-countdown-practical-uses-guide",
+    title: {
+      ko: "D-Day 계산기 활용법 7가지 – 기념일부터 프로젝트 마감까지",
+      en: "7 Practical Uses for D-Day Calculator – From Anniversaries to Project Deadlines",
+    },
+    description: {
+      ko: "D-Day 계산기를 활용하는 7가지 방법을 정리했어요. 기념일 관리, 시험 준비, 프로젝트 관리까지 실용적인 팁이에요.",
+      en: "7 ways to use a D-Day calculator. Manage anniversaries, exam prep, project deadlines and more.",
+    },
+    date: "2026-03-27",
+    toolId: "dday-calculator",
+    image: "/images/blog/dday-countdown-practical-uses-guide.webp",
+    keywords: ["D-Day 계산기", "디데이 계산", "기념일 계산", "날짜 계산기", "D-Day counter"],
+    content: {
+      ko: [
+        {
+          heading: "D-Day 계산, 왜 필요할까?",
+          body: "'100일이 언제지?', '시험까지 며칠 남았지?', '프로젝트 마감까지 몇 주?' 이런 질문에 답하려면 달력을 한참 세야 해요.\n\nToolkio의 D-Day 계산기는 날짜 두 개만 입력하면 남은 일수, 지난 일수를 바로 알려줘요.\n\n생각보다 활용도가 높은 도구예요. 7가지 활용법을 소개할게요.",
+        },
+        {
+          heading: "활용 1-3: 기념일, 시험, 프로젝트",
+          body: "1. 기념일 관리\n연인과의 100일, 200일, 1주년... 놓치면 큰일 나죠. D-Day 계산기로 미리 확인하고 준비하세요.\n\n2. 시험 준비 카운트다운\n수능, 공무원 시험, 자격증까지 남은 날을 계산하면 학습 계획을 세우기 쉬워요. 'D-30부터 총정리', 'D-7부터 모의고사' 같은 플랜이 가능해요.\n\n3. 프로젝트 마감 관리\n개발 프로젝트나 과제 제출일까지 남은 기간을 확인해보세요. '아직 2주나 있네'와 '이틀밖에 안 남았네'는 행동이 완전히 달라지거든요.",
+        },
+        {
+          heading: "활용 4-5: 육아와 건강",
+          body: "4. 출산 예정일 카운트다운\n임산부라면 출산 예정일까지 D-Day를 세고 있을 거예요. 주차별 준비사항을 체크할 때 유용해요.\n\n5. 건강 목표 추적\n'금연 시작한 지 며칠째?', '운동 시작한 지 몇 주?' 같은 건강 습관 추적에 딱이에요. 숫자가 늘어나는 걸 보면 동기부여가 돼요.",
+        },
+        {
+          heading: "활용 6-7: 여행과 비즈니스",
+          body: "6. 여행 카운트다운\n여행 출발일까지 남은 일수를 세면 설레기도 하고, 준비물을 시기별로 체크할 수 있어요. D-30에 항공권, D-14에 환전, D-3에 짐 싸기.\n\n7. 계약/구독 만료일 관리\n보험 만기, 구독 서비스 갱신일, 계약 종료일을 미리 확인하면 자동 갱신이나 위약금을 피할 수 있어요.\n\nToolkio D-Day 계산기는 시작일과 종료일만 넣으면 바로 결과가 나와요. 북마크해두고 필요할 때마다 활용하세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why You Need a D-Day Calculator",
+          body: "'When is our 100th day anniversary?', 'How many days until the exam?', 'Weeks until project deadline?' Counting on a calendar is tedious.\n\nToolkio's D-Day Calculator gives you instant results — just enter two dates.\n\nHere are 7 practical ways to use it.",
+        },
+        {
+          heading: "Uses 1-3: Anniversaries, Exams, Projects",
+          body: "1. Anniversary Tracking\nDon't forget your 100th day, 1st anniversary. Calculate ahead and prepare.\n\n2. Exam Countdown\nCount down to major exams. Plan study schedules: 'D-30 review starts', 'D-7 mock exams'.\n\n3. Project Deadline Management\nKnowing exact days remaining changes your urgency. '14 days left' vs '2 days left' drives very different behavior.",
+        },
+        {
+          heading: "Uses 4-5: Parenting and Health",
+          body: "4. Due Date Countdown\nExpecting parents can track weeks and prepare accordingly.\n\n5. Health Goal Tracking\n'How many days smoke-free?', 'Weeks since I started exercising?' Seeing numbers grow is motivating.",
+        },
+        {
+          heading: "Uses 6-7: Travel and Business",
+          body: "6. Travel Countdown\nCount down to departure. Schedule prep: D-30 book flights, D-14 exchange currency, D-3 pack bags.\n\n7. Contract/Subscription Expiry\nTrack insurance, subscription renewals, and contract end dates. Avoid auto-renewals and penalties.\n\nBookmark Toolkio's D-Day Calculator for quick access whenever you need it.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "D-Day 계산에서 당일을 포함하나요?",
+        answer: "보통 당일은 D-0으로 계산해요. 시작일과 종료일 사이의 일수를 세는 것이 일반적이에요. Toolkio에서는 두 가지 방식 모두 확인할 수 있어요.",
+      },
+      {
+        question: "음력 기념일도 계산할 수 있나요?",
+        answer: "D-Day 계산기는 양력 기준이에요. 음력 날짜는 먼저 양력으로 변환한 후 계산하세요.",
+      },
+      {
+        question: "몇 주 며칠로도 볼 수 있나요?",
+        answer: "Toolkio D-Day 계산기는 총 일수와 함께 주/일 단위로도 표시해요. 예를 들어 100일은 14주 2일이에요.",
+      },
+    ],
+  },
 ];
