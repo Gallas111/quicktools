@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "AI 프롬프트 생성기 - AI Prompt Generator",
   description: "ChatGPT, Midjourney, DALL-E, Stable Diffusion 등에서 사용할 수 있는 고품질 프롬프트를 쉽게 만들어보세요. Generate high-quality AI prompts easily.",
   keywords: ["AI 프롬프트 생성기", "ChatGPT 프롬프트", "Midjourney 프롬프트", "AI prompt generator", "프롬프트 만들기"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/ai-prompt-generator",
+    languages: {
+      ko: "https://toolkio.com/tools/ai-prompt-generator",
+      en: "https://toolkio.com/tools/ai-prompt-generator",
+      "x-default": "https://toolkio.com/tools/ai-prompt-generator",
+    },
+  },
+  openGraph: {
+    title: "AI 프롬프트 생성기 - AI Prompt Generator",
+    description: "ChatGPT, Midjourney, DALL-E, Stable Diffusion 등에서 사용할 수 있는 고품질 프롬프트를 쉽게 만들어보세요. Generate high-qualit",
+    url: "https://toolkio.com/tools/ai-prompt-generator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "텍스트를 Base64로 인코딩하거나 디코딩하세요. Encode or decode text with Base64 instantly in your browser.",
   keywords: ["Base64 인코딩", "Base64 디코딩", "base64 encoder", "base64 decoder", "base64 변환"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/base64",
+    languages: {
+      ko: "https://toolkio.com/tools/base64",
+      en: "https://toolkio.com/tools/base64",
+      "x-default": "https://toolkio.com/tools/base64",
+    },
+  },
+  openGraph: {
+    title: "Base64 인코더/디코더 - Base64 Encoder/Decoder",
+    description: "텍스트를 Base64로 인코딩하거나 디코딩하세요. Encode or decode text with Base64 instantly in your browser.",
+    url: "https://toolkio.com/tools/base64",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

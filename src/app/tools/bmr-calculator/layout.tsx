@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "기초대사량 계산기 - BMR Calculator",
   description: "기초대사량(BMR)과 활동 수준에 따른 일일 권장 칼로리를 계산하세요. Calculate your Basal Metabolic Rate and daily calorie needs.",
   keywords: ["기초대사량 계산기", "BMR 계산기", "칼로리 계산기", "BMR calculator", "calorie calculator"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/bmr-calculator",
+    languages: {
+      ko: "https://toolkio.com/tools/bmr-calculator",
+      en: "https://toolkio.com/tools/bmr-calculator",
+      "x-default": "https://toolkio.com/tools/bmr-calculator",
+    },
+  },
+  openGraph: {
+    title: "기초대사량 계산기 - BMR Calculator",
+    description: "기초대사량(BMR)과 활동 수준에 따른 일일 권장 칼로리를 계산하세요. Calculate your Basal Metabolic Rate and daily calorie needs.",
+    url: "https://toolkio.com/tools/bmr-calculator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "강력하고 안전한 비밀번호를 무료로 생성하세요. 길이, 문자 종류를 자유롭게 설정 가능. Generate strong, secure passwords for free with custom length and character options.",
   keywords: ["비밀번호 생성기", "비밀번호 만들기", "password generator", "strong password", "random password"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/password-generator",
+    languages: {
+      ko: "https://toolkio.com/tools/password-generator",
+      en: "https://toolkio.com/tools/password-generator",
+      "x-default": "https://toolkio.com/tools/password-generator",
+    },
+  },
+  openGraph: {
+    title: "비밀번호 생성기 - Password Generator",
+    description: "강력하고 안전한 비밀번호를 무료로 생성하세요. 길이, 문자 종류를 자유롭게 설정 가능. Generate strong, secure passwords for free with cus",
+    url: "https://toolkio.com/tools/password-generator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "연봉 실수령액 계산기 - Salary Calculator",
   description: "연봉에서 소득세, 4대보험을 공제한 월 실수령액을 계산하세요. 2024년 기준 국민연금, 건강보험, 고용보험, 소득세를 반영합니다.",
   keywords: ["연봉 실수령액", "연봉 계산기", "월급 계산기", "실수령액 계산기", "salary calculator", "4대보험"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/salary-calculator",
+    languages: {
+      ko: "https://toolkio.com/tools/salary-calculator",
+      en: "https://toolkio.com/tools/salary-calculator",
+      "x-default": "https://toolkio.com/tools/salary-calculator",
+    },
+  },
+  openGraph: {
+    title: "연봉 실수령액 계산기 - Salary Calculator",
+    description: "연봉에서 소득세, 4대보험을 공제한 월 실수령액을 계산하세요. 2024년 기준 국민연금, 건강보험, 고용보험, 소득세를 반영합니다.",
+    url: "https://toolkio.com/tools/salary-calculator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "마크다운을 실시간으로 미리보기하세요. 무료 온라인 마크다운 에디터 및 뷰어. Preview markdown in real-time. Free online markdown editor and viewer.",
   keywords: ["마크다운 미리보기", "마크다운 편집기", "markdown preview", "markdown editor", "markdown viewer", "마크다운 뷰어"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/markdown-preview",
+    languages: {
+      ko: "https://toolkio.com/tools/markdown-preview",
+      en: "https://toolkio.com/tools/markdown-preview",
+      "x-default": "https://toolkio.com/tools/markdown-preview",
+    },
+  },
+  openGraph: {
+    title: "마크다운 미리보기 - Markdown Preview",
+    description: "마크다운을 실시간으로 미리보기하세요. 무료 온라인 마크다운 에디터 및 뷰어. Preview markdown in real-time. Free online markdown edito",
+    url: "https://toolkio.com/tools/markdown-preview",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

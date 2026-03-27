@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "HEX, RGB, HSL 색상 코드를 실시간으로 변환하세요. 컬러 피커 제공. Convert between HEX, RGB, and HSL color codes in real-time with a color picker.",
   keywords: ["색상 변환기", "HEX RGB 변환", "color converter", "HEX to RGB", "RGB to HSL", "color picker"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/color-converter",
+    languages: {
+      ko: "https://toolkio.com/tools/color-converter",
+      en: "https://toolkio.com/tools/color-converter",
+      "x-default": "https://toolkio.com/tools/color-converter",
+    },
+  },
+  openGraph: {
+    title: "색상 코드 변환기 - Color Converter",
+    description: "HEX, RGB, HSL 색상 코드를 실시간으로 변환하세요. 컬러 피커 제공. Convert between HEX, RGB, and HSL color codes in real-ti",
+    url: "https://toolkio.com/tools/color-converter",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

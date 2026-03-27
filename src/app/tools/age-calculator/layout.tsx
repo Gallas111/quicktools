@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "만나이 계산기 - Age Calculator",
   description: "생년월일을 입력하면 만나이, 한국나이, 다음 생일까지 남은 일수를 계산합니다. Calculate your exact age, Korean age, and days until next birthday.",
   keywords: ["만나이 계산기", "나이 계산기", "한국나이 계산기", "age calculator", "Korean age"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/age-calculator",
+    languages: {
+      ko: "https://toolkio.com/tools/age-calculator",
+      en: "https://toolkio.com/tools/age-calculator",
+      "x-default": "https://toolkio.com/tools/age-calculator",
+    },
+  },
+  openGraph: {
+    title: "만나이 계산기 - Age Calculator",
+    description: "생년월일을 입력하면 만나이, 한국나이, 다음 생일까지 남은 일수를 계산합니다. Calculate your exact age, Korean age, and days until nex",
+    url: "https://toolkio.com/tools/age-calculator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

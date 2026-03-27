@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "CSS와 JavaScript 코드를 무료로 압축하세요. 주석, 공백 제거로 파일 크기를 줄여보세요. Minify CSS and JavaScript code for free. Remove comments and whitespace to reduce file size.",
   keywords: ["CSS 압축", "JS 압축", "CSS minifier", "JavaScript minifier", "코드 최적화", "code minification"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/css-minifier",
+    languages: {
+      ko: "https://toolkio.com/tools/css-minifier",
+      en: "https://toolkio.com/tools/css-minifier",
+      "x-default": "https://toolkio.com/tools/css-minifier",
+    },
+  },
+  openGraph: {
+    title: "CSS/JS 압축기 - CSS/JS Minifier",
+    description: "CSS와 JavaScript 코드를 무료로 압축하세요. 주석, 공백 제거로 파일 크기를 줄여보세요. Minify CSS and JavaScript code for free. Rem",
+    url: "https://toolkio.com/tools/css-minifier",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

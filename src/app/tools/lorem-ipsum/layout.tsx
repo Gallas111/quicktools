@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "더미 텍스트를 원하는 양만큼 생성하세요. Generate placeholder text for your designs and layouts.",
   keywords: ["Lorem Ipsum 생성기", "더미 텍스트", "lorem ipsum generator", "placeholder text", "임시 텍스트"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/lorem-ipsum",
+    languages: {
+      ko: "https://toolkio.com/tools/lorem-ipsum",
+      en: "https://toolkio.com/tools/lorem-ipsum",
+      "x-default": "https://toolkio.com/tools/lorem-ipsum",
+    },
+  },
+  openGraph: {
+    title: "Lorem Ipsum 생성기 - Lorem Ipsum Generator",
+    description: "더미 텍스트를 원하는 양만큼 생성하세요. Generate placeholder text for your designs and layouts.",
+    url: "https://toolkio.com/tools/lorem-ipsum",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

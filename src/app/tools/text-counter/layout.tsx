@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "텍스트의 글자수, 단어수, 문장수, 읽기 시간, 단어 빈도를 분석하세요. Analyze text for character count, word count, sentences, reading time, and word frequency.",
   keywords: ["텍스트 분석", "읽기 시간", "단어 빈도", "text analyzer", "reading time", "word frequency"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/text-counter",
+    languages: {
+      ko: "https://toolkio.com/tools/text-counter",
+      en: "https://toolkio.com/tools/text-counter",
+      "x-default": "https://toolkio.com/tools/text-counter",
+    },
+  },
+  openGraph: {
+    title: "텍스트 분석기 - Text Analyzer",
+    description: "텍스트의 글자수, 단어수, 문장수, 읽기 시간, 단어 빈도를 분석하세요. Analyze text for character count, word count, sentences, re",
+    url: "https://toolkio.com/tools/text-counter",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

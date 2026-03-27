@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "유튜브 썸네일 만들기 - YouTube Thumbnail Maker",
   description: "템플릿을 선택하고 텍스트만 입력하면 유튜브 썸네일(1280x720)을 무료로 만들 수 있습니다. Create YouTube thumbnails with templates instantly.",
   keywords: ["유튜브 썸네일 만들기", "유튜브 썸네일 생성기", "썸네일 템플릿", "youtube thumbnail maker", "thumbnail generator"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/youtube-thumbnail",
+    languages: {
+      ko: "https://toolkio.com/tools/youtube-thumbnail",
+      en: "https://toolkio.com/tools/youtube-thumbnail",
+      "x-default": "https://toolkio.com/tools/youtube-thumbnail",
+    },
+  },
+  openGraph: {
+    title: "유튜브 썸네일 만들기 - YouTube Thumbnail Maker",
+    description: "템플릿을 선택하고 텍스트만 입력하면 유튜브 썸네일(1280x720)을 무료로 만들 수 있습니다. Create YouTube thumbnails with templates insta",
+    url: "https://toolkio.com/tools/youtube-thumbnail",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

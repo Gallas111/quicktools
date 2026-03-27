@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "BMI 계산기 - BMI Calculator",
   description: "키와 몸무게를 입력하면 체질량지수(BMI)를 계산하고 비만도를 확인할 수 있습니다. Calculate your Body Mass Index instantly.",
   keywords: ["BMI 계산기", "체질량지수", "비만도 계산", "BMI calculator", "body mass index"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/bmi-calculator",
+    languages: {
+      ko: "https://toolkio.com/tools/bmi-calculator",
+      en: "https://toolkio.com/tools/bmi-calculator",
+      "x-default": "https://toolkio.com/tools/bmi-calculator",
+    },
+  },
+  openGraph: {
+    title: "BMI 계산기 - BMI Calculator",
+    description: "키와 몸무게를 입력하면 체질량지수(BMI)를 계산하고 비만도를 확인할 수 있습니다. Calculate your Body Mass Index instantly.",
+    url: "https://toolkio.com/tools/bmi-calculator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

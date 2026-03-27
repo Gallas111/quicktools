@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "텍스트의 SHA-1, SHA-256, SHA-512 해시를 생성하세요. Generate SHA-1, SHA-256, SHA-512 hashes from text.",
   keywords: ["해시 생성기", "SHA-256", "SHA-512", "hash generator", "해시 변환", "SHA-1"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/hash-generator",
+    languages: {
+      ko: "https://toolkio.com/tools/hash-generator",
+      en: "https://toolkio.com/tools/hash-generator",
+      "x-default": "https://toolkio.com/tools/hash-generator",
+    },
+  },
+  openGraph: {
+    title: "해시 생성기 - Hash Generator",
+    description: "텍스트의 SHA-1, SHA-256, SHA-512 해시를 생성하세요. Generate SHA-1, SHA-256, SHA-512 hashes from text.",
+    url: "https://toolkio.com/tools/hash-generator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

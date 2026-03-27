@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "이미지를 무료로 압축하고 포맷을 변환하세요. PNG, JPG, WebP 지원. Compress images online for free. Supports PNG, JPG, WebP conversion.",
   keywords: ["이미지 압축", "이미지 리사이즈", "image compressor", "image resize", "webp converter"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/image-compressor",
+    languages: {
+      ko: "https://toolkio.com/tools/image-compressor",
+      en: "https://toolkio.com/tools/image-compressor",
+      "x-default": "https://toolkio.com/tools/image-compressor",
+    },
+  },
+  openGraph: {
+    title: "이미지 압축 - Image Compressor",
+    description: "이미지를 무료로 압축하고 포맷을 변환하세요. PNG, JPG, WebP 지원. Compress images online for free. Supports PNG, JPG, WebP",
+    url: "https://toolkio.com/tools/image-compressor",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

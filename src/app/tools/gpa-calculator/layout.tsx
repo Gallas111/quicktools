@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "학점 계산기 - GPA Calculator",
   description: "대학교 학점(GPA)을 쉽게 계산하세요. 4.5만점, 4.3만점 모두 지원합니다. Calculate your university GPA easily.",
   keywords: ["학점 계산기", "GPA 계산기", "대학 학점", "평균 학점", "gpa calculator"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/gpa-calculator",
+    languages: {
+      ko: "https://toolkio.com/tools/gpa-calculator",
+      en: "https://toolkio.com/tools/gpa-calculator",
+      "x-default": "https://toolkio.com/tools/gpa-calculator",
+    },
+  },
+  openGraph: {
+    title: "학점 계산기 - GPA Calculator",
+    description: "대학교 학점(GPA)을 쉽게 계산하세요. 4.5만점, 4.3만점 모두 지원합니다. Calculate your university GPA easily.",
+    url: "https://toolkio.com/tools/gpa-calculator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

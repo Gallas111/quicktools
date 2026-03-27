@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "D-day 계산기 - D-Day Calculator",
   description: "특정 날짜까지 남은 일수 또는 지난 일수를 계산하세요. 기념일, 시험일, 여행 등 중요한 날짜를 관리하세요. Calculate days between dates.",
   keywords: ["D-day 계산기", "디데이 계산기", "날짜 계산기", "dday calculator", "date calculator"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/dday-calculator",
+    languages: {
+      ko: "https://toolkio.com/tools/dday-calculator",
+      en: "https://toolkio.com/tools/dday-calculator",
+      "x-default": "https://toolkio.com/tools/dday-calculator",
+    },
+  },
+  openGraph: {
+    title: "D-day 계산기 - D-Day Calculator",
+    description: "특정 날짜까지 남은 일수 또는 지난 일수를 계산하세요. 기념일, 시험일, 여행 등 중요한 날짜를 관리하세요. Calculate days between dates.",
+    url: "https://toolkio.com/tools/dday-calculator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

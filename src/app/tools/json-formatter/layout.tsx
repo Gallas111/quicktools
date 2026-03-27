@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online for free.",
   keywords: ["JSON 포맷터", "JSON 정렬", "JSON formatter", "JSON beautifier", "JSON validator", "JSON minifier"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/json-formatter",
+    languages: {
+      ko: "https://toolkio.com/tools/json-formatter",
+      en: "https://toolkio.com/tools/json-formatter",
+      "x-default": "https://toolkio.com/tools/json-formatter",
+    },
+  },
+  openGraph: {
+    title: "JSON 포맷터 - JSON Formatter & Validator",
+    description: "JSON을 예쁘게 정렬하고 검증하세요. 무료 온라인 JSON 뷰어, 포맷터, 압축 도구. Format, beautify, minify, and validate JSON online",
+    url: "https://toolkio.com/tools/json-formatter",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

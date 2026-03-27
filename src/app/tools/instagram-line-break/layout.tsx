@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "인스타그램에서 줄바꿈이 사라지는 문제를 해결하세요. 보이지 않는 특수문자를 사용하여 완벽한 줄바꿈을 만들어줍니다. Fix Instagram line break issues with invisible characters.",
   keywords: ["인스타 줄바꿈", "인스타그램 줄바꿈", "instagram line break", "인스타 공백", "인스타그램 엔터"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/instagram-line-break",
+    languages: {
+      ko: "https://toolkio.com/tools/instagram-line-break",
+      en: "https://toolkio.com/tools/instagram-line-break",
+      "x-default": "https://toolkio.com/tools/instagram-line-break",
+    },
+  },
+  openGraph: {
+    title: "인스타 줄바꿈 - Instagram Line Break",
+    description: "인스타그램에서 줄바꿈이 사라지는 문제를 해결하세요. 보이지 않는 특수문자를 사용하여 완벽한 줄바꿈을 만들어줍니다. Fix Instagram line break issues with",
+    url: "https://toolkio.com/tools/instagram-line-break",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

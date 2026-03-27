@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "URL, 텍스트로 QR코드를 무료로 만들어보세요. 색상, 크기 커스텀 가능. PNG, SVG 다운로드. Generate QR codes for free with custom colors and sizes.",
   keywords: ["QR코드 생성기", "QR코드 만들기", "QR code generator", "QR code maker", "free QR code"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/qr-generator",
+    languages: {
+      ko: "https://toolkio.com/tools/qr-generator",
+      en: "https://toolkio.com/tools/qr-generator",
+      "x-default": "https://toolkio.com/tools/qr-generator",
+    },
+  },
+  openGraph: {
+    title: "QR코드 생성기 - QR Code Generator",
+    description: "URL, 텍스트로 QR코드를 무료로 만들어보세요. 색상, 크기 커스텀 가능. PNG, SVG 다운로드. Generate QR codes for free with custom col",
+    url: "https://toolkio.com/tools/qr-generator",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

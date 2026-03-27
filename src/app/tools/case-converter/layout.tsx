@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "텍스트의 대소문자를 변환하세요. UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case 등 다양한 변환을 지원합니다. Convert text case easily with multiple formats.",
   keywords: ["대소문자 변환", "case converter", "uppercase", "lowercase", "camelCase", "snake_case", "kebab-case", "텍스트 변환"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/case-converter",
+    languages: {
+      ko: "https://toolkio.com/tools/case-converter",
+      en: "https://toolkio.com/tools/case-converter",
+      "x-default": "https://toolkio.com/tools/case-converter",
+    },
+  },
+  openGraph: {
+    title: "대소문자 변환기 - Case Converter",
+    description: "텍스트의 대소문자를 변환하세요. UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case 등 다양한 변환을 지원합니",
+    url: "https://toolkio.com/tools/case-converter",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

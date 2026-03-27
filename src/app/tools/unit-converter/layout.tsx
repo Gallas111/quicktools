@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "단위 변환기 - Unit Converter",
   description: "길이, 무게, 온도, 넓이, 부피, 속도 등 다양한 단위를 쉽게 변환하세요. Convert length, weight, temperature and more.",
   keywords: ["단위 변환기", "단위 변환", "cm inch 변환", "kg lb 변환", "unit converter"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/unit-converter",
+    languages: {
+      ko: "https://toolkio.com/tools/unit-converter",
+      en: "https://toolkio.com/tools/unit-converter",
+      "x-default": "https://toolkio.com/tools/unit-converter",
+    },
+  },
+  openGraph: {
+    title: "단위 변환기 - Unit Converter",
+    description: "길이, 무게, 온도, 넓이, 부피, 속도 등 다양한 단위를 쉽게 변환하세요. Convert length, weight, temperature and more.",
+    url: "https://toolkio.com/tools/unit-converter",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {

@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   description:
     "글자수, 공백 제외 글자수, 단어수, 문장수, 바이트 수를 실시간으로 세어보세요. Count characters, words, sentences, and bytes in real-time.",
   keywords: ["글자수 세기", "글자수 계산", "character counter", "word counter", "byte counter"],
+  alternates: {
+    canonical: "https://toolkio.com/tools/character-counter",
+    languages: {
+      ko: "https://toolkio.com/tools/character-counter",
+      en: "https://toolkio.com/tools/character-counter",
+      "x-default": "https://toolkio.com/tools/character-counter",
+    },
+  },
+  openGraph: {
+    title: "글자수 세기 - Character Counter",
+    description: "글자수, 공백 제외 글자수, 단어수, 문장수, 바이트 수를 실시간으로 세어보세요. Count characters, words, sentences, and bytes in real-",
+    url: "https://toolkio.com/tools/character-counter",
+    siteName: "Toolkio",
+    type: "website",
+    images: [{ url: "https://toolkio.com/og-image.png", width: 1200, height: 630 }],
+  },
 };
 
 const jsonLd = {
