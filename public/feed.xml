@@ -5,7 +5,7 @@
     <link>https://toolkio.com/blog</link>
     <description>무료 온라인 도구 사용법과 팁을 소개하는 Toolkio 블로그</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 26 Mar 2026 15:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 15:00:00 +0900</lastBuildDate>
     <atom:link href="https://toolkio.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>글자수 세기 완벽 가이드 - 네이버 블로그, 자기소개서 글자수 제한 확인법</title>
@@ -622,6 +622,41 @@
       <description>D-Day 계산기를 활용하는 7가지 방법을 정리했어요. 기념일 관리, 시험 준비, 프로젝트 관리까지 실용적인 팁이에요.</description>
       <pubDate>Thu, 26 Mar 2026 15:00:00 +0900</pubDate>
       <guid isPermaLink="true">https://toolkio.com/blog/dday-countdown-practical-uses-guide</guid>
+    </item>
+    <item>
+      <title>학점 계산기 사용법 — GPA 계산부터 장학금 기준까지 한번에</title>
+      <link>https://toolkio.com/blog/gpa-calculator-complete-guide</link>
+      <description>학점(GPA) 계산이 헷갈린다면 이 가이드를 읽어보세요. 4.5 만점, 4.3 만점 기준 계산법부터 장학금 기준 학점까지 정리했어요.</description>
+      <pubDate>Fri, 27 Mar 2026 15:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/gpa-calculator-complete-guide</guid>
+    </item>
+    <item>
+      <title>퍼센트 계산 공식 총정리 — 할인율, 증가율, 비율 한번에</title>
+      <link>https://toolkio.com/blog/percent-calculator-practical-guide</link>
+      <description>퍼센트 계산이 헷갈릴 때 이 가이드를 보세요. 할인율, 증가율, 비율 계산법을 예시와 함께 쉽게 정리했어요.</description>
+      <pubDate>Fri, 27 Mar 2026 15:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/percent-calculator-practical-guide</guid>
+    </item>
+    <item>
+      <title>단위 변환 꿀팁 — 해외여행, 요리, 운동에 꼭 필요한 변환표</title>
+      <link>https://toolkio.com/blog/unit-converter-tips-guide</link>
+      <description>kg과 lb, cm과 inch, 섭씨와 화씨 변환이 헷갈린다면 이 가이드를 보세요. 자주 쓰는 단위 변환을 한곳에 정리했어요.</description>
+      <pubDate>Fri, 27 Mar 2026 15:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/unit-converter-tips-guide</guid>
+    </item>
+    <item>
+      <title>기초대��량 계산으로 다이어트 시작하기 — BMR 활용 가이드</title>
+      <link>https://toolkio.com/blog/bmr-calculator-diet-guide</link>
+      <description>다이어트 전에 기초대사량(BMR)부터 알아야 해요. BMR 계산법, 하루 권장 칼로리, 다이어트 적용법을 정리했어요.</description>
+      <pubDate>Fri, 27 Mar 2026 15:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/bmr-calculator-diet-guide</guid>
+    </item>
+    <item>
+      <title>유튜브 썸네일 만드는 법 — 클릭률 높이는 디자인 원칙 5가지</title>
+      <link>https://toolkio.com/blog/youtube-thumbnail-design-guide</link>
+      <description>유튜브 썸네일이 조회수를 결정해요. 클릭률을 높이는 디자인 원칙 5가지와 무료로 만드는 방법을 정리했어요.</description>
+      <pubDate>Fri, 27 Mar 2026 15:00:00 +0900</pubDate>
+      <guid isPermaLink="true">https://toolkio.com/blog/youtube-thumbnail-design-guide</guid>
     </item>
   </channel>
 </rss>
