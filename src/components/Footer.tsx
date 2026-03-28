@@ -19,6 +19,7 @@ export default function Footer() {
       { href: "/blog", label: locale === "ko" ? "블로그" : "Blog" },
       { href: "/privacy", label: locale === "ko" ? "개인정보처리방침" : "Privacy Policy" },
       { href: "/terms", label: locale === "ko" ? "이용약관" : "Terms of Service" },
+      { href: "/contact", label: locale === "ko" ? "문의" : "Contact" },
     ],
   };
 
@@ -79,7 +80,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-200 pt-6 text-center text-sm text-gray-500 dark:border-gray-800 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} Toolkio. All rights reserved.
+          <p>&copy; {new Date().getFullYear()} Toolkio. All rights reserved.</p>
+          <p className="mt-2 text-xs text-gray-400 dark:text-gray-500">
+            {locale === "ko"
+              ? "이 사이트는 Google AdSense를 통해 광고를 게재하며, 광고 수익으로 운영됩니다."
+              : "This site displays ads via Google AdSense and is supported by advertising revenue."}
+          </p>
         </div>
       </div>
     </footer>
