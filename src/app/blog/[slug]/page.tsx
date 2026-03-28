@@ -29,6 +29,43 @@ export default function BlogPost() {
   const tool = tools.find((t) => t.id === post.toolId);
   const sections = post.content[locale];
 
+  // Find related posts by keyword overlap + same toolId category
+  const getRelatedPosts = () => {
+    const postKeywords = new Set(post.keywords.map((k) => k.toLowerCase()));
+    const scored = blogPosts
+      .filter((p) => p.slug !== slug)
+      .map((p) => {
+        let score = 0;
+        // Keyword overlap
+        p.keywords.forEach((k) => {
+          if (postKeywords.has(k.toLowerCase())) score += 3;
+          // Partial match
+          postKeywords.forEach((pk) => {
+            if (k.toLowerCase().includes(pk) || pk.includes(k.toLowerCase())) score += 1;
+          });
+        });
+        // Same tool category bonus
+        if (p.toolId === post.toolId) score += 2;
+        return { post: p, score };
+      })
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((item) => item.post);
+
+    // Fallback to recent posts if no keyword matches
+    if (scored.length < 3) {
+      const slugs = new Set(scored.map((p) => p.slug));
+      const fallback = blogPosts
+        .filter((p) => p.slug !== slug && !slugs.has(p.slug))
+        .slice(0, 3 - scored.length);
+      return [...scored, ...fallback];
+    }
+    return scored;
+  };
+
+  const relatedPosts = getRelatedPosts();
+
   // Calculate reading time
   const totalText = sections.map((s) => s.body).join(" ");
   const wordCount = totalText.trim().split(/\s+/).length;
@@ -132,16 +169,13 @@ export default function BlogPost() {
         )}
       </article>
 
-      {/* 다른 글 추천 */}
+      {/* 관련 글 추천 (키워드 기반) */}
       <div className="mt-16 border-t border-gray-200 pt-8 dark:border-gray-800">
         <h3 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "다른 가이드 보기" : "More Guides"}
+          {locale === "ko" ? "관련 글 더 보기" : "Related Articles"}
         </h3>
         <div className="space-y-3">
-          {blogPosts
-            .filter((p) => p.slug !== slug)
-            .slice(0, 3)
-            .map((p) => (
+          {relatedPosts.map((p) => (
               <Link
                 key={p.slug}
                 href={`/blog/${p.slug}`}
