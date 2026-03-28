@@ -6176,4 +6176,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "gpa-calculator-complete-guide",
+    title: {
+      ko: "학점 계산기 사용법 — GPA 계산부터 장학금 기준까지 한번에",
+      en: "GPA Calculator Guide — From Grade Calculation to Scholarship Requirements",
+    },
+    description: {
+      ko: "학점(GPA) 계산이 헷갈린다면 이 가이드를 읽어보세요. 4.5 만점, 4.3 만점 기준 계산법부터 장학금 기준 학점까지 정리했어요.",
+      en: "Confused about GPA calculation? Learn how to calculate your GPA on different scales and check scholarship requirements.",
+    },
+    date: "2026-03-28",
+    toolId: "gpa-calculator",
+    image: "/images/blog/gpa-calculator-complete-guide.webp",
+    keywords: ["학점 계산기", "GPA 계산", "학점 계산 방법", "장학금 학점", "4.5 만점 환산", "gpa calculator"],
+    content: {
+      ko: [
+        {
+          heading: "학점(GPA) 계산이 왜 중요한가요?",
+          body: "취업할 때 이력서에 학점을 쓰잖아요. 장학금 신청할 때도 학점이 기준이고요. 교환학생, 대학원 진학에도 학점은 필수 스펙이에요.\n\n문제는 학교마다 기준이 달라요. 4.5 만점인 곳도 있고, 4.3 만점인 곳도 있어요. 전공 학점과 전체 학점도 따로 계산해야 하고요.\n\n이걸 하나하나 계산하면 머리가 아파요. 계산기를 쓰면 1분이면 끝나요.",
+        },
+        {
+          heading: "학점 계산 공식 — 4.5 만점 기준",
+          body: "학점 계산 공식은 간단해요.\n\n평점 = (각 과목 성적 x 학점 수)의 합 / 총 학점 수\n\n예를 들어볼게요.\n- 경영학원론 (3학점, A+) = 4.5 x 3 = 13.5\n- 회계학 (3학점, B+) = 3.5 x 3 = 10.5\n- 영어 (2학점, A0) = 4.0 x 2 = 8.0\n\n총합: 13.5 + 10.5 + 8.0 = 32.0\n총 학점: 3 + 3 + 2 = 8\n평점: 32.0 / 8 = 4.0\n\n손으로 계산하면 과목이 많을수록 힘들어요. Toolkio 학점 계산기를 쓰면 과목을 추가하고 성적만 선택하면 자동으로 나와요.",
+        },
+        {
+          heading: "4.5 만점 vs 4.3 만점 환산법",
+          body: "취업할 때 기업이 4.5 만점 기준으로 요구하는데 내 학교는 4.3 만점이면 환산이 필요해요.\n\n환산 공식: (내 학점 / 내 학교 만점) x 환산할 만점\n\n예: 4.3 만점에서 3.8이면\n(3.8 / 4.3) x 4.5 = 3.98\n\n반대로 4.5에서 4.3으로 환산하는 것도 같은 방식이에요.",
+        },
+        {
+          heading: "장학금 기준 학점 정리",
+          body: "장학금마다 기준이 달라요. 일반적인 기준을 정리하면 이래요.\n\n- 성적 우수 장학금: 보통 3.5~4.0 이상 (4.5 만점)\n- 국가장학금: 직전 학기 성적 충족 필요 (보통 B학점 이상)\n- 교내 근로장학금: 학점 기준이 비교적 낮음\n- 대학원 장학금: 학부 GPA 3.5 이상 권장\n\n매 학기 시작 전에 내 학점이 기준에 맞는지 확인하세요. Toolkio에서 바로 계산할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why GPA Calculation Matters",
+          body: "Your GPA affects job applications, scholarships, graduate school admissions, and exchange programs. Different schools use different scales (4.0, 4.3, 4.5), making manual calculation confusing.\n\nA GPA calculator eliminates the guesswork — enter your courses and grades, get your GPA instantly.",
+        },
+        {
+          heading: "How to Calculate GPA",
+          body: "GPA = Sum of (Grade Points x Credit Hours) / Total Credit Hours\n\nExample:\n- Math (3 credits, A = 4.0): 4.0 x 3 = 12.0\n- English (3 credits, B+ = 3.3): 3.3 x 3 = 9.9\n- Science (4 credits, A- = 3.7): 3.7 x 4 = 14.8\n\nTotal: 36.7 / 10 = 3.67 GPA\n\nUse Toolkio's GPA calculator to do this automatically for any number of courses.",
+        },
+        {
+          heading: "Converting Between GPA Scales",
+          body: "Need to convert from a 4.5 scale to 4.0? Use this formula:\n\n(Your GPA / Your Scale) x Target Scale\n\nExample: 3.8 on a 4.5 scale = (3.8/4.5) x 4.0 = 3.38 on a 4.0 scale.",
+        },
+        {
+          heading: "Scholarship GPA Requirements",
+          body: "Common GPA requirements:\n- Merit scholarships: Usually 3.5+ on a 4.0 scale\n- Dean's list: Typically 3.5+\n- Graduate school: Most programs want 3.0+\n- Competitive programs: 3.7+\n\nCheck your GPA regularly with Toolkio to stay on track for scholarships and opportunities.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "P/F 과목은 학점 계산에 포함되나요?",
+        answer: "보통 P/F 과목은 GPA 계산에 포함되지 않아요. P(Pass)를 받으면 학점은 이수되지만 평점에는 영향을 주지 않아요.",
+      },
+      {
+        question: "재수강하면 학점이 어떻게 바뀌나요?",
+        answer: "대부분의 대학은 재수강 시 높은 성적으로 대체해줘요. 다만 성적표에 재수강 표시가 남을 수 있고, 일부 대학은 평균으로 계산해요.",
+      },
+      {
+        question: "전공 학점과 전체 학점 중 뭐가 더 중요한가요?",
+        answer: "취업 시 기업마다 달라요. 대기업은 전체 학점을, 전문 직종은 전공 학점을 더 볼 수 있어요. 둘 다 관리하는 게 안전해요.",
+      },
+    ],
+  },
+  {
+    slug: "percent-calculator-practical-guide",
+    title: {
+      ko: "퍼센트 계산 공식 총정리 — 할인율, 증가율, 비율 한번에",
+      en: "Percent Calculator Guide — Discounts, Increases, and Ratios Made Easy",
+    },
+    description: {
+      ko: "퍼센트 계산이 헷갈릴 때 이 가이드를 보세요. 할인율, 증가율, 비율 계산법을 예시와 함께 쉽게 정리했어요.",
+      en: "Confused by percentage calculations? Learn discount rates, increase rates, and ratios with easy examples.",
+    },
+    date: "2026-03-28",
+    toolId: "percent-calculator",
+    image: "/images/blog/percent-calculator-practical-guide.webp",
+    keywords: ["퍼센트 계산", "할인율 계산", "증가율 계산", "비율 계산기", "percent calculator"],
+    content: {
+      ko: [
+        {
+          heading: "퍼센트 계산이 필요한 순간들",
+          body: "쇼핑할 때 '30% 할인'이면 얼마 깎이는 건지 바로 계산이 되시나요? 월급이 5% 인상되면 실제로 얼마가 오르는 건지요?\n\n퍼센트는 일상에서 정말 자주 써요.\n- 쇼핑: 할인율 계산\n- 직장: 연봉 인상률\n- 투자: 수익률 계산\n- 다이어트: 체중 감소율\n- 학교: 성적 비율\n\n공식을 외우기 어렵다면 Toolkio 퍼센트 계산기를 쓰면 숫자만 넣으면 돼요.",
+        },
+        {
+          heading: "기본 퍼센트 계산 3가지",
+          body: "가장 자주 쓰는 퍼센트 계산 3가지예요.\n\n1. A의 B%는 얼마?\n공식: A x (B / 100)\n예: 50,000원의 30% = 50,000 x 0.3 = 15,000원\n\n2. A는 B의 몇 %?\n공식: (A / B) x 100\n예: 30은 120의 몇 %? = (30 / 120) x 100 = 25%\n\n3. A에서 B로 변했을 때 변화율은?\n공식: ((B - A) / A) x 100\n예: 80에서 100으로 = ((100 - 80) / 80) x 100 = 25% 증가",
+        },
+        {
+          heading: "실생활 활용 예시",
+          body: "할인 계산 예시예요.\n원가 89,000원, 할인율 40%\n할인 금액: 89,000 x 0.4 = 35,600원\n결제 금액: 89,000 - 35,600 = 53,400원\n\n연봉 인상 예시예요.\n현재 연봉 3,600만원, 인상률 5%\n인상 금액: 3,600 x 0.05 = 180만원\n새 연봉: 3,780만원\n\n투자 수익률 예시예요.\n투자 원금 1,000만원, 현재 가치 1,150만원\n수익률: ((1,150 - 1,000) / 1,000) x 100 = 15%",
+        },
+        {
+          heading: "Toolkio 퍼센트 계산기 사용법",
+          body: "계산할 때마다 공식을 떠올리기 귀���으시죠? Toolkio 퍼센트 계산기는 4가지 모드를 제공해요.\n\n- A의 B% 구하기\n- A는 B의 몇 %인지\n- A에서 B로 증감률\n- A에 B%를 더하기/빼기\n\n숫자만 입력하면 바로 결과가 나와요. 쇼핑할 때, 연봉 협상할 때, 투자 수익 계산할 때 바로 꺼내 쓰세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Percentage Calculations",
+          body: "Percentages are everywhere: shopping discounts, salary raises, investment returns, exam scores, and more. Quick mental math is great, but for accuracy, a calculator helps.\n\nCommon scenarios:\n- 30% off a $89 item = ?\n- 5% salary increase on $60,000 = ?\n- Stock went from $100 to $115 — what's the gain %?",
+        },
+        {
+          heading: "Three Essential Percent Formulas",
+          body: "1. What is B% of A?\nFormula: A x (B / 100)\nExample: 30% of 50,000 = 15,000\n\n2. A is what % of B?\nFormula: (A / B) x 100\nExample: 30 is what % of 120? = 25%\n\n3. Percent change from A to B?\nFormula: ((B - A) / A) x 100\nExample: 80 to 100 = 25% increase",
+        },
+        {
+          heading: "Real-Life Examples",
+          body: "Shopping: Original $89, 40% off = $53.40\nSalary: $60,000 + 5% raise = $63,000\nInvestment: $10,000 to $11,500 = 15% return\nDiet: 80kg to 72kg = 10% weight loss",
+        },
+        {
+          heading: "Using Toolkio Percent Calculator",
+          body: "Toolkio offers four calculation modes:\n- Find B% of A\n- Find what % A is of B\n- Calculate % change\n- Add/subtract a % from a number\n\nJust enter numbers and get instant results. Bookmark it for quick access during shopping, work, or investing.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "퍼센트와 퍼센트포인트의 차이는?",
+        answer: "퍼센트는 비율의 변화이고, 퍼센트포인트는 절대적인 차이예요. 예: 금리가 3%에서 5%로 오르면 2%p(퍼센트포인트) 상승, 66.7% 증가예요.",
+      },
+      {
+        question: "복리 계산도 퍼센트 계산기로 할 수 있나요?",
+        answer: "단순 퍼센트 계산은 가능하지만 복리는 기간별 누적이라 별도 계산이 필요해요. 투자 수익률은 단리/복리를 구분해서 보세요.",
+      },
+      {
+        question: "���금 포함 가격은 어떻게 계산하나요?",
+        answer: "부가세 10% 포함 가격 = 원가 x 1.1이에요. 예: 10,000원 상품의 세금 포함 가격은 11,000원이에요.",
+      },
+    ],
+  },
+  {
+    slug: "unit-converter-tips-guide",
+    title: {
+      ko: "단위 변환 꿀팁 — 해외여행, 요리, 운동에 꼭 필요한 변환표",
+      en: "Unit Conversion Tips — Essential Conversions for Travel, Cooking & Fitness",
+    },
+    description: {
+      ko: "kg과 lb, cm과 inch, 섭씨와 화씨 변환이 헷갈린다면 이 가이드를 보세요. 자주 쓰는 단위 변환을 한곳에 정리했어요.",
+      en: "Confused by kg to lb, cm to inch, or Celsius to Fahrenheit? Find all essential unit conversions in one guide.",
+    },
+    date: "2026-03-28",
+    toolId: "unit-converter",
+    image: "/images/blog/unit-converter-tips-guide.webp",
+    keywords: ["단위 변환", "kg lb 변환", "cm inch", "섭씨 화씨", "unit converter", "단위 계산기"],
+    content: {
+      ko: [
+        {
+          heading: "단위 변환이 필요한 순간",
+          body: "해외여행 가서 날씨를 보니 75°F. 이게 몇 도인 거지?\n미국 레시피에 1 cup이 나왔는데 ml로 얼마지?\n운동 앱이 마일로 표시되는데 km로 환산하면?\n\n글로벌 시대에 단위 변환은 생각보다 자주 필요해요. 매번 검색하기 귀찮다면 Toolkio 단위 변환기를 즐겨찾기 해두세요.",
+        },
+        {
+          heading: "자주 쓰는 길이 변환",
+          body: "- 1 inch = 2.54 cm\n- 1 feet = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n\n실생활 예시예요.\n- 키 5피트 8인치 = 약 173cm\n- 마라톤 26.2마일 = 42.195km\n- TV 55인치 = 대각선 약 140cm",
+        },
+        {
+          heading: "무게와 온도 변환",
+          body: "무게 변환이에요.\n- 1 lb(파운드) = 0.4536 kg\n- 1 oz(온스) = 28.35 g\n- 1 kg = 2.205 lb\n\n온도 변환이에요.\n- °C에서 °F: (°C x 9/5) + 32\n- °F에서 °C: (°F - 32) x 5/9\n\n외우기 쉬운 기준점이에요.\n- 0°C = 32°F (물이 어는 온도)\n- 100°C = 212°F (물이 끓는 온도)\n- 37°C = 98.6°F (체온)\n- 20°C = 68°F (실온)",
+        },
+        {
+          heading: "요리할 때 필요한 변환",
+          body: "해외 레시피를 따라할 때 자주 쓰는 변환이에요.\n\n- 1 cup = 약 240 ml\n- 1 tablespoon(큰술) = 15 ml\n- 1 teaspoon(작은술) = 5 ml\n- 1 oz = 약 30 ml (액체 기준)\n\n버터 변환도 자주 헷갈려요.\n- 1 stick of butter = 113g = 약 8 큰술\n- 1 cup of butter = 227g\n\nToolkio 단위 변환기에서 카테고리별로 바로 변환할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Unit Conversions",
+          body: "Traveling abroad, following international recipes, or using fitness apps — unit conversions come up more often than you think. Instead of searching every time, bookmark Toolkio's unit converter for instant results.",
+        },
+        {
+          heading: "Common Length Conversions",
+          body: "- 1 inch = 2.54 cm\n- 1 foot = 30.48 cm\n- 1 mile = 1.609 km\n- 1 meter = 3.281 feet\n\nQuick references:\n- 5'8\" = 173 cm\n- Marathon: 26.2 miles = 42.195 km\n- 55-inch TV = 140 cm diagonal",
+        },
+        {
+          heading: "Weight and Temperature",
+          body: "Weight:\n- 1 lb = 0.4536 kg\n- 1 oz = 28.35 g\n- 1 kg = 2.205 lb\n\nTemperature:\n- 0°C = 32°F (water freezes)\n- 100°C = 212°F (water boils)\n- 37°C = 98.6°F (body temperature)\n- Quick formula: °F = (°C x 9/5) + 32",
+        },
+        {
+          heading: "Cooking Conversions",
+          body: "- 1 cup = 240 ml\n- 1 tablespoon = 15 ml\n- 1 teaspoon = 5 ml\n- 1 stick butter = 113g\n\nUse Toolkio's converter for instant category-based conversions.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "평(坪)을 제곱미터로 어떻게 환산하나요?",
+        answer: "1평 = 약 3.3058 m²이에요. 예를 들어 30평 아파트는 약 99.17 m²예요.",
+      },
+      {
+        question: "마일과 킬로미터 빠르게 환산하는 팁이 있나요?",
+        answer: "마일 x 1.6 = 대략적인 km예요. 60마일 = 약 96km. 정확한 변환은 Toolkio 단위 변환기를 쓰세요.",
+      },
+      {
+        question: "해외직구 할 때 사이즈 변환은 어떻게 하나요?",
+        answer: "신발은 US/UK/EU 사이즈 체계가 달라요. 옷은 S/M/L 외에 숫자 사이즈도 나라마다 달라요. 각 브랜드 사이즈 차트를 확인하는 게 가장 정확해요.",
+      },
+    ],
+  },
+  {
+    slug: "bmr-calculator-diet-guide",
+    title: {
+      ko: "기초대��량 계산으로 다이어트 시작하기 — BMR 활용 가이드",
+      en: "Start Your Diet with BMR Calculation — Basal Metabolic Rate Guide",
+    },
+    description: {
+      ko: "다이어트 전에 기초대사량(BMR)부터 알아야 해요. BMR 계산법, 하루 권장 칼로리, 다이어트 적용법을 정리했어요.",
+      en: "Know your BMR before starting a diet. Learn how to calculate your basal metabolic rate and daily calorie needs.",
+    },
+    date: "2026-03-28",
+    toolId: "bmr-calculator",
+    image: "/images/blog/bmr-calculator-diet-guide.webp",
+    keywords: ["기초대사량", "BMR 계산", "다이어트 칼로리", "하루 권장 칼로리", "bmr calculator"],
+    content: {
+      ko: [
+        {
+          heading: "다이어트, 칼로리부터 알아야 해요",
+          body: "무작정 굶으면 살이 빠질까요? 빠지긴 해요. 근데 근육이 빠지고 요요가 와요.\n\n건강하게 빼려면 내 몸이 하루에 얼마나 에너지를 쓰는지 알아야 해요. 이게 기초대사량(BMR)이에요.\n\n기초대사량은 아무것도 안 하고 누워만 있어도 몸이 쓰는 에너지예요. 심장 박동, 호흡, 체온 유지 등 생존에 필요한 최소 칼로리죠.",
+        },
+        {
+          heading: "BMR 계산 공식",
+          body: "해리스-베네딕트 공식이 가장 많이 쓰여요.\n\n남성: 88.362 + (13.397 x 체중kg) + (4.799 x 키cm) - (5.677 x 나이)\n여성: 447.593 + (9.247 x 체중kg) + (3.098 x 키cm) - (4.330 x 나이)\n\n예시(30세 여성, 60kg, 165cm):\n447.593 + (9.247 x 60) + (3.098 x 165) - (4.330 x 30)\n= 447.593 + 554.82 + 511.17 - 129.9\n= 약 1,384 kcal\n\n복잡하죠? Toolkio BMR 계산기에 숫자만 넣으면 바로 나와요.",
+        },
+        {
+          heading: "TDEE — 실제 하루 소비 칼로리",
+          body: "BMR은 기본값이에요. 실제로는 활동량에 따라 더 많이 써요.\n\nTDEE = BMR x 활동 계수\n\n활동 계수가 이래요.\n- 거의 안 움직임 (사무직): x 1.2\n- 가벼운 운동 (주 1~3회): x 1.375\n- 보통 운동 (주 3~5회): x 1.55\n- 심한 운동 (주 6~7회): x 1.725\n- 매우 심한 운동 (운동선수): x 1.9\n\n위 예시의 여성이 가벼운 운동을 한다면:\n1,384 x 1.375 = 약 1,903 kcal/일\n\n이게 하루에 먹어야 하는 칼로리 기준이에요.",
+        },
+        {
+          heading: "다이어트에 적용하는 법",
+          body: "체중 감량의 핵심은 칼로리 적자예요.\n\nTDEE보다 300~500kcal 적게 먹으면 건강하게 빠져요.\n\n위 예시라면:\n유지: 1,903 kcal\n다이어트: 1,400~1,600 kcal\n\n주의할 점이에요.\n- BMR 이하로 먹으면 안 돼요 (1,384 이하 X)\n- 너무 적게 먹으면 근손실 + 요요\n- 단백질은 체중 1kg당 1.2~1.6g 유지\n- 2주에 0.5~1kg 감량이 적당해요\n\nToolkio BMR 계산기로 내 기초대사량을 먼저 확인하고 시작하세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why You Need to Know Your BMR",
+          body: "BMR (Basal Metabolic Rate) is the calories your body burns at rest — just to keep you alive. Knowing it is the first step to any diet plan.\n\nWithout knowing your BMR, you might eat too little (losing muscle) or too much (not losing weight).",
+        },
+        {
+          heading: "How to Calculate BMR",
+          body: "Harris-Benedict Equation:\n\nMen: 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) - (5.677 x age)\nWomen: 447.593 + (9.247 x weight) + (3.098 x height) - (4.330 x age)\n\nOr simply use Toolkio's BMR calculator for instant results.",
+        },
+        {
+          heading: "TDEE — Your Daily Calorie Needs",
+          body: "TDEE = BMR x Activity Factor\n\n- Sedentary: x 1.2\n- Light exercise: x 1.375\n- Moderate: x 1.55\n- Heavy: x 1.725\n- Athlete: x 1.9\n\nTDEE tells you how many calories you actually burn each day including activity.",
+        },
+        {
+          heading: "Applying BMR to Your Diet",
+          body: "For weight loss: eat 300-500 kcal below your TDEE.\nNever go below your BMR — that's the minimum your body needs.\n\nAim for 0.5-1 kg loss per 2 weeks. Keep protein at 1.2-1.6g per kg of body weight.\n\nStart by calculating your BMR with Toolkio.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "기초대사량이 낮으면 살이 잘 찌나요?",
+        answer: "BMR이 낮으면 같은 양을 먹어도 칼로리 소비가 적어서 살이 찔 수 있어요. 근육량을 늘리면 BMR이 올라가요.",
+      },
+      {
+        question: "나이가 들면 기초대사량이 줄어드나요?",
+        answer: "네, 나이가 들수록 근육량이 줄어서 BMR이 감소해요. 그래서 나이 들수록 운동이 더 중요해요.",
+      },
+      {
+        question: "BMR과 BMI의 차이는 뭔가요?",
+        answer: "BMR은 기초대사량(칼로리 소비)이고, BMI는 체질량지수(비만도)예요. 완전히 다른 지표이니 혼동하지 마세요.",
+      },
+    ],
+  },
+  {
+    slug: "youtube-thumbnail-design-guide",
+    title: {
+      ko: "유튜브 썸네일 만드는 법 — 클릭률 높이는 디자인 원칙 5가지",
+      en: "YouTube Thumbnail Design Guide — 5 Principles to Boost Click-Through Rate",
+    },
+    description: {
+      ko: "유튜브 썸네일이 조회수를 결정해요. 클릭률을 높이는 디자인 원칙 5가지와 무료로 만드는 방법을 정리했어요.",
+      en: "Your YouTube thumbnail determines views. Learn 5 design principles that boost CTR and how to create thumbnails for free.",
+    },
+    date: "2026-03-28",
+    toolId: "youtube-thumbnail",
+    image: "/images/blog/youtube-thumbnail-design-guide.webp",
+    keywords: ["유튜브 썸네일", "썸네일 만들기", "유튜브 클릭률", "썸네일 디자인", "youtube thumbnail"],
+    content: {
+      ko: [
+        {
+          heading: "썸네일이 조회수의 80%를 결정해요",
+          body: "아무리 좋은 영상이어도 썸네일이 별로면 아무도 안 클릭해요. 유튜브 알고리즘도 클릭률(CTR)을 중요하게 봐요.\n\n같은 주제의 영상이라도 썸네일 하나로 조회수가 5배 이상 차이 나요. 그래서 유튜버들이 썸네일에 가장 공을 들이는 거예요.\n\n좋은 썸네일의 조건을 알려드릴게요.",
+        },
+        {
+          heading: "클릭률 높이는 디자인 원칙 5가지",
+          body: "1. 글자는 5단어 이내\n썸네일에 긴 문장을 넣으면 모바일에서 안 보여요. 핵심 키워드 1~2개만 크게 넣으세요.\n\n2. 대비가 강한 색상 사용\n배경과 텍스트의 색 대비가 강할수록 눈에 띄어요. 노란 배경에 검정 글씨, 빨간 배경에 흰 글씨가 대표적이에요.\n\n3. 사람 얼굴(감정 표현) 넣기\n표정이 있는 얼굴이 클릭률을 높여요. 놀란 표정, 웃는 표정이 효과적이에요. 얼굴이 없는 채널이라면 강렬한 이미지를 쓰세요.\n\n4. 여백을 남기기\n요소를 너무 빽빽하게 넣지 마세요. 여백이 있어야 핵심이 눈에 들어와요.\n\n5. 호기심을 자극하는 요소\n질문, 숫자, 비포/애프터가 효과적이에요. '이거 실화?' '3일 만에 결과가...' 같은 포맷이 클릭을 유도해요.",
+        },
+        {
+          heading: "유튜브 썸네일 사이즈와 규격",
+          body: "유튜브 공식 권장 사양이에요.\n\n- 해상도: 1280 x 720 픽셀 (최소)\n- 권장: 1920 x 1080 픽셀\n- 비율: 16:9\n- 파일 크기: 2MB 이하\n- 파일 형식: JPG, PNG, GIF, BMP\n\n1280 x 720 미만이면 업로드가 안 돼요. Toolkio에서 유튜브 썸네일 규격에 맞게 이미지를 확인하고 다운로드할 수 있어요.",
+        },
+        {
+          heading: "무료로 썸네일 만드는 방법",
+          body: "유료 도구가 없어도 충분히 좋은 썸네일을 만들 수 있어요.\n\n무료 도구 추천이에요.\n- Canva: 유튜브 썸네일 템플릿이 풍부해요\n- GIMP: 포토샵 대용 무료 프로그램\n- Pixlr: 웹에서 바로 편집 가능\n\n만드는 순서예요.\n1. Canva에서 YouTube Thumbnail 템플릿 검색\n2. 마음에 드는 템플릿 선택\n3. 텍스트와 이미지 교체\n4. 색상 조정\n5. 1280x720으로 다운로드\n\n5분이면 전문가 수준의 썸네일을 만들 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Thumbnails Determine 80% of Your Views",
+          body: "Great content with a bad thumbnail gets no clicks. YouTube's algorithm prioritizes CTR (click-through rate), and your thumbnail is the biggest factor.\n\nThe same topic can get 5x more views just from a better thumbnail.",
+        },
+        {
+          heading: "5 Design Principles for Higher CTR",
+          body: "1. Keep text under 5 words — short, bold, readable on mobile\n2. Use high-contrast colors — yellow/black, red/white combos pop\n3. Include faces with emotions — surprised or happy expressions work best\n4. Leave white space — don't overcrowd\n5. Create curiosity — questions, numbers, before/after",
+        },
+        {
+          heading: "YouTube Thumbnail Specifications",
+          body: "Official YouTube recommendations:\n- Resolution: 1280 x 720 px (minimum)\n- Recommended: 1920 x 1080 px\n- Aspect ratio: 16:9\n- File size: Under 2MB\n- Formats: JPG, PNG, GIF, BMP\n\nUse Toolkio to verify your thumbnail meets these specs.",
+        },
+        {
+          heading: "Free Thumbnail Creation Tools",
+          body: "You don't need Photoshop:\n- Canva: YouTube thumbnail templates\n- GIMP: Free Photoshop alternative\n- Pixlr: Browser-based editor\n\nSteps: Pick a Canva template > Replace text/images > Adjust colors > Download at 1280x720. Takes about 5 minutes.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "썸네일을 나중에 바꿀 수 있나요?",
+        answer: "네, 유튜브 스튜디오에서 언제든 변경할 수 있어요. 조회수가 안 나오면 썸네일을 바꿔보는 것도 좋은 전략이에요.",
+      },
+      {
+        question: "썸네일에 낚시성 내용을 넣어도 되나요?",
+        answer: "유튜브 정책상 오해를 유발하는 ���네일은 제재 대상이에요. 호기심을 자극하되 영상 내용과 일치해야 해요.",
+      },
+      {
+        question: "모바일에서도 잘 보이게 하려면?",
+        answer: "유튜브 시청의 70% 이상이 모바일이에요. 글자를 크게, 요소를 단순하게 만드세요. 작은 화면에서 미리 확인하는 게 좋아요.",
+      },
+    ],
+  },
 ];
