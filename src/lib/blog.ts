@@ -6511,4 +6511,698 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "hash-function-sha256-md5-explained",
+    title: {
+      ko: "해시 함수란? SHA-256과 MD5 쉽게 이해하기",
+      en: "What Is a Hash Function? SHA-256 and MD5 Explained Simply",
+    },
+    description: {
+      ko: "해시 함수의 개념부터 SHA-256, MD5 차이점까지 쉽게 정리했어요. 파일 무결성 확인, 비밀번호 저장 등 실전 활용법도 알아보세요.",
+      en: "Learn what hash functions are, how SHA-256 and MD5 differ, and practical use cases like file integrity checks and password storage.",
+    },
+    date: "2026-03-29",
+    toolId: "hash-generator",
+    image: "/images/blog/hash-function-sha256-md5-explained.webp",
+    keywords: ["해시 함수", "SHA-256", "MD5", "해시 생성기", "hash function", "파일 무결성", "비밀번호 해시"],
+    content: {
+      ko: [
+        {
+          heading: "해시 함수가 뭔지 한마디로 설명하면",
+          body: "해시 함수는 어떤 데이터를 넣으면 고정된 길이의 문자열로 바꿔주는 함수예요. 입력이 아무리 길어도 결과는 항상 같은 길이로 나오거든요.\n\n예를 들어 \"안녕하세요\"를 SHA-256에 넣으면 64자리 16진수 문자열이 나와요. \"안녕하세요!\"처럼 한 글자만 바꿔도 결과는 완전히 달라지더라고요. 이게 해시 함수의 핵심이에요.\n\n해시 함수의 가장 중요한 특징은 단방향이라는 점이에요. 결과값에서 원래 데이터를 역으로 알아내는 건 사실상 불가능해요. 그래서 비밀번호 저장이나 데이터 검증에 많이 쓰이는 거예요.",
+        },
+        {
+          heading: "MD5와 SHA-256, 뭐가 다를까?",
+          body: "MD5는 128비트(32자리) 해시를 만들어요. 1991년에 나왔고, 속도가 빨라서 한때 널리 쓰였어요. 하지만 지금은 보안 용도로는 쓰면 안 돼요. 충돌(서로 다른 입력이 같은 해시를 만드는 것)이 발견됐거든요.\n\nSHA-256은 256비트(64자리) 해시를 만들어요. 비트코인 블록체인에서도 쓰이는 알고리즘이라 신뢰도가 높아요. 현재까지 충돌이 발견되지 않았고, 보안 용도로 가장 많이 추천되는 해시 함수예요.\n\n정리하면, 파일 다운로드 검증 같은 간단한 용도에는 MD5도 괜찮지만, 보안이 중요한 상황이라면 반드시 SHA-256 이상을 써야 해요.",
+        },
+        {
+          heading: "해시 함수는 어디에 쓸까?",
+          body: "가장 흔한 활용처는 비밀번호 저장이에요. 웹사이트가 비밀번호를 그대로 저장하면 해킹 시 바로 노출되잖아요. 해시로 변환해서 저장하면 원래 비밀번호를 알 수 없어서 훨씬 안전하더라고요.\n\n두 번째는 파일 무결성 확인이에요. 소프트웨어를 다운로드할 때 공식 사이트에서 해시값을 제공하는 경우가 있어요. 다운로드한 파일의 해시를 비교하면 파일이 변조되지 않았는지 확인할 수 있어요.\n\n세 번째는 디지털 서명과 블록체인이에요. 비트코인의 채굴 과정도 결국 SHA-256 해시를 계산하는 작업이에요. 데이터의 신뢰성을 보장하는 데 해시 함수가 핵심 역할을 하고 있어요.",
+        },
+        {
+          heading: "Toolkio에서 해시값 생성하는 법",
+          body: "Toolkio의 해시 생성기를 쓰면 텍스트를 입력하고 원하는 알고리즘을 선택하면 바로 해시값이 나와요. MD5, SHA-1, SHA-256, SHA-512 등 다양한 알고리즘을 지원하거든요.\n\n사용법은 간단해요. 텍스트를 입력하면 실시간으로 여러 해시값을 한눈에 비교할 수 있어요. 파일 해시 검증이 필요하면 다운로드한 파일의 해시와 공식 해시를 비교해보세요.\n\n브라우저에서 바로 계산되니까 입력한 데이터가 서버로 전송되지 않아요. 민감한 정보도 안심하고 사용할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is a Hash Function in Plain English?",
+          body: "A hash function takes any input data and converts it into a fixed-length string of characters. No matter how long your input is, the output is always the same length.\n\nFor example, feeding \"Hello\" into SHA-256 produces a 64-character hexadecimal string. Change just one letter to \"hello\" and the output changes completely. This is called the avalanche effect.\n\nThe most important property of hash functions is that they are one-way. You cannot reverse-engineer the original data from the hash output. This makes them perfect for password storage and data verification.",
+        },
+        {
+          heading: "MD5 vs SHA-256: What's the Difference?",
+          body: "MD5 produces a 128-bit (32-character) hash. Created in 1991, it was widely used for its speed. However, researchers have found collision vulnerabilities, meaning two different inputs can produce the same hash. MD5 should no longer be used for security purposes.\n\nSHA-256 produces a 256-bit (64-character) hash. It is the same algorithm used in Bitcoin's blockchain, and no collisions have ever been found. For any security-sensitive application, SHA-256 is the recommended choice.\n\nFor simple tasks like verifying file downloads, MD5 still works fine. But for passwords, digital signatures, or anything security-critical, always use SHA-256 or stronger.",
+        },
+        {
+          heading: "Real-World Uses of Hash Functions",
+          body: "Password storage is the most common use case. Instead of storing passwords in plain text, websites store the hash. Even if the database is breached, attackers cannot recover the original passwords.\n\nFile integrity verification is another major use. When you download software, the official site often provides a hash value. By comparing it with your downloaded file's hash, you can confirm nothing was tampered with.\n\nBlockchain technology relies heavily on hash functions. Bitcoin mining is essentially the process of computing SHA-256 hashes repeatedly until a valid one is found.",
+        },
+        {
+          heading: "How to Generate Hashes with Toolkio",
+          body: "Toolkio's hash generator lets you type or paste any text and instantly see hash outputs for multiple algorithms side by side — MD5, SHA-1, SHA-256, and SHA-512.\n\nSimply enter your text and the hashes update in real time. You can copy any result with one click. All computation happens in your browser, so your data never leaves your device.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "해시와 암호화는 같은 건가요?",
+        answer: "아니에요. 암호화는 키를 사용해서 원래 데이터로 되돌릴 수 있지만, 해시는 단방향이라 원래 데이터를 복원할 수 없어요. 용도가 다르답니다.",
+      },
+      {
+        question: "MD5를 아직 써도 되나요?",
+        answer: "보안 목적으로는 안 돼요. 하지만 파일 다운로드 검증이나 데이터 중복 확인 같은 비보안 용도로는 여전히 쓸 수 있어요.",
+      },
+      {
+        question: "같은 입력이면 항상 같은 해시가 나오나요?",
+        answer: "네, 같은 알고리즘에 같은 입력을 넣으면 항상 같은 해시값이 나와요. 이게 해시 함수의 결정적(deterministic) 특성이에요.",
+      },
+      {
+        question: "해시값으로 원래 비밀번호를 알아낼 수 있나요?",
+        answer: "이론적으로는 불가능해요. 다만 간단한 비밀번호는 레인보우 테이블 같은 사전 공격으로 찾아낼 수 있어서, 솔트(salt)를 추가하는 게 중요해요.",
+      },
+    ],
+  },
+  {
+    slug: "regex-basics-to-advanced-guide",
+    title: {
+      ko: "정규식 기초부터 실전까지 완전 가이드",
+      en: "Regex from Basics to Real-World Use: A Complete Guide",
+    },
+    description: {
+      ko: "정규식(정규 표현식)을 처음 배우는 분을 위한 기초 문법부터, 실무에서 바로 쓸 수 있는 패턴까지 정리했어요.",
+      en: "Learn regex from scratch — basic syntax, common patterns, and real-world examples you can use right away.",
+    },
+    date: "2026-03-29",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-basics-to-advanced-guide.webp",
+    keywords: ["정규식", "정규 표현식", "regex", "regular expression", "정규식 테스트", "패턴 매칭"],
+    content: {
+      ko: [
+        {
+          heading: "정규식이 뭔데 이렇게 어려워 보일까?",
+          body: "정규식(Regular Expression, regex)은 문자열에서 특정 패턴을 찾거나 바꾸는 도구예요. 처음 보면 암호문 같아 보이지만, 기본 문법만 알면 생각보다 간단하거든요.\n\n예를 들어 이메일 주소를 찾고 싶다면 일일이 검색하는 대신, 정규식 패턴 하나로 모든 이메일을 한꺼번에 찾을 수 있어요. 코드에서 특정 함수명을 바꾸거나, 로그 파일에서 에러만 뽑아내는 것도 정규식으로 금방 되더라고요.\n\n개발자뿐 아니라 데이터 분석가, 마케터, 편집자도 정규식을 알면 작업 시간을 크게 줄일 수 있어요.",
+        },
+        {
+          heading: "꼭 알아야 할 기본 문법 정리",
+          body: "가장 많이 쓰는 정규식 기호를 정리해볼게요.\n\n. (점): 아무 문자 하나와 매치돼요. a.c는 abc, a1c, a-c 등과 매치돼요.\n* (별표): 앞 문자가 0번 이상 반복. ab*c는 ac, abc, abbc 등과 매치돼요.\n+ (플러스): 앞 문자가 1번 이상 반복. ab+c는 abc, abbc와 매치되지만 ac는 안 돼요.\n? (물음표): 앞 문자가 0번 또는 1번. colou?r은 color와 colour 모두 매치돼요.\n\n대괄호 [abc]는 a, b, c 중 하나와 매치돼요. [0-9]는 숫자 하나, [a-z]는 소문자 하나를 의미해요. \\d는 숫자, \\w는 단어 문자(영문+숫자+밑줄), \\s는 공백을 나타내요.",
+        },
+        {
+          heading: "실무에서 바로 쓰는 정규식 패턴",
+          body: "이메일 검증: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,} 이 패턴으로 대부분의 이메일 형식을 확인할 수 있어요.\n\n전화번호 (한국): 010-\\d{4}-\\d{4} 또는 01[0-9]-\\d{3,4}-\\d{4}로 다양한 형식을 잡아낼 수 있어요.\n\nURL 매칭: https?://[\\w.-]+(/[\\w.-]*)* 이 패턴이면 기본적인 URL을 찾을 수 있어요.\n\nHTML 태그 제거: <[^>]+> 이 패턴은 HTML 태그를 찾아서 빈 문자열로 치환할 때 써요. 웹 크롤링 데이터 정리할 때 정말 유용하더라고요.",
+        },
+        {
+          heading: "Toolkio 정규식 테스터로 연습하기",
+          body: "정규식은 직접 테스트하면서 배우는 게 가장 빨라요. Toolkio의 정규식 테스터에 패턴을 입력하면 매칭되는 부분이 실시간으로 하이라이트되거든요.\n\n플래그(g, i, m 등)도 선택할 수 있어서 전역 검색이나 대소문자 무시 같은 옵션을 바로 테스트할 수 있어요. 매치 결과와 캡처 그룹도 한눈에 보여주니까 복잡한 패턴도 금방 이해할 수 있을 거예요.\n\n처음에는 간단한 패턴부터 시작하세요. 숫자만 찾기(\\d+), 이메일 찾기, 전화번호 찾기 순서로 연습하면 금방 익숙해져요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Does Regex Look So Intimidating?",
+          body: "Regular expressions (regex) are patterns used to match, search, and replace text. At first glance, they look like random symbols, but the core syntax is surprisingly straightforward.\n\nInstead of manually searching for every email address in a document, one regex pattern can find them all instantly. Developers, data analysts, marketers, and editors all benefit from knowing regex.\n\nThe key is to learn the basics and practice with real examples. Once you understand a handful of symbols, you can build powerful patterns.",
+        },
+        {
+          heading: "Essential Regex Syntax You Need to Know",
+          body: ". (dot) matches any single character. * means zero or more of the preceding character. + means one or more. ? means zero or one.\n\nSquare brackets [abc] match any one character in the set. [0-9] matches a digit, [a-z] a lowercase letter. Shorthand: \\d for digits, \\w for word characters, \\s for whitespace.\n\nAnchors: ^ matches the start of a line, $ matches the end. Parentheses () create capture groups for extracting parts of a match. The pipe | acts as OR — cat|dog matches either word.",
+        },
+        {
+          heading: "Practical Regex Patterns for Everyday Use",
+          body: "Email validation: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,} covers most standard email formats.\n\nURL matching: https?://[\\w.-]+(/[\\w.-]*)* finds basic URLs in text.\n\nStripping HTML tags: <[^>]+> matches any HTML tag, useful when cleaning scraped web content.\n\nPhone numbers, dates, IP addresses — regex handles them all. Start with simple patterns and build up complexity as needed.",
+        },
+        {
+          heading: "Practice with Toolkio's Regex Tester",
+          body: "The fastest way to learn regex is hands-on testing. Toolkio's regex tester highlights matches in real time as you type your pattern.\n\nYou can toggle flags like global (g), case-insensitive (i), and multiline (m). Match results and capture groups are displayed clearly. Try starting with simple patterns like \\d+ (find numbers) and work your way up to email and URL patterns.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정규식을 배우려면 프로그래밍을 알아야 하나요?",
+        answer: "아니에요. 정규식은 프로그래밍 언어와 별개의 문법이에요. 엑셀, 구글 시트, 메모장++ 같은 도구에서도 정규식을 쓸 수 있어요.",
+      },
+      {
+        question: "정규식으로 한글도 매칭할 수 있나요?",
+        answer: "네, [가-힣] 패턴으로 한글을 매칭할 수 있어요. [가-힣]+ 이면 연속된 한글 단어를 찾을 수 있어요.",
+      },
+      {
+        question: "g, i, m 플래그는 뭔가요?",
+        answer: "g는 전역 검색(모든 매치 찾기), i는 대소문자 무시, m은 여러 줄 모드예요. 상황에 맞게 조합해서 쓰면 돼요.",
+      },
+      {
+        question: "정규식이 너무 복잡해지면 어떻게 하나요?",
+        answer: "긴 정규식은 여러 개로 나누는 게 좋아요. 또는 주석을 지원하는 x 플래그를 쓰면 가독성을 높일 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "css-minify-website-speed-boost",
+    title: {
+      ko: "CSS 압축으로 웹사이트 속도 높이는 방법",
+      en: "How CSS Minification Speeds Up Your Website",
+    },
+    description: {
+      ko: "CSS 파일을 압축(Minify)하면 웹사이트 로딩 속도가 빨라져요. CSS 압축의 원리와 실전 적용법을 알려드릴게요.",
+      en: "CSS minification reduces file size and improves page load speed. Learn how it works and how to apply it to your projects.",
+    },
+    date: "2026-03-29",
+    toolId: "css-minifier",
+    image: "/images/blog/css-minify-website-speed-boost.webp",
+    keywords: ["CSS 압축", "CSS minify", "웹사이트 속도", "CSS 최적화", "minification", "페이지 로딩"],
+    content: {
+      ko: [
+        {
+          heading: "CSS 압축이 왜 필요할까?",
+          body: "웹사이트를 열면 브라우저가 HTML, CSS, JS 파일을 다운로드하는데, 파일 크기가 클수록 로딩이 느려져요. CSS 파일에는 들여쓰기, 공백, 줄바꿈, 주석 같은 가독성을 위한 요소가 많거든요.\n\nCSS 압축(Minification)은 이런 불필요한 문자를 제거해서 파일 크기를 줄이는 작업이에요. 코드 기능은 완전히 동일하고, 브라우저가 해석하는 데 아무 문제가 없어요.\n\n보통 CSS 파일을 압축하면 20~50% 정도 크기가 줄어들더라고요. 파일이 여러 개면 전체적으로 꽤 큰 차이가 나요.",
+        },
+        {
+          heading: "CSS 압축이 실제로 하는 일",
+          body: "압축 과정에서 제거되는 것들을 정리해볼게요.\n\n첫째, 공백과 줄바꿈이에요. 개발할 때 보기 좋게 넣은 들여쓰기와 빈 줄이 모두 사라져요.\n\n둘째, 주석이에요. /* 이 부분은 설명입니다 */ 같은 주석은 브라우저에 필요 없으니까 제거돼요.\n\n셋째, 불필요한 세미콜론과 괄호 공백이에요. 마지막 속성 뒤의 세미콜론이나 선택자와 중괄호 사이 공백도 없어져요.\n\n이런 최적화를 직접 하려면 시간이 오래 걸리지만, 도구를 쓰면 붙여넣기 한 번으로 끝나요.",
+        },
+        {
+          heading: "CSS 압축과 웹 성능 점수",
+          body: "구글 PageSpeed Insights나 Lighthouse에서 성능 점수를 매길 때 CSS 파일 크기도 영향을 줘요. 특히 \"Reduce unused CSS\"나 \"Minify CSS\" 같은 항목이 뜨면 압축이 필요하다는 신호예요.\n\n모바일에서는 더 중요해요. 네트워크가 느린 환경에서 100KB짜리 CSS가 50KB로 줄어들면 체감 속도 차이가 확실하거든요.\n\nCore Web Vitals에서 LCP(Largest Contentful Paint)와 FCP(First Contentful Paint) 점수를 개선하는 데도 도움이 돼요. SEO 순위에도 간접적으로 영향을 주니까 꼭 해두세요.",
+        },
+        {
+          heading: "Toolkio CSS 압축 도구 사용법",
+          body: "Toolkio의 CSS Minifier에 원본 CSS 코드를 붙여넣으면 바로 압축된 결과가 나와요. 압축 전후 크기 비교도 보여주거든요.\n\n사용법은 간단해요. CSS 코드를 입력 영역에 붙여넣으면 자동으로 압축된 결과를 보여줘요. 복사 버튼 하나로 결과를 가져갈 수 있어요.\n\n프로덕션 배포 전에 CSS를 압축하는 습관을 들이면 웹사이트 성능이 꾸준히 좋아질 거예요. 빌드 도구에 통합하면 더 편하지만, 빠르게 한두 파일만 처리할 때는 온라인 도구가 가장 간편해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why CSS Minification Matters",
+          body: "When a browser loads your website, it downloads HTML, CSS, and JavaScript files. CSS files contain indentation, whitespace, line breaks, and comments that are great for readability but add unnecessary bytes.\n\nCSS minification strips these extra characters while keeping the code functionally identical. The browser interprets minified CSS exactly the same way.\n\nTypical CSS files shrink by 20-50% after minification. Across multiple files, the savings add up significantly.",
+        },
+        {
+          heading: "What Minification Actually Removes",
+          body: "Whitespace and line breaks — all indentation and blank lines are removed. Comments — developer notes like /* header styles */ are stripped. Redundant semicolons — the last semicolon in a rule block is optional and gets removed.\n\nSome advanced minifiers also shorten color codes (#ffffff to #fff), merge duplicate selectors, and optimize shorthand properties. The result is the same visual output with a smaller file.",
+        },
+        {
+          heading: "Impact on Performance Scores",
+          body: "Google PageSpeed Insights flags unminified CSS with recommendations like \"Minify CSS\" and \"Reduce unused CSS.\" Fixing these improves your performance score.\n\nOn mobile networks, every kilobyte matters. A 100KB CSS file minified to 50KB loads noticeably faster on 3G connections. This improves Core Web Vitals metrics like LCP and FCP, which are ranking factors for SEO.",
+        },
+        {
+          heading: "How to Use Toolkio's CSS Minifier",
+          body: "Paste your CSS code into Toolkio's CSS Minifier and get the compressed output instantly. The tool shows the before-and-after file size so you can see exactly how much you saved.\n\nFor one-off tasks, an online tool is the fastest option. For production workflows, integrate minification into your build process using tools like PostCSS, cssnano, or your bundler's built-in minifier.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "압축하면 CSS가 깨지지 않나요?",
+        answer: "아니에요. 압축은 공백과 주석만 제거하는 거라 기능은 완전히 동일해요. 브라우저가 해석하는 데 아무 문제 없어요.",
+      },
+      {
+        question: "압축한 CSS를 다시 원래대로 되돌릴 수 있나요?",
+        answer: "CSS Beautifier(정리 도구)를 쓰면 읽기 좋게 다시 포맷할 수 있어요. 다만 주석은 복원되지 않으니 원본은 따로 보관하세요.",
+      },
+      {
+        question: "CSS 압축만으로 속도가 크게 빨라지나요?",
+        answer: "CSS 압축 하나만으로 극적인 변화가 생기진 않지만, 이미지 최적화, JS 압축, 캐싱과 함께 적용하면 종합적으로 큰 차이가 나요.",
+      },
+    ],
+  },
+  {
+    slug: "lorem-ipsum-dummy-text-usage-guide",
+    title: {
+      ko: "Lorem Ipsum이란? 더미 텍스트 활용법 정리",
+      en: "What Is Lorem Ipsum? A Guide to Using Dummy Text",
+    },
+    description: {
+      ko: "Lorem Ipsum의 유래와 웹 디자인, 출판에서 더미 텍스트를 활용하는 방법을 정리했어요.",
+      en: "Learn the origin of Lorem Ipsum and how to use dummy text effectively in web design and publishing.",
+    },
+    date: "2026-03-29",
+    toolId: "lorem-ipsum",
+    image: "/images/blog/lorem-ipsum-dummy-text-usage-guide.webp",
+    keywords: ["Lorem Ipsum", "더미 텍스트", "로렘 입숨", "placeholder text", "웹 디자인", "목업"],
+    content: {
+      ko: [
+        {
+          heading: "Lorem Ipsum이 도대체 뭘까?",
+          body: "웹사이트나 앱 디자인을 보다 보면 \"Lorem ipsum dolor sit amet...\"으로 시작하는 텍스트를 본 적 있을 거예요. 이건 실제 의미가 있는 글이 아니라, 레이아웃을 보여주기 위한 더미 텍스트예요.\n\nLorem Ipsum의 원문은 기원전 45년경 고대 로마 철학자 키케로(Cicero)가 쓴 'De Finibus Bonorum et Malorum'에서 왔어요. 하지만 현재 쓰이는 버전은 원문을 일부 변형해서 의미가 통하지 않게 만든 거예요.\n\n1500년대 인쇄업자들이 활자 견본을 보여줄 때 사용하기 시작했고, 디지털 시대에도 그대로 이어져 온 거더라고요. 역사가 500년이 넘는 셈이에요.",
+        },
+        {
+          heading: "왜 의미 없는 텍스트를 일부러 쓸까?",
+          body: "진짜 글을 넣으면 사람들이 디자인 대신 내용에 집중하게 돼요. 클라이언트에게 디자인 시안을 보여줄 때 \"이 글 내용이 맞나요?\" 같은 엉뚱한 피드백이 오는 경우가 많거든요.\n\n더미 텍스트를 쓰면 레이아웃, 폰트 크기, 줄 간격, 여백 같은 시각적 요소에만 집중할 수 있어요. 읽을 수 없는 텍스트니까 자연스럽게 디자인 자체를 보게 되는 거예요.\n\n또한 한글로 \"가나다라 마바사\" 같은 반복 텍스트를 쓰면 글자 폭이 균일해서 실제 텍스트와 느낌이 달라요. Lorem Ipsum은 영어 텍스트의 자연스러운 글자 분포를 모방하기 때문에 더 현실적인 미리보기를 제공해요.",
+        },
+        {
+          heading: "더미 텍스트를 쓰는 실전 상황",
+          body: "웹 디자인에서는 와이어프레임이나 목업을 만들 때 가장 많이 써요. Figma, Sketch 같은 디자인 도구에도 Lorem Ipsum 생성 플러그인이 내장되어 있을 정도예요.\n\n출판이나 인쇄 디자인에서도 활용돼요. 책 레이아웃, 잡지 편집, 명함 디자인 등에서 실제 텍스트가 들어가기 전에 공간을 채우는 용도로 쓰이거든요.\n\n프레젠테이션이나 제안서에서도 \"여기에 텍스트가 들어갈 예정입니다\" 대신 Lorem Ipsum을 넣으면 훨씬 깔끔해 보여요. 전문적인 인상을 주고 싶을 때 유용하더라고요.",
+        },
+        {
+          heading: "Toolkio에서 Lorem Ipsum 생성하기",
+          body: "Toolkio의 Lorem Ipsum 생성기를 쓰면 원하는 분량의 더미 텍스트를 바로 만들 수 있어요. 단락 수나 단어 수를 지정할 수 있어서 필요한 만큼만 생성하면 돼요.\n\n사용법은 정말 간단해요. 단락 수를 선택하고 생성 버튼을 누르면 끝이에요. 복사 버튼으로 바로 클립보드에 담을 수 있어요.\n\n디자인 작업할 때 매번 검색해서 복사하는 것보다 이런 도구를 즐겨찾기 해두면 시간을 아낄 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Lorem Ipsum, Really?",
+          body: "Lorem Ipsum is dummy text used in design and publishing to fill layouts before real content is ready. The phrase \"Lorem ipsum dolor sit amet\" has been the industry standard placeholder since the 1500s.\n\nIt originates from a work by the Roman philosopher Cicero written around 45 BC, called 'De Finibus Bonorum et Malorum.' The modern version has been scrambled so it no longer carries meaningful Latin.\n\nDespite being over 500 years old, Lorem Ipsum remains the most widely used placeholder text in both print and digital design.",
+        },
+        {
+          heading: "Why Use Meaningless Text on Purpose?",
+          body: "When you put real content in a mockup, reviewers focus on the words instead of the design. Clients start editing copy instead of evaluating layout, typography, and spacing.\n\nLorem Ipsum keeps attention on visual elements. Its letter distribution closely resembles natural English text, providing a realistic preview of how the final page will look.\n\nSimple repetitions like \"text text text\" create uniform character widths that look nothing like real content. Lorem Ipsum avoids this problem.",
+        },
+        {
+          heading: "Where Dummy Text Is Used",
+          body: "Web design wireframes and mockups are the most common use case. Design tools like Figma and Sketch have built-in Lorem Ipsum generators.\n\nPrint design — book layouts, magazine spreads, business cards — also relies on placeholder text before final copy arrives. Presentations and proposals look more polished with Lorem Ipsum than with \"text goes here\" labels.",
+        },
+        {
+          heading: "Generate Lorem Ipsum with Toolkio",
+          body: "Toolkio's Lorem Ipsum generator lets you specify the number of paragraphs or words you need. Click generate, copy the result, and paste it into your design.\n\nIt is faster than searching the web every time you need filler text. Bookmark the tool and save yourself a few minutes on every project.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Lorem Ipsum이 진짜 라틴어인가요?",
+        answer: "원래는 키케로의 라틴어 텍스트에서 왔지만, 현재 사용되는 버전은 일부 단어가 변형되어 있어서 정확한 라틴어로는 해석이 안 돼요.",
+      },
+      {
+        question: "한국어 더미 텍스트는 없나요?",
+        answer: "한글 Lorem Ipsum 생성기도 있어요. 다만 국제적으로는 Lorem Ipsum이 표준이라 영문 기반 더미 텍스트가 더 널리 쓰여요.",
+      },
+      {
+        question: "더미 텍스트를 실제 사이트에 남겨두면 안 되나요?",
+        answer: "절대 안 돼요. 검색 엔진이 의미 없는 콘텐츠로 판단해서 SEO에 악영향을 줄 수 있어요. 배포 전에 반드시 실제 콘텐츠로 교체해야 해요.",
+      },
+    ],
+  },
+  {
+    slug: "url-encoding-decoding-easy-guide",
+    title: {
+      ko: "URL 인코딩과 디코딩 쉽게 이해하기",
+      en: "URL Encoding and Decoding Made Easy",
+    },
+    description: {
+      ko: "URL에서 %20, %3A 같은 코드가 뭔지 궁금하셨죠? URL 인코딩의 원리와 활용법을 쉽게 설명해드릴게요.",
+      en: "Ever wondered what %20 or %3A means in URLs? Learn how URL encoding works and when you need it.",
+    },
+    date: "2026-03-29",
+    toolId: "url-encoder",
+    image: "/images/blog/url-encoding-decoding-easy-guide.webp",
+    keywords: ["URL 인코딩", "URL 디코딩", "퍼센트 인코딩", "URL encoder", "URL decoder", "%20"],
+    content: {
+      ko: [
+        {
+          heading: "URL에서 %20이 뭔지 궁금했던 적 있나요?",
+          body: "주소창에서 한글이나 특수문자가 포함된 URL을 복사하면 %EC%95%88 같은 이상한 코드로 바뀌는 걸 본 적 있을 거예요. 이게 바로 URL 인코딩이에요.\n\nURL은 원래 ASCII 문자(영문, 숫자, 일부 기호)만 사용할 수 있게 설계됐어요. 한글이나 공백 같은 문자는 직접 넣을 수 없어서, 퍼센트(%) 뒤에 16진수 코드를 붙여서 표현하는 거예요.\n\n예를 들어 공백은 %20, 한글 '안'은 %EC%95%88으로 변환돼요. 이 과정을 URL 인코딩(또는 퍼센트 인코딩)이라고 해요.",
+        },
+        {
+          heading: "인코딩이 필요한 문자와 안전한 문자",
+          body: "URL에서 그대로 쓸 수 있는 문자는 영문 대소문자(A-Z, a-z), 숫자(0-9), 그리고 -, _, ., ~ 네 가지 기호예요. 이걸 비예약 문자라고 해요.\n\n반면 :, /, ?, #, @, & 같은 문자는 URL에서 특별한 의미가 있는 예약 문자예요. 이 문자들을 데이터로 쓰려면 반드시 인코딩해야 해요.\n\n한글, 일본어, 중국어 같은 비ASCII 문자는 UTF-8로 변환한 뒤 각 바이트를 퍼센트 인코딩하는 방식이에요. 그래서 한 글자가 여러 개의 %XX로 변환되는 거예요.",
+        },
+        {
+          heading: "실무에서 URL 인코딩이 필요한 경우",
+          body: "API 요청을 보낼 때 가장 많이 필요해요. 검색어에 한글이나 특수문자가 포함되면 인코딩하지 않으면 서버가 제대로 처리를 못하거든요.\n\n웹 폼 데이터를 전송할 때도 자동으로 URL 인코딩이 적용돼요. 브라우저가 알아서 해주지만, 수동으로 URL을 만들 때는 직접 인코딩해야 해요.\n\n또 다른 경우는 파일명에 특수문자가 있을 때예요. 다운로드 링크를 만들 때 파일명의 공백이나 한글을 인코딩하지 않으면 링크가 깨지는 경우가 있더라고요.",
+        },
+        {
+          heading: "Toolkio에서 URL 인코딩/디코딩하기",
+          body: "Toolkio의 URL 인코더/디코더에 텍스트를 넣으면 바로 변환 결과가 나와요. 인코딩과 디코딩을 모두 지원하니까 양방향으로 쓸 수 있어요.\n\n복잡한 URL을 디버깅할 때 특히 유용해요. %로 인코딩된 URL을 디코딩하면 원래 어떤 문자였는지 바로 알 수 있거든요.\n\n개발 중에 API 파라미터를 만들거나, 인코딩된 URL을 해석할 때 즐겨찾기 해두면 시간이 많이 절약돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Are Those %20 Codes in URLs?",
+          body: "If you have ever copied a URL containing spaces or non-English characters, you have seen strings like %20 or %EC%95%88. This is URL encoding, also called percent-encoding.\n\nURLs were originally designed to use only ASCII characters. Any character outside the safe set is converted to a percent sign followed by its hexadecimal byte value. A space becomes %20, an ampersand becomes %26.\n\nThis encoding ensures URLs work reliably across all browsers, servers, and systems worldwide.",
+        },
+        {
+          heading: "Safe vs Reserved Characters",
+          body: "Unreserved (safe) characters that need no encoding: A-Z, a-z, 0-9, and the symbols - _ . ~\n\nReserved characters have special URL meanings: : / ? # @ & = + $ , — these must be encoded when used as data rather than delimiters.\n\nNon-ASCII characters like Korean, Japanese, or emoji are first converted to UTF-8 bytes, then each byte is percent-encoded. That is why a single character can become multiple %XX sequences.",
+        },
+        {
+          heading: "When You Need URL Encoding",
+          body: "API requests are the most common case. Search queries with spaces or special characters must be encoded, or the server will misinterpret the request.\n\nForm submissions automatically apply URL encoding via the browser. But when building URLs manually — in scripts, API calls, or redirects — you need to handle encoding yourself.\n\nFile download links with spaces or special characters in the filename also require encoding to avoid broken links.",
+        },
+        {
+          heading: "Encode and Decode with Toolkio",
+          body: "Toolkio's URL Encoder/Decoder converts text instantly in both directions. Paste an encoded URL to see the readable version, or enter plain text to get the encoded output.\n\nIt is especially useful for debugging complex URLs with multiple query parameters. Bookmark it for quick access during development.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "URL 인코딩과 HTML 인코딩은 같은 건가요?",
+        answer: "다릅니다. URL 인코딩은 퍼센트(%)를 쓰고, HTML 인코딩은 &amp; 같은 엔티티를 써요. 용도와 문법이 달라요.",
+      },
+      {
+        question: "%20과 +는 둘 다 공백인가요?",
+        answer: "네, 둘 다 공백을 의미해요. %20은 URL 표준 인코딩이고, +는 폼 데이터(application/x-www-form-urlencoded)에서 쓰는 방식이에요.",
+      },
+      {
+        question: "브라우저가 자동으로 인코딩해주지 않나요?",
+        answer: "주소창에 직접 입력하면 브라우저가 자동으로 처리해줘요. 하지만 코드에서 URL을 만들 때는 직접 인코딩해야 하는 경우가 많아요.",
+      },
+      {
+        question: "인코딩된 URL을 사람이 읽을 수 있나요?",
+        answer: "URL 디코더 도구를 쓰면 원래 문자로 변환할 수 있어요. Toolkio에서 바로 디코딩해보세요.",
+      },
+    ],
+  },
+  {
+    slug: "uuid-unique-identifier-usage-guide",
+    title: {
+      ko: "UUID란? 고유 식별자 생성과 활용법",
+      en: "What Is UUID? How to Generate and Use Unique Identifiers",
+    },
+    description: {
+      ko: "UUID의 개념과 버전별 차이, 그리고 실무에서 고유 식별자를 활용하는 방법을 알아보세요.",
+      en: "Learn what UUID is, how different versions work, and practical ways to use unique identifiers in your projects.",
+    },
+    date: "2026-03-30",
+    toolId: "uuid-generator",
+    image: "/images/blog/uuid-unique-identifier-usage-guide.webp",
+    keywords: ["UUID", "고유 식별자", "UUID 생성", "UUID v4", "uuid generator", "GUID"],
+    content: {
+      ko: [
+        {
+          heading: "UUID가 뭐고 왜 필요할까?",
+          body: "UUID(Universally Unique Identifier)는 전 세계 어디서 만들어도 겹치지 않는 고유한 ID예요. 550e8400-e29b-41d4-a716-446655440000처럼 32자리 16진수를 하이픈으로 구분한 형태거든요.\n\n왜 필요하냐면, 데이터베이스에서 각 레코드를 구분할 ID가 필요한데, 1, 2, 3 같은 순차 번호는 여러 서버에서 동시에 생성하면 충돌이 일어날 수 있어요. UUID는 중앙 서버 없이도 겹치지 않는 ID를 만들 수 있어서 분산 시스템에 딱이에요.\n\nUUID가 겹칠 확률은 우주에서 특정 원자를 골라 두 번 연속 같은 걸 고를 확률보다 낮다고 해요. 사실상 0이라고 보면 돼요.",
+        },
+        {
+          heading: "UUID 버전별 차이점",
+          body: "UUID에는 여러 버전이 있는데, 가장 많이 쓰이는 건 v1과 v4예요.\n\nv1은 타임스탬프와 MAC 주소를 조합해서 만들어요. 시간 순서대로 정렬이 가능하지만, MAC 주소가 노출될 수 있어서 보안에 민감한 곳에서는 비추천이에요.\n\nv4는 완전한 랜덤으로 생성돼요. 가장 널리 쓰이고, 보안 측면에서도 안전해요. 대부분의 상황에서 v4를 쓰면 돼요.\n\nv7은 비교적 최근에 나온 버전으로 타임스탬프 기반이면서도 정렬 가능한 UUID예요. 데이터베이스 인덱스 성능이 v4보다 좋아서 점점 더 많이 쓰이고 있어요.",
+        },
+        {
+          heading: "실무에서 UUID를 쓰는 곳",
+          body: "데이터베이스 기본 키(Primary Key)로 가장 많이 써요. 특히 마이크로서비스 아키텍처에서 여러 서비스가 독립적으로 ID를 생성해야 할 때 UUID가 필수적이에요.\n\nAPI에서 리소스를 식별할 때도 써요. /users/12345 대신 /users/550e8400-e29b-41d4-a716-446655440000 형태로 쓰면 순차 ID를 추측해서 다른 사용자 정보에 접근하는 공격을 방지할 수 있어요.\n\n파일 업로드 시 파일명 충돌을 방지하는 데도 유용하고, 세션 ID, 토큰, 추적 코드 등 고유한 값이 필요한 거의 모든 곳에서 활용되더라고요.",
+        },
+        {
+          heading: "Toolkio UUID 생성기 사용법",
+          body: "Toolkio의 UUID 생성기를 쓰면 클릭 한 번으로 UUID를 만들 수 있어요. 여러 개를 한꺼번에 생성하는 것도 가능하거든요.\n\n복사 버튼으로 바로 클립보드에 담을 수 있고, 하이픈 없는 형태나 대문자 변환도 지원해요. 개발 중에 테스트용 UUID가 필요할 때 즐겨찾기 해두면 편리해요.\n\n모든 생성은 브라우저에서 이루어지니까 서버로 데이터가 전송될 걱정도 없어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is UUID and Why Do You Need It?",
+          body: "UUID (Universally Unique Identifier) is a 128-bit identifier formatted as 32 hexadecimal characters separated by hyphens — like 550e8400-e29b-41d4-a716-446655440000.\n\nSequential IDs (1, 2, 3...) cause collisions when multiple servers generate IDs simultaneously. UUIDs solve this by providing globally unique values without any central coordination.\n\nThe probability of generating two identical UUIDs is astronomically low — effectively zero for any practical purpose.",
+        },
+        {
+          heading: "UUID Versions Explained",
+          body: "UUID v1 combines a timestamp with the machine's MAC address. It is sortable by time but leaks hardware information.\n\nUUID v4 is generated entirely from random numbers. It is the most widely used version and the safest choice for most applications.\n\nUUID v7 is a newer standard that embeds a Unix timestamp while remaining sortable. It offers better database index performance than v4 and is gaining popularity rapidly.",
+        },
+        {
+          heading: "Where UUIDs Are Used in Practice",
+          body: "Database primary keys are the most common use case, especially in microservice architectures where multiple services create records independently.\n\nAPI resource identification benefits from UUIDs because sequential IDs make it easy for attackers to guess and access other users' data.\n\nFile uploads, session tokens, tracking codes, and any scenario requiring a guaranteed-unique value all rely on UUIDs.",
+        },
+        {
+          heading: "Generate UUIDs with Toolkio",
+          body: "Toolkio's UUID Generator creates UUIDs with a single click. You can generate multiple at once and copy them instantly. All generation happens in your browser — no data is sent to any server.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "UUID와 GUID는 같은 건가요?",
+        answer: "사실상 같은 거예요. GUID는 마이크로소프트에서 쓰는 용어이고, UUID는 표준 용어예요. 형식과 생성 방식이 동일해요.",
+      },
+      {
+        question: "UUID v4가 겹칠 확률은 얼마나 되나요?",
+        answer: "초당 10억 개씩 86년 동안 생성해야 50% 확률로 겹칠 정도예요. 현실적으로는 걱정할 필요 없는 수준이에요.",
+      },
+      {
+        question: "UUID 대신 순차 번호를 쓰면 안 되나요?",
+        answer: "단일 서버에서는 괜찮지만, 여러 서버나 마이크로서비스 환경에서는 충돌 위험이 있어요. 보안상으로도 순차 번호는 추측이 쉬워서 UUID가 더 안전해요.",
+      },
+      {
+        question: "UUID를 데이터베이스 키로 쓰면 성능이 떨어지나요?",
+        answer: "v4는 랜덤이라 인덱스 성능이 약간 떨어질 수 있어요. 성능이 중요하면 정렬 가능한 v7이나 ULID를 고려해보세요.",
+      },
+    ],
+  },
+  {
+    slug: "timestamp-conversion-complete-guide",
+    title: {
+      ko: "타임스탬프 변환 완전 가이드 — 개발자 필수 지식",
+      en: "The Complete Guide to Timestamp Conversion for Developers",
+    },
+    description: {
+      ko: "Unix 타임스탬프의 개념부터 변환 방법, 시간대 처리까지 개발자가 알아야 할 모든 것을 정리했어요.",
+      en: "Everything developers need to know about Unix timestamps — what they are, how to convert them, and how to handle time zones.",
+    },
+    date: "2026-03-30",
+    toolId: "timestamp-converter",
+    image: "/images/blog/timestamp-conversion-complete-guide.webp",
+    keywords: ["타임스탬프", "Unix timestamp", "시간 변환", "epoch time", "timestamp converter", "UTC"],
+    content: {
+      ko: [
+        {
+          heading: "타임스탬프가 뭔지 간단히 알아보기",
+          body: "Unix 타임스탬프는 1970년 1월 1일 00:00:00 UTC부터 지금까지 흘러간 초(seconds)를 숫자로 나타낸 거예요. 예를 들어 1711756800은 2024년 3월 30일을 의미해요.\n\n왜 이렇게 복잡하게 표현하냐면, 컴퓨터 입장에서는 숫자 하나가 \"2024년 3월 30일 토요일 오전 9시\"보다 훨씬 다루기 쉽거든요. 비교, 정렬, 계산이 모두 간단한 숫자 연산이 되니까요.\n\n1970년 1월 1일을 기준점으로 잡은 건 Unix 운영체제가 처음 만들어질 때 정한 약속이에요. 이 시점을 Epoch라고 부르더라고요.",
+        },
+        {
+          heading: "초 단위? 밀리초 단위? 헷갈리는 형식 정리",
+          body: "타임스탬프를 보면 10자리인 것도 있고 13자리인 것도 있어서 헷갈릴 수 있어요. 10자리는 초(seconds) 단위이고, 13자리는 밀리초(milliseconds) 단위예요.\n\nJavaScript의 Date.now()는 밀리초를 반환하고, Python의 time.time()은 초 단위를 반환해요. API마다 다르니까 문서를 꼭 확인하세요.\n\n변환은 간단해요. 밀리초를 초로 바꾸려면 1000으로 나누면 되고, 반대로 초를 밀리초로 바꾸려면 1000을 곱하면 돼요. 하지만 직접 계산하기보다 변환 도구를 쓰는 게 실수를 줄이는 방법이에요.",
+        },
+        {
+          heading: "시간대(Time Zone) 처리가 중요한 이유",
+          body: "타임스탬프 자체는 시간대가 없어요. 전 세계 어디서든 같은 순간을 같은 숫자로 표현하거든요. 하지만 이걸 사람이 읽을 수 있는 날짜로 변환할 때 시간대가 필요해요.\n\n같은 타임스탬프 1711756800도 UTC로는 3월 30일 00:00이지만, KST(한국 시간)로는 3월 30일 09:00이에요. 시간대를 잘못 적용하면 9시간이나 차이 나는 버그가 생기더라고요.\n\n서버에서는 항상 UTC로 저장하고, 사용자에게 보여줄 때만 로컬 시간대로 변환하는 게 모범 사례예요. 이렇게 하면 다국적 서비스에서도 시간 관련 버그를 줄일 수 있어요.",
+        },
+        {
+          heading: "Toolkio 타임스탬프 변환기 활용법",
+          body: "Toolkio의 타임스탬프 변환기를 쓰면 숫자를 입력하면 날짜로, 날짜를 입력하면 타임스탬프로 바로 변환할 수 있어요. 초 단위와 밀리초 단위를 모두 지원하거든요.\n\n현재 시간의 타임스탬프도 바로 확인할 수 있어요. API 디버깅할 때 응답에 포함된 타임스탬프를 빠르게 확인하는 데 정말 유용하더라고요.\n\n개발하면서 타임스탬프를 자주 다루는 분이라면 즐겨찾기 해두세요. 터미널 명령어 외울 필요 없이 브라우저에서 바로 변환할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is a Unix Timestamp?",
+          body: "A Unix timestamp is the number of seconds that have elapsed since January 1, 1970, 00:00:00 UTC — known as the Unix Epoch. For example, 1711756800 represents March 30, 2024.\n\nComputers prefer timestamps over human-readable dates because a single number is much easier to compare, sort, and calculate with. Every programming language and database supports this format natively.",
+        },
+        {
+          heading: "Seconds vs Milliseconds: Know the Difference",
+          body: "A 10-digit timestamp is in seconds. A 13-digit timestamp is in milliseconds. JavaScript's Date.now() returns milliseconds, while Python's time.time() returns seconds.\n\nConverting between them is simple: divide by 1000 (ms to s) or multiply by 1000 (s to ms). But using a conversion tool eliminates off-by-one-thousand errors that can cause subtle bugs.",
+        },
+        {
+          heading: "Why Time Zones Trip Developers Up",
+          body: "Timestamps themselves have no time zone — they represent a universal moment in time. The time zone only matters when converting to a human-readable format.\n\nThe same timestamp shows as midnight UTC but 9:00 AM in KST (Korea). Applying the wrong time zone creates a 9-hour bug. Best practice: store everything in UTC on the server and convert to local time only in the UI.",
+        },
+        {
+          heading: "Convert Timestamps with Toolkio",
+          body: "Toolkio's Timestamp Converter handles both directions: enter a number to see the date, or pick a date to get the timestamp. It supports both seconds and milliseconds and shows the current timestamp in real time.\n\nGreat for debugging API responses or generating test data. No need to memorize terminal commands.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "2038년 문제가 뭔가요?",
+        answer: "32비트 시스템에서 타임스탬프가 2038년 1월 19일에 오버플로우돼요. 최근 시스템은 64비트를 쓰니까 걱정 없지만, 레거시 시스템에서는 주의가 필요해요.",
+      },
+      {
+        question: "타임스탬프에 음수 값이 있을 수 있나요?",
+        answer: "네, 1970년 이전의 시간은 음수 타임스탬프로 표현돼요. -86400은 1969년 12월 31일을 의미해요.",
+      },
+      {
+        question: "JavaScript에서 타임스탬프를 어떻게 만드나요?",
+        answer: "Date.now()를 쓰면 현재 시간의 밀리초 타임스탬프가 나와요. 초 단위가 필요하면 Math.floor(Date.now() / 1000)을 쓰면 돼요.",
+      },
+      {
+        question: "API에서 받은 타임스탬프가 초인지 밀리초인지 어떻게 알 수 있나요?",
+        answer: "자릿수를 보면 돼요. 10자리면 초, 13자리면 밀리초예요. 현재 시간 기준 초 단위는 17억대, 밀리초는 17조대 숫자여요.",
+      },
+    ],
+  },
+  {
+    slug: "text-diff-checker-usage-guide",
+    title: {
+      ko: "텍스트 비교 도구 활용법 — 코드 리뷰에 필수",
+      en: "How to Use a Text Diff Checker — Essential for Code Reviews",
+    },
+    description: {
+      ko: "두 텍스트의 차이점을 한눈에 비교하는 방법을 알아보세요. 코드 리뷰, 문서 비교, 설정 파일 점검에 유용해요.",
+      en: "Compare two texts side by side and spot differences instantly. Perfect for code reviews, document comparison, and config audits.",
+    },
+    date: "2026-03-30",
+    toolId: "diff-checker",
+    image: "/images/blog/text-diff-checker-usage-guide.webp",
+    keywords: ["텍스트 비교", "diff checker", "코드 비교", "파일 비교", "diff 도구", "코드 리뷰"],
+    content: {
+      ko: [
+        {
+          heading: "텍스트 비교가 필요한 순간",
+          body: "코드를 수정했는데 뭘 바꿨는지 정확히 기억이 안 날 때가 있잖아요. 또는 설정 파일 두 개 중 어디가 다른지 찾아야 할 때도 있고요. 이럴 때 텍스트 비교(Diff) 도구가 필요해요.\n\n눈으로 한 줄씩 비교하면 시간도 오래 걸리고 놓치기 쉬워요. 특히 코드처럼 한 글자 차이가 버그를 만들 수 있는 경우에는 자동 비교 도구가 필수적이에요.\n\n코드 리뷰, 문서 버전 관리, 번역 검수, 계약서 수정 확인 등 다양한 상황에서 활용할 수 있어요.",
+        },
+        {
+          heading: "Diff가 동작하는 원리",
+          body: "Diff 알고리즘은 두 텍스트를 줄 단위로 비교해서 추가된 줄, 삭제된 줄, 변경된 줄을 찾아내요. 가장 널리 쓰이는 건 LCS(Longest Common Subsequence) 알고리즘이에요.\n\n결과는 보통 색상으로 구분해서 보여줘요. 초록색은 추가된 내용, 빨간색은 삭제된 내용, 노란색은 변경된 내용으로 표시하는 게 일반적이에요.\n\nSide-by-side(나란히 보기)와 Inline(한 줄로 보기) 두 가지 표시 방식이 있어요. 코드 비교는 나란히 보기가, 짧은 텍스트는 인라인 보기가 보기 편하더라고요.",
+        },
+        {
+          heading: "코드 리뷰에서 Diff를 활용하는 팁",
+          body: "Git을 쓰면 git diff 명령으로 변경 사항을 볼 수 있지만, 터미널 출력은 읽기 불편할 때가 있어요. 웹 기반 Diff 도구를 쓰면 색상과 하이라이팅으로 훨씬 직관적이에요.\n\n풀 리퀘스트(PR) 리뷰할 때 변경 전후를 나란히 보면서 의도하지 않은 수정이 없는지 확인하는 게 좋아요. 공백이나 줄바꿈 변경은 무시 옵션을 켜면 실제 코드 변경에만 집중할 수 있어요.\n\n설정 파일(config)을 비교할 때도 유용해요. 프로덕션과 스테이징 환경의 설정 차이를 한눈에 파악할 수 있거든요.",
+        },
+        {
+          heading: "Toolkio Diff Checker 사용법",
+          body: "Toolkio의 Diff Checker에 두 텍스트를 각각 붙여넣으면 차이점이 색상으로 하이라이트돼서 바로 보여요. 추가, 삭제, 변경된 부분을 한눈에 확인할 수 있어요.\n\n사용법은 간단해요. 왼쪽에 원본, 오른쪽에 수정본을 넣고 비교 버튼을 누르면 돼요. 결과를 보면서 수정 사항을 빠르게 검토할 수 있어요.\n\n별도 프로그램 설치 없이 브라우저에서 바로 쓸 수 있어서, 급하게 비교할 일이 있을 때 정말 편리해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need to Compare Text",
+          body: "You have changed some code but cannot remember exactly what. Or you need to find the differences between two config files. A diff checker solves both problems instantly.\n\nManual line-by-line comparison is slow and error-prone. In code, a single character difference can introduce a bug. Automated diff tools catch every change reliably.\n\nUse cases include code reviews, document version tracking, translation QA, and contract revision verification.",
+        },
+        {
+          heading: "How Diff Algorithms Work",
+          body: "Diff algorithms compare text line by line, identifying added, removed, and modified lines. The most common algorithm is LCS (Longest Common Subsequence).\n\nResults are color-coded: green for additions, red for deletions, yellow for modifications. Two display modes exist: side-by-side and inline. Side-by-side works best for code; inline is better for short texts.",
+        },
+        {
+          heading: "Tips for Using Diff in Code Reviews",
+          body: "While git diff works in the terminal, web-based diff tools offer better readability with syntax highlighting and color coding.\n\nWhen reviewing pull requests, compare before and after side by side to catch unintended changes. Use whitespace-ignore options to focus on meaningful code changes only.\n\nConfig file comparison is another valuable use — instantly see differences between production and staging environments.",
+        },
+        {
+          heading: "Use Toolkio's Diff Checker",
+          body: "Paste two texts into Toolkio's Diff Checker and see differences highlighted in color immediately. No installation needed — it runs entirely in your browser.\n\nPut the original on the left, the modified version on the right, and click compare. Quick, simple, and always available.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Diff 도구로 이미지나 바이너리 파일도 비교할 수 있나요?",
+        answer: "텍스트 기반 Diff 도구는 텍스트만 비교할 수 있어요. 이미지나 바이너리 파일은 전용 비교 도구를 써야 해요.",
+      },
+      {
+        question: "공백 차이는 무시하고 비교할 수 있나요?",
+        answer: "대부분의 Diff 도구에서 공백 무시 옵션을 제공해요. 코드 포맷팅만 바뀐 경우 이 옵션을 켜면 실제 변경 사항만 볼 수 있어요.",
+      },
+      {
+        question: "Git이랑 Diff 도구는 뭐가 다른가요?",
+        answer: "Git은 버전 관리 시스템이고, Diff는 두 텍스트의 차이를 비교하는 기능이에요. Git 안에도 diff 기능이 포함되어 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "number-base-conversion-binary-hex-guide",
+    title: {
+      ko: "진법 변환 이해하기 — 2진수, 8진수, 16진수",
+      en: "Understanding Number Base Conversion — Binary, Octal, and Hex",
+    },
+    description: {
+      ko: "2진수, 8진수, 10진수, 16진수의 개념과 변환 방법을 쉽게 설명해드릴게요. 컴퓨터 과학의 기초를 잡아보세요.",
+      en: "Learn how binary, octal, decimal, and hexadecimal number systems work and how to convert between them.",
+    },
+    date: "2026-03-30",
+    toolId: "number-base-converter",
+    image: "/images/blog/number-base-conversion-binary-hex-guide.webp",
+    keywords: ["진법 변환", "2진수", "16진수", "8진수", "binary", "hexadecimal", "number base"],
+    content: {
+      ko: [
+        {
+          heading: "진법이 뭔지 10초 만에 이해하기",
+          body: "우리가 일상에서 쓰는 숫자는 10진법이에요. 0부터 9까지 10개의 숫자를 쓰고, 9 다음에는 자릿수가 올라가죠. 너무 당연해서 의식하지 못하지만, 이게 바로 진법의 원리예요.\n\n컴퓨터는 2진법을 써요. 전기 신호가 켜짐(1)과 꺼짐(0) 두 가지뿐이니까요. 그래서 모든 데이터를 0과 1로 표현하는 거예요.\n\n16진법은 0-9에 A-F를 더해서 16개의 기호를 써요. 2진수를 짧게 표현할 수 있어서 프로그래밍에서 정말 많이 쓰이더라고요. 색상 코드 #FF5733도 16진수예요.",
+        },
+        {
+          heading: "각 진법이 쓰이는 곳",
+          body: "2진수(Binary)는 컴퓨터 내부에서 모든 데이터를 표현하는 기본 방식이에요. 네트워크 서브넷 마스크(255.255.255.0 = 11111111.11111111.11111111.00000000)를 이해하려면 2진수를 알아야 해요.\n\n8진수(Octal)는 리눅스 파일 권한에서 쓰여요. chmod 755에서 7, 5, 5가 8진수 값이거든요. 7은 읽기+쓰기+실행(111), 5는 읽기+실행(101)을 의미해요.\n\n16진수(Hexadecimal)는 웹 색상 코드, 메모리 주소, MAC 주소 등에서 활용돼요. 0xFF는 10진수 255이고, 2진수 11111111이에요. 2진수 8자리를 16진수 2자리로 줄일 수 있어서 가독성이 훨씬 좋아요.",
+        },
+        {
+          heading: "진법 변환하는 방법",
+          body: "10진수를 2진수로 바꾸려면 2로 계속 나누면서 나머지를 역순으로 읽으면 돼요. 예를 들어 13을 2진수로 바꾸면: 13÷2=6 나머지 1, 6÷2=3 나머지 0, 3÷2=1 나머지 1, 1÷2=0 나머지 1 → 1101이 돼요.\n\n2진수를 16진수로 바꿀 때는 4자리씩 묶어서 변환해요. 1101 0011은 D3이 되는 식이에요. 4자리 2진수가 16진수 한 자리에 대응하거든요.\n\n손으로 계산하면 실수하기 쉬우니까, 변환 도구를 쓰는 게 훨씬 정확하고 빨라요. 특히 큰 숫자일수록 도구의 도움이 필요하더라고요.",
+        },
+        {
+          heading: "Toolkio 진법 변환기 사용법",
+          body: "Toolkio의 진법 변환기에 숫자를 입력하고 원래 진법과 변환할 진법을 선택하면 바로 결과가 나와요. 2진수, 8진수, 10진수, 16진수를 모두 지원하거든요.\n\n입력하면 동시에 모든 진법의 결과를 보여줘서 한눈에 비교할 수 있어요. 프로그래밍이나 네트워크 공부할 때 정말 유용해요.\n\n계산기 앱의 프로그래머 모드보다 직관적이고, 큰 숫자도 빠르게 처리할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Number Bases in 10 Seconds",
+          body: "Our everyday decimal system uses 10 symbols (0-9). Computers use binary with just 2 symbols (0 and 1) because electronic circuits have two states: on and off.\n\nHexadecimal uses 16 symbols (0-9 plus A-F) and is popular in programming because it compactly represents binary. The color code #FF5733 is hexadecimal.\n\nOctal uses 8 symbols (0-7) and appears in Linux file permissions. Understanding these bases is fundamental to computer science.",
+        },
+        {
+          heading: "Where Each Base Is Used",
+          body: "Binary is the foundation of all computing. Network subnet masks like 255.255.255.0 make more sense in binary: 11111111.11111111.11111111.00000000.\n\nOctal appears in Linux file permissions: chmod 755 means 7(rwx), 5(r-x), 5(r-x) in octal.\n\nHexadecimal is used in web colors, memory addresses, MAC addresses, and byte-level data. 0xFF equals 255 in decimal and 11111111 in binary — hex is far more readable.",
+        },
+        {
+          heading: "How to Convert Between Bases",
+          body: "Decimal to binary: repeatedly divide by 2 and read the remainders in reverse. 13 in binary: 13/2=6r1, 6/2=3r0, 3/2=1r1, 1/2=0r1 → 1101.\n\nBinary to hex: group binary digits in sets of four. 1101 0011 becomes D3. Each 4-bit group maps to exactly one hex digit.\n\nFor large numbers, manual conversion is error-prone. A conversion tool is faster and more reliable.",
+        },
+        {
+          heading: "Convert with Toolkio",
+          body: "Toolkio's Number Base Converter shows results in all bases simultaneously — enter a number in any base and see binary, octal, decimal, and hex values at once.\n\nMore intuitive than a calculator's programmer mode and handles large numbers without issues.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "프로그래머가 아니어도 진법을 알아야 하나요?",
+        answer: "꼭 그렇진 않지만, IT 분야에서 일하면 알아두면 유용해요. 색상 코드나 파일 권한 이해에 도움이 되거든요.",
+      },
+      {
+        question: "16진수에서 A-F는 왜 쓰나요?",
+        answer: "10-15를 한 자리로 표현하려면 기호가 필요해서 A=10, B=11, C=12, D=13, E=14, F=15로 정한 거예요.",
+      },
+      {
+        question: "2진수를 16진수로 빨리 바꾸는 방법이 있나요?",
+        answer: "4자리씩 끊어서 외우면 돼요. 0000=0, 0001=1, ..., 1010=A, 1111=F. 이 16가지만 알면 어떤 2진수도 바로 변환할 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "instagram-line-break-complete-guide",
+    title: {
+      ko: "인스타그램 줄바꿈 하는 법 2026 완벽 정리",
+      en: "How to Add Line Breaks on Instagram — 2026 Complete Guide",
+    },
+    description: {
+      ko: "인스타그램 캡션과 바이오에서 줄바꿈이 안 될 때 해결하는 방법을 총정리했어요. 모바일, PC 모두 가능해요.",
+      en: "Fix Instagram line breaks in captions and bios. Works on both mobile and desktop — updated for 2026.",
+    },
+    date: "2026-03-30",
+    toolId: "instagram-line-break",
+    image: "/images/blog/instagram-line-break-complete-guide.webp",
+    keywords: ["인스타그램 줄바꿈", "인스타 줄바꿈", "Instagram line break", "인스타 캡션", "인스타 바이오"],
+    content: {
+      ko: [
+        {
+          heading: "인스타 줄바꿈이 왜 안 될까?",
+          body: "인스타그램에서 캡션을 쓸 때 엔터를 눌러도 줄바꿈이 안 되는 경험, 다들 해보셨을 거예요. 분명 줄을 바꿨는데 게시하면 한 줄로 쭉 이어져 있는 거죠.\n\n이건 인스타그램이 연속된 빈 줄을 자동으로 제거하기 때문이에요. 특히 문단 사이에 빈 줄을 넣으려고 엔터를 여러 번 누르면 무시되는 경우가 많거든요.\n\n하지만 방법이 있어요. 몇 가지 트릭을 쓰면 깔끔하게 줄바꿈을 넣을 수 있어요. 지금부터 하나씩 알려드릴게요.",
+        },
+        {
+          heading: "줄바꿈을 넣는 3가지 방법",
+          body: "첫 번째, 보이지 않는 특수 문자를 사용하는 방법이에요. 줄 사이에 마침표(.)나 하이픈(-) 대신 보이지 않는 특수 문자를 넣으면 인스타그램이 빈 줄로 인식하지 않아서 줄바꿈이 유지돼요.\n\n두 번째, 메모장에서 먼저 작성하는 방법이에요. 스마트폰 메모 앱이나 PC 메모장에서 원하는 형태로 줄바꿈을 넣고, 그대로 복사해서 붙여넣으면 대부분 줄바꿈이 유지돼요.\n\n세 번째, 전용 줄바꿈 도구를 사용하는 방법이에요. 텍스트를 입력하면 인스타그램 호환 형식으로 변환해주는 도구를 쓰면 가장 확실해요. 빈 줄에 보이지 않는 문자를 자동으로 삽입해주거든요.",
+        },
+        {
+          heading: "바이오에서 줄바꿈하는 법",
+          body: "인스타그램 바이오는 캡션보다 줄바꿈이 더 까다로워요. 모바일 앱에서 직접 수정하면 줄바꿈이 무시되는 경우가 많거든요.\n\n가장 확실한 방법은 PC 웹 브라우저에서 인스타그램에 접속해서 프로필을 편집하는 거예요. 웹에서는 엔터키로 넣은 줄바꿈이 그대로 반영되더라고요.\n\n또는 줄바꿈 도구에서 변환한 텍스트를 모바일에서 붙여넣는 방법도 있어요. 보이지 않는 특수 문자 덕분에 줄바꿈이 유지돼요.",
+        },
+        {
+          heading: "Toolkio 인스타그램 줄바꿈 도구",
+          body: "Toolkio의 인스타그램 줄바꿈 도구에 텍스트를 입력하면 인스타그램에서 줄바꿈이 유지되는 형식으로 자동 변환해줘요.\n\n사용법은 정말 간단해요. 원하는 텍스트를 입력하고, 변환 버튼을 누르고, 결과를 복사해서 인스타그램에 붙여넣으면 끝이에요. 빈 줄에 보이지 않는 문자가 자동으로 들어가서 줄바꿈이 깨지지 않아요.\n\n캡션뿐 아니라 바이오, 댓글에서도 사용할 수 있어요. 인스타그램을 자주 쓰는 분이라면 즐겨찾기 해두면 매번 고생하지 않아도 돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Instagram Removes Your Line Breaks",
+          body: "You type a perfectly formatted caption, hit publish, and it turns into one big paragraph. This happens because Instagram automatically strips consecutive empty lines.\n\nThe app is designed to keep feeds compact, but this makes it frustrating when you want clear paragraph spacing or structured lists in your captions.",
+        },
+        {
+          heading: "3 Ways to Force Line Breaks",
+          body: "Method 1: Use invisible characters. Place a special invisible character on the blank line between paragraphs. Instagram sees it as content, not an empty line, and preserves the break.\n\nMethod 2: Write in your notes app first. Compose your caption in a notes app or text editor with the desired formatting, then copy-paste into Instagram. Most line breaks survive this way.\n\nMethod 3: Use a line break tool. Dedicated tools automatically insert invisible characters into blank lines, guaranteeing your formatting stays intact.",
+        },
+        {
+          heading: "How to Add Line Breaks in Your Bio",
+          body: "Instagram bios are even trickier than captions. The mobile app often strips line breaks when you edit your profile.\n\nThe most reliable method is editing your profile from a desktop web browser — line breaks entered on the web version are preserved. Alternatively, use a line break tool and paste the converted text on mobile.",
+        },
+        {
+          heading: "Use Toolkio's Instagram Line Break Tool",
+          body: "Toolkio's tool converts your text into an Instagram-compatible format automatically. Type your text, click convert, copy the result, and paste it into Instagram. Works for captions, bios, and comments.\n\nNo more worrying about disappearing line breaks — the tool handles everything for you.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "줄바꿈 도구를 쓰면 인스타그램에서 제재를 받나요?",
+        answer: "아니에요. 보이지 않는 문자를 사용하는 건 인스타그램 정책에 위반되지 않아요. 많은 인플루언서들도 사용하는 방법이에요.",
+      },
+      {
+        question: "댓글에서도 줄바꿈이 되나요?",
+        answer: "네, 같은 방법으로 댓글에서도 줄바꿈을 넣을 수 있어요. 변환한 텍스트를 복사해서 댓글에 붙여넣으면 돼요.",
+      },
+      {
+        question: "이모지 사이에도 줄바꿈을 넣을 수 있나요?",
+        answer: "네, 이모지 앞뒤로도 줄바꿈이 정상 작동해요. 이모지를 줄 구분자처럼 활용하는 것도 인기 있는 캡션 스타일이에요.",
+      },
+      {
+        question: "PC에서 작성하면 무조건 줄바꿈이 되나요?",
+        answer: "PC 웹에서 작성하면 기본 줄바꿈은 잘 유지되지만, 빈 줄(연속 엔터)은 여전히 사라질 수 있어요. 확실하게 하려면 줄바꿈 도구를 쓰는 게 좋아요.",
+      },
+    ],
+  },
 ];
