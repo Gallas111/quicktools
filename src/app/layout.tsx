@@ -20,9 +20,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://toolkio.com"),
   verification: {
+    // TODO: Add Google Search Console verification code from GSC > Settings > Ownership verification
+    // google: "YOUR_GOOGLE_VERIFICATION_CODE",
     other: {
       "naver-site-verification": "5c4ae463a9b30dd1d2a73fc880af77c01ec1959c",
       "google-adsense-account": "ca-pub-1022869499967960",
+      // TODO: Add Bing Webmaster verification code from Bing Webmaster Tools
+      // "msvalidate.01": "YOUR_BING_VERIFICATION_CODE",
     },
   },
   title: {
