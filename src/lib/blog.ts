@@ -7205,4 +7205,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "base64-encoding-decoding-guide",
+    title: {
+      ko: "Base64 인코딩 디코딩 완벽 가이드 — 원리부터 실전 활용까지",
+      en: "Complete Guide to Base64 Encoding and Decoding — From Basics to Practical Use",
+    },
+    description: {
+      ko: "Base64 인코딩이 뭔지, 왜 쓰는지, 어떻게 활용하는지 쉽게 정리했어요. 이미지 변환, API 인증, 이메일 첨부까지 실전 사례와 함께 알아보세요.",
+      en: "Learn what Base64 encoding is, why it's used, and how to apply it. From image embedding to API authentication, discover practical use cases.",
+    },
+    date: "2026-03-31",
+    toolId: "base64",
+    image: "/images/blog/base64-encoding-decoding-guide.webp",
+    keywords: ["Base64 인코딩", "Base64 디코딩", "Base64 변환", "base64 encode decode", "이미지 Base64"],
+    content: {
+      ko: [
+        {
+          heading: "Base64란 무엇인가요",
+          body: "Base64는 바이너리 데이터를 텍스트로 변환하는 인코딩 방식이에요. 이미지, 파일, 바이너리 데이터를 A-Z, a-z, 0-9, +, / 총 64개 문자로 표현해요.\n\n왜 이런 게 필요하냐면, 이메일이나 JSON 같은 텍스트 기반 시스템은 바이너리 데이터를 직접 다루지 못하거든요. Base64로 변환하면 텍스트처럼 안전하게 전송할 수 있어요.\n\n대신 원본보다 크기가 약 33% 커지는 단점이 있어요. 그래서 작은 이미지나 인증 토큰처럼 크기가 작은 데이터에 주로 사용해요.",
+        },
+        {
+          heading: "Base64가 사용되는 곳",
+          body: "Base64는 생각보다 많은 곳에서 사용돼요.\n\n- HTML/CSS에 이미지 임베딩: 작은 아이콘을 별도 파일 없이 코드에 직접 넣을 수 있어요\n- API 인증: HTTP Basic Auth에서 아이디:비밀번호를 Base64로 인코딩해서 보내요\n- 이메일 첨부파일: MIME 프로토콜에서 파일을 Base64로 변환해서 전송해요\n- JWT 토큰: JSON Web Token의 헤더와 페이로드가 Base64로 인코딩되어 있어요\n- 데이터 URI: data:image/png;base64,... 형식으로 이미지를 URL처럼 사용할 수 있어요",
+        },
+        {
+          heading: "Base64 인코딩 방법",
+          body: "프로그래밍 언어마다 Base64를 다루는 내장 함수가 있어요.\n\nJavaScript에서는 btoa() 함수로 인코딩, atob() 함수로 디코딩할 수 있어요. 한글 같은 유니코드 문자는 먼저 UTF-8로 변환한 후 인코딩해야 깨지지 않아요.\n\nPython에서는 base64 모듈의 b64encode()와 b64decode() 함수를 사용해요.\n\n리눅스/맥 터미널에서는 base64 명령어로 파일을 바로 인코딩할 수 있어요.\n\n직접 코드를 쓰기 번거롭다면 Toolkio의 Base64 변환 도구를 사용하면 브라우저에서 바로 변환할 수 있어요.",
+        },
+        {
+          heading: "Base64 사용 시 주의사항",
+          body: "Base64는 암호화가 아니에요. 누구나 쉽게 디코딩할 수 있기 때문에 비밀번호나 민감한 정보를 Base64로만 인코딩해서 보내면 안 돼요.\n\n또한 크기가 33% 증가하기 때문에 큰 파일에는 적합하지 않아요. 수 KB 이하의 작은 데이터에 사용하는 게 좋아요.\n\nURL에서 Base64를 사용할 때는 +와 /가 특수문자로 처리될 수 있어서 URL-safe Base64(-와 _로 대체)를 사용해야 해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Base64",
+          body: "Base64 is an encoding scheme that converts binary data into text using 64 ASCII characters (A-Z, a-z, 0-9, +, /). It's essential when you need to transmit binary data through text-based systems like email or JSON.\n\nThe trade-off is a ~33% size increase, so it's best suited for small data like icons, tokens, and authentication strings.",
+        },
+        {
+          heading: "Where Base64 Is Used",
+          body: "Base64 appears everywhere in web development:\n\n- Embedding images in HTML/CSS via data URIs\n- HTTP Basic Authentication headers\n- Email attachments (MIME encoding)\n- JWT token payloads\n- Storing binary data in JSON or XML",
+        },
+        {
+          heading: "How to Encode and Decode",
+          body: "Every major language has built-in Base64 support:\n\n- JavaScript: btoa() to encode, atob() to decode\n- Python: base64.b64encode() and b64decode()\n- Command line: base64 command on Linux/Mac\n\nFor quick conversions without writing code, use Toolkio's Base64 converter tool right in your browser.",
+        },
+        {
+          heading: "Important Considerations",
+          body: "Base64 is NOT encryption — anyone can decode it. Never use it alone to protect sensitive data.\n\nFor URLs, use URL-safe Base64 (replacing + with - and / with _) to avoid encoding conflicts.\n\nAvoid Base64 for large files due to the 33% size overhead. Use it for small assets like icons and authentication tokens.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Base64 인코딩과 암호화의 차이는?",
+        answer: "Base64는 데이터의 형식을 바꾸는 인코딩이지 보안을 위한 암호화가 아니에요. 누구나 디코딩할 수 있으니 민감한 정보 보호에는 AES 같은 암호화를 사용하세요.",
+      },
+      {
+        question: "Base64로 변환하면 파일 크기가 왜 커지나요?",
+        answer: "원본 바이너리 데이터 3바이트를 4개의 ASCII 문자로 변환하기 때문에 약 33% 커져요. 이건 텍스트 호환성을 위한 불가피한 대가예요.",
+      },
+      {
+        question: "이미지를 Base64로 변환하면 어떤 장점이 있나요?",
+        answer: "작은 이미지(아이콘 등)를 HTML에 직접 넣으면 별도 HTTP 요청 없이 로딩할 수 있어서 페이지 속도가 빨라져요. 단, 큰 이미지에는 비효율적이에요.",
+      },
+    ],
+  },
+  {
+    slug: "regex-tester-guide",
+    title: {
+      ko: "정규식 테스트 도구 사용법 — 초보자를 위한 정규표현식 가이드",
+      en: "Regex Tester Guide — A Beginner's Guide to Regular Expressions",
+    },
+    description: {
+      ko: "정규표현식이 어렵게 느껴지나요? 기초 문법부터 실전 패턴까지, 정규식 테스트 도구와 함께 쉽게 배워보세요.",
+      en: "Regular expressions feel intimidating? Learn regex basics and practical patterns with our interactive tester tool.",
+    },
+    date: "2026-03-31",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-tester-guide.webp",
+    keywords: ["정규식", "정규표현식", "regex", "정규식 테스트", "regex tester"],
+    content: {
+      ko: [
+        {
+          heading: "정규식이란 무엇인가요",
+          body: "정규식(정규표현식, Regular Expression)은 텍스트에서 특정 패턴을 찾는 도구예요. 이메일 형식 검증, 전화번호 추출, 특정 단어 치환 같은 작업을 한 줄의 패턴으로 처리할 수 있어요.\n\n처음 보면 암호처럼 보이지만, 기본 문법 몇 가지만 알면 누구나 사용할 수 있어요.",
+        },
+        {
+          heading: "꼭 알아야 할 기본 문법",
+          body: "가장 많이 쓰이는 정규식 문법을 정리했어요.\n\n- . (점): 아무 문자 1개와 매칭\n- * (별표): 앞 문자가 0번 이상 반복\n- + (플러스): 앞 문자가 1번 이상 반복\n- ? (물음표): 앞 문자가 0번 또는 1번\n- [abc]: a, b, c 중 하나\n- [0-9]: 숫자 하나\n- [a-z]: 소문자 알파벳 하나\n- \\d: 숫자 (=[0-9])\n- \\w: 단어 문자 (영문, 숫자, _)\n- \\s: 공백 문자\n- ^: 문자열 시작\n- $: 문자열 끝\n- (그룹): 괄호로 그룹핑",
+        },
+        {
+          heading: "실전에서 자주 쓰는 정규식 패턴",
+          body: "이메일 검증: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]+ 패턴으로 이메일 형식을 확인할 수 있어요.\n\n한국 전화번호: 01[0-9]-[0-9]+-[0-9]+ 패턴으로 010-1234-5678 형식을 매칭할 수 있어요.\n\nURL 추출: https?://[^\\s]+ 패턴으로 텍스트에서 URL을 찾을 수 있어요.\n\nHTML 태그 제거: <[^>]+> 패턴으로 HTML 태그를 찾아서 제거할 수 있어요.\n\nToolkio의 정규식 테스트 도구를 사용하면 이런 패턴을 실시간으로 테스트하면서 결과를 확인할 수 있어요.",
+        },
+        {
+          heading: "정규식 디버깅 팁",
+          body: "정규식이 예상대로 동작하지 않을 때 확인할 것들이에요.\n\n1. 특수 문자를 이스케이프했는지 확인하세요. 점(.), 괄호(()), 대괄호([]) 등은 \\를 앞에 붙여야 문자 그대로 매칭돼요.\n2. 탐욕적 vs 게으른 매칭을 이해하세요. .*은 가능한 많이, .*?은 가능한 적게 매칭해요.\n3. 작은 단위부터 테스트하세요. 전체 패턴을 한 번에 쓰지 말고 부분부터 확인하면 디버깅이 쉬워요.\n4. 플래그를 확인하세요. g(전역), i(대소문자 무시), m(멀티라인) 같은 플래그가 결과에 영향을 줘요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Are Regular Expressions",
+          body: "Regular expressions (regex) are patterns used to match text. They can validate email formats, extract phone numbers, or replace specific words — all with a single pattern string.\n\nThey look cryptic at first, but learning a few basic symbols opens up powerful text processing capabilities.",
+        },
+        {
+          heading: "Essential Regex Syntax",
+          body: "The most commonly used regex symbols:\n\n- . matches any single character\n- * means zero or more of the previous character\n- + means one or more\n- ? means zero or one\n- [abc] matches a, b, or c\n- \\d matches a digit\n- \\w matches a word character\n- ^ and $ match start and end of string\n- () groups patterns together",
+        },
+        {
+          heading: "Common Practical Patterns",
+          body: "Email validation, phone number extraction, URL matching, and HTML tag removal are the most common regex tasks.\n\nUse Toolkio's regex tester to try patterns in real-time and see matches highlighted instantly.",
+        },
+        {
+          heading: "Debugging Tips",
+          body: "When regex doesn't work as expected:\n1. Check special character escaping\n2. Understand greedy vs lazy matching (.* vs .*?)\n3. Test small parts before the full pattern\n4. Verify your flags (g, i, m)",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정규식을 배우는 가장 좋은 방법은?",
+        answer: "정규식 테스트 도구에서 직접 패턴을 입력하고 결과를 확인하면서 배우는 게 가장 빨라요. 이론만 읽으면 이해가 안 되지만, 실시간으로 결과를 보면 금방 감이 와요.",
+      },
+      {
+        question: "프로그래밍 언어마다 정규식이 다른가요?",
+        answer: "기본 문법은 거의 같지만, 고급 기능에서 차이가 있어요. JavaScript, Python, Java 모두 기본 패턴은 동일하게 사용할 수 있어요.",
+      },
+      {
+        question: "정규식으로 HTML을 파싱해도 되나요?",
+        answer: "간단한 태그 제거는 가능하지만, 복잡한 HTML 구조를 정규식으로 파싱하는 건 권장하지 않아요. HTML 파서를 사용하는 게 안전해요.",
+      },
+    ],
+  },
+  {
+    slug: "url-encoding-decoding-guide",
+    title: {
+      ko: "URL 인코딩 디코딩 이해하기 — 왜 주소에 %20이 붙을까",
+      en: "Understanding URL Encoding and Decoding — Why URLs Have %20",
+    },
+    description: {
+      ko: "URL에 %20, %3A 같은 문자가 왜 나타나는지 궁금했나요? URL 인코딩의 원리와 실전 활용법을 쉽게 설명해드릴게요.",
+      en: "Ever wondered why URLs contain %20 or %3A? Learn how URL encoding works and when you need it.",
+    },
+    date: "2026-03-31",
+    toolId: "url-encoder",
+    image: "/images/blog/url-encoding-decoding-guide.webp",
+    keywords: ["URL 인코딩", "URL 디코딩", "퍼센트 인코딩", "url encode", "url decoder"],
+    content: {
+      ko: [
+        {
+          heading: "URL 인코딩이 필요한 이유",
+          body: "URL(웹 주소)에는 사용할 수 있는 문자가 정해져 있어요. 영문 알파벳, 숫자, 그리고 일부 특수문자(-, _, ., ~)만 안전하게 사용할 수 있죠.\n\n한글, 공백, 특수문자 같은 것들은 URL에 직접 넣으면 문제가 생길 수 있어요. 그래서 이런 문자들을 %XX 형식으로 변환하는데, 이걸 URL 인코딩(퍼센트 인코딩)이라고 해요.\n\n예를 들어 공백은 %20, 한글 '가'는 %EA%B0%80으로 변환돼요.",
+        },
+        {
+          heading: "자주 보는 인코딩 문자",
+          body: "URL에서 자주 만나는 인코딩된 문자들이에요.\n\n- 공백: %20 (또는 +)\n- !: %21\n- #: %23\n- $: %24\n- &: %26\n- +: %2B\n- /: %2F\n- :: %3A\n- =: %3D\n- ?: %3F\n- @: %40\n\n검색 결과 URL이나 API 호출 URL에서 이런 문자들을 자주 볼 수 있어요.",
+        },
+        {
+          heading: "URL 인코딩이 사용되는 곳",
+          body: "검색 엔진 쿼리에서 가장 흔하게 볼 수 있어요. 구글에서 '맛집 추천'을 검색하면 URL에 q=%EB%A7%9B%EC%A7%91+%EC%B6%94%EC%B2%9C 이런 식으로 나타나요.\n\nAPI 개발에서도 필수예요. GET 요청의 쿼리 파라미터에 특수문자가 포함될 때 반드시 인코딩해야 정상 동작해요.\n\n폼 데이터 전송에서도 사용돼요. HTML 폼에서 데이터를 보낼 때 application/x-www-form-urlencoded 형식으로 인코딩되거든요.\n\nToolkio의 URL 인코더/디코더를 사용하면 브라우저에서 바로 변환할 수 있어요.",
+        },
+        {
+          heading: "인코딩 vs 디코딩 언제 사용하나",
+          body: "인코딩은 URL에 안전하지 않은 문자를 넣어야 할 때 사용해요. API 호출이나 리다이렉트 URL을 만들 때 필요해요.\n\n디코딩은 인코딩된 URL을 사람이 읽을 수 있는 형태로 되돌릴 때 사용해요. 복잡한 URL을 분석하거나 디버깅할 때 유용해요.\n\nJavaScript에서는 encodeURIComponent()로 인코딩, decodeURIComponent()로 디코딩할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why URL Encoding Exists",
+          body: "URLs can only safely contain ASCII letters, numbers, and a few special characters (-, _, ., ~). Characters like spaces, Unicode text, and special symbols must be converted to %XX format — this is called percent-encoding.\n\nFor example, a space becomes %20, and the # symbol becomes %23.",
+        },
+        {
+          heading: "Common Encoded Characters",
+          body: "Characters you'll frequently see encoded in URLs:\n- Space: %20 (or +)\n- &: %26\n- =: %3D\n- ?: %3F\n- /: %2F\n- @: %40\n- #: %23",
+        },
+        {
+          heading: "Where URL Encoding Is Used",
+          body: "Search engine queries, API parameters, form data submission, and redirect URLs all require proper URL encoding to function correctly.\n\nUse Toolkio's URL encoder/decoder for instant conversions in your browser.",
+        },
+        {
+          heading: "Encoding vs Decoding",
+          body: "Encode when building URLs with special characters. Decode when analyzing or debugging encoded URLs.\n\nIn JavaScript: encodeURIComponent() and decodeURIComponent(). In Python: urllib.parse.quote() and unquote().",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "공백을 %20과 + 중 어떤 걸로 인코딩해야 하나요?",
+        answer: "URL 경로에서는 %20, 쿼리 스트링에서는 + 또는 %20 둘 다 가능해요. 일반적으로 encodeURIComponent()를 쓰면 %20으로 변환돼요.",
+      },
+      {
+        question: "한글 URL은 왜 그렇게 길어지나요?",
+        answer: "한글 한 글자가 UTF-8로 3바이트이고, 각 바이트가 %XX 형식으로 변환되기 때문이에요. '가' 한 글자가 %EA%B0%80 (9자)로 바뀌거든요.",
+      },
+      {
+        question: "URL 인코딩을 안 하면 어떤 문제가 생기나요?",
+        answer: "서버가 URL을 잘못 해석하거나 요청이 실패할 수 있어요. 특히 &나 = 같은 문자는 URL에서 특별한 의미가 있어서 인코딩하지 않으면 파라미터가 잘리거나 섞일 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "timestamp-converter-guide",
+    title: {
+      ko: "타임스탬프 변환기 활용법 — Unix 시간 쉽게 이해하기",
+      en: "Timestamp Converter Guide — Understanding Unix Time Made Easy",
+    },
+    description: {
+      ko: "1711843200 같은 숫자가 뭔지 궁금했나요? Unix 타임스탬프의 개념과 변환 방법, 실전 활용법을 쉽게 설명해드릴게요.",
+      en: "Ever seen numbers like 1711843200 and wondered what they mean? Learn about Unix timestamps and how to convert them.",
+    },
+    date: "2026-03-31",
+    toolId: "timestamp",
+    image: "/images/blog/timestamp-converter-guide.webp",
+    keywords: ["타임스탬프", "Unix 타임스탬프", "timestamp 변환", "에포크 시간", "unix time"],
+    content: {
+      ko: [
+        {
+          heading: "Unix 타임스탬프란",
+          body: "Unix 타임스탬프(Epoch Time)는 1970년 1월 1일 00:00:00 UTC부터 경과한 초(seconds)를 나타내는 숫자예요.\n\n예를 들어 1711843200은 2024년 3월 31일 00:00:00 UTC를 의미해요.\n\n왜 이런 방식을 사용하냐면, 날짜를 하나의 숫자로 표현하면 비교, 정렬, 계산이 훨씬 쉬워지거든요. '2024-03-31'과 '2024-04-01' 중 어느 게 더 나중인지 문자열로 비교하기보다 1711843200과 1711929600을 비교하는 게 컴퓨터 입장에서 훨씬 빠르고 정확해요.",
+        },
+        {
+          heading: "타임스탬프가 사용되는 곳",
+          body: "데이터베이스에서 게시물 작성 시간, 수정 시간을 저장할 때 타임스탬프를 자주 사용해요.\n\nAPI 응답에서 시간 데이터가 타임스탬프로 오는 경우가 많아요. JSON 데이터에 'created_at': 1711843200 이런 식으로 들어있죠.\n\n로그 파일에서도 이벤트 발생 시간을 타임스탬프로 기록해요. 정확한 시간 순서를 보장할 수 있거든요.\n\n캐시 만료 시간, JWT 토큰 만료 시간도 타임스탬프로 표현돼요.\n\nToolkio의 타임스탬프 변환기를 사용하면 숫자를 날짜로, 날짜를 숫자로 즉시 변환할 수 있어요.",
+        },
+        {
+          heading: "초 단위 vs 밀리초 단위",
+          body: "타임스탬프에는 두 가지 형식이 있어요.\n\n- 초 단위 (10자리): 1711843200 — Unix/Python/PHP에서 주로 사용\n- 밀리초 단위 (13자리): 1711843200000 — JavaScript/Java에서 주로 사용\n\n자리수를 보면 어떤 형식인지 바로 알 수 있어요. 10자리면 초, 13자리면 밀리초예요.\n\n밀리초를 초로 변환하려면 1000으로 나누면 돼요.",
+        },
+        {
+          heading: "시간대(Timezone) 주의사항",
+          body: "타임스탬프 자체는 시간대가 없어요. 항상 UTC 기준이에요. 하지만 사람이 읽을 수 있는 날짜로 변환할 때는 시간대를 고려해야 해요.\n\n한국(KST)은 UTC+9이기 때문에 같은 타임스탬프라도 한국 시간으로 보면 9시간 앞서요.\n\n개발할 때 가장 흔한 실수가 시간대를 빼먹는 거예요. 서버는 UTC로 저장하고, 화면에 보여줄 때만 로컬 시간으로 변환하는 게 안전해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is a Unix Timestamp",
+          body: "A Unix timestamp counts seconds since January 1, 1970, 00:00:00 UTC (the 'epoch'). For example, 1711843200 represents March 31, 2024.\n\nUsing a single number for dates makes comparison, sorting, and calculations much simpler for computers.",
+        },
+        {
+          heading: "Where Timestamps Are Used",
+          body: "Databases store creation/modification times as timestamps. APIs return time data as timestamps. Log files record events with timestamps for precise ordering.\n\nUse Toolkio's timestamp converter to instantly translate between numbers and dates.",
+        },
+        {
+          heading: "Seconds vs Milliseconds",
+          body: "Two common formats exist:\n- Seconds (10 digits): 1711843200 — used in Unix, Python, PHP\n- Milliseconds (13 digits): 1711843200000 — used in JavaScript, Java\n\nCount the digits to identify the format. Divide by 1000 to convert milliseconds to seconds.",
+        },
+        {
+          heading: "Timezone Considerations",
+          body: "Timestamps are always UTC — they have no timezone. When converting to human-readable dates, you must specify the timezone.\n\nBest practice: store in UTC, convert to local time only for display.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "현재 타임스탬프를 확인하는 가장 쉬운 방법은?",
+        answer: "Toolkio의 타임스탬프 변환기에 접속하면 현재 타임스탬프가 실시간으로 표시돼요. 브라우저 콘솔에서 Date.now()를 입력해도 밀리초 단위 타임스탬프를 볼 수 있어요.",
+      },
+      {
+        question: "2038년 문제가 뭔가요?",
+        answer: "32비트 시스템에서 초 단위 타임스탬프가 2038년 1월 19일에 최대값에 도달하는 문제예요. 64비트 시스템에서는 이 문제가 없으니 대부분의 최신 시스템은 안전해요.",
+      },
+      {
+        question: "음수 타임스탬프도 있나요?",
+        answer: "네, 1970년 이전 날짜는 음수로 표현돼요. 예를 들어 1969년 12월 31일은 -86400이에요.",
+      },
+    ],
+  },
+  {
+    slug: "image-compression-optimization-guide",
+    title: {
+      ko: "이미지 압축 최적화 가이드 — 화질은 유지하면서 용량 줄이는 법",
+      en: "Image Compression Guide — Reduce File Size Without Losing Quality",
+    },
+    description: {
+      ko: "웹사이트 속도를 높이고 싶다면 이미지 압축부터 시작하세요. 화질 손실 없이 이미지 용량을 줄이는 방법과 포맷별 최적화 전략을 정리했어요.",
+      en: "Speed up your website by optimizing images. Learn how to reduce file sizes without visible quality loss and choose the right format.",
+    },
+    date: "2026-03-31",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compression-optimization-guide.webp",
+    keywords: ["이미지 압축", "이미지 최적화", "사진 용량 줄이기", "image compression", "webp 변환"],
+    content: {
+      ko: [
+        {
+          heading: "이미지 압축이 중요한 이유",
+          body: "웹페이지 용량의 50% 이상이 이미지가 차지해요. 이미지를 최적화하면 페이지 로딩 속도가 빨라지고, 사용자 경험이 좋아지고, 검색 엔진 순위도 올라가요.\n\n구글은 페이지 로딩 속도를 검색 순위 요소로 반영하고 있어요. 이미지 하나를 500KB에서 100KB로 줄이면 체감 속도가 확 달라져요.\n\n모바일 사용자에게는 더 중요해요. 데이터 요금도 아끼고, 느린 네트워크에서도 빠르게 로딩되니까요.",
+        },
+        {
+          heading: "이미지 포맷별 특징",
+          body: "포맷에 따라 압축 효율과 용도가 달라요.\n\n- JPEG: 사진에 적합해요. 손실 압축이라 품질을 조절할 수 있어요. 80% 품질이면 눈에 띄는 차이 없이 용량이 크게 줄어요.\n- PNG: 투명 배경이 필요할 때 사용해요. 무손실 압축이라 용량이 큰 편이에요.\n- WebP: JPEG보다 25-30% 더 작으면서 비슷한 화질을 유지해요. 최신 브라우저에서 모두 지원해요.\n- AVIF: WebP보다 더 효율적이지만 지원 브라우저가 아직 제한적이에요.\n- SVG: 아이콘, 로고 같은 벡터 그래픽에 최적이에요. 확대해도 깨지지 않아요.",
+        },
+        {
+          heading: "실전 압축 방법",
+          body: "이미지를 최적화하는 단계를 정리했어요.\n\n1단계 — 적절한 크기로 리사이즈: 4000x3000 사진을 1200px 너비의 웹페이지에 올린다면 1200px로 줄이세요. 이것만으로도 용량이 70% 이상 줄어요.\n\n2단계 — 포맷 변환: JPEG 사진을 WebP로 변환하면 25-30% 추가 절약이 가능해요.\n\n3단계 — 품질 조절: JPEG/WebP는 80-85% 품질이면 육안으로 차이를 구분하기 어려워요.\n\n4단계 — 메타데이터 제거: 카메라 정보, GPS 좌표 같은 EXIF 데이터를 제거하면 수 KB를 아낄 수 있어요.\n\nToolkio의 이미지 압축 도구를 사용하면 브라우저에서 바로 이 모든 과정을 처리할 수 있어요.",
+        },
+        {
+          heading: "웹사이트별 최적 이미지 설정",
+          body: "용도에 따라 권장하는 이미지 설정이 달라요.\n\n- 블로그 본문 이미지: 너비 800-1200px, WebP 형식, 80% 품질\n- 썸네일: 너비 400-600px, WebP 형식, 75% 품질\n- 히어로 이미지(배너): 너비 1920px, WebP 형식, 85% 품질\n- 아이콘/로고: SVG 형식 (벡터)\n- SNS 공유 이미지: 1200x630px, JPEG 형식, 85% 품질\n\n대부분의 경우 이미지 한 장당 100-200KB 이내로 유지하는 게 목표예요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Image Compression Matters",
+          body: "Images account for over 50% of most web pages' total size. Optimizing them improves loading speed, user experience, and search engine rankings.\n\nGoogle uses page speed as a ranking factor. Reducing an image from 500KB to 100KB makes a noticeable difference, especially on mobile networks.",
+        },
+        {
+          heading: "Image Format Comparison",
+          body: "Choose the right format for each use case:\n- JPEG: Best for photos, lossy compression, 80% quality is the sweet spot\n- PNG: For transparency, lossless but larger files\n- WebP: 25-30% smaller than JPEG with similar quality\n- AVIF: Even more efficient but limited browser support\n- SVG: Perfect for icons and logos, scales infinitely",
+        },
+        {
+          heading: "Practical Compression Steps",
+          body: "1. Resize to display dimensions (don't serve 4000px images in 1200px containers)\n2. Convert to WebP format\n3. Set quality to 80-85%\n4. Strip metadata (EXIF data)\n\nUse Toolkio's image compressor to handle all these steps right in your browser.",
+        },
+        {
+          heading: "Recommended Settings by Use Case",
+          body: "Blog images: 800-1200px wide, WebP, 80% quality\nThumbnails: 400-600px, WebP, 75% quality\nHero/banner: 1920px, WebP, 85% quality\nIcons/logos: SVG format\nSocial sharing: 1200x630px, JPEG, 85% quality\n\nAim for under 200KB per image.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지를 압축하면 화질이 떨어지나요?",
+        answer: "JPEG/WebP 80% 품질로 압축하면 원본과 육안으로 구분하기 어려워요. 50% 이하로 내리면 눈에 띄는 품질 저하가 발생하니 80-85% 범위가 최적이에요.",
+      },
+      {
+        question: "WebP와 JPEG 중 어떤 포맷이 좋은가요?",
+        answer: "WebP를 추천해요. 같은 화질에서 25-30% 더 작고, 투명 배경도 지원하고, 모든 최신 브라우저에서 작동해요.",
+      },
+      {
+        question: "이미지 압축 도구는 안전한가요?",
+        answer: "Toolkio의 이미지 압축은 브라우저에서 처리되기 때문에 이미지가 서버로 전송되지 않아요. 개인 사진도 안심하고 압축할 수 있어요.",
+      },
+    ],
+  },
 ];
