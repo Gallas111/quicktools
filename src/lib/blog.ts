@@ -7540,4 +7540,407 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "regex-tester-guide",
+    title: {
+      ko: "정규식 테스트 완벽 가이드 — 초보자도 바로 쓰는 정규표현식 문법 정리",
+      en: "Regex Tester Guide — Essential Regular Expression Patterns for Beginners",
+    },
+    description: {
+      ko: "정규표현식이 어렵게 느껴지셨나요? 이메일, 전화번호, URL 검증 등 실무에서 자주 쓰는 정규식 패턴을 쉽게 정리했어요.",
+      en: "Regular expressions feel intimidating? Here are the most commonly used regex patterns for email, phone, URL validation and more.",
+    },
+    date: "2026-04-01",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-tester-guide.webp",
+    keywords: ["정규식 테스트", "정규표현식", "regex", "정규식 패턴", "regular expression", "regex tester"],
+    content: {
+      ko: [
+        {
+          heading: "정규표현식이란 무엇인가요",
+          body: "정규표현식(Regular Expression, Regex)은 문자열에서 특정 패턴을 찾거나 검증할 때 사용하는 표현 방식이에요. 프로그래밍 언어에 관계없이 거의 모든 언어에서 지원하고, 데이터 유효성 검사부터 텍스트 검색, 치환까지 폭넓게 활용돼요.\n\n예를 들어 사용자가 입력한 이메일 주소가 올바른 형식인지 확인하려면 하나하나 조건문을 작성하는 것보다 정규식 한 줄로 처리하는 게 훨씬 효율적이에요. 전화번호에서 숫자만 추출하거나, 로그 파일에서 특정 에러 메시지를 찾을 때도 정규식이 빠르게 해결해줘요.\n\n처음에는 기호가 복잡해 보이지만, 기본 문법 몇 가지만 익히면 실무에서 바로 활용할 수 있어요. Toolkio의 정규식 테스트 도구를 사용하면 패턴을 입력하고 결과를 실시간으로 확인할 수 있어서 연습하기에 좋아요."
+        },
+        {
+          heading: "자주 쓰는 정규식 기본 문법",
+          body: "정규식에서 가장 많이 사용되는 기본 문법을 정리할게요.\n\n- . (점): 아무 문자 하나와 매칭돼요. a.c는 abc, aXc, a1c 등에 매칭돼요.\n- * (별표): 앞의 문자가 0번 이상 반복돼요. ab*c는 ac, abc, abbc 등에 매칭돼요.\n- + (플러스): 앞의 문자가 1번 이상 반복돼요. ab+c는 abc, abbc에 매칭되지만 ac에는 매칭 안 돼요.\n- ? (물음표): 앞의 문자가 0번 또는 1번 등장해요. colou?r은 color와 colour 모두 매칭돼요.\n- ^ (캐럿): 문자열의 시작을 의미해요. ^Hello는 Hello로 시작하는 문자열에 매칭돼요.\n- $ (달러): 문자열의 끝을 의미해요. world$는 world로 끝나는 문자열에 매칭돼요.\n- 대괄호: 문자 클래스를 정의해요. 0-9는 숫자, a-z는 소문자, A-Z는 대문자와 매칭돼요.\n- \\d: 숫자 한 자리(0-9와 동일), \\w: 영문자+숫자+밑줄, \\s: 공백 문자에 매칭돼요.\n\n이 기본 문법만 알아도 실무에서 필요한 대부분의 패턴을 만들 수 있어요."
+        },
+        {
+          heading: "실무에서 바로 쓰는 정규식 패턴",
+          body: "실제로 개발하면서 가장 많이 사용하는 패턴들이에요.\n\n이메일 검증: 이메일 주소가 올바른 형식인지 확인할 때 사용해요. 기본적으로 '문자@문자.문자' 구조를 검증하는 패턴이 필요해요.\n\n전화번호 검증: 한국 전화번호는 010-XXXX-XXXX 형식이 일반적이에요. 하이픈이 있거나 없는 경우 모두 처리하려면 하이픈을 선택적으로 만들어야 해요.\n\nURL 검증: http 또는 https로 시작하는 URL 형식을 확인할 때 사용해요. 프로토콜, 도메인, 경로를 각각 검증하는 패턴이에요.\n\n비밀번호 강도 검사: 영문 대소문자, 숫자, 특수문자가 모두 포함된 8자 이상인지 확인하는 패턴이에요. 여러 조건을 동시에 검증할 때 전방 탐색(lookahead)을 활용해요.\n\nToolkio의 정규식 테스터에서 이 패턴들을 직접 입력하고 테스트 문자열로 결과를 확인해보세요. 실시간으로 매칭 결과가 표시되니까 이해가 훨씬 빨라요."
+        },
+        {
+          heading: "정규식 테스트 도구 활용 팁",
+          body: "정규식을 작성할 때 가장 좋은 방법은 테스트 도구에서 실시간으로 결과를 확인하면서 작성하는 거예요. 머릿속으로만 생각하면 실수하기 쉽거든요.\n\nToolkio의 정규식 테스터를 활용하는 팁 몇 가지를 알려드릴게요.\n\n첫째, 간단한 패턴부터 시작하세요. 처음부터 복잡한 패턴을 만들려고 하지 말고, 핵심 부분만 먼저 작성한 다음 조건을 하나씩 추가하는 게 효율적이에요.\n\n둘째, 플래그를 활용하세요. g 플래그는 전체 검색, i 플래그는 대소문자 무시, m 플래그는 여러 줄 모드예요. 용도에 맞게 설정하면 원하는 결과를 정확하게 얻을 수 있어요.\n\n셋째, 테스트 데이터를 다양하게 준비하세요. 정상적인 입력뿐 아니라 비정상적인 입력도 함께 테스트해야 예외 상황을 잡을 수 있어요. 이메일 검증이라면 올바른 이메일과 함께 @ 없는 문자열, 점이 없는 문자열 등도 테스트해보세요.\n\n넷째, 성능을 고려하세요. 탐욕적(greedy) 매칭 대신 게으른(lazy) 매칭을 사용하면 불필요한 역추적을 줄여서 처리 속도가 빨라져요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Are Regular Expressions",
+          body: "Regular expressions (regex) are patterns used to match, search, and validate strings. Nearly every programming language supports regex, making it one of the most universal text-processing tools available.\n\nInstead of writing multiple if-else conditions to validate an email address, a single regex pattern can do the job in one line. Whether you need to extract phone numbers from text, find error messages in logs, or replace specific words across files, regex handles it efficiently.\n\nThe syntax looks intimidating at first with all its special characters, but the core concepts are straightforward. Once you learn a handful of basic symbols, you can build patterns for most real-world use cases. Toolkio's regex tester lets you write patterns and see matches highlighted in real time, making it the perfect practice environment."
+        },
+        {
+          heading: "Essential Regex Syntax",
+          body: "Here are the most commonly used regex symbols you should know.\n\n- . (dot): Matches any single character. a.c matches abc, aXc, a1c.\n- * (asterisk): Matches zero or more of the preceding character. ab*c matches ac, abc, abbc.\n- + (plus): Matches one or more of the preceding character. ab+c matches abc, abbc but not ac.\n- ? (question mark): Makes the preceding character optional. colou?r matches both color and colour.\n- ^ (caret): Anchors the match to the start of the string.\n- $ (dollar): Anchors the match to the end of the string.\n- Square brackets: Define a character class. 0-9 for digits, a-z for lowercase, A-Z for uppercase.\n- \\d for digits, \\w for word characters, \\s for whitespace.\n\nWith just these basics, you can construct patterns for the vast majority of practical validation and search tasks."
+        },
+        {
+          heading: "Common Real-World Patterns",
+          body: "These are the patterns developers use most frequently in production code.\n\nEmail validation checks that input follows the 'user@domain.tld' structure. Phone number validation handles various formats with or without dashes. URL validation confirms strings start with http/https and include a valid domain.\n\nPassword strength checks use lookaheads to ensure a string contains uppercase, lowercase, digits, and special characters while meeting a minimum length. Date validation confirms formats like YYYY-MM-DD with valid ranges.\n\nTry these patterns in Toolkio's regex tester with both valid and invalid sample inputs. Seeing matches highlighted in real time builds intuition much faster than reading documentation alone."
+        },
+        {
+          heading: "Tips for Effective Regex Testing",
+          body: "The best way to write regex is to build and test incrementally in a live tool rather than trying to construct the perfect pattern mentally.\n\nStart simple. Write the core pattern first, then add conditions one at a time. This approach makes debugging much easier when something does not match as expected.\n\nUse flags wisely. The g flag enables global matching, i makes the search case-insensitive, and m enables multiline mode. Choosing the right flags avoids unexpected results.\n\nPrepare diverse test data. Test with both valid and invalid inputs. For email validation, include strings without @ signs, without dots, and with multiple @ symbols.\n\nConsider performance. Use lazy quantifiers (*? and +?) instead of greedy ones when you only need the shortest match. This prevents excessive backtracking and keeps your patterns fast, especially on large text inputs."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정규식을 어디서 연습할 수 있나요?",
+        answer: "Toolkio의 정규식 테스터에서 패턴을 입력하고 실시간으로 매칭 결과를 확인할 수 있어요. 별도 설치 없이 브라우저에서 바로 사용 가능해요.",
+      },
+      {
+        question: "정규식에서 특수문자를 검색하려면 어떻게 하나요?",
+        answer: "특수문자 앞에 백슬래시(\\)를 붙이면 돼요. 예를 들어 점(.)을 찾으려면 \\. 으로, 달러 기호($)를 찾으려면 \\$로 작성하면 됩니다.",
+      },
+      {
+        question: "g 플래그와 없을 때의 차이가 뭔가요?",
+        answer: "g 플래그 없이는 첫 번째 매칭만 반환해요. g 플래그를 켜면 문자열 전체에서 매칭되는 부분을 모두 찾아줘요.",
+      },
+      {
+        question: "정규식이 느려질 수 있나요?",
+        answer: "네, 복잡한 패턴에 긴 문자열을 넣으면 역추적(backtracking) 때문에 느려질 수 있어요. 가능하면 구체적인 패턴을 사용하고, 탐욕적 매칭 대신 게으른 매칭을 사용하는 게 좋아요.",
+      },
+      {
+        question: "이메일 정규식은 완벽한가요?",
+        answer: "RFC 표준에 완벽히 부합하는 이메일 정규식은 매우 복잡해요. 실무에서는 기본적인 형식만 검증하고, 실제 이메일 인증은 확인 메일을 보내는 방식으로 처리하는 게 일반적이에요.",
+      },
+      {
+        question: "정규식은 어떤 프로그래밍 언어에서 쓸 수 있나요?",
+        answer: "JavaScript, Python, Java, PHP, Go, Ruby 등 거의 모든 언어에서 정규식을 지원해요. 문법이 약간씩 다를 수 있지만 핵심 패턴은 동일해요.",
+      },
+      {
+        question: "캡처 그룹이 뭔가요?",
+        answer: "괄호()로 감싼 부분이 캡처 그룹이에요. 매칭된 문자열의 특정 부분만 추출할 때 사용해요. 예를 들어 날짜 패턴에서 연도, 월, 일을 각각 그룹으로 잡을 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "timestamp-converter-unix-guide",
+    title: {
+      ko: "타임스탬프 변환 가이드 — Unix 시간을 날짜로 바꾸는 방법",
+      en: "Timestamp Converter Guide — How to Convert Unix Time to Date",
+    },
+    description: {
+      ko: "개발 중 만나는 1711843200 같은 숫자, Unix 타임스탬프를 날짜로 변환하는 방법과 프로그래밍 언어별 활용법을 정리했어요.",
+      en: "Learn how to convert Unix timestamps to human-readable dates, understand epoch time, and use timestamps across different programming languages.",
+    },
+    date: "2026-04-01",
+    toolId: "timestamp-converter",
+    image: "/images/blog/timestamp-converter-unix-guide.webp",
+    keywords: ["타임스탬프 변환", "Unix 타임스탬프", "epoch time", "시간 변환", "unix timestamp converter"],
+    content: {
+      ko: [
+        {
+          heading: "타임스탬프 변환이 필요한 순간",
+          body: "개발을 하다 보면 API 응답이나 데이터베이스에서 1711843200 같은 숫자를 마주치게 돼요. 이게 대체 언제인지 바로 알 수 없어서 변환 도구가 필요한 거예요.\n\n실제로 타임스탬프 변환이 필요한 상황은 생각보다 자주 발생해요. 서버 로그를 분석할 때, JWT 토큰의 만료 시간을 확인할 때, 외부 API 데이터를 처리할 때 등 다양한 상황에서 타임스탬프를 날짜로 바꿔야 해요.\n\n또한 서로 다른 시스템 간에 시간 데이터를 주고받을 때 타임스탬프가 표준으로 사용돼요. 시간대(timezone)에 영향을 받지 않는 절대적인 시간값이기 때문이에요. 한국에서 보낸 시간과 미국에서 받은 시간이 시간대 차이로 달라 보이는 문제를 타임스탬프가 해결해줘요.\n\nToolkio의 타임스탬프 변환기를 사용하면 숫자를 입력하는 즉시 날짜와 시간으로 변환된 결과를 볼 수 있어요."
+        },
+        {
+          heading: "프로그래밍 언어별 타임스탬프 변환 방법",
+          body: "각 프로그래밍 언어마다 타임스탬프를 다루는 방법이 조금씩 달라요.\n\nJavaScript에서는 Date 객체를 사용해요. new Date(1711843200 * 1000)으로 밀리초 단위로 변환해서 넘기면 돼요. JavaScript의 Date.now()는 밀리초 단위를 반환하니까 1000으로 나눠야 초 단위 타임스탬프가 돼요.\n\nPython에서는 datetime 모듈을 사용해요. datetime.fromtimestamp(1711843200)으로 로컬 시간 기준 날짜 객체를 얻거나, datetime.utcfromtimestamp()로 UTC 기준 변환이 가능해요.\n\nPHP에서는 date() 함수에 타임스탬프를 두 번째 인수로 넘기면 돼요. date('Y-m-d H:i:s', 1711843200) 형식으로 사용해요.\n\nJava에서는 Instant.ofEpochSecond(1711843200)을 사용하고, ZoneId를 지정해서 로컬 시간으로 변환할 수 있어요.\n\n어떤 언어를 사용하든 핵심은 초 단위인지 밀리초 단위인지 확인하는 거예요. 단위를 잘못 넣으면 1970년대 날짜가 나오거나 아예 에러가 발생해요."
+        },
+        {
+          heading: "타임스탬프 변환 시 흔한 실수와 해결법",
+          body: "타임스탬프를 다룰 때 가장 자주 발생하는 실수들을 정리했어요.\n\n첫 번째는 초와 밀리초를 혼동하는 거예요. 10자리 숫자는 초 단위, 13자리 숫자는 밀리초 단위예요. JavaScript에서 초 단위 타임스탬프를 1000 곱하지 않고 그대로 넣으면 1970년 1월 20일쯤 날짜가 나와요.\n\n두 번째는 시간대를 무시하는 거예요. 서버에서 UTC로 저장한 타임스탬프를 클라이언트에서 로컬 시간으로 변환하지 않으면 한국 사용자에게 9시간 이전 시간이 표시돼요.\n\n세 번째는 32비트 정수 오버플로예요. 2038년 1월 19일 이후의 타임스탬프는 32비트 정수로 표현할 수 없어요. 최신 시스템은 64비트를 사용하지만, 레거시 시스템에서는 주의가 필요해요.\n\n네 번째는 윤초(leap second)예요. Unix 타임스탬프는 윤초를 무시하기 때문에 극도로 정밀한 시간 계산이 필요한 경우 별도 처리가 필요해요. 다만 일반 웹 개발에서는 신경 쓰지 않아도 돼요."
+        },
+        {
+          heading: "Toolkio 타임스탬프 변환기 사용법",
+          body: "Toolkio의 타임스탬프 변환기는 두 가지 방향의 변환을 지원해요.\n\n타임스탬프를 날짜로 변환하려면 숫자를 입력란에 넣기만 하면 돼요. 초 단위와 밀리초 단위를 자동으로 감지해서 올바른 날짜를 보여줘요. UTC 기준과 로컬 시간 기준 모두 표시되니까 시간대 혼동이 없어요.\n\n반대로 날짜를 타임스탬프로 변환하는 것도 가능해요. 달력에서 원하는 날짜와 시간을 선택하면 해당하는 타임스탬프 값이 표시돼요.\n\n현재 시간의 타임스탬프도 실시간으로 확인할 수 있어요. 개발 중에 테스트 데이터를 만들거나, API 요청에 타임스탬프를 넣어야 할 때 유용해요.\n\n모든 처리는 브라우저에서 이루어지기 때문에 입력한 데이터가 서버로 전송되지 않아요. 민감한 시간 데이터를 다룰 때도 안심하고 사용할 수 있어요. 즐겨찾기에 추가해두면 개발할 때 빠르게 접근할 수 있어서 편리해요."
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Timestamp Conversion",
+          body: "Developers constantly encounter numbers like 1711843200 in API responses, database records, and log files. Without a conversion tool, these numbers are meaningless at a glance.\n\nTimestamp conversion comes up more often than you might expect. Analyzing server logs, checking JWT token expiration, processing data from external APIs, or debugging time-related bugs all require translating between timestamps and human-readable dates.\n\nTimestamps serve as a universal time format across different systems and time zones. Since they represent an absolute moment in time (seconds since the Unix epoch), they eliminate confusion caused by timezone differences. Toolkio's timestamp converter lets you instantly translate any number into a readable date."
+        },
+        {
+          heading: "Converting Timestamps in Different Languages",
+          body: "Each programming language handles timestamps slightly differently.\n\nIn JavaScript, use the Date object: new Date(1711843200 * 1000). Note that JavaScript uses milliseconds, so multiply seconds-based timestamps by 1000. Date.now() returns milliseconds natively.\n\nIn Python, the datetime module provides fromtimestamp(1711843200) for local time and utcfromtimestamp() for UTC. Python's time.time() returns seconds.\n\nIn PHP, use date('Y-m-d H:i:s', 1711843200) to format a timestamp as a readable string.\n\nIn Java, Instant.ofEpochSecond(1711843200) creates a time object that you can convert to any timezone using ZoneId.\n\nRegardless of the language, always verify whether you are working with seconds (10 digits) or milliseconds (13 digits). Using the wrong unit produces dates in the 1970s or throws errors."
+        },
+        {
+          heading: "Common Mistakes and How to Avoid Them",
+          body: "The most frequent timestamp-related bugs fall into a few categories.\n\nMixing up seconds and milliseconds is the number one mistake. A 10-digit number is seconds; 13 digits means milliseconds. Passing seconds directly to JavaScript's Date constructor (which expects milliseconds) yields a date around January 20, 1970.\n\nIgnoring time zones is the second major pitfall. A UTC timestamp displayed without timezone conversion shows times 9 hours behind for Korean users. Always store in UTC and convert to local time only at the display layer.\n\nThe 32-bit integer overflow (the Year 2038 problem) affects legacy systems that cannot represent timestamps after January 19, 2038. Modern 64-bit systems handle this, but older databases and embedded systems may need attention.\n\nLeap seconds are technically ignored by Unix timestamps. For most web development this is irrelevant, but precision-critical applications (scientific computing, finance) may need specialized time libraries."
+        },
+        {
+          heading: "Using the Toolkio Timestamp Converter",
+          body: "Toolkio's timestamp converter supports bidirectional conversion. Enter a number and it automatically detects whether it is seconds or milliseconds, displaying both UTC and local time results.\n\nTo convert a date to a timestamp, pick a date and time from the calendar picker and the corresponding numeric timestamp appears instantly.\n\nThe tool also shows the current timestamp updating in real time, which is useful when you need to generate test data or add timestamps to API requests.\n\nEverything runs in your browser. No data is sent to any server, so you can safely convert sensitive time data. Bookmark the tool for quick access during development sessions."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "타임스탬프를 변환하는 가장 쉬운 방법은?",
+        answer: "Toolkio의 타임스탬프 변환기에 숫자를 입력하면 바로 날짜와 시간으로 변환돼요. 초 단위와 밀리초 단위를 자동으로 감지해요.",
+      },
+      {
+        question: "밀리초 타임스탬프는 어떻게 알아보나요?",
+        answer: "자릿수를 세면 돼요. 10자리면 초 단위, 13자리면 밀리초 단위예요. JavaScript는 밀리초, Python/PHP는 초 단위를 기본으로 사용해요.",
+      },
+      {
+        question: "음수 타임스탬프는 언제 사용하나요?",
+        answer: "1970년 1월 1일 이전 날짜를 표현할 때 사용해요. 예를 들어 1969년 12월 31일은 -86400이에요. 역사적 데이터를 다룰 때 필요할 수 있어요.",
+      },
+      {
+        question: "타임스탬프에 시간대가 포함되어 있나요?",
+        answer: "아니요, 타임스탬프 자체는 항상 UTC 기준이에요. 시간대 정보는 포함되지 않으니, 로컬 시간으로 표시할 때 별도로 변환해야 해요.",
+      },
+      {
+        question: "2038년 문제는 어떻게 대비하나요?",
+        answer: "64비트 시스템을 사용하면 해결돼요. 대부분의 최신 운영체제와 프로그래밍 언어는 이미 64비트 타임스탬프를 지원하고 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "qr-code-generator-free-guide",
+    title: {
+      ko: "QR코드 만들기 무료 가이드 — 로고 넣는 방법까지",
+      en: "Free QR Code Generator Guide — Including Custom Logo QR Codes",
+    },
+    description: {
+      ko: "무료로 QR코드를 만드는 방법부터 로고 삽입, 명함 QR, WiFi QR까지 실용적인 활용법을 정리했어요.",
+      en: "Learn how to create QR codes for free, add custom logos, and use QR codes for business cards, WiFi sharing, and more.",
+    },
+    date: "2026-04-01",
+    toolId: "qr-generator",
+    image: "/images/blog/qr-code-generator-free-guide.webp",
+    keywords: ["QR코드 만들기 무료", "QR코드 생성", "QR code generator", "큐알코드 만들기", "QR코드 로고"],
+    content: {
+      ko: [
+        {
+          heading: "QR코드, 어디에 활용할 수 있을까",
+          body: "QR코드(Quick Response Code)는 스마트폰 카메라로 스캔하면 특정 정보를 바로 전달할 수 있는 2차원 바코드예요. 생각보다 활용 범위가 넓어서 한번 알아두면 여러 곳에서 유용하게 쓸 수 있어요.\n\n가장 일반적인 사용법은 URL을 담는 거예요. 포스터, 전단지, 명함에 QR코드를 넣으면 사람들이 긴 주소를 직접 입력하지 않아도 스캔 한 번으로 웹사이트에 접속할 수 있어요.\n\nWiFi 접속 정보를 QR코드로 만들 수도 있어요. 카페나 사무실에서 복잡한 비밀번호를 말로 전달하는 대신 QR코드를 스캔하면 자동으로 WiFi에 연결돼요.\n\n전화번호, 이메일 주소, 명함 정보(vCard)도 QR코드로 만들 수 있어요. 네트워킹 행사에서 명함 대신 QR코드를 보여주면 상대방이 연락처를 바로 저장할 수 있어서 편리해요.\n\n결제 시스템에서도 QR코드가 널리 사용돼요. 카카오페이, 네이버페이 등 간편결제 서비스가 QR코드 기반으로 작동하고 있죠."
+        },
+        {
+          heading: "무료로 QR코드 만드는 방법",
+          body: "QR코드를 만들기 위해 유료 프로그램을 구매할 필요가 없어요. Toolkio의 QR코드 생성기를 사용하면 브라우저에서 무료로 만들 수 있어요.\n\n사용 방법은 간단해요. 먼저 QR코드에 담을 내용을 선택해요. URL, 텍스트, WiFi 정보, 연락처 등 다양한 유형을 지원해요. 다음으로 해당 정보를 입력하면 QR코드가 실시간으로 생성돼요. 마지막으로 생성된 QR코드를 PNG 이미지로 다운로드하면 끝이에요.\n\n크기, 색상 등을 커스터마이징할 수 있어서 브랜드에 맞는 디자인으로 만들 수 있어요. 기본 흑백 QR코드도 충분히 잘 작동하지만, 전경색과 배경색을 바꿔서 시각적으로 돋보이게 만들 수도 있어요.\n\n중요한 건 생성된 QR코드를 반드시 스마트폰으로 테스트해보는 거예요. 색상 대비가 너무 낮으면 일부 스캐너에서 인식이 안 될 수 있거든요."
+        },
+        {
+          heading: "QR코드에 로고 넣는 방법",
+          body: "브랜드 인지도를 높이려면 QR코드 중앙에 로고를 넣는 게 효과적이에요. QR코드는 오류 정정(Error Correction) 기능이 있어서 일부분이 가려져도 정상적으로 스캔할 수 있어요.\n\nQR코드의 오류 정정 레벨은 L(7%), M(15%), Q(25%), H(30%) 네 단계가 있어요. 로고를 넣으려면 최소 Q 레벨(25%) 이상을 사용해야 안전해요. H 레벨이 가장 안전하지만 QR코드 크기가 약간 커져요.\n\n로고 크기는 QR코드 전체 면적의 10-15% 이내로 유지하는 게 좋아요. 너무 크면 스캔이 안 될 수 있어요. 로고 주위에 작은 여백을 두면 인식률이 높아져요.\n\n로고를 넣은 후에는 반드시 여러 기기에서 테스트해보세요. 아이폰, 안드로이드 기본 카메라 앱에서 모두 잘 스캔되는지 확인하는 게 중요해요. 거리를 달리하면서 테스트하면 더 좋아요."
+        },
+        {
+          heading: "QR코드 활용 실전 팁",
+          body: "QR코드를 효과적으로 활용하기 위한 실전 팁을 정리했어요.\n\n인쇄물에 QR코드를 넣을 때는 최소 2cm x 2cm 크기 이상으로 만들어야 해요. 너무 작으면 카메라가 인식하지 못해요. 스캔 거리가 먼 경우(포스터, 배너)에는 더 크게 만들어야 해요.\n\nQR코드 주변에 충분한 여백(quiet zone)을 확보하세요. 최소 QR코드 모듈 4개 크기만큼의 여백이 필요해요. 여백이 없으면 스캐너가 QR코드 경계를 찾지 못할 수 있어요.\n\n동적 QR코드와 정적 QR코드의 차이를 알아두세요. 정적 QR코드는 정보가 코드 자체에 들어있어요. 동적 QR코드는 단축 URL을 담고 있어서 나중에 목적지를 변경할 수 있어요. 마케팅 캠페인에는 동적 QR코드가 유리해요.\n\nQR코드 근처에 스캔을 유도하는 문구를 넣으세요. '스캔하여 자세히 보기', '할인 쿠폰 받기' 같은 행동 유도(Call to Action)가 있으면 스캔율이 높아져요. QR코드만 덩그러니 있으면 사람들이 뭔지 몰라서 스캔하지 않을 수 있어요."
+        },
+      ],
+      en: [
+        {
+          heading: "Where QR Codes Can Be Used",
+          body: "QR codes (Quick Response Codes) are two-dimensional barcodes that transmit information instantly when scanned with a smartphone camera. Their versatility makes them useful in more situations than you might expect.\n\nThe most common use is embedding URLs. Place a QR code on posters, flyers, or business cards so people can visit your website without typing a long address. WiFi credentials can also be encoded, letting guests scan and connect automatically instead of entering complex passwords.\n\nContact information in vCard format turns a QR code into a digital business card. At networking events, people can scan and save your details instantly. Payment platforms like Apple Pay and various mobile payment services also rely heavily on QR codes for seamless transactions."
+        },
+        {
+          heading: "How to Create QR Codes for Free",
+          body: "You do not need paid software to generate QR codes. Toolkio's QR code generator works entirely in the browser at no cost.\n\nThe process is straightforward. Select the content type (URL, text, WiFi, contact), enter the information, and the QR code generates in real time. Download the result as a PNG image and it is ready to use.\n\nCustomization options include size and color adjustments, so you can match your brand identity. The default black-and-white style works perfectly, but changing foreground and background colors can make your QR code stand out visually.\n\nAlways test the generated QR code with an actual smartphone before printing. If the color contrast is too low, some scanners may fail to read it. Test with both iOS and Android devices for maximum compatibility."
+        },
+        {
+          heading: "Adding a Logo to Your QR Code",
+          body: "Placing a logo in the center of a QR code boosts brand recognition. This works because QR codes have built-in error correction that allows them to remain scannable even when partially obscured.\n\nError correction levels range from L (7% recovery) to H (30% recovery). For logo placement, use at least Q level (25%) to ensure reliable scanning. Keep the logo within 10-15% of the total QR code area and add a small margin around it.\n\nAfter adding a logo, test the QR code on multiple devices at varying distances. What works on one phone may fail on another if the logo is too large or the error correction level is too low."
+        },
+        {
+          heading: "Practical Tips for QR Code Success",
+          body: "Follow these guidelines to maximize QR code effectiveness.\n\nPrint QR codes at a minimum size of 2cm by 2cm. Smaller codes may not be recognized by cameras. For posters or banners viewed from a distance, scale up proportionally.\n\nMaintain a quiet zone (blank margin) around the QR code. At least four modules of white space on each side helps scanners identify the code boundaries. Without adequate margins, recognition fails.\n\nUnderstand the difference between static and dynamic QR codes. Static codes embed information directly, while dynamic codes use a redirect URL that can be changed later. Dynamic codes are better for marketing campaigns where you may want to update the destination.\n\nAdd a call to action near your QR code. Text like 'Scan for details' or 'Get your discount' significantly increases scan rates. A QR code without context may be ignored by most people."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "QR코드를 무료로 만들 수 있나요?",
+        answer: "네, Toolkio의 QR코드 생성기를 사용하면 무료로 만들 수 있어요. 회원가입도 필요 없고, 생성 횟수 제한도 없어요.",
+      },
+      {
+        question: "QR코드에 로고를 넣으면 스캔이 안 되나요?",
+        answer: "오류 정정 레벨을 Q나 H로 설정하고, 로고 크기를 QR코드 면적의 10-15% 이내로 유지하면 정상적으로 스캔돼요.",
+      },
+      {
+        question: "QR코드의 유효기간이 있나요?",
+        answer: "정적 QR코드는 유효기간이 없어요. 코드 자체에 정보가 들어있기 때문에 영구적으로 사용할 수 있어요. 다만 연결된 URL이 변경되면 작동하지 않아요.",
+      },
+      {
+        question: "QR코드 색상을 바꿔도 되나요?",
+        answer: "네, 하지만 전경색이 배경색보다 어두워야 해요. 밝은 색 전경에 어두운 배경은 일부 스캐너에서 인식이 안 될 수 있어요.",
+      },
+      {
+        question: "QR코드에 담을 수 있는 정보량 한계가 있나요?",
+        answer: "네, 숫자는 최대 7,089자, 영문은 4,296자, 한글은 약 1,800자까지 담을 수 있어요. 하지만 정보가 많을수록 QR코드가 복잡해져서 스캔이 어려워지니 URL 단축을 추천해요.",
+      },
+      {
+        question: "WiFi QR코드는 어떻게 만드나요?",
+        answer: "Toolkio의 QR코드 생성기에서 WiFi 유형을 선택하고, 네트워크 이름(SSID), 비밀번호, 암호화 방식(WPA/WPA2)을 입력하면 돼요. 스캔하면 자동으로 WiFi에 연결돼요.",
+      },
+      {
+        question: "인쇄용 QR코드의 최소 크기는 얼마인가요?",
+        answer: "최소 2cm x 2cm 이상을 권장해요. 스캔 거리가 먼 경우(포스터, 배너)에는 거리에 비례해서 더 크게 만들어야 해요.",
+      },
+    ],
+  },
+  {
+    slug: "markdown-preview-guide",
+    title: {
+      ko: "마크다운 미리보기 가이드 — 문법부터 실시간 편집까지",
+      en: "Markdown Preview Guide — From Syntax to Live Editing",
+    },
+    description: {
+      ko: "마크다운(Markdown) 문법이 처음이라면 이 가이드로 시작하세요. 제목, 목록, 링크, 코드 블록 등 핵심 문법과 실시간 미리보기 활용법을 정리했어요.",
+      en: "New to Markdown? Start here. Learn headings, lists, links, code blocks, and how to use live preview to write faster.",
+    },
+    date: "2026-04-01",
+    toolId: "markdown-preview",
+    image: "/images/blog/markdown-preview-guide.webp",
+    keywords: ["마크다운 미리보기", "마크다운 문법", "markdown preview", "markdown 사용법", "마크다운 에디터"],
+    content: {
+      ko: [
+        {
+          heading: "마크다운이란 무엇이고 왜 쓸까",
+          body: "마크다운(Markdown)은 텍스트에 간단한 기호를 붙여서 서식을 표현하는 경량 마크업 언어예요. 2004년에 존 그루버가 만들었고, 지금은 개발자뿐 아니라 블로거, 작가, 기획자까지 폭넓게 사용하고 있어요.\n\n마크다운이 인기 있는 이유는 간단해요. 첫째, 배우기 쉬워요. HTML처럼 복잡한 태그를 외울 필요 없이 #, *, - 같은 기호 몇 개만 알면 돼요. 둘째, 어디서든 사용할 수 있어요. GitHub, Notion, Slack, Discord, 블로그 플랫폼 등 수많은 서비스가 마크다운을 지원해요. 셋째, 일반 텍스트 파일이라 어떤 에디터에서든 열 수 있고, 용량이 작고, 버전 관리가 쉬워요.\n\n특히 개발 문서를 작성할 때 마크다운이 사실상 표준이에요. GitHub의 README.md, 기술 블로그, API 문서 등 대부분이 마크다운으로 작성돼요. 한번 익혀두면 활용할 곳이 정말 많아요."
+        },
+        {
+          heading: "핵심 마크다운 문법 정리",
+          body: "실무에서 가장 자주 쓰는 마크다운 문법을 정리할게요.\n\n제목은 #의 개수로 단계를 나눠요. #은 H1, ##은 H2, ###은 H3이에요. 보통 H1은 문서 제목에 하나만 사용하고, 본문에서는 H2와 H3를 주로 써요.\n\n텍스트 강조는 별표(*)를 사용해요. *기울임*, **굵게**, ***굵은 기울임***으로 표현할 수 있어요. 취소선은 물결표(~~) 두 개로 감싸면 돼요.\n\n목록은 순서 없는 목록(-, *, +)과 순서 있는 목록(1., 2., 3.)이 있어요. 들여쓰기로 하위 목록을 만들 수 있어요.\n\n링크는 대괄호와 소괄호를 사용해요. 표시할 텍스트를 대괄호에, URL을 소괄호에 넣으면 돼요. 이미지는 앞에 느낌표(!)를 붙이면 돼요.\n\n코드는 백틱(`)으로 감싸면 인라인 코드가 되고, 백틱 세 개로 감싸면 코드 블록이 돼요. 언어 이름을 붙이면 구문 강조(syntax highlighting)도 적용돼요.\n\n인용은 > 기호를 사용해요. 여러 줄 인용도 가능하고, 중첩 인용(>>)도 돼요."
+        },
+        {
+          heading: "실시간 미리보기가 중요한 이유",
+          body: "마크다운은 일반 텍스트이기 때문에 작성 중에 최종 결과물이 어떻게 보일지 바로 확인하기 어려워요. 특히 복잡한 표(table), 중첩 목록, 코드 블록이 포함된 문서는 렌더링 결과를 실시간으로 확인하면서 작성하는 게 훨씬 효율적이에요.\n\nToolkio의 마크다운 미리보기 도구를 사용하면 왼쪽에 마크다운을 작성하면서 오른쪽에서 렌더링된 결과를 실시간으로 볼 수 있어요. 타이핑하는 즉시 결과가 업데이트되니까 문법 실수를 바로 잡을 수 있어요.\n\n표를 만들 때 특히 유용해요. 마크다운 표는 파이프(|)와 하이픈(-)으로 구성하는데, 정렬이 맞지 않으면 깨져 보일 수 있거든요. 미리보기를 보면서 작성하면 표가 제대로 표시되는지 바로 확인할 수 있어요.\n\nGitHub README를 작성할 때도 커밋하기 전에 미리보기 도구에서 먼저 확인하면 시행착오를 줄일 수 있어요. 전체 내용을 복사해서 Toolkio에 붙여넣으면 GitHub에서 보이는 것과 거의 동일한 결과를 미리 확인할 수 있어요."
+        },
+        {
+          heading: "마크다운 활용 꿀팁",
+          body: "마크다운을 더 효과적으로 사용하는 팁들을 공유할게요.\n\n줄바꿈에 주의하세요. 마크다운에서 엔터 한 번은 줄바꿈이 아니에요. 줄 끝에 공백 두 칸을 넣거나 빈 줄을 추가해야 실제로 줄이 바뀌어요. 이걸 모르면 문단이 붙어 보이는 문제가 생겨요.\n\n체크박스 목록을 활용하세요. - 뒤에 대괄호와 공백([ ])을 넣으면 체크박스가 만들어져요. 완료된 항목은 [x]로 표시해요. TODO 목록이나 프로젝트 진행 상황을 추적할 때 편리해요.\n\n접기/펼치기(details)를 사용해보세요. HTML의 details 태그는 대부분의 마크다운 렌더러에서 지원해요. 긴 로그, 설정 파일 등을 접어두면 문서가 깔끔해져요.\n\n이모지도 사용할 수 있어요. GitHub 스타일 마크다운에서는 콜론으로 감싼 이모지 코드를 지원해요. 문서에 시각적 포인트를 줄 때 유용해요.\n\n마지막으로, Toolkio의 마크다운 미리보기 도구에서 연습하는 걸 추천해요. 새로운 문법을 배울 때마다 바로 입력해서 결과를 확인하면 기억에 더 오래 남아요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Markdown and Why Use It",
+          body: "Markdown is a lightweight markup language that uses simple symbols to format text. Created by John Gruber in 2004, it has become the go-to format for developers, bloggers, writers, and project managers alike.\n\nMarkdown's popularity comes down to three strengths. First, it is easy to learn. Instead of memorizing HTML tags, you only need a few characters like #, *, and -. Second, it works everywhere. GitHub, Notion, Slack, Discord, and countless blogging platforms all support Markdown. Third, Markdown files are plain text, so they open in any editor, take up minimal storage, and work seamlessly with version control systems like Git.\n\nFor technical documentation, Markdown is the de facto standard. GitHub README files, tech blogs, and API docs are almost always written in Markdown."
+        },
+        {
+          heading: "Essential Markdown Syntax",
+          body: "Here are the most frequently used Markdown elements.\n\nHeadings use hash symbols: # for H1, ## for H2, ### for H3. Typically H1 appears once as the document title, with H2 and H3 used for sections.\n\nText emphasis uses asterisks: *italic*, **bold**, ***bold italic***. Strikethrough uses double tildes (~~).\n\nLists come in unordered (-, *, +) and ordered (1., 2., 3.) varieties. Indent to create nested sub-lists.\n\nLinks use square brackets for display text and parentheses for URLs. Images use the same syntax with an exclamation mark prefix.\n\nCode uses backticks: single backticks for inline code, triple backticks for code blocks. Add a language name after the opening backticks for syntax highlighting.\n\nBlockquotes use the > symbol. Nest them with >> for multi-level quotes."
+        },
+        {
+          heading: "Why Live Preview Matters",
+          body: "Since Markdown is plain text, you cannot see the final rendered result while writing unless you use a preview tool. This is especially true for complex elements like tables, nested lists, and code blocks.\n\nToolkio's Markdown preview tool displays a live-rendered view alongside your editor. As you type, the preview updates instantly, letting you catch syntax errors immediately.\n\nTables benefit the most from live preview. Markdown tables use pipes (|) and hyphens (-), and alignment issues are hard to spot in raw text. With the preview pane, you can verify that columns align correctly before publishing.\n\nWhen writing GitHub README files, paste your content into Toolkio's preview first. The rendered output closely matches what GitHub will display, helping you avoid unnecessary commits to fix formatting mistakes."
+        },
+        {
+          heading: "Markdown Tips and Tricks",
+          body: "These tips will help you use Markdown more effectively.\n\nLine breaks require attention. A single Enter key does not create a line break in standard Markdown. Add two spaces at the end of a line or insert a blank line to start a new paragraph. Ignoring this rule causes paragraphs to merge together.\n\nUse checkbox lists for task tracking. Type a dash followed by brackets and a space (- [ ]) to create checkboxes. Mark completed items with [x]. This is great for TODO lists and project tracking.\n\nLeverage the HTML details tag for collapsible sections. Most Markdown renderers support it. Hide long logs or configuration snippets to keep documents clean.\n\nEmojis work in GitHub-flavored Markdown using colon-wrapped codes. They add visual interest to documentation and READMEs.\n\nFinally, practice new syntax in Toolkio's Markdown preview tool. Typing and immediately seeing the result builds muscle memory much faster than reading documentation alone."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "마크다운과 HTML의 차이가 뭔가요?",
+        answer: "마크다운은 HTML보다 훨씬 간단한 문법을 사용해요. 최종적으로 HTML로 변환되지만, 작성할 때는 기호 몇 개만으로 서식을 표현할 수 있어서 생산성이 높아요.",
+      },
+      {
+        question: "마크다운을 어디서 사용할 수 있나요?",
+        answer: "GitHub, Notion, Slack, Discord, Jupyter Notebook, 블로그 플랫폼(Hugo, Jekyll, Next.js) 등 대부분의 개발 도구와 서비스에서 마크다운을 지원해요.",
+      },
+      {
+        question: "마크다운으로 표를 만들 수 있나요?",
+        answer: "네, 파이프(|)와 하이픈(-)을 사용해서 표를 만들 수 있어요. 정렬도 가능해요. 콜론(:)의 위치에 따라 왼쪽, 가운데, 오른쪽 정렬을 지정할 수 있어요.",
+      },
+      {
+        question: "마크다운에서 이미지를 넣으려면?",
+        answer: "느낌표(!)와 대괄호, 소괄호를 사용해요. 대괄호에는 대체 텍스트(alt text)를, 소괄호에는 이미지 URL을 넣으면 돼요.",
+      },
+      {
+        question: "마크다운 미리보기 도구가 필요한 이유가 뭔가요?",
+        answer: "마크다운은 일반 텍스트라 렌더링 결과를 바로 볼 수 없어요. 미리보기 도구를 사용하면 실시간으로 결과를 확인하면서 작성할 수 있어서 실수를 줄일 수 있어요.",
+      },
+      {
+        question: "마크다운 파일 확장자는 뭔가요?",
+        answer: ".md 또는 .markdown을 사용해요. .md가 가장 일반적이에요. README.md, CHANGELOG.md 같은 파일명을 많이 볼 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "image-compressor-online-guide",
+    title: {
+      ko: "이미지 압축 무료 가이드 — 화질 유지하면서 용량 줄이는 방법",
+      en: "Free Image Compressor Guide — Reduce File Size Without Losing Quality",
+    },
+    description: {
+      ko: "이미지 용량이 너무 커서 고민이라면? 화질은 유지하면서 파일 크기를 줄이는 무료 이미지 압축 방법을 단계별로 알려드릴게요.",
+      en: "Struggling with large image files? Learn step-by-step how to compress images for free while maintaining visual quality.",
+    },
+    date: "2026-04-01",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compressor-online-guide.webp",
+    keywords: ["이미지 압축 무료", "사진 용량 줄이기", "image compressor", "이미지 최적화", "온라인 이미지 압축"],
+    content: {
+      ko: [
+        {
+          heading: "이미지 용량이 문제가 되는 상황들",
+          body: "이미지 용량 때문에 불편했던 경험, 한 번쯤 있으시죠? 가장 흔한 상황들을 살펴볼게요.\n\n이메일 첨부 파일 제한에 걸리는 경우가 많아요. 대부분의 이메일 서비스는 첨부 파일을 25MB로 제한하는데, 고해상도 사진 몇 장이면 금방 초과해요. 특히 업무용 이메일로 여러 장의 이미지를 보내야 할 때 곤란하죠.\n\n웹사이트 속도가 느려지는 것도 큰 문제예요. 이미지 하나가 2-3MB면 모바일에서 로딩하는 데 몇 초씩 걸려요. 구글은 페이지 로딩 속도를 검색 순위에 반영하기 때문에 SEO 측면에서도 이미지 최적화가 중요해요.\n\nSNS 업로드 시 플랫폼이 자동으로 압축하면서 화질이 떨어지는 경우도 있어요. 미리 적절히 압축해서 올리면 플랫폼의 재압축을 최소화할 수 있어요.\n\n클라우드 저장 공간도 아낄 수 있어요. 구글 포토, 아이클라우드의 무료 용량은 한정되어 있는데, 이미지를 압축하면 같은 공간에 더 많은 사진을 저장할 수 있어요."
+        },
+        {
+          heading: "화질 손실 없이 압축하는 원리",
+          body: "이미지 압축에는 두 가지 방식이 있어요. 무손실(lossless) 압축과 손실(lossy) 압축이에요.\n\n무손실 압축은 이미지 데이터에서 중복되는 정보를 효율적으로 저장하는 방식이에요. 압축을 풀면 원본과 완전히 동일한 이미지가 복원돼요. PNG가 대표적인 무손실 포맷이에요. 다만 압축률이 손실 방식보다 낮아서 용량 절감 효과가 제한적이에요.\n\n손실 압축은 사람의 눈이 감지하기 어려운 정보를 제거하는 방식이에요. JPEG, WebP가 대표적이에요. 핵심은 '눈에 보이지 않는' 차이만 제거한다는 점이에요. 80-85% 품질 설정이면 원본과 나란히 놓고 비교해도 차이를 찾기 어려워요.\n\n실용적으로는 손실 압축이 더 효과적이에요. 80% 품질로 설정하면 용량이 60-70% 줄어들면서도 화질 차이를 거의 느낄 수 없거든요. 50% 이하로 내리면 눈에 띄는 열화가 발생하니 80-85% 범위를 유지하는 게 최적이에요."
+        },
+        {
+          heading: "포맷별 압축 전략",
+          body: "이미지 포맷에 따라 최적의 압축 전략이 달라요.\n\nJPEG는 사진에 가장 적합한 포맷이에요. 풍경 사진, 인물 사진, 제품 사진 등 색상이 풍부한 이미지는 JPEG로 저장하면 가장 효율적이에요. 품질 80-85%가 황금 비율이에요.\n\nPNG는 투명 배경이 필요하거나 텍스트가 포함된 이미지에 적합해요. 로고, 아이콘, 스크린샷 등에 PNG를 사용하세요. PNG는 무손실이라 압축률이 낮지만, 도구를 사용하면 메타데이터 제거와 색상 팔레트 최적화로 20-40% 줄일 수 있어요.\n\nWebP는 JPEG와 PNG의 장점을 합친 최신 포맷이에요. 같은 화질에서 JPEG보다 25-30% 더 작고, 투명 배경도 지원해요. 모든 최신 브라우저에서 지원하기 때문에 웹용 이미지라면 WebP를 추천해요.\n\nGIF는 애니메이션용으로만 사용하세요. 정지 이미지에 GIF를 사용하면 용량이 불필요하게 커져요. 짧은 애니메이션도 WebP 애니메이션이 GIF보다 용량이 작아요."
+        },
+        {
+          heading: "Toolkio 이미지 압축 도구 사용법",
+          body: "Toolkio의 이미지 압축 도구를 사용하면 설치 없이 브라우저에서 바로 이미지를 압축할 수 있어요. 사용 방법을 단계별로 설명할게요.\n\n먼저 압축할 이미지를 선택해요. 드래그 앤 드롭으로 파일을 올리거나 파일 선택 버튼을 클릭하면 돼요. JPEG, PNG, WebP 등 주요 포맷을 모두 지원해요.\n\n다음으로 품질 설정을 조절해요. 슬라이더로 압축 수준을 선택할 수 있어요. 80-85%를 추천하지만, 용도에 따라 조절하세요. 미리보기로 화질 변화를 확인할 수 있어요.\n\n압축이 완료되면 원본 대비 줄어든 용량을 퍼센트로 보여줘요. 결과가 만족스러우면 다운로드 버튼을 클릭하면 끝이에요.\n\n가장 중요한 점은 모든 처리가 브라우저에서 이루어진다는 거예요. 이미지가 서버로 전송되지 않기 때문에 개인 사진, 업무 문서 등 민감한 이미지도 안심하고 압축할 수 있어요. 인터넷 연결이 끊어져도 한번 로드된 후에는 계속 사용할 수 있어요.\n\n여러 장의 이미지를 처리해야 한다면 하나씩 순서대로 압축하면 돼요. 블로그나 웹사이트의 이미지를 일괄 최적화할 때 특히 유용해요."
+        },
+      ],
+      en: [
+        {
+          heading: "When Image File Size Becomes a Problem",
+          body: "Large image files cause friction in many everyday situations. Email attachment limits are the most common obstacle. Most email services cap attachments at 25MB, and a handful of high-resolution photos can easily exceed that. Sending multiple images for work becomes unnecessarily difficult.\n\nWebsite performance suffers directly from unoptimized images. A single 2-3MB image can take several seconds to load on mobile networks. Since Google factors page speed into search rankings, image optimization is critical for SEO as well.\n\nSocial media platforms automatically recompress uploaded images, often degrading quality. Pre-compressing your images to an appropriate size minimizes this double compression effect.\n\nCloud storage savings add up too. Google Photos and iCloud offer limited free space, and compressing images lets you store significantly more photos within the same quota."
+        },
+        {
+          heading: "How Compression Works Without Visible Quality Loss",
+          body: "Image compression comes in two flavors: lossless and lossy.\n\nLossless compression reorganizes data more efficiently without discarding anything. Decompressing produces a pixel-identical copy of the original. PNG is the primary lossless format. The trade-off is limited compression ratios, meaning smaller file size reductions.\n\nLossy compression removes information that human eyes cannot easily detect. JPEG and WebP are the main lossy formats. At 80-85% quality, the visual difference from the original is virtually imperceptible even when viewed side by side.\n\nFor practical purposes, lossy compression delivers far better results. An 80% quality setting typically reduces file size by 60-70% with no visible degradation. Below 50% quality, artifacts become noticeable, so the 80-85% range is the sweet spot for most use cases."
+        },
+        {
+          heading: "Choosing the Right Format",
+          body: "Different image formats suit different content types.\n\nJPEG excels at photographs. Landscapes, portraits, and product shots with rich colors compress most efficiently in JPEG at 80-85% quality.\n\nPNG is ideal for images requiring transparency or containing sharp text. Use it for logos, icons, and screenshots. PNG uses lossless compression, so file sizes are larger, but tools can still reduce them 20-40% through metadata removal and palette optimization.\n\nWebP combines the strengths of JPEG and PNG. It produces files 25-30% smaller than JPEG at equivalent quality and supports transparency. All modern browsers support WebP, making it the best choice for web images.\n\nGIF should be reserved for animations only. For static images, GIF files are unnecessarily large. Even for short animations, WebP animation produces smaller files than GIF."
+        },
+        {
+          heading: "Using the Toolkio Image Compressor",
+          body: "Toolkio's image compressor works entirely in your browser with no installation required.\n\nStart by uploading your image through drag-and-drop or the file picker. The tool supports JPEG, PNG, WebP, and other common formats.\n\nAdjust the quality slider to set your compression level. The recommended range is 80-85%, but you can fine-tune based on your needs. A preview shows the visual impact of your chosen setting.\n\nOnce compression finishes, the tool displays the percentage reduction from the original size. If you are satisfied, click download to save the compressed image.\n\nThe most important feature is privacy. All processing happens locally in your browser. No images are uploaded to any server, so personal photos and confidential business documents remain completely private. The tool even works offline once the page has loaded.\n\nFor batch workflows, process images one at a time. This is especially useful when optimizing all images for a blog or website in a single session."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지 압축하면 화질이 떨어지나요?",
+        answer: "80-85% 품질로 압축하면 원본과 육안으로 구분하기 어려워요. 50% 이하로 내리면 눈에 띄는 차이가 생기니 80% 이상을 유지하는 게 좋아요.",
+      },
+      {
+        question: "어떤 이미지 포맷을 사용해야 하나요?",
+        answer: "사진은 JPEG나 WebP, 투명 배경이 필요하면 PNG, 웹용 이미지는 WebP를 추천해요. WebP가 같은 화질에서 가장 작은 용량이에요.",
+      },
+      {
+        question: "온라인 이미지 압축 도구는 안전한가요?",
+        answer: "Toolkio의 이미지 압축 도구는 브라우저에서 처리되기 때문에 이미지가 서버로 전송되지 않아요. 개인 사진도 안심하고 사용할 수 있어요.",
+      },
+      {
+        question: "이미지 크기(해상도)도 줄여야 하나요?",
+        answer: "네, 웹에서 사용할 이미지는 실제 표시 크기에 맞게 줄이는 게 좋아요. 1200px 너비로 표시되는 이미지에 4000px 원본을 사용하면 용량만 낭비돼요.",
+      },
+      {
+        question: "압축한 이미지를 다시 원본으로 되돌릴 수 있나요?",
+        answer: "손실 압축(JPEG, WebP)은 되돌릴 수 없어요. 원본 파일은 항상 별도로 보관하고, 압축본은 배포용으로 사용하는 게 좋아요.",
+      },
+      {
+        question: "한 번에 여러 이미지를 압축할 수 있나요?",
+        answer: "Toolkio에서는 이미지를 하나씩 처리해요. 여러 장이 필요하면 순서대로 압축하면 돼요. 각 이미지마다 최적의 품질 설정을 따로 적용할 수 있는 장점이 있어요.",
+      },
+      {
+        question: "WebP 포맷을 모든 브라우저에서 볼 수 있나요?",
+        answer: "Chrome, Firefox, Safari, Edge 등 모든 최신 브라우저에서 WebP를 지원해요. Internet Explorer만 지원하지 않지만, IE 사용률은 거의 0%에 가까워요.",
+      },
+    ],
+  },
 ];
