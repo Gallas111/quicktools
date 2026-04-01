@@ -7541,7 +7541,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "regex-tester-guide",
+    slug: "regex-tester-beginner-guide",
     title: {
       ko: "정규식 테스트 완벽 가이드 — 초보자도 바로 쓰는 정규표현식 문법 정리",
       en: "Regex Tester Guide — Essential Regular Expression Patterns for Beginners",
@@ -7552,7 +7552,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: "2026-04-01",
     toolId: "regex-tester",
-    image: "/images/blog/regex-tester-guide.webp",
+    image: "/images/blog/regex-tester-beginner-guide.webp",
     keywords: ["정규식 테스트", "정규표현식", "regex", "정규식 패턴", "regular expression", "regex tester"],
     content: {
       ko: [
