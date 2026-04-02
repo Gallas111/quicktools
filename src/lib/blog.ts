@@ -7943,4 +7943,359 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "json-formatter-vscode-setup-guide",
+    title: {
+      ko: "JSON 포맷터 VSCode 설정 — 자동 정리부터 린트까지 완벽 가이드",
+      en: "JSON Formatter in VSCode — Complete Setup Guide for Auto-formatting and Linting",
+    },
+    description: {
+      ko: "VSCode에서 JSON 파일을 자동으로 정리하는 방법을 알려드려요. 확장 프로그램 추천, 단축키 설정, ESLint 연동까지 개발자 필수 설정을 정리했어요.",
+      en: "Learn how to auto-format JSON files in VSCode with the best extensions, keyboard shortcuts, and ESLint integration for developers.",
+    },
+    date: "2026-04-02",
+    toolId: "json-formatter",
+    image: "/images/blog/json-formatter-vscode-setup-guide.webp",
+    keywords: ["json formatter vscode", "vscode json 정리", "json 자동 포맷", "json formatter extension", "vscode 확장 프로그램"],
+    content: {
+      ko: [
+        {
+          heading: "왜 JSON 포맷팅이 중요한가요?",
+          body: "API 개발이나 설정 파일을 다루다 보면 JSON을 매일 만지게 되죠. 문제는 한 줄로 압축된 JSON이나 들여쓰기가 엉망인 파일을 읽어야 할 때예요.\n\n가독성이 떨어지면 디버깅 시간이 늘어나요. 중괄호나 쉼표가 빠진 오류를 찾는 데 몇 분씩 허비하게 되거든요.\n\n팀 프로젝트에서는 더 심각해요. 각자 다른 포맷 스타일을 쓰면 Git diff가 불필요하게 커지고, 코드 리뷰가 어려워져요.\n\nVSCode에서 JSON 포맷터를 제대로 설정해 두면 이런 문제를 한 번에 해결할 수 있어요. 저장할 때 자동으로 정리되니까 포맷 걱정 없이 코딩에만 집중할 수 있거든요."
+        },
+        {
+          heading: "VSCode 기본 JSON 포맷팅",
+          body: "VSCode에는 JSON 포맷터가 이미 내장되어 있어요. 별도 설치 없이 바로 사용할 수 있어요.\n\nJSON 파일을 열고 Shift+Alt+F(Windows) 또는 Shift+Option+F(Mac)를 누르면 자동 정리가 돼요. 들여쓰기, 줄바꿈, 정렬이 한 번에 적용됩니다.\n\n저장 시 자동 포맷을 원하면 Settings에서 format on save를 활성화하세요. settings.json에 아래 설정을 추가하면 돼요.\n\neditor.formatOnSave를 true로 설정하면 Ctrl+S를 누를 때마다 자동으로 정리돼요. 한번 설정하면 이후로 신경 쓸 필요가 없어서 편해요.\n\n들여쓰기를 2칸에서 4칸으로 바꾸고 싶다면 editor.tabSize 값을 변경하면 돼요. 대부분의 프로젝트는 2칸 또는 4칸을 사용해요."
+        },
+        {
+          heading: "추천 확장 프로그램 3가지",
+          body: "기본 포맷터보다 강력한 기능이 필요하다면 확장 프로그램을 사용하세요.\n\nPrettier는 가장 인기 있는 코드 포맷터예요. JSON뿐 아니라 JavaScript, TypeScript, CSS 등 거의 모든 파일을 지원해요. 팀 프로젝트에서 코드 스타일을 통일하는 데 필수적이에요.\n\nJSON Tools는 JSON 전용 확장이에요. 한 줄로 압축(Minify)하거나 보기 좋게 펼치는(Prettify) 기능을 제공해요. 명령 팔레트에서 JSON Tools: Prettify를 실행하면 돼요.\n\nSort JSON Objects는 JSON 키를 알파벳 순으로 정렬해 주는 확장이에요. 설정 파일이나 package.json의 dependencies를 깔끔하게 정리할 때 유용해요.\n\n이 중 Prettier 하나만 설치해도 대부분의 상황을 커버할 수 있어요. 나머지는 필요할 때 추가하시면 돼요."
+        },
+        {
+          heading: "온라인 JSON 포맷터 vs VSCode",
+          body: "웹 기반 JSON 포맷터(Toolkio 포함)와 VSCode 포맷터는 용도가 달라요.\n\n온라인 도구는 빠르게 한 번 확인할 때 편해요. 브라우저에서 바로 붙여넣기 하면 되니까요. API 응답을 임시로 확인하거나, 동료에게 공유받은 JSON을 빠르게 보고 싶을 때 적합해요.\n\nVSCode는 프로젝트 내 JSON 파일을 지속적으로 관리할 때 좋아요. 저장 시 자동 포맷, Git 연동, ESLint 검증까지 워크플로우에 통합되니까요.\n\n추천 조합은 이래요. 프로젝트 파일은 VSCode에서 관리하고, 외부에서 받은 임시 JSON은 Toolkio 같은 온라인 도구로 확인하는 거예요. 두 도구를 상황에 맞게 쓰면 효율이 극대화돼요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why JSON Formatting Matters",
+          body: "When working with APIs or configuration files, you deal with JSON daily. The challenge comes with minified JSON or files with inconsistent indentation.\n\nPoor readability increases debugging time. Missing braces or commas become needle-in-haystack problems.\n\nIn team projects, inconsistent formatting inflates Git diffs and makes code reviews harder.\n\nSetting up a proper JSON formatter in VSCode eliminates these issues. Auto-format on save means you can focus on logic instead of formatting."
+        },
+        {
+          heading: "Built-in VSCode JSON Formatting",
+          body: "VSCode includes a JSON formatter out of the box. No extensions needed for basic formatting.\n\nOpen a JSON file and press Shift+Alt+F (Windows) or Shift+Option+F (Mac) to auto-format. Indentation, line breaks, and alignment are applied instantly.\n\nFor auto-format on save, enable Format On Save in Settings. Add editor.formatOnSave: true to your settings.json.\n\nTo change indentation from 2 to 4 spaces, adjust the editor.tabSize value. Most projects use either 2 or 4 spaces."
+        },
+        {
+          heading: "Top 3 Recommended Extensions",
+          body: "For advanced features beyond the built-in formatter, consider these extensions.\n\nPrettier is the most popular code formatter. It supports JSON along with JavaScript, TypeScript, CSS, and virtually every other file type. Essential for enforcing consistent code style in team projects.\n\nJSON Tools is a JSON-specific extension offering minify and prettify commands. Run JSON Tools: Prettify from the command palette.\n\nSort JSON Objects alphabetically sorts JSON keys. Great for cleaning up config files and package.json dependencies.\n\nPrettier alone covers most use cases. Add the others as needed."
+        },
+        {
+          heading: "Online JSON Formatter vs VSCode",
+          body: "Web-based JSON formatters (including Toolkio) and VSCode serve different purposes.\n\nOnline tools are best for quick one-off checks. Paste JSON in a browser and see results instantly. Perfect for inspecting API responses or quickly viewing JSON shared by colleagues.\n\nVSCode excels at managing project JSON files continuously. Auto-format on save, Git integration, and ESLint validation are built into your workflow.\n\nThe recommended approach is using VSCode for project files and online tools like Toolkio for ad-hoc JSON inspection. Using both tools situationally maximizes your efficiency."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "VSCode에서 JSON 포맷 단축키가 뭔가요?",
+        answer: "Windows는 Shift+Alt+F, Mac은 Shift+Option+F예요. JSON 파일이 열린 상태에서 누르면 즉시 정리돼요.",
+      },
+      {
+        question: "Prettier와 기본 포맷터 중 뭐가 좋나요?",
+        answer: "개인 프로젝트는 기본 포맷터로 충분해요. 팀 프로젝트라면 Prettier를 추천해요. 설정 파일(.prettierrc)을 공유해서 팀원 모두 같은 스타일을 유지할 수 있거든요.",
+      },
+      {
+        question: "저장할 때 자동으로 JSON을 정리하려면 어떻게 하나요?",
+        answer: "VSCode Settings에서 Format On Save를 검색해서 체크하면 돼요. 또는 settings.json에 editor.formatOnSave: true를 추가하세요.",
+      },
+      {
+        question: "JSON에 문법 오류가 있는지 확인하는 방법은?",
+        answer: "VSCode는 JSON 문법 오류를 자동으로 빨간 밑줄로 표시해요. Problems 탭(Ctrl+Shift+M)에서 모든 오류를 한눈에 확인할 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "password-length-security-guide-2026",
+    title: {
+      ko: "비밀번호 길이별 보안 강도 — 8자리 vs 12자리 vs 16자리 비교",
+      en: "Password Length Security Guide — 8 vs 12 vs 16 Characters Compared",
+    },
+    description: {
+      ko: "비밀번호 길이에 따른 보안 강도를 비교했어요. 해킹에 걸리는 시간, 안전한 비밀번호 만드는 법, 비밀번호 관리 도구까지 실용 가이드입니다.",
+      en: "Compare password security by length. Learn how long it takes to crack passwords of different lengths and best practices for creating strong passwords.",
+    },
+    date: "2026-04-02",
+    toolId: "password-generator",
+    image: "/images/blog/password-length-security-guide-2026.webp",
+    keywords: ["password generator 8 characters", "비밀번호 길이", "비밀번호 보안", "password length security", "안전한 비밀번호"],
+    content: {
+      ko: [
+        {
+          heading: "비밀번호 길이가 왜 중요한가요?",
+          body: "비밀번호를 하나 더 길게 만드는 것만으로도 보안이 기하급수적으로 강해져요.\n\n해커가 비밀번호를 푸는 가장 기본적인 방법은 무차별 대입(brute force)이에요. 가능한 모든 조합을 하나씩 시도하는 거죠. 이때 비밀번호 길이가 1자 늘어날 때마다 경우의 수가 약 95배(영문+숫자+특수문자 기준)로 증가해요.\n\n8자리 비밀번호의 경우의 수는 약 6.6조 개예요. 최신 GPU를 사용하면 몇 시간에서 며칠이면 뚫릴 수 있어요.\n\n12자리로 늘리면 경우의 수가 약 5.4x10의 23승으로 폭발적으로 증가해요. 현재 기술로는 수백 년이 걸려요.\n\n그래서 보안 전문가들은 최소 12자리 이상을 권장합니다."
+        },
+        {
+          heading: "길이별 해킹 소요 시간",
+          body: "2026년 기준 최신 GPU(RTX 5090)로 무차별 대입 공격을 할 때 비밀번호 길이별 예상 소요 시간이에요.\n\n6자리(영문+숫자)는 즉시 해킹 가능해요. 수 초면 뚫려요.\n\n8자리(영문+숫자+특수문자)는 약 8시간 정도 걸려요. 많은 사이트의 최소 요구 조건이지만 안전하지 않아요.\n\n10자리(영문+숫자+특수문자)는 약 5년이 걸려요. 어느 정도 안전한 수준이에요.\n\n12자리(영문+숫자+특수문자)는 약 3만 4천 년이 걸려요. 충분히 안전한 수준이에요.\n\n16자리(영문+숫자+특수문자)는 수억 년 이상이에요. 매우 안전합니다.\n\n이 수치는 단일 GPU 기준이에요. 전문 해커가 GPU 수백 대를 동원하면 시간이 줄어들지만, 12자리 이상은 여전히 현실적으로 뚫기 어려워요."
+        },
+        {
+          heading: "안전한 비밀번호 만드는 3가지 방법",
+          body: "길이만 길다고 안전한 건 아니에요. 올바른 방법으로 만들어야 해요.\n\n첫 번째, 무작위 생성기를 사용하세요. Toolkio의 비밀번호 생성기처럼 랜덤으로 만들어진 비밀번호가 가장 안전해요. 사람이 만든 비밀번호는 패턴이 있어서 사전 공격에 취약하거든요.\n\n두 번째, 패스프레이즈를 활용하세요. 무작위 단어 4~5개를 조합하는 방법이에요. 예를 들어 correct-horse-battery-staple 같은 형태예요. 기억하기 쉬우면서도 길이가 충분해서 안전해요.\n\n세 번째, 사이트마다 다른 비밀번호를 사용하세요. 하나의 비밀번호를 여러 곳에 쓰면 한 곳이 뚫렸을 때 모든 계정이 위험해져요. 비밀번호 관리자를 사용하면 사이트마다 다른 비밀번호를 쉽게 관리할 수 있어요."
+        },
+        {
+          heading: "비밀번호 관리 도구 추천",
+          body: "12자리 이상의 복잡한 비밀번호를 사이트마다 다르게 쓰려면 비밀번호 관리자가 필수예요.\n\nBitwarden은 무료로 사용 가능한 오픈소스 비밀번호 관리자예요. 브라우저 확장, 모바일 앱, 데스크톱 앱을 모두 지원하고, 무료 플랜으로도 충분한 기능을 제공해요.\n\n1Password는 유료(월 $3)지만 UI가 직관적이고 기업용 기능이 강해요. 가족 공유 기능도 있어서 가족 단위로 사용하기에 좋아요.\n\nGoogle Password Manager는 Chrome에 내장되어 있어서 별도 설치 없이 사용할 수 있어요. 구글 생태계를 주로 쓰는 분에게 편하지만, 크로스 브라우저 지원은 제한적이에요.\n\n어떤 도구든 마스터 비밀번호 하나만 기억하면 나머지는 자동으로 관리돼요. 마스터 비밀번호만 16자리 이상으로 강하게 설정하세요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Password Length Matters",
+          body: "Adding just one character to your password exponentially increases security.\n\nBrute force attacks try every possible combination. Each additional character multiplies possibilities by roughly 95 (alphanumeric + special characters).\n\nAn 8-character password has about 6.6 trillion combinations. Modern GPUs can crack this in hours to days.\n\nA 12-character password has approximately 5.4x10^23 combinations. Current technology would need centuries.\n\nSecurity experts recommend a minimum of 12 characters."
+        },
+        {
+          heading: "Cracking Time by Password Length",
+          body: "Estimated brute force times using a 2026 GPU (RTX 5090) with mixed characters.\n\n6 characters: Instant. Cracked in seconds.\n\n8 characters (mixed): About 8 hours. The minimum requirement for many sites, but not safe.\n\n10 characters (mixed): About 5 years. Reasonably secure.\n\n12 characters (mixed): About 34,000 years. Sufficiently secure.\n\n16 characters (mixed): Hundreds of millions of years. Very secure.\n\nThese figures assume a single GPU. Professional attackers with GPU clusters reduce the time, but 12+ characters remain practically uncrackable."
+        },
+        {
+          heading: "3 Methods for Creating Strong Passwords",
+          body: "Length alone does not guarantee safety. You need the right approach.\n\nFirst, use a random generator. Tools like Toolkio's password generator produce the most secure passwords. Human-created passwords contain patterns vulnerable to dictionary attacks.\n\nSecond, try passphrases. Combine 4-5 random words, such as correct-horse-battery-staple. Easy to remember and long enough to be secure.\n\nThird, use unique passwords for every site. If one site is breached, all accounts using the same password are compromised. A password manager makes unique passwords manageable."
+        },
+        {
+          heading: "Recommended Password Managers",
+          body: "Managing unique 12+ character passwords across sites requires a password manager.\n\nBitwarden is a free, open-source option with browser extensions, mobile apps, and desktop clients. The free plan is sufficient for most users.\n\n1Password costs $3/month but offers an intuitive UI and strong enterprise features. Family sharing makes it great for household use.\n\nGoogle Password Manager is built into Chrome with no installation needed. Convenient for Google ecosystem users but limited cross-browser support.\n\nAll tools require remembering just one master password. Make it 16+ characters and you are set."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "비밀번호는 최소 몇 자리여야 안전한가요?",
+        answer: "최소 12자리를 추천해요. 8자리는 현재 기술로 몇 시간이면 뚫릴 수 있지만, 12자리는 수만 년이 걸려서 현실적으로 안전해요.",
+      },
+      {
+        question: "특수문자를 꼭 포함해야 하나요?",
+        answer: "포함하면 좋지만, 길이가 더 중요해요. 특수문자 없는 16자리가 특수문자 포함 8자리보다 훨씬 안전해요.",
+      },
+      {
+        question: "비밀번호를 얼마나 자주 바꿔야 하나요?",
+        answer: "NIST(미국 표준기술연구소)는 유출되지 않는 한 주기적 변경이 불필요하다고 해요. 강한 비밀번호를 만들어서 유지하는 게 더 안전해요.",
+      },
+      {
+        question: "같은 비밀번호를 여러 사이트에 쓰면 왜 위험한가요?",
+        answer: "한 사이트에서 유출되면 해커가 다른 사이트에도 같은 비밀번호로 로그인을 시도해요. 이걸 크리덴셜 스터핑이라고 하는데, 매우 흔한 공격 방법이에요.",
+      },
+    ],
+  },
+  {
+    slug: "image-compression-algorithm-explained",
+    title: {
+      ko: "이미지 압축 원리 쉽게 이해하기 — JPEG, PNG, WebP 알고리즘 비교",
+      en: "Image Compression Algorithms Explained — How JPEG, PNG, and WebP Work",
+    },
+    description: {
+      ko: "이미지 압축이 어떻게 작동하는지 원리를 쉽게 설명해요. JPEG, PNG, WebP 각각의 압축 알고리즘 차이와 최적의 사용 시나리오를 알려드려요.",
+      en: "Understand how image compression works with simple explanations of JPEG, PNG, and WebP algorithms and when to use each format.",
+    },
+    date: "2026-04-02",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compression-algorithm-explained.webp",
+    keywords: ["이미지 압축 원리", "jpeg 알고리즘", "png 압축 방식", "webp 원리", "image compression algorithm"],
+    content: {
+      ko: [
+        {
+          heading: "이미지 파일은 왜 이렇게 큰가요?",
+          body: "1920x1080 해상도 이미지를 압축 없이 저장하면 약 6MB가 돼요. 각 픽셀이 빨강, 초록, 파랑 3가지 색상 정보를 8비트씩 가지고 있거든요. 1920 x 1080 x 3바이트 = 약 6.2MB예요.\n\n4K 이미지라면 24MB, 8K라면 100MB에 가까워요. 이런 용량을 그대로 웹에서 전송하면 로딩이 끔찍하게 느려지겠죠?\n\n다행히 이미지에는 압축할 수 있는 여지가 많아요. 사람의 눈이 감지하지 못하는 정보를 제거하거나, 반복되는 패턴을 효율적으로 저장하면 용량을 90% 이상 줄일 수 있어요."
+        },
+        {
+          heading: "JPEG — 사진의 왕",
+          body: "JPEG는 1992년에 만들어진 손실 압축 포맷이에요. 30년이 넘었지만 여전히 웹에서 가장 많이 사용돼요.\n\nJPEG의 핵심은 DCT(이산 코사인 변환)라는 수학 연산이에요. 이미지를 8x8 픽셀 블록으로 나누고, 각 블록의 색상 변화를 주파수로 변환해요. 사람의 눈은 고주파(미세한 변화)를 잘 감지하지 못하기 때문에 고주파 정보를 제거해도 차이를 못 느껴요.\n\n또한 사람의 눈은 밝기 변화에는 민감하지만 색상 변화에는 둔해요. JPEG는 이 특성을 이용해서 색상 정보(크로마)를 밝기 정보(루마)보다 더 많이 압축해요.\n\n이렇게 두 단계를 거치면 원본의 10~20% 크기로 줄어들면서도 눈으로 구분하기 어려운 품질을 유지할 수 있어요.\n\n단점은 투명 배경을 지원하지 않고, 텍스트나 선 같은 날카로운 경계에서 블록 노이즈가 생길 수 있다는 거예요."
+        },
+        {
+          heading: "PNG — 무손실의 대명사",
+          body: "PNG는 무손실 압축 포맷이에요. 압축을 풀면 원본과 1비트도 다르지 않은 완벽한 복원이 가능해요.\n\nPNG는 Deflate라는 알고리즘을 사용해요. 이미지에서 반복되는 색상 패턴을 찾아서 짧은 코드로 대체하는 방식이에요.\n\n예를 들어 파란 하늘 배경이 넓게 펼쳐진 이미지라면, 같은 파란색 픽셀이 수천 번 반복되겠죠? 이런 반복을 한 번만 기록하고 반복 횟수를 저장하면 용량이 크게 줄어요.\n\n그래서 색상이 단순한 로고, 아이콘, 차트에서 PNG 압축률이 높아요. 반면 풍경 사진처럼 색상이 복잡하면 압축률이 낮아서 JPEG보다 파일이 훨씬 커져요.\n\nPNG의 가장 큰 장점은 투명 배경(알파 채널)을 지원한다는 거예요. 웹에서 로고나 아이콘을 배경 위에 겹쳐 표시할 때 필수적이에요."
+        },
+        {
+          heading: "WebP — 두 세계의 장점을 합치다",
+          body: "WebP는 구글이 2010년에 개발한 차세대 포맷이에요. JPEG의 손실 압축과 PNG의 무손실 압축을 모두 지원해요.\n\n손실 모드에서는 VP8 비디오 코덱의 키프레임 압축 기술을 활용해요. JPEG보다 25~34% 더 작은 파일을 같은 화질로 만들 수 있어요.\n\n무손실 모드에서는 PNG보다 26% 더 작은 파일을 만들어요. 투명 배경도 지원하기 때문에 PNG를 완전히 대체할 수 있어요.\n\n2026년 기준 모든 주요 브라우저(Chrome, Firefox, Safari, Edge)가 WebP를 지원해요. 새로 만드는 웹사이트라면 WebP를 기본 포맷으로 사용하는 걸 추천해요.\n\n유일한 단점은 일부 오래된 이미지 편집 도구에서 WebP를 열지 못하는 경우가 있다는 거예요. 하지만 Photoshop, GIMP 등 주요 도구는 모두 지원해요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Are Image Files So Large?",
+          body: "An uncompressed 1920x1080 image takes about 6MB. Each pixel stores red, green, and blue values at 8 bits each: 1920 x 1080 x 3 bytes = ~6.2MB.\n\n4K doubles that to 24MB, and 8K approaches 100MB. Transmitting these raw files over the web would be painfully slow.\n\nFortunately, images contain enormous redundancy. Removing imperceptible information or encoding repeating patterns efficiently can reduce file sizes by over 90%."
+        },
+        {
+          heading: "JPEG — The Photography Standard",
+          body: "JPEG is a lossy format created in 1992 that remains the web's most-used image format.\n\nJPEG's core is the DCT (Discrete Cosine Transform). It divides images into 8x8 pixel blocks and converts spatial color changes to frequency data. High-frequency details invisible to the human eye are discarded.\n\nHuman vision is more sensitive to luminance than chrominance. JPEG exploits this by compressing color channels more aggressively than brightness.\n\nThese two techniques reduce files to 10-20% of original size while maintaining perceptually identical quality.\n\nJPEG's limitations: no transparency support, and block artifacts can appear on sharp edges like text."
+        },
+        {
+          heading: "PNG — Lossless Perfection",
+          body: "PNG is a lossless format that reproduces bit-perfect originals after decompression.\n\nPNG uses the Deflate algorithm, finding repeating color patterns and replacing them with shorter codes.\n\nA photo of blue sky contains thousands of identical blue pixels. Recording the color once plus a repeat count dramatically reduces size.\n\nPNG compression is most effective for simple graphics like logos, icons, and charts. Complex photographs compress poorly compared to JPEG.\n\nPNG's key advantage is alpha channel transparency, essential for overlaying logos and icons on web backgrounds."
+        },
+        {
+          heading: "WebP — Best of Both Worlds",
+          body: "WebP, developed by Google in 2010, supports both lossy and lossless compression.\n\nIn lossy mode, it leverages VP8 video codec keyframe compression, producing files 25-34% smaller than JPEG at equivalent quality.\n\nIn lossless mode, files are 26% smaller than PNG with full transparency support.\n\nAs of 2026, all major browsers support WebP. For new websites, WebP is the recommended default format.\n\nThe only drawback is that some older image editors may not open WebP files, though major tools like Photoshop and GIMP fully support it."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "JPEG와 WebP 중 어떤 걸 써야 하나요?",
+        answer: "새로 만드는 웹사이트라면 WebP를 추천해요. 같은 화질에서 25% 이상 작고 모든 최신 브라우저에서 지원해요. 기존 사이트는 호환성을 위해 JPEG를 유지해도 괜찮아요.",
+      },
+      {
+        question: "PNG를 JPEG로 변환하면 화질이 떨어지나요?",
+        answer: "약간 떨어질 수 있어요. PNG는 무손실, JPEG는 손실 압축이라서 변환 시 미세한 디테일이 사라져요. 로고나 텍스트 이미지는 PNG를 유지하는 게 좋아요.",
+      },
+      {
+        question: "이미지 압축은 품질 몇 %가 적당한가요?",
+        answer: "JPEG/WebP 기준으로 80-85%가 황금 비율이에요. 이 범위에서는 원본과 시각적 차이를 거의 느낄 수 없으면서 용량을 60-70% 줄일 수 있어요.",
+      },
+      {
+        question: "AVIF라는 포맷도 있던데 뭔가요?",
+        answer: "AV1 비디오 코덱 기반의 차세대 포맷이에요. WebP보다 20% 더 작은 파일을 만들 수 있지만, 인코딩 속도가 느리고 브라우저 지원이 아직 WebP보다 제한적이에요.",
+      },
+    ],
+  },
+  {
+    slug: "best-regex-testing-tools-compared",
+    title: {
+      ko: "정규식 테스트 도구 비교 5선 — 개발자가 추천하는 사이트",
+      en: "5 Best Regex Testing Tools Compared — Developer Recommendations",
+    },
+    description: {
+      ko: "정규식 테스트 도구 5개를 실제 사용 경험을 바탕으로 비교했어요. 기능, 속도, 언어 지원, 무료 여부까지 한눈에 확인하세요.",
+      en: "Compare 5 regex testing tools based on real usage experience. Features, speed, language support, and pricing at a glance.",
+    },
+    date: "2026-04-02",
+    toolId: "regex-tester",
+    image: "/images/blog/best-regex-testing-tools-compared.webp",
+    keywords: ["정규식 테스트 사이트", "regex tester online", "regex 도구 비교", "정규식 테스트 프로그램", "regex testing tools"],
+    content: {
+      ko: [
+        {
+          heading: "정규식 테스트 도구가 필요한 이유",
+          body: "정규식(Regex)은 텍스트 패턴 매칭의 필수 도구예요. 하지만 복잡한 정규식을 머릿속으로만 검증하는 건 거의 불가능하죠.\n\n테스트 도구를 사용하면 정규식을 작성하면서 실시간으로 매칭 결과를 확인할 수 있어요. 어디가 매칭되고 어디가 안 되는지 즉시 피드백을 받을 수 있거든요.\n\n또한 캡처 그룹, 전방/후방 탐색 같은 고급 기능을 시각적으로 확인할 수 있어서 학습 도구로도 훌륭해요.\n\n각 프로그래밍 언어마다 정규식 엔진이 약간씩 달라서 대상 언어에 맞는 테스트가 중요해요."
+        },
+        {
+          heading: "정규식 테스트 도구 TOP 5",
+          body: "Regex101은 가장 인기 있는 정규식 테스트 도구예요. PHP, JavaScript, Python, Go, Java 등 여러 언어의 정규식 엔진을 선택할 수 있어요. 정규식 설명을 자연어로 보여주는 기능이 특히 유용해요. 무료이고 회원가입 없이 사용 가능해요.\n\nRegExr은 시각적인 UI가 돋보이는 도구예요. 매칭된 부분을 색상으로 구분해서 보여주고, 치트시트와 예제를 사이드바에서 바로 참고할 수 있어요. JavaScript 정규식에 특화되어 있어요.\n\nToolkio 정규식 테스터는 브라우저에서 동작하는 심플한 도구예요. 빠르게 패턴을 테스트하고 싶을 때 군더더기 없이 사용할 수 있어요. 한국어 UI를 지원하는 것도 장점이에요.\n\nRegexr.com은 커뮤니티 패턴 라이브러리가 강점이에요. 다른 사용자가 만든 이메일, 전화번호, URL 등의 정규식 패턴을 바로 가져와서 활용할 수 있어요.\n\nDebugger는 정규식 실행 과정을 단계별로 보여주는 도구예요. 정규식이 왜 특정 텍스트에서 매칭되지 않는지 원인을 추적할 때 유용해요. 성능 문제가 있는 정규식을 최적화할 때도 도움이 돼요."
+        },
+        {
+          heading: "도구별 비교",
+          body: "기능 측면에서 Regex101이 가장 종합적이에요. 다국어 엔진 지원, 자연어 설명, 성능 분석까지 모든 기능이 있어요.\n\n학습 용도로는 RegExr이 좋아요. 시각적 피드백과 치트시트가 초보자에게 도움이 많이 돼요.\n\n빠른 테스트에는 Toolkio가 편해요. 별도 계정 없이 바로 사용할 수 있고 인터페이스가 심플하거든요.\n\n성능 최적화에는 Debugger가 유일해요. 정규식이 백트래킹으로 느려지는 원인을 시각적으로 보여줘요.\n\n추천 조합은 이래요. 일상적인 테스트는 Regex101 또는 Toolkio, 학습은 RegExr, 성능 문제 분석은 Debugger를 사용하면 최적이에요."
+        },
+        {
+          heading: "정규식 테스트 도구 활용 팁",
+          body: "정규식을 작성할 때 단계적으로 만드세요. 처음부터 복잡한 패턴을 한 번에 쓰지 말고, 핵심 부분부터 매칭한 뒤 조건을 하나씩 추가하는 게 효율적이에요.\n\n테스트 문자열에 정상 케이스와 비정상 케이스를 모두 포함하세요. 이메일 정규식이라면 올바른 이메일과 잘못된 이메일을 함께 넣어서 양쪽 모두 제대로 처리하는지 확인해야 해요.\n\n언어별 차이를 주의하세요. JavaScript는 후방 탐색을 최근에야 지원했고, Python과 Java의 캐릭터 클래스 문법이 약간 달라요. 반드시 대상 언어의 정규식 엔진으로 테스트하세요.\n\n만들어진 정규식에 주석을 달아두세요. 정규식은 시간이 지나면 본인도 해석하기 어려워요. Regex101의 자연어 설명 기능을 캡처해서 코드 옆에 주석으로 남기면 유지보수가 쉬워져요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why You Need a Regex Testing Tool",
+          body: "Regular expressions are essential for text pattern matching, but validating complex patterns mentally is nearly impossible.\n\nTesting tools show real-time matching results as you write regex. Instant feedback on what matches and what does not accelerates development.\n\nAdvanced features like capture groups and lookaheads become visible, making these tools excellent for learning.\n\nRegex engines differ between programming languages, making language-specific testing crucial."
+        },
+        {
+          heading: "Top 5 Regex Testing Tools",
+          body: "Regex101 is the most popular tool with support for PHP, JavaScript, Python, Go, and Java engines. Its natural language explanation of patterns is uniquely valuable. Free with no registration required.\n\nRegExr features a visually rich UI with color-coded matches and a built-in cheatsheet sidebar. Optimized for JavaScript regex.\n\nToolkio Regex Tester is a clean, fast browser-based tool. Perfect for quick pattern tests without clutter. Supports Korean UI.\n\nRegexr.com has a community pattern library where you can find and reuse common patterns for emails, phone numbers, URLs, and more.\n\nDebugger shows step-by-step regex execution. Essential for understanding why patterns fail on specific text and for optimizing performance-critical regex."
+        },
+        {
+          heading: "Tool Comparison",
+          body: "For comprehensive features, Regex101 leads with multi-engine support, natural language explanations, and performance analysis.\n\nFor learning, RegExr excels with visual feedback and accessible cheatsheets.\n\nFor quick tests, Toolkio's no-account, simple interface wins.\n\nFor performance optimization, Debugger is unique in visualizing backtracking behavior.\n\nRecommended combination: Regex101 or Toolkio for daily testing, RegExr for learning, Debugger for performance analysis."
+        },
+        {
+          heading: "Tips for Using Regex Test Tools",
+          body: "Build patterns incrementally. Start with the core match, then add conditions one at a time.\n\nInclude both valid and invalid test cases. An email regex should be tested against both correct and malformed addresses.\n\nWatch for language differences. JavaScript recently added lookbehind support, and Python/Java character class syntax differs slightly. Always test with your target language engine.\n\nDocument your patterns. Regex becomes unreadable over time. Screenshot Regex101's explanation or add comments alongside your code for future maintainability."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정규식 테스트 사이트 중 무료인 곳은 어디인가요?",
+        answer: "Regex101, RegExr, Toolkio 모두 무료로 사용 가능해요. 별도 회원가입이나 결제 없이 바로 쓸 수 있어요.",
+      },
+      {
+        question: "Python과 JavaScript 정규식이 다른가요?",
+        answer: "기본 문법은 거의 같지만 세부 기능에서 차이가 있어요. 예를 들어 명명된 캡처 그룹 문법이 다르고, 일부 플래그 지원 여부가 달라요.",
+      },
+      {
+        question: "정규식을 처음 배우는데 어떤 도구가 좋나요?",
+        answer: "RegExr을 추천해요. 시각적 피드백이 좋고, 사이드바에 치트시트와 예제가 있어서 배우면서 바로 실습할 수 있어요.",
+      },
+      {
+        question: "정규식이 느릴 때 어떻게 최적화하나요?",
+        answer: "Debugger 도구로 백트래킹 패턴을 확인하세요. 탐욕적 수량자를 게으른 수량자로 바꾸거나, 원자적 그룹을 사용하면 성능이 개선돼요.",
+      },
+    ],
+  },
+  {
+    slug: "url-special-character-encoding-guide",
+    title: {
+      ko: "URL 특수문자 인코딩 완벽 가이드 — %20, %23, %26 의미와 변환법",
+      en: "URL Special Character Encoding Guide — Understanding %20, %23, %26 and More",
+    },
+    description: {
+      ko: "URL에서 특수문자가 어떻게 인코딩되는지 원리를 설명해요. 자주 쓰는 인코딩 표, JavaScript/Python 변환 방법까지 한번에 정리했어요.",
+      en: "Learn how special characters are encoded in URLs. Complete encoding table, conversion methods in JavaScript and Python, and common pitfalls.",
+    },
+    date: "2026-04-02",
+    toolId: "url-encoder",
+    image: "/images/blog/url-special-character-encoding-guide.webp",
+    keywords: ["url 인코딩 특수문자", "url encoding special characters", "url percent encoding", "url 인코딩 표", "url 특수문자 변환"],
+    content: {
+      ko: [
+        {
+          heading: "URL에 특수문자를 왜 넣을 수 없나요?",
+          body: "URL은 원래 영문자, 숫자, 일부 기호만 사용하도록 설계됐어요. RFC 3986 표준에 따르면 URL에 안전하게 사용할 수 있는 문자는 A-Z, a-z, 0-9, 그리고 - _ . ~ 4개뿐이에요.\n\n공백, 한글, 특수문자를 URL에 그대로 넣으면 서버가 잘못 해석할 수 있어요. 예를 들어 &는 URL에서 파라미터 구분자로 쓰이기 때문에, 검색어에 &가 포함되면 의도와 다르게 동작하거든요.\n\n그래서 안전하지 않은 문자를 퍼센트 인코딩(Percent Encoding)으로 변환해요. 각 문자의 UTF-8 바이트 값을 %XX 형식으로 바꾸는 거예요."
+        },
+        {
+          heading: "자주 쓰는 URL 인코딩 표",
+          body: "가장 자주 만나는 인코딩 값들을 정리했어요.\n\n공백은 %20 또는 +로 인코딩돼요. 쿼리 스트링에서는 +를 쓰는 경우도 있지만, %20이 더 표준적이에요.\n\n느낌표(!)는 %21, 샵(#)은 %23이에요. #은 URL에서 프래그먼트(앵커)를 의미하기 때문에 검색어에 #이 있으면 반드시 인코딩해야 해요.\n\n앰퍼샌드(&)는 %26이에요. 파라미터 구분자와 겹치기 때문에 인코딩이 필수예요.\n\n등호(=)는 %3D, 물음표(?)는 %3F예요. 이것들도 URL 구문에서 특별한 의미를 가지기 때문에 값으로 사용할 때는 인코딩해야 해요.\n\n한글은 UTF-8로 변환되어 한 글자당 3바이트, 즉 %XX%XX%XX 형태가 돼요. 예를 들어 가는 %EA%B0%80으로 인코딩돼요."
+        },
+        {
+          heading: "JavaScript와 Python에서 인코딩하기",
+          body: "JavaScript에서는 encodeURIComponent() 함수를 사용하세요. URL의 쿼리 파라미터 값을 인코딩할 때 적합해요. 알파벳, 숫자, 그리고 - _ . ~ 를 제외한 모든 문자를 인코딩해요.\n\nencodeURI()도 있지만, 이건 URL 전체를 인코딩할 때 사용해요. :, /, ?, # 같은 URL 구조 문자를 인코딩하지 않기 때문에 파라미터 값에는 부적합해요.\n\nPython에서는 urllib.parse.quote() 함수를 사용해요. 기본적으로 /를 인코딩하지 않으므로, 모든 문자를 인코딩하려면 safe 파라미터를 빈 문자열로 설정하세요.\n\nPython 3의 urllib.parse.urlencode()는 딕셔너리를 쿼리 스트링으로 변환할 때 편해요. 키와 값을 자동으로 인코딩해 주거든요.\n\n디코딩은 JavaScript에서 decodeURIComponent(), Python에서 urllib.parse.unquote()를 사용하면 돼요."
+        },
+        {
+          heading: "흔한 실수와 해결법",
+          body: "가장 흔한 실수는 이중 인코딩이에요. 이미 인코딩된 문자열을 다시 인코딩하면 %25가 붙어요. %20이 %2520이 되는 거죠. 인코딩 전에 문자열이 이미 인코딩되어 있는지 확인하세요.\n\n공백을 +로 인코딩한 건 %20으로 인코딩한 것과 디코딩 방법이 다를 수 있어요. application/x-www-form-urlencoded에서는 +를 공백으로 해석하지만, URL 경로에서는 +를 문자 그대로 해석해요.\n\n한국어 URL을 다룰 때 인코딩 방식이 UTF-8인지 확인하세요. 오래된 시스템에서는 EUC-KR 인코딩을 사용해서 한글이 깨지는 경우가 있어요.\n\nToolkio의 URL 인코더/디코더를 활용하면 인코딩 결과를 빠르게 확인하고 디버깅할 수 있어요. 이중 인코딩 여부도 눈으로 쉽게 확인할 수 있거든요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Can't URLs Contain Special Characters?",
+          body: "URLs were designed to use only ASCII characters. Per RFC 3986, safe URL characters are limited to A-Z, a-z, 0-9, and - _ . ~.\n\nSpaces, non-Latin characters, and special symbols can cause servers to misinterpret URLs. The & character is a parameter separator, so an & in a search query would break the URL structure.\n\nUnsafe characters are converted using Percent Encoding, where each byte of the character's UTF-8 representation becomes %XX."
+        },
+        {
+          heading: "Common URL Encoding Values",
+          body: "Space encodes to %20 or +. While + appears in query strings, %20 is more standard.\n\n# becomes %23 (critical since # denotes a URL fragment). & becomes %26 (must encode to avoid breaking parameter separation).\n\n= is %3D, ? is %3F. Both have structural meaning in URLs and must be encoded when used as values.\n\nKorean characters convert to 3-byte UTF-8 sequences: each character becomes %XX%XX%XX."
+        },
+        {
+          heading: "Encoding in JavaScript and Python",
+          body: "JavaScript: Use encodeURIComponent() for query parameter values. It encodes everything except A-Z, a-z, 0-9, and - _ . ~.\n\nencodeURI() is for entire URLs — it preserves structural characters like : / ? # and is not suitable for parameter values.\n\nPython: Use urllib.parse.quote() with safe='' to encode all characters. urllib.parse.urlencode() conveniently converts dictionaries to encoded query strings.\n\nFor decoding: JavaScript uses decodeURIComponent(), Python uses urllib.parse.unquote()."
+        },
+        {
+          heading: "Common Mistakes and Fixes",
+          body: "Double encoding is the most frequent mistake. Encoding an already-encoded string turns %20 into %2520. Always check if input is already encoded.\n\nSpace encoding differs by context: + means space in form data (application/x-www-form-urlencoded) but is literal in URL paths. Use %20 for consistency.\n\nVerify UTF-8 encoding when handling Korean URLs. Legacy systems using EUC-KR can produce garbled characters.\n\nToolkio's URL encoder/decoder helps quickly verify encoding results and catch double-encoding issues visually."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "%20과 +의 차이가 뭔가요?",
+        answer: "둘 다 공백을 나타내지만 사용 맥락이 달라요. %20은 URL 전체에서 사용할 수 있는 표준이고, +는 HTML 폼 데이터(application/x-www-form-urlencoded)에서만 공백을 의미해요.",
+      },
+      {
+        question: "한글 URL은 왜 %로 시작하는 긴 문자열이 되나요?",
+        answer: "한글 한 글자는 UTF-8로 3바이트를 차지해요. 각 바이트가 %XX로 변환되기 때문에 한 글자가 %XX%XX%XX 형태의 9자 문자열이 돼요.",
+      },
+      {
+        question: "encodeURI와 encodeURIComponent의 차이는 뭔가요?",
+        answer: "encodeURI는 URL 전체를 인코딩하되 구조 문자(:, /, ?, #)는 그대로 둬요. encodeURIComponent는 구조 문자까지 모두 인코딩해서 파라미터 값에 적합해요.",
+      },
+      {
+        question: "URL 인코딩을 직접 하지 않으면 어떤 문제가 생기나요?",
+        answer: "서버가 URL을 잘못 해석해서 404 에러가 나거나, 의도하지 않은 파라미터가 전달될 수 있어요. 특히 검색 기능에서 특수문자가 포함된 검색어가 깨지는 문제가 자주 발생해요.",
+      },
+    ],
+  },
 ];
