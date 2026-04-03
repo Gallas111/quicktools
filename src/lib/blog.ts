@@ -8298,4 +8298,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "color-code-converter-rgb-hex-guide",
+    title: {
+      ko: "색상 코드 변환 완벽 가이드 - RGB, HEX, HSL 한번에 변환하기",
+      en: "Color Code Converter Guide - Convert RGB, HEX, HSL Instantly",
+    },
+    description: {
+      ko: "RGB, HEX, HSL 색상 코드를 서로 변환하는 방법을 정리했습니다. 디자이너와 개발자를 위한 색상 변환 실전 가이드예요.",
+      en: "Learn how to convert between RGB, HEX, and HSL color codes. A practical guide for designers and developers.",
+    },
+    date: "2026-04-03",
+    toolId: "color-converter",
+    image: "/images/blog/color-code-converter-rgb-hex-guide.webp",
+    keywords: ["색상 코드 변환", "RGB HEX 변환", "색상 코드 변환기", "RGB CMYK 변환", "color converter"],
+    content: {
+      ko: [
+        {
+          heading: "색상 코드, 왜 이렇게 종류가 많을까?",
+          body: "웹 개발하다 보면 HEX 코드를 써야 할 때가 있고, 디자인 툴에서는 RGB를 쓰고, CSS에서는 HSL을 쓰기도 하잖아요. 같은 색인데 표현 방식이 다른 거예요.\n\nHEX는 #FF5733처럼 16진수로 표현하는 방식이에요. 웹에서 가장 많이 쓰이죠.\n\nRGB는 빨강(Red), 초록(Green), 파랑(Blue) 세 가지 빛의 조합으로 rgb(255, 87, 51)처럼 표현해요.\n\nHSL은 색상(Hue), 채도(Saturation), 명도(Lightness)로 hsl(14, 100%, 60%)처럼 표현하고요. 색 조합을 만들 때 가장 직관적이에요.\n\n각 방식의 장점이 다르기 때문에 상황에 맞게 변환해서 써야 해요."
+        },
+        {
+          heading: "HEX와 RGB 변환 원리",
+          body: "HEX 코드는 사실 RGB를 16진수로 표현한 거예요. #FF5733을 분해하면 FF(빨강 255), 57(초록 87), 33(파랑 51)이 돼요.\n\n변환 공식은 간단해요. HEX 두 자리를 10진수로 바꾸면 RGB 값이 나오거든요. FF는 15x16+15 = 255, 57은 5x16+7 = 87이에요.\n\n반대로 RGB를 HEX로 바꿀 때는 각 값을 16진수로 변환하면 돼요. 255를 16진수로 바꾸면 FF가 되는 거죠.\n\n직접 계산하기 번거로우니까 [Toolkio 색상 변환기](/color-converter)를 쓰면 값을 넣는 즉시 모든 형식으로 변환해줘요."
+        },
+        {
+          heading: "HSL이 디자인에서 유용한 이유",
+          body: "HSL은 사람이 색을 인식하는 방식과 가장 비슷해요. H(색상)은 0~360도 색상환, S(채도)는 0~100%, L(명도)은 0~100%로 표현하거든요.\n\n예를 들어 빨간색 계열로 밝은 색부터 어두운 색까지 만들고 싶으면, H를 0으로 고정하고 L만 바꾸면 돼요. RGB로는 이런 작업이 직관적이지 않거든요.\n\n버튼 호버 색상을 만들 때도 HSL이 편해요. 기본 색상의 L값만 10% 낮추면 자연스러운 어두운 변형이 되거든요."
+        },
+        {
+          heading: "실전에서 색상 코드 활용하기",
+          body: "CSS에서는 세 가지 형식 모두 사용 가능해요. background-color: #FF5733, rgb(255,87,51), hsl(14,100%,60%) 전부 같은 결과가 나와요.\n\nFigma에서 색상을 복사하면 HEX로 나오는데, CSS에서 투명도가 필요하면 rgba로 변환해야 해요. rgba(255, 87, 51, 0.8)처럼 네 번째 값이 투명도예요.\n\n인쇄물이라면 CMYK 변환도 필요해요. 화면용 RGB 색상과 인쇄용 CMYK 색상은 색 영역이 다르기 때문에 변환 후 색이 달라 보일 수 있어요.\n\n[색상 팔레트 조합 가이드](/blog/color-palette-combination-guide)에서 조화로운 색 조합을 만드는 방법도 확인해보세요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Are There So Many Color Code Formats?",
+          body: "Different tools and platforms prefer different color formats. HEX (#FF5733) is standard in web development. RGB (255, 87, 51) represents light mixing. HSL (14, 100%, 60%) is most intuitive for creating color variations.\n\nEach format represents the same color differently, and you'll often need to convert between them depending on your workflow."
+        },
+        {
+          heading: "How HEX and RGB Conversion Works",
+          body: "HEX is simply RGB in hexadecimal. #FF5733 breaks down to FF (red 255), 57 (green 87), 33 (blue 51).\n\nTo convert HEX to RGB, convert each pair of hex digits to decimal. FF = 255, 57 = 87, 33 = 51.\n\nFor RGB to HEX, convert each decimal value to two-digit hexadecimal. Use Toolkio's color converter to do this instantly."
+        },
+        {
+          heading: "Why HSL Is Great for Design",
+          body: "HSL matches human color perception. H (hue) is a 0-360 degree color wheel, S (saturation) is 0-100%, L (lightness) is 0-100%.\n\nCreating color variations is easy: keep H constant and adjust L for lighter/darker shades. For hover states, just decrease L by 10% for a natural darkened version."
+        },
+        {
+          heading: "Using Color Codes in Practice",
+          body: "CSS supports all three formats. For transparency, use rgba() with a fourth alpha value (0-1).\n\nWhen copying colors from Figma (HEX), convert to rgba if you need opacity. For print, convert RGB to CMYK — screen and print color spaces differ significantly."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "HEX 코드에서 #을 빼도 되나요?",
+        answer: "CSS에서는 반드시 #을 붙여야 해요. 하지만 일부 디자인 도구나 프로그래밍에서는 # 없이 6자리 16진수만 써도 인식해요.",
+      },
+      {
+        question: "RGB와 CMYK는 왜 색이 다르게 보이나요?",
+        answer: "RGB는 빛의 혼합(가산혼합)이고 CMYK는 잉크의 혼합(감산혼합)이에요. 표현 가능한 색 범위가 달라서 화면에서 보이는 색과 인쇄물 색이 다를 수 있어요.",
+      },
+      {
+        question: "투명도를 포함한 색상 코드는 어떻게 쓰나요?",
+        answer: "HEX는 8자리(#FF573380), RGB는 rgba(255,87,51,0.5), HSL은 hsla(14,100%,60%,0.5)로 마지막에 투명도 값을 추가하면 돼요.",
+      },
+    ],
+  },
+  {
+    slug: "base64-encoding-decoding-practical-guide",
+    title: {
+      ko: "Base64 변환 완벽 가이드 - 이미지 인코딩부터 API 인증까지",
+      en: "Base64 Encoding Guide - From Image Embedding to API Authentication",
+    },
+    description: {
+      ko: "Base64 인코딩/디코딩의 원리와 실전 활용법을 정리했습니다. 이미지 변환, API 인증, 데이터 전송에서의 사용법을 알려드려요.",
+      en: "Learn Base64 encoding/decoding principles and practical uses. From image embedding to API authentication, with real examples.",
+    },
+    date: "2026-04-03",
+    toolId: "base64",
+    image: "/images/blog/base64-encoding-decoding-practical-guide.webp",
+    keywords: ["Base64 변환", "Base64 인코딩", "Base64 디코딩", "이미지 Base64 변환", "base64 encode decode"],
+    content: {
+      ko: [
+        {
+          heading: "Base64가 뭔가요?",
+          body: "Base64는 바이너리 데이터를 텍스트로 변환하는 인코딩 방식이에요. 이미지, 파일 같은 바이너리 데이터를 A-Z, a-z, 0-9, +, / 총 64개 문자로만 표현하거든요.\n\n왜 이런 게 필요하냐면, 이메일이나 JSON 같은 텍스트 기반 시스템에서는 바이너리 데이터를 직접 다룰 수 없어요. Base64로 변환하면 텍스트처럼 다룰 수 있게 되는 거죠.\n\n다만 Base64 인코딩을 하면 데이터 크기가 약 33% 커져요. 3바이트 데이터가 4글자 텍스트가 되거든요."
+        },
+        {
+          heading: "개발에서 Base64를 쓰는 3가지 경우",
+          body: "첫 번째, 이미지를 HTML이나 CSS에 직접 넣을 때예요. img 태그의 src에 data:image/png;base64,... 형태로 넣으면 별도 파일 요청 없이 이미지를 표시할 수 있어요. 아이콘같이 작은 이미지에 유용하거든요.\n\n두 번째, API 인증 토큰이에요. HTTP Basic Auth에서는 사용자명:비밀번호를 Base64로 인코딩해서 보내요. Authorization: Basic dXNlcjpwYXNz 이런 식이죠.\n\n세 번째, JSON으로 파일을 전송할 때예요. JSON은 텍스트 형식이라 바이너리를 직접 포함할 수 없어요. 파일을 Base64로 변환해서 문자열 값으로 넣는 거죠."
+        },
+        {
+          heading: "JavaScript와 Python에서 Base64 사용하기",
+          body: "JavaScript 브라우저에서는 btoa()로 인코딩, atob()로 디코딩해요. 한글 등 유니코드 문자는 먼저 UTF-8로 변환해야 해요.\n\nNode.js에서는 Buffer.from(text).toString('base64')로 인코딩하고, Buffer.from(base64, 'base64').toString()으로 디코딩해요.\n\nPython에서는 import base64 후 base64.b64encode()와 b64decode()를 사용해요. 파일 변환은 파일을 rb 모드로 읽은 뒤 인코딩하면 돼요.\n\n코드 없이 빠르게 변환하고 싶으면 [Toolkio Base64 변환기](/base64)를 사용하세요. 텍스트를 붙여넣으면 바로 인코딩/디코딩 결과가 나와요."
+        },
+        {
+          heading: "Base64 사용 시 주의사항",
+          body: "Base64는 암호화가 아니에요. 누구나 디코딩할 수 있기 때문에 비밀번호 같은 민감한 정보를 Base64로만 보호하면 안 돼요.\n\n대용량 파일은 Base64로 변환하면 안 돼요. 크기가 33% 커지고 메모리도 많이 사용하거든요. 큰 이미지는 URL로 참조하는 게 낫고, 작은 아이콘(수 KB)만 인라인으로 쓰세요.\n\nURL에서 Base64를 쓸 때는 URL-safe Base64(+를 -로, /를 _로 대체)를 사용하세요. 일반 Base64의 +와 /는 URL에서 특별한 의미가 있거든요.\n\n[URL 인코딩 가이드](/blog/how-to-encode-urls)에서 URL 안전 문자 처리 방법도 확인해보세요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Base64?",
+          body: "Base64 converts binary data into text using 64 characters (A-Z, a-z, 0-9, +, /). This lets you include binary data in text-only systems like email, JSON, and HTML.\n\nThe tradeoff: Base64 increases data size by ~33%. Three bytes become four text characters."
+        },
+        {
+          heading: "3 Common Uses of Base64",
+          body: "1. Embedding small images in HTML/CSS using data URIs: data:image/png;base64,...\n2. HTTP Basic Authentication: encoding username:password as a Base64 string.\n3. Sending files via JSON APIs by converting binary to a Base64 string value."
+        },
+        {
+          heading: "Base64 in JavaScript and Python",
+          body: "Browser JS: btoa() to encode, atob() to decode. Handle Unicode by converting to UTF-8 first.\n\nNode.js: Buffer.from(text).toString('base64') and Buffer.from(b64, 'base64').toString().\n\nPython: base64.b64encode() and b64decode(). Read files in 'rb' mode before encoding."
+        },
+        {
+          heading: "Important Considerations",
+          body: "Base64 is NOT encryption — anyone can decode it. Never use it alone for sensitive data.\n\nAvoid Base64 for large files (33% size increase). Use URL-safe Base64 (- instead of +, _ instead of /) when embedding in URLs."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Base64 인코딩은 암호화인가요?",
+        answer: "아니요, 암호화가 아니에요. Base64는 단순 인코딩이라 누구나 원래 데이터로 되돌릴 수 있어요. 보안 목적이라면 AES 같은 암호화를 사용하세요.",
+      },
+      {
+        question: "이미지를 Base64로 변환하면 어떤 장점이 있나요?",
+        answer: "HTTP 요청 수를 줄일 수 있어요. 작은 아이콘을 Base64로 HTML에 직접 넣으면 별도의 이미지 파일 요청이 필요 없거든요. 하지만 큰 이미지는 파일 크기가 33% 커지므로 비효율적이에요.",
+      },
+      {
+        question: "Base64 문자열 끝에 있는 =은 뭔가요?",
+        answer: "패딩 문자예요. Base64는 3바이트씩 처리하는데, 입력 데이터가 3의 배수가 아니면 빈 부분을 =로 채워요. =이 1~2개 붙을 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "css-minifier-web-performance-guide",
+    title: {
+      ko: "CSS 압축으로 웹사이트 속도 높이기 - 실전 최적화 가이드",
+      en: "CSS Minification for Faster Websites - Practical Optimization Guide",
+    },
+    description: {
+      ko: "CSS 코드 압축(Minify)으로 웹사이트 로딩 속도를 높이는 방법을 알려드립니다. 압축 원리부터 자동화까지 실전 가이드예요.",
+      en: "Speed up your website with CSS minification. Learn how it works, when to use it, and how to automate the process.",
+    },
+    date: "2026-04-03",
+    toolId: "css-minifier",
+    image: "/images/blog/css-minifier-web-performance-guide.webp",
+    keywords: ["CSS 압축", "CSS minify", "웹사이트 속도 최적화", "CSS 최적화", "CSS minifier"],
+    content: {
+      ko: [
+        {
+          heading: "CSS 압축이 왜 필요한가요?",
+          body: "웹사이트를 만들 때 CSS 파일은 점점 커져요. 주석, 공백, 줄바꿈이 많으면 파일 크기가 불필요하게 커지거든요.\n\nCSS 압축(Minification)은 이런 불필요한 문자를 제거해서 파일 크기를 줄이는 거예요. 보통 30~50% 정도 크기가 줄어들어요.\n\n구글 PageSpeed Insights에서도 CSS 압축을 권장 사항으로 제시하고 있어요. 페이지 로딩 속도가 빨라지면 SEO 점수도 올라가거든요."
+        },
+        {
+          heading: "CSS 압축이 하는 일",
+          body: "CSS 압축은 기능에 영향을 주지 않으면서 파일 크기만 줄여요.\n\n제거되는 것들: 주석(/* */), 불필요한 공백과 줄바꿈, 마지막 세미콜론, 불필요한 따옴표\n\n단축되는 것들: #ffffff를 #fff로, 0px를 0으로, font-weight: bold를 font-weight: 700으로\n\n예를 들어 body 안에 margin: 0px; padding: 0px; background-color: #ffffff; 라는 코드가 body로 시작하는 한 줄 코드로 압축돼요.\n\nToolkio의 [CSS 압축기](/css-minifier)를 사용하면 CSS를 붙여넣는 것만으로 자동 압축할 수 있어요."
+        },
+        {
+          heading: "프로젝트에 CSS 압축 자동화하기",
+          body: "매번 수동으로 압축하는 건 비효율적이에요. 빌드 도구에 자동화하는 게 좋아요.\n\nWebpack을 쓴다면 css-minimizer-webpack-plugin을 설치하세요. 빌드할 때 자동으로 CSS를 압축해줘요.\n\nVite를 쓴다면 프로덕션 빌드 시 기본적으로 CSS를 압축해요. 별도 설정 없이도 적용되거든요.\n\nPostCSS와 cssnano 조합도 인기 있어요. postcss.config.js에 cssnano 플러그인을 추가하면 돼요.\n\n수동으로 빠르게 결과를 확인하고 싶을 때는 온라인 도구가 편해요. 코드를 붙여넣고 바로 압축 결과를 볼 수 있거든요."
+        },
+        {
+          heading: "CSS 최적화 추가 팁",
+          body: "압축 외에도 CSS 최적화 방법이 있어요.\n\n사용하지 않는 CSS 제거가 가장 효과가 커요. PurgeCSS나 Chrome DevTools의 Coverage 탭으로 사용되지 않는 스타일을 찾을 수 있어요.\n\nCSS를 여러 파일로 분리하고 필요한 페이지에서만 로드하는 것도 좋아요. 모든 페이지에서 전체 CSS를 불러오면 불필요한 다운로드가 발생하거든요.\n\n크리티컬 CSS를 인라인으로 넣으면 첫 화면 렌더링이 빨라져요. 스크롤 없이 보이는 영역의 스타일만 HTML 안에 넣고, 나머지는 비동기 로드하는 거예요.\n\n[이미지 압축 가이드](/blog/how-to-compress-images)와 함께 적용하면 웹사이트 전체 성능을 크게 향상시킬 수 있어요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Minify CSS?",
+          body: "CSS files grow with comments, whitespace, and line breaks. Minification removes these unnecessary characters, typically reducing file size by 30-50%.\n\nGoogle PageSpeed recommends CSS minification. Faster loading improves both user experience and SEO scores."
+        },
+        {
+          heading: "What CSS Minification Does",
+          body: "It removes: comments, whitespace, line breaks, trailing semicolons, unnecessary quotes.\n\nIt shortens: #ffffff to #fff, 0px to 0, font-weight: bold to 700.\n\nFunctionality stays identical — only the file size changes."
+        },
+        {
+          heading: "Automating CSS Minification",
+          body: "Webpack: Use css-minimizer-webpack-plugin. Vite: Built-in for production builds. PostCSS: Add cssnano plugin.\n\nFor quick manual checks, use online tools like Toolkio's CSS Minifier."
+        },
+        {
+          heading: "Beyond Minification",
+          body: "Remove unused CSS with PurgeCSS or Chrome DevTools Coverage tab. Split CSS by page to avoid loading unnecessary styles. Inline critical CSS for faster first paint."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "CSS 압축하면 원래 코드로 되돌릴 수 있나요?",
+        answer: "완벽하게는 안 돼요. 주석과 변수명은 복구할 수 없어요. 그래서 원본 CSS 파일은 항상 보관하고, 배포할 때만 압축 버전을 사용하세요.",
+      },
+      {
+        question: "CSS 압축과 Gzip 압축은 다른 건가요?",
+        answer: "네, 다른 개념이에요. CSS 압축은 불필요한 문자를 제거하는 거고, Gzip은 서버에서 파일을 전송할 때 압축하는 거예요. 둘 다 적용하면 효과가 더 커요.",
+      },
+      {
+        question: "CSS 압축으로 실제 체감 속도가 달라지나요?",
+        answer: "네, 특히 모바일이나 느린 네트워크에서 차이가 커요. 100KB CSS를 50KB로 줄이면 3G 환경에서 약 0.5초 빨라질 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "salary-calculator-after-tax-guide",
+    title: {
+      ko: "급여 계산기 사용법 - 실수령액, 4대보험, 소득세 한번에 계산",
+      en: "Salary Calculator Guide - Calculate Take-Home Pay, Insurance, and Tax",
+    },
+    description: {
+      ko: "월급에서 실제로 받는 금액을 계산하는 방법을 정리했습니다. 4대보험료, 소득세 공제 후 실수령액을 한번에 확인하세요.",
+      en: "Calculate your actual take-home salary after deductions. Understand insurance premiums and income tax calculations.",
+    },
+    date: "2026-04-03",
+    toolId: "salary-calculator",
+    image: "/images/blog/salary-calculator-after-tax-guide.webp",
+    keywords: ["급여 계산기", "실수령액 계산", "4대보험 계산", "월급 실수령액", "salary calculator"],
+    content: {
+      ko: [
+        {
+          heading: "연봉과 실수령액, 왜 이렇게 차이가 날까?",
+          body: "연봉 3,000만 원이면 월급이 250만 원이겠지? 이렇게 생각하기 쉽지만, 실제로 통장에 찍히는 금액은 약 220만 원 정도예요.\n\n차이가 나는 이유는 4대보험료와 소득세가 빠지기 때문이에요. 매월 급여에서 자동으로 공제되거든요.\n\n4대보험은 국민연금, 건강보험, 고용보험, 산재보험이에요. 소득세와 지방소득세도 원천징수되고요.\n\n이런 공제 항목을 정확히 알면 연봉 협상할 때 실수령액 기준으로 계산할 수 있어서 유리해요."
+        },
+        {
+          heading: "4대보험 공제율 정리",
+          body: "2026년 기준 4대보험 근로자 부담분이에요.\n\n국민연금은 월 급여의 4.5%예요. 회사도 4.5%를 내서 총 9%가 적립돼요. 상한액이 있어서 월 590만 원 이상은 더 안 빠져요.\n\n건강보험은 월 급여의 3.545%예요. 여기에 장기요양보험이 건강보험료의 12.95%가 추가돼요.\n\n고용보험은 월 급여의 0.9%예요. 회사는 업종에 따라 더 높은 비율을 부담해요.\n\n산재보험은 전액 회사 부담이라 급여에서 빠지지 않아요.\n\n이걸 다 합치면 급여의 약 9.4%가 4대보험료로 빠져요."
+        },
+        {
+          heading: "소득세 계산 방법",
+          body: "소득세는 근로소득 간이세액표에 따라 원천징수돼요. 급여가 높을수록 세율이 올라가는 누진세 구조예요.\n\n비과세 항목(식대 20만 원, 자가운전보조금 등)을 빼고 계산해요. 부양가족 수에 따라 공제 금액도 달라져요.\n\n지방소득세는 소득세의 10%가 추가로 빠져요. 소득세가 10만 원이면 지방소득세 1만 원이 추가되는 거죠.\n\n직접 계산하기 복잡하니까 [Toolkio 급여 계산기](/salary-calculator)를 사용하면 연봉만 입력하면 실수령액이 바로 나와요."
+        },
+        {
+          heading: "연봉별 실수령액 표",
+          body: "2026년 기준 연봉별 월 실수령액 예시예요. (부양가족 본인 1인 기준)\n\n연봉 2,400만 원이면 월 실수령액이 약 180만 원, 연봉 3,000만 원이면 약 221만 원, 연봉 3,600만 원이면 약 261만 원, 연봉 4,200만 원이면 약 299만 원, 연봉 5,000만 원이면 약 347만 원, 연봉 6,000만 원이면 약 407만 원이에요.\n\n연봉이 올라갈수록 세율이 높아져서 실수령 비율은 낮아져요. 연봉 3,000만 원은 약 88%를 받지만, 6,000만 원은 약 81%를 받거든요.\n\n[퍼센트 계산기](/percent-calculator)로 본인 급여에서 공제 비율을 정확히 확인해보세요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Take-Home Pay Differs from Gross Salary",
+          body: "Your actual paycheck is less than your gross salary due to mandatory deductions: social insurance premiums (pension, health, employment) and income tax.\n\nThese are automatically withheld each month. Understanding them helps you negotiate salaries based on real take-home amounts."
+        },
+        {
+          heading: "Insurance Premium Rates",
+          body: "National Pension: 4.5% of monthly salary (employer matches 4.5%). Health Insurance: 3.545% plus long-term care surcharge. Employment Insurance: 0.9%. Workers' Comp: paid entirely by employer.\n\nTotal employee deduction: approximately 9.4% of gross salary."
+        },
+        {
+          heading: "Income Tax Calculation",
+          body: "Income tax follows a progressive bracket system. Non-taxable items (meal allowance, transport) are excluded. Local income tax adds 10% of national income tax.\n\nUse Toolkio's salary calculator to instantly compute your take-home pay."
+        },
+        {
+          heading: "Salary to Take-Home Pay Examples",
+          body: "Annual 30M KRW: ~2.21M/month take-home. Annual 50M KRW: ~3.47M/month. Annual 60M KRW: ~4.07M/month.\n\nHigher salaries have higher tax rates, so the take-home percentage decreases as income rises."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "비과세 항목은 어떤 것들이 있나요?",
+        answer: "식대(월 20만 원), 자가운전보조금(월 20만 원), 야간근로수당(생산직), 출산/보육수당(월 10만 원) 등이 있어요. 이 항목들은 세금 계산에서 제외되므로 실수령액이 늘어나요.",
+      },
+      {
+        question: "연봉 협상할 때 실수령액 기준으로 하는 게 맞나요?",
+        answer: "네, 실수령액으로 비교하는 게 현실적이에요. 같은 연봉이라도 회사마다 비과세 항목이 달라서 실수령액이 다를 수 있거든요.",
+      },
+      {
+        question: "퇴직금은 실수령액에 포함되나요?",
+        answer: "아니요, 퇴직금은 별도예요. 퇴직 시 지급되며, 연봉과는 별개로 계산돼요. 연봉에 퇴직금 포함 여부를 확인하는 게 중요해요.",
+      },
+    ],
+  },
+  {
+    slug: "uuid-generator-usage-guide-developers",
+    title: {
+      ko: "UUID 생성기 사용법 - 개발자가 알아야 할 UUID 버전별 차이",
+      en: "UUID Generator Guide - Understanding UUID Versions for Developers",
+    },
+    description: {
+      ko: "UUID 생성기 사용법과 버전별 차이를 정리했습니다. v1, v4, v7의 특징과 실무에서 어떤 버전을 써야 하는지 알려드려요.",
+      en: "Learn about UUID versions and when to use each. Practical guide covering v1, v4, v7 differences for real-world development.",
+    },
+    date: "2026-04-03",
+    toolId: "uuid-generator",
+    image: "/images/blog/uuid-generator-usage-guide-developers.webp",
+    keywords: ["UUID 생성기", "UUID 생성", "UUID v4", "UUID 사용법", "uuid generator"],
+    content: {
+      ko: [
+        {
+          heading: "UUID가 뭐고 왜 필요한가요?",
+          body: "UUID는 Universally Unique Identifier의 약자로, 전 세계에서 유일한 식별자를 만드는 표준이에요. 550e8400-e29b-41d4-a716-446655440000 이런 형태죠.\n\n왜 필요하냐면, 데이터베이스에서 자동 증가 ID(1, 2, 3...)를 쓰면 다른 시스템과 데이터를 합칠 때 ID가 충돌할 수 있거든요. UUID는 충돌 확률이 사실상 0이에요.\n\n분산 시스템에서도 유용해요. 여러 서버가 동시에 데이터를 생성해도 각각 고유한 ID를 만들 수 있거든요."
+        },
+        {
+          heading: "UUID 버전별 차이",
+          body: "UUID v1은 타임스탬프와 MAC 주소를 기반으로 만들어요. 생성 시간 순서대로 정렬이 가능하지만, MAC 주소가 노출되는 보안 문제가 있어요.\n\nUUID v4는 완전히 랜덤으로 생성돼요. 가장 널리 사용되는 버전이에요. 보안성이 높고 구현이 간단하지만, 데이터베이스 인덱스 성능이 좋지 않을 수 있어요.\n\nUUID v7은 2024년에 새로 표준화된 버전이에요. 타임스탬프 기반이라 시간순 정렬이 가능하면서도 v1의 보안 문제가 없어요. 데이터베이스 인덱스 성능도 좋아서 최근 가장 추천되는 버전이에요.\n\n실무에서는 UUID v4가 가장 무난하고, 정렬이 필요하면 v7을 쓰세요."
+        },
+        {
+          heading: "프로그래밍 언어별 UUID 생성하기",
+          body: "JavaScript에서는 crypto.randomUUID()로 v4 UUID를 생성할 수 있어요. Node.js와 브라우저 모두 지원하거든요.\n\nPython에서는 import uuid 후 uuid.uuid4()로 생성해요. uuid.uuid1()은 v1이고 uuid.uuid7()은 v7이에요.\n\nJava에서는 UUID.randomUUID()를 사용하면 돼요. Spring 프로젝트에서 엔티티 ID로 많이 쓰이죠.\n\n빠르게 테스트용 UUID가 필요하면 [Toolkio UUID 생성기](/uuid-generator)에서 바로 만들 수 있어요. 여러 개를 한꺼번에 생성하는 것도 가능하거든요."
+        },
+        {
+          heading: "UUID 사용 시 주의사항",
+          body: "데이터베이스에서 UUID를 기본 키(PK)로 쓸 때는 저장 형태에 주의하세요. VARCHAR(36)로 저장하면 인덱스 성능이 떨어져요. BINARY(16)이나 전용 UUID 타입을 쓰는 게 좋아요.\n\nMySQL에서는 UUID v4를 PK로 쓰면 인서트 성능이 크게 떨어질 수 있어요. 랜덤 값이라 인덱스 페이지 분할이 자주 발생하거든요. UUID v7이나 ordered UUID를 쓰면 이 문제를 해결할 수 있어요.\n\nURL에 UUID를 노출할 때는 보안을 고려하세요. UUID로 리소스에 접근하는 경우, UUID만 알면 누구나 접근할 수 있으니 별도의 권한 체크가 필요해요.\n\n[해시 생성기 가이드](/blog/hash-generator-md5-sha256-guide)에서 다루는 해시값과 UUID는 용도가 다르니 혼동하지 마세요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is UUID and Why Use It?",
+          body: "UUID (Universally Unique Identifier) creates globally unique IDs like 550e8400-e29b-41d4-a716-446655440000.\n\nUnlike auto-increment IDs, UUIDs never collide across systems. Essential for distributed systems where multiple servers create data simultaneously."
+        },
+        {
+          heading: "UUID Version Differences",
+          body: "v1: Timestamp + MAC address. Sortable but exposes hardware info.\nv4: Fully random. Most widely used, secure, but poor index performance.\nv7: Timestamp-based (2024 standard). Sortable, secure, good DB performance. Recommended for new projects."
+        },
+        {
+          heading: "Generating UUIDs by Language",
+          body: "JavaScript: crypto.randomUUID() for v4.\nPython: uuid.uuid4() or uuid.uuid7().\nJava: UUID.randomUUID().\n\nFor quick generation, use Toolkio's UUID Generator."
+        },
+        {
+          heading: "Best Practices",
+          body: "Store as BINARY(16) not VARCHAR(36) for better DB performance. Use UUID v7 or ordered UUIDs as primary keys in MySQL to avoid index fragmentation. Always add authorization checks when exposing UUIDs in URLs."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "UUID가 중복될 확률은 얼마나 되나요?",
+        answer: "UUID v4 기준으로, 초당 10억 개씩 86년간 생성해야 50% 확률로 하나가 중복돼요. 사실상 중복 불가능한 수준이에요.",
+      },
+      {
+        question: "UUID 대신 다른 고유 ID를 쓸 수 있나요?",
+        answer: "네, ULID, nanoid, KSUID 같은 대안이 있어요. ULID는 시간순 정렬이 가능하고 UUID보다 짧아서 인기가 늘고 있어요.",
+      },
+      {
+        question: "UUID에서 하이픈(-)을 빼도 되나요?",
+        answer: "기술적으로는 문제없어요. 하지만 표준 형식은 하이픈이 포함된 36자리예요. 저장 공간을 아끼려면 하이픈 없이 32자리로 저장하고, 표시할 때만 하이픈을 넣을 수 있어요.",
+      },
+    ],
+  },
 ];
