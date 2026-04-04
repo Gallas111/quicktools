@@ -8633,4 +8633,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "regex-tester-guide-practical",
+    title: {
+      ko: "정규식 테스트 사이트 추천 — 초보자도 5분이면 배우는 정규표현식",
+      en: "Regex Tester Guide — Learn Regular Expressions in 5 Minutes",
+    },
+    description: {
+      ko: "정규식 테스트 사이트 추천과 자주 쓰는 정규표현식 패턴을 정리했어요. 이메일, 전화번호, URL 검증 패턴도 포함돼 있어요.",
+      en: "Best regex tester sites and commonly used patterns. Includes email, phone, and URL validation regex examples.",
+    },
+    date: "2026-04-04",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-tester-guide-practical.webp",
+    keywords: ["정규식 테스트", "정규식 테스트 사이트", "정규표현식", "regex tester", "정규식 패턴"],
+    content: {
+      ko: [
+        {
+          heading: "정규식이 뭔가요?",
+          body: "정규식(Regular Expression)은 텍스트에서 특정 패턴을 찾는 도구예요. 예를 들어 이메일 주소만 뽑아내거나, 전화번호 형식이 맞는지 확인할 때 쓰거든요.\n\n처음 보면 암호 같아요. /^[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-z]+$/ 이런 게 정규식이에요. 근데 하나씩 뜯어보면 의외로 간단하더라고요.\n\n개발자뿐 아니라 마케터, 데이터 분석가도 엑셀이나 구글 시트에서 정규식을 쓸 수 있어요."
+        },
+        {
+          heading: "자주 쓰는 정규식 패턴 5가지",
+          body: "이메일 검증: /^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$/ 이게 가장 기본적인 이메일 패턴이에요.\n\n한국 휴대폰 번호: /^01[016789]-?\\d{3,4}-?\\d{4}$/ 010, 011, 016, 017, 018, 019를 모두 커버해요.\n\nURL 검증: /^https?:\\/\\/[\\w.-]+\\.[a-zA-Z]{2,}/ http와 https 모두 매칭돼요.\n\n숫자만 추출: /\\d+/g 텍스트에서 숫자 부분만 뽑아낼 때 쓰세요.\n\n공백 제거: /\\s+/g 불필요한 공백을 찾아서 제거할 때 사용해요.\n\n[Toolkio 정규식 테스터](/regex-tester)에서 직접 테스트해볼 수 있어요."
+        },
+        {
+          heading: "정규식 기초 문법",
+          body: ". (점)은 아무 글자 한 개를 의미해요. * 은 0번 이상 반복, + 는 1번 이상 반복이에요.\n\n\\d는 숫자, \\w는 영문자/숫자/밑줄, \\s는 공백이에요. 대문자(\\D, \\W, \\S)는 반대 의미거든요.\n\n대괄호 안에 문자를 넣으면 그 중 하나와 매칭돼요. [abc]는 a, b, c 중 하나예요. [0-9]는 숫자 0~9 중 하나고요.\n\n^는 시작, $는 끝을 의미해요. ^hello$는 정확히 'hello'만 매칭하거든요."
+        },
+        {
+          heading: "실무에서 정규식 활용하기",
+          body: "로그 파일에서 에러만 뽑아내기, CSV 데이터 정리하기, 입력값 유효성 검사하기 등에 정규식이 쓰여요.\n\nVSCode에서 Ctrl+H로 찾기/바꾸기 할 때 정규식을 켜면 패턴 기반으로 일괄 수정이 가능해요. 코드 리팩토링할 때 엄청 편하거든요.\n\n구글 시트에서도 REGEXMATCH, REGEXEXTRACT 함수로 정규식을 사용할 수 있어요. 데이터 정리할 때 유용하더라고요.\n\n[글자수 세기 도구](/blog/character-counter-spaces-bytes-guide)와 함께 사용하면 텍스트 처리가 더 편해져요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Regex?",
+          body: "Regular expressions (regex) find patterns in text. Use them for email validation, phone number checks, data extraction, and more."
+        },
+        {
+          heading: "Common Regex Patterns",
+          body: "Email: /^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$/\nPhone: /^\\+?\\d{10,14}$/\nURL: /^https?:\\/\\/[\\w.-]+\\.[a-zA-Z]{2,}/\nDigits only: /\\d+/g"
+        },
+        {
+          heading: "Regex Basics",
+          body: ". matches any character. * means 0+, + means 1+. \\d = digit, \\w = word char, \\s = whitespace. ^ = start, $ = end."
+        },
+        {
+          heading: "Practical Uses",
+          body: "Log parsing, data cleanup, input validation, VSCode find/replace, Google Sheets REGEX functions."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정규식을 몰라도 개발할 수 있나요?",
+        answer: "기본적인 개발은 가능하지만, 데이터 처리나 입력 검증에서 정규식을 알면 코드가 훨씬 간결해져요. 기초만 알아도 업무 효율이 크게 올라가거든요.",
+      },
+      {
+        question: "정규식 테스트 사이트 중 어디가 좋나요?",
+        answer: "regex101.com이 가장 인기 있어요. 실시간 매칭 결과, 해설, 다양한 언어 지원이 돼요. 간단한 테스트는 Toolkio 정규식 테스터에서도 바로 할 수 있어요.",
+      },
+      {
+        question: "정규식이 프로그래밍 언어마다 다른가요?",
+        answer: "기본 문법은 같지만 세부적으로 차이가 있어요. JavaScript, Python, Java 등에서 약간씩 다르거든요. 테스트 사이트에서 언어를 선택하고 확인하는 게 안전해요.",
+      },
+    ],
+  },
+  {
+    slug: "markdown-preview-guide-complete",
+    title: {
+      ko: "마크다운 미리보기 — 문법 정리와 실시간 에디터 추천",
+      en: "Markdown Preview Guide — Syntax Cheat Sheet and Editor Recommendations",
+    },
+    description: {
+      ko: "마크다운 미리보기 방법과 핵심 문법을 정리했어요. VSCode, 온라인 에디터 등 실시간 미리보기가 가능한 도구도 추천해요.",
+      en: "Complete markdown syntax guide with live preview tools. Covers headings, lists, links, images, and recommended editors.",
+    },
+    date: "2026-04-04",
+    toolId: "markdown-preview",
+    image: "/images/blog/markdown-preview-guide-complete.webp",
+    keywords: ["마크다운 미리보기", "마크다운 문법", "마크다운 에디터", "markdown preview", "마크다운 사용법"],
+    content: {
+      ko: [
+        {
+          heading: "마크다운이 뭔가요?",
+          body: "마크다운(Markdown)은 텍스트를 서식 있는 문서로 변환하는 경량 마크업 언어예요. # 붙이면 제목, ** 감싸면 굵은 글씨가 되는 거죠.\n\nGitHub README, 노션, 블로그 등에서 널리 쓰여요. 한 번 배우면 어디서든 쓸 수 있어서 개발자가 아니어도 알아두면 유용하거든요.\n\nHTML보다 훨씬 간단하고 직관적이에요. 5분이면 핵심 문법을 다 배울 수 있어요."
+        },
+        {
+          heading: "핵심 마크다운 문법 정리",
+          body: "제목: # 하나면 h1, ## 두 개면 h2, ### 세 개면 h3이에요. 최대 6단계까지 가능해요.\n\n굵은 글씨: **텍스트** 또는 __텍스트__로 감싸면 돼요.\n기울임: *텍스트* 또는 _텍스트_예요.\n취소선: ~~텍스트~~로 감싸면 돼요.\n\n목록: - 또는 * 로 시작하면 불릿 목록, 1. 2. 3. 으로 시작하면 번호 목록이에요.\n\n링크: [표시할 텍스트](URL) 형식이에요.\n이미지: ![대체 텍스트](이미지 URL) 형식이고요.\n\n코드: 인라인은 백틱(`)으로 감싸고, 코드 블록은 백틱 3개(```)로 감싸면 돼요."
+        },
+        {
+          heading: "마크다운 미리보기 도구 추천",
+          body: "VSCode에서 Ctrl+Shift+V를 누르면 마크다운 미리보기가 열려요. Ctrl+K V를 누르면 옆에 나란히 표시돼요. 별도 설치 없이 바로 사용 가능하거든요.\n\n온라인 도구로는 [Toolkio 마크다운 미리보기](/markdown-preview)가 있어요. 브라우저에서 바로 쓸 수 있고, 실시간으로 결과가 표시돼요.\n\n노션이나 Obsidian도 마크다운 기반이에요. 노트 앱을 쓰고 있다면 이미 마크다운을 쓰고 있는 거예요.\n\nTypora는 WYSIWYG 방식이라 작성하면서 바로 결과가 보여요. 마크다운에 익숙하지 않은 분에게 추천해요."
+        },
+        {
+          heading: "마크다운 활용 팁",
+          body: "표(Table) 만들기: 파이프(|)와 하이픈(-)으로 표를 만들 수 있어요. | 이름 | 나이 | 이런 식으로요.\n\n체크박스: - [ ] 와 - [x] 로 할 일 목록을 만들 수 있어요. GitHub 이슈에서 자주 쓰이거든요.\n\n인용구: > 로 시작하면 인용 블록이에요. 중요한 내용을 강조할 때 유용해요.\n\n수평선: --- 또는 *** 로 구분선을 넣을 수 있어요.\n\n마크다운 문서를 PDF로 변환하고 싶다면 VSCode의 Markdown PDF 확장이나 pandoc을 사용하세요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Markdown?",
+          body: "Markdown converts plain text to formatted documents. # for headings, ** for bold, * for italic. Used in GitHub, Notion, blogs."
+        },
+        {
+          heading: "Essential Syntax",
+          body: "Headings: # to ######. Bold: **text**. Italic: *text*. Links: [text](url). Images: ![alt](url). Code: `inline` or ``` block."
+        },
+        {
+          heading: "Preview Tools",
+          body: "VSCode: Ctrl+Shift+V. Online: Toolkio Markdown Preview. Apps: Typora, Obsidian, Notion."
+        },
+        {
+          heading: "Advanced Tips",
+          body: "Tables with |. Checklists with - [ ]. Blockquotes with >. Horizontal rules with ---. Export to PDF with pandoc."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "마크다운과 HTML의 차이가 뭔가요?",
+        answer: "마크다운은 HTML보다 훨씬 간단해요. 마크다운은 결국 HTML로 변환되거든요. 복잡한 레이아웃이 필요하면 HTML을 쓰고, 텍스트 위주 문서는 마크다운이 효율적이에요.",
+      },
+      {
+        question: "마크다운을 워드 파일로 변환할 수 있나요?",
+        answer: "네, pandoc이라는 도구를 쓰면 .md 파일을 .docx, .pdf, .html 등으로 변환할 수 있어요. 무료 오픈소스 도구예요.",
+      },
+      {
+        question: "노션에서 마크다운을 쓸 수 있나요?",
+        answer: "네, 노션은 마크다운 단축키를 지원해요. /, #, **, - 등의 문법을 그대로 쓸 수 있어요. 마크다운 파일을 가져오기/내보내기하는 것도 가능하거든요.",
+      },
+    ],
+  },
+  {
+    slug: "timestamp-converter-unix-guide",
+    title: {
+      ko: "타임스탬프 변환기 사용법 — 유닉스 시간 쉽게 변환하기",
+      en: "Timestamp Converter Guide — Convert Unix Time Easily",
+    },
+    description: {
+      ko: "유닉스 타임스탬프 변환기 사용법과 타임스탬프의 개념을 정리했어요. 밀리초, 초 단위 변환 방법과 프로그래밍 언어별 예시도 포함했어요.",
+      en: "Learn how to convert Unix timestamps. Covers seconds vs milliseconds, programming language examples, and common use cases.",
+    },
+    date: "2026-04-04",
+    toolId: "timestamp",
+    image: "/images/blog/timestamp-converter-unix-guide.webp",
+    keywords: ["타임스탬프 변환", "유닉스 타임스탬프", "타임스탬프 변환기", "unix timestamp", "타임스탬프 변환 사이트"],
+    content: {
+      ko: [
+        {
+          heading: "유닉스 타임스탬프란?",
+          body: "유닉스 타임스탬프는 1970년 1월 1일 00:00:00 UTC부터 경과한 초(seconds)를 숫자로 표현한 거예요. 예를 들어 1712188800은 2024년 4월 4일이에요.\n\n왜 이런 방식을 쓰느냐면, 날짜를 숫자 하나로 표현하면 시간대(timezone) 상관없이 정확한 시점을 나타낼 수 있거든요.\n\n데이터베이스, API, 로그 파일 등에서 널리 사용돼요. 개발하다 보면 자주 마주치는 형식이에요."
+        },
+        {
+          heading: "초 단위 vs 밀리초 단위",
+          body: "타임스탬프에는 두 가지 형태가 있어요. 10자리(초 단위)와 13자리(밀리초 단위)예요.\n\n1712188800은 초 단위예요. JavaScript의 Date.now()는 1712188800000처럼 밀리초 단위를 반환하거든요.\n\n변환할 때 자릿수를 확인하는 게 중요해요. 13자리를 초 단위로 잘못 변환하면 엉뚱한 날짜가 나오거든요. 13자리면 1000으로 나눠서 변환하세요.\n\n[Toolkio 타임스탬프 변환기](/timestamp)에서 초/밀리초를 자동 감지해서 변환해줘요."
+        },
+        {
+          heading: "프로그래밍 언어별 타임스탬프 다루기",
+          body: "JavaScript: Date.now()로 현재 타임스탬프를 얻고, new Date(timestamp * 1000)으로 날짜 객체로 변환해요.\n\nPython: import time 후 time.time()으로 현재 타임스탬프를 구해요. datetime.fromtimestamp(ts)로 날짜 변환이 가능해요.\n\nMySQL: FROM_UNIXTIME(timestamp) 함수로 변환하고, UNIX_TIMESTAMP() 함수로 현재 타임스탬프를 구해요.\n\nExcel에서는 =(A1/86400)+DATE(1970,1,1) 공식으로 변환할 수 있어요. 86400은 하루의 초 수(60*60*24)거든요."
+        },
+        {
+          heading: "타임스탬프 실무 활용",
+          body: "API 응답에서 날짜가 숫자로 오는 경우가 많아요. 이때 타임스탬프 변환기로 확인하면 디버깅이 편해져요.\n\n로그 분석할 때도 유용해요. 서버 로그의 타임스탬프를 읽을 수 있는 날짜로 변환하면 문제 발생 시점을 정확히 파악할 수 있거든요.\n\n캐시 만료 시간, 토큰 유효기간 등도 타임스탬프로 관리돼요. 현재 시간과 비교해서 만료 여부를 체크하는 거예요.\n\n[Base64 변환 가이드](/blog/base64-encoding-decoding-practical-guide)와 함께 알아두면 API 디버깅이 훨씬 수월해져요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Unix Timestamp?",
+          body: "Seconds since January 1, 1970 UTC. A single number representing an exact point in time, timezone-independent."
+        },
+        {
+          heading: "Seconds vs Milliseconds",
+          body: "10-digit = seconds, 13-digit = milliseconds. JavaScript Date.now() returns milliseconds. Divide by 1000 to convert."
+        },
+        {
+          heading: "Language Examples",
+          body: "JS: Date.now(), new Date(ts*1000). Python: time.time(), datetime.fromtimestamp(). MySQL: FROM_UNIXTIME(). Excel: =(A1/86400)+DATE(1970,1,1)."
+        },
+        {
+          heading: "Practical Uses",
+          body: "API debugging, log analysis, cache expiration, token validity checks."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "2038년 문제가 뭔가요?",
+        answer: "32비트 시스템에서 유닉스 타임스탬프가 2038년 1월 19일에 오버플로우 되는 문제예요. 64비트 시스템에서는 발생하지 않고, 대부분의 최신 시스템은 이미 대응이 되어 있어요.",
+      },
+      {
+        question: "타임스탬프에 시간대(timezone)는 어떻게 처리하나요?",
+        answer: "타임스탬프 자체는 UTC 기준이에요. 한국 시간(KST)으로 변환하려면 9시간(32400초)을 더하면 돼요. 프로그래밍에서는 시간대 라이브러리를 사용하는 게 안전해요.",
+      },
+      {
+        question: "엑셀에서 타임스탬프를 변환할 수 있나요?",
+        answer: "네, =(셀/86400)+DATE(1970,1,1) 공식을 쓰면 돼요. 그다음 셀 서식을 날짜로 바꾸면 읽을 수 있는 날짜가 표시돼요.",
+      },
+    ],
+  },
+  {
+    slug: "image-compression-guide-web",
+    title: {
+      ko: "이미지 압축 방법 — 화질 유지하면서 용량 80% 줄이기",
+      en: "Image Compression Guide — Reduce Size by 80% Without Quality Loss",
+    },
+    description: {
+      ko: "이미지 압축 방법을 무료 사이트, 프로그램, 온라인 도구별로 정리했어요. 화질은 유지하면서 용량을 크게 줄이는 방법을 알려드릴게요.",
+      en: "How to compress images while maintaining quality. Covers online tools, desktop programs, and format optimization tips.",
+    },
+    date: "2026-04-04",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compression-guide-web.webp",
+    keywords: ["이미지 압축", "이미지 압축 사이트", "이미지 압축 무료", "이미지 용량 줄이기", "image compression"],
+    content: {
+      ko: [
+        {
+          heading: "이미지 압축이 왜 중요한가요?",
+          body: "웹사이트에서 이미지는 전체 페이지 용량의 60~70%를 차지해요. 이미지를 압축하면 로딩 속도가 빨라지고, 모바일 데이터도 절약되거든요.\n\n구글 검색 순위(SEO)에도 영향을 미쳐요. 페이지 로딩 속도가 느리면 검색 순위가 떨어질 수 있어요.\n\n이메일 첨부, SNS 업로드, 클라우드 저장 등에서도 용량 제한 때문에 압축이 필요한 경우가 많더라고요."
+        },
+        {
+          heading: "이미지 포맷별 특징과 선택 가이드",
+          body: "JPEG: 사진에 적합해요. 손실 압축이라 용량이 작지만, 압축할수록 화질이 떨어져요. 품질 80% 설정이 용량과 화질의 최적 밸런스예요.\n\nPNG: 투명 배경이 필요한 로고, 아이콘에 적합해요. 무손실이라 화질이 완벽하지만 용량이 커요.\n\nWebP: 구글이 만든 포맷이에요. JPEG보다 25~34% 작으면서 화질은 비슷해요. 최신 브라우저 대부분이 지원하거든요.\n\nAVIF: 가장 최신 포맷이에요. WebP보다 더 작지만 아직 지원하지 않는 브라우저가 있어요.\n\n웹에서는 WebP를, 투명 배경이면 PNG를, 호환성이 중요하면 JPEG를 쓰세요."
+        },
+        {
+          heading: "무료 이미지 압축 도구 추천",
+          body: "[Toolkio 이미지 압축기](/image-compressor)에서 브라우저에서 바로 압축할 수 있어요. 서버에 업로드하지 않아서 개인정보가 안전하거든요.\n\nTinyPNG는 PNG와 JPEG 압축에 최적화돼 있어요. 드래그 앤 드롭으로 쉽게 쓸 수 있고, 월 500장 무료예요.\n\nSquoosh는 구글이 만든 도구예요. 압축 전후를 나란히 비교할 수 있어서 화질 확인이 편하거든요.\n\nImageOptim은 맥 전용 데스크톱 앱이에요. 폴더째로 일괄 압축이 가능해서 블로그 운영할 때 편해요."
+        },
+        {
+          heading: "실전 압축 팁",
+          body: "블로그 이미지는 가로 1200px이면 충분해요. 원본이 4000px이면 리사이즈만으로도 용량이 70% 줄어요.\n\n리사이즈 후에 압축을 하면 효과가 극대화돼요. 순서가 중요해요: 리사이즈 먼저, 압축은 그다음.\n\nJPEG 품질은 80%가 최적이에요. 눈으로 보기에 원본과 차이가 거의 없으면서 용량은 절반 이하로 줄어요.\n\n대량의 이미지를 처리해야 하면 CLI 도구인 cwebp(WebP 변환)이나 jpegoptim을 추천해요. 스크립트로 자동화할 수 있거든요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Compress Images?",
+          body: "Images are 60-70% of page weight. Compression speeds up loading, saves data, improves SEO rankings."
+        },
+        {
+          heading: "Format Guide",
+          body: "JPEG: photos, lossy. PNG: transparency, lossless. WebP: 25-34% smaller than JPEG. AVIF: newest, smallest."
+        },
+        {
+          heading: "Free Tools",
+          body: "Toolkio Image Compressor (browser-based, private). TinyPNG (500/month free). Squoosh (Google, side-by-side compare). ImageOptim (Mac)."
+        },
+        {
+          heading: "Pro Tips",
+          body: "Resize to 1200px first. Set JPEG quality to 80%. Resize before compressing. Use CLI tools for batch processing."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지 압축하면 화질이 많이 떨어지나요?",
+        answer: "적절하게 압축하면 눈으로 차이를 느끼기 어려워요. JPEG 80% 품질이면 원본과 거의 동일하면서 용량은 절반 이하로 줄어들거든요.",
+      },
+      {
+        question: "PNG를 JPEG로 바꾸면 용량이 줄어드나요?",
+        answer: "사진이라면 큰 폭으로 줄어요. 하지만 투명 배경이 필요한 이미지는 PNG를 유지해야 해요. WebP로 변환하면 둘 다의 장점을 가질 수 있어요.",
+      },
+      {
+        question: "온라인 이미지 압축 사이트에 이미지를 올려도 안전한가요?",
+        answer: "대부분의 서비스가 처리 후 이미지를 삭제한다고 하지만, 민감한 이미지는 브라우저에서 로컬로 처리하는 도구를 쓰는 게 안전해요. Toolkio는 서버 업로드 없이 브라우저에서 처리해요.",
+      },
+    ],
+  },
+  {
+    slug: "url-encoding-decoding-guide",
+    title: {
+      ko: "URL 인코딩 디코딩 가이드 — 특수문자 변환 원리와 실전 활용",
+      en: "URL Encoding Decoding Guide — How Special Characters Are Converted",
+    },
+    description: {
+      ko: "URL 인코딩과 디코딩의 원리를 쉽게 설명했어요. 특수문자가 왜 %20 같은 코드로 변환되는지, 실무에서 어떻게 활용하는지 알려드릴게요.",
+      en: "Understand URL encoding and decoding. Learn why special characters become %20, common encoding patterns, and practical usage in web development.",
+    },
+    date: "2026-04-04",
+    toolId: "url-encoder",
+    image: "/images/blog/url-encoding-decoding-guide.webp",
+    keywords: ["URL 인코딩", "URL 인코딩 디코딩", "URL 인코딩 변환", "URL encode decode", "URL 특수문자"],
+    content: {
+      ko: [
+        {
+          heading: "URL 인코딩이란?",
+          body: "URL에는 영문자, 숫자, 일부 특수문자만 직접 사용할 수 있어요. 그 외의 문자는 % 기호와 16진수 코드로 변환해야 하거든요.\n\n예를 들어 공백은 %20, 한글 '가'는 %EA%B0%80이 돼요. 이 변환 과정을 URL 인코딩(Percent Encoding)이라고 해요.\n\n왜 이런 게 필요하냐면, URL에서 ?, &, = 같은 문자는 특별한 의미를 가지고 있거든요. 이런 문자를 데이터로 전달하려면 인코딩해야 혼동이 없어요."
+        },
+        {
+          heading: "자주 쓰는 인코딩 변환표",
+          body: "공백 → %20 (또는 +)\n! → %21\n# → %23\n$ → %24\n& → %26\n+ → %2B\n= → %3D\n? → %3F\n@ → %40\n한글 → UTF-8 바이트를 각각 %XX로 변환\n\n이 중에서 공백(%20)과 한글 인코딩을 가장 많이 마주쳐요. 검색어에 한글이 포함되면 URL이 길어지는 이유가 이거예요.\n\n[Toolkio URL 인코더](/url-encoder)에서 바로 변환해볼 수 있어요."
+        },
+        {
+          heading: "프로그래밍에서 URL 인코딩 다루기",
+          body: "JavaScript: encodeURIComponent()는 특수문자를 인코딩하고, decodeURIComponent()는 디코딩해요. encodeURI()는 URL 전체를 인코딩하는데, /, ?, # 등은 변환하지 않아요.\n\nPython: urllib.parse.quote()와 urllib.parse.unquote()를 사용해요.\n\nJava: URLEncoder.encode(string, 'UTF-8')과 URLDecoder.decode()가 있어요.\n\n주의할 점은 encodeURI와 encodeURIComponent의 차이예요. 쿼리 파라미터 값만 인코딩할 때는 encodeURIComponent를, URL 전체를 인코딩할 때는 encodeURI를 쓰세요."
+        },
+        {
+          heading: "실무에서 URL 인코딩이 필요한 상황",
+          body: "API 호출할 때 쿼리 파라미터에 특수문자가 포함되면 반드시 인코딩해야 해요. 안 하면 서버가 잘못 해석할 수 있거든요.\n\n리다이렉트 URL을 파라미터로 전달할 때도 인코딩이 필요해요. URL 안에 URL이 들어가니까 구분이 안 되거든요.\n\n파일 이름에 한글이 있는 파일을 다운로드할 때 인코딩 문제가 자주 생겨요. Content-Disposition 헤더에서 filename*=UTF-8을 사용하면 해결돼요.\n\n[JSON 포맷터 가이드](/blog/json-formatter-validator-web-guide)에서 다루는 API 응답에도 인코딩된 URL이 포함되는 경우가 많아요."
+        },
+      ],
+      en: [
+        {
+          heading: "What Is URL Encoding?",
+          body: "Converting special characters to %XX format for safe URL transmission. Space becomes %20, non-ASCII chars use UTF-8 byte sequences."
+        },
+        {
+          heading: "Common Encodings",
+          body: "Space→%20, !→%21, #→%23, &→%26, =→%3D, ?→%3F, @→%40."
+        },
+        {
+          heading: "Programming",
+          body: "JS: encodeURIComponent/decodeURIComponent. Python: urllib.parse.quote/unquote. Java: URLEncoder.encode/URLDecoder.decode."
+        },
+        {
+          heading: "When You Need It",
+          body: "API query params, redirect URLs as params, file downloads with non-ASCII names, form data submission."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "%20과 +의 차이가 뭔가요?",
+        answer: "%20은 URL 경로에서 공백을 나타내고, +는 쿼리 스트링(form 데이터)에서 공백을 나타내요. 표준은 %20이지만, HTML 폼에서는 +를 사용하거든요.",
+      },
+      {
+        question: "한글 URL이 깨지는 이유가 뭔가요?",
+        answer: "서버와 클라이언트의 문자 인코딩이 다르면 깨져요. UTF-8로 통일하는 게 가장 안전해요. 인코딩할 때도 UTF-8 기준으로 하세요.",
+      },
+      {
+        question: "URL 인코딩을 두 번 하면 어떻게 되나요?",
+        answer: "%가 %25로 다시 인코딩돼요. 이중 인코딩은 디코딩할 때 문제가 생기니까 주의하세요. 이미 인코딩된 문자열을 다시 인코딩하지 않도록 확인하는 게 중요해요.",
+      },
+    ],
+  },
 ];
