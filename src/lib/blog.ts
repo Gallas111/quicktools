@@ -9303,4 +9303,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "age-calculator-korean-guide",
+    title: {
+      ko: "나이 계산기 — 만 나이, 한국 나이 빠르게 확인하는 법",
+      en: "Age Calculator — Quickly Check Your Korean Age and International Age",
+    },
+    description: {
+      ko: "만 나이와 한국 나이 차이, 헷갈릴 때 바로 확인하세요. 생년월일만 입력하면 끝입니다.",
+      en: "Confused about Korean age vs international age? Enter your birthdate and get both instantly.",
+    },
+    date: "2026-04-05",
+    toolId: "age-calculator",
+    image: "/images/blog/age-calculator-korean-guide.webp",
+    keywords: ["나이 계산기", "만 나이 계산", "한국 나이 계산", "age calculator", "Korean age"],
+    content: {
+      ko: [
+        {
+          heading: "만 나이와 한국 나이, 뭐가 다른 거예요?",
+          body: "2023년부터 한국도 공식적으로 만 나이를 쓰게 됐지만, 일상에서는 여전히 한국 나이가 많이 쓰여요. 둘 다 알아야 하는 상황이 은근 많습니다.\n\n- 만 나이: 태어난 날 0살, 생일이 지나야 1살 추가\n- 한국 나이: 태어나면 1살, 매년 1월 1일에 1살 추가\n- 연 나이: 올해 연도 - 태어난 연도\n\n예를 들어 2000년 12월생이 2026년 3월 기준이면, 만 나이 25세, 한국 나이 27세, 연 나이 26세가 돼요. 이거 머릿속으로 계산하다 보면 헷갈리니까 계산기 쓰는 게 편합니다.",
+        },
+        {
+          heading: "나이 계산이 필요한 실제 상황들",
+          body: "나이 계산이 필요한 순간은 생각보다 자주 옵니다.\n\n- 병원 접수: 만 나이 기준으로 소아과/성인 구분\n- 보험 가입: 만 나이에 따라 보험료가 달라짐\n- 군 입대: 만 나이 기준\n- 주민등록증 발급: 만 17세\n- 음주/흡연: 만 19세 이상\n- 대학 입학: 연 나이 기준이 많음\n- 외국인 친구에게 설명할 때: 만 나이 사용\n\n특히 연말 생일인 분들은 한국 나이와 만 나이 차이가 최대 2살까지 벌어지기도 해요.",
+        },
+        {
+          heading: "Toolkio 나이 계산기 사용법",
+          body: "사용법은 정말 간단해요.\n\n1. 생년월일을 입력하세요\n2. 만 나이, 한국 나이, 연 나이가 동시에 표시됩니다\n3. 다음 생일까지 남은 일수도 확인할 수 있어요\n\n별도 앱 설치 없이 브라우저에서 바로 확인 가능하고, 입력한 정보는 서버로 전송되지 않아서 안전합니다.",
+        },
+        {
+          heading: "나이 계산 꿀팁 정리",
+          body: "빠르게 암산하는 팁도 알아두면 좋아요.\n\n- 만 나이 빠른 계산: 올해 연도 - 출생 연도 - (생일 안 지났으면 1)\n- 한국 나이: 올해 연도 - 출생 연도 + 1\n- 띠 계산: 출생 연도를 12로 나눈 나머지로 확인\n\n하지만 정확한 날짜까지 따져야 할 때는 계산기를 쓰는 게 실수를 줄여줍니다. 특히 2월 29일 생일인 분들은 윤년 계산까지 해야 해서 더 복잡하거든요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Korean Age vs International Age",
+          body: "In Korea, there are actually three different ways to count age:\n\n- International age (만 나이): Start at 0, add 1 on each birthday\n- Korean age: Start at 1, add 1 every January 1st\n- Year age (연 나이): Current year minus birth year\n\nSince 2023, Korea officially adopted international age for legal purposes, but Korean age is still widely used in daily conversation.",
+        },
+        {
+          heading: "When Do You Need an Age Calculator?",
+          body: "Age calculations matter more than you'd think:\n\n- Hospital visits: pediatric vs adult care cutoffs\n- Insurance: premiums change based on exact age\n- Legal drinking age: 19 in Korea (international age)\n- Military service: based on international age\n- Explaining your age to Korean friends (or vice versa)\n\nFor people born in December, the gap between Korean and international age can be up to 2 years.",
+        },
+        {
+          heading: "How to Use Toolkio Age Calculator",
+          body: "It's incredibly simple:\n\n1. Enter your date of birth\n2. See international age, Korean age, and year age all at once\n3. Check how many days until your next birthday\n\nNo app installation needed — works right in your browser.",
+        },
+        {
+          heading: "Quick Mental Math Tips",
+          body: "For quick estimates:\n\n- International age: Current year - Birth year - (1 if birthday hasn't passed)\n- Korean age: Current year - Birth year + 1\n- Zodiac sign: Birth year mod 12\n\nBut when precision matters — especially for legal or medical purposes — use a calculator to avoid mistakes.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "만 나이와 한국 나이 차이가 최대 몇 살까지 나나요?",
+        answer: "최대 2살까지 차이가 날 수 있어요. 예를 들어 12월 31일생은 다음 날인 1월 1일에 한국 나이가 2살이 되지만, 만 나이는 여전히 0살이에요.",
+      },
+      {
+        question: "2023년부터 만 나이 통일됐다면서요?",
+        answer: "네, 법적으로는 만 나이가 기준이에요. 하지만 일상 대화나 학교에서는 여전히 한국 나이를 많이 써요. 두 가지 다 알아두는 게 좋습니다.",
+      },
+      {
+        question: "외국에서도 나이 세는 방식이 다른가요?",
+        answer: "대부분의 나라는 만 나이를 사용해요. 한국처럼 태어나자마자 1살로 세는 건 동아시아 일부 국가의 전통이에요. 중국, 일본도 과거에는 비슷했지만 지금은 만 나이를 쓰고 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "gpa-calculator-university-guide",
+    title: {
+      ko: "학점 계산기 — 4.5 만점 학점 평균 쉽게 계산하는 법",
+      en: "GPA Calculator — How to Calculate Your University GPA on a 4.5 Scale",
+    },
+    description: {
+      ko: "대학 학점 평균, 직접 계산하면 틀리기 쉬워요. 학점 계산기로 전공/교양 평점을 한 번에 확인하세요.",
+      en: "Calculating your university GPA manually is error-prone. Use a GPA calculator to get your major and overall GPA instantly.",
+    },
+    date: "2026-04-05",
+    toolId: "gpa-calculator",
+    image: "/images/blog/gpa-calculator-university-guide.webp",
+    keywords: ["학점 계산기", "GPA 계산", "대학 학점 계산", "학점 평균", "4.5 만점"],
+    content: {
+      ko: [
+        {
+          heading: "학점 관리, 왜 중요한가요?",
+          body: "대학 생활에서 학점은 거의 모든 곳에 영향을 미쳐요.\n\n- 장학금: 대부분 3.5 이상 기준\n- 대학원 진학: 전공 평점 3.8 이상 권장\n- 취업: 대기업 서류 커트라인 3.0~3.5\n- 교환학생: 3.0 이상 지원 가능\n- 졸업 요건: 학교마다 최소 평점 기준 있음\n\n한 학기라도 관리를 소홀히 하면 전체 평점을 올리기가 정말 어려워요. 매 학기 끝나면 바로 확인하는 습관이 중요합니다.",
+        },
+        {
+          heading: "학점 평균 계산 원리",
+          body: "학점 평균(GPA)은 이렇게 계산해요.\n\n1. 각 과목의 학점(credit) × 성적(grade point)을 곱합니다\n2. 모든 과목의 곱을 더합니다\n3. 총 학점(credit) 수로 나눕니다\n\n예시:\n- 전공A (3학점, A+ = 4.5): 3 × 4.5 = 13.5\n- 전공B (3학점, B+ = 3.5): 3 × 3.5 = 10.5\n- 교양C (2학점, A0 = 4.0): 2 × 4.0 = 8.0\n- 합계: (13.5 + 10.5 + 8.0) ÷ (3 + 3 + 2) = 32.0 ÷ 8 = 4.0\n\n4.5 만점 기준 성적 등급:\nA+ = 4.5 / A0 = 4.0 / B+ = 3.5 / B0 = 3.0 / C+ = 2.5 / C0 = 2.0 / D+ = 1.5 / D0 = 1.0 / F = 0",
+        },
+        {
+          heading: "Toolkio 학점 계산기 사용법",
+          body: "수기 계산은 과목 수가 많아지면 실수하기 쉬워요. Toolkio 학점 계산기를 쓰면 간단합니다.\n\n1. 과목명, 학점(credit), 성적 등급을 입력\n2. 과목 추가 버튼으로 원하는 만큼 추가\n3. 자동으로 전체 평점과 취득 학점이 계산됩니다\n\nP/F 과목은 평점 계산에서 자동 제외되고, 4.5 만점과 4.3 만점 모두 지원해요.",
+        },
+        {
+          heading: "학점 올리는 현실적인 팁",
+          body: "학점 관리를 위한 실전 팁을 정리했어요.\n\n- 재수강 활용: F나 D 과목은 재수강으로 성적 교체 가능 (학교별 규정 확인)\n- 전략적 수강: 학기 초에 강의 평가 사이트에서 A+ 비율 확인\n- P/F 활용: 자신 없는 교양은 P/F로 전환해서 평점 방어\n- 학점 시뮬레이션: 목표 평점에 도달하려면 남은 학기에 몇 점이 필요한지 미리 계산\n\n특히 졸업 전에 목표 평점이 있다면, 역산해서 매 학기 필요한 성적을 계산해두면 동기부여가 됩니다.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why GPA Matters in University",
+          body: "Your GPA affects almost every aspect of university life:\n\n- Scholarships: Most require 3.5+ on a 4.5 scale\n- Graduate school: Major GPA of 3.8+ recommended\n- Employment: Large companies often set cutoffs at 3.0-3.5\n- Exchange programs: Usually require 3.0+\n- Graduation requirements: Minimum GPA varies by school\n\nOne bad semester can drag down your cumulative GPA significantly.",
+        },
+        {
+          heading: "How GPA Calculation Works",
+          body: "GPA = Total grade points ÷ Total credits\n\n1. Multiply each course's credits by its grade point\n2. Sum all the products\n3. Divide by total credits\n\nExample (4.5 scale):\n- Major A (3 credits, A+ = 4.5): 13.5\n- Major B (3 credits, B+ = 3.5): 10.5\n- Elective (2 credits, A0 = 4.0): 8.0\n- GPA: (13.5 + 10.5 + 8.0) ÷ 8 = 4.0",
+        },
+        {
+          heading: "How to Use Toolkio GPA Calculator",
+          body: "Manual calculation gets messy with many courses. Use the calculator instead:\n\n1. Enter course name, credits, and grade\n2. Add as many courses as needed\n3. Get your overall GPA calculated automatically\n\nPass/Fail courses are excluded from GPA calculation. Both 4.5 and 4.3 scales are supported.",
+        },
+        {
+          heading: "Practical Tips for Improving Your GPA",
+          body: "Here are some realistic strategies:\n\n- Retake courses: Replace F or D grades (check your school's policy)\n- Strategic enrollment: Check grade distributions before signing up\n- Pass/Fail option: Use it for electives you're unsure about\n- GPA simulation: Calculate what grades you need in remaining semesters to hit your target\n\nPlanning ahead with a GPA calculator helps you set achievable goals each semester.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "4.5 만점과 4.3 만점은 어떻게 다른가요?",
+        answer: "4.5 만점은 A+ = 4.5이고, 4.3 만점은 A+ = 4.3이에요. 학교마다 다르니 본인 학교 기준을 확인하세요. 대부분의 한국 대학은 4.5 만점을 사용합니다.",
+      },
+      {
+        question: "P/F 과목은 평점에 포함되나요?",
+        answer: "아니요, P/F(Pass/Fail) 과목은 평점 계산에서 제외돼요. Pass를 받으면 학점만 인정되고, Fail이면 학점도 인정되지 않아요.",
+      },
+      {
+        question: "재수강하면 이전 성적은 어떻게 되나요?",
+        answer: "대부분의 대학에서 재수강 시 이전 성적은 평점 계산에서 제외되고 새 성적으로 대체돼요. 다만 재수강 횟수 제한이나 성적 상한(예: A0까지만)이 있는 학교도 있으니 학칙을 확인하세요.",
+      },
+    ],
+  },
+  {
+    slug: "youtube-thumbnail-download-guide",
+    title: {
+      ko: "유튜브 썸네일 다운로드 — 고화질 이미지 저장하는 법",
+      en: "YouTube Thumbnail Download — How to Save High-Quality Thumbnails",
+    },
+    description: {
+      ko: "유튜브 영상 썸네일을 고화질로 다운로드하는 방법. URL만 붙여넣으면 바로 저장할 수 있어요.",
+      en: "Download YouTube video thumbnails in high quality. Just paste the URL and save the image instantly.",
+    },
+    date: "2026-04-05",
+    toolId: "youtube-thumbnail",
+    image: "/images/blog/youtube-thumbnail-download-guide.webp",
+    keywords: ["유튜브 썸네일 다운로드", "유튜브 썸네일 저장", "YouTube thumbnail download", "썸네일 추출"],
+    content: {
+      ko: [
+        {
+          heading: "유튜브 썸네일, 왜 다운로드하나요?",
+          body: "유튜브 썸네일을 저장하고 싶은 이유는 다양해요.\n\n- 디자인 레퍼런스: 인기 채널의 썸네일 스타일 분석\n- 블로그/발표 자료: 영상 소개 시 썸네일 활용 (출처 표기 필수)\n- 썸네일 비교: 내 채널 썸네일과 경쟁 채널 비교\n- SNS 공유: 영상 추천 시 썸네일 이미지 활용\n- 포트폴리오: 본인이 만든 영상의 썸네일 정리\n\n유튜브에서는 썸네일을 직접 다운로드하는 버튼을 제공하지 않기 때문에, 별도 도구가 필요합니다.",
+        },
+        {
+          heading: "유튜브 썸네일 해상도 종류",
+          body: "유튜브는 각 영상에 대해 여러 해상도의 썸네일을 자동 생성해요.\n\n- Default: 120 × 90 px (가장 작은 사이즈)\n- Medium: 320 × 180 px (중간 사이즈)\n- High: 480 × 360 px (일반 품질)\n- Standard: 640 × 480 px (표준 품질)\n- MaxRes: 1280 × 720 px (최고 화질)\n\nMaxRes(최대 해상도)가 항상 제공되는 건 아니에요. 업로더가 고해상도 썸네일을 설정하지 않으면 High까지만 제공되는 경우도 있습니다.",
+        },
+        {
+          heading: "Toolkio 유튜브 썸네일 다운로드 사용법",
+          body: "사용법은 아주 간단해요.\n\n1. 유튜브 영상 URL을 복사합니다\n2. Toolkio 유튜브 썸네일 도구에 URL을 붙여넣기\n3. 원하는 해상도의 썸네일을 선택\n4. 다운로드 버튼 클릭\n\n지원하는 URL 형식:\n- https://www.youtube.com/watch?v=VIDEO_ID\n- https://youtu.be/VIDEO_ID\n- https://youtube.com/shorts/VIDEO_ID\n\n별도의 로그인이나 프로그램 설치 없이 브라우저에서 바로 가능합니다.",
+        },
+        {
+          heading: "썸네일 활용 시 주의사항",
+          body: "다운로드한 썸네일을 사용할 때 알아둬야 할 점이 있어요.\n\n- 저작권: 타인의 썸네일은 저작권이 있으므로, 상업적 사용은 권장하지 않아요\n- 출처 표기: 블로그나 발표에서 사용할 때는 영상 출처를 꼭 밝히세요\n- 개인 분석용: 디자인 레퍼런스로 분석하는 건 괜찮아요\n- 본인 영상: 본인이 업로드한 영상의 썸네일은 자유롭게 사용 가능\n\n특히 유튜브 크리에이터라면, 경쟁 채널의 썸네일 트렌드를 분석해서 본인 채널에 적용하는 게 CTR(클릭률) 올리는 데 효과적이에요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Download YouTube Thumbnails?",
+          body: "There are many reasons to save YouTube thumbnails:\n\n- Design reference: Analyze popular channel thumbnail styles\n- Blog posts or presentations: Use thumbnails when introducing videos (always credit the source)\n- Comparison: Compare your thumbnails with competitors\n- Portfolio: Organize thumbnails of your own videos\n\nYouTube doesn't provide a built-in download button for thumbnails, so you need a separate tool.",
+        },
+        {
+          heading: "YouTube Thumbnail Resolutions",
+          body: "YouTube auto-generates multiple thumbnail sizes for each video:\n\n- Default: 120 × 90 px\n- Medium: 320 × 180 px\n- High: 480 × 360 px\n- Standard: 640 × 480 px\n- MaxRes: 1280 × 720 px\n\nMaxRes isn't always available — it depends on whether the uploader set a high-resolution custom thumbnail.",
+        },
+        {
+          heading: "How to Use Toolkio Thumbnail Downloader",
+          body: "It's straightforward:\n\n1. Copy the YouTube video URL\n2. Paste it into Toolkio's YouTube Thumbnail tool\n3. Select your preferred resolution\n4. Click download\n\nSupported URL formats:\n- https://www.youtube.com/watch?v=VIDEO_ID\n- https://youtu.be/VIDEO_ID\n- https://youtube.com/shorts/VIDEO_ID\n\nNo login or software installation required.",
+        },
+        {
+          heading: "Important Notes on Using Thumbnails",
+          body: "Keep these in mind when using downloaded thumbnails:\n\n- Copyright: Others' thumbnails are copyrighted — avoid commercial use\n- Attribution: Always credit the video source in blogs or presentations\n- Personal analysis: Using thumbnails for design research is fine\n- Your own videos: Thumbnails from your uploads are free to use\n\nFor YouTube creators, analyzing competitor thumbnail trends is a proven way to improve your click-through rate (CTR).",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "유튜브 썸네일 다운로드는 불법인가요?",
+        answer: "개인적인 용도로 저장하는 것은 문제없어요. 하지만 타인의 썸네일을 상업적으로 사용하거나 무단 배포하는 것은 저작권 침해가 될 수 있으니 주의하세요.",
+      },
+      {
+        question: "MaxRes 썸네일이 안 나올 때는 어떻게 하나요?",
+        answer: "모든 영상에 MaxRes(1280×720) 썸네일이 있는 건 아니에요. 업로더가 커스텀 썸네일을 설정하지 않은 경우 High(480×360)까지만 제공될 수 있습니다. 그때는 가장 높은 해상도를 선택하세요.",
+      },
+      {
+        question: "Shorts 영상 썸네일도 다운로드 가능한가요?",
+        answer: "네, 가능해요. Shorts URL(youtube.com/shorts/VIDEO_ID)을 그대로 붙여넣으면 됩니다. Shorts도 일반 영상과 동일한 방식으로 썸네일이 생성돼요.",
+      },
+    ],
+  },
+  {
+    slug: "bmr-calculator-diet-guide",
+    title: {
+      ko: "기초대사량 계산기 — 다이어트 전 반드시 확인하세요",
+      en: "BMR Calculator — Check This Before Starting Your Diet",
+    },
+    description: {
+      ko: "기초대사량(BMR)을 알아야 다이어트 식단을 제대로 짤 수 있어요. 키, 몸무게, 나이만 입력하면 바로 확인됩니다.",
+      en: "You need to know your BMR to plan an effective diet. Enter your height, weight, and age to calculate it instantly.",
+    },
+    date: "2026-04-05",
+    toolId: "bmr-calculator",
+    image: "/images/blog/bmr-calculator-diet-guide.webp",
+    keywords: ["기초대사량 계산기", "BMR 계산", "기초대사량 계산", "다이어트 칼로리", "basal metabolic rate"],
+    content: {
+      ko: [
+        {
+          heading: "기초대사량(BMR)이 뭔가요?",
+          body: "기초대사량(BMR, Basal Metabolic Rate)은 아무것도 안 해도 우리 몸이 생존을 위해 소모하는 최소 칼로리예요.\n\n쉽게 말하면, 하루 종일 누워만 있어도 심장 박동, 호흡, 체온 유지, 세포 활동 등에 쓰이는 에너지입니다.\n\n- 일반 성인 남성: 약 1,500~1,800 kcal/일\n- 일반 성인 여성: 약 1,200~1,500 kcal/일\n\n이 수치보다 적게 먹으면 몸이 기아 상태로 인식하고, 오히려 근육을 분해하고 대사를 낮춰버려요. 그래서 다이어트할 때 기초대사량 아래로 칼로리를 줄이면 안 됩니다.",
+        },
+        {
+          heading: "BMR 계산 공식 — 해리스-베네딕트",
+          body: "가장 많이 사용되는 BMR 계산 공식은 해리스-베네딕트(Harris-Benedict) 수정 공식이에요.\n\n남성: BMR = 88.362 + (13.397 × 체중kg) + (4.799 × 키cm) - (5.677 × 나이)\n여성: BMR = 447.593 + (9.247 × 체중kg) + (3.098 × 키cm) - (4.330 × 나이)\n\n예시 (30세 남성, 175cm, 75kg):\nBMR = 88.362 + (13.397 × 75) + (4.799 × 175) - (5.677 × 30)\n= 88.362 + 1004.775 + 839.825 - 170.31\n= 약 1,763 kcal\n\n여기에 활동 계수를 곱하면 하루 총 소모 칼로리(TDEE)를 알 수 있어요.",
+        },
+        {
+          heading: "활동 계수와 TDEE 계산",
+          body: "BMR에 활동 계수를 곱하면 하루 총 에너지 소비량(TDEE)이 됩니다.\n\n- 거의 운동 안 함 (좌식 생활): BMR × 1.2\n- 가벼운 운동 (주 1~3회): BMR × 1.375\n- 중간 운동 (주 3~5회): BMR × 1.55\n- 강한 운동 (주 6~7회): BMR × 1.725\n- 매우 강한 운동 (하루 2회 이상): BMR × 1.9\n\n다이어트를 하려면 TDEE에서 300~500 kcal 정도만 줄이는 게 건강한 감량 방법이에요. 기초대사량 아래로 내리면 요요가 올 확률이 높아집니다.",
+        },
+        {
+          heading: "Toolkio 기초대사량 계산기 사용법",
+          body: "복잡한 공식을 직접 계산할 필요 없어요.\n\n1. 성별, 나이, 키, 몸무게를 입력하세요\n2. BMR이 자동으로 계산됩니다\n3. 활동량을 선택하면 TDEE까지 확인 가능\n\n다이어트 목표에 맞는 일일 칼로리도 함께 제안해 드려요.\n\n- 체중 감량: TDEE - 300~500 kcal\n- 체중 유지: TDEE 수준\n- 체중 증가 (벌크업): TDEE + 300~500 kcal\n\n주기적으로 체중이 변할 때마다 다시 계산하는 걸 추천합니다. 체중이 줄면 BMR도 낮아지거든요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is BMR (Basal Metabolic Rate)?",
+          body: "BMR is the minimum number of calories your body needs to maintain basic life functions at rest — heartbeat, breathing, temperature regulation, and cellular activity.\n\n- Average adult male: ~1,500-1,800 kcal/day\n- Average adult female: ~1,200-1,500 kcal/day\n\nEating below your BMR for extended periods can trigger muscle loss and metabolic slowdown, making weight loss even harder.",
+        },
+        {
+          heading: "The Harris-Benedict BMR Formula",
+          body: "The most widely used BMR formula is the revised Harris-Benedict equation:\n\nMale: BMR = 88.362 + (13.397 × weight in kg) + (4.799 × height in cm) - (5.677 × age)\nFemale: BMR = 447.593 + (9.247 × weight in kg) + (3.098 × height in cm) - (4.330 × age)\n\nExample (30-year-old male, 175cm, 75kg):\nBMR ≈ 1,763 kcal/day\n\nMultiply by an activity factor to get your Total Daily Energy Expenditure (TDEE).",
+        },
+        {
+          heading: "Activity Multipliers and TDEE",
+          body: "Your TDEE = BMR × activity factor:\n\n- Sedentary (little/no exercise): × 1.2\n- Light activity (1-3 days/week): × 1.375\n- Moderate (3-5 days/week): × 1.55\n- Very active (6-7 days/week): × 1.725\n- Extra active (twice daily): × 1.9\n\nFor healthy weight loss, reduce TDEE by 300-500 kcal. Never go below your BMR.",
+        },
+        {
+          heading: "How to Use Toolkio BMR Calculator",
+          body: "No need to crunch numbers manually:\n\n1. Enter gender, age, height, and weight\n2. Get your BMR instantly\n3. Select activity level to see your TDEE\n\nThe tool also suggests daily calorie targets:\n- Weight loss: TDEE - 300-500 kcal\n- Maintenance: TDEE level\n- Bulking: TDEE + 300-500 kcal\n\nRecalculate whenever your weight changes significantly.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "기초대사량보다 적게 먹으면 살이 더 빨리 빠지나요?",
+        answer: "아니요, 오히려 역효과가 나요. 기초대사량 이하로 먹으면 몸이 기아 모드로 전환돼서 대사량을 낮추고 근육을 분해해요. 단기적으로 체중은 줄어도 요요가 올 확률이 매우 높습니다.",
+      },
+      {
+        question: "BMR과 TDEE의 차이가 뭔가요?",
+        answer: "BMR은 아무것도 안 하고 누워있을 때 소모되는 칼로리이고, TDEE는 일상 활동과 운동까지 포함한 하루 총 소모 칼로리예요. 다이어트 식단은 TDEE 기준으로 짜야 합니다.",
+      },
+      {
+        question: "근육량이 많으면 기초대사량도 높아지나요?",
+        answer: "네, 맞아요. 근육은 지방보다 에너지를 더 많이 소모하기 때문에, 같은 체중이라도 근육량이 많은 사람의 BMR이 더 높아요. 그래서 다이어트할 때 근력 운동을 병행하는 게 좋습니다.",
+      },
+    ],
+  },
+  {
+    slug: "lorem-ipsum-generator-guide",
+    title: {
+      ko: "로렘 입숨 생성기 — 더미 텍스트 빠르게 만드는 법",
+      en: "Lorem Ipsum Generator — Quick Guide to Creating Dummy Text",
+    },
+    description: {
+      ko: "웹 디자인, PPT, 목업 작업할 때 필요한 로렘 입숨 더미 텍스트를 원하는 만큼 바로 생성하세요.",
+      en: "Generate Lorem Ipsum dummy text for web design, presentations, and mockups. Get as much placeholder text as you need instantly.",
+    },
+    date: "2026-04-05",
+    toolId: "lorem-ipsum",
+    image: "/images/blog/lorem-ipsum-generator-guide.webp",
+    keywords: ["로렘 입숨", "Lorem Ipsum 생성기", "더미 텍스트", "placeholder text", "목업 텍스트"],
+    content: {
+      ko: [
+        {
+          heading: "로렘 입숨이 뭔가요?",
+          body: "로렘 입숨(Lorem Ipsum)은 인쇄 및 디자인 업계에서 사용하는 표준 더미 텍스트예요. 1500년대부터 사용되어 온 유서 깊은 텍스트인데, 원본은 고대 로마의 철학자 키케로(Cicero)의 글에서 유래했어요.\n\n\"Lorem ipsum dolor sit amet, consectetur adipiscing elit...\"로 시작하는 이 텍스트는 의미가 있는 것처럼 보이지만, 실제로는 원문을 변형한 것이라 뜻이 통하지 않아요.\n\n더미 텍스트를 쓰는 이유는 간단해요. 디자인 작업에서 실제 콘텐츠 대신 넣어두면, 사람들이 텍스트 내용에 집중하지 않고 레이아웃과 디자인에 집중할 수 있거든요.",
+        },
+        {
+          heading: "로렘 입숨이 필요한 상황",
+          body: "더미 텍스트가 필요한 경우는 정말 많아요.\n\n- 웹 디자인/퍼블리싱: 레이아웃 잡을 때 텍스트 자리 채우기\n- UI/UX 목업: 앱이나 웹 프로토타입에 텍스트 배치\n- PPT/발표 자료: 디자인 시안 단계에서 임시 텍스트\n- 인쇄 디자인: 전단지, 명함, 포스터 시안 작업\n- 개발 테스트: 데이터베이스 더미 데이터, 폰트 렌더링 테스트\n- 블로그 테마 미리보기: 포스트가 어떻게 보이는지 확인\n\n실제 콘텐츠가 아직 준비되지 않았을 때, 로렘 입숨은 최고의 임시 해결책이에요.",
+        },
+        {
+          heading: "Toolkio 로렘 입숨 생성기 사용법",
+          body: "Toolkio에서 로렘 입숨을 생성하는 방법은 아주 간단해요.\n\n1. 생성 단위를 선택하세요 (단어, 문장, 문단)\n2. 원하는 개수를 입력하세요\n3. 생성 버튼을 클릭\n4. 복사 버튼으로 클립보드에 바로 복사\n\n원하는 길이의 더미 텍스트를 즉시 만들 수 있고, 한 번의 클릭으로 복사해서 바로 붙여넣을 수 있습니다.",
+        },
+        {
+          heading: "로렘 입숨 대체 텍스트도 있어요",
+          body: "로렘 입숨 외에도 재미있는 대체 더미 텍스트들이 있어요.\n\n- 한글 입숨: 한글 더미 텍스트 (한국어 디자인 작업에 적합)\n- Hipster Ipsum: 힙스터 스타일 영어 더미 텍스트\n- Bacon Ipsum: 고기 관련 단어로 구성된 텍스트\n- Cat Ipsum: 고양이 관련 텍스트\n- Cupcake Ipsum: 디저트 관련 텍스트\n\n하지만 업무용이라면 표준 로렘 입숨을 쓰는 게 가장 무난해요. 클라이언트에게 목업을 보여줄 때 Bacon Ipsum이 들어가 있으면 좀 당황스러울 수 있으니까요.\n\n참고로 HTML 코딩할 때 VS Code에서 'lorem'을 입력하고 Tab 키를 누르면 자동으로 로렘 입숨이 생성되기도 해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What Is Lorem Ipsum?",
+          body: "Lorem Ipsum is the standard dummy text used in the printing and design industry since the 1500s. It originates from a work by the ancient Roman philosopher Cicero.\n\nThe text beginning with \"Lorem ipsum dolor sit amet...\" looks meaningful but is actually scrambled Latin with no coherent meaning.\n\nDesigners use it so that people focus on the layout and visual design rather than getting distracted by the actual content.",
+        },
+        {
+          heading: "When Do You Need Lorem Ipsum?",
+          body: "Dummy text is needed in many situations:\n\n- Web design: Fill text areas while building layouts\n- UI/UX mockups: Place text in app or web prototypes\n- Presentations: Use placeholder text in design drafts\n- Print design: Flyers, business cards, poster mockups\n- Development: Database dummy data, font rendering tests\n- Blog themes: Preview how posts will look\n\nWhen actual content isn't ready yet, Lorem Ipsum is the perfect temporary solution.",
+        },
+        {
+          heading: "How to Use Toolkio Lorem Ipsum Generator",
+          body: "Generating Lorem Ipsum with Toolkio is simple:\n\n1. Choose the unit (words, sentences, or paragraphs)\n2. Enter the desired count\n3. Click generate\n4. Use the copy button to clipboard\n\nGet dummy text of any length instantly and paste it wherever you need.",
+        },
+        {
+          heading: "Fun Alternatives to Lorem Ipsum",
+          body: "Beyond classic Lorem Ipsum, there are fun alternatives:\n\n- Korean Ipsum: Korean dummy text for Korean design projects\n- Hipster Ipsum: Hipster-flavored English placeholder text\n- Bacon Ipsum: Meat-themed dummy text\n- Cat Ipsum: Feline-themed placeholder\n- Cupcake Ipsum: Dessert-themed text\n\nFor professional work, stick with standard Lorem Ipsum. You don't want Bacon Ipsum showing up in a client presentation.\n\nPro tip: In VS Code, type 'lorem' and press Tab to auto-generate Lorem Ipsum text.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "로렘 입숨은 실제로 무슨 뜻인가요?",
+        answer: "원래는 키케로의 '선과 악의 끝에 대하여'라는 라틴어 철학서에서 발췌한 거예요. 하지만 현재 사용되는 로렘 입숨은 원문을 변형해서 의미가 통하지 않는 텍스트예요.",
+      },
+      {
+        question: "한국어 더미 텍스트는 없나요?",
+        answer: "있어요! '한글 입숨'이라고 검색하면 한국어 더미 텍스트를 생성할 수 있는 도구들이 있어요. 한국어 웹 디자인 작업에서는 한글 입숨을 쓰는 게 실제 배치를 더 정확하게 확인할 수 있어서 좋아요.",
+      },
+      {
+        question: "개발할 때 로렘 입숨을 쉽게 넣는 방법이 있나요?",
+        answer: "VS Code에서 'lorem'을 입력하고 Tab 키를 누르면 자동으로 한 문단이 생성돼요. 'lorem10'을 입력하면 10단어, 'lorem100'을 입력하면 100단어가 생성됩니다. Emmet 기능을 지원하는 에디터면 대부분 사용 가능해요.",
+      },
+    ],
+  },
 ];
