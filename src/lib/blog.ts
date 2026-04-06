@@ -8968,4 +8968,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "bmi-calculator-health-guide",
+    title: {
+      ko: "BMI 계산기 사용법 — 나의 체질량지수 확인하고 건강 관리하기",
+      en: "BMI Calculator Guide — Check Your Body Mass Index for Better Health",
+    },
+    description: {
+      ko: "BMI 계산기로 체질량지수를 확인하는 방법과 정상 범위, 건강 관리 팁을 알려드려요. 키와 몸무게만 입력하면 바로 결과를 확인할 수 있어요.",
+      en: "Learn how to use a BMI calculator to check your body mass index, understand normal ranges, and get health management tips.",
+    },
+    date: "2026-04-06",
+    toolId: "bmi-calculator",
+    image: "/images/blog/bmi-calculator-health-guide.webp",
+    keywords: ["BMI 계산기", "체질량지수", "BMI 정상범위", "BMI 계산법", "비만도 계산"],
+    content: {
+      ko: [
+        {
+          heading: "BMI란 무엇인가요?",
+          body: "BMI(Body Mass Index)는 체질량지수라고 해요. 키와 몸무게를 이용해서 비만 정도를 판단하는 지표예요.\n\n계산 공식은 간단해요: BMI = 체중(kg) / 키(m)의 제곱\n\n예를 들어 키 170cm, 몸무게 65kg이라면:\nBMI = 65 / (1.7 x 1.7) = 22.5\n\n이 숫자가 정상 범위인지, 과체중인지 바로 알 수 있어요.",
+        },
+        {
+          heading: "BMI 범위별 의미",
+          body: "대한비만학회 기준으로 BMI 범위는 이래요.\n\n- 18.5 미만: 저체중\n- 18.5~22.9: 정상\n- 23~24.9: 과체중 (비만 전단계)\n- 25~29.9: 1단계 비만\n- 30~34.9: 2단계 비만\n- 35 이상: 3단계 비만 (고도비만)\n\n한국인 기준은 서양보다 엄격해요. WHO 기준에서는 25 이상을 과체중으로 보지만, 아시아 기준에서는 23부터 과체중이거든요.",
+        },
+        {
+          heading: "BMI의 한계 — 근육량을 반영하지 못해요",
+          body: "BMI는 간편하지만 완벽한 지표는 아니에요.\n\n- 근육이 많은 사람은 BMI가 높게 나와도 비만이 아닐 수 있어요\n- 나이가 들면서 근육이 줄고 체지방이 늘어도 BMI는 같을 수 있어요\n- 내장지방이 많은 마른 비만은 BMI로 확인이 안 돼요\n\n그래서 BMI와 함께 허리둘레도 측정하는 게 좋아요. 남성 90cm, 여성 85cm 이상이면 복부비만으로 봐요.",
+        },
+        {
+          heading: "Toolkio BMI 계산기 사용법",
+          body: "Toolkio의 BMI 계산기는 키와 몸무게만 입력하면 바로 결과가 나와요.\n\n1. 키(cm)와 몸무게(kg) 입력\n2. BMI 수치와 해당 범위 확인\n3. 건강 상태에 대한 간단한 가이드 제공\n\n결과는 브라우저에서만 계산되고 서버로 전송되지 않아서 안전해요. 정기적으로 체크하면 건강 관리에 도움이 돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is BMI?",
+          body: "BMI (Body Mass Index) measures body fat based on height and weight.\n\nFormula: BMI = weight(kg) / height(m)²\n\nFor example, if you're 170cm and 65kg:\nBMI = 65 / (1.7 x 1.7) = 22.5\n\nThis number tells you whether you're in a healthy weight range.",
+        },
+        {
+          heading: "BMI Categories",
+          body: "According to WHO standards:\n\n- Below 18.5: Underweight\n- 18.5–24.9: Normal weight\n- 25–29.9: Overweight\n- 30–34.9: Obesity Class I\n- 35–39.9: Obesity Class II\n- 40+: Obesity Class III\n\nNote: Asian BMI standards use 23+ as overweight and 25+ as obese due to different body compositions.",
+        },
+        {
+          heading: "Limitations of BMI",
+          body: "BMI is convenient but not perfect:\n\n- Athletes with high muscle mass may show high BMI without being overweight\n- Elderly people may have normal BMI but high body fat\n- BMI doesn't measure visceral fat\n\nConsider measuring waist circumference alongside BMI for a more complete picture.",
+        },
+        {
+          heading: "How to Use Toolkio BMI Calculator",
+          body: "Simply enter your height and weight to get instant results.\n\n1. Enter height (cm) and weight (kg)\n2. View your BMI score and category\n3. Get basic health guidance\n\nAll calculations happen in your browser — no data is sent to any server.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "BMI가 정상인데 배가 나왔어요. 괜찮은 건가요?",
+        answer: "BMI가 정상이어도 내장지방이 많은 마른 비만일 수 있어요. 허리둘레가 남성 90cm, 여성 85cm 이상이면 복부비만이니 체성분 검사를 받아보시는 게 좋아요.",
+      },
+      {
+        question: "운동을 많이 하면 BMI가 높아지나요?",
+        answer: "근육이 지방보다 무겁기 때문에 근육량이 많으면 BMI가 높게 나올 수 있어요. 이 경우 체지방률로 판단하는 게 더 정확해요.",
+      },
+      {
+        question: "어린이 BMI 기준도 같은가요?",
+        answer: "아니요, 어린이와 청소년은 성별과 나이에 따른 백분위수로 판단해요. 성인 기준과 다르니 소아과에서 성장 도표를 확인하세요.",
+      },
+    ],
+  },
+  {
+    slug: "dday-calculator-countdown-guide",
+    title: {
+      ko: "D-Day 계산기 — 기념일, 시험일, 출산 예정일까지 남은 날 세기",
+      en: "D-Day Calculator — Count Days Until Your Important Dates",
+    },
+    description: {
+      ko: "D-Day 계산기로 기념일, 시험, 출산 예정일까지 남은 일수를 계산하는 방법을 알려드려요. 날짜 간 차이도 간편하게 확인할 수 있어요.",
+      en: "Use our D-Day calculator to count days until anniversaries, exams, and due dates. Calculate the difference between any two dates instantly.",
+    },
+    date: "2026-04-06",
+    toolId: "dday-calculator",
+    image: "/images/blog/dday-calculator-countdown-guide.webp",
+    keywords: ["D-Day 계산기", "디데이 계산", "날짜 계산기", "남은 날 계산", "기념일 계산"],
+    content: {
+      ko: [
+        {
+          heading: "D-Day 계산이 필요한 순간",
+          body: "우리는 생각보다 자주 날짜를 계산해야 하는 상황을 만나요.\n\n- 수능까지 남은 일수\n- 100일, 200일, 1주년 기념일\n- 출산 예정일까지 남은 날\n- 프로젝트 마감일까지 남은 날\n- 여행 출발일까지 카운트다운\n\n머리로 계산하면 실수하기 쉽거든요. 2월이 28일인지 29일인지, 31일까지 있는 달이 어딘지 헷갈리잖아요.",
+        },
+        {
+          heading: "D-Day 계산하는 방법",
+          body: "D-Day 계산에는 두 가지 방식이 있어요.\n\n1. 특정 날짜까지 남은 일수: 오늘부터 목표일까지 며칠 남았는지\n2. 특정 날짜로부터 지난 일수: 과거 날짜부터 오늘까지 며칠 지났는지\n\n기념일 계산할 때 주의할 점은, 시작일을 포함하느냐 마느냐에요. 사귄 날을 1일로 치면 100일째 되는 날은 99일 후예요. 헷갈리죠?",
+        },
+        {
+          heading: "자주 사용하는 D-Day 계산",
+          body: "- 100일 기념일: 사귄 날 + 99일\n- 200일 기념일: 사귄 날 + 199일\n- 1주년: 사귄 날 + 365일 (윤년이면 366일)\n- 1000일: 사귄 날 + 999일\n\n출산 예정일은 마지막 생리 시작일 + 280일(40주)로 계산해요.\n\n수능은 매년 11월 셋째 주 목요일이에요. 올해 수능까지 남은 날은 D-Day 계산기로 바로 확인할 수 있어요.",
+        },
+        {
+          heading: "Toolkio D-Day 계산기 사용법",
+          body: "Toolkio의 D-Day 계산기는 날짜를 선택하면 바로 결과가 나와요.\n\n1. 시작 날짜와 종료 날짜를 선택\n2. 두 날짜 사이의 일수가 자동으로 계산\n3. 주 단위, 월 단위로도 변환 가능\n\n여러 기념일을 한번에 계산할 수도 있어서 커플 기념일부터 가족 생일까지 관리할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need a D-Day Calculator",
+          body: "We often need to calculate dates:\n\n- Days until exams\n- Anniversary dates (100th day, 1 year)\n- Due dates for projects\n- Countdown to vacations\n\nManual calculation is error-prone, especially with varying month lengths and leap years.",
+        },
+        {
+          heading: "How D-Day Calculation Works",
+          body: "There are two main types:\n\n1. Days remaining: From today to a future date\n2. Days elapsed: From a past date to today\n\nNote: Whether to include the start date affects the count. For anniversaries, day 1 is usually the start date, so the 100th day is 99 days later.",
+        },
+        {
+          heading: "Common D-Day Calculations",
+          body: "- 100th day anniversary: Start date + 99 days\n- 1 year anniversary: Start date + 365 days\n- Pregnancy due date: Last menstrual period + 280 days\n- Project deadlines: Business days vs calendar days",
+        },
+        {
+          heading: "How to Use Toolkio D-Day Calculator",
+          body: "Simply select your dates and get instant results.\n\n1. Pick start and end dates\n2. See the day count automatically\n3. Convert to weeks or months if needed\n\nManage multiple important dates at once — from anniversaries to project deadlines.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "100일 기념일은 사귄 날 포함인가요?",
+        answer: "일반적으로 사귄 날을 1일로 포함해요. 그래서 100일째 되는 날은 사귄 날로부터 99일 후예요. 커플마다 기준이 다를 수 있으니 미리 맞춰보세요.",
+      },
+      {
+        question: "영업일(근무일)만 계산할 수 있나요?",
+        answer: "Toolkio의 D-Day 계산기는 달력일 기준으로 계산해요. 영업일만 세려면 주말과 공휴일을 제외해야 하는데, 별도로 계산이 필요해요.",
+      },
+      {
+        question: "음력 날짜도 계산 가능한가요?",
+        answer: "현재는 양력 기준으로만 계산돼요. 음력 날짜는 양력으로 변환한 후 입력해주세요. 네이버에서 음력-양력 변환을 검색하면 쉽게 바꿀 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "instagram-line-break-guide",
+    title: {
+      ko: "인스타그램 줄바꿈 하는 법 — 깔끔한 게시물 작성 꿀팁",
+      en: "Instagram Line Break Guide — How to Add Clean Line Breaks to Posts",
+    },
+    description: {
+      ko: "인스타그램에서 줄바꿈이 안 될 때 해결하는 방법을 알려드려요. 보이지 않는 문자를 활용한 빈 줄 만들기, 깔끔한 게시물 작성 팁까지 정리했어요.",
+      en: "Learn how to add line breaks in Instagram posts and bios. Fix the disappearing blank line issue with our invisible character tool.",
+    },
+    date: "2026-04-06",
+    toolId: "instagram-line-break",
+    image: "/images/blog/instagram-line-break-guide.webp",
+    keywords: ["인스타그램 줄바꿈", "인스타 줄바꿈", "인스타그램 빈줄", "인스타 게시물 줄바꿈", "Instagram line break"],
+    content: {
+      ko: [
+        {
+          heading: "인스타그램 줄바꿈이 왜 안 될까?",
+          body: "인스타그램에서 글을 쓸 때 엔터를 누르면 줄바꿈이 되는 것 같은데, 게시하고 나면 빈 줄이 사라져버리는 경험 해보셨죠?\n\n인스타그램은 연속된 빈 줄을 자동으로 하나로 합쳐버리거든요. 그래서 문단을 나누려고 엔터를 여러 번 눌러도 결과물에는 반영이 안 돼요.\n\n깔끔하게 문단을 나누고 싶을 때 정말 답답하죠.",
+        },
+        {
+          heading: "줄바꿈 해결 방법 3가지",
+          body: "1. 보이지 않는 문자 사용하기\n빈 줄에 보이지 않는 특수 문자를 넣으면 인스타그램이 빈 줄로 인식하지 않아서 줄바꿈이 유지돼요. Toolkio의 인스타그램 줄바꿈 도구가 이 방법을 사용해요.\n\n2. 점(.) 활용하기\n빈 줄에 점(.)을 넣는 고전적인 방법이에요. 보기엔 좀 지저분하지만 확실하게 줄바꿈이 돼요.\n\n3. 메모장에서 작성 후 복붙\n메모장이나 노트 앱에서 글을 완성한 후 인스타그램에 붙여넣는 방법이에요. 일부 앱에서는 줄바꿈이 유지되기도 해요.",
+        },
+        {
+          heading: "깔끔한 인스타 게시물 작성 팁",
+          body: "- 한 문단은 2-3줄로 짧게\n- 핵심 내용은 첫 줄에 (더보기 전에 보이는 부분)\n- 해시태그는 본문과 떨어뜨리기 (빈 줄 5개 정도)\n- 이모지를 문단 시작에 넣으면 가독성이 올라가요\n- CTA(행동 유도)는 마지막에: \"저장해두세요\", \"친구를 태그하세요\"",
+        },
+        {
+          heading: "Toolkio 인스타그램 줄바꿈 도구 사용법",
+          body: "Toolkio의 인스타그램 줄바꿈 도구는 텍스트를 입력하면 자동으로 빈 줄에 보이지 않는 문자를 넣어줘요.\n\n1. 왼쪽 입력창에 글을 작성하거나 붙여넣기\n2. 빈 줄을 원하는 곳에 엔터로 추가\n3. 오른쪽 결과를 복사해서 인스타그램에 붙여넣기\n\n변환된 텍스트를 그대로 인스타그램에 붙여넣으면 줄바꿈이 완벽하게 유지돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Instagram Removes Line Breaks",
+          body: "Instagram automatically merges consecutive blank lines into one. When you press Enter multiple times while writing, the blank lines disappear after posting.\n\nThis makes it frustrating to create well-formatted posts with clear paragraph breaks.",
+        },
+        {
+          heading: "3 Ways to Fix Line Breaks",
+          body: "1. Invisible characters: Insert special invisible characters in blank lines so Instagram doesn't remove them.\n\n2. Period method: Place a period (.) on blank lines — visible but reliable.\n\n3. Write in Notes first: Compose in your notes app and paste into Instagram.",
+        },
+        {
+          heading: "Tips for Clean Instagram Posts",
+          body: "- Keep paragraphs to 2-3 lines\n- Put key info in the first line (visible before 'more')\n- Separate hashtags with 5+ blank lines\n- Start paragraphs with emojis for readability\n- End with a CTA: 'Save this', 'Tag a friend'",
+        },
+        {
+          heading: "How to Use Toolkio Instagram Line Break Tool",
+          body: "Our tool automatically inserts invisible characters in blank lines.\n\n1. Type or paste your text in the left panel\n2. Add blank lines where you want breaks\n3. Copy the result and paste into Instagram\n\nYour formatting will be perfectly preserved when posted.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "보이지 않는 문자가 뭔가요?",
+        answer: "유니코드에는 화면에 표시되지 않는 특수 문자가 있어요. 이걸 빈 줄에 넣으면 인스타그램이 빈 줄이 아닌 내용이 있는 줄로 인식해서 삭제하지 않는 거예요.",
+      },
+      {
+        question: "인스타그램 바이오에서도 줄바꿈이 되나요?",
+        answer: "네, 같은 방법으로 바이오에서도 줄바꿈이 가능해요. 바이오에서는 특히 깔끔한 포맷이 중요하니까 이 도구를 활용하시면 좋아요.",
+      },
+      {
+        question: "줄바꿈 도구를 쓰면 인스타그램에서 제재를 받나요?",
+        answer: "아니요, 보이지 않는 문자를 사용하는 건 인스타그램 정책에 위반되지 않아요. 많은 인플루언서와 브랜드가 이 방법을 사용하고 있거든요.",
+      },
+    ],
+  },
+  {
+    slug: "percent-calculator-guide",
+    title: {
+      ko: "퍼센트 계산기 사용법 — 할인율, 증감률, 비율 계산 한번에",
+      en: "Percent Calculator Guide — Discounts, Changes, and Ratios Made Easy",
+    },
+    description: {
+      ko: "퍼센트 계산기로 할인율, 증감률, 비율을 쉽게 계산하는 방법을 알려드려요. 일상생활과 업무에서 자주 쓰는 퍼센트 계산 공식도 정리했어요.",
+      en: "Learn how to calculate percentages easily — discounts, percentage changes, and ratios. Includes common formulas for everyday and business use.",
+    },
+    date: "2026-04-06",
+    toolId: "percent-calculator",
+    image: "/images/blog/percent-calculator-guide.webp",
+    keywords: ["퍼센트 계산기", "퍼센트 계산", "할인율 계산", "증감률 계산", "비율 계산"],
+    content: {
+      ko: [
+        {
+          heading: "퍼센트 계산이 필요한 순간",
+          body: "퍼센트는 일상에서 정말 많이 사용되지만, 막상 계산하려면 헷갈릴 때가 많아요.\n\n- 쇼핑할 때: 30% 할인이면 실제 얼마를 내는 거지?\n- 성적 계산: 100점 만점에서 85점은 몇 %?\n- 연봉 인상: 5% 인상이면 실수령액은 얼마나 오르지?\n- 투자 수익: 원금 대비 수익률 계산\n- 다이어트: 체중 감량률 계산",
+        },
+        {
+          heading: "자주 쓰는 퍼센트 계산 공식",
+          body: "1. A의 B%는 얼마?\n공식: A x (B / 100)\n예시: 50,000원의 30% = 50,000 x 0.3 = 15,000원\n\n2. A에서 B%를 빼면?\n공식: A x (1 - B / 100)\n예시: 50,000원에서 30% 할인 = 50,000 x 0.7 = 35,000원\n\n3. A에서 B로의 증감률?\n공식: (B - A) / A x 100\n예시: 100에서 130으로 = (130-100) / 100 x 100 = 30% 증가\n\n4. A는 B의 몇 %?\n공식: A / B x 100\n예시: 85는 100의 85%",
+        },
+        {
+          heading: "실생활 퍼센트 계산 예시",
+          body: "팁 계산: 음식값 45,000원에 10% 팁 = 4,500원 → 총 49,500원\n\n할인 가격: 정가 89,000원, 40% 할인 = 89,000 x 0.6 = 53,400원\n\n연봉 인상: 연봉 4,000만원, 5% 인상 = 4,000 x 1.05 = 4,200만원\n\n체중 감량: 80kg에서 74kg = (80-74) / 80 x 100 = 7.5% 감량",
+        },
+        {
+          heading: "Toolkio 퍼센트 계산기 사용법",
+          body: "Toolkio의 퍼센트 계산기는 여러 가지 계산을 한 번에 할 수 있어요.\n\n1. 계산 유형 선택 (기본 퍼센트, 할인, 증감률 등)\n2. 숫자 입력\n3. 결과 즉시 확인\n\n계산 과정도 함께 보여주기 때문에 어떻게 계산되는지 이해할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Percentage Calculations",
+          body: "Percentages come up constantly:\n\n- Shopping: What's the final price after 30% off?\n- Grades: What percentage is 85 out of 100?\n- Salary: How much more is a 5% raise?\n- Investing: What's my return on investment?\n- Health: What's my weight loss percentage?",
+        },
+        {
+          heading: "Common Percentage Formulas",
+          body: "1. What is B% of A? → A × (B/100)\n2. A minus B%? → A × (1 - B/100)\n3. Percent change from A to B? → (B-A)/A × 100\n4. A is what % of B? → (A/B) × 100",
+        },
+        {
+          heading: "Real-World Examples",
+          body: "Tip calculation: $45 meal + 15% tip = $45 × 1.15 = $51.75\n\nSale price: $89 item, 40% off = $89 × 0.6 = $53.40\n\nSalary raise: $50,000 + 5% = $50,000 × 1.05 = $52,500",
+        },
+        {
+          heading: "How to Use Toolkio Percent Calculator",
+          body: "Our calculator handles multiple percentage calculations.\n\n1. Select calculation type\n2. Enter your numbers\n3. Get instant results with step-by-step breakdown\n\nSee exactly how each calculation works.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "퍼센트와 퍼센트포인트(%p)의 차이는 뭔가요?",
+        answer: "퍼센트는 비율의 변화이고, 퍼센트포인트는 절대값 차이예요. 금리가 3%에서 5%로 오르면 2%p 상승이지, 66.7% 상승이 아니에요.",
+      },
+      {
+        question: "할인에 추가 할인이 있으면 어떻게 계산하나요?",
+        answer: "순차적으로 곱해야 해요. 30% 할인 후 추가 20% 할인이면 총 44% 할인이에요 (50% 아님). 계산: 0.7 x 0.8 = 0.56, 즉 원가의 56%를 내는 거예요.",
+      },
+      {
+        question: "마이너스 퍼센트도 계산할 수 있나요?",
+        answer: "네, 증감률 계산에서 값이 줄었으면 음수(-)로 나와요. 예를 들어 매출이 100에서 80으로 줄었으면 -20% 감소예요.",
+      },
+    ],
+  },
+  {
+    slug: "unit-converter-complete-guide",
+    title: {
+      ko: "단위 변환기 사용법 — 길이, 무게, 온도, 넓이 변환 총정리",
+      en: "Unit Converter Guide — Length, Weight, Temperature, and Area Conversions",
+    },
+    description: {
+      ko: "단위 변환기로 길이, 무게, 온도, 넓이를 빠르게 변환하는 방법을 알려드려요. 자주 쓰는 단위 변환 공식과 실생활 예시를 정리했어요.",
+      en: "Convert length, weight, temperature, and area units easily with our converter. Includes common conversion formulas and practical examples.",
+    },
+    date: "2026-04-06",
+    toolId: "unit-converter",
+    image: "/images/blog/unit-converter-complete-guide.webp",
+    keywords: ["단위 변환기", "단위 변환", "길이 변환", "무게 변환", "온도 변환"],
+    content: {
+      ko: [
+        {
+          heading: "단위 변환이 자주 필요한 순간",
+          body: "해외 쇼핑할 때 인치를 센티미터로, 파운드를 킬로그램으로 바꿔야 하는 일이 많죠?\n\n- 해외 직구: 신발 사이즈 US 9 = 270mm\n- 요리: 1온스 = 약 28g, 1컵 = 약 240ml\n- 부동산: 33평 = 약 109제곱미터\n- 여행: 화씨 77도 = 섭씨 25도\n- 운동: 1마일 = 약 1.6km\n\n머리로 계산하면 실수하기 쉬운 변환들이에요.",
+        },
+        {
+          heading: "자주 사용하는 길이 변환",
+          body: "- 1인치(inch) = 2.54cm\n- 1피트(feet) = 30.48cm\n- 1야드(yard) = 91.44cm\n- 1마일(mile) = 1.609km\n- 1해리(nautical mile) = 1.852km\n\n해외 직구할 때 가장 많이 쓰는 변환이에요. 모니터 사이즈도 인치로 표기되죠. 27인치 모니터는 대각선이 약 68.6cm예요.",
+        },
+        {
+          heading: "무게와 온도 변환",
+          body: "무게 변환:\n- 1파운드(lb) = 453.6g (약 0.45kg)\n- 1온스(oz) = 28.35g\n- 1근 = 600g (한국), 500g (중국)\n- 1돈 = 3.75g\n\n온도 변환:\n- 섭씨 → 화씨: (C x 9/5) + 32\n- 화씨 → 섭씨: (F - 32) x 5/9\n- 물 끓는점: 100도C = 212도F\n- 체온: 36.5도C = 97.7도F\n\n미국 여행할 때 날씨 앱이 화씨로 나오면 당황하죠. 화씨 70도면 섭씨 약 21도, 쾌적한 날씨예요.",
+        },
+        {
+          heading: "Toolkio 단위 변환기 사용법",
+          body: "Toolkio의 단위 변환기는 다양한 단위를 한 곳에서 변환할 수 있어요.\n\n1. 변환할 단위 종류 선택 (길이, 무게, 온도 등)\n2. 입력 단위와 출력 단위 선택\n3. 숫자를 입력하면 실시간으로 변환\n\n자주 쓰는 변환은 즐겨찾기로 저장할 수도 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Unit Conversions",
+          body: "Unit conversions come up more than you think:\n\n- Online shopping: shoe sizes, clothing sizes\n- Cooking: ounces to grams, cups to milliliters\n- Travel: Fahrenheit to Celsius, miles to kilometers\n- Real estate: square feet to square meters",
+        },
+        {
+          heading: "Common Length Conversions",
+          body: "- 1 inch = 2.54 cm\n- 1 foot = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n- 1 nautical mile = 1.852 km",
+        },
+        {
+          heading: "Weight and Temperature",
+          body: "Weight:\n- 1 pound = 453.6g\n- 1 ounce = 28.35g\n\nTemperature:\n- Celsius to Fahrenheit: (C × 9/5) + 32\n- Fahrenheit to Celsius: (F - 32) × 5/9\n- 70°F ≈ 21°C (comfortable room temp)",
+        },
+        {
+          heading: "How to Use Toolkio Unit Converter",
+          body: "Convert any unit in one place.\n\n1. Select unit category\n2. Choose input and output units\n3. Enter a value and see instant results\n\nSave frequently used conversions as favorites.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "평수를 제곱미터로 바꾸려면 어떻게 하나요?",
+        answer: "1평 = 3.3058제곱미터예요. 33평 아파트는 약 109제곱미터(m2)예요. 반대로 100제곱미터는 약 30.25평이에요.",
+      },
+      {
+        question: "해외 직구할 때 사이즈 변환은 어떻게 하나요?",
+        answer: "신발은 US, UK, EU, mm 사이즈가 다 달라요. US 9 = 270mm = EU 42.5 정도예요. 정확한 변환은 브랜드마다 약간씩 다르니 사이즈 차트를 꼭 확인하세요.",
+      },
+      {
+        question: "데이터 용량 단위도 변환할 수 있나요?",
+        answer: "네, KB, MB, GB, TB 간 변환이 가능해요. 1GB = 1,024MB = 1,048,576KB예요. 1TB = 1,024GB이고요.",
+      },
+    ],
+  },
 ];
