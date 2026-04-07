@@ -9638,4 +9638,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "password-generator-secure-tips-2026",
+    title: {
+      ko: "비밀번호 생성기 사용법 — 해킹 안 당하는 안전한 비밀번호 만들기",
+      en: "Password Generator Guide — How to Create Hack-Proof Passwords",
+    },
+    description: {
+      ko: "안전한 비밀번호를 만드는 방법과 비밀번호 생성기 활용법을 정리했어요. 비밀번호 길이, 특수문자, 관리법까지 알려드려요.",
+      en: "Learn how to create strong passwords using generators. Covers length, special characters, and password management best practices.",
+    },
+    date: "2026-04-07",
+    toolId: "password-generator",
+    image: "/images/blog/password-generator-secure-tips-2026.webp",
+    keywords: ["비밀번호 생성기", "password generator", "안전한 비밀번호", "비밀번호 만들기", "password generator free"],
+    content: {
+      ko: [
+        {
+          heading: "왜 강력한 비밀번호가 필요할까?",
+          body: "\"123456\", \"password\", \"qwerty\" — 여전히 전 세계에서 가장 많이 쓰이는 비밀번호예요. 해커들은 이런 흔한 비밀번호를 1초도 안 걸려서 뚫어요.\n\n8자리 숫자로만 된 비밀번호는 즉시 해킹 가능하고, 영문+숫자 8자리도 약 1시간이면 뚫려요. 반면 대소문자+숫자+특수문자 16자리 이상이면 해킹하는 데 수조 년이 걸려요.\n\n[글자수 세기 도구](/blog/how-to-count-characters)로 비밀번호 길이를 확인해보세요."
+        },
+        {
+          heading: "안전한 비밀번호의 조건",
+          body: "보안 전문가들이 권장하는 비밀번호 조건이에요:\n\n- 최소 12자 이상 (16자 권장)\n- 대문자, 소문자, 숫자, 특수문자 모두 포함\n- 개인정보(생일, 이름, 전화번호) 미포함\n- 사전에 있는 단어 미사용\n- 사이트마다 다른 비밀번호 사용\n\n이 조건을 모두 만족하는 비밀번호를 직접 만들기는 어렵죠. 그래서 비밀번호 생성기를 쓰는 거예요."
+        },
+        {
+          heading: "Toolkio 비밀번호 생성기 사용법",
+          body: "Toolkio의 비밀번호 생성기는 원하는 조건을 설정하면 즉시 강력한 비밀번호를 만들어줘요.\n\n1. 비밀번호 길이 설정 (12~32자 추천)\n2. 포함할 문자 유형 선택 (대문자, 소문자, 숫자, 특수문자)\n3. 생성 버튼 클릭\n4. 원클릭 복사로 바로 사용\n\n모든 생성은 브라우저에서 실행되어 서버로 전송되지 않으니 안전해요."
+        },
+        {
+          heading: "비밀번호 관리 팁",
+          body: "강력한 비밀번호를 만들었으면 관리도 중요해요:\n\n- 비밀번호 관리자(1Password, Bitwarden) 사용 추천\n- 같은 비밀번호 여러 사이트에 재사용 금지\n- 2단계 인증(2FA) 필수 활성화\n- 3~6개월마다 중요 계정 비밀번호 변경\n- 메모장이나 포스트잇에 적지 않기\n\n[URL 인코딩 가이드](/blog/url-encoding-decoding-guide)도 웹 보안 이해에 도움이 돼요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Strong Passwords Matter",
+          body: "Common passwords like '123456' are cracked instantly. An 8-char numeric password takes 0 seconds. With uppercase+lowercase+numbers+symbols at 16+ chars, cracking takes trillions of years."
+        },
+        {
+          heading: "Strong Password Criteria",
+          body: "Minimum 12 characters (16 recommended). Mix uppercase, lowercase, numbers, and special characters. Avoid personal info, dictionary words, and reuse across sites."
+        },
+        {
+          heading: "Using Toolkio Password Generator",
+          body: "Set desired length (12-32 chars), select character types, click generate, and copy with one click. Everything runs in your browser — nothing is sent to any server."
+        },
+        {
+          heading: "Password Management Tips",
+          body: "Use a password manager (1Password, Bitwarden). Enable 2FA everywhere. Never reuse passwords. Change critical passwords every 3-6 months."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "비밀번호 생성기로 만든 비밀번호는 안전한가요?",
+        answer: "네, Toolkio 비밀번호 생성기는 암호학적으로 안전한 난수를 사용해요. 브라우저의 crypto.getRandomValues()를 활용하기 때문에 예측이 불가능해요.",
+      },
+      {
+        question: "비밀번호 길이는 몇 자가 적당한가요?",
+        answer: "일반 사이트는 12자 이상, 금융/이메일 같은 중요 계정은 16자 이상을 추천해요. 길수록 안전하지만, 비밀번호 관리자를 쓰면 길이에 상관없이 편하게 관리할 수 있어요.",
+      },
+      {
+        question: "특수문자를 꼭 넣어야 하나요?",
+        answer: "특수문자를 넣으면 보안이 크게 향상돼요. 하지만 일부 사이트는 특수문자를 제한하기도 해요. 그런 경우 대소문자+숫자 조합으로 길이를 더 늘려서 보완하세요.",
+      },
+    ],
+  },
+  {
+    slug: "color-code-converter-rgb-hex-guide",
+    title: {
+      ko: "색상 코드 변환 완벽 가이드 — RGB, HEX, HSL 쉽게 바꾸기",
+      en: "Color Code Converter Guide — Easily Convert Between RGB, HEX, and HSL",
+    },
+    description: {
+      ko: "RGB, HEX, HSL 색상 코드를 쉽게 변환하는 방법을 정리했어요. 디자이너와 개발자를 위한 색상 변환 실전 가이드.",
+      en: "How to convert between RGB, HEX, and HSL color codes. A practical guide for designers and developers.",
+    },
+    date: "2026-04-07",
+    toolId: "color-converter",
+    image: "/images/blog/color-code-converter-rgb-hex-guide.webp",
+    keywords: ["색상 코드 변환", "RGB 변환", "HEX 색상", "색상 코드 변환기", "color code converter"],
+    content: {
+      ko: [
+        {
+          heading: "색상 코드, 왜 여러 종류가 있을까?",
+          body: "같은 빨간색이라도 표현 방식이 달라요:\n\n- HEX: #FF0000 (웹에서 가장 많이 사용)\n- RGB: rgb(255, 0, 0) (CSS, 디자인 도구)\n- HSL: hsl(0, 100%, 50%) (색상 조절이 직관적)\n- CMYK: 0, 100, 100, 0 (인쇄용)\n\n웹 개발은 HEX나 RGB를, 디자인은 HSL을, 인쇄는 CMYK를 주로 써요. 그래서 변환이 자주 필요하거든요."
+        },
+        {
+          heading: "HEX 색상 코드 이해하기",
+          body: "HEX는 16진수(Hexadecimal)로 색상을 표현해요. #RRGGBB 형식으로 각 2자리가 빨강, 초록, 파랑 값이에요.\n\n- #000000 = 검정 (모든 값 0)\n- #FFFFFF = 흰색 (모든 값 최대)\n- #FF0000 = 빨강\n- #00FF00 = 초록\n- #0000FF = 파랑\n\n축약형도 있어요. #F00은 #FF0000과 같아요. CSS에서 많이 쓰이는 형식이에요.\n\n[JSON 포맷터](/blog/json-formatter-guide-complete)로 디자인 토큰 파일을 정리할 때도 HEX 코드를 자주 다루게 돼요."
+        },
+        {
+          heading: "RGB와 HSL 차이점",
+          body: "RGB는 빛의 3원색(빨강, 초록, 파랑)을 0~255 범위로 조합해요. 컴퓨터가 이해하기 쉬운 방식이에요.\n\nHSL은 색상(Hue, 0~360도), 채도(Saturation, 0~100%), 명도(Lightness, 0~100%)로 표현해요. 사람이 이해하기 쉬운 방식이죠.\n\n예를 들어 \"이 빨간색을 좀 더 연하게\" 하고 싶으면:\n- RGB: 세 값을 동시에 조절해야 해서 복잡\n- HSL: Lightness만 올리면 끝\n\n디자인 작업에서는 HSL이 훨씬 직관적이에요."
+        },
+        {
+          heading: "Toolkio 색상 변환기 사용법",
+          body: "Toolkio의 색상 변환기는 하나의 형식을 입력하면 나머지 형식을 자동으로 변환해줘요.\n\n1. HEX, RGB, HSL 중 아는 값 입력\n2. 나머지 형식이 실시간 자동 변환\n3. 컬러 피커로 색상을 직접 선택도 가능\n4. 원클릭 복사로 코드에 바로 붙여넣기\n\nCSS 작업할 때 디자이너가 HEX로 전달한 색상을 HSL로 변환하면 밝기 조절이 편해져요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Multiple Color Code Formats?",
+          body: "Same red, different notations: HEX (#FF0000), RGB (255,0,0), HSL (0,100%,50%), CMYK (0,100,100,0). Web uses HEX/RGB, design uses HSL, print uses CMYK."
+        },
+        {
+          heading: "Understanding HEX Codes",
+          body: "#RRGGBB format. Each pair is 0-FF (0-255). #000000=black, #FFFFFF=white. Shorthand: #F00 = #FF0000."
+        },
+        {
+          heading: "RGB vs HSL",
+          body: "RGB: computer-friendly (0-255 per channel). HSL: human-friendly (hue 0-360, saturation/lightness 0-100%). HSL makes lightness adjustments intuitive."
+        },
+        {
+          heading: "Using Toolkio Color Converter",
+          body: "Enter any format, get instant conversion to all others. Use the color picker for visual selection. One-click copy for direct use in code."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "HEX 색상 코드에서 투명도는 어떻게 표현하나요?",
+        answer: "#RRGGBBAA 형식으로 뒤에 2자리를 추가하면 돼요. FF는 불투명, 80은 50%, 00은 완전 투명이에요. 예: #FF000080은 50% 투명한 빨간색이에요.",
+      },
+      {
+        question: "디자이너가 준 색상 코드가 안 맞을 때는?",
+        answer: "모니터 색상 프로필이 다를 수 있어요. sRGB 프로필을 기준으로 맞추고, 동일한 HEX 코드를 사용하면 대부분 해결돼요.",
+      },
+      {
+        question: "웹 접근성을 위한 색상 대비는 어떻게 확인하나요?",
+        answer: "WCAG 기준으로 일반 텍스트는 4.5:1 이상, 큰 텍스트는 3:1 이상의 대비가 필요해요. Toolkio 색상 변환기에서 두 색상의 대비율을 확인할 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "base64-encoding-practical-use-cases",
+    title: {
+      ko: "Base64 변환 실전 활용법 — 이미지 인코딩부터 API 인증까지",
+      en: "Base64 Encoding Practical Guide — From Image Embedding to API Auth",
+    },
+    description: {
+      ko: "Base64 인코딩/디코딩의 실전 활용법을 정리했어요. 이미지 임베딩, API 인증, 데이터 전송 등 개발자가 꼭 알아야 할 사례들이에요.",
+      en: "Practical Base64 encoding/decoding use cases for developers. Covers image embedding, API authentication, and data transfer.",
+    },
+    date: "2026-04-07",
+    toolId: "base64",
+    image: "/images/blog/base64-encoding-practical-use-cases.webp",
+    keywords: ["base64 변환", "base64 인코딩", "base64 디코딩", "base64 encode decode", "이미지 base64"],
+    content: {
+      ko: [
+        {
+          heading: "Base64란? 왜 쓸까?",
+          body: "Base64는 바이너리 데이터를 텍스트(ASCII)로 변환하는 인코딩 방식이에요. 이메일, URL, JSON처럼 텍스트만 허용하는 곳에서 이미지나 파일 데이터를 전달할 때 쓰여요.\n\n원리는 간단해요. 3바이트(24비트)를 6비트씩 4개로 나누고, 각각을 A-Z, a-z, 0-9, +, / 총 64개 문자로 변환하는 거예요.\n\n단점은 원본보다 약 33% 크기가 커진다는 거예요. 그래서 대용량 파일에는 적합하지 않아요."
+        },
+        {
+          heading: "실전 활용 1: 이미지 임베딩",
+          body: "CSS나 HTML에 작은 이미지를 직접 넣을 때 Base64를 써요:\n\nbackground-image: url(data:image/png;base64,iVBORw0KGgo...);\n\nHTTP 요청을 줄여서 작은 아이콘이나 로고 로딩 속도를 개선할 수 있어요. 단, 1~2KB 이하의 작은 이미지에만 추천해요.\n\n큰 이미지는 [이미지 압축 도구](/blog/image-compression-guide-web)로 최적화하는 게 나아요."
+        },
+        {
+          heading: "실전 활용 2: API 인증",
+          body: "HTTP Basic Authentication은 username:password를 Base64로 인코딩해서 헤더에 넣어요:\n\nAuthorization: Basic dXNlcjpwYXNz\n\n이건 암호화가 아니라 인코딩이에요! 누구나 디코딩할 수 있으니 반드시 HTTPS와 함께 사용해야 해요.\n\nJWT 토큰의 페이로드도 Base64url로 인코딩되어 있어요. 디코딩하면 토큰에 담긴 사용자 정보를 확인할 수 있어요."
+        },
+        {
+          heading: "Toolkio Base64 변환기 사용법",
+          body: "Toolkio의 Base64 변환기는 텍스트와 파일 모두 지원해요.\n\n텍스트 변환:\n1. 인코딩할 텍스트 입력\n2. Encode 또는 Decode 선택\n3. 결과 복사\n\n파일 변환:\n1. 파일 드래그 앤 드롭\n2. Base64 문자열 생성\n3. data URI 형식으로 복사 가능\n\n[URL 인코딩 가이드](/blog/url-encoding-decoding-guide)와 함께 알아두면 웹 개발이 편해져요."
+        },
+      ],
+      en: [
+        {
+          heading: "What is Base64?",
+          body: "Base64 converts binary data to ASCII text using 64 characters (A-Z, a-z, 0-9, +, /). Used when text-only channels need to carry binary data. ~33% size overhead."
+        },
+        {
+          heading: "Image Embedding",
+          body: "Embed small images directly in CSS/HTML as data URIs. Reduces HTTP requests for tiny icons. Only recommended for images under 1-2KB."
+        },
+        {
+          heading: "API Authentication",
+          body: "HTTP Basic Auth encodes username:password in Base64. JWT payloads use Base64url encoding. Remember: encoding is NOT encryption — always use HTTPS."
+        },
+        {
+          heading: "Using Toolkio Base64 Converter",
+          body: "Supports both text and file conversion. Drag-and-drop files for instant encoding. Copy as data URI for direct use in code."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Base64 인코딩은 암호화인가요?",
+        answer: "아니요, 암호화가 아니에요. Base64는 누구나 쉽게 디코딩할 수 있는 인코딩 방식이에요. 보안 목적이라면 AES 같은 암호화 알고리즘을 사용해야 해요.",
+      },
+      {
+        question: "Base64로 인코딩하면 크기가 얼마나 커지나요?",
+        answer: "원본 대비 약 33% 커져요. 3바이트가 4문자로 변환되기 때문이에요. 100KB 파일이면 약 133KB가 돼요.",
+      },
+      {
+        question: "Base64와 Base64url의 차이점은 뭔가요?",
+        answer: "Base64url은 +를 -로, /를 _로 바꾸고 패딩(=)을 제거한 버전이에요. URL이나 파일명에서 안전하게 사용할 수 있어서 JWT 등에서 사용돼요.",
+      },
+    ],
+  },
+  {
+    slug: "regex-tester-practical-patterns-guide",
+    title: {
+      ko: "정규식 테스트 실전 가이드 — 자주 쓰는 패턴 20선 모음",
+      en: "Regex Tester Practical Guide — 20 Most Useful Patterns Collection",
+    },
+    description: {
+      ko: "정규식(정규 표현식)을 테스트하고 활용하는 실전 가이드예요. 이메일, 전화번호, URL 검증 등 자주 쓰는 패턴 20개를 모았어요.",
+      en: "Practical regex testing guide with 20 commonly used patterns. Covers email, phone, URL validation and more.",
+    },
+    date: "2026-04-07",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-tester-practical-patterns-guide.webp",
+    keywords: ["정규식 테스트", "정규식 패턴", "regex 테스트", "정규 표현식", "regex tester"],
+    content: {
+      ko: [
+        {
+          heading: "정규식, 왜 어렵게 느껴질까?",
+          body: "정규식(Regular Expression, Regex)은 문자열 패턴을 정의하는 언어예요. 처음 보면 암호처럼 보이지만, 기본 문법만 알면 금방 읽을 수 있어요.\n\n예를 들어 ^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z]+$는 이메일 형식을 검증하는 정규식이에요.\n\n핵심 기호만 알면 돼요:\n- ^ : 시작\n- $ : 끝\n- . : 아무 문자 1개\n- * : 0회 이상 반복\n- + : 1회 이상 반복\n- [ ] : 문자 범위\n- ( ) : 그룹"
+        },
+        {
+          heading: "자주 쓰는 패턴 10선 (한국어)",
+          body: "한국 개발에서 자주 필요한 패턴이에요:\n\n1. 한국 휴대폰: ^01[016789]-?\\d{3,4}-?\\d{4}$\n2. 이메일: ^[\\w.-]+@[\\w.-]+\\.\\w{2,}$\n3. 한글만: ^[가-힣]+$\n4. 주민등록번호: ^\\d{6}-?[1-4]\\d{6}$\n5. 사업자등록번호: ^\\d{3}-?\\d{2}-?\\d{5}$\n6. 우편번호: ^\\d{5}$\n7. URL: ^https?://[\\w.-]+\\.[a-z]{2,}\n8. 금액(쉼표): ^\\d{1,3}(,\\d{3})*원?$\n9. 날짜(YYYY-MM-DD): ^\\d{4}-\\d{2}-\\d{2}$\n10. IPv4: ^(\\d{1,3}\\.){3}\\d{1,3}$\n\n[글자수 세기 도구](/blog/how-to-count-characters)와 함께 입력 검증에 활용하세요."
+        },
+        {
+          heading: "자주 쓰는 패턴 10선 (영어/범용)",
+          body: "글로벌 서비스에서 자주 쓰는 패턴이에요:\n\n11. 비밀번호(강력): ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$\n12. 신용카드: ^\\d{4}[- ]?\\d{4}[- ]?\\d{4}[- ]?\\d{4}$\n13. HEX 색상: ^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$\n14. 숫자만: ^\\d+$\n15. 영문만: ^[a-zA-Z]+$\n16. 공백 제거: \\s+\n17. HTML 태그: <[^>]+>\n18. 파일 확장자: \\.(jpg|jpeg|png|gif|webp)$\n19. 유튜브 URL: youtube\\.com/watch\\?v=[\\w-]+\n20. JSON 키: \"([^\"]+)\"\\s*:"
+        },
+        {
+          heading: "Toolkio 정규식 테스트기 사용법",
+          body: "Toolkio의 정규식 테스트기는 실시간으로 패턴을 테스트할 수 있어요.\n\n1. 정규식 패턴 입력\n2. 테스트할 문자열 입력\n3. 매칭 결과 실시간 하이라이트\n4. 플래그 설정 (g, i, m 등)\n\n매칭되는 부분이 색상으로 표시되어서 패턴이 맞는지 바로 확인할 수 있어요. 복잡한 패턴을 작성할 때 한 단계씩 테스트하면서 만들면 실수를 줄일 수 있어요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Regex Seems Hard",
+          body: "Regex defines string patterns. Key symbols: ^ (start), $ (end), . (any char), * (0+), + (1+), [] (range), () (group). Once you know these basics, patterns become readable."
+        },
+        {
+          heading: "10 Common Korean Patterns",
+          body: "Phone: ^01[016789]-?\\d{3,4}-?\\d{4}$. Email, Korean chars only, ID numbers, business registration, zip codes, URLs, currency, dates, IPv4."
+        },
+        {
+          heading: "10 Common Universal Patterns",
+          body: "Strong password, credit card, HEX color, digits only, letters only, whitespace trim, HTML tags, file extensions, YouTube URLs, JSON keys."
+        },
+        {
+          heading: "Using Toolkio Regex Tester",
+          body: "Enter pattern and test string. Matches highlight in real-time. Set flags (g, i, m). Build complex patterns step by step with instant feedback."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정규식을 배우려면 어디서 시작하나요?",
+        answer: "regex101.com에서 실습하면서 배우는 게 가장 좋아요. 패턴을 입력하면 각 부분의 의미를 설명해줘요. Toolkio 정규식 테스트기로도 바로 연습할 수 있어요.",
+      },
+      {
+        question: "프로그래밍 언어마다 정규식이 다른가요?",
+        answer: "기본 문법은 거의 같지만, 고급 기능(전방탐색, 후방탐색 등)은 언어마다 차이가 있어요. JavaScript는 후방탐색 지원이 제한적이고, Python은 대부분의 기능을 지원해요.",
+      },
+      {
+        question: "정규식으로 이메일을 100% 정확히 검증할 수 있나요?",
+        answer: "완벽한 이메일 검증은 정규식만으로 어려워요. 기본 형식 검증 후 실제 메일을 보내서 확인하는 게 가장 정확해요. 정규식은 명백한 오류를 걸러내는 1차 필터 역할이에요.",
+      },
+    ],
+  },
+  {
+    slug: "markdown-preview-writing-tips-guide",
+    title: {
+      ko: "마크다운 미리보기 활용법 — 깔끔한 문서 작성 팁 모음",
+      en: "Markdown Preview Guide — Tips for Writing Clean Documentation",
+    },
+    description: {
+      ko: "마크다운 미리보기 도구를 활용한 문서 작성 팁을 정리했어요. 기본 문법부터 표, 코드 블록, 이미지까지 실전 사용법을 알려드려요.",
+      en: "How to use Markdown preview tools for writing clean documents. Covers syntax, tables, code blocks, images, and practical tips.",
+    },
+    date: "2026-04-07",
+    toolId: "markdown-preview",
+    image: "/images/blog/markdown-preview-writing-tips-guide.webp",
+    keywords: ["마크다운 미리보기", "마크다운 문법", "markdown preview", "마크다운 작성법", "markdown guide"],
+    content: {
+      ko: [
+        {
+          heading: "마크다운이란? 왜 쓸까?",
+          body: "마크다운(Markdown)은 텍스트에 간단한 기호를 붙여 서식을 지정하는 경량 마크업 언어예요.\n\n- # 하나면 제목\n- **별 두 개**면 굵게\n- - 하이픈이면 목록\n\n이렇게 직관적이라 개발자, 블로거, 작가들이 많이 써요. GitHub README, 기술 문서, 노션, 블로그 등 거의 모든 곳에서 지원하거든요.\n\nHTML처럼 복잡하지 않으면서도 깔끔한 문서를 만들 수 있는 게 가장 큰 장점이에요."
+        },
+        {
+          heading: "자주 쓰는 마크다운 문법 정리",
+          body: "꼭 알아야 할 핵심 문법이에요:\n\n제목: # H1, ## H2, ### H3\n굵게: **텍스트** 또는 __텍스트__\n기울임: *텍스트* 또는 _텍스트_\n취소선: ~~텍스트~~\n목록: - 또는 1. 2. 3.\n링크: [텍스트](URL)\n이미지: ![대체텍스트](이미지URL)\n코드: `인라인` 또는 ```블록```\n인용: > 텍스트\n구분선: ---\n\n이 10가지만 알면 대부분의 마크다운 문서를 작성할 수 있어요."
+        },
+        {
+          heading: "표(Table) 만들기",
+          body: "마크다운에서 표를 만드는 방법이에요:\n\n| 항목 | 설명 |\n|------|------|\n| 행1 | 내용1 |\n| 행2 | 내용2 |\n\n정렬도 가능해요:\n- |:---|  왼쪽 정렬\n- |:---:|  가운데 정렬\n- |---:|  오른쪽 정렬\n\n표는 데이터 비교나 요약에 유용해요. Toolkio 마크다운 미리보기에서 실시간으로 표가 어떻게 보이는지 확인할 수 있어요.\n\n[JSON 포맷터](/blog/json-formatter-guide-complete)로 API 응답 데이터를 정리한 뒤, 마크다운 표로 문서화하면 편리해요."
+        },
+        {
+          heading: "Toolkio 마크다운 미리보기 사용법",
+          body: "Toolkio의 마크다운 미리보기는 왼쪽에 마크다운을 입력하면 오른쪽에 실시간 렌더링 결과가 보여요.\n\n핵심 기능:\n- 실시간 미리보기 (타이핑하면 바로 반영)\n- 문법 하이라이팅\n- 다크/라이트 모드 지원\n- 원클릭 HTML 변환\n- 복사 기능\n\nGitHub README 작성할 때, 블로그 초안 잡을 때, 기술 문서 정리할 때 특히 유용해요."
+        },
+      ],
+      en: [
+        {
+          heading: "What is Markdown?",
+          body: "Lightweight markup language using simple symbols for formatting. # for headings, ** for bold, - for lists. Used everywhere: GitHub, blogs, documentation, Notion."
+        },
+        {
+          heading: "Essential Markdown Syntax",
+          body: "Headings (#), bold (**), italic (*), strikethrough (~~), lists (- or 1.), links ([text](url)), images (![alt](url)), code (`inline` or ```block```), quotes (>), dividers (---)."
+        },
+        {
+          heading: "Creating Tables",
+          body: "Use pipes and dashes: | Header | Header |\\n|---|---|\\n| Cell | Cell |. Align with :--- (left), :---: (center), ---: (right)."
+        },
+        {
+          heading: "Using Toolkio Markdown Preview",
+          body: "Live preview: type on left, see rendered output on right. Syntax highlighting, dark/light mode, HTML export, one-click copy."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "VS Code에서 마크다운 미리보기를 볼 수 있나요?",
+        answer: "네, Ctrl+Shift+V (Mac은 Cmd+Shift+V)를 누르면 미리보기 탭이 열려요. Ctrl+K V를 누르면 옆에 나란히 보면서 편집할 수 있어요.",
+      },
+      {
+        question: "마크다운으로 색상이나 폰트 크기를 바꿀 수 있나요?",
+        answer: "순수 마크다운에서는 안 돼요. 하지만 GitHub이나 일부 플랫폼에서는 HTML 태그를 허용해서 <span style=\"color:red\">빨간 글씨</span> 같은 방법을 쓸 수 있어요.",
+      },
+      {
+        question: "마크다운과 노션의 차이점은 뭔가요?",
+        answer: "노션은 마크다운 문법을 일부 지원하지만 자체 에디터가 메인이에요. 순수 마크다운 파일(.md)과는 호환이 완벽하지 않아요. 개발 문서는 순수 마크다운, 팀 협업은 노션이 적합해요.",
+      },
+    ],
+  },
 ];
