@@ -218,17 +218,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-create-strong-password",
     title: {
-      ko: "안전한 비밀번호 만드는 법 - 해킹당하지 않는 비밀번호 가이드",
-      en: "How to Create Strong Passwords - A Guide to Hack-Proof Passwords",
+      ko: "안전한 비밀번호 만들기 - 길이, 특수문자, 조합 완벽 가이드",
+      en: "How to Create Strong Passwords - Complete Guide to Length, Characters, and Combinations",
     },
     description: {
-      ko: "해킹에 안전한 비밀번호 만드는 방법. 비밀번호 길이, 특수문자 조합, 관리 팁까지 총정리.",
-      en: "Create hack-proof passwords. Password length, special characters, and management tips.",
+      ko: "안전한 비밀번호 만들기 완벽 가이드. 비밀번호 길이는 몇 자가 좋은지, 특수문자 조합 방법, 비밀번호 관리자 추천까지 총정리했어요.",
+      en: "Complete guide to creating strong passwords. Ideal password length, character combinations, and password manager recommendations.",
     },
     date: "2026-03-13",
     toolId: "password-generator",
     image: "/images/blog/how-to-create-strong-password.webp",
-    keywords: ["비밀번호 만들기", "안전한 비밀번호", "비밀번호 생성기", "strong password", "password tips"],
+    keywords: ["안전한 비밀번호 만들기", "비밀번호 만들기", "비밀번호 길이", "비밀번호 특수문자", "비밀번호 생성기", "strong password"],
     content: {
       ko: [
         {
@@ -737,17 +737,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-preview-markdown",
     title: {
-      ko: "마크다운 미리보기 가이드 - 실시간으로 Markdown 문법 확인하기",
-      en: "Markdown Preview Guide - Check Your Markdown Syntax in Real Time",
+      ko: "마크다운 미리보기 가이드 - 노션 마크다운 문법 실시간 확인",
+      en: "Markdown Preview Guide - Notion Markdown Syntax Check in Real Time",
     },
     description: {
-      ko: "마크다운 문법을 실시간으로 미리보기하는 방법. 깃허브 README, 블로그 글 작성에 필요한 Markdown 문법 총정리.",
-      en: "Preview Markdown syntax in real time. Complete Markdown guide for GitHub README and blog writing.",
+      ko: "노션 마크다운 문법을 실시간으로 미리보기하는 방법. 깃허브 README, 노션, 블로그 글 작성에 필요한 Markdown 문법 총정리와 온라인 프리뷰 도구.",
+      en: "Preview Notion Markdown syntax in real time. Complete Markdown guide for GitHub README, Notion, and blog writing with online preview tool.",
     },
     date: "2026-03-13",
     toolId: "markdown-preview",
     image: "/images/blog/how-to-preview-markdown.webp",
-    keywords: ["마크다운 미리보기", "Markdown 문법", "마크다운 사용법", "GitHub README 작성", "markdown preview"],
+    keywords: ["마크다운 미리보기", "노션 마크다운", "Markdown 문법", "마크다운 사용법", "GitHub README 작성", "markdown preview", "notion markdown preview", "노션 마크다운 미리보기"],
     content: {
       ko: [
         {
@@ -5351,17 +5351,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "secure-password-creation-tips",
     title: {
-      ko: "안전한 비밀번호 만드는 법 - 해킹 당하기 전에 꼭 읽으세요",
-      en: "How to Create Secure Passwords - Read This Before You Get Hacked",
+      ko: "비밀번호 해킹 시간 - 내 비밀번호는 몇 초면 뚫릴까?",
+      en: "Password Cracking Time - How Fast Can Hackers Break Your Password?",
     },
     description: {
-      ko: "비밀번호 1234는 0.001초면 뚫려요. 해커가 못 뚫는 비밀번호를 만드는 방법과 관리 팁을 알려드릴게요.",
-      en: "The password 1234 can be cracked in 0.001 seconds. Learn how to create passwords that hackers can't break and tips to manage them.",
+      ko: "비밀번호 1234는 0.001초면 뚫려요. 자릿수별 비밀번호 해킹 시간과 무차별 대입 공격 원리를 알려드릴게요.",
+      en: "Password 1234 can be cracked in 0.001 seconds. Learn password cracking times by length and how brute force attacks work.",
     },
     date: "2026-03-25",
     toolId: "password-generator",
     image: "/images/blog/secure-password-creation-tips.webp",
-    keywords: ["비밀번호 만들기", "안전한 비밀번호", "비밀번호 생성기", "해킹 방지", "패스워드 보안", "password generator"],
+    keywords: ["비밀번호 해킹 시간", "비밀번호 뚫리는 시간", "무차별 대입 공격", "brute force", "비밀번호 강도", "password cracking time"],
     content: {
       ko: [
         {
@@ -5903,17 +5903,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "secure-password-creation-tips-2026",
     title: {
-      ko: "안전한 비밀번호 만드는 법 2026 – 해킹 안 당하는 비밀번호 규칙 5가지",
-      en: "How to Create Secure Passwords in 2026 – 5 Rules to Prevent Hacking",
+      ko: "비밀번호 관리 방법 2026 - 2단계 인증부터 비밀번호 관리자까지",
+      en: "Password Management Guide 2026 - From 2FA to Password Managers",
     },
     description: {
-      ko: "해킹을 막는 안전한 비밀번호 만드는 규칙 5가지를 정리했어요. 비밀번호 강도 체크, 관리 방법까지 알려드려요.",
-      en: "5 rules for creating hack-proof passwords. Learn about password strength, management, and best practices for 2026.",
+      ko: "비밀번호 관리 방법 총정리. 2단계 인증(2FA) 설정법, 비밀번호 관리자 추천, 문장형 비밀번호 만들기까지 알려드려요.",
+      en: "Complete password management guide. How to set up 2FA, best password managers, and passphrase creation tips for 2026.",
     },
     date: "2026-03-27",
     toolId: "password-generator",
     image: "/images/blog/secure-password-creation-tips-2026.webp",
-    keywords: ["비밀번호 만들기", "안전한 비밀번호", "비밀번호 규칙", "비밀번호 강도", "password security"],
+    keywords: ["비밀번호 관리", "비밀번호 관리자", "2단계 인증", "2FA", "비밀번호 관리 방법", "password manager", "Bitwarden", "1Password"],
     content: {
       ko: [
         {
@@ -6514,17 +6514,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "hash-function-sha256-md5-explained",
     title: {
-      ko: "해시 함수란? SHA-256과 MD5 쉽게 이해하기",
-      en: "What Is a Hash Function? SHA-256 and MD5 Explained Simply",
+      ko: "MD5란 무엇인가? SHA-256과 MD5 차이점 쉽게 이해하기",
+      en: "What Is MD5? SHA-256 vs MD5 Differences Explained Simply",
     },
     description: {
-      ko: "해시 함수의 개념부터 SHA-256, MD5 차이점까지 쉽게 정리했어요. 파일 무결성 확인, 비밀번호 저장 등 실전 활용법도 알아보세요.",
-      en: "Learn what hash functions are, how SHA-256 and MD5 differ, and practical use cases like file integrity checks and password storage.",
+      ko: "MD5란 무엇인지, SHA-256과 어떻게 다른지 쉽게 설명해요. 해시 함수 개념부터 파일 무결성 확인, 비밀번호 해시 저장까지 실전 활용법을 정리했어요.",
+      en: "Learn what MD5 is, how it differs from SHA-256, and practical hash function use cases like file integrity checks and password hashing.",
     },
     date: "2026-03-29",
     toolId: "hash-generator",
     image: "/images/blog/hash-function-sha256-md5-explained.webp",
-    keywords: ["해시 함수", "SHA-256", "MD5", "해시 생성기", "hash function", "파일 무결성", "비밀번호 해시"],
+    keywords: ["MD5란", "MD5", "SHA-256", "해시 함수", "MD5 SHA-256 차이", "해시 생성기", "hash function", "파일 무결성", "비밀번호 해시"],
     content: {
       ko: [
         {
