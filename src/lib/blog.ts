@@ -9973,4 +9973,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "qr-code-google-form-guide",
+    title: {
+      ko: "QR코드 만들기 구글폼 연결 — 설문조사 공유를 쉽게",
+      en: "Create QR Code for Google Forms — Easy Survey Sharing",
+    },
+    description: {
+      ko: "구글폼 설문조사를 QR코드로 만들어 공유하는 방법을 단계별로 알려드려요. 인쇄물, 포스터, 명함에 활용하는 팁까지 정리했어요.",
+      en: "Step-by-step guide to creating QR codes for Google Forms surveys. Tips for using them in print materials, posters, and business cards.",
+    },
+    date: "2026-04-08",
+    toolId: "qr-code-generator",
+    image: "/images/blog/qr-code-google-form-guide.webp",
+    keywords: ["qr코드 만들기 구글폼", "qr코드 만들기", "구글폼 qr코드", "qr code generator google form", "설문조사 qr코드"],
+    content: {
+      ko: [
+        {
+          heading: "구글폼 QR코드가 필요한 상황",
+          body: "행사 참석 확인, 수업 만족도 조사, 식당 메뉴 피드백, 이벤트 응모 등 오프라인에서 설문을 받아야 할 때 QR코드가 딱이에요.\n\n종이에 URL을 적으면 아무도 직접 입력하지 않잖아요. QR코드로 만들면 스마트폰 카메라만 갖다 대면 바로 설문 페이지로 이동하니까 응답률이 확 올라가거든요.\n\n특히 학교 수업, 세미나, 워크숍 같은 데서 피드백 받을 때 정말 유용해요."
+        },
+        {
+          heading: "구글폼 URL 가져오기",
+          body: "먼저 구글폼에서 설문을 완성한 뒤 공유 URL을 가져와야 해요.\n\n1. 구글폼 편집 화면에서 '보내기' 버튼 클릭\n2. 링크 아이콘(체인 모양) 선택\n3. 'URL 단축' 체크 (선택사항)\n4. '복사' 클릭\n\n이 URL을 QR코드로 변환하면 돼요. URL이 너무 길면 단축 옵션을 켜는 게 좋아요. QR코드가 복잡해지면 인식률이 떨어질 수 있거든요."
+        },
+        {
+          heading: "Toolkio에서 QR코드 만들기",
+          body: "Toolkio의 [QR코드 생성기](/tools/qr-code-generator)를 사용하면 무료로 바로 만들 수 있어요.\n\n1. Toolkio QR코드 생성기 접속\n2. 복사한 구글폼 URL 붙여넣기\n3. 원하는 크기와 색상 설정\n4. QR코드 생성 후 PNG로 다운로드\n\n색상을 브랜드 컬러에 맞추면 포스터나 인쇄물에 넣을 때 더 깔끔해요. 다만 배경과 QR코드의 대비가 충분해야 인식이 잘 되거든요.\n\n[이미지 압축 가이드](/blog/image-compression-guide-web)를 참고해서 QR 이미지 용량도 최적화하면 좋아요."
+        },
+        {
+          heading: "QR코드 활용 팁과 주의사항",
+          body: "QR코드를 효과적으로 활용하는 팁이에요:\n\n- 인쇄할 때 최소 2cm x 2cm 이상 크기로\n- 주변에 여백을 충분히 확보 (테두리에 딱 붙이면 인식 어려움)\n- 반드시 스마트폰으로 테스트 스캔 후 배포\n- 설문이 수정되어도 URL이 같으면 QR코드 재생성 불필요\n- QR코드 아래에 '설문 참여하기' 같은 안내 문구 추가\n\n구글폼 URL을 수정하면 기존 QR코드가 작동하지 않으니 주의하세요. 설문 내용만 수정하는 건 괜찮아요."
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need a Google Form QR Code",
+          body: "Event check-ins, class surveys, restaurant feedback, contest entries. QR codes make offline survey collection effortless — just point a camera and go."
+        },
+        {
+          heading: "Getting Your Google Form URL",
+          body: "In Google Forms, click Send > link icon > copy URL. Enable URL shortening for cleaner QR codes with better scan reliability."
+        },
+        {
+          heading: "Creating the QR Code with Toolkio",
+          body: "Use Toolkio QR Code Generator: paste URL, customize size/color, generate and download PNG. Match brand colors for professional print materials."
+        },
+        {
+          heading: "Tips and Best Practices",
+          body: "Print at 2cm+ size, leave white space margins, always test-scan before distributing. Form URL changes break QR codes — content edits are fine."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "구글폼 설문을 수정하면 QR코드도 바꿔야 하나요?",
+        answer: "설문 내용(질문, 선택지)만 수정하면 URL이 그대로라서 기존 QR코드가 계속 작동해요. 하지만 새 설문을 만들면 URL이 바뀌니까 QR코드도 새로 만들어야 해요.",
+      },
+      {
+        question: "QR코드에 로고를 넣을 수 있나요?",
+        answer: "일부 QR코드 생성기는 중앙에 로고를 삽입하는 기능을 제공해요. 다만 로고가 너무 크면 인식률이 떨어질 수 있으니 전체 면적의 20% 이하로 유지하세요.",
+      },
+      {
+        question: "QR코드가 스캔이 안 될 때 어떻게 하나요?",
+        answer: "대비가 부족하거나 크기가 너무 작으면 인식이 안 돼요. 어두운 QR코드 + 밝은 배경 조합으로, 최소 2cm 이상 크기로 인쇄하세요. 구겨지거나 반사가 심한 재질도 피해야 해요.",
+      },
+    ],
+  },
+  {
+    slug: "timestamp-excel-conversion-guide",
+    title: {
+      ko: "타임스탬프 변환 엑셀 활용법 — Unix 시간을 날짜로 바꾸기",
+      en: "Timestamp to Excel Conversion — Convert Unix Time to Dates",
+    },
+    description: {
+      ko: "유닉스 타임스탬프를 엑셀에서 날짜로 변환하는 공식과 방법을 정리했어요. 대량 데이터 처리 팁까지 알려드려요.",
+      en: "How to convert Unix timestamps to readable dates in Excel. Formulas, bulk conversion tips, and practical use cases.",
+    },
+    date: "2026-04-08",
+    toolId: "timestamp-converter",
+    image: "/images/blog/timestamp-excel-conversion-guide.webp",
+    keywords: ["타임스탬프 변환 엑셀", "타임스탬프 변환", "유닉스 타임스탬프 변환", "unix timestamp excel", "타임스탬프 날짜 변환"],
+    content: {
+      ko: [
+        {
+          heading: "타임스탬프가 엑셀에서 필요한 이유",
+          body: "서버 로그, API 응답, 데이터베이스 내보내기 파일을 엑셀로 열면 날짜가 1714300800 같은 숫자로 보일 때가 있어요. 이게 유닉스 타임스탬프예요.\n\n1970년 1월 1일 00:00:00 UTC부터 경과한 초(seconds)를 나타내는 숫자인데, 사람이 읽으려면 날짜 형식으로 변환해야 해요.\n\n엑셀에서 이 변환을 하는 방법을 알면 로그 분석이나 데이터 정리가 훨씬 편해져요."
+        },
+        {
+          heading: "엑셀 공식으로 변환하기",
+          body: "엑셀에서 유닉스 타임스탬프를 날짜로 바꾸는 공식이에요:\n\n=(A1/86400)+DATE(1970,1,1)\n\n- A1: 타임스탬프가 있는 셀\n- 86400: 하루의 초(60x60x24)\n- DATE(1970,1,1): 유닉스 에포크 기준일\n\n밀리초 단위 타임스탬프라면:\n=(A1/86400000)+DATE(1970,1,1)\n\n변환 후 셀 서식을 '날짜' 또는 '사용자 지정(yyyy-mm-dd hh:mm:ss)'으로 설정하면 읽기 쉬운 날짜가 돼요.\n\n빠르게 확인만 하려면 Toolkio [타임스탬프 변환기](/tools/timestamp-converter)를 쓰면 바로 결과를 볼 수 있어요."
+        },
+        {
+          heading: "한국 시간(KST)으로 변환하기",
+          body: "위 공식은 UTC 기준이에요. 한국 시간(KST = UTC+9)으로 바꾸려면:\n\n=(A1/86400)+DATE(1970,1,1)+(9/24)\n\n9/24를 더하면 9시간이 추가되어 한국 시간으로 표시돼요.\n\n주의할 점:\n- 서버가 이미 KST 기준이면 시간 보정 불필요\n- 써머타임 적용 국가 데이터는 별도 처리 필요\n- 엑셀의 날짜 시스템이 1900년식인지 1904년식인지 확인\n\n[Base64 인코딩 가이드](/blog/base64-encoding-practical-use-cases)에서 다룬 것처럼 데이터 형식 변환은 개발자의 필수 스킬이에요."
+        },
+        {
+          heading: "대량 데이터 일괄 변환 팁",
+          body: "수천 행의 타임스탬프를 한번에 바꾸는 방법이에요:\n\n1. 빈 열에 변환 공식 입력\n2. 첫 셀에서 공식 작성 후 더블클릭으로 자동 채우기\n3. 변환된 열을 복사 → '값만 붙여넣기'로 공식 제거\n4. 원본 타임스탬프 열 삭제\n\n더 빠른 방법: Toolkio 타임스탬프 변환기에 값을 넣어서 확인한 뒤, 엑셀에서는 공식만 한 번 적용하면 돼요.\n\n구글 시트에서는 =EPOCHTODATE(A1) 함수로 더 간단하게 변환할 수 있어요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Timestamps Appear in Excel",
+          body: "Server logs, API responses, and database exports often show dates as Unix timestamps (seconds since 1970-01-01). Excel needs formulas to convert them."
+        },
+        {
+          heading: "Excel Conversion Formula",
+          body: "=(A1/86400)+DATE(1970,1,1) for seconds. For milliseconds: =(A1/86400000)+DATE(1970,1,1). Format cells as date after converting."
+        },
+        {
+          heading: "Timezone Adjustments",
+          body: "Add hours: =(A1/86400)+DATE(1970,1,1)+(HOURS/24). For KST (UTC+9): add +(9/24). Check if source data is already localized."
+        },
+        {
+          heading: "Bulk Conversion Tips",
+          body: "Write formula once, double-click fill handle to apply to all rows. Paste as values to remove formulas. Google Sheets has =EPOCHTODATE() built-in."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "엑셀에서 날짜를 다시 타임스탬프로 바꿀 수 있나요?",
+        answer: "네, 역변환 공식은 =(A1-DATE(1970,1,1))*86400이에요. 날짜 셀을 유닉스 타임스탬프 숫자로 바꿔줘요.",
+      },
+      {
+        question: "밀리초와 초 단위 타임스탬프를 어떻게 구분하나요?",
+        answer: "자릿수로 구분해요. 10자리면 초 단위(예: 1714300800), 13자리면 밀리초 단위(예: 1714300800000)예요. Toolkio 변환기가 자동으로 감지해줘요.",
+      },
+      {
+        question: "구글 시트에서도 같은 공식이 작동하나요?",
+        answer: "비슷하지만 구글 시트는 =EPOCHTODATE(A1) 함수를 자체 지원해서 더 간단해요. 엑셀 공식도 작동하지만 날짜 시스템 차이로 약간의 오차가 있을 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "image-compression-online-vs-offline",
+    title: {
+      ko: "이미지 압축 프로그램 vs 온라인 도구 — 어떤 걸 써야 할까?",
+      en: "Image Compression: Online Tools vs Desktop Programs Compared",
+    },
+    description: {
+      ko: "이미지 압축 프로그램과 온라인 도구의 차이를 비교했어요. 상황별 추천과 용량 줄이면서 화질 유지하는 팁을 알려드려요.",
+      en: "Online image compressors vs desktop programs compared. When to use each, quality tips, and recommended tools for different scenarios.",
+    },
+    date: "2026-04-08",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compression-online-vs-offline.webp",
+    keywords: ["이미지 압축 프로그램", "이미지 압축 사이트", "이미지 압축하기", "이미지 압축 무료", "image compressor online vs offline"],
+    content: {
+      ko: [
+        {
+          heading: "이미지 압축이 필요한 이유",
+          body: "웹사이트 속도, 이메일 첨부, SNS 업로드, 저장 공간 절약. 이미지 압축이 필요한 순간은 생각보다 많아요.\n\n특히 웹사이트는 이미지가 전체 용량의 50% 이상을 차지하는 경우가 흔해서, 이미지 압축만 잘 해도 로딩 속도가 확 빨라져요.\n\n문제는 압축하면서 화질은 유지해야 한다는 거예요. 이때 어떤 도구를 쓰느냐에 따라 결과가 달라져요."
+        },
+        {
+          heading: "온라인 도구의 장단점",
+          body: "Toolkio [이미지 압축기](/tools/image-compressor), TinyPNG, Squoosh 같은 온라인 도구의 특징이에요.\n\n장점:\n- 설치 불필요, 브라우저만 있으면 OK\n- 무료 사용 가능\n- 기기에 상관없이 어디서든 사용\n- 업데이트나 관리 필요 없음\n\n단점:\n- 인터넷 필요\n- 대량 처리에 시간 소요\n- 파일 크기 제한 있을 수 있음\n- 민감한 이미지는 보안 우려\n\n일반적인 블로그 이미지나 SNS용 사진 1-10장 정도는 온라인 도구가 가장 편해요."
+        },
+        {
+          heading: "데스크톱 프로그램의 장단점",
+          body: "Photoshop, GIMP, ImageOptim, Caesium 같은 프로그램의 특징이에요.\n\n장점:\n- 대량 일괄 처리 (배치 처리)\n- 세밀한 압축 옵션 설정\n- 오프라인 작동\n- 파일 크기 제한 없음\n\n단점:\n- 설치 필요\n- 일부는 유료\n- 컴퓨터 사양에 영향\n- 사용법 학습 필요\n\n100장 이상 한번에 처리하거나, 인쇄용 고해상도 이미지를 다룬다면 프로그램이 효율적이에요.\n\n[URL 인코딩 가이드](/blog/url-encoding-decoding-guide)처럼 웹 개발에서는 온라인 도구가 빠른 확인에 더 적합해요."
+        },
+        {
+          heading: "상황별 추천 정리",
+          body: "상황에 맞는 도구를 고르는 게 핵심이에요:\n\n블로그/SNS 이미지 1-10장: 온라인 도구 (Toolkio, TinyPNG)\n쇼핑몰 상품 이미지 대량: 프로그램 (Caesium, ImageOptim)\n웹 개발 자동화: CLI 도구 (sharp, imagemin)\n인쇄용 고해상도: Photoshop의 '웹용 저장'\n\n추천 형식:\n- 사진: WebP (최우선) 또는 JPEG\n- 로고/아이콘: PNG 또는 SVG\n- 투명 배경 필요: PNG 또는 WebP\n\nWebP는 JPEG 대비 25-35% 더 작으면서 화질 차이가 거의 없어서 웹에서는 WebP를 쓰는 게 가장 좋아요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Image Compression Matters",
+          body: "Web speed, email attachments, SNS uploads, storage savings. Images often account for 50%+ of web page size. Compression dramatically improves load times."
+        },
+        {
+          heading: "Online Tools Pros and Cons",
+          body: "No install, free, cross-device. But needs internet, limited batch processing, file size limits. Best for 1-10 images."
+        },
+        {
+          heading: "Desktop Programs Pros and Cons",
+          body: "Batch processing, fine control, offline, no size limits. But requires install, some are paid, learning curve. Best for 100+ images."
+        },
+        {
+          heading: "When to Use What",
+          body: "Blog/SNS: online tools. E-commerce bulk: desktop. Web dev automation: CLI tools. Print: Photoshop. Prefer WebP format for web (25-35% smaller than JPEG)."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지 압축하면 화질이 많이 떨어지나요?",
+        answer: "70-80% 품질로 압축하면 육안으로 차이를 거의 못 느껴요. 파일 크기는 50-70% 줄어들고요. 50% 이하로 내리면 눈에 보이기 시작하니까 70% 이상을 유지하는 게 좋아요.",
+      },
+      {
+        question: "PNG와 JPEG 중 어떤 형식으로 압축해야 하나요?",
+        answer: "사진은 JPEG(또는 WebP), 로고나 아이콘 같은 단순한 그래픽은 PNG가 좋아요. 요즘은 WebP가 둘 다 대체할 수 있어서 웹용이라면 WebP를 추천해요.",
+      },
+      {
+        question: "압축한 이미지를 다시 원본 화질로 되돌릴 수 있나요?",
+        answer: "손실 압축(JPEG, WebP lossy)은 원본으로 복원이 불가능해요. 압축 전에 원본을 따로 보관해두는 게 좋아요. PNG는 무손실이라 압축해도 화질이 그대로예요.",
+      },
+    ],
+  },
+  {
+    slug: "base64-image-encoding-guide",
+    title: {
+      ko: "Base64 이미지 변환 — 이미지를 텍스트로 인코딩하는 방법",
+      en: "Base64 Image Encoding — Convert Images to Text Strings",
+    },
+    description: {
+      ko: "이미지를 Base64로 변환하는 방법과 활용 사례를 정리했어요. 웹 개발에서 이미지를 텍스트로 임베딩하는 실전 가이드.",
+      en: "How to convert images to Base64 strings. Practical guide for embedding images as text in web development, emails, and APIs.",
+    },
+    date: "2026-04-08",
+    toolId: "base64",
+    image: "/images/blog/base64-image-encoding-guide.webp",
+    keywords: ["이미지 base64 변환", "이미지 base64 변환 사이트", "base64 이미지 인코딩", "base64 encode image", "이미지 텍스트 변환"],
+    content: {
+      ko: [
+        {
+          heading: "Base64 이미지 변환이란?",
+          body: "이미지 파일(PNG, JPEG 등)을 긴 텍스트 문자열로 바꾸는 거예요. 변환된 텍스트는 이렇게 생겼어요:\n\ndata:image/png;base64,iVBORw0KGgo...\n\n이 텍스트를 HTML이나 CSS에 직접 넣으면 별도 이미지 파일 없이 이미지를 표시할 수 있어요.\n\n파일을 서버에 올리지 않아도 되니까 간단한 아이콘이나 작은 이미지를 임베딩할 때 유용해요."
+        },
+        {
+          heading: "Base64 이미지 변환 방법",
+          body: "Toolkio [Base64 변환기](/tools/base64)에서 바로 변환할 수 있어요.\n\n1. Base64 인코딩 모드 선택\n2. 이미지 파일을 텍스트로 변환\n3. 결과 문자열 복사\n\n또는 개발자라면 코드로도 가능해요:\n\nJavaScript: btoa() 또는 FileReader.readAsDataURL()\nPython: base64.b64encode()\nCLI: base64 -i input.png\n\n주의할 점은 Base64로 변환하면 원본보다 파일 크기가 약 33% 커진다는 거예요. 큰 이미지는 일반 파일 링크가 낫고, 1-2KB 이하의 작은 아이콘에만 쓰는 게 좋아요."
+        },
+        {
+          heading: "실전 활용 사례",
+          body: "Base64 이미지가 유용한 상황이에요:\n\n1. 이메일 HTML 템플릿: 외부 이미지 차단되는 환경에서도 표시\n2. CSS background-image: 작은 패턴이나 아이콘 인라인 삽입\n3. API 요청/응답: JSON에 이미지 데이터 포함\n4. 단일 HTML 파일: 외부 리소스 없이 완결된 문서\n\nCSS 예시:\nbackground-image: url('data:image/png;base64,iVBORw...');\n\n[색상 코드 변환](/blog/color-code-converter-rgb-hex-guide)과 함께 CSS 작업할 때 자주 쓰이는 기법이에요."
+        },
+        {
+          heading: "주의사항과 대안",
+          body: "Base64 이미지의 단점도 알아두세요:\n\n- 원본 대비 33% 크기 증가\n- 브라우저 캐싱이 안 됨 (매번 다운로드)\n- 큰 이미지에 사용하면 HTML 파일이 무거워짐\n- 유지보수가 어려움 (이미지 수정 시 다시 인코딩)\n\n대안:\n- 10KB 이상 이미지: 일반 파일 링크 사용\n- 아이콘: SVG 인라인 (크기 효율적)\n- 반복 사용 이미지: CDN + 캐싱\n\n결론적으로 Base64는 작은 이미지의 HTTP 요청을 줄이는 최적화 기법이에요. 무분별하게 쓰면 오히려 성능이 나빠지니 용도에 맞게 사용하세요."
+        },
+      ],
+      en: [
+        {
+          heading: "What is Base64 Image Encoding?",
+          body: "Converting image files to text strings (data:image/png;base64,...). Embed images directly in HTML/CSS without separate files."
+        },
+        {
+          heading: "How to Convert",
+          body: "Use Toolkio Base64 tool, JavaScript btoa()/FileReader, Python base64.b64encode(), or CLI base64 command. Note: output is ~33% larger."
+        },
+        {
+          heading: "Practical Use Cases",
+          body: "Email HTML templates, CSS background patterns, API payloads, single-file HTML documents. Best for icons under 1-2KB."
+        },
+        {
+          heading: "Caveats and Alternatives",
+          body: "33% size increase, no caching, bloated HTML. Use regular file links for 10KB+ images, SVG for icons, CDN for repeated images."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "Base64 이미지를 다시 원본 파일로 바꿀 수 있나요?",
+        answer: "네, Base64 디코딩을 하면 원본 이미지로 복원할 수 있어요. Toolkio Base64 도구에서 디코딩 모드를 선택하면 바로 변환돼요. 무손실 변환이라 화질 저하는 없어요.",
+      },
+      {
+        question: "모든 이미지 형식을 Base64로 변환할 수 있나요?",
+        answer: "네, PNG, JPEG, GIF, WebP, SVG 등 모든 형식이 가능해요. 변환 시 MIME 타입(image/png, image/jpeg 등)을 정확히 지정해야 브라우저가 올바르게 렌더링해요.",
+      },
+      {
+        question: "Base64 이미지가 SEO에 영향을 주나요?",
+        answer: "Base64 이미지는 검색엔진이 별도 이미지로 인식하지 못해요. SEO가 중요한 이미지는 일반 파일로 올리고 alt 태그를 넣는 게 좋아요. 장식용 아이콘에만 Base64를 쓰세요.",
+      },
+    ],
+  },
+  {
+    slug: "color-code-rgb-cmyk-conversion-guide",
+    title: {
+      ko: "RGB CMYK 색상 코드 변환 — 디자인과 인쇄 색상 맞추기",
+      en: "RGB to CMYK Color Code Conversion — Matching Screen and Print Colors",
+    },
+    description: {
+      ko: "RGB와 CMYK 색상 코드의 차이와 변환 방법을 정리했어요. 화면 색상을 인쇄물에 정확히 재현하는 팁을 알려드려요.",
+      en: "Understanding RGB vs CMYK color systems and how to convert between them. Tips for matching on-screen colors to printed materials.",
+    },
+    date: "2026-04-08",
+    toolId: "color-converter",
+    image: "/images/blog/color-code-rgb-cmyk-conversion-guide.webp",
+    keywords: ["rgb cmyk 색상 코드 변환", "색상 코드 변환", "rgb to cmyk", "색상 코드 변환기", "cmyk 색상 코드 변환"],
+    content: {
+      ko: [
+        {
+          heading: "RGB와 CMYK의 차이",
+          body: "색상 코드 변환을 이해하려면 먼저 이 둘의 차이를 알아야 해요.\n\nRGB (빛의 삼원색):\n- Red, Green, Blue\n- 모니터, TV, 스마트폰 등 화면용\n- 빛을 더할수록 밝아짐 (가산혼합)\n- 값 범위: 0-255\n\nCMYK (잉크의 사원색):\n- Cyan, Magenta, Yellow, Key(Black)\n- 인쇄물, 출판, 명함 등 프린트용\n- 잉크를 더할수록 어두워짐 (감산혼합)\n- 값 범위: 0-100%\n\n화면에서 예쁜 색이 인쇄하면 탁하게 나오는 건 이 차이 때문이에요."
+        },
+        {
+          heading: "RGB를 CMYK로 변환하는 방법",
+          body: "Toolkio [색상 변환기](/tools/color-converter)에서 RGB 값을 입력하면 CMYK, HEX 등으로 바로 변환돼요.\n\n변환 공식 (간략):\nC = 1 - (R/255)\nM = 1 - (G/255)\nY = 1 - (B/255)\nK = min(C, M, Y)\n\n하지만 이 공식은 근사치예요. 실제 인쇄에서는 프린터와 종이에 따라 색이 달라지기 때문에 ICC 프로파일을 사용한 정밀 변환이 필요해요.\n\n일반적인 디자인 작업에서는 온라인 변환기로 충분하고, 전문 인쇄물은 Photoshop이나 Illustrator의 색상 모드 변환을 사용하세요."
+        },
+        {
+          heading: "변환 시 색상 차이가 나는 이유",
+          body: "RGB와 CMYK의 색역(gamut)이 다르기 때문이에요.\n\nRGB에서는 표현 가능하지만 CMYK에서는 불가능한 색:\n- 형광 초록, 네온 파랑 같은 밝은 색\n- 매우 채도 높은 빨강\n- 화면에서 빛나는 느낌의 색상\n\n이런 색은 CMYK로 변환하면 가장 가까운 색으로 대체돼요. 이걸 '색역 외(out of gamut)'라고 해요.\n\n팁: 인쇄물을 만들 때는 처음부터 CMYK 모드로 디자인하면 나중에 색상 차이로 당황하지 않아요.\n\n[Hex 색상 변환 가이드](/blog/color-code-converter-rgb-hex-guide)도 함께 참고하면 웹과 인쇄 모두 정확한 색상 관리가 가능해요."
+        },
+        {
+          heading: "실전 활용 팁",
+          body: "디자인과 인쇄에서 색상을 정확하게 맞추는 팁이에요:\n\n1. 인쇄물은 CMYK 모드로 시작: Photoshop에서 Image > Mode > CMYK\n2. 웹용은 RGB/HEX 유지: CSS에서는 항상 RGB 또는 HEX\n3. 브랜드 컬러는 양쪽 다 정의: 로고 가이드에 RGB + CMYK 모두 명시\n4. 중요한 인쇄물은 색교정(proof) 요청\n5. Pantone 색상 매칭: 정확한 색이 중요하면 팬톤 컬러 사용\n\n실무에서 가장 많이 하는 실수는 RGB로 디자인한 파일을 그대로 인쇄 보내는 거예요. 반드시 CMYK로 변환 후 보내세요."
+        },
+      ],
+      en: [
+        {
+          heading: "RGB vs CMYK Explained",
+          body: "RGB: additive (light), for screens, 0-255 range. CMYK: subtractive (ink), for print, 0-100% range. Screen colors look different when printed due to this fundamental difference."
+        },
+        {
+          heading: "How to Convert",
+          body: "Use Toolkio Color Converter for quick conversion. For professional print: use ICC profiles in Photoshop/Illustrator. Online converters give approximate results."
+        },
+        {
+          heading: "Why Colors Look Different",
+          body: "RGB has a wider gamut than CMYK. Neon/fluorescent colors cannot be reproduced in print. Design in CMYK mode from the start for print projects."
+        },
+        {
+          heading: "Practical Tips",
+          body: "Start print projects in CMYK mode. Keep web projects in RGB/HEX. Define brand colors in both systems. Request color proofs for important prints. Use Pantone for exact matching."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "HEX 색상 코드도 CMYK로 변환할 수 있나요?",
+        answer: "네, HEX는 RGB의 다른 표기법이라서 HEX → RGB → CMYK 순서로 변환하면 돼요. Toolkio 색상 변환기에서 HEX를 입력하면 RGB와 CMYK가 동시에 나와요.",
+      },
+      {
+        question: "인쇄소에서 RGB 파일을 보내면 안 되나요?",
+        answer: "보내도 인쇄소에서 자동 변환하지만, 의도한 색과 다르게 나올 수 있어요. 색상이 중요한 인쇄물이라면 반드시 CMYK 모드로 변환해서 보내세요.",
+      },
+      {
+        question: "모니터에서 보이는 색을 인쇄물에서 정확히 재현할 수 있나요?",
+        answer: "100% 동일하게는 어려워요. 모니터는 빛으로, 인쇄는 잉크로 색을 만들기 때문이에요. 최대한 가깝게 맞추려면 캘리브레이션된 모니터와 ICC 프로파일을 사용하세요.",
+      },
+    ],
+  },
 ];
