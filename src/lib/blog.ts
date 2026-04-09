@@ -10308,4 +10308,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "json-chrome-extension-recommendation-guide",
+    title: {
+      ko: "JSON 포맷터 크롬 확장 프로그램 추천 TOP 5: 개발자 필수 도구",
+      en: "Top 5 JSON Formatter Chrome Extensions for Developers",
+    },
+    description: {
+      ko: "JSON 포맷터 크롬 확장 프로그램 5가지를 비교 추천해요. API 응답 확인, JSON 자동 포맷팅, 트리뷰 지원까지 개발자 업무 효율을 높여줄 확장 프로그램을 소개합니다.",
+      en: "Compare the top 5 JSON formatter Chrome extensions for developers. Auto-format API responses, tree view support, and productivity boosters.",
+    },
+    date: "2026-04-09",
+    toolId: "json-formatter",
+    image: "/images/blog/json-chrome-extension-recommendation-guide.webp",
+    keywords: ["json 포맷터", "json formatter chrome extension", "json formatter extension", "json 크롬 확장", "json formatter chrome"],
+    content: {
+      ko: [
+        {
+          heading: "왜 JSON 크롬 확장이 필요할까요",
+          body: "API를 개발하거나 디버깅할 때 브라우저에서 JSON 응답을 확인하는 경우가 많아요. 하지만 브라우저 기본 화면에서는 JSON이 한 줄로 붙어서 나오기 때문에 읽기가 정말 어렵거든요.\n\n크롬 확장 프로그램을 설치하면 JSON이 자동으로 들여쓰기, 색상 구분, 접기/펼치기가 적용돼서 한눈에 구조를 파악할 수 있어요. 설치 한 번으로 매일 시간을 절약할 수 있는 도구예요."
+        },
+        {
+          heading: "추천 확장 프로그램 5가지",
+          body: "1. JSON Formatter (Callum Locke): 가장 인기 있는 확장이에요. 자동 감지, 트리뷰, 원본 보기 전환이 가능하고 100만+ 사용자가 검증한 안정성이 강점이에요.\n\n2. JSON Viewer: 검색 기능과 테마 커스터마이징이 뛰어나요. 큰 JSON 파일도 빠르게 렌더링해요.\n\n3. JSONVue: 가볍고 심플한 디자인이에요. 불필요한 기능 없이 포맷팅에 집중한 확장이에요.\n\n4. JSON Formatter & Validator: 포맷팅과 동시에 유효성 검사를 해줘요. 잘못된 JSON을 바로 잡아주는 게 장점이에요.\n\n5. JSON Lite: 최소한의 권한만 요구하는 보안 중시 확장이에요. 회사 보안 정책이 엄격한 환경에 추천해요."
+        },
+        {
+          heading: "확장 프로그램 선택 시 체크 포인트",
+          body: "크롬 확장을 고를 때 이 항목을 확인하세요:\n\n- 권한 범위: 모든 사이트 접근 vs 필요한 사이트만 접근. 보안이 중요하면 최소 권한 확장을 선택하세요.\n- 대용량 처리: 수 MB 크기의 JSON도 빠르게 렌더링하는지\n- 트리뷰 지원: 접기/펼치기로 복잡한 구조를 탐색할 수 있는지\n- 검색 기능: 특정 키나 값을 빠르게 찾을 수 있는지\n- 테마: 다크 모드 등 눈의 피로를 줄이는 옵션이 있는지"
+        },
+        {
+          heading: "온라인 도구와 병행 활용하기",
+          body: "크롬 확장은 브라우저에서 API 응답을 볼 때 편하지만, JSON을 직접 편집하거나 변환할 때는 온라인 도구가 더 유용해요.\n\nToolkio [JSON 포맷터](/tools/json-formatter)에서는 JSON 포맷팅, 압축, 유효성 검사를 한 곳에서 할 수 있어요. 확장 프로그램으로 확인한 JSON을 복사해서 Toolkio에서 편집하는 워크플로우가 가장 효율적이에요.\n\n[JSON 데이터 정리 가이드](/blog/json-data-cleanup-developer-tool)도 함께 참고하면 더 도움이 될 거예요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why You Need a JSON Chrome Extension",
+          body: "When debugging APIs, raw JSON in the browser is unreadable. A Chrome extension auto-formats JSON with indentation, syntax highlighting, and collapsible tree views — making complex data structures easy to navigate."
+        },
+        {
+          heading: "Top 5 Extensions Compared",
+          body: "1. JSON Formatter (Callum Locke): Most popular, auto-detect, tree/raw toggle. 1M+ users.\n2. JSON Viewer: Great search and theme customization.\n3. JSONVue: Lightweight and simple.\n4. JSON Formatter & Validator: Formats and validates simultaneously.\n5. JSON Lite: Minimal permissions for security-conscious environments."
+        },
+        {
+          heading: "How to Choose",
+          body: "Check: permission scope (minimal is better), large file handling, tree view support, search capability, and dark mode support."
+        },
+        {
+          heading: "Combine with Online Tools",
+          body: "Use extensions for viewing API responses in the browser, and Toolkio JSON Formatter for editing, compressing, and validating. Copy JSON from the extension to Toolkio for a complete workflow."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "JSON 크롬 확장이 보안에 위험한가요?",
+        answer: "대부분 안전하지만, 모든 사이트 접근 권한을 요구하는 확장은 주의가 필요해요. JSON Lite처럼 최소 권한만 요구하는 확장을 선택하거나, 필요할 때만 활성화하는 게 좋아요.",
+      },
+      {
+        question: "여러 확장을 동시에 설치해도 되나요?",
+        answer: "가능하지만 충돌이 생길 수 있어요. JSON 포맷터는 하나만 활성화하고 나머지는 비활성화해두는 게 좋아요.",
+      },
+      {
+        question: "Firefox에서도 같은 확장을 쓸 수 있나요?",
+        answer: "Firefox 전용 JSON 뷰어가 있어요. Firefox는 기본적으로 JSON 뷰어가 내장되어 있어서 확장 없이도 기본적인 포맷팅이 돼요.",
+      },
+    ],
+  },
+  {
+    slug: "qr-code-free-no-expiration-guide",
+    title: {
+      ko: "QR코드 무료 만들기: 유효기간 없이 평생 쓰는 방법",
+      en: "Free QR Code Generator: Create Permanent QR Codes Without Expiration",
+    },
+    description: {
+      ko: "유효기간 없는 QR코드를 무료로 만드는 방법을 정리했어요. 무료 사이트 추천, 동적 vs 정적 QR코드 차이, 회원가입 없이 만드는 방법까지 알려드립니다.",
+      en: "Learn how to create free QR codes that never expire. Compare static vs dynamic QR codes, and discover the best free generators with no signup required.",
+    },
+    date: "2026-04-09",
+    toolId: "qr-generator",
+    image: "/images/blog/qr-code-free-no-expiration-guide.webp",
+    keywords: ["qr코드 만들기 무료", "qr code generator free no expiration", "qr코드 만들기", "qr code generator free", "qr코드 무료"],
+    content: {
+      ko: [
+        {
+          heading: "유료 QR코드 서비스의 함정",
+          body: "QR코드 만들기를 검색하면 무료로 보이는 사이트가 많지만, 막상 만들어보면 유효기간이 있거나 스캔 횟수 제한이 있는 경우가 많아요.\n\n특히 동적(Dynamic) QR코드는 서버를 거쳐 리다이렉트하는 방식이라 서비스가 종료되면 QR코드도 못 쓰게 돼요. 명함이나 인쇄물에 넣었는데 QR코드가 작동 안 하면 곤란하잖아요.\n\n정적(Static) QR코드는 URL 정보가 QR코드 자체에 담겨있어서 서버 의존 없이 영구적으로 작동해요."
+        },
+        {
+          heading: "정적 vs 동적 QR코드 차이",
+          body: "정적 QR코드: URL이 이미지 자체에 인코딩돼요. 유효기간 없이 영구 작동하고 무료예요. 단점은 한번 만들면 URL을 변경할 수 없어요.\n\n동적 QR코드: 짧은 URL로 리다이렉트하는 방식이에요. URL 변경, 스캔 통계 확인이 가능하지만 대부분 유료이고 서비스 종료 시 작동 중단돼요.\n\n명함, 전단지, 포스터 등 인쇄물에 넣을 QR코드는 반드시 정적 방식으로 만드세요."
+        },
+        {
+          heading: "회원가입 없이 QR코드 만들기",
+          body: "Toolkio [QR코드 생성기](/tools/qr-generator)에서는 회원가입 없이 바로 QR코드를 만들 수 있어요. URL, 텍스트, Wi-Fi 접속 정보 등 다양한 형식을 지원하고, 만들어진 QR코드는 PNG로 다운로드할 수 있어요.\n\n다른 무료 도구로는 Google Charts API, QR Code Generator(qr-code-generator.com), Project Nayuki 등이 있어요. 모두 정적 QR코드를 무료로 생성해줘요.\n\n[명함 QR코드 만들기 가이드](/blog/business-card-qr-code)와 [구글폼 QR코드 가이드](/blog/qr-code-google-form-guide)도 참고해보세요."
+        },
+        {
+          heading: "QR코드 디자인과 활용 팁",
+          body: "QR코드를 더 효과적으로 활용하는 팁이에요:\n\n- 크기: 최소 2cm x 2cm 이상이어야 스캔 가능\n- 여백: QR코드 주변에 최소 4셀 이상의 여백 유지\n- 색상: 어두운 배경에 밝은 QR코드도 가능하지만, 대비가 충분해야 해요\n- 테스트: 인쇄 전에 반드시 여러 기기로 스캔 테스트\n- 단축 URL: 긴 URL을 단축하면 QR코드가 더 간결해져서 인식률이 올라가요"
+        },
+      ],
+      en: [
+        {
+          heading: "The Hidden Costs of 'Free' QR Codes",
+          body: "Many QR code generators appear free but add expiration dates or scan limits. Dynamic QR codes depend on a redirect server — when the service shuts down, your QR code stops working."
+        },
+        {
+          heading: "Static vs Dynamic QR Codes",
+          body: "Static: URL encoded directly in the image. Permanent, free, but URL cannot be changed. Dynamic: Uses redirect server. URL changeable, scan analytics available, but usually paid and server-dependent."
+        },
+        {
+          heading: "Create QR Codes Without Signup",
+          body: "Use Toolkio QR Generator for instant, free, static QR codes. No signup required. Also try Google Charts API or qr-code-generator.com."
+        },
+        {
+          heading: "Design and Usage Tips",
+          body: "Minimum size: 2cm x 2cm. Keep quiet zone (margin) of at least 4 modules. Test with multiple devices before printing. Use URL shorteners for cleaner QR codes."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "정적 QR코드는 정말 영구적인가요?",
+        answer: "네, 정적 QR코드는 이미지 자체에 URL이 인코딩되어 있어서 서버 없이도 영구적으로 작동해요. 단, 연결된 웹사이트가 삭제되면 접속은 안 돼요.",
+      },
+      {
+        question: "QR코드에 한글 텍스트도 넣을 수 있나요?",
+        answer: "네, 가능해요. 다만 한글은 바이트가 크기 때문에 QR코드가 복잡해져서 인식률이 떨어질 수 있어요. URL이나 짧은 영문 텍스트가 가장 안정적이에요.",
+      },
+      {
+        question: "QR코드 스캔 횟수를 추적할 수 있나요?",
+        answer: "정적 QR코드 자체로는 불가능해요. 스캔 추적이 필요하면 UTM 파라미터를 URL에 추가하고 Google Analytics에서 확인하는 방법이 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "image-compress-to-target-size-guide",
+    title: {
+      ko: "이미지 용량 줄이기: 200KB, 100KB, 50KB 맞추는 방법",
+      en: "How to Compress Images to Exact Size: 200KB, 100KB, 50KB Guide",
+    },
+    description: {
+      ko: "이미지를 200KB, 100KB, 50KB 등 특정 크기로 정확히 줄이는 방법을 정리했어요. 온라인 도구부터 포토샵, 무료 프로그램까지 상황별 방법을 알려드립니다.",
+      en: "Learn how to compress images to exact target sizes like 200KB, 100KB, or 50KB. Step-by-step guide using online tools, Photoshop, and free software.",
+    },
+    date: "2026-04-09",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compress-to-target-size-guide.webp",
+    keywords: ["이미지 압축", "image compressor to 200kb", "image compressor to 100kb", "이미지 용량 줄이기", "이미지 압축 사이트"],
+    content: {
+      ko: [
+        {
+          heading: "왜 특정 크기로 줄여야 할까요",
+          body: "공공기관 서류 제출(증명사진 200KB 이하), 이력서 사진(100KB), 웹사이트 업로드(50KB), 이메일 첨부 제한 등 특정 크기 제한이 있는 상황이 정말 많아요.\n\n단순히 이미지 크기를 줄이는 것과 특정 KB 이하로 맞추는 건 다른 문제예요. 오늘은 원하는 크기에 정확히 맞추는 방법을 알려드릴게요."
+        },
+        {
+          heading: "방법 1: 온라인 도구로 간편하게",
+          body: "가장 빠른 방법은 온라인 이미지 압축 도구를 사용하는 거예요.\n\nToolkio [이미지 압축기](/tools/image-compressor)에서 이미지를 업로드하고 품질 슬라이더를 조절하면 실시간으로 용량이 변해요. 원하는 크기가 될 때까지 품질을 낮추면 돼요.\n\n다른 추천 도구:\n- iLoveIMG: 목표 크기를 직접 입력할 수 있어요\n- TinyPNG: 자동으로 최적 압축 (PNG/JPEG 지원)\n- Squoosh (Google): 압축 전후 비교가 직관적이에요\n\n[이미지 압축 온라인 vs 오프라인 비교](/blog/image-compression-online-vs-offline)도 참고하세요."
+        },
+        {
+          heading: "방법 2: 해상도 조절 + 압축 병행",
+          body: "압축만으로 목표 크기가 안 되면 해상도(픽셀)를 함께 줄이세요.\n\n증명사진 기준:\n- 200KB 이하: 600x800px, JPEG 품질 70-80%\n- 100KB 이하: 400x533px, JPEG 품질 60-70%\n- 50KB 이하: 300x400px, JPEG 품질 50-60%\n\n웹 업로드용:\n- 일반 이미지: 1200px 너비, JPEG 품질 75%면 대부분 100KB 이하\n- 썸네일: 400px 너비, JPEG 품질 70%면 30-50KB\n\nTip: JPEG가 같은 품질 대비 용량이 가장 작아요. PNG는 투명 배경이 필요할 때만 사용하세요."
+        },
+        {
+          heading: "방법 3: 포맷 변환으로 용량 줄이기",
+          body: "이미지 포맷을 바꾸는 것만으로도 용량이 크게 줄어요.\n\n용량 순서 (같은 이미지 기준):\nPNG > JPEG > WebP > AVIF\n\nWebP는 JPEG 대비 25-34% 더 작으면서 품질은 비슷해요. 웹사이트용이라면 WebP 변환을 강력 추천해요.\n\nAVIF는 가장 작지만 아직 일부 브라우저에서 미지원이에요.\n\n[웹 이미지 최적화 가이드](/blog/web-image-optimization-guide)에서 더 자세한 내용을 확인할 수 있어요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Target a Specific File Size",
+          body: "Government forms (200KB photos), job applications (100KB), web uploads (50KB), and email limits all require images under specific sizes. Here is how to hit exact targets."
+        },
+        {
+          heading: "Method 1: Online Tools",
+          body: "Use Toolkio Image Compressor — adjust the quality slider until you hit your target size. Also try iLoveIMG (target size input), TinyPNG (auto-optimize), or Google Squoosh (visual comparison)."
+        },
+        {
+          heading: "Method 2: Resize + Compress",
+          body: "If compression alone is not enough, reduce dimensions too. For 200KB: 600x800px at 70-80% quality. For 100KB: 400x533px at 60-70%. For 50KB: 300x400px at 50-60%. JPEG gives the smallest files for photos."
+        },
+        {
+          heading: "Method 3: Format Conversion",
+          body: "PNG > JPEG > WebP > AVIF in file size. WebP is 25-34% smaller than JPEG at similar quality. Use WebP for web, JPEG for general use, PNG only when transparency is needed."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "이미지를 많이 압축하면 화질이 많이 떨어지나요?",
+        answer: "JPEG 품질 60% 이상이면 눈으로 차이를 거의 못 느껴요. 50% 이하로 가면 노이즈가 보이기 시작해요. 증명사진은 70% 이상을 유지하는 게 좋아요.",
+      },
+      {
+        question: "PNG를 JPEG로 바꾸면 투명 배경이 사라지나요?",
+        answer: "네, JPEG는 투명도를 지원하지 않아서 투명 부분이 흰색으로 채워져요. 투명 배경이 필요하면 PNG 또는 WebP를 사용하세요.",
+      },
+      {
+        question: "핸드폰으로도 이미지 용량을 줄일 수 있나요?",
+        answer: "네, Toolkio 같은 웹 기반 도구는 모바일 브라우저에서도 사용 가능해요. 앱으로는 Photo Compress 2.0(Android), Image Size(iOS)를 추천해요.",
+      },
+    ],
+  },
+  {
+    slug: "passphrase-password-generator-guide",
+    title: {
+      ko: "패스프레이즈 비밀번호 생성법: 외우기 쉽고 해킹 어려운 비밀번호",
+      en: "Passphrase Password Guide: Easy to Remember, Hard to Hack",
+    },
+    description: {
+      ko: "패스프레이즈 방식으로 외우기 쉬우면서 보안이 강한 비밀번호를 만드는 방법을 알려드려요. 단어 조합 비밀번호의 원리와 실전 생성 방법을 정리했습니다.",
+      en: "Learn how to create passphrases that are easy to remember but nearly impossible to crack. Understand the science behind word-based passwords and practical generation tips.",
+    },
+    date: "2026-04-09",
+    toolId: "password-generator",
+    image: "/images/blog/passphrase-password-generator-guide.webp",
+    keywords: ["password generator words", "비밀번호 생성기", "패스프레이즈", "password generator random", "안전한 비밀번호"],
+    content: {
+      ko: [
+        {
+          heading: "왜 랜덤 비밀번호는 기억이 안 될까요",
+          body: "xK9#mP2$qL 같은 랜덤 비밀번호는 보안은 강하지만 외울 수가 없어요. 그래서 결국 메모하거나 같은 비밀번호를 여러 곳에 재사용하게 되는데, 이게 오히려 보안 위험이에요.\n\n패스프레이즈(Passphrase)는 이 문제를 해결하는 방법이에요. 여러 단어를 조합해서 만드는 비밀번호인데, 외우기 쉬우면서도 랜덤 비밀번호보다 길어서 해킹이 더 어려워요."
+        },
+        {
+          heading: "패스프레이즈의 원리",
+          body: "비밀번호의 보안 강도는 길이와 복잡성에 비례해요.\n\nxK9#mP2$ (8자, 랜덤): 해킹에 약 8시간 소요\ncorrect-horse-battery-staple (28자, 단어 4개): 해킹에 약 550년 소요\n\n길이가 보안에 미치는 영향이 복잡성보다 훨씬 커요. 4-5개의 랜덤 단어를 조합하면 20자 이상이 되면서도 외울 수 있는 비밀번호가 만들어져요.\n\nTip: 단어 사이에 특수문자나 숫자를 넣으면 보안이 더 강해져요.\n예: correct-7Horse!battery-Staple"
+        },
+        {
+          heading: "패스프레이즈 만드는 방법",
+          body: "Toolkio [비밀번호 생성기](/tools/password-generator)에서 길이를 20자 이상으로 설정하고 생성할 수 있어요.\n\n직접 만드는 방법:\n1. 사전에서 랜덤으로 4-5개 단어를 골라요 (주사위 방식이 가장 안전)\n2. 단어 사이에 기호나 숫자를 넣어요\n3. 일부 글자를 대문자로 바꿔요\n\n예시:\n- 산책-커피-노트북-우산 → Sanchaek!Coffee3Notebook-Usan\n- 고양이-피자-달-기차 → Goyangi#Pizza8Dal-Gicha\n\n[안전한 비밀번호 만들기 가이드](/blog/secure-password-creation-tips-2026)도 참고하세요."
+        },
+        {
+          heading: "패스프레이즈 관리 팁",
+          body: "패스프레이즈도 사이트마다 다르게 사용해야 해요.\n\n- 코어 패스프레이즈 + 사이트별 접미사: 기본 구조는 같되 끝에 사이트 약어를 붙이는 방법 (예: Sanchaek!Coffee3-gm 구글용, Sanchaek!Coffee3-nv 네이버용)\n- 비밀번호 관리자 앱: 1Password, Bitwarden 같은 앱을 쓰면 하나의 마스터 패스프레이즈만 기억하면 돼요\n- 2단계 인증(2FA): 패스프레이즈와 함께 사용하면 보안이 극대화돼요\n\n가장 중요한 건 같은 비밀번호를 여러 사이트에 재사용하지 않는 거예요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Random Passwords Are Hard to Remember",
+          body: "Passwords like xK9#mP2$qL are secure but impossible to memorize. This leads to password reuse — the biggest security risk. Passphrases solve this by combining random words into long, memorable passwords."
+        },
+        {
+          heading: "The Science Behind Passphrases",
+          body: "Security depends more on length than complexity. A 28-character passphrase like correct-horse-battery-staple takes centuries to crack, while an 8-character random password takes hours. Add numbers and symbols between words for extra security."
+        },
+        {
+          heading: "How to Create a Passphrase",
+          body: "Pick 4-5 random words (use dice for true randomness). Add symbols or numbers between words. Capitalize some letters. Example: Mountain!River3Forest-Cloud"
+        },
+        {
+          heading: "Managing Passphrases",
+          body: "Use a core passphrase with site-specific suffixes, or use a password manager like 1Password or Bitwarden. Always enable 2FA alongside your passphrase. Never reuse passwords across sites."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "패스프레이즈가 일반 비밀번호보다 정말 안전한가요?",
+        answer: "네, 길이가 보안의 핵심이에요. 8자 랜덤 비밀번호보다 20자 이상의 패스프레이즈가 해킹에 훨씬 강해요. 단어 4개 이상 조합이면 현재 기술로 수백 년이 걸려요.",
+      },
+      {
+        question: "의미 있는 문장을 패스프레이즈로 써도 되나요?",
+        answer: "유명한 문구나 노래 가사는 사전 공격에 취약해요. 서로 관련 없는 랜덤한 단어 조합이 가장 안전해요. 나만의 랜덤 단어 조합을 만드세요.",
+      },
+      {
+        question: "모든 사이트에서 패스프레이즈를 쓸 수 있나요?",
+        answer: "대부분 가능하지만, 일부 사이트에서 비밀번호 길이를 16자로 제한하는 경우가 있어요. 그런 경우에는 Toolkio 비밀번호 생성기로 16자 랜덤 비밀번호를 만들어 비밀번호 관리자에 저장하세요.",
+      },
+    ],
+  },
+  {
+    slug: "character-counter-spell-check-workflow",
+    title: {
+      ko: "글자수 세기와 맞춤법 검사를 한번에: 자기소개서 완벽 마무리 가이드",
+      en: "Character Count + Spell Check Workflow: Perfect Your Resume and Applications",
+    },
+    description: {
+      ko: "자기소개서, 블로그 글 작성 시 글자수 세기와 맞춤법 검사를 효율적으로 하는 방법을 정리했어요. 무료 도구 조합과 체크리스트를 공유합니다.",
+      en: "Streamline your writing workflow with character counting and spell checking. Free tool combinations and checklists for resumes, blog posts, and social media.",
+    },
+    date: "2026-04-09",
+    toolId: "character-counter",
+    image: "/images/blog/character-counter-spell-check-workflow.webp",
+    keywords: ["글자수 세기", "글자수 세기 맞춤법", "character counter online", "자기소개서 글자수", "맞춤법 검사"],
+    content: {
+      ko: [
+        {
+          heading: "글자수만 세면 안 되는 이유",
+          body: "자기소개서나 블로그 글을 쓸 때 글자수만 맞추면 끝이 아니에요. 맞춤법 오류, 띄어쓰기 실수, 부자연스러운 문장이 있으면 아무리 내용이 좋아도 인상이 나빠져요.\n\n실제로 채용 담당자의 70% 이상이 맞춤법 오류가 있는 자기소개서에 감점을 준다는 조사 결과가 있어요.\n\n글자수 세기와 맞춤법 검사를 동시에 진행하는 워크플로우를 만들면 실수를 줄이고 시간도 절약할 수 있어요."
+        },
+        {
+          heading: "추천 워크플로우: 3단계 완성",
+          body: "1단계 - 초안 작성: 글자수 제한보다 10-20% 많게 자유롭게 씁니다.\n\n2단계 - 맞춤법 검사:\n- 네이버 맞춤법 검사기 (search.naver.com/search.naver?query=맞춤법검사기): 가장 정확한 한국어 맞춤법 검사\n- 부산대학교 한국어 맞춤법/문법 검사기: 문법 오류까지 잡아줘요\n- Grammarly (영문): 영어 문법 + 톤 체크\n\n3단계 - 글자수 조절: Toolkio [글자수 세기](/tools/character-counter)에서 최종 글자수를 확인하면서 다듬기. 공백 포함/제외, 바이트까지 실시간으로 확인할 수 있어요."
+        },
+        {
+          heading: "상황별 글자수 가이드",
+          body: "자기소개서:\n- 대기업: 보통 500자 또는 1,000자 (공백 포함)\n- 공기업: 500자~1,500자 (기관마다 다름)\n- 스타트업: 자유형식이 많지만 500자 내외가 적당\n\nSNS 마케팅:\n- 인스타그램 캡션: 2,200자 제한, 첫 125자가 핵심 (더보기 클릭 전 노출)\n- 유튜브 설명: 5,000자, 처음 2줄이 검색에 노출\n- 블로그 SEO: 최소 1,500자 이상이 검색 노출에 유리\n\n[플랫폼별 SNS 글자수 제한 가이드](/blog/social-media-character-limits)도 참고하세요."
+        },
+        {
+          heading: "글자수 줄이는 실전 팁",
+          body: "500자에서 450자로 줄여야 할 때 유용한 팁이에요:\n\n- 불필요한 수식어 삭제: '매우', '정말', '상당히' → 삭제\n- 중복 표현 제거: '앞으로의 미래' → '미래', '다시 재시작' → '재시작'\n- 긴 문장 분리: 접속사로 연결된 긴 문장을 2개로 나누기\n- 피동형을 능동형으로: '결정되었다' → '결정했다'\n- 한자어를 쉬운 말로: '시행하다' → '하다', '활용하다' → '쓰다'\n\n반대로 늘려야 할 때는 구체적인 숫자, 사례, 에피소드를 추가하면 자연스럽게 늘어나요."
+        },
+      ],
+      en: [
+        {
+          heading: "Why Character Count Alone Isn't Enough",
+          body: "Spelling errors and grammar mistakes leave a bad impression even with great content. Over 70% of recruiters penalize applications with spelling errors. Combine character counting with spell checking for a polished result."
+        },
+        {
+          heading: "The 3-Step Workflow",
+          body: "Step 1: Write freely (10-20% over limit). Step 2: Spell check (Grammarly for English, Naver for Korean). Step 3: Fine-tune character count using Toolkio Character Counter."
+        },
+        {
+          heading: "Character Limits by Context",
+          body: "Resumes: 500-1000 characters. Instagram: 2,200 (first 125 visible). YouTube description: 5,000 (first 2 lines matter). Blog SEO: 1,500+ recommended."
+        },
+        {
+          heading: "Tips for Trimming Text",
+          body: "Remove filler words (very, really, quite). Eliminate redundancies. Split long sentences. Use active voice. Replace formal words with simpler ones. To add length: include specific numbers, examples, and anecdotes."
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "공백 포함과 공백 제외 중 어떤 기준을 써야 하나요?",
+        answer: "대부분의 기업 자기소개서는 공백 포함 기준이에요. 지원 공고에 명시되어 있지 않다면 공백 포함으로 세는 게 안전해요. 확실하지 않으면 인사팀에 문의하세요.",
+      },
+      {
+        question: "무료 맞춤법 검사기 중 가장 정확한 건 뭔가요?",
+        answer: "한국어는 부산대학교 한국어 맞춤법/문법 검사기가 가장 정확해요. 네이버 맞춤법 검사기도 좋지만 문법 검사는 부산대가 더 상세해요.",
+      },
+      {
+        question: "글자수 세기 도구마다 결과가 다르게 나와요",
+        answer: "줄바꿈 문자(\\n) 처리 방식이 다르기 때문이에요. Toolkio 글자수 세기는 줄바꿈을 1자로 세고, 일부 도구는 세지 않아요. 지원하는 사이트와 동일한 기준을 사용하는 도구를 쓰세요.",
+      },
+    ],
+  },
 ];
