@@ -10643,4 +10643,494 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "gpa-conversion-study-abroad-guide",
+    title: {
+      ko: "내신 GPA 변환법 — 미국 유학 지원할 때 학점 환산하는 3가지 방법",
+      en: "How to Convert Korean GPA for US College Applications — 3 Methods Explained",
+    },
+    description: {
+      ko: "한국 내신 등급을 미국 GPA 4.0 기준으로 변환하는 방법을 정리했어요. 유학 준비 중이라면 꼭 확인하세요.",
+      en: "Learn how to convert Korean high school grades to the US 4.0 GPA scale for college applications abroad.",
+    },
+    date: "2026-04-10",
+    toolId: "gpa-calculator",
+    image: "/images/blog/gpa-conversion-study-abroad-guide.webp",
+    keywords: ["GPA 변환", "내신 GPA 환산", "미국 유학 학점", "4.0 GPA 변환", "한국 내신 미국 GPA", "유학 준비 학점"],
+    content: {
+      ko: [
+        {
+          heading: "미국 대학은 왜 GPA를 요구할까",
+          body: "<p>미국 대학에 지원하면 거의 100% GPA를 제출해야 해요. 문제는 한국 내신 등급(1~9등급)과 미국 GPA(4.0 만점)가 체계가 완전히 다르다는 거예요.</p><p>한국에서 내신 1등급이면 미국 GPA로 몇 점일까? 이걸 정확히 모르면 지원서에서 불이익을 받을 수 있어요.</p><p>특히 장학금 심사에서 GPA 기준이 3.0 이상, 3.5 이상 같은 조건이 붙는 경우가 많거든요.</p>"
+        },
+        {
+          heading: "한국 내신 등급 → 미국 GPA 변환표",
+          body: "<p>일반적으로 많이 쓰이는 변환 기준이에요:</p><ul><li>1등급 (96~100점) → GPA 4.0</li><li>2등급 (89~95점) → GPA 3.7~3.9</li><li>3등급 (77~88점) → GPA 3.3~3.6</li><li>4등급 (60~76점) → GPA 2.7~3.2</li><li>5등급 (40~59점) → GPA 2.0~2.6</li><li>6등급 이하 → GPA 2.0 미만</li></ul><p>단, 대학마다 자체 변환 기준이 있어서 이 표는 참고용이에요. WES(World Education Services) 인증을 받으면 공식 변환 결과를 받을 수 있어요.</p>"
+        },
+        {
+          heading: "방법 1: WES 공식 인증",
+          body: "<p>가장 신뢰도가 높은 방법이에요. WES는 세계적으로 인정받는 학력 인증 기관이에요.</p><p>절차는 이래요:</p><ul><li>WES 사이트에서 계정 생성</li><li>한국 학교에서 영문 성적표 발급</li><li>WES에 성적표 제출</li><li>변환된 GPA 리포트 수령 (약 2~3주)</li></ul><p>비용은 약 $200 정도 드는데, Ivy League나 상위권 대학을 노린다면 필수예요.</p>"
+        },
+        {
+          heading: "방법 2: 대학별 자체 변환",
+          body: "<p>일부 미국 대학은 한국 성적표를 직접 평가해요. 이 경우 별도 변환이 필요 없어요.</p><p>지원하려는 대학의 Admissions 페이지에서 'International Credentials' 항목을 확인하세요. \"We evaluate transcripts in-house\"라고 적혀 있으면 원본 성적표만 보내면 돼요.</p><p>UC 계열, 뉴욕주립대(SUNY) 등이 이 방식을 쓰는 경우가 많아요.</p>"
+        },
+        {
+          heading: "방법 3: Toolkio 학점 계산기로 셀프 변환",
+          body: "<p>비공식이지만 지원서 작성 전에 내 GPA가 대략 몇 점인지 미리 확인하고 싶을 때 유용해요.</p><p>Toolkio <a href='/tools/gpa-calculator'>학점 계산기</a>에서 과목별 학점과 성적을 입력하면 4.5 만점 또는 4.0 만점 기준으로 바로 계산돼요.</p><p>한국 대학 학점(4.5 만점)을 미국 기준(4.0 만점)으로 환산할 때는 이 공식을 쓰세요:</p><p><strong>미국 GPA = (한국 GPA ÷ 4.5) × 4.0</strong></p><p>예: 한국 GPA 3.8 → (3.8 ÷ 4.5) × 4.0 = 3.38</p>"
+        },
+        {
+          heading: "GPA 외에 준비할 서류",
+          body: "<p>GPA만으로 합격이 결정되진 않아요. 함께 준비할 것들:</p><ul><li>영어 시험: TOEFL 80점 이상 (상위권은 100점+)</li><li>표준화 시험: SAT 또는 ACT (일부 대학 선택사항)</li><li>추천서: 영문 2~3통</li><li>자기소개서(Personal Statement)</li><li>과외 활동 목록</li></ul><p>GPA가 조금 낮아도 에세이와 활동으로 충분히 보완할 수 있어요.</p>"
+        },
+        {
+          heading: "유학 준비 타임라인 체크리스트",
+          body: "<p>미국 대학 가을 학기(9월) 입학 기준이에요:</p><ul><li>1년 6개월 전: TOEFL/SAT 준비 시작</li><li>1년 전: 지원 대학 리스트 확정, WES 인증 신청</li><li>8개월 전: 에세이 초안 작성</li><li>6개월 전: 원서 제출 (Early Decision은 11월)</li><li>4개월 전: Regular Decision 마감 (1월)</li><li>2개월 전: 합격 발표 확인</li></ul><p>GPA 변환은 최소 지원 6개월 전에 시작하세요. WES 인증은 시간이 걸리거든요.</p>"
+        },
+        {
+          heading: "자주 하는 실수 3가지",
+          body: "<p>유학 준비생들이 GPA 관련해서 자주 하는 실수예요:</p><ul><li><strong>반올림 오류:</strong> GPA 3.47을 3.5로 올려 적으면 안 돼요. 소수점 둘째 자리까지 정확히 기재하세요.</li><li><strong>비인가 변환 서비스 이용:</strong> WES, ECE 등 공인된 기관만 사용하세요.</li><li><strong>재수강 미반영:</strong> 재수강으로 성적이 올랐다면 최종 성적만 반영되는지 확인하세요.</li></ul><p>Toolkio <a href='/tools/gpa-calculator'>학점 계산기</a>로 미리 계산해보고, 공식 인증은 WES를 이용하는 게 가장 안전해요.</p>"
+        }
+      ],
+      en: [
+        {
+          heading: "Why US Colleges Require GPA",
+          body: "<p>Almost every US college requires a GPA on your application. If you studied in Korea, you need to convert your Korean grades (1-9 scale) to the US 4.0 scale. Getting this wrong can hurt your application or scholarship chances.</p>"
+        },
+        {
+          heading: "Korean Grades to US GPA Conversion Table",
+          body: "<p>A common conversion reference:</p><ul><li>Grade 1 (96-100) → GPA 4.0</li><li>Grade 2 (89-95) → GPA 3.7-3.9</li><li>Grade 3 (77-88) → GPA 3.3-3.6</li><li>Grade 4 (60-76) → GPA 2.7-3.2</li><li>Grade 5+ → GPA 2.0-2.6</li></ul><p>Note: Each university may have its own conversion criteria. For official results, use WES (World Education Services).</p>"
+        },
+        {
+          heading: "3 Conversion Methods",
+          body: "<p><strong>Method 1 — WES Official Evaluation:</strong> The most trusted option (~$200, takes 2-3 weeks). Required for top-tier universities.</p><p><strong>Method 2 — University Self-Evaluation:</strong> Some schools evaluate international transcripts in-house. Check the admissions page for details.</p><p><strong>Method 3 — Self-Calculate with Toolkio:</strong> Use the <a href='/tools/gpa-calculator'>GPA Calculator</a> to estimate your GPA. Formula: US GPA = (Korean GPA ÷ 4.5) × 4.0</p>"
+        },
+        {
+          heading: "Common Mistakes to Avoid",
+          body: "<p>Three frequent errors when converting GPA:</p><ul><li>Rounding up (3.47 → 3.5 is not acceptable)</li><li>Using non-accredited conversion services</li><li>Forgetting to reflect retaken courses</li></ul><p>Use Toolkio for quick estimates, then get official WES certification for your actual application.</p>"
+        }
+      ],
+    },
+    faq: [
+      {
+        question: "한국 내신 1등급이면 미국 GPA로 몇 점인가요?",
+        answer: "내신 1등급(상위 4%)은 미국 GPA 4.0에 해당해요. 다만 대학마다 자체 변환 기준이 있으니 WES 공식 인증을 받는 게 가장 정확해요.",
+      },
+      {
+        question: "WES 인증 없이 미국 대학에 지원할 수 있나요?",
+        answer: "네, 일부 대학은 한국 성적표를 직접 평가해요. 지원 대학의 Admissions 페이지에서 International Credentials 항목을 확인하세요.",
+      },
+      {
+        question: "4.5 만점 학점을 4.0 만점으로 바꾸는 공식이 있나요?",
+        answer: "가장 간단한 공식은 (한국 GPA ÷ 4.5) × 4.0이에요. 예를 들어 3.6/4.5는 3.2/4.0이 돼요. Toolkio 학점 계산기에서 바로 계산할 수 있어요.",
+      },
+    ],
+  },
+  {
+    slug: "bmr-by-age-metabolism-management",
+    title: {
+      ko: "나이별 기초대사량 변화 — 30대부터 떨어지는 대사량, 이렇게 관리하세요",
+      en: "BMR by Age — How Your Metabolism Changes in Your 30s, 40s, and 50s",
+    },
+    description: {
+      ko: "30대 이후 기초대사량이 떨어지는 이유와 나이별 관리법을 정리했어요. 내 기초대사량 계산도 바로 해보세요.",
+      en: "Why your basal metabolic rate drops after 30 and how to manage it by age. Calculate your BMR instantly.",
+    },
+    date: "2026-04-10",
+    toolId: "bmr-calculator",
+    image: "/images/blog/bmr-by-age-metabolism-management.webp",
+    keywords: ["기초대사량 나이별", "30대 기초대사량", "40대 대사량", "기초대사량 높이는 법", "나이 대사량 변화", "BMR 나이"],
+    content: {
+      ko: [
+        {
+          heading: "30대부터 살이 찌는 진짜 이유",
+          body: "<p>20대에는 야식을 먹어도 괜찮았는데, 30대 넘으니 물만 마셔도 살이 찐다는 말 들어보셨죠?</p><p>이건 기분 탓이 아니에요. 기초대사량(BMR)이 실제로 줄어들기 때문이에요. 기초대사량은 아무것도 안 하고 누워만 있어도 우리 몸이 소비하는 에너지예요.</p><p>보통 20대 중반을 정점으로 매년 1~2%씩 감소해요. 10년이면 10~20%가 줄어드는 셈이에요.</p>"
+        },
+        {
+          heading: "나이별 평균 기초대사량 비교",
+          body: "<p>한국인 평균 기준이에요 (체중 65kg 남성 / 55kg 여성):</p><ul><li><strong>20대:</strong> 남성 1,680kcal / 여성 1,370kcal</li><li><strong>30대:</strong> 남성 1,600kcal / 여성 1,310kcal</li><li><strong>40대:</strong> 남성 1,530kcal / 여성 1,260kcal</li><li><strong>50대:</strong> 남성 1,460kcal / 여성 1,200kcal</li><li><strong>60대:</strong> 남성 1,380kcal / 여성 1,140kcal</li></ul><p>20대 대비 50대는 약 200~170kcal 정도 줄어들어요. 밥 반 공기 정도의 차이인데, 이게 매일 쌓이면 1년에 체지방 약 2~3kg이 늘어나요.</p>"
+        },
+        {
+          heading: "기초대사량이 떨어지는 3가지 원인",
+          body: "<p><strong>1. 근육량 감소</strong></p><p>30대 이후 매년 근육이 0.5~1% 줄어들어요. 근육은 지방보다 3배 많은 에너지를 소비하기 때문에 근육이 줄면 대사량도 같이 떨어져요.</p><p><strong>2. 호르몬 변화</strong></p><p>성장호르몬, 테스토스테론(남성), 에스트로겐(여성)이 감소하면서 신진대사가 느려져요. 특히 여성은 갱년기 전후로 급격히 떨어져요.</p><p><strong>3. 활동량 감소</strong></p><p>직장 생활, 육아 등으로 움직이는 시간이 줄어들면 기초대사량 외에 활동대사량까지 감소해요.</p>"
+        },
+        {
+          heading: "내 기초대사량 계산해보기",
+          body: "<p>Toolkio <a href='/tools/bmr-calculator'>기초대사량 계산기</a>에서 나이, 성별, 키, 체중만 입력하면 바로 확인할 수 있어요.</p><p>계산에는 해리스-베네딕트 공식을 사용해요:</p><ul><li>남성: 88.362 + (13.397 × 체중kg) + (4.799 × 키cm) - (5.677 × 나이)</li><li>여성: 447.593 + (9.247 × 체중kg) + (3.098 × 키cm) - (4.330 × 나이)</li></ul><p>공식에서 보이듯, 나이가 1살 늘 때마다 남성은 약 5.7kcal, 여성은 약 4.3kcal씩 기초대사량이 줄어요.</p>"
+        },
+        {
+          heading: "30대: 근력 운동 습관 만들기",
+          body: "<p>30대는 아직 늦지 않았어요. 이 시기에 근력 운동 습관을 잡으면 40~50대까지 대사량을 유지할 수 있어요.</p><p>추천 루틴:</p><ul><li>주 3회 이상 근력 운동 (스쿼트, 데드리프트, 벤치프레스)</li><li>단백질 섭취: 체중 1kg당 1.2~1.6g</li><li>충분한 수면: 7~8시간 (수면 부족은 대사량을 떨어뜨려요)</li></ul><p>유산소만 하면 근육량 유지가 어려워요. 근력 운동이 핵심이에요.</p>"
+        },
+        {
+          heading: "40대: 식단 조절이 더 중요해지는 시기",
+          body: "<p>40대부터는 운동만으로는 부족해요. 식단 조절을 병행해야 해요.</p><ul><li>정제 탄수화물 줄이기: 흰 밥, 빵, 면 → 잡곡밥, 고구마</li><li>간헐적 단식 고려: 16:8 방식이 대사량 유지에 도움된다는 연구 결과가 있어요</li><li>물 충분히 마시기: 하루 2L 이상 (탈수는 대사량을 5%까지 낮춰요)</li></ul><p>40대에 기초대사량을 확인하고 그에 맞는 칼로리를 섭취하면 체중 증가를 막을 수 있어요.</p>"
+        },
+        {
+          heading: "50대 이후: 무리하지 않는 꾸준한 관리",
+          body: "<p>50대 이후에는 관절 건강도 중요하기 때문에 고강도 운동보다 꾸준함이 핵심이에요.</p><ul><li>걷기: 하루 30분 이상 빠르게 걷기</li><li>밴드 운동: 관절 부담 없이 근력 유지</li><li>스트레칭: 유연성 유지로 활동량 보존</li><li>단백질 보충: 소화력이 떨어지므로 단백질 보충제 고려</li></ul><p>꾸준히만 하면 60대에도 50대 수준의 대사량을 유지할 수 있어요.</p>"
+        },
+        {
+          heading: "기초대사량 관리 핵심 요약",
+          body: "<p>나이가 들수록 기초대사량은 자연히 줄어들지만, 관리하면 속도를 늦출 수 있어요.</p><ul><li>근력 운동은 모든 연령대에서 가장 효과적이에요</li><li>단백질 섭취를 충분히 하세요</li><li>자기 기초대사량을 알고 그에 맞게 먹으세요</li></ul><p>지금 바로 <a href='/tools/bmr-calculator'>기초대사량 계산기</a>에서 내 BMR을 확인하고, 오늘부터 관리를 시작하세요.</p>"
+        }
+      ],
+      en: [
+        {
+          heading: "Why Weight Gain Accelerates After 30",
+          body: "<p>Your Basal Metabolic Rate (BMR) peaks in your mid-20s and drops by 1-2% every year after that. Over a decade, that means 10-20% less calorie burn at rest. This is why many people start gaining weight in their 30s without changing their diet.</p>"
+        },
+        {
+          heading: "Average BMR by Age",
+          body: "<p>Approximate values for average adults:</p><ul><li>20s: Men 1,680 kcal / Women 1,370 kcal</li><li>30s: Men 1,600 kcal / Women 1,310 kcal</li><li>40s: Men 1,530 kcal / Women 1,260 kcal</li><li>50s: Men 1,460 kcal / Women 1,200 kcal</li></ul><p>The difference between your 20s and 50s is about 200 kcal daily — roughly half a bowl of rice. Over a year, this adds up to 2-3 kg of body fat.</p>"
+        },
+        {
+          heading: "How to Maintain Your Metabolism",
+          body: "<p><strong>30s:</strong> Build a strength training habit (3x/week). Prioritize protein (1.2-1.6g per kg body weight).</p><p><strong>40s:</strong> Add dietary adjustments — reduce refined carbs, consider intermittent fasting, drink 2L+ water daily.</p><p><strong>50s+:</strong> Focus on consistency over intensity. Walking, resistance bands, and stretching keep metabolism active without stressing joints.</p>"
+        },
+        {
+          heading: "Calculate Your BMR Now",
+          body: "<p>Use the <a href='/tools/bmr-calculator'>BMR Calculator</a> on Toolkio to find your exact basal metabolic rate. Just enter your age, gender, height, and weight. Knowing your BMR helps you set the right daily calorie target for your age.</p>"
+        }
+      ],
+    },
+    faq: [
+      {
+        question: "기초대사량이 높으면 무조건 좋은 건가요?",
+        answer: "대체로 높을수록 에너지 소비가 많아 체중 관리에 유리해요. 하지만 비정상적으로 높으면 갑상선 문제일 수 있으니 건강 검진을 받아보세요.",
+      },
+      {
+        question: "근력 운동을 하면 기초대사량이 얼마나 올라가나요?",
+        answer: "근육 1kg이 늘면 하루 약 13~15kcal 정도 기초대사량이 올라가요. 적어 보이지만 10kg의 근육 차이는 하루 150kcal, 1년이면 체지방 7kg 차이예요.",
+      },
+      {
+        question: "다이어트 중인데 기초대사량이 떨어지는 것 같아요",
+        answer: "급격한 칼로리 제한은 기초대사량을 20%까지 낮출 수 있어요. 기초대사량 이하로 먹지 마시고, 근력 운동을 병행하세요. Toolkio 기초대사량 계산기로 최소 섭취 칼로리를 확인하세요.",
+      },
+    ],
+  },
+  {
+    slug: "zodiac-animal-calculator-by-year",
+    title: {
+      ko: "띠 계산기 — 태어난 해로 내 띠 동물과 성격 특징 알아보기",
+      en: "Zodiac Animal Calculator — Find Your Chinese Zodiac Sign by Birth Year",
+    },
+    description: {
+      ko: "태어난 연도만 입력하면 내 띠 동물이 뭔지, 어떤 성격 특징이 있는지 바로 확인할 수 있어요.",
+      en: "Enter your birth year to instantly find your Chinese zodiac animal and personality traits.",
+    },
+    date: "2026-04-10",
+    toolId: "age-calculator",
+    image: "/images/blog/zodiac-animal-calculator-by-year.webp",
+    keywords: ["띠 계산", "띠 계산기", "태어난 해 띠", "2026년 띠", "12간지", "띠별 성격"],
+    content: {
+      ko: [
+        {
+          heading: "내가 무슨 띠인지 바로 확인하는 법",
+          body: "<p>설날, 소개팅, 궁합 볼 때 '무슨 띠세요?'라는 질문 한 번쯤 들어보셨죠?</p><p>12간지는 자(쥐), 축(소), 인(호랑이), 묘(토끼), 진(용), 사(뱀), 오(말), 미(양), 신(원숭이), 유(닭), 술(개), 해(돼지) 순서로 12년마다 반복돼요.</p><p>태어난 연도를 12로 나눈 나머지로 계산할 수 있는데, 직접 계산하기 귀찮으니 <a href='/tools/age-calculator'>나이 계산기</a>에서 태어난 해를 입력하면 바로 확인할 수 있어요.</p>"
+        },
+        {
+          heading: "연도별 띠 빠른 참조표 (2020~2031)",
+          body: "<ul><li>2020년: 쥐띠 (경자년)</li><li>2021년: 소띠 (신축년)</li><li>2022년: 호랑이띠 (임인년)</li><li>2023년: 토끼띠 (계묘년)</li><li>2024년: 용띠 (갑진년)</li><li>2025년: 뱀띠 (을사년)</li><li>2026년: 말띠 (병오년)</li><li>2027년: 양띠 (정미년)</li><li>2028년: 원숭이띠 (무신년)</li><li>2029년: 닭띠 (기유년)</li><li>2030년: 개띠 (경술년)</li><li>2031년: 돼지띠 (신해년)</li></ul><p>2026년은 병오년, 말띠예요. 말띠는 활동적이고 에너지가 넘치는 성격으로 알려져 있어요.</p>"
+        },
+        {
+          heading: "띠별 성격 특징 총정리",
+          body: "<ul><li><strong>쥐띠:</strong> 영리하고 재치 있어요. 저축을 잘하는 편.</li><li><strong>소띠:</strong> 성실하고 인내심이 강해요. 목표를 끝까지 달성해요.</li><li><strong>호랑이띠:</strong> 용감하고 리더십이 있어요. 도전을 즐겨요.</li><li><strong>토끼띠:</strong> 온화하고 섬세해요. 예술적 감각이 뛰어나요.</li><li><strong>용띠:</strong> 자신감 있고 카리스마 넘쳐요. 큰 꿈을 가져요.</li><li><strong>뱀띠:</strong> 지혜롭고 직감이 좋아요. 깊이 생각하는 타입.</li><li><strong>말띠:</strong> 활동적이고 사교적이에요. 자유를 중시해요.</li><li><strong>양띠:</strong> 온순하고 예술적이에요. 평화를 추구해요.</li><li><strong>원숭이띠:</strong> 재치 있고 호기심이 많아요. 문제 해결 능력이 뛰어나요.</li><li><strong>닭띠:</strong> 부지런하고 정확해요. 완벽주의 성향.</li><li><strong>개띠:</strong> 충직하고 정의감이 강해요. 믿음직한 친구.</li><li><strong>돼지띠:</strong> 낙천적이고 너그러워요. 복이 많다고 해요.</li></ul>"
+        },
+        {
+          heading: "띠 궁합: 잘 맞는 띠 조합",
+          body: "<p>전통적으로 잘 맞는다고 알려진 띠 궁합이에요:</p><ul><li>쥐 + 용, 원숭이 (삼합)</li><li>소 + 뱀, 닭 (삼합)</li><li>호랑이 + 말, 개 (삼합)</li><li>토끼 + 양, 돼지 (삼합)</li></ul><p>반대로 상충하는 조합도 있어요:</p><ul><li>쥐 ↔ 말</li><li>소 ↔ 양</li><li>호랑이 ↔ 원숭이</li><li>토끼 ↔ 닭</li><li>용 ↔ 개</li><li>뱀 ↔ 돼지</li></ul><p>물론 이건 재미로 보는 거예요. 실제 관계는 서로의 노력이 더 중요하죠!</p>"
+        },
+        {
+          heading: "띠와 천간: 60갑자 이해하기",
+          body: "<p>사실 띠만으로는 절반만 아는 거예요. 한국의 전통 간지는 10천간(갑을병정무기경신임계)과 12지지(자축인묘진사오미신유술해)를 조합한 60갑자 체계예요.</p><p>같은 말띠라도:</p><ul><li>1966년: 병오년 (불의 말)</li><li>1978년: 무오년 (흙의 말)</li><li>1990년: 경오년 (쇠의 말)</li><li>2002년: 임오년 (물의 말)</li><li>2014년: 갑오년 (나무의 말)</li><li>2026년: 병오년 (불의 말)</li></ul><p>60년마다 같은 조합이 돌아와요. 그래서 환갑(60세)을 특별하게 여기는 거예요.</p>"
+        },
+        {
+          heading: "빠른 띠 계산 공식",
+          body: "<p>머릿속으로 빠르게 계산하는 방법이에요:</p><p><strong>태어난 연도를 12로 나눈 나머지</strong>로 띠를 알 수 있어요:</p><ul><li>나머지 0: 원숭이</li><li>나머지 1: 닭</li><li>나머지 2: 개</li><li>나머지 3: 돼지</li><li>나머지 4: 쥐</li><li>나머지 5: 소</li><li>나머지 6: 호랑이</li><li>나머지 7: 토끼</li><li>나머지 8: 용</li><li>나머지 9: 뱀</li><li>나머지 10: 말</li><li>나머지 11: 양</li></ul><p>예: 1990 ÷ 12 = 165 나머지 10 → 말띠!</p><p>계산이 귀찮다면 <a href='/tools/age-calculator'>나이 계산기</a>에서 바로 확인하세요.</p>"
+        },
+        {
+          heading: "2026년 말띠 해 특징",
+          body: "<p>2026년 병오년은 '붉은 말의 해'예요. 전통적으로 말띠 해에는:</p><ul><li>새로운 도전과 변화가 많아요</li><li>활동적인 에너지가 강해요</li><li>여행, 이직, 창업에 좋은 해라고 해요</li></ul><p>올해 태어나는 아기는 말띠로, 활발하고 사교적인 성격을 가질 거라는 전통적 해석이 있어요.</p><p>재미있는 참고 정보일 뿐이지만, 명절이나 모임에서 화제로 삼기 좋아요!</p>"
+        }
+      ],
+      en: [
+        {
+          heading: "What Is Your Chinese Zodiac Animal?",
+          body: "<p>The Chinese zodiac cycles through 12 animals every 12 years: Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, and Pig. Your birth year determines your zodiac animal. Use the <a href='/tools/age-calculator'>Age Calculator</a> to find yours instantly.</p>"
+        },
+        {
+          heading: "Zodiac Animals by Year (2020-2031)",
+          body: "<ul><li>2020: Rat</li><li>2021: Ox</li><li>2022: Tiger</li><li>2023: Rabbit</li><li>2024: Dragon</li><li>2025: Snake</li><li>2026: Horse</li><li>2027: Goat</li><li>2028: Monkey</li><li>2029: Rooster</li><li>2030: Dog</li><li>2031: Pig</li></ul><p>2026 is the Year of the Horse — known for energy, activity, and a love of freedom.</p>"
+        },
+        {
+          heading: "Zodiac Compatibility",
+          body: "<p>Traditional best matches (San-he trines):</p><ul><li>Rat + Dragon + Monkey</li><li>Ox + Snake + Rooster</li><li>Tiger + Horse + Dog</li><li>Rabbit + Goat + Pig</li></ul><p>These are fun cultural traditions rather than scientific facts, but they make great conversation starters!</p>"
+        },
+        {
+          heading: "Quick Calculation Formula",
+          body: "<p>Divide your birth year by 12 and check the remainder: 0=Monkey, 1=Rooster, 2=Dog, 3=Pig, 4=Rat, 5=Ox, 6=Tiger, 7=Rabbit, 8=Dragon, 9=Snake, 10=Horse, 11=Goat.</p><p>Example: 1990 ÷ 12 = 165 remainder 10 → Horse!</p>"
+        }
+      ],
+    },
+    faq: [
+      {
+        question: "음력 생일 기준으로 띠를 계산해야 하나요?",
+        answer: "전통적으로는 음력 설날(1월 말~2월 초)을 기준으로 해요. 1월이나 2월 초 생이라면 전년도 띠일 수 있어요. 정확한 기준은 해당 연도의 음력 설날 날짜를 확인하세요.",
+      },
+      {
+        question: "2026년에 태어나면 무슨 띠인가요?",
+        answer: "2026년은 병오년으로 말띠예요. 다만 2026년 음력 설날(2월 17일) 이전에 태어나면 2025년 뱀띠에 해당할 수 있어요.",
+      },
+      {
+        question: "띠 궁합이 안 맞으면 어떻게 하나요?",
+        answer: "띠 궁합은 전통 문화에서 온 재미 요소예요. 실제 관계에서 중요한 건 서로의 소통과 노력이에요. 참고로만 활용하세요.",
+      },
+    ],
+  },
+  {
+    slug: "youtube-thumbnail-competitor-analysis",
+    title: {
+      ko: "유튜브 경쟁 채널 썸네일 분석법 — 인기 영상의 썸네일 전략 5가지",
+      en: "YouTube Thumbnail Competitor Analysis — 5 Strategies from Top-Performing Videos",
+    },
+    description: {
+      ko: "조회수 높은 유튜브 영상의 썸네일을 분석해서 내 채널에 적용하는 방법을 알려드려요.",
+      en: "Learn how to analyze thumbnails from top YouTube videos and apply winning strategies to your own channel.",
+    },
+    date: "2026-04-10",
+    toolId: "youtube-thumbnail",
+    image: "/images/blog/youtube-thumbnail-competitor-analysis.webp",
+    keywords: ["유튜브 썸네일 분석", "썸네일 전략", "유튜브 경쟁 분석", "썸네일 클릭률", "유튜브 성장", "썸네일 디자인 팁"],
+    content: {
+      ko: [
+        {
+          heading: "왜 경쟁 채널 썸네일을 분석해야 할까",
+          body: "<p>유튜브에서 조회수의 90%는 썸네일과 제목이 결정해요. 아무리 좋은 영상을 만들어도 클릭이 안 되면 아무도 못 봐요.</p><p>경쟁 채널의 인기 영상 썸네일을 분석하면 어떤 패턴이 클릭을 유도하는지 파악할 수 있어요. 이걸 따라 하라는 게 아니라, 원리를 이해하고 내 채널에 맞게 변형하는 거예요.</p><p>Toolkio <a href='/tools/youtube-thumbnail'>유튜브 썸네일 다운로드</a> 도구로 경쟁 영상의 썸네일을 고화질로 받아서 분석해보세요.</p>"
+        },
+        {
+          heading: "전략 1: 얼굴 클로즈업 + 과장된 표정",
+          body: "<p>조회수 상위 영상의 70% 이상이 사람 얼굴을 썸네일에 넣어요. 특히 놀란 표정, 웃는 표정이 클릭률이 높아요.</p><p>왜 효과적일까요?</p><ul><li>사람의 뇌는 얼굴을 먼저 인식하도록 설계돼 있어요</li><li>감정이 드러나는 표정은 호기심을 자극해요</li><li>카메라와 눈이 마주치면 무의식적으로 멈추게 돼요</li></ul><p>팁: 얼굴이 썸네일 면적의 30% 이상을 차지하면 효과가 좋아요.</p>"
+        },
+        {
+          heading: "전략 2: 대비가 강한 색상 조합",
+          body: "<p>유튜브 배경은 흰색이에요. 그래서 밝은 톤의 썸네일은 묻혀요.</p><p>클릭률 높은 썸네일의 공통점:</p><ul><li>노란색 + 검정색 조합 (경고, 주의를 끄는 색)</li><li>빨간색 배경 + 흰색 텍스트</li><li>파란색 + 주황색 (보색 대비)</li></ul><p>Toolkio <a href='/tools/color-converter'>색상 코드 변환기</a>로 정확한 색상 코드를 확인하고 일관된 브랜드 컬러를 유지하세요.</p>"
+        },
+        {
+          heading: "전략 3: 텍스트는 3~5단어 이내",
+          body: "<p>썸네일에 글자가 너무 많으면 모바일에서 읽을 수가 없어요. 유튜브 트래픽의 70%가 모바일이거든요.</p><p>효과적인 텍스트 규칙:</p><ul><li>3~5단어 이내로 줄이세요</li><li>폰트 크기를 크게 (모바일에서도 읽히게)</li><li>제목과 다른 내용을 넣으세요 (중복은 낭비)</li><li>궁금증을 유발하는 단어: \"결국\", \"충격\", \"비밀\", \"진짜\"</li></ul><p>예시: 제목이 \"아이폰 17 솔직 리뷰\"라면 썸네일에는 \"이건 실망\" 또는 \"역대급\" 같은 감정 단어를 넣는 거예요.</p>"
+        },
+        {
+          heading: "전략 4: Before/After 또는 비교 구도",
+          body: "<p>사람들은 변화와 비교를 좋아해요. 이런 구도가 효과적이에요:</p><ul><li>왼쪽 vs 오른쪽 비교 (화살표로 연결)</li><li>Before → After 변환</li><li>X표시 vs 동그라미 표시</li><li>숫자 대비: \"100만원 vs 10만원\"</li></ul><p>이 구도는 다이어트, 인테리어, 요리, 기술 리뷰 등 거의 모든 카테고리에서 통해요.</p>"
+        },
+        {
+          heading: "전략 5: 일관된 브랜드 템플릿",
+          body: "<p>인기 채널을 보면 썸네일 스타일이 통일돼 있어요. 구독자가 피드에서 \"아 이 채널이네\" 하고 바로 인식하거든요.</p><p>브랜드 템플릿 만드는 법:</p><ul><li>고정 폰트 1~2개 선택</li><li>브랜드 컬러 2~3개 지정</li><li>로고나 워터마크 위치 고정</li><li>레이아웃 패턴 2~3개만 돌려 사용</li></ul><p>Canva나 Photoshop에서 템플릿을 만들어두면 썸네일 제작 시간도 절약돼요.</p>"
+        },
+        {
+          heading: "실전: 경쟁 채널 썸네일 분석 순서",
+          body: "<p>이 순서대로 하면 30분 안에 분석 끝나요:</p><ol><li>내 채널과 비슷한 주제의 상위 채널 3~5개 선정</li><li>각 채널에서 조회수 상위 10개 영상 확인</li><li>Toolkio <a href='/tools/youtube-thumbnail'>썸네일 다운로드</a>로 고화질 이미지 저장</li><li>공통 패턴 정리: 색상, 텍스트, 구도, 표정</li><li>내 채널 스타일로 변형 적용</li></ol><p>한 달에 한 번만 이 작업을 해도 썸네일 퀄리티가 확 올라가요.</p>"
+        },
+        {
+          heading: "CTR(클릭률) 목표 설정",
+          body: "<p>유튜브 스튜디오에서 CTR을 확인할 수 있어요. 카테고리별 평균 CTR이에요:</p><ul><li>엔터테인먼트: 4~6%</li><li>교육/정보: 3~5%</li><li>게임: 3~5%</li><li>뷰티/패션: 5~7%</li></ul><p>평균 대비 2% 이상 높으면 썸네일이 잘 된 거예요. CTR이 낮은 영상은 썸네일을 바꿔보세요. 유튜브는 썸네일 교체 후 재평가해요.</p><p>A/B 테스트 기능이 있다면 꼭 활용하세요. 같은 영상에 2개 썸네일을 넣고 어떤 게 더 클릭률이 높은지 비교할 수 있어요.</p>"
+        }
+      ],
+      en: [
+        {
+          heading: "Why Analyze Competitor Thumbnails",
+          body: "<p>90% of YouTube views are determined by thumbnails and titles. Analyzing top-performing videos in your niche reveals what patterns drive clicks. Use Toolkio's <a href='/tools/youtube-thumbnail'>Thumbnail Downloader</a> to save competitor thumbnails in high quality for study.</p>"
+        },
+        {
+          heading: "5 Winning Thumbnail Strategies",
+          body: "<p><strong>1. Face Close-ups:</strong> 70%+ of top videos feature faces with exaggerated expressions. Our brains are wired to notice faces first.</p><p><strong>2. High-Contrast Colors:</strong> Yellow + black, red + white, or complementary color pairs stand out on YouTube's white background.</p><p><strong>3. 3-5 Words Max:</strong> 70% of YouTube traffic is mobile. Keep text short and large enough to read on small screens.</p><p><strong>4. Before/After Layouts:</strong> Comparison shots, arrows, and X/O marks create instant visual interest.</p><p><strong>5. Consistent Branding:</strong> Use the same 1-2 fonts, 2-3 colors, and fixed logo placement across all thumbnails.</p>"
+        },
+        {
+          heading: "How to Run a Thumbnail Analysis",
+          body: "<ol><li>Pick 3-5 competing channels in your niche</li><li>Note their top 10 videos by views</li><li>Download thumbnails with Toolkio</li><li>Identify common patterns (color, text, layout, emotion)</li><li>Adapt patterns to your brand style</li></ol><p>Do this monthly and your CTR will improve significantly.</p>"
+        },
+        {
+          heading: "CTR Benchmarks by Category",
+          body: "<p>Average click-through rates by category:</p><ul><li>Entertainment: 4-6%</li><li>Education: 3-5%</li><li>Gaming: 3-5%</li><li>Beauty/Fashion: 5-7%</li></ul><p>If your CTR is 2%+ above average, your thumbnail is working well. For underperforming videos, try swapping the thumbnail — YouTube will re-evaluate it.</p>"
+        }
+      ],
+    },
+    faq: [
+      {
+        question: "경쟁 채널 썸네일을 그대로 따라 해도 되나요?",
+        answer: "그대로 복사하면 안 돼요. 저작권 문제도 있고, 구독자가 원본 채널과 혼동할 수 있어요. 색상 패턴, 구도, 텍스트 스타일 같은 원리를 참고해서 내 스타일로 만드세요.",
+      },
+      {
+        question: "썸네일 사이즈는 어떻게 해야 하나요?",
+        answer: "유튜브 권장 크기는 1280×720 픽셀(16:9 비율)이에요. 최소 640px 이상이어야 하고, 파일 크기는 2MB 이하로 맞추세요.",
+      },
+      {
+        question: "썸네일을 바꾸면 조회수가 올라가나요?",
+        answer: "네, 가능해요. 유튜브는 썸네일 변경 후 영상을 재평가해요. CTR이 낮은 영상의 썸네일을 바꿔서 조회수가 2~3배 오른 사례가 많아요.",
+      },
+    ],
+  },
+  {
+    slug: "discount-rate-reverse-calculation",
+    title: {
+      ko: "할인율 역계산 — 원래 가격에서 몇 퍼센트 할인인지 3초 만에 구하기",
+      en: "Reverse Discount Calculation — Find the Discount Percentage in 3 Seconds",
+    },
+    description: {
+      ko: "세일 가격만 보고 할인율을 바로 계산하는 방법. 쇼핑할 때 진짜 싸게 사는 건지 확인하세요.",
+      en: "Calculate the actual discount percentage from original and sale prices. Make smarter shopping decisions.",
+    },
+    date: "2026-04-10",
+    toolId: "percent-calculator",
+    image: "/images/blog/discount-rate-reverse-calculation.webp",
+    keywords: ["할인율 계산", "할인율 역계산", "퍼센트 할인 계산", "세일 할인율", "할인 퍼센트 구하기", "쇼핑 할인 계산"],
+    content: {
+      ko: [
+        {
+          heading: "이 가격, 진짜 싸게 산 걸까?",
+          body: "<p>\"원래 89,000원인데 지금 62,300원!\" 이런 광고 많이 보셨죠? 근데 이게 몇 퍼센트 할인인지 바로 계산되시나요?</p><p>대부분의 쇼핑몰은 할인율을 보여주지만, 묶음 할인이나 추가 쿠폰을 적용하면 실제 할인율이 얼마인지 헷갈려요.</p><p>할인율 역계산을 알면 진짜 좋은 딜인지 3초 만에 판단할 수 있어요.</p>"
+        },
+        {
+          heading: "할인율 계산 공식 (이것만 기억하세요)",
+          body: "<p>공식은 간단해요:</p><p><strong>할인율(%) = (원래 가격 - 할인 가격) ÷ 원래 가격 × 100</strong></p><p>예시:</p><ul><li>원래 가격: 89,000원</li><li>할인 가격: 62,300원</li><li>할인율: (89,000 - 62,300) ÷ 89,000 × 100 = 30%</li></ul><p>머릿속으로 계산하기 어려우면 <a href='/tools/percent-calculator'>퍼센트 계산기</a>에서 두 숫자만 넣으면 바로 나와요.</p>"
+        },
+        {
+          heading: "쇼핑몰 할인 트릭 5가지",
+          body: "<p>쇼핑몰들이 할인율을 크게 보이게 하는 방법들이에요. 이걸 알면 현명하게 쇼핑할 수 있어요:</p><ul><li><strong>권장소비자가 부풀리기:</strong> 실제로 한 번도 정가에 판 적 없는 가격을 원가로 표시</li><li><strong>이중 할인 표기:</strong> \"50% + 추가 20%\"는 60%가 아니라 실제론 60% 할인이에요 (0.5 × 0.8 = 0.4, 즉 60%)</li><li><strong>묶음 할인:</strong> 1개 10,000원, 3개 25,000원 → 개당 8,333원으로 16.7% 할인</li><li><strong>배송비 숨기기:</strong> 상품은 싸게, 배송비를 비싸게</li><li><strong>한정 시간 압박:</strong> \"오늘만!\" → 내일도 같은 가격인 경우 많아요</li></ul>"
+        },
+        {
+          heading: "이중 할인 진짜 할인율 계산법",
+          body: "<p>\"30% 할인 + 추가 20% 쿠폰\" — 이러면 50% 할인 아니에요!</p><p>정확한 계산:</p><ul><li>원래 가격: 100,000원</li><li>30% 할인 후: 70,000원</li><li>여기서 20% 추가 할인: 70,000 × 0.8 = 56,000원</li><li>실제 할인율: (100,000 - 56,000) ÷ 100,000 × 100 = 44%</li></ul><p>50%가 아니라 44%예요. 6%p 차이가 나요.</p><p><a href='/tools/percent-calculator'>퍼센트 계산기</a>로 원래 가격과 최종 가격을 넣으면 실제 할인율이 바로 나와요.</p>"
+        },
+        {
+          heading: "카드 할인까지 합산하는 법",
+          body: "<p>카드사 즉시 할인이나 포인트 사용까지 합치면 실제 체감 할인율이 더 높아져요.</p><p>예시:</p><ul><li>상품가: 100,000원</li><li>쇼핑몰 30% 할인 → 70,000원</li><li>쿠폰 10% 추가 → 63,000원</li><li>카드 5% 즉시 할인 → 59,850원</li><li>총 할인율: (100,000 - 59,850) ÷ 100,000 × 100 = 약 40.2%</li></ul><p>이렇게 단계별로 계산하면 실제로 얼마를 아꼈는지 정확히 알 수 있어요.</p>"
+        },
+        {
+          heading: "가격 대비 용량 비교 (단가 계산)",
+          body: "<p>같은 제품인데 용량이 다르면 어떤 게 더 싼지 헷갈리죠?</p><p><strong>단가 = 가격 ÷ 용량(g, ml, 개수)</strong></p><p>예시:</p><ul><li>세제 A: 2,000ml에 15,000원 → 7.5원/ml</li><li>세제 B: 3,000ml에 20,000원 → 6.7원/ml</li></ul><p>B가 ml당 0.8원 더 싸요. 이런 계산도 <a href='/tools/percent-calculator'>퍼센트 계산기</a>에서 비율 계산으로 빠르게 할 수 있어요.</p>"
+        },
+        {
+          heading: "쇼핑할 때 바로 쓰는 체크리스트",
+          body: "<p>큰 금액 결제 전에 이것만 확인하세요:</p><ul><li>원래 가격이 진짜인지 네이버 최저가와 비교</li><li>이중 할인이면 실제 할인율 계산</li><li>배송비 포함한 최종 가격 확인</li><li>카드 할인, 포인트 적용 가능 여부 확인</li><li>다른 쇼핑몰과 가격 비교 (네이버 쇼핑, 다나와)</li></ul><p>이 습관만 들이면 충동구매가 확 줄어요. <a href='/tools/percent-calculator'>퍼센트 계산기</a>를 즐겨찾기 해두면 언제든 빠르게 확인할 수 있어요.</p>"
+        }
+      ],
+      en: [
+        {
+          heading: "Is That Sale Price Really a Good Deal?",
+          body: "<p>\"Was $89, now $62!\" — but what's the actual discount percentage? Most people can't calculate it instantly. Knowing how to reverse-calculate discounts helps you spot real deals from fake ones.</p>"
+        },
+        {
+          heading: "The Discount Formula",
+          body: "<p><strong>Discount % = (Original - Sale Price) ÷ Original × 100</strong></p><p>Example: ($89 - $62) ÷ $89 × 100 = 30.3%</p><p>Use the <a href='/tools/percent-calculator'>Percent Calculator</a> to do this instantly without mental math.</p>"
+        },
+        {
+          heading: "Stacked Discounts Are Not Additive",
+          body: "<p>\"30% off + extra 20% coupon\" is NOT 50% off. It's actually 44% off.</p><p>Calculation: $100 × 0.7 × 0.8 = $56 → (100-56)/100 = 44%</p><p>Always calculate the final price and compare it to the original to get the true discount rate.</p>"
+        },
+        {
+          heading: "Smart Shopping Checklist",
+          body: "<p>Before any big purchase:</p><ul><li>Verify the original price on price comparison sites</li><li>Calculate the real discount rate (including stacked discounts)</li><li>Add shipping costs to the final price</li><li>Check for credit card cashback or points</li><li>Compare across multiple retailers</li></ul><p>Bookmark the <a href='/tools/percent-calculator'>Percent Calculator</a> for quick calculations while shopping.</p>"
+        }
+      ],
+    },
+    faq: [
+      {
+        question: "30% 할인 + 추가 20% 할인이면 50% 할인 아닌가요?",
+        answer: "아니에요. 이중 할인은 곱셈이에요. 0.7 × 0.8 = 0.56이므로 실제 할인율은 44%예요. 50%보다 6%p 적어요.",
+      },
+      {
+        question: "할인율이 높으면 무조건 좋은 건가요?",
+        answer: "원래 가격이 부풀려져 있으면 할인율이 높아도 실제로는 비쌀 수 있어요. 네이버 쇼핑이나 다나와에서 최저가를 꼭 비교해보세요.",
+      },
+      {
+        question: "퍼센트 계산기로 할인율을 어떻게 구하나요?",
+        answer: "Toolkio 퍼센트 계산기에서 '원래 값'에 원가를, '비교 값'에 할인가를 넣으면 할인율이 자동으로 계산돼요.",
+      },
+    ],
+  },
+  {
+    slug: "css-minify-web-speed-optimization",
+    title: {
+      ko: "CSS 압축으로 웹사이트 속도 30% 높이기 — 실전 최적화 가이드",
+      en: "Boost Website Speed by 30% with CSS Minification — A Practical Guide",
+    },
+    description: {
+      ko: "CSS 파일 압축만으로도 웹사이트 로딩 속도가 확 달라져요. 실전 최적화 방법과 주의점을 정리했어요.",
+      en: "CSS minification alone can significantly improve your website's loading speed. Learn practical optimization techniques.",
+    },
+    date: "2026-04-10",
+    toolId: "css-minifier",
+    image: "/images/blog/css-minify-web-speed-optimization.webp",
+    keywords: ["CSS 압축", "CSS 최적화", "웹사이트 속도 개선", "CSS minify", "웹 성능 최적화", "CSS 파일 줄이기"],
+    content: {
+      ko: [
+        {
+          heading: "CSS 압축이 왜 중요할까",
+          body: "<p>웹사이트 로딩 속도는 사용자 경험과 SEO 모두에 영향을 줘요. 구글은 페이지 로딩이 3초를 넘으면 방문자의 53%가 이탈한다고 발표했어요.</p><p>CSS 파일은 HTML 다음으로 브라우저가 먼저 다운로드하는 리소스예요. CSS를 압축하면 파일 크기가 20~50% 줄어들고, 그만큼 로딩이 빨라져요.</p><p>특히 모바일 환경에서는 네트워크 속도가 느리기 때문에 파일 크기 감소 효과가 더 크게 체감돼요.</p>"
+        },
+        {
+          heading: "CSS 압축이 하는 일",
+          body: "<p>CSS 압축(minification)은 코드의 동작은 그대로 유지하면서 불필요한 부분만 제거해요:</p><ul><li><strong>공백/줄바꿈 제거:</strong> 사람이 읽기 좋게 넣은 공백은 브라우저에겐 필요 없어요</li><li><strong>주석 제거:</strong> /* 이 주석은 */ 브라우저가 무시하지만 파일 크기는 차지해요</li><li><strong>불필요한 세미콜론 제거:</strong> 마지막 속성 뒤의 세미콜론</li><li><strong>색상 코드 단축:</strong> #ffffff → #fff</li><li><strong>0 단위 제거:</strong> 0px → 0</li></ul><p>예시:</p><p>압축 전 (128바이트):<br/><code>.header { background-color: #ffffff; margin: 0px; padding: 10px 20px; }</code></p><p>압축 후 (72바이트):<br/><code>.header{background-color:#fff;margin:0;padding:10px 20px}</code></p>"
+        },
+        {
+          heading: "Toolkio CSS 압축 도구 사용법",
+          body: "<p><a href='/tools/css-minifier'>Toolkio CSS 압축 도구</a>는 브라우저에서 바로 사용할 수 있어요.</p><ol><li>CSS 코드를 입력란에 붙여넣기</li><li>압축 버튼 클릭</li><li>압축된 결과를 복사</li></ol><p>서버로 데이터가 전송되지 않아서 회사 프로젝트 코드도 안전하게 압축할 수 있어요.</p><p>압축 전후 파일 크기를 비교해서 몇 퍼센트 줄었는지도 바로 확인돼요.</p>"
+        },
+        {
+          heading: "빌드 도구에서 자동 압축 설정하기",
+          body: "<p>매번 수동으로 압축하기 번거롭다면 빌드 도구에 설정하세요.</p><p><strong>Webpack:</strong></p><p><code>npm install css-minimizer-webpack-plugin --save-dev</code></p><p>webpack.config.js에 추가:</p><p><code>optimization: { minimizer: [new CssMinimizerPlugin()] }</code></p><p><strong>Vite:</strong></p><p>Vite는 프로덕션 빌드 시 자동으로 CSS를 압축해요. 별도 설정 없이 <code>vite build</code>만 하면 돼요.</p><p><strong>PostCSS + cssnano:</strong></p><p><code>npm install cssnano --save-dev</code></p><p>postcss.config.js에 플러그인으로 추가하면 돼요.</p>"
+        },
+        {
+          heading: "CSS 압축 외에 추가 최적화 팁",
+          body: "<p>CSS 압축과 함께 하면 효과가 배가 되는 최적화들이에요:</p><ul><li><strong>사용하지 않는 CSS 제거 (PurgeCSS):</strong> 실제로 사용하는 스타일만 남기면 파일 크기가 80% 이상 줄어드는 경우도 있어요</li><li><strong>Critical CSS 분리:</strong> 첫 화면에 필요한 CSS만 인라인으로 넣고, 나머지는 비동기 로드</li><li><strong>CSS 파일 합치기:</strong> HTTP 요청 수를 줄여요</li><li><strong>Gzip/Brotli 압축:</strong> 서버에서 추가로 70% 더 압축할 수 있어요</li></ul>"
+        },
+        {
+          heading: "압축 전 주의사항",
+          body: "<p>CSS 압축 시 주의할 점이 있어요:</p><ul><li><strong>원본 파일 보관:</strong> 압축된 CSS는 읽기 어려우니 원본(style.css)과 압축본(style.min.css)을 따로 관리하세요</li><li><strong>소스맵 생성:</strong> 디버깅을 위해 소스맵(.map)을 함께 생성하세요</li><li><strong>테스트 필수:</strong> 압축 후 레이아웃이 깨지지 않는지 꼭 확인하세요. 드물지만 CSS hack이 깨질 수 있어요</li><li><strong>IE 호환성:</strong> 아직 IE를 지원해야 한다면 일부 최적화가 호환성 문제를 일으킬 수 있어요</li></ul>"
+        },
+        {
+          heading: "실전 성능 측정 방법",
+          body: "<p>CSS 압축 전후 성능을 비교하려면 이 도구들을 사용하세요:</p><ul><li><strong>Google PageSpeed Insights:</strong> 점수와 함께 구체적 개선 사항을 알려줘요</li><li><strong>Chrome DevTools Network 탭:</strong> 파일별 크기와 로딩 시간 확인</li><li><strong>WebPageTest:</strong> 다양한 네트워크 환경에서 테스트</li><li><strong>Lighthouse:</strong> 종합적인 웹 성능 감사</li></ul><p>CSS 압축 하나로 PageSpeed 점수가 5~15점 올라가는 경우가 많아요. 지금 바로 <a href='/tools/css-minifier'>CSS 압축 도구</a>에서 시작해보세요.</p>"
+        },
+        {
+          heading: "CSS 압축 체크리스트",
+          body: "<p>웹사이트 배포 전에 확인하세요:</p><ul><li>모든 CSS 파일이 압축(minify)되었는가?</li><li>사용하지 않는 CSS가 제거되었는가?</li><li>Critical CSS가 인라인 처리되었는가?</li><li>서버에서 Gzip 또는 Brotli 압축이 활성화되었는가?</li><li>소스맵이 개발 환경에서만 로드되는가?</li><li>압축 후 레이아웃 테스트를 했는가?</li></ul><p>이 체크리스트만 따라도 웹사이트 로딩 속도가 눈에 띄게 개선돼요.</p>"
+        }
+      ],
+      en: [
+        {
+          heading: "Why CSS Minification Matters",
+          body: "<p>CSS files are among the first resources browsers download. Minifying CSS reduces file size by 20-50%, directly improving load times. Google reports that 53% of visitors leave if a page takes more than 3 seconds to load.</p>"
+        },
+        {
+          heading: "What CSS Minification Does",
+          body: "<p>Minification removes unnecessary parts while keeping functionality intact:</p><ul><li>Whitespace and line breaks removal</li><li>Comment removal</li><li>Color code shortening (#ffffff → #fff)</li><li>Zero unit removal (0px → 0)</li></ul><p>Use the <a href='/tools/css-minifier'>CSS Minifier</a> on Toolkio to compress CSS instantly in your browser — no data is sent to any server.</p>"
+        },
+        {
+          heading: "Automated Minification in Build Tools",
+          body: "<p><strong>Webpack:</strong> Use css-minimizer-webpack-plugin. <strong>Vite:</strong> Automatically minifies CSS in production builds. <strong>PostCSS:</strong> Add cssnano plugin for automatic minification.</p>"
+        },
+        {
+          heading: "Beyond Minification",
+          body: "<p>Combine CSS minification with these techniques for maximum impact:</p><ul><li>PurgeCSS: Remove unused styles (can reduce size by 80%+)</li><li>Critical CSS: Inline above-the-fold styles</li><li>File concatenation: Reduce HTTP requests</li><li>Gzip/Brotli: Additional 70% server-side compression</li></ul><p>Measure results with Google PageSpeed Insights or Lighthouse.</p>"
+        }
+      ],
+    },
+    faq: [
+      {
+        question: "CSS 압축하면 원래 코드로 되돌릴 수 있나요?",
+        answer: "완벽하게 원래대로 되돌리긴 어려워요. 주석이나 원래 줄바꿈 위치는 복구 안 돼요. 원본 파일(style.css)을 따로 보관하고, 배포용(style.min.css)만 압축하세요.",
+      },
+      {
+        question: "CSS 압축으로 사이트가 깨질 수 있나요?",
+        answer: "표준 CSS 코드라면 거의 문제없어요. 하지만 CSS hack이나 비표준 구문을 사용했다면 깨질 수 있으니 압축 후 반드시 테스트하세요.",
+      },
+      {
+        question: "Gzip 압축을 쓰면 CSS 압축은 안 해도 되나요?",
+        answer: "둘 다 하는 게 좋아요. CSS 압축은 불필요한 문자를 제거하고, Gzip은 그 결과를 추가로 압축해요. 두 가지를 합치면 원본 대비 90% 이상 줄일 수 있어요.",
+      },
+    ],
+  },
 ];
