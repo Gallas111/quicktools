@@ -11133,4 +11133,339 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "text-counter-document-analysis-guide",
+    title: {
+      ko: "텍스트 카운터로 문서 분석하기 — 단어수 문장수 문단수 한번에",
+      en: "Text Counter for Document Analysis — Words, Sentences, Paragraphs at a Glance",
+    },
+    description: {
+      ko: "텍스트 카운터로 문서의 단어수, 문장수, 문단수를 한번에 분석하는 방법이에요. 리포트 작성, 번역 견적, SEO 콘텐츠 관리에 활용할 수 있어요.",
+      en: "How to analyze word count, sentence count, and paragraph count in one go. Perfect for reports, translation quotes, and SEO content management.",
+    },
+    date: "2026-04-11",
+    toolId: "text-counter",
+    image: "/images/blog/text-counter-document-analysis-guide.webp",
+    keywords: ["텍스트 카운터", "단어수 세기", "문서 분석 도구", "문장수 계산", "text counter"],
+    content: {
+      ko: [
+        {
+          heading: "텍스트 카운터가 필요한 상황",
+          body: "리포트를 쓸 때 '3000단어 이상'이라는 조건을 맞춰야 할 때가 있어요. 번역 의뢰를 할 때는 단어수로 견적을 산정하고, 블로그 글을 쓸 때는 적정 길이를 확인하고 싶을 때도 있죠.\n\n텍스트 카운터를 쓰면 글자수뿐 아니라 단어수, 문장수, 문단수까지 한번에 확인할 수 있어요.",
+        },
+        {
+          heading: "단어수와 글자수의 차이",
+          body: "글자수는 모든 문자를 하나하나 세는 거예요. 단어수는 띄어쓰기로 구분된 덩어리를 세는 거예요.\n\n예를 들어 '오늘 날씨가 좋습니다'는 글자수 10자, 단어수 3개예요.\n\n영어권에서는 단어수(word count) 기준이 일반적이에요. 번역 단가도 보통 단어당 얼마로 계산해요.\n\n한국어에서는 글자수(공백 포함/제외)를 더 많이 써요. 하지만 학술 논문이나 해외 기관 제출물은 단어수 기준인 경우가 많아요.",
+        },
+        {
+          heading: "문서 분석에 활용하는 방법",
+          body: "Toolkio 텍스트 카운터에 글을 붙여넣으면 바로 분석 결과가 나와요.\n\n- 글자수(공백 포함/제외): 자기소개서, SNS 글 작성 시\n- 단어수: 번역 견적, 학술 리포트 길이 확인 시\n- 문장수: 가독성 분석, 문장 평균 길이 파악 시\n- 문단수: 글의 구조 파악, 섹션 구성 확인 시\n\n특히 SEO 콘텐츠를 쓸 때 1500단어 이상을 목표로 하면 검색 노출에 유리해요.",
+        },
+        {
+          heading: "읽기 시간 추정하기",
+          body: "일반적으로 한국어는 분당 약 200~250단어를 읽어요. 영어는 분당 200~250단어 정도예요.\n\n단어수를 200으로 나누면 대략적인 읽기 시간을 예측할 수 있어요. 블로그나 뉴스레터를 쓸 때 독자가 투자할 시간을 미리 알려주면 친절한 UX가 돼요.\n\n텍스트 카운터에서 단어수를 확인한 후, 읽기 시간을 제목이나 본문 상단에 표시해보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need a Text Counter",
+          body: "Writing a report with a '3000 words minimum' requirement? Getting a translation quote based on word count? Checking if your blog post is long enough?\n\nA text counter gives you word count, sentence count, and paragraph count all at once.",
+        },
+        {
+          heading: "Word Count vs Character Count",
+          body: "Character count counts every single character. Word count counts groups separated by spaces.\n\nFor example, 'The weather is nice today' is 25 characters and 5 words.\n\nEnglish-speaking contexts typically use word count. Translation rates are usually per word.\n\nAcademic papers and international submissions also often use word count as the standard.",
+        },
+        {
+          heading: "How to Use for Document Analysis",
+          body: "Paste your text into the Toolkio text counter for instant analysis:\n\n- Characters (with/without spaces): For social media, application essays\n- Words: Translation quotes, academic paper length\n- Sentences: Readability analysis, average sentence length\n- Paragraphs: Structure analysis, section planning\n\nFor SEO content, aiming for 1500+ words typically helps with search visibility.",
+        },
+        {
+          heading: "Estimating Reading Time",
+          body: "Average reading speed is about 200-250 words per minute for most adults.\n\nDivide your word count by 200 to estimate reading time. Displaying this on your blog or newsletter creates a better user experience.\n\nCheck your word count with the text counter and add an estimated reading time to your content.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "단어수와 글자수 중 뭘 기준으로 해야 하나요?",
+        answer: "한국어 자기소개서나 SNS는 글자수, 영어 리포트나 번역 견적은 단어수를 기준으로 하세요. 제출처의 요구사항을 먼저 확인하는 게 정확해요.",
+      },
+      {
+        question: "특수문자나 이모지도 글자수에 포함되나요?",
+        answer: "네, 특수문자와 이모지도 글자수에 포함돼요. 다만 바이트 기준으로는 이모지가 4바이트를 차지해서 SMS 등에서는 주의가 필요해요.",
+      },
+      {
+        question: "SEO에 적정한 글 길이는 얼마인가요?",
+        answer: "구글 검색 상위 페이지 평균은 1500~2500단어예요. 하지만 글 길이보다 내용의 질이 더 중요해요. 불필요하게 늘리는 건 오히려 역효과예요.",
+      },
+    ],
+  },
+  {
+    slug: "number-base-converter-binary-hex-guide",
+    title: {
+      ko: "진수 변환기 사용법 — 2진수 8진수 16진수 쉽게 변환하기",
+      en: "Number Base Converter Guide — Binary, Octal, Hexadecimal Conversion Made Easy",
+    },
+    description: {
+      ko: "2진수, 8진수, 10진수, 16진수 변환이 필요할 때 진수 변환기를 활용하는 방법이에요. 프로그래밍, 네트워크, 색상 코드 작업에 유용해요.",
+      en: "How to convert between binary, octal, decimal, and hexadecimal using a number base converter. Useful for programming, networking, and color codes.",
+    },
+    date: "2026-04-11",
+    toolId: "number-base-converter",
+    image: "/images/blog/number-base-converter-binary-hex-guide.webp",
+    keywords: ["진수 변환", "2진수 변환", "16진수 변환기", "진법 계산기", "binary converter"],
+    content: {
+      ko: [
+        {
+          heading: "진수 변환이 필요한 순간",
+          body: "프로그래밍을 하다 보면 10진수를 2진수로, 16진수를 10진수로 바꿔야 하는 상황이 자주 있어요.\n\n- 네트워크 서브넷 마스크 계산 (IP 주소를 2진수로)\n- CSS 색상 코드 작업 (#FF5733 같은 16진수)\n- 파일 권한 설정 (chmod 755 같은 8진수)\n- 메모리 주소 분석 (16진수 주소)\n\n머릿속으로 변환하면 실수하기 쉬워서 도구를 쓰는 게 정확해요.",
+        },
+        {
+          heading: "진수 체계 기초",
+          body: "숫자를 표현하는 방식이 진수 체계예요.\n\n- 2진수(Binary): 0과 1만 사용. 컴퓨터의 기본 언어\n- 8진수(Octal): 0~7 사용. 리눅스 파일 권한에서 자주 사용\n- 10진수(Decimal): 0~9 사용. 우리가 일상에서 쓰는 숫자\n- 16진수(Hexadecimal): 0~9 + A~F 사용. 색상 코드, 메모리 주소\n\n예시: 10진수 255 = 2진수 11111111 = 8진수 377 = 16진수 FF",
+        },
+        {
+          heading: "Toolkio 진수 변환기 사용법",
+          body: "사용법은 간단해요.\n\n1. 변환할 숫자를 입력해요\n2. 입력 진수를 선택해요 (2진수, 8진수, 10진수, 16진수)\n3. 나머지 진수로의 변환 결과가 바로 표시돼요\n\n여러 진수를 동시에 보여주기 때문에 한 번에 비교할 수 있어요.",
+        },
+        {
+          heading: "실전 활용 사례",
+          body: "CSS 색상 변환: #FF0000(빨강)이 RGB로 뭔지 궁금할 때, FF를 10진수로 변환하면 255예요. 즉 RGB(255, 0, 0)이에요.\n\n서브넷 마스크: 255.255.255.0을 2진수로 변환하면 11111111.11111111.11111111.00000000이에요. 24비트 서브넷이라는 걸 알 수 있어요.\n\n리눅스 권한: chmod 755에서 7은 2진수 111(읽기+쓰기+실행), 5는 101(읽기+실행)이에요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Number Base Conversion",
+          body: "Programming often requires converting between number systems:\n\n- Network subnet mask calculations (IP addresses in binary)\n- CSS color codes (#FF5733 in hexadecimal)\n- File permissions (chmod 755 in octal)\n- Memory address analysis (hex addresses)\n\nManual conversion is error-prone, so using a tool is more reliable.",
+        },
+        {
+          heading: "Number Systems Basics",
+          body: "A number system is a way to represent numbers:\n\n- Binary (base 2): Uses 0 and 1. The language of computers\n- Octal (base 8): Uses 0-7. Common in Unix file permissions\n- Decimal (base 10): Uses 0-9. Our everyday number system\n- Hexadecimal (base 16): Uses 0-9 + A-F. Used in color codes, memory\n\nExample: Decimal 255 = Binary 11111111 = Octal 377 = Hex FF",
+        },
+        {
+          heading: "How to Use the Converter",
+          body: "It is simple:\n\n1. Enter the number to convert\n2. Select the input base (binary, octal, decimal, hex)\n3. See instant conversion results in all other bases\n\nAll bases are shown simultaneously for easy comparison.",
+        },
+        {
+          heading: "Practical Use Cases",
+          body: "CSS colors: #FF0000 (red) in RGB? Convert FF to decimal = 255. So it is RGB(255, 0, 0).\n\nSubnet masks: 255.255.255.0 in binary = 11111111.11111111.11111111.00000000, showing a /24 subnet.\n\nLinux permissions: chmod 755 where 7 = binary 111 (read+write+execute), 5 = 101 (read+execute).",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "16진수에서 A~F는 각각 몇인가요?",
+        answer: "A=10, B=11, C=12, D=13, E=14, F=15예요. FF는 15x16+15=255가 돼요.",
+      },
+      {
+        question: "음수도 진수 변환할 수 있나요?",
+        answer: "컴퓨터에서 음수는 2의 보수(Two's complement)로 표현해요. 기본 진수 변환기는 양수만 지원하는 경우가 많아요.",
+      },
+      {
+        question: "프로그래밍에서 16진수를 왜 많이 쓰나요?",
+        answer: "16진수 한 자리가 2진수 4자리와 정확히 대응되기 때문이에요. 11111111을 FF로 쓰면 훨씬 간결하죠.",
+      },
+    ],
+  },
+  {
+    slug: "unit-converter-everyday-conversions-guide",
+    title: {
+      ko: "단위 변환기 활용법 — cm, inch, kg, lb 자주 쓰는 변환 총정리",
+      en: "Unit Converter Guide — Essential cm, inch, kg, lb Conversions",
+    },
+    description: {
+      ko: "일상에서 자주 필요한 단위 변환을 정리했어요. 길이, 무게, 온도, 넓이 변환 공식과 Toolkio 단위 변환기 사용법까지 알려드려요.",
+      en: "Essential unit conversions for everyday use. Length, weight, temperature, and area conversion formulas plus how to use the Toolkio unit converter.",
+    },
+    date: "2026-04-11",
+    toolId: "unit-converter",
+    image: "/images/blog/unit-converter-everyday-conversions-guide.webp",
+    keywords: ["단위 변환", "cm inch 변환", "kg lb 변환", "단위 계산기", "unit converter"],
+    content: {
+      ko: [
+        {
+          heading: "단위 변환이 필요한 일상 상황",
+          body: "해외 쇼핑몰에서 옷을 살 때 사이즈가 인치로 되어 있어서 당황한 적 있으시죠?\n\n- 해외 직구: 키 cm를 feet/inch로, 몸무게 kg를 lb로\n- 요리: 온도 섭씨↔화씨, 컵/온스↔ml 변환\n- 인테리어: 평수↔제곱미터 변환\n- 여행: 마일↔킬로미터, 갤런↔리터\n\n매번 계산하기 번거로울 때 단위 변환기를 쓰면 바로 해결돼요.",
+        },
+        {
+          heading: "자주 쓰는 길이 변환",
+          body: "가장 많이 찾는 길이 변환이에요.\n\n- 1 inch = 2.54 cm\n- 1 feet = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n\n예시: 키 170cm = 약 5피트 7인치예요.\n\n해외 쇼핑몰에서 바지 기장이 32인치면? 32 x 2.54 = 81.28cm이에요.",
+        },
+        {
+          heading: "자주 쓰는 무게와 온도 변환",
+          body: "무게 변환:\n- 1 kg = 2.205 lb(파운드)\n- 1 oz(온스) = 28.35 g\n- 1 근 = 600 g (한국 기준)\n\n온도 변환:\n- 섭씨에서 화씨: (C x 9/5) + 32\n- 화씨에서 섭씨: (F - 32) x 5/9\n\n예시: 섭씨 36.5도(체온) = 화씨 97.7도\n\n오븐 레시피에서 350F가 나오면? 약 177C예요.",
+        },
+        {
+          heading: "Toolkio 단위 변환기 사용법",
+          body: "Toolkio 단위 변환기는 카테고리별로 나뉘어 있어서 찾기 편해요.\n\n1. 변환할 카테고리 선택 (길이, 무게, 온도, 넓이 등)\n2. 원래 단위와 변환할 단위를 선택\n3. 숫자를 입력하면 실시간으로 결과 표시\n\n자주 쓰는 변환은 즐겨찾기 해두면 다음에 바로 쓸 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Everyday Situations Needing Unit Conversion",
+          body: "Shopping on international sites with sizes in inches? Cooking with a recipe in Fahrenheit?\n\n- Online shopping: cm to inches, kg to lbs\n- Cooking: Celsius to Fahrenheit, cups/oz to ml\n- Real estate: square feet to square meters\n- Travel: miles to kilometers, gallons to liters\n\nA unit converter handles all of these instantly.",
+        },
+        {
+          heading: "Common Length Conversions",
+          body: "The most searched length conversions:\n\n- 1 inch = 2.54 cm\n- 1 foot = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n\nExample: 170 cm height = about 5 feet 7 inches.\n\nPants with 32-inch inseam? 32 x 2.54 = 81.28 cm.",
+        },
+        {
+          heading: "Weight and Temperature Conversions",
+          body: "Weight:\n- 1 kg = 2.205 lbs\n- 1 oz = 28.35 g\n\nTemperature:\n- Celsius to Fahrenheit: (C x 9/5) + 32\n- Fahrenheit to Celsius: (F - 32) x 5/9\n\nExamples: Body temp 36.5C = 97.7F. Oven at 350F = about 177C.",
+        },
+        {
+          heading: "How to Use Toolkio Unit Converter",
+          body: "The converter is organized by category for easy navigation.\n\n1. Select a category (length, weight, temperature, area)\n2. Choose the source and target units\n3. Enter a number for instant conversion\n\nBookmark your frequent conversions for quick access next time.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "1평은 몇 제곱미터인가요?",
+        answer: "1평은 약 3.3058 제곱미터예요. 30평 아파트는 약 99.17 제곱미터(약 100m2)예요.",
+      },
+      {
+        question: "해외 요리 레시피에서 1 cup은 몇 ml인가요?",
+        answer: "미국 기준 1 cup = 약 237ml이에요. 영국 기준은 250ml이라 레시피 출처를 확인하는 게 좋아요.",
+      },
+      {
+        question: "마일과 해리(nautical mile)의 차이는요?",
+        answer: "1 마일 = 1.609km, 1 해리 = 1.852km이에요. 해리는 항해와 항공에서 사용하고, 마일은 육상에서 써요.",
+      },
+    ],
+  },
+  {
+    slug: "salary-calculator-net-pay-tax-guide",
+    title: {
+      ko: "연봉 실수령액 계산 — 4대보험 세금 공제 항목별 정리",
+      en: "Salary Calculator — Net Pay After Taxes and Insurance Deductions",
+    },
+    description: {
+      ko: "연봉에서 실제로 얼마를 받는지 계산하는 방법이에요. 4대보험, 소득세, 주민세 공제 항목을 하나씩 정리했어요.",
+      en: "How to calculate your actual take-home pay from gross salary. Breaking down insurance, income tax, and local tax deductions.",
+    },
+    date: "2026-04-11",
+    toolId: "salary-calculator",
+    image: "/images/blog/salary-calculator-net-pay-tax-guide.webp",
+    keywords: ["연봉 실수령액", "연봉 계산기", "4대보험 계산", "월급 세금", "net pay calculator"],
+    content: {
+      ko: [
+        {
+          heading: "연봉과 실수령액이 다른 이유",
+          body: "연봉 4000만 원이면 월 333만 원을 받을 거라고 생각하지만, 실제로는 약 283만 원 정도예요. 월 50만 원 차이가 나는 이유는 각종 공제 때문이에요.\n\n매달 빠지는 공제 항목:\n- 국민연금: 월급의 4.5%\n- 건강보험: 월급의 3.545%\n- 장기요양보험: 건강보험의 12.81%\n- 고용보험: 월급의 0.9%\n- 소득세: 간이세액표 기준\n- 지방소득세: 소득세의 10%",
+        },
+        {
+          heading: "4대보험 공제 상세",
+          body: "4대보험은 회사와 본인이 반반 부담해요. 본인 부담분만 월급에서 빠져요.\n\n국민연금: 월급의 4.5% (회사도 4.5%)\n- 연봉 4000만 원이면 월 약 15만 원\n\n건강보험: 월급의 3.545%\n- 연봉 4000만 원이면 월 약 11.8만 원\n\n장기요양보험: 건강보험료의 12.81%\n- 약 1.5만 원\n\n고용보험: 월급의 0.9%\n- 약 3만 원\n\n4대보험 합계: 월 약 31.3만 원",
+        },
+        {
+          heading: "소득세와 지방소득세",
+          body: "소득세는 부양가족 수에 따라 달라져요. 1인 가구와 4인 가구의 세금이 다르다는 뜻이에요.\n\n연봉 4000만 원, 부양가족 1명(본인만) 기준:\n- 소득세: 월 약 8.9만 원\n- 지방소득세: 약 0.89만 원\n\n부양가족이 늘면 세금이 줄어요. 배우자나 자녀를 부양가족으로 등록하면 절세 효과가 있어요.",
+        },
+        {
+          heading: "Toolkio 연봉 계산기 사용법",
+          body: "연봉 금액만 입력하면 모든 공제를 자동으로 계산해서 실수령액을 보여줘요.\n\n1. 연봉 금액을 입력해요\n2. 부양가족 수를 선택해요\n3. 4대보험, 세금, 실수령 월급이 한눈에 표시돼요\n\n연봉 협상 전에 미리 계산해보면 실제로 손에 쥐는 금액을 예측할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Gross Salary Differs from Net Pay",
+          body: "A 40 million KRW salary does not mean 3.33 million KRW per month. After deductions, you actually take home about 2.83 million KRW. The roughly 500,000 KRW difference comes from various deductions:\n\n- National Pension: 4.5%\n- Health Insurance: 3.545%\n- Long-term Care Insurance: 12.81% of health insurance\n- Employment Insurance: 0.9%\n- Income Tax: Based on simplified tax table\n- Local Income Tax: 10% of income tax",
+        },
+        {
+          heading: "Insurance Deductions Explained",
+          body: "The four major insurances are split 50/50 between employer and employee. Only your share is deducted from your paycheck.\n\nNational Pension: 4.5% of monthly salary\nHealth Insurance: 3.545% of monthly salary\nLong-term Care: 12.81% of health insurance premium\nEmployment Insurance: 0.9% of monthly salary\n\nTotal insurance deductions: approximately 9.4% of monthly salary.",
+        },
+        {
+          heading: "Income Tax Calculations",
+          body: "Income tax varies by number of dependents. A single person pays more tax than someone with a family of four.\n\nFor a 40M KRW salary with 1 dependent (self only):\n- Income tax: ~89,000 KRW/month\n- Local tax: ~8,900 KRW/month\n\nRegistering a spouse or children as dependents reduces your tax burden.",
+        },
+        {
+          heading: "Using the Salary Calculator",
+          body: "Just enter your annual salary and the calculator does the rest.\n\n1. Input your gross annual salary\n2. Select number of dependents\n3. See insurance, tax, and net monthly pay at a glance\n\nUse this before salary negotiations to know your actual take-home amount.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "연봉 5000만 원이면 실수령액은 얼마인가요?",
+        answer: "부양가족 1명(본인) 기준, 월 실수령액은 약 340만 원이에요. 4대보험과 소득세를 합치면 월 약 77만 원이 공제돼요.",
+      },
+      {
+        question: "비과세 항목이 있으면 실수령액이 올라가나요?",
+        answer: "네, 식대(월 20만 원), 자가운전보조금(월 20만 원) 같은 비과세 항목은 세금과 4대보험이 적용되지 않아서 실수령액이 올라가요.",
+      },
+      {
+        question: "퇴직금은 연봉에 포함되나요?",
+        answer: "별도로 지급하는 회사가 대부분이에요. 연봉 계약서에 퇴직금 포함 여부를 반드시 확인하세요. 포함이면 실질 연봉이 약 8% 낮아지는 셈이에요.",
+      },
+    ],
+  },
+  {
+    slug: "bmi-calculator-healthy-weight-guide",
+    title: {
+      ko: "BMI 계산기로 적정 체중 확인하기 — 비만도 기준과 건강 관리법",
+      en: "BMI Calculator — Check Your Ideal Weight and Health Management Tips",
+    },
+    description: {
+      ko: "BMI 계산기로 자신의 비만도를 확인하는 방법이에요. 한국 기준 BMI 범위, 적정 체중 계산법, 건강한 체중 관리 팁까지 정리했어요.",
+      en: "How to check your BMI and understand what it means. Korean BMI standards, ideal weight calculations, and healthy weight management tips.",
+    },
+    date: "2026-04-11",
+    toolId: "bmi-calculator",
+    image: "/images/blog/bmi-calculator-healthy-weight-guide.webp",
+    keywords: ["BMI 계산기", "비만도 계산", "적정 체중", "BMI 기준", "체질량지수"],
+    content: {
+      ko: [
+        {
+          heading: "BMI란 무엇인가요",
+          body: "BMI(Body Mass Index, 체질량지수)는 키와 몸무게로 비만도를 간단하게 파악하는 지표예요.\n\n계산 공식: BMI = 체중(kg) / 키(m)의 제곱\n\n예시: 키 170cm, 체중 70kg이면\nBMI = 70 / (1.7 x 1.7) = 24.2\n\nBMI는 건강 상태를 판단하는 참고 지표이지, 절대적인 기준은 아니에요. 근육량이 많은 운동선수는 BMI가 높아도 비만이 아닐 수 있어요.",
+        },
+        {
+          heading: "한국 기준 BMI 범위",
+          body: "WHO 기준과 아시아-태평양 기준(한국)은 살짝 달라요.\n\n한국(아시아-태평양) 기준:\n- 저체중: 18.5 미만\n- 정상: 18.5 ~ 22.9\n- 과체중: 23.0 ~ 24.9\n- 비만 1단계: 25.0 ~ 29.9\n- 비만 2단계: 30.0 ~ 34.9\n- 비만 3단계: 35.0 이상\n\nWHO 기준은 과체중이 25부터인데, 아시아인은 23부터 건강 위험이 증가해서 기준이 다르게 적용돼요.",
+        },
+        {
+          heading: "BMI의 한계와 보완 지표",
+          body: "BMI만으로 건강을 판단하기엔 한계가 있어요.\n\n한계점:\n- 근육과 지방을 구분하지 못해요\n- 내장지방과 피하지방을 구분하지 못해요\n- 나이, 성별 차이를 반영하지 않아요\n\n보완 지표:\n- 허리둘레: 남성 90cm, 여성 85cm 이상이면 복부비만\n- 체지방률: 남성 25% 이상, 여성 30% 이상이면 비만\n- 허리-엉덩이 비율(WHR): 남성 0.9, 여성 0.85 이상이면 위험",
+        },
+        {
+          heading: "Toolkio BMI 계산기 사용법",
+          body: "키와 체중만 입력하면 BMI 수치와 비만도 구간을 바로 확인할 수 있어요.\n\n1. 키(cm)를 입력해요\n2. 체중(kg)을 입력해요\n3. BMI 수치와 해당 구간이 표시돼요\n4. 정상 체중 범위도 같이 보여줘요\n\n다이어트 목표를 세울 때 정상 BMI 범위에 해당하는 체중을 목표로 잡으면 현실적이에요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is BMI",
+          body: "BMI (Body Mass Index) is a simple measure of body fatness based on height and weight.\n\nFormula: BMI = weight(kg) / height(m) squared\n\nExample: Height 170cm, weight 70kg\nBMI = 70 / (1.7 x 1.7) = 24.2\n\nBMI is a reference indicator, not an absolute standard. Athletes with high muscle mass may have high BMI without being overweight.",
+        },
+        {
+          heading: "BMI Ranges and Standards",
+          body: "WHO standards and Asia-Pacific standards differ slightly.\n\nWHO Standard:\n- Underweight: below 18.5\n- Normal: 18.5 - 24.9\n- Overweight: 25.0 - 29.9\n- Obese Class I: 30.0 - 34.9\n- Obese Class II: 35.0 - 39.9\n- Obese Class III: 40.0+\n\nAsian populations face health risks at lower BMI levels, so some countries use adjusted thresholds.",
+        },
+        {
+          heading: "Limitations of BMI",
+          body: "BMI alone has limitations:\n\n- Cannot distinguish muscle from fat\n- Does not account for visceral vs subcutaneous fat\n- Does not factor in age or gender\n\nComplementary measures:\n- Waist circumference: risk increases above 102cm (men) / 88cm (women)\n- Body fat percentage: above 25% (men) / 30% (women) indicates obesity\n- Waist-to-hip ratio (WHR): above 0.9 (men) / 0.85 (women) indicates risk",
+        },
+        {
+          heading: "Using the BMI Calculator",
+          body: "Just enter your height and weight for instant results.\n\n1. Enter height (cm)\n2. Enter weight (kg)\n3. See your BMI value and category\n4. Normal weight range is also displayed\n\nWhen setting diet goals, aim for a weight within the normal BMI range for a realistic target.",
+        },
+      ],
+    },
+    faq: [
+      {
+        question: "BMI가 정상인데 배가 나왔으면 괜찮은 건가요?",
+        answer: "아니에요. BMI가 정상이어도 복부 비만은 내장지방과 관련이 있어요. 허리둘레를 따로 측정해서 확인하는 게 좋아요.",
+      },
+      {
+        question: "BMI를 너무 자주 측정하면 스트레스 받지 않나요?",
+        answer: "맞아요. 주 1회 정도 같은 조건(아침 공복)에서 측정하는 게 좋아요. 매일 체중을 재면 수분 변동에 의한 오차로 불필요한 스트레스를 받을 수 있어요.",
+      },
+      {
+        question: "어린이의 BMI도 같은 기준으로 보나요?",
+        answer: "아니에요. 어린이와 청소년은 성장에 따라 BMI 기준이 달라요. 백분위수(percentile)를 사용해서 같은 나이, 같은 성별 아이들과 비교해야 해요.",
+      },
+    ],
+  },
 ];
