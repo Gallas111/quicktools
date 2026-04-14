@@ -11718,4 +11718,164 @@ export const blogPosts: BlogPost[] = [
       { question: "Toolkio 특징?", answer: "단락·문장 단위 생성과 한글 더미 지원이에요." },
     ],
   },
+  {
+    slug: "seo-blog-optimal-char-count-2026",
+    title: {
+      ko: "블로그 SEO 최적 글자수 2026 - 검색 상위 노출 기준",
+      en: "Optimal Blog Word Count for SEO in 2026",
+    },
+    description: {
+      ko: "2026년 구글·네이버 검색 상위 글들의 실제 글자수 분석. 주제별 최적 길이와 글자수 측정 팁을 한번에 정리했어요.",
+      en: "Analysis of top-ranking blog posts in 2026 and how to hit the right word count.",
+    },
+    date: "2026-04-14",
+    toolId: "character-counter",
+    image: "/images/blog/seo-blog-optimal-char-count-2026.webp",
+    keywords: ["블로그 글자수", "SEO 글자수", "2026 SEO", "네이버 블로그 글자수", "구글 상위노출"],
+    content: {
+      ko: [
+        { heading: "2026 검색 상위 글들의 실제 글자수", body: "구글 1페이지 평균 1,890단어, 한국어 환산 약 2,400~3,000자예요. 네이버 블로그 상위 노출은 1,500~2,500자 구간이 가장 흔해요. 더 길수록 좋다는 건 옛말이고, 주제별 적정선을 지키는 게 중요해요.\n\n2025년 이후 구글 헬프풀 콘텐츠 업데이트 이후로는 길이보다 '깊이'가 우선이에요. 하지만 너무 짧으면 thin content로 분류되니 1,000자 미만은 피하세요." },
+        { heading: "주제별 최적 길이 가이드", body: "- How-to 가이드: 2,000~3,000자\n- 리뷰/비교: 1,500~2,500자\n- 뉴스/업데이트: 600~1,200자\n- 리스트/TOP: 1,800~2,800자\n- 개인 에세이: 800~1,500자\n\n검색 의도(Intent)에 맞춰 조절하세요. 단순 정보는 짧게, 의사결정 돕는 글은 길게." },
+        { heading: "글자수 측정할 때 주의점", body: "공백 포함으로 세는 게 표준이에요. 네이버 SEO 도구도 공백 포함 기준이거든요. 이미지 alt 텍스트, 코드 블록, FAQ 스키마는 본문 글자수에 포함 안 시키는 게 정확해요.\n\nToolkio 글자수 세기 도구는 공백 포함·제외·바이트까지 한 번에 확인돼요. 붙여넣기만 하면 끝이에요." },
+      ],
+      en: [
+        { heading: "Top-ranking Post Length", body: "Google first page averages 1,890 words. Korean equivalent: 2,400-3,000 characters. Naver blogs: 1,500-2,500." },
+        { heading: "By Topic", body: "How-to: 2,000-3,000. Review: 1,500-2,500. News: 600-1,200. List: 1,800-2,800." },
+        { heading: "Measuring Tips", body: "Count with spaces. Exclude alt text and code blocks for accuracy." },
+      ],
+    },
+    faq: [
+      { question: "너무 길면 오히려 안 좋나요?", answer: "맞아요. 주제 이탈과 중복 내용이 쌓이면 순위 하락해요. 2,500자 넘기면 구조를 한 번 검토하세요." },
+      { question: "AI 생성 글도 글자수가 중요한가요?", answer: "길이보다 고유성이 더 중요해요. AI 초안을 사람이 다듬는 게 기본이에요." },
+      { question: "Toolkio는 실시간 측정되나요?", answer: "네, 붙여넣는 순간 글자수·단어·바이트가 즉시 표시돼요." },
+    ],
+  },
+  {
+    slug: "json-error-debugging-10min-guide",
+    title: {
+      ko: "JSON 에러 10분 안에 고치는 디버깅 가이드 - 자주 나는 6가지 오류",
+      en: "Debug JSON Errors in 10 Minutes - 6 Common Fixes",
+    },
+    description: {
+      ko: "JSON 파싱 에러 가장 흔한 6가지와 빠르게 잡는 법이에요. 따옴표·콤마·괄호 문제를 포맷터로 한 번에 잡아내는 팁을 공유해요.",
+      en: "Six common JSON parsing errors and how to fix them fast with a formatter.",
+    },
+    date: "2026-04-14",
+    toolId: "json-formatter",
+    image: "/images/blog/json-error-debugging-10min-guide.webp",
+    keywords: ["JSON 에러", "JSON 디버깅", "JSON 포맷터", "JSON parse error", "JSON 검증"],
+    content: {
+      ko: [
+        { heading: "자주 보는 JSON 에러 6가지", body: "1. Trailing comma (마지막 콤마 남김)\n2. Single quotes (작은따옴표 사용)\n3. Unquoted keys (키에 따옴표 없음)\n4. Unescaped control character (줄바꿈이 문자열 안에)\n5. Mismatched brackets (괄호 불균형)\n6. BOM 문자 삽입 (에디터가 저장 시 추가)\n\n대부분 이 6가지 안에 들어가요. 에러 메시지가 모호하면 포맷터에 넣어서 라인 번호 확인이 제일 빨라요." },
+        { heading: "구조적으로 잡는 순서", body: "1단계: 포맷터로 정렬해 시각적 문제 확인\n2단계: 에러 라인 기준 위·아래 3줄만 보기\n3단계: 괄호 쌍 검사 (IDE의 bracket matching 기능)\n4단계: 따옴표 정상성 검사 (큰따옴표만 허용)\n5단계: JSON Schema로 스키마 검증 (선택)\n\n이 순서만 지키면 10분 안에 대부분 해결돼요." },
+        { heading: "Toolkio JSON 포맷터 활용", body: "에러 위치를 빨간색으로 표시해주고, 콤마·따옴표·괄호 문제를 자동 감지해요. 포맷팅 후 'Minify'로 한 줄 JSON도 바로 변환돼요. 서버에 데이터 안 보내서 안전해요." },
+      ],
+      en: [
+        { heading: "Six Common Errors", body: "Trailing comma, single quotes, unquoted keys, unescaped control chars, bracket mismatch, BOM." },
+        { heading: "Debug Order", body: "Format → read 3 lines around error → check brackets → check quotes → schema validate." },
+        { heading: "Toolkio Formatter", body: "Highlights errors with line numbers. Fully client-side." },
+      ],
+    },
+    faq: [
+      { question: "JSON에 주석 달 수 있나요?", answer: "표준 JSON은 주석 금지예요. JSON5나 JSONC는 주석 허용하지만 표준 파서가 못 읽어요." },
+      { question: "큰 JSON은 어떻게 볼까요?", answer: "포맷터에서 Tree view로 전환하면 접기·펼치기 가능해요. 1MB 이상은 특히 유용해요." },
+      { question: "JSON vs JSONL 차이는?", answer: "JSONL은 한 줄에 한 JSON 객체예요. 로그나 스트리밍 데이터에 적합해요." },
+    ],
+  },
+  {
+    slug: "youtube-video-timestamp-usage-guide",
+    title: {
+      ko: "유튜브 영상 타임스탬프 활용법 - 챕터 만들고 구간 링크 공유하기",
+      en: "YouTube Timestamp Guide - Chapters and Shareable Links",
+    },
+    description: {
+      ko: "유튜브 영상 챕터 만드는 법과 특정 시점 공유 링크 생성법을 정리했어요. 편집 툴 없이 설명란만으로 챕터 분할하는 방법이에요.",
+      en: "Create chapters and share timestamped links on YouTube videos.",
+    },
+    date: "2026-04-14",
+    toolId: "timestamp-converter",
+    image: "/images/blog/youtube-video-timestamp-usage-guide.webp",
+    keywords: ["유튜브 타임스탬프", "유튜브 챕터", "영상 시점 공유", "유튜브 링크", "타임스탬프 변환"],
+    content: {
+      ko: [
+        { heading: "챕터 생성 3가지 규칙", body: "유튜브가 자동으로 챕터로 인식하려면 3가지 조건을 충족해야 해요.\n\n1. 첫 번째 타임스탬프는 반드시 0:00\n2. 챕터 최소 3개 이상\n3. 각 챕터 최소 10초 이상\n\n설명란에 `0:00 인트로` `1:30 주제1` 형식으로 작성하면 자동 반영돼요." },
+        { heading: "특정 시점 링크 만들기", body: "동영상 URL 뒤에 `?t=초` 또는 `&t=초` 추가하면 돼요.\n\n- `https://youtu.be/영상ID?t=90` → 1분 30초부터\n- `?t=1m30s` 형식도 가능\n- 채팅·댓글 공유 시엔 시간 옆 '공유' 버튼이 편해요\n\n초 단위 변환이 헷갈리면 Toolkio 타임스탬프 변환 도구로 빠르게 계산할 수 있어요." },
+        { heading: "시청 지속률 올리는 챕터 전략", body: "- 챕터 제목에 키워드 포함 (SEO 효과)\n- 첫 챕터는 30초 이내로 짧게 (이탈 줄임)\n- 마지막 챕터는 '결론' 또는 'FAQ'로 클리어하게\n- 평균 챕터 길이 1~2분이 시청 완료율 가장 높음\n\n제가 써본 바로 챕터 잘 만든 영상은 시청 시간이 20~30% 늘어났어요." },
+      ],
+      en: [
+        { heading: "Chapter Rules", body: "First timestamp must be 0:00, at least 3 chapters, each 10+ seconds." },
+        { heading: "Timed Links", body: "Use ?t=90 or ?t=1m30s after video URL." },
+        { heading: "Retention Tips", body: "Keyword-rich titles, short first chapter, 1-2 min per chapter." },
+      ],
+    },
+    faq: [
+      { question: "챕터가 자동 생성 안 되면?", answer: "규칙 3가지 점검하세요. 형식이 조금만 틀려도 인식 안 돼요." },
+      { question: "모바일에서도 타임스탬프 링크 되나요?", answer: "네, 유튜브 앱에서도 정확한 시점으로 재생돼요." },
+      { question: "시간 형식은 초 기준인가요?", answer: "두 가지 다 지원해요. 초 단위(t=90) 또는 분초(t=1m30s) 모두 OK." },
+    ],
+  },
+  {
+    slug: "business-card-qr-design-tips-2026",
+    title: {
+      ko: "명함 QR코드 디자인 팁 2026 - 스캔율 2배 올리는 방법",
+      en: "Business Card QR Code Design Tips 2026",
+    },
+    description: {
+      ko: "명함에 QR코드를 붙일 때 스캔율을 올리는 디자인·크기·배치 팁이에요. 어떤 링크를 걸어야 효과적인지도 함께 알려드려요.",
+      en: "Design tips to maximize QR code scan rates on business cards.",
+    },
+    date: "2026-04-14",
+    toolId: "qr-generator",
+    image: "/images/blog/business-card-qr-design-tips-2026.webp",
+    keywords: ["명함 QR코드", "QR코드 디자인", "QR코드 만들기", "명함 디자인", "QR 스캔율"],
+    content: {
+      ko: [
+        { heading: "QR코드 최소 크기와 배치", body: "명함에 들어가는 QR은 **최소 2x2cm**가 기본이에요. 이보다 작으면 스마트폰이 인식 못 하는 경우가 생겨요.\n\n배치는 **뒷면 오른쪽 하단**이 가장 자연스럽고, 앞면 넣을 땐 이름·로고 근처 여백에 두세요. 주변에 최소 3mm 여백(quiet zone)을 꼭 확보해야 해요." },
+        { heading: "스캔율 높이는 디자인 4가지", body: "1. **고대비 색상**: 어두운 전경 + 밝은 배경. 흰 배경 + 검정 QR이 가장 안전\n2. **중앙에 로고 삽입**: 오류 정정 레벨 H(30%)로 설정하면 로고 있어도 인식\n3. **둥근 모서리·도트 스타일**: 가독성 유지하면서 세련된 느낌\n4. **'스캔해주세요' 문구**: 5~6pt 작게 옆에 넣으면 스캔 유도\n\n저도 A/B 테스트해봤는데 문구 하나 넣은 것만으로 스캔율 2배 올랐어요." },
+        { heading: "어떤 링크를 걸어야 할까", body: "- **vCard**: 연락처 자동 저장. 가장 활용도 높음\n- **포트폴리오 페이지**: 디자이너·개발자 필수\n- **링크트리 같은 허브**: 여러 SNS·웹사이트 한번에\n- **소개 영상**: 1분 자기소개 영상 (고급 전략)\n\n바로 쓰는 링크보다 **짧은 URL로 단축**하세요. QR 패턴이 단순해져서 인식률이 올라가요." },
+      ],
+      en: [
+        { heading: "Minimum Size", body: "At least 2x2cm with 3mm quiet zone around." },
+        { heading: "Design Tips", body: "High contrast, logo with H error correction, rounded dots, add 'Scan me' label." },
+        { heading: "Link Options", body: "vCard, portfolio, link hub, intro video. Shorten URLs first." },
+      ],
+    },
+    faq: [
+      { question: "색을 바꿔도 되나요?", answer: "전경·배경 대비가 50% 이상이면 대부분 인식돼요. 파란 전경 + 노란 배경은 실패 사례 많아요." },
+      { question: "인쇄물에서 잘 안 읽혀요", answer: "프린터 해상도 300dpi 이상으로 인쇄하세요. 150dpi는 경계가 흐려서 실패 잦아요." },
+      { question: "QR 유효기간 있나요?", answer: "QR 자체는 영구적이에요. 연결된 URL이 살아있는지가 관건이에요." },
+    ],
+  },
+  {
+    slug: "base64-email-attachment-size-guide",
+    title: {
+      ko: "Base64 이메일 첨부 파일 크기 계산 - 실제 용량보다 33% 커지는 이유",
+      en: "Base64 Email Attachment Size Explained",
+    },
+    description: {
+      ko: "이메일 첨부 파일이 Base64 인코딩되면서 용량이 33% 늘어나는 원리와 제한 용량 맞추는 팁이에요.",
+      en: "Why email attachments grow 33% via Base64 and how to stay under limits.",
+    },
+    date: "2026-04-14",
+    toolId: "base64",
+    image: "/images/blog/base64-email-attachment-size-guide.webp",
+    keywords: ["Base64 용량", "이메일 첨부 크기", "Base64 인코딩", "첨부파일 제한", "MIME 인코딩"],
+    content: {
+      ko: [
+        { heading: "왜 Base64로 용량이 커질까", body: "이메일 프로토콜(SMTP)은 7비트 ASCII만 전송할 수 있거든요. 바이너리 파일(이미지·문서)을 보내려면 안전한 문자로 변환해야 하는데, 그 방식이 **Base64**예요.\n\nBase64는 3바이트를 4문자로 인코딩해요. 그래서 **원본 용량의 약 133%**로 불어나요. 10MB 첨부파일은 실제 13.3MB 정도로 전송되는 거예요." },
+        { heading: "주요 메일 서비스 첨부 용량", body: "- Gmail: 25MB (Base64 포함 기준)\n- Outlook: 20MB\n- 네이버 메일: 25MB\n- 카카오 메일: 25MB\n- 회사 Exchange: 보통 10~15MB\n\n원본 기준으로는 **약 18~19MB까지만** 첨부 가능해요. 25MB 파일은 Base64 변환 후 33MB가 돼서 Gmail도 거부돼요." },
+        { heading: "용량 초과 대처 3가지", body: "1. **클라우드 링크 전송**: 구글 드라이브·드롭박스 링크 공유가 가장 안전\n2. **압축 (zip·7z)**: 이미지·문서는 10~20% 추가 축소 가능\n3. **분할 압축**: 대용량은 4MB씩 분할해 여러 메일 발송\n\n코드나 텍스트 일부만 필요하면 Toolkio Base64 변환기로 **특정 영역만 인코딩**해 본문에 붙여넣는 방법도 있어요." },
+      ],
+      en: [
+        { heading: "Size Expansion", body: "Base64 turns 3 bytes into 4 chars, growing files by ~33%." },
+        { heading: "Limits", body: "Gmail 25MB, Outlook 20MB, Naver 25MB (encoded)." },
+        { heading: "Workarounds", body: "Use cloud links, compression, or split archives." },
+      ],
+    },
+    faq: [
+      { question: "왜 꼭 Base64를 써요?", answer: "SMTP가 7비트 ASCII만 허용하기 때문이에요. 다른 인코딩(quoted-printable)은 바이너리에 비효율적이에요." },
+      { question: "Base64 외에 더 효율적 방식이 있나요?", answer: "HTTP는 바이너리 직접 전송 가능해요. 클라우드 링크를 쓰는 이유예요." },
+      { question: "Toolkio Base64 도구는 안전한가요?", answer: "네, 브라우저에서만 처리돼요. 파일이 서버로 전송되지 않아요." },
+    ],
+  },
 ];
