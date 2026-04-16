@@ -11878,4 +11878,310 @@ export const blogPosts: BlogPost[] = [
       { question: "Toolkio Base64 도구는 안전한가요?", answer: "네, 브라우저에서만 처리돼요. 파일이 서버로 전송되지 않아요." },
     ],
   },
+  {
+    slug: "english-character-counter-guide",
+    title: {
+      ko: "영어 글자수 세기 방법 5가지 - 공백 포함·제외 정확하게 확인하기",
+      en: "5 Ways to Count English Characters - With and Without Spaces",
+    },
+    description: {
+      ko: "영어 에세이, TOEFL 라이팅, 이메일 본문의 글자수를 정확히 세는 방법. 공백 포함·제외, 단어수, 바이트까지 한번에 확인하세요.",
+      en: "How to accurately count English characters for essays, TOEFL writing, and emails. Check characters with/without spaces, words, and bytes.",
+    },
+    date: "2026-04-16",
+    toolId: "character-counter",
+    image: "/images/blog/english-character-counter-guide.webp",
+    keywords: ["글자수 세기 영어", "영어 글자수 세기", "english character counter", "영어 단어수 세기", "character count online"],
+    content: {
+      ko: [
+        {
+          heading: "영어 글자수, 왜 따로 세야 할까",
+          body: "영어와 한글은 글자수 계산 방식이 다르거든요. 한글은 한 글자가 2~3바이트지만, 영어는 1바이트예요. TOEFL 라이팅은 300단어 이상이 권장이고, IELTS는 250단어 이상을 요구해요. 여기서 포인트는 '글자수'가 아니라 '단어수'라는 점이에요.\n\n대학 에세이도 마찬가지예요. Common App 에세이는 650단어 제한, UC 에세이는 350단어 제한이 있어요. 단어수와 글자수를 혼동하면 큰일 나거든요. 그래서 영어 글자수 세기 도구가 필수인 거예요.\n\n영어 이메일도 너무 길면 읽히지 않아요. 비즈니스 이메일은 보통 100~200단어가 적정 길이예요. Toolkio 글자수 세기 도구를 쓰면 실시간으로 단어수와 글자수를 동시에 확인할 수 있어요.",
+        },
+        {
+          heading: "영어 글자수 계산 시 주의할 점 3가지",
+          body: "영어 글자수를 셀 때 자주 실수하는 부분이 있어요.\n\n첫째, **공백 포함 여부**예요. 'Hello World'는 공백 포함 11자, 공백 제외 10자예요. 대부분의 영문 시험은 단어수 기준이지만, 일부 시스템은 글자수 기준이에요.\n\n둘째, **구두점 처리**예요. 마침표(.), 쉼표(,), 물음표(?) 같은 구두점은 글자수에 포함돼요. 하지만 단어수에는 포함되지 않아요. 'I love you.'는 3단어, 12자(공백 포함)예요.\n\n셋째, **줄바꿈과 탭**이에요. 줄바꿈 문자(\\n)도 공백 포함 기준에선 1자로 카운트돼요. 복사 붙여넣기를 할 때 숨어 있는 줄바꿈 문자가 글자수를 늘리는 경우가 있어요. Toolkio에서는 이런 보이지 않는 문자도 정확하게 감지해요.",
+        },
+        {
+          heading: "영어 시험·에세이 글자수 제한 총정리",
+          body: "주요 영어 시험과 플랫폼별 글자수 제한을 정리했어요.\n\n- TOEFL Writing: 300~350단어 권장 (최소 250단어)\n- IELTS Writing Task 2: 250단어 이상\n- GRE Analytical Writing: 500~600단어 권장\n- Common App Essay: 250~650단어\n- UC Personal Insight: 350단어 이하\n- LinkedIn Summary: 2,600자 이내\n- Twitter/X: 280자 (영어·한글 동일)\n- Google Meta Description: 155~160자\n\n단어수 기준과 글자수 기준을 구분하는 게 핵심이에요. Toolkio 도구는 단어수·글자수·바이트를 동시에 보여주니까 한 번에 확인할 수 있어요.",
+        },
+        {
+          heading: "Toolkio로 영어 글자수 세는 법",
+          body: "사용법은 간단해요.\n\n1. Toolkio 글자수 세기 페이지에 접속\n2. 영어 텍스트를 입력하거나 붙여넣기\n3. 상단에 글자수(공백 포함), 글자수(공백 제외), 단어수, 문장수가 실시간으로 표시\n\n저도 영문 이메일 쓸 때마다 이거 쓰거든요. 특히 200단어 넘기면 안 되는 비즈니스 이메일에서 유용해요. 브라우저에서 바로 돌아가서 설치도 필요 없고, 입력한 내용이 서버로 전송되지 않아 보안 걱정도 없어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Count English Characters Separately",
+          body: "English and other languages count differently. TOEFL requires 300+ words, IELTS needs 250+ words. Common App essays cap at 650 words. Knowing the difference between word count and character count is crucial.",
+        },
+        {
+          heading: "3 Common Mistakes",
+          body: "Watch out for: spaces (included or not), punctuation (counted as characters but not words), and hidden line breaks that inflate your count.",
+        },
+        {
+          heading: "Character Limits by Platform",
+          body: "Twitter: 280 chars. LinkedIn summary: 2,600 chars. Google meta description: 155-160 chars. TOEFL: 300+ words. Common App: 650 words max.",
+        },
+        {
+          heading: "How to Use Toolkio",
+          body: "Paste your text and instantly see characters, words, sentences, and bytes. No installation needed, everything runs in your browser.",
+        },
+      ],
+    },
+    faq: [
+      { question: "영어 단어수와 글자수의 차이가 뭔가요?", answer: "단어수는 공백으로 구분된 단어의 개수예요. 글자수는 공백을 포함하거나 제외한 모든 문자의 수예요. 영문 에세이는 대부분 단어수 기준이에요." },
+      { question: "영어 글자수에 공백이 포함되나요?", answer: "기준에 따라 달라요. 대부분의 SNS는 공백 포함 기준이고, 에세이 시험은 단어수 기준이에요. Toolkio에서는 둘 다 동시에 확인할 수 있어요." },
+      { question: "영어와 한글의 바이트 차이는?", answer: "UTF-8 기준으로 영어 1자는 1바이트, 한글 1자는 3바이트예요. 같은 글자수라도 한글이 3배 더 많은 용량을 차지해요." },
+      { question: "TOEFL 라이팅 권장 단어수는?", answer: "Independent Writing은 300~350단어, Integrated Writing은 150~225단어가 권장이에요. 최소 기준 미달이면 감점 대상이에요." },
+      { question: "구두점도 글자수에 포함되나요?", answer: "네, 마침표·쉼표·물음표 등 구두점은 글자수에 포함돼요. 다만 단어수에는 포함되지 않아요." },
+      { question: "Toolkio에서 영어 맞춤법도 검사되나요?", answer: "현재는 글자수·단어수·바이트 카운트 기능만 제공해요. 맞춤법 검사는 별도 도구를 이용하세요." },
+      { question: "복사 붙여넣기 시 글자수가 달라지는 이유는?", answer: "숨겨진 줄바꿈 문자(\\n)나 특수 공백 문자가 포함될 수 있어요. Toolkio에서는 이런 보이지 않는 문자도 정확히 감지해요." },
+    ],
+  },
+  {
+    slug: "qr-code-google-form-guide",
+    title: {
+      ko: "구글폼 QR코드 만들기 - 설문조사 참여율 2배 높이는 방법",
+      en: "Create QR Code for Google Forms - Double Your Survey Response Rate",
+    },
+    description: {
+      ko: "구글 설문지를 QR코드로 만들어 오프라인에서도 쉽게 응답받는 방법. 무료로 만들고 인쇄·공유까지 한번에.",
+      en: "Turn your Google Form into a QR code for easy offline responses. Create, print, and share for free.",
+    },
+    date: "2026-04-16",
+    toolId: "qr-code-generator",
+    image: "/images/blog/qr-code-google-form-guide.webp",
+    keywords: ["qr코드 만들기 구글폼", "구글폼 QR코드", "설문조사 QR코드", "구글 설문지 QR", "QR code Google Form"],
+    content: {
+      ko: [
+        {
+          heading: "구글폼에 QR코드가 필요한 이유",
+          body: "구글 설문지 링크를 카톡으로 보내도 응답률이 낮은 경험, 한 번쯤 있으시죠? 긴 URL을 보면 사람들이 지레 겁먹고 클릭을 안 하거든요.\n\nQR코드로 바꾸면 상황이 달라져요. 카메라만 갖다 대면 바로 설문에 참여할 수 있으니까요. 특히 오프라인 행사에서 참석자 피드백을 받을 때, 교실에서 학생 설문을 돌릴 때, 매장에서 고객 만족도를 조사할 때 QR코드는 필수예요.\n\n실제로 QR코드를 사용하면 설문 응답률이 평균 40~60% 더 높다는 조사 결과도 있어요.",
+        },
+        {
+          heading: "구글폼 QR코드 만드는 3단계",
+          body: "만드는 방법은 간단해요.\n\n**1단계: 구글폼 링크 복사**\n구글 설문지 편집 화면에서 오른쪽 상단 '보내기' 버튼을 클릭하세요. 링크 아이콘(체인 모양)을 선택하고 'URL 줄이기'에 체크한 뒤 복사하면 돼요.\n\n**2단계: Toolkio QR코드 생성기에 붙여넣기**\nToolkio QR코드 생성기 페이지에 접속해서 복사한 링크를 입력란에 붙여넣기하세요.\n\n**3단계: QR코드 다운로드**\n생성된 QR코드를 PNG로 다운로드하세요. 인쇄용이라면 고해상도 옵션을 선택하는 게 좋아요.\n\n이 과정이 1분도 안 걸려요. 저도 매번 이렇게 하거든요.",
+        },
+        {
+          heading: "QR코드 설문지 활용 팁 4가지",
+          body: "QR코드를 만들었다면 효과적으로 활용하는 방법도 알아야 해요.\n\n**1. CTA 문구 추가**: QR코드 옆에 '카메라로 스캔하세요', '30초면 끝나는 설문' 같은 문구를 넣으세요. 참여 의지가 확 올라가요.\n\n**2. 적절한 크기 유지**: 인쇄물에 넣을 때 최소 2cm x 2cm 이상이어야 스캔이 잘 돼요. 명함에 넣으려면 1.5cm까지는 괜찮아요.\n\n**3. 테스트 필수**: 인쇄하기 전에 반드시 스마트폰으로 스캔 테스트를 하세요. 간혹 배경색과 QR코드 색이 비슷하면 인식이 안 될 수 있어요.\n\n**4. 응답 마감일 표시**: QR코드 근처에 마감일을 표시하면 긴급성이 생겨서 응답률이 더 올라가요.",
+        },
+        {
+          heading: "주의할 점과 대안",
+          body: "구글폼 QR코드를 쓸 때 주의할 점이 있어요.\n\n첫째, 구글폼 링크를 수정하면 QR코드도 새로 만들어야 해요. 설문지 내용을 바꾸는 건 괜찮지만, 새 설문을 만들면 URL이 바뀌거든요.\n\n둘째, 오프라인 환경에서는 와이파이나 데이터가 필요해요. QR코드를 스캔해도 인터넷이 없으면 설문지가 안 열려요.\n\n셋째, 개인정보가 포함된 설문은 보안에 주의하세요. 구글폼 자체는 HTTPS로 암호화되지만, QR코드가 공개 장소에 노출되면 누구나 접근 가능해요.\n\nToolkio QR코드 생성기는 완전 무료이고 만료 기한이 없어요. 한번 만들면 계속 쓸 수 있으니까 부담 없이 활용하세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why QR Codes for Google Forms",
+          body: "Long URLs scare people away. QR codes let respondents join surveys by just pointing their camera. Response rates jump 40-60% with QR codes.",
+        },
+        {
+          heading: "3 Steps to Create",
+          body: "Copy your Google Form link, paste it into Toolkio QR Generator, and download the QR code. Takes under a minute.",
+        },
+        {
+          heading: "4 Usage Tips",
+          body: "Add a CTA message, keep QR at least 2cm, test before printing, and show the deadline near the code.",
+        },
+        {
+          heading: "Things to Watch Out For",
+          body: "New form means new QR code. Offline scanning needs internet. Be cautious with surveys collecting personal data.",
+        },
+      ],
+    },
+    faq: [
+      { question: "구글폼 QR코드는 무료인가요?", answer: "네, Toolkio QR코드 생성기는 완전 무료예요. 회원가입도 필요 없고 만료 기한도 없어요." },
+      { question: "QR코드에 만료 기한이 있나요?", answer: "Toolkio에서 만든 QR코드는 만료되지 않아요. 구글폼 링크가 유효한 한 계속 작동해요." },
+      { question: "구글폼 내용을 수정하면 QR코드도 바뀌나요?", answer: "아니요, 같은 설문지의 내용만 수정하면 URL이 그대로라 QR코드도 그대로 써도 돼요. 새 설문을 만들 때만 QR코드를 새로 생성하세요." },
+      { question: "인쇄할 때 QR코드 크기는 얼마가 적당한가요?", answer: "최소 2cm x 2cm 이상을 권장해요. 포스터에 넣을 때는 5cm 이상이면 원거리에서도 스캔이 가능해요." },
+      { question: "QR코드 색상을 바꿀 수 있나요?", answer: "Toolkio에서는 기본 흑백 QR코드를 제공해요. 색상을 바꾸려면 이미지 편집 도구에서 후처리하면 돼요. 단, 배경과 대비가 충분해야 스캔이 잘 돼요." },
+    ],
+  },
+  {
+    slug: "image-to-zip-compression-guide",
+    title: {
+      ko: "이미지 압축파일로 변경하는 방법 - ZIP으로 사진 용량 줄이기",
+      en: "How to Convert Images to Compressed ZIP Files - Reduce Photo Size",
+    },
+    description: {
+      ko: "여러 장의 이미지를 ZIP 압축파일로 묶어 용량을 줄이는 방법. 이미지 자체 압축과 ZIP 압축의 차이점까지 알려드려요.",
+      en: "How to bundle multiple images into ZIP files to reduce size. Learn the difference between image compression and ZIP compression.",
+    },
+    date: "2026-04-16",
+    toolId: "image-compressor",
+    image: "/images/blog/image-to-zip-compression-guide.webp",
+    keywords: ["이미지 압축파일로 변경", "이미지 압축파일", "사진 ZIP 압축", "이미지 용량 줄이기", "image zip compression"],
+    content: {
+      ko: [
+        {
+          heading: "이미지 압축파일, 언제 필요할까",
+          body: "사진 수십 장을 한 번에 보내야 하는 상황, 누구나 겪어봤을 거예요. 이메일로 보내자니 용량 초과, 카톡으로 보내자니 화질이 떨어지고. 이럴 때 ZIP 압축파일이 답이에요.\n\nZIP 압축을 하면 여러 파일을 하나로 묶을 수 있고, 추가로 용량도 줄어들어요. 하지만 여기서 한 가지 알아둬야 할 게 있어요. JPG나 PNG 같은 이미지 파일은 이미 압축된 상태라서 ZIP으로 묶어도 용량이 크게 줄지 않거든요.\n\n그래서 진짜 용량을 줄이려면 **이미지 자체 압축 + ZIP 묶기**를 조합하는 게 효과적이에요.",
+        },
+        {
+          heading: "이미지 압축 vs ZIP 압축, 뭐가 다를까",
+          body: "이 둘은 완전히 다른 개념이에요.\n\n**이미지 압축**: 사진의 화질이나 해상도를 조절해서 파일 크기를 줄이는 거예요. JPG 품질을 100에서 80으로 낮추면 눈에 띄는 차이 없이 용량이 절반 가까이 줄어요. Toolkio 이미지 압축 도구가 이 방식이에요.\n\n**ZIP 압축**: 파일 데이터의 중복 패턴을 찾아 줄이는 거예요. 텍스트 파일은 80% 이상 줄어들기도 하지만, 이미 압축된 JPG는 1~5% 정도밖에 안 줄어요.\n\n정리하면 이래요.\n- BMP, TIFF 같은 비압축 이미지: ZIP으로 50~70% 축소 가능\n- JPG, PNG 같은 압축 이미지: ZIP으로는 거의 안 줄어듦\n- 최적 전략: Toolkio에서 이미지 먼저 압축 후 ZIP으로 묶기",
+        },
+        {
+          heading: "효율적으로 이미지 압축파일 만드는 방법",
+          body: "가장 효과적인 순서를 알려드릴게요.\n\n**1단계: 이미지 개별 압축**\nToolkio 이미지 압축 도구에서 사진을 하나씩 또는 일괄로 압축하세요. JPG 기준 품질 80이면 용량이 절반으로 줄어들면서 화질 차이는 거의 없어요.\n\n**2단계: WebP 변환 고려**\nJPG보다 WebP가 같은 화질에서 30% 더 작아요. 웹에 올릴 사진이라면 WebP로 변환하는 것도 방법이에요.\n\n**3단계: ZIP으로 묶기**\n압축된 이미지들을 ZIP으로 묶으세요. Windows에서는 파일 선택 후 우클릭에서 '압축(ZIP 형식) 폴더로 보내기', Mac에서는 '압축'을 선택하면 돼요.\n\n이 3단계를 거치면 원본 대비 60~80% 용량 절감이 가능해요.",
+        },
+        {
+          heading: "용량 제한별 압축 전략",
+          body: "상황에 따라 전략이 달라져요.\n\n**이메일 첨부 (25MB 이하)**: 이미지를 Toolkio에서 압축한 후 ZIP으로 묶으세요. 사진 20~30장도 25MB 안에 들어가요.\n\n**메신저 전송 (10MB 이하)**: 해상도를 1920px 이하로 줄이고 품질 70으로 압축하면 사진 10장도 10MB 안에 들어가요.\n\n**클라우드 업로드 (용량 절약)**: Google Drive나 Dropbox 무료 용량을 아끼려면 모든 사진을 WebP로 변환 후 폴더째 ZIP으로 묶는 게 최선이에요.\n\n**웹사이트 업로드**: 개별 이미지를 최대한 압축하고, ZIP은 필요 없어요. 이미지당 200KB 이하가 이상적이에요.\n\n저는 주로 이메일로 사진 보낼 때 이 방법을 쓰는데, 한번 익히면 계속 시간을 아낄 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Image Archives",
+          body: "Sending dozens of photos at once hits email limits. ZIP files bundle everything into one download. But JPG/PNG files are already compressed, so ZIP adds minimal savings.",
+        },
+        {
+          heading: "Image vs ZIP Compression",
+          body: "Image compression reduces quality/resolution. ZIP finds data patterns. For already-compressed JPGs, ZIP saves only 1-5%. Best approach: compress images first, then ZIP.",
+        },
+        {
+          heading: "3-Step Process",
+          body: "1. Compress images in Toolkio. 2. Convert to WebP for 30% more savings. 3. Bundle into ZIP. Total savings: 60-80%.",
+        },
+        {
+          heading: "Strategy by Size Limit",
+          body: "Email (25MB): compress then ZIP. Messenger (10MB): reduce resolution + quality 70. Cloud: WebP + ZIP. Web upload: compress individually, skip ZIP.",
+        },
+      ],
+    },
+    faq: [
+      { question: "JPG를 ZIP으로 압축하면 얼마나 줄어드나요?", answer: "JPG는 이미 압축된 포맷이라 ZIP으로 묶어도 1~5% 정도밖에 안 줄어요. 진짜 용량을 줄이려면 이미지 자체를 먼저 압축해야 해요." },
+      { question: "BMP 이미지는 ZIP으로 얼마나 줄어드나요?", answer: "BMP는 비압축 포맷이라 ZIP으로 50~70% 줄어들 수 있어요. 하지만 애초에 JPG나 WebP로 변환하는 게 더 효율적이에요." },
+      { question: "이미지 압축하면 화질이 많이 떨어지나요?", answer: "JPG 품질 80 정도면 육안으로 차이를 구분하기 어려워요. Toolkio에서 압축 전후를 비교해보면 확인할 수 있어요." },
+      { question: "WebP가 JPG보다 항상 좋은가요?", answer: "같은 화질 기준으로 WebP가 약 30% 더 작아요. 다만 일부 오래된 프로그램에서는 WebP를 지원하지 않을 수 있어요." },
+      { question: "무료로 이미지를 압축할 수 있나요?", answer: "네, Toolkio 이미지 압축 도구는 완전 무료예요. 브라우저에서 바로 처리되고 파일이 서버로 전송되지 않아요." },
+      { question: "한 번에 몇 장까지 압축할 수 있나요?", answer: "Toolkio에서는 브라우저 메모리 한도 내에서 여러 장을 처리할 수 있어요. 보통 50장 이상도 문제없이 압축 가능해요." },
+    ],
+  },
+  {
+    slug: "base64-conversion-program-guide",
+    title: {
+      ko: "Base64 변환 프로그램 비교 - 온라인·오프라인 도구 7가지 추천",
+      en: "Base64 Conversion Tools Compared - 7 Online and Offline Recommendations",
+    },
+    description: {
+      ko: "Base64 인코딩·디코딩이 필요할 때 쓸 수 있는 프로그램 7가지를 비교했어요. 웹 기반, CLI, IDE 플러그인까지.",
+      en: "Compare 7 Base64 encoding/decoding tools. Web-based, CLI, and IDE plugins for every use case.",
+    },
+    date: "2026-04-16",
+    toolId: "base64",
+    image: "/images/blog/base64-conversion-program-guide.webp",
+    keywords: ["base64 변환 프로그램", "base64 변환기", "base64 인코딩 도구", "base64 디코딩 프로그램", "base64 encoder"],
+    content: {
+      ko: [
+        {
+          heading: "Base64 변환이 필요한 상황",
+          body: "개발하다 보면 Base64를 쓸 일이 자주 생기거든요. API에서 이미지를 Base64 문자열로 받을 때, 이메일에 인라인 이미지를 넣을 때, JWT 토큰을 디코딩해서 내용을 확인할 때, 바이너리 데이터를 JSON으로 전송할 때 등등.\n\n이럴 때마다 코드를 짜는 건 비효율적이에요. 빠르게 변환해주는 프로그램이 있으면 시간을 아낄 수 있어요. 상황에 따라 웹 기반, 터미널 명령어, IDE 플러그인 중 적합한 도구가 달라요.",
+        },
+        {
+          heading: "온라인 Base64 변환 도구 4가지",
+          body: "설치 없이 바로 쓸 수 있는 웹 도구들이에요.\n\n**1. Toolkio Base64 변환기**\n텍스트와 파일 모두 지원하고, 브라우저에서만 처리돼서 보안이 좋아요. 한글 인코딩도 정확하게 처리돼요. 저도 매일 이거 쓰거든요.\n\n**2. base64encode.org**\n영문 전용 도구로 인코딩·디코딩이 분리돼 있어요. 심플한 인터페이스가 장점이에요.\n\n**3. base64.guru**\n이미지, 파일, URL 등 다양한 입력 유형을 지원해요. 다만 광고가 좀 많아요.\n\n**4. codebeautify.org**\n JSON 포맷터와 함께 Base64 도구도 제공해요. 개발자 도구 모음 사이트예요.\n\n이 중에서 한글 지원과 보안이 중요하다면 Toolkio가 가장 안전해요.",
+        },
+        {
+          heading: "오프라인·CLI 도구 3가지",
+          body: "인터넷 없이 쓸 수 있는 도구도 있어요.\n\n**5. 터미널 base64 명령어**\nMac/Linux에서 기본 내장이에요.\n- 인코딩: echo -n 'hello' | base64\n- 디코딩: echo 'aGVsbG8=' | base64 --decode\n파일도 가능해요: base64 image.png > encoded.txt\n\n**6. VS Code 확장 프로그램**\n'Base64 Encode/Decode'라는 확장을 설치하면 텍스트를 선택한 후 명령 팔레트에서 바로 변환할 수 있어요. 코딩 중에 컨텍스트 전환 없이 사용 가능해요.\n\n**7. Python 스크립트**\nimport base64를 쓰면 한 줄로 변환 가능해요. 자동화 스크립트에 넣기 좋아요.\n\n개발 환경에 따라 적합한 도구가 다르니까 상황에 맞게 고르세요.",
+        },
+        {
+          heading: "어떤 도구를 선택해야 할까",
+          body: "상황별 추천을 정리했어요.\n\n- **빠른 1회성 변환**: Toolkio 웹 도구 (설치 불필요, 즉시 사용)\n- **코딩 중 변환**: VS Code 확장 프로그램 (컨텍스트 전환 최소화)\n- **대용량 파일 변환**: 터미널 base64 명령어 (메모리 효율적)\n- **자동화 파이프라인**: Python base64 모듈 (스크립트 통합)\n- **보안이 중요한 경우**: Toolkio 또는 오프라인 도구 (데이터가 서버로 전송되지 않음)\n\n대부분의 경우 Toolkio 웹 도구로 충분해요. 북마크해두면 필요할 때마다 바로 쓸 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "When You Need Base64",
+          body: "API image responses, JWT decoding, inline email images, binary-to-JSON conversion. Base64 comes up constantly in development.",
+        },
+        {
+          heading: "4 Online Tools",
+          body: "Toolkio (secure, Korean support), base64encode.org (simple), base64.guru (multi-format), codebeautify.org (developer suite).",
+        },
+        {
+          heading: "3 Offline Tools",
+          body: "Terminal base64 command (built-in), VS Code extension (in-editor), Python base64 module (automation-ready).",
+        },
+        {
+          heading: "Which to Choose",
+          body: "Quick one-off: Toolkio. While coding: VS Code. Large files: terminal. Automation: Python. Security-sensitive: Toolkio or offline.",
+        },
+      ],
+    },
+    faq: [
+      { question: "Base64 변환 시 한글이 깨지는 이유는?", answer: "인코딩 방식(UTF-8, EUC-KR 등)이 일치하지 않을 때 깨져요. Toolkio는 UTF-8 기준으로 처리하기 때문에 한글이 정확하게 변환돼요." },
+      { question: "Base64로 변환하면 파일 크기가 커지나요?", answer: "네, 원본 대비 약 33% 커져요. 3바이트를 4문자로 인코딩하기 때문이에요." },
+      { question: "이미지를 Base64로 변환하면 웹사이트가 느려지나요?", answer: "작은 아이콘(1~2KB)은 괜찮지만, 큰 이미지를 Base64로 넣으면 HTML 크기가 커져서 로딩이 느려질 수 있어요. 일반적으로 10KB 이하 이미지만 Base64로 임베드하는 걸 권장해요." },
+      { question: "Base64 디코딩으로 JWT 내용을 볼 수 있나요?", answer: "네, JWT는 Header.Payload.Signature 구조인데, Header와 Payload는 Base64URL로 인코딩돼 있어서 디코딩하면 내용을 확인할 수 있어요." },
+      { question: "Toolkio Base64 도구는 파일도 지원하나요?", answer: "네, 텍스트뿐 아니라 이미지, 문서 등 파일도 Base64로 인코딩하거나 디코딩할 수 있어요." },
+      { question: "오프라인에서 Base64를 쓸 수 있는 가장 간단한 방법은?", answer: "Mac/Linux 터미널에서 base64 명령어를 쓰면 돼요. Windows에서는 PowerShell의 [Convert]::ToBase64String()을 사용할 수 있어요." },
+      { question: "Base64와 Base64URL의 차이는?", answer: "Base64URL은 + 대신 -, / 대신 _를 사용해요. URL이나 파일명에 안전하게 쓸 수 있도록 만든 변형이에요." },
+    ],
+  },
+  {
+    slug: "url-encoding-table-special-characters",
+    title: {
+      ko: "URL 인코딩 표 - 특수문자별 변환 코드 총정리 (2026년)",
+      en: "URL Encoding Table - Complete Special Character Conversion Reference (2026)",
+    },
+    description: {
+      ko: "URL에서 특수문자가 어떻게 변환되는지 한눈에 확인하는 인코딩 표. 자주 쓰는 특수문자 변환 코드와 실무 활용법까지.",
+      en: "Quick reference table for URL encoding of special characters. Common conversion codes and practical usage guide.",
+    },
+    date: "2026-04-16",
+    toolId: "url-encoder",
+    image: "/images/blog/url-encoding-table-special-characters.webp",
+    keywords: ["url 인코딩 표", "url 인코딩 특수문자", "URL encoding table", "퍼센트 인코딩", "url encode special characters"],
+    content: {
+      ko: [
+        {
+          heading: "URL 인코딩이 필요한 이유",
+          body: "URL에는 쓸 수 있는 문자가 정해져 있거든요. 영문자, 숫자, 그리고 일부 특수문자(-_.~)만 안전하게 사용할 수 있어요. 그 외의 문자는 퍼센트 인코딩(%XX)으로 변환해야 해요.\n\n예를 들어 검색어에 공백이 있으면 %20으로, 한글 '안녕'은 %EC%95%88%EB%85%95%EC%9C%BC%EB%A1%9C로 변환돼요. 이걸 모르고 URL을 직접 만들면 404 에러가 나거나 서버에서 잘못된 데이터를 받게 돼요.\n\n특히 API 개발할 때 쿼리 파라미터에 특수문자가 들어가면 인코딩을 안 하면 큰일 나요.",
+        },
+        {
+          heading: "자주 쓰는 특수문자 URL 인코딩 표",
+          body: "실무에서 자주 마주치는 특수문자별 인코딩 코드예요.\n\n- 공백(space): %20 또는 +\n- 느낌표(!): %21\n- 샵(#): %23\n- 달러($): %24\n- 앰퍼샌드(&): %26\n- 작은따옴표('): %27\n- 여는 괄호((): %28\n- 닫는 괄호()): %29\n- 별표(*): %2A\n- 더하기(+): %2B\n- 쉼표(,): %2C\n- 슬래시(/): %2F\n- 콜론(:): %3A\n- 세미콜론(;): %3B\n- 등호(=): %3D\n- 물음표(?): %3F\n- 골뱅이(@): %40\n- 대괄호([): %5B, (]): %5D\n- 한글: UTF-8 바이트별 %XX%XX%XX\n\n이 표를 북마크해두면 개발할 때 바로바로 참고할 수 있어요.",
+        },
+        {
+          heading: "인코딩이 불필요한 안전 문자",
+          body: "URL에서 인코딩하지 않아도 되는 문자들이 있어요. 이걸 '안전 문자(Unreserved Characters)'라고 해요.\n\n- 영문 대문자: A~Z\n- 영문 소문자: a~z\n- 숫자: 0~9\n- 하이픈(-), 밑줄(_), 마침표(.), 물결(~)\n\n이 문자들은 URL 어디에 넣어도 그대로 유지돼요. 반면 예약 문자(Reserved Characters)는 URL 구조에서 특별한 의미를 가져요.\n\n- ?(쿼리 시작), &(파라미터 구분), =(값 할당), #(프래그먼트), /(경로 구분)\n\n이 예약 문자들을 데이터로 사용하려면 반드시 인코딩해야 해요. Toolkio URL 인코더에 넣으면 자동으로 변환해주니까 일일이 외울 필요는 없어요.",
+        },
+        {
+          heading: "실무에서 URL 인코딩 활용하기",
+          body: "실무에서 URL 인코딩을 써야 하는 대표적인 상황이에요.\n\n**1. API 쿼리 파라미터**\n검색 API에 한글 키워드를 넣을 때: /search?q=%ED%82%A4%EC%9B%8C%EB%93%9C\n인코딩 안 하면 서버가 파라미터를 못 읽어요.\n\n**2. 리다이렉트 URL**\n로그인 후 돌아갈 페이지를 redirect_uri에 넣을 때, URL 안에 URL이 들어가니까 이중 인코딩이 필요할 수 있어요.\n\n**3. 파일명에 특수문자가 있을 때**\n서버에서 파일을 다운로드할 때 파일명에 공백이나 한글이 있으면 인코딩해야 브라우저가 제대로 처리해요.\n\n**4. 소셜 미디어 공유 링크**\n카카오톡이나 Facebook 공유 URL에 한글 파라미터가 있으면 인코딩 안 하면 링크가 깨져요.\n\nToolkio URL 인코더에 텍스트를 붙여넣기만 하면 즉시 인코딩된 결과를 복사할 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why URL Encoding Matters",
+          body: "URLs only allow certain characters. Special characters must be percent-encoded (%XX). Without encoding, you get 404 errors or corrupted data.",
+        },
+        {
+          heading: "Common Encoding Table",
+          body: "Space: %20, &: %26, =: %3D, ?: %3F, #: %23, /: %2F, @: %40, +: %2B. Bookmark this for quick reference.",
+        },
+        {
+          heading: "Safe Characters",
+          body: "A-Z, a-z, 0-9, and -_.~ never need encoding. Reserved characters (?, &, =, #, /) have special URL meanings and must be encoded when used as data.",
+        },
+        {
+          heading: "Practical Usage",
+          body: "API query params, redirect URIs, file downloads with special chars, social media share links. Use Toolkio URL Encoder for instant conversion.",
+        },
+      ],
+    },
+    faq: [
+      { question: "%20과 +의 차이는 뭔가요?", answer: "%20은 RFC 3986 표준 인코딩이고, +는 HTML form에서 application/x-www-form-urlencoded 방식일 때 공백을 나타내요. 일반 URL에서는 %20을 쓰는 게 안전해요." },
+      { question: "한글 URL 인코딩은 어떻게 되나요?", answer: "한글은 UTF-8로 먼저 변환된 후 바이트별로 %XX%XX%XX 형태로 인코딩돼요. 예를 들어 '가'는 %EA%B0%80이 돼요." },
+      { question: "URL 디코딩은 어떻게 하나요?", answer: "Toolkio URL 인코더에서 인코딩된 문자열을 넣고 디코딩 버튼을 누르면 원래 문자로 변환돼요." },
+      { question: "이중 인코딩이 뭔가요?", answer: "이미 인코딩된 문자열을 다시 인코딩하는 거예요. %26이 %2526으로 변하는 식이에요. 리다이렉트 URL을 파라미터로 넘길 때 자주 발생해요." },
+      { question: "JavaScript에서 URL 인코딩하는 방법은?", answer: "encodeURIComponent() 함수를 쓰면 돼요. encodeURI()는 URL 전체용이고, encodeURIComponent()는 파라미터 값 인코딩용이에요." },
+      { question: "인코딩 안 하면 어떤 문제가 생기나요?", answer: "서버가 파라미터를 잘못 파싱하거나, 404 에러가 나거나, 보안 취약점(XSS 등)이 생길 수 있어요." },
+    ],
+  },
 ];
