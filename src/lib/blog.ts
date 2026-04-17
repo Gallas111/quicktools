@@ -12184,4 +12184,304 @@ export const blogPosts: BlogPost[] = [
       { question: "인코딩 안 하면 어떤 문제가 생기나요?", answer: "서버가 파라미터를 잘못 파싱하거나, 404 에러가 나거나, 보안 취약점(XSS 등)이 생길 수 있어요." },
     ],
   },
+  {
+    slug: "json-schema-validation-guide",
+    title: {
+      ko: "JSON 스키마 검증 가이드 — 데이터 구조 실수 잡는 법",
+      en: "JSON Schema Validation Guide — Catch Data Structure Errors",
+    },
+    description: {
+      ko: "JSON 스키마로 데이터 구조를 검증하는 방법을 정리했습니다. 필수 필드 누락, 타입 불일치를 빌드 전에 잡아내는 실전 활용법이에요.",
+      en: "Learn how to validate data structures with JSON Schema. Catch missing fields and type mismatches before they hit production.",
+    },
+    date: "2026-04-17",
+    toolId: "json-formatter",
+    image: "/images/blog/json-schema-validation-guide.webp",
+    keywords: ["JSON 스키마", "JSON schema validation", "JSON 검증", "JSON 포맷터", "데이터 검증"],
+    content: {
+      ko: [
+        {
+          heading: "JSON 스키마가 뭔가요?",
+          body: "JSON 스키마는 JSON 데이터의 구조를 정의하는 규칙이에요. \"이 필드는 문자열이어야 하고, 이 필드는 필수\"처럼 데이터가 올바른 형태인지 자동으로 검증해주거든요.\n\nAPI 개발할 때 프론트에서 보내는 요청 데이터가 맞는지, 백엔드 응답이 약속한 형태인지 확인하는 데 꼭 필요해요. 수동으로 하나하나 체크하면 시간도 걸리고 실수하기 쉽거든요.",
+        },
+        {
+          heading: "JSON 스키마 기본 문법",
+          body: "가장 많이 쓰는 키워드 5개만 알면 대부분의 검증이 가능해요.\n\n- type: 데이터 타입 지정 (string, number, boolean, object, array)\n- required: 필수 필드 목록\n- properties: 객체의 각 필드 정의\n- items: 배열 요소의 타입 정의\n- enum: 허용되는 값 목록\n\n예를 들어 사용자 프로필을 검증하려면 name은 string 필수, age는 number, email은 string 필수 이런 식으로 정의해요.\n\nToolkio JSON 포맷터에 스키마와 데이터를 넣으면 구조가 맞는지 한눈에 확인할 수 있어요.",
+        },
+        {
+          heading: "실무에서 JSON 스키마 활용하기",
+          body: "**1. API 요청 검증**\n서버에서 요청을 받을 때 스키마로 검증하면 잘못된 데이터가 DB에 들어가는 걸 막을 수 있어요.\n\n**2. 설정 파일 검증**\npackage.json, tsconfig.json 같은 설정 파일이 올바른 형태인지 확인할 수 있어요. VS Code가 빨간 밑줄을 그어주는 게 바로 JSON 스키마 덕분이에요.\n\n**3. 팀 협업 시 데이터 계약**\n프론트와 백엔드가 주고받는 데이터 형태를 스키마로 정의해두면 \"이 필드 뭐예요?\" 같은 질문이 줄어요.\n\n**4. 테스트 자동화**\nAPI 응답이 스키마와 일치하는지 테스트 코드에서 자동 검증할 수 있어요.",
+        },
+        {
+          heading: "JSON 포맷터로 빠르게 검증하기",
+          body: "Toolkio JSON 포맷터에 JSON 데이터를 붙여넣으면 구문 오류를 즉시 잡아줘요. 중괄호 빠짐, 쉼표 누락, 따옴표 문제 등 흔한 실수를 1초 만에 찾을 수 있거든요.\n\n포맷팅된 결과를 보면 중첩 구조도 한눈에 파악할 수 있어서 디버깅 시간이 크게 줄어요. API 개발할 때 응답 데이터를 복사해서 포맷터에 넣어보는 습관을 들이면 생산성이 올라가요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is JSON Schema?",
+          body: "JSON Schema defines rules for JSON data structure. It automatically validates that data has correct types, required fields, and allowed values.",
+        },
+        {
+          heading: "Basic Syntax",
+          body: "Key keywords: type (string/number/boolean/object/array), required (mandatory fields), properties (field definitions), items (array element types), enum (allowed values).",
+        },
+        {
+          heading: "Practical Usage",
+          body: "Use for API request validation, config file checking, team data contracts, and test automation. Schema validation catches errors before they reach production.",
+        },
+        {
+          heading: "Quick Validation with Toolkio",
+          body: "Paste JSON into Toolkio JSON Formatter to instantly catch syntax errors, missing brackets, and formatting issues. Great for API debugging.",
+        },
+      ],
+    },
+    faq: [
+      { question: "JSON 스키마와 TypeScript 인터페이스는 뭐가 다른가요?", answer: "TypeScript 인터페이스는 컴파일 타임에만 검증하고, JSON 스키마는 런타임에도 검증할 수 있어요. API에서 외부 데이터를 받을 때는 JSON 스키마가 더 안전해요." },
+      { question: "JSON 스키마를 자동으로 생성할 수 있나요?", answer: "네, quicktype이나 json-schema-generator 같은 도구에 샘플 JSON을 넣으면 자동으로 스키마를 만들어줘요." },
+      { question: "JSON 포맷터에서 에러가 나는 가장 흔한 원인은?", answer: "마지막 항목 뒤에 쉼표를 넣는 trailing comma가 가장 많아요. JSON에서는 허용되지 않거든요." },
+      { question: "JSON 스키마 버전이 여러 개인데 뭘 써야 하나요?", answer: "2020-12 버전이 최신이에요. 대부분의 라이브러리가 draft-07 이상을 지원하니 draft-07이나 2020-12를 쓰면 돼요." },
+      { question: "중첩된 JSON 구조도 검증할 수 있나요?", answer: "네, properties 안에 다시 type: object와 properties를 정의하면 깊이 제한 없이 중첩 구조를 검증할 수 있어요." },
+    ],
+  },
+  {
+    slug: "unix-timestamp-conversion-complete-guide",
+    title: {
+      ko: "Unix 타임스탬프 변환 완벽 가이드 — 초 단위 시간을 날짜로",
+      en: "Unix Timestamp Conversion Guide — Seconds to Human-Readable Dates",
+    },
+    description: {
+      ko: "Unix 타임스탬프를 날짜로 변환하는 방법과 원리를 정리했습니다. 밀리초 vs 초 차이, 타임존 처리, 실무 활용법까지 담았어요.",
+      en: "Learn how to convert Unix timestamps to dates. Covers milliseconds vs seconds, timezone handling, and practical use cases.",
+    },
+    date: "2026-04-17",
+    toolId: "timestamp-converter",
+    image: "/images/blog/unix-timestamp-conversion-complete-guide.webp",
+    keywords: ["Unix 타임스탬프", "타임스탬프 변환", "epoch time", "시간 변환", "timestamp converter"],
+    content: {
+      ko: [
+        {
+          heading: "Unix 타임스탬프란?",
+          body: "Unix 타임스탬프는 1970년 1월 1일 00:00:00 UTC부터 현재까지 흐른 초(또는 밀리초)를 숫자로 나타낸 거예요. 예를 들어 1713340800은 2024년 4월 17일을 의미해요.\n\n왜 이렇게 복잡한 숫자를 쓰냐면, 날짜 형식은 나라마다 다르거든요. 미국은 MM/DD/YYYY, 한국은 YYYY-MM-DD, 유럽은 DD/MM/YYYY. 이런 혼란을 피하려고 전 세계 개발자가 동일한 숫자 기준을 쓰는 거예요.",
+        },
+        {
+          heading: "초(seconds) vs 밀리초(milliseconds) 구분법",
+          body: "타임스탬프를 다룰 때 가장 많이 실수하는 부분이에요.\n\n- 10자리 숫자 (예: 1713340800) → 초 단위 (Unix timestamp)\n- 13자리 숫자 (예: 1713340800000) → 밀리초 단위\n\nJavaScript의 Date.now()는 밀리초를, Python의 time.time()은 초를 반환해요. 서로 다른 언어 간에 타임스탬프를 주고받을 때 이 차이를 놓치면 1970년대 날짜가 나오거나 미래 날짜가 나오는 버그가 생겨요.\n\nToolkio 타임스탬프 변환기에 숫자를 넣으면 초인지 밀리초인지 자동으로 감지해서 변환해줘요.",
+        },
+        {
+          heading: "타임존 처리 주의사항",
+          body: "타임스탬프 자체는 UTC 기준이에요. 한국 시간(KST)은 UTC+9이기 때문에 변환할 때 9시간을 더해야 해요.\n\n**흔한 실수**: 서버는 UTC로 저장하는데 프론트에서 타임존 변환 없이 그대로 보여주면 9시간 차이가 나요. 한국에서 오후 3시에 작성한 글이 오전 6시로 보이는 거예요.\n\n**올바른 처리 방법**:\n1. 서버에는 항상 UTC 타임스탬프로 저장\n2. 프론트에서 사용자의 로컬 타임존으로 변환해서 표시\n3. JavaScript: new Date(timestamp * 1000).toLocaleString('ko-KR')",
+        },
+        {
+          heading: "실무에서 타임스탬프 쓰는 상황",
+          body: "**1. 로그 분석**\n서버 로그에 찍히는 시간이 타임스탬프인 경우가 많아요. 에러 시점을 정확히 파악하려면 변환이 필요해요.\n\n**2. API 응답 파싱**\ncreated_at, updated_at 같은 필드가 타임스탬프로 오는 API가 많아요.\n\n**3. 캐시 만료 시간**\nRedis나 CDN에서 TTL(Time To Live)을 타임스탬프로 설정해요.\n\n**4. JWT 토큰**\nJWT의 exp(만료), iat(발급 시간) 필드가 Unix 타임스탬프예요.\n\nToolkio 타임스탬프 변환기로 빠르게 확인하면 디버깅 시간을 크게 줄일 수 있어요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is Unix Timestamp?",
+          body: "Unix timestamp counts seconds since January 1, 1970 00:00:00 UTC. It provides a universal, timezone-independent time format used worldwide.",
+        },
+        {
+          heading: "Seconds vs Milliseconds",
+          body: "10-digit numbers are seconds, 13-digit are milliseconds. JavaScript uses ms, Python uses seconds. Mixing them up causes bizarre date bugs.",
+        },
+        {
+          heading: "Timezone Handling",
+          body: "Timestamps are UTC. Always store as UTC on servers, convert to local timezone on the frontend. KST is UTC+9.",
+        },
+        {
+          heading: "Practical Uses",
+          body: "Log analysis, API response parsing, cache TTL settings, JWT token expiration. Use Toolkio Timestamp Converter for quick conversion.",
+        },
+      ],
+    },
+    faq: [
+      { question: "2038년 문제가 뭔가요?", answer: "32비트 시스템에서 Unix 타임스탬프가 2038년 1월 19일에 오버플로우돼요. 64비트 시스템에서는 문제없지만, 레거시 시스템은 주의가 필요해요." },
+      { question: "음수 타임스탬프도 있나요?", answer: "네, 1970년 이전 날짜는 음수로 표현돼요. 예를 들어 1969년 12월 31일은 -86400이에요." },
+      { question: "타임스탬프를 사람이 읽을 수 있는 날짜로 바꾸는 가장 쉬운 방법은?", answer: "Toolkio 타임스탬프 변환기에 숫자를 붙여넣으면 즉시 날짜로 변환해줘요. 복잡한 코드 없이 1초 만에 확인할 수 있어요." },
+      { question: "현재 Unix 타임스탬프를 빠르게 구하려면?", answer: "Toolkio 타임스탬프 변환기에서 현재 시간 버튼을 누르면 돼요. JavaScript에서는 Math.floor(Date.now()/1000)으로 구할 수 있어요." },
+      { question: "날짜를 타임스탬프로 변환하려면?", answer: "Toolkio에서 날짜를 입력하면 자동으로 타임스탬프로 변환해줘요. JavaScript에서는 new Date('2026-04-17').getTime()/1000이에요." },
+    ],
+  },
+  {
+    slug: "hex-rgb-color-conversion-guide",
+    title: {
+      ko: "HEX RGB 색상 변환 가이드 — 디자이너와 개발자 모두를 위한",
+      en: "HEX RGB Color Conversion Guide — For Designers and Developers",
+    },
+    description: {
+      ko: "HEX 색상 코드와 RGB 값을 서로 변환하는 방법을 정리했습니다. HSL 변환, 색상 팔레트 만들기, 실무 활용 팁까지 담았어요.",
+      en: "Learn how to convert between HEX and RGB color codes. Includes HSL conversion, palette creation tips, and practical usage.",
+    },
+    date: "2026-04-17",
+    toolId: "color-converter",
+    image: "/images/blog/hex-rgb-color-conversion-guide.webp",
+    keywords: ["HEX RGB 변환", "색상 변환", "color converter", "색상 코드", "HEX 코드"],
+    content: {
+      ko: [
+        {
+          heading: "HEX와 RGB, 뭐가 다를까?",
+          body: "같은 색상을 표현하는 두 가지 방식이에요.\n\n- HEX: #FF5733 — 웹에서 가장 많이 쓰이는 6자리 16진수 코드\n- RGB: rgb(255, 87, 51) — 빨강, 초록, 파랑 각각 0~255 값\n\n둘 다 같은 색을 나타내지만 사용하는 상황이 달라요. CSS에서는 HEX를 주로 쓰고, JavaScript나 디자인 도구에서는 RGB를 많이 써요. 디자이너가 피그마에서 RGB 값을 주면 개발자는 HEX로 바꿔서 CSS에 넣어야 하거든요.",
+        },
+        {
+          heading: "HEX → RGB 변환 원리",
+          body: "HEX 코드 #FF5733을 RGB로 바꾸는 원리는 간단해요.\n\n6자리를 2자리씩 끊으면 돼요.\n- FF → 빨강: 255\n- 57 → 초록: 87\n- 33 → 파랑: 51\n\n16진수를 10진수로 변환하는 거예요. F는 15, FF는 15x16+15 = 255. 이런 계산을 매번 할 수는 없으니 Toolkio 색상 변환기에 HEX 코드를 넣으면 RGB 값이 바로 나와요.",
+        },
+        {
+          heading: "HSL도 알아두면 좋은 이유",
+          body: "HSL은 Hue(색조), Saturation(채도), Lightness(명도)로 색을 표현해요.\n\n- H: 0~360 (0=빨강, 120=초록, 240=파랑)\n- S: 0~100% (0%=회색, 100%=순색)\n- L: 0~100% (0%=검정, 100%=흰색)\n\nHSL이 좋은 이유는 색상 팔레트를 만들기 쉽기 때문이에요. 같은 H 값에서 S와 L만 바꾸면 자연스러운 그라데이션이 만들어져요. 브랜드 컬러의 밝은 버전, 어두운 버전을 만들 때 정말 편하거든요.\n\nToolkio 색상 변환기에서 HEX, RGB, HSL 세 가지를 동시에 확인할 수 있어요.",
+        },
+        {
+          heading: "실무에서 색상 변환이 필요한 순간",
+          body: "**1. 피그마 → CSS 코딩**\n디자이너가 준 RGB 값을 CSS의 HEX로 변환할 때\n\n**2. 다크모드 구현**\nHSL에서 L(명도)만 조절하면 라이트/다크 모드 색상을 쉽게 만들 수 있어요\n\n**3. 투명도 적용**\nHEX 8자리(예: #FF573380)의 마지막 2자리가 투명도예요. 80은 약 50% 투명\n\n**4. 브랜드 가이드 색상 통일**\n같은 색인데 HEX, RGB, CMYK 등 여러 형태로 표기해야 할 때\n\nToolkio 색상 변환기에 아무 형식으로 넣으면 나머지 형식을 모두 보여줘요.",
+        },
+      ],
+      en: [
+        {
+          heading: "HEX vs RGB",
+          body: "HEX uses 6 hexadecimal digits (#FF5733), RGB uses three 0-255 values (255, 87, 51). Same color, different notation. CSS prefers HEX, JavaScript/design tools prefer RGB.",
+        },
+        {
+          heading: "Conversion Logic",
+          body: "Split HEX into pairs: FF=255(R), 57=87(G), 33=51(B). Each pair is a hexadecimal-to-decimal conversion. Use Toolkio for instant results.",
+        },
+        {
+          heading: "HSL Benefits",
+          body: "HSL (Hue/Saturation/Lightness) makes palette creation easy. Keep H constant, adjust S and L for natural gradients and dark mode variants.",
+        },
+        {
+          heading: "Practical Uses",
+          body: "Figma-to-CSS conversion, dark mode implementation, transparency (8-digit HEX), brand guide color consistency.",
+        },
+      ],
+    },
+    faq: [
+      { question: "HEX 3자리 코드는 뭔가요?", answer: "#F53처럼 3자리로 쓰면 각 자리를 두 번 반복한 거예요. #F53 = #FF5533이에요. 축약형이지만 정확한 색 지정이 어려워서 6자리를 쓰는 게 좋아요." },
+      { question: "RGBA에서 A는 뭔가요?", answer: "Alpha(투명도)예요. 0이면 완전 투명, 1이면 완전 불투명이에요. rgba(255, 87, 51, 0.5)면 50% 투명한 주황색이에요." },
+      { question: "CSS에서 HEX와 RGB 중 뭘 쓰는 게 좋나요?", answer: "성능 차이는 없어요. 팀 컨벤션에 따르면 되는데, 보통 HEX가 코드가 짧아서 많이 써요. 투명도가 필요하면 RGBA를 쓰고요." },
+      { question: "Tailwind CSS에서 커스텀 색상을 넣으려면?", answer: "tailwind.config.js의 colors에 HEX 값을 넣으면 돼요. Toolkio에서 변환한 HEX 코드를 바로 복사해서 붙여넣으면 됩니다." },
+      { question: "CMYK랑 RGB는 뭐가 다른가요?", answer: "RGB는 화면용(빛의 삼원색), CMYK는 인쇄용(잉크 혼합)이에요. 화면에서 본 색과 인쇄물 색이 다른 이유가 이 차이 때문이에요." },
+    ],
+  },
+  {
+    slug: "sha256-md5-hash-generator-guide",
+    title: {
+      ko: "SHA256 MD5 해시 생성 가이드 — 파일 무결성 검증 실전",
+      en: "SHA256 MD5 Hash Generator Guide — File Integrity Verification",
+    },
+    description: {
+      ko: "SHA256, MD5 해시를 생성하고 파일 무결성을 검증하는 방법을 정리했습니다. 해시 알고리즘 차이, 보안 용도, 실무 활용법까지 담았어요.",
+      en: "Learn how to generate SHA256 and MD5 hashes for file integrity verification. Covers algorithm differences, security uses, and practical applications.",
+    },
+    date: "2026-04-17",
+    toolId: "hash-generator",
+    image: "/images/blog/sha256-md5-hash-generator-guide.webp",
+    keywords: ["SHA256", "MD5", "해시 생성", "hash generator", "파일 무결성"],
+    content: {
+      ko: [
+        {
+          heading: "해시가 뭔가요?",
+          body: "해시는 어떤 데이터를 고정된 길이의 문자열로 변환한 거예요. \"안녕하세요\"를 SHA256으로 돌리면 항상 같은 64자리 문자열이 나와요. 글자 하나만 바꿔도 결과가 완전히 달라지거든요.\n\n이런 특성 때문에 파일이 변조되지 않았는지 확인하는 데 쓰여요. 원본 파일의 해시값과 다운로드한 파일의 해시값이 같으면 파일이 무사하다는 뜻이에요.",
+        },
+        {
+          heading: "MD5 vs SHA256 — 어떤 걸 써야 하나요?",
+          body: "**MD5**\n- 출력: 32자리 (128비트)\n- 속도: 빠름\n- 보안: 취약 (충돌 발견됨)\n- 용도: 단순 파일 체크섬, 캐시 키\n\n**SHA256**\n- 출력: 64자리 (256비트)\n- 속도: MD5보다 느림\n- 보안: 안전 (현재 표준)\n- 용도: 비밀번호 해싱, 블록체인, 인증서\n\n보안이 중요한 곳에서는 반드시 SHA256 이상을 쓰세요. MD5는 이미 충돌 공격이 가능해서 보안 용도로는 쓰면 안 돼요. 단순히 파일 같은지만 확인하는 체크섬 용도라면 MD5도 괜찮아요.\n\nToolkio 해시 생성기에서 텍스트를 넣으면 MD5, SHA256을 동시에 확인할 수 있어요.",
+        },
+        {
+          heading: "파일 무결성 검증 실전",
+          body: "소프트웨어를 다운로드할 때 사이트에서 SHA256 체크섬을 제공하는 경우가 많아요.\n\n**검증 순서:**\n1. 공식 사이트에서 제공하는 해시값 복사\n2. 다운로드한 파일의 해시값 생성\n3. 두 값 비교 — 같으면 안전, 다르면 파일이 변조됐을 수 있음\n\n**Windows 명령어**: certutil -hashfile 파일명 SHA256\n**Mac/Linux 명령어**: sha256sum 파일명\n\n또는 Toolkio 해시 생성기에 파일 내용을 넣어서 빠르게 확인할 수도 있어요.",
+        },
+        {
+          heading: "개발에서 해시 활용 사례",
+          body: "**1. 비밀번호 저장**\n비밀번호를 평문으로 DB에 저장하면 안 돼요. SHA256 + salt로 해싱해서 저장하면 원문을 복원할 수 없어서 안전해요.\n\n**2. 캐시 무효화**\nCSS/JS 파일명에 해시를 붙이면 (예: app.a1b2c3.js) 파일이 변경됐을 때만 브라우저가 새로 다운로드해요.\n\n**3. 데이터 중복 검사**\n대용량 파일의 해시를 비교하면 바이트 단위 비교 없이 빠르게 동일 파일인지 확인할 수 있어요.\n\n**4. Git 커밋 ID**\nGit의 커밋 ID가 바로 SHA-1 해시예요. 커밋 내용이 조금이라도 바뀌면 ID가 완전히 달라져요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is a Hash?",
+          body: "A hash converts any data into a fixed-length string. Even a single character change produces a completely different output, making it perfect for integrity verification.",
+        },
+        {
+          heading: "MD5 vs SHA256",
+          body: "MD5: 32 chars, fast, but vulnerable to collisions. SHA256: 64 chars, slower, but cryptographically secure. Use SHA256 for security, MD5 only for simple checksums.",
+        },
+        {
+          heading: "File Integrity Verification",
+          body: "Compare the hash of a downloaded file against the official checksum. If they match, the file is untampered. Use certutil (Windows) or sha256sum (Mac/Linux).",
+        },
+        {
+          heading: "Developer Use Cases",
+          body: "Password hashing (with salt), cache busting (filename hashing), duplicate file detection, and Git commit IDs (SHA-1).",
+        },
+      ],
+    },
+    faq: [
+      { question: "해시를 역으로 원문으로 되돌릴 수 있나요?", answer: "이론적으로 불가능해요. 해시는 단방향 함수라서 원문을 복원할 수 없어요. 다만 짧은 비밀번호는 레인보우 테이블로 추측 가능하니 salt를 꼭 추가하세요." },
+      { question: "salt가 뭔가요?", answer: "비밀번호 해싱 전에 추가하는 랜덤 문자열이에요. 같은 비밀번호라도 salt가 다르면 해시 결과가 달라져서 레인보우 테이블 공격을 막을 수 있어요." },
+      { question: "SHA512와 SHA256 중 뭘 써야 하나요?", answer: "일반적으로 SHA256이면 충분해요. SHA512는 더 긴 해시를 생성하지만 현재 SHA256도 깨진 적이 없어서 대부분의 용도에서 SHA256이 표준이에요." },
+      { question: "같은 입력이면 항상 같은 해시가 나오나요?", answer: "네, 해시의 핵심 특성이에요. 같은 입력은 항상 같은 출력을 만들어요. 그래서 파일 무결성 검증이 가능한 거예요." },
+      { question: "해시 충돌이 뭔가요?", answer: "서로 다른 두 입력이 같은 해시값을 만드는 경우예요. MD5는 인위적으로 충돌을 만들 수 있어서 보안 용도로 쓰면 안 돼요. SHA256은 아직 충돌이 발견되지 않았어요." },
+    ],
+  },
+  {
+    slug: "csv-to-json-conversion-method-guide",
+    title: {
+      ko: "CSV를 JSON으로 변환하는 3가지 방법 — 실무 데이터 처리",
+      en: "3 Ways to Convert CSV to JSON — Practical Data Processing",
+    },
+    description: {
+      ko: "CSV 파일을 JSON으로 변환하는 3가지 방법을 정리했습니다. 온라인 도구, Python 스크립트, JavaScript 코드까지 상황별 최적의 방법을 알려드려요.",
+      en: "Learn 3 ways to convert CSV to JSON. Online tools, Python scripts, and JavaScript code for different use cases.",
+    },
+    date: "2026-04-17",
+    toolId: "json-formatter",
+    image: "/images/blog/csv-to-json-conversion-method-guide.webp",
+    keywords: ["CSV JSON 변환", "csv to json", "CSV 변환", "JSON 변환", "데이터 변환"],
+    content: {
+      ko: [
+        {
+          heading: "왜 CSV를 JSON으로 바꿔야 하나요?",
+          body: "엑셀이나 구글 시트에서 내보낸 데이터는 보통 CSV 형식이에요. 그런데 웹 API나 프론트엔드에서는 JSON을 쓰거든요. 이 두 형식 사이를 변환해야 하는 상황이 실무에서 정말 자주 생겨요.\n\n예를 들어 마케팅팀이 엑셀로 보내준 상품 목록을 웹사이트에 올리려면 CSV → JSON 변환이 필요해요. 반대로 API 응답을 엑셀로 분석하려면 JSON → CSV가 필요하고요.",
+        },
+        {
+          heading: "방법 1: 온라인 도구로 즉시 변환",
+          body: "가장 빠른 방법이에요. 코딩 없이 복사 붙여넣기만 하면 돼요.\n\nToolkio JSON 포맷터에 CSV 데이터를 넣으면 JSON으로 변환할 수 있어요. 결과를 복사해서 바로 사용하면 되니까 일회성 작업에 적합해요.\n\n**장점**: 설치 불필요, 즉시 사용\n**단점**: 대용량 파일(10MB+)은 브라우저가 느려질 수 있음\n**추천 상황**: 빠르게 한 번만 변환할 때",
+        },
+        {
+          heading: "방법 2: Python으로 자동화",
+          body: "반복 작업이라면 Python 스크립트가 효율적이에요.\n\nimport csv, json\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    data = list(reader)\n\nwith open('data.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\n이 5줄로 어떤 크기의 CSV든 JSON으로 변환할 수 있어요. DictReader를 쓰면 첫 번째 행이 자동으로 키(key)가 되거든요.\n\n**장점**: 대용량 처리 가능, 자동화 가능\n**단점**: Python 설치 필요\n**추천 상황**: 정기적으로 변환해야 할 때",
+        },
+        {
+          heading: "방법 3: JavaScript로 브라우저에서 처리",
+          body: "웹 앱에서 사용자가 업로드한 CSV를 처리해야 한다면 JavaScript를 쓰세요.\n\nfunction csvToJson(csv) {\n  const lines = csv.split('\\n');\n  const headers = lines[0].split(',');\n  return lines.slice(1).filter(l => l.trim()).map(line => {\n    const values = line.split(',');\n    return headers.reduce((obj, h, i) => {\n      obj[h.trim()] = values[i]?.trim();\n      return obj;\n    }, {});\n  });\n}\n\n이 함수로 CSV 문자열을 JSON 배열로 변환할 수 있어요.\n\n**장점**: 서버 없이 클라이언트에서 처리\n**단점**: 따옴표 안의 쉼표 처리가 복잡\n**추천 상황**: 웹 앱에 변환 기능을 넣을 때",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Convert CSV to JSON?",
+          body: "Excel exports CSV, web APIs use JSON. Converting between them is a daily task for developers working with data from business teams.",
+        },
+        {
+          heading: "Method 1: Online Tools",
+          body: "Paste CSV into Toolkio JSON Formatter for instant conversion. Best for one-time, small-to-medium data.",
+        },
+        {
+          heading: "Method 2: Python Script",
+          body: "Use csv.DictReader + json.dump for automated, large-file processing. Just 5 lines of code handles any CSV size.",
+        },
+        {
+          heading: "Method 3: JavaScript",
+          body: "Process CSV client-side in web apps. Split lines, map headers to values. Handle edge cases like quoted commas with libraries like PapaParse.",
+        },
+      ],
+    },
+    faq: [
+      { question: "CSV에 쉼표가 포함된 데이터가 있으면 어떻게 되나요?", answer: "따옴표로 감싸진 필드 안의 쉼표는 구분자가 아니에요. Python의 csv 모듈은 자동으로 처리해주지만, 직접 split(',')하면 깨질 수 있어요. 라이브러리를 쓰는 게 안전해요." },
+      { question: "JSON을 다시 CSV로 바꿀 수도 있나요?", answer: "네, Python의 csv.DictWriter나 JavaScript의 json2csv 라이브러리로 역변환이 가능해요. Toolkio에서도 JSON 데이터를 CSV로 내보낼 수 있어요." },
+      { question: "한글이 깨지면 어떻게 하나요?", answer: "인코딩 문제예요. 파일을 열 때 encoding='utf-8'을 지정하세요. 엑셀에서 저장할 때 UTF-8 CSV로 저장하면 깨지지 않아요." },
+      { question: "대용량 CSV(1GB+)를 변환하려면?", answer: "Python에서 chunksize를 설정해서 나눠서 처리하거나, pandas 라이브러리의 read_csv를 쓰면 메모리 효율적으로 변환할 수 있어요." },
+      { question: "중첩된 JSON 구조로 변환할 수 있나요?", answer: "기본 CSV는 flat 구조라 바로는 안 돼요. 컬럼명에 점 표기법(user.name, user.email)을 쓰고 변환 로직을 추가하면 중첩 구조를 만들 수 있어요." },
+    ],
+  },
 ];
