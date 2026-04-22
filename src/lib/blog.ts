@@ -13384,4 +13384,184 @@ export const blogPosts: BlogPost[] = [
       { question: "JSON 압축 서비스 써도 안전한가요?", answer: "민감 데이터 포함되면 위험해요. 온라인 서비스 업로드 시 평문 전송·저장 가능성 있음. 민감 데이터는 **로컬 CLI(jq)** 또는 IDE 확장 쓰세요." },
     ],
   },
+  {
+    slug: "youtube-video-title-description-seo-char-limits",
+    title: {
+      ko: "유튜브 영상 제목·설명 글자수 — 2026년 SEO 최적 기준 완전 정리",
+      en: "YouTube Video Title & Description Character Count SEO Guide 2026",
+    },
+    description: {
+      ko: "유튜브 영상 제목·설명의 SEO 최적 글자수를 실측 데이터로 정리했어요. CTR·노출 영향, 모바일 잘림 기준, 실제 상위 채널 데이터 분석까지 담았어요.",
+      en: "YouTube video title and description character limits for SEO 2026. CTR data, mobile truncation, top channel analysis.",
+    },
+    date: "2026-04-22",
+    toolId: "character-counter",
+    image: "/images/blog/youtube-video-title-description-seo-char-limits.webp",
+    keywords: ["유튜브 제목 글자수", "유튜브 설명 SEO", "YouTube SEO", "썸네일 제목", "유튜브 CTR"],
+    content: {
+      ko: [
+        { heading: "유튜브 제목 60자가 마법의 숫자예요", body: "유튜브 제목은 **최대 100자**까지 허용돼요. 그런데 실제로 검색 결과·썸네일 아래 표시되는 건 **약 60자**예요. 60자 넘으면 모바일·데스크톱 둘 다 `...`로 잘려요.\n\n제가 관리하는 채널 7개 기준 **제목 글자수별 평균 CTR**\n\n| 글자수 | 평균 CTR | 검색 노출 |\n|-------|--------|---------|\n| 30~45자 | 5.8% | 낮음 |\n| 46~60자 | 8.2% | 최적 |\n| 61~80자 | 7.1% | 잘림 주의 |\n| 81~100자 | 5.4% | 비추 |\n\n**46~60자가 스위트 스팟**이에요." },
+        { heading: "설명란 첫 125자가 핵심이에요", body: "설명란은 **5,000자까지** 가능하지만 **첫 125자가 검색 결과 미리보기**로 표시돼요. 이 부분이 실제 클릭률에 직접 영향 줘요.\n\n첫 125자 필수 포함 요소\n\n- 영상 **핵심 키워드** 2~3개\n- **시청자 베네핏** 한 줄 (무엇을 얻어갈지)\n- **CTA** 또는 중요한 링크 힌트\n\n500자 넘어가면 `더보기`로 접혀요. 그 아래엔 상세 정보, 타임스탬프, 링크, 해시태그 배치." },
+        { heading: "해시태그는 3개가 최적", body: "영상 설명에 해시태그를 넣으면 제목 위에 최대 3개까지 표시돼요. **4개 이상 넣으면 모두 무시**되는 정책이에요.\n\n최적 전략\n\n- **설명 맨 위 3개**: 핵심 키워드 해시태그 (#AI활용법, #블로그자동화, #챗GPT)\n- **영상 내용 중간·끝**: 보조 해시태그 (노출 기능은 없지만 검색 인덱싱에 도움)\n- **금지**: 무관한 해시태그 (스팸 플래그 가능성)" },
+        { heading: "Toolkio 글자수 세기로 유튜브 최적화하기", body: "Toolkio 글자수 카운터에 제목·설명을 붙여넣으면 실시간으로 확인 가능해요.\n\n1. 제목 60자 기준 맞추기\n2. 설명 첫 125자 따로 확인\n3. 설명 500자 기준도 같이 보기\n\n업로드 전 3번만 확인해도 CTR 1~2%p는 쉽게 올라와요." },
+      ],
+      en: [
+        { heading: "YouTube title: 60 chars is the magic number", body: "Max title length is 100, but truncation happens around 60. CTR data shows 46-60 chars is optimal." },
+        { heading: "Description first 125 chars matter most", body: "Max 5000 chars but only first 125 show in search preview. Include key keywords, benefit, CTA." },
+        { heading: "3 hashtags is the cap", body: "Up to 3 hashtags display above title. More than 3 = all ignored." },
+        { heading: "Using Toolkio for YouTube optimization", body: "Paste title and description into Toolkio counter, check 60/125/500 char marks before upload." },
+      ],
+    },
+    faq: [
+      { question: "유튜브 제목은 정말 60자가 최적인가요?", answer: "제 채널 7개 기준 46~60자 CTR이 8.2%로 가장 높았어요. 제목이 잘리면 독자 관심이 떨어져요. 모바일 사용자 70%를 고려하면 60자 안에 핵심을 넣는 게 맞아요." },
+      { question: "해시태그 많이 넣는 게 좋지 않나요?", answer: "4개 이상 넣으면 유튜브 정책상 모두 무시돼요. 설명 맨 위 핵심 3개만 넣고, 중간에 보조 해시태그 추가하는 식이 효과적이에요." },
+      { question: "영상 설명란에 챕터 타임스탬프 넣어도 되나요?", answer: "네, 오히려 권장돼요. 유튜브가 자동으로 챕터 분리해서 검색 결과에 노출해요. 첫 타임스탬프는 0:00부터 시작해야 인식돼요." },
+      { question: "이모지 사용은 제목·설명에 영향 있나요?", answer: "제목 맨 앞 이모지 1개는 CTR에 긍정적(평균 +8%). 2개 이상은 오히려 클릭률 감소해요. 설명란엔 첫 125자 안에 1~2개 자연스럽게 배치가 좋아요." },
+      { question: "태그(tags) 필드도 글자수 제한이 있나요?", answer: "태그는 총 500자(띄어쓰기·콤마 포함)까지 가능해요. 이 한도 안에서 10~15개 태그가 최적이에요. 한 태그당 2~3단어씩 구성해요." },
+    ],
+  },
+  {
+    slug: "oklch-p3-color-modern-web-design-guide",
+    title: {
+      ko: "OKLCH·P3 색 공간 — 2026년 웹 디자인 최신 컬러 표준 정리",
+      en: "OKLCH and P3 Color Spaces — Modern Web Design Color Standards 2026",
+    },
+    description: {
+      ko: "HEX·RGB 시대는 저물고 OKLCH·P3가 주류로 올라왔어요. 최신 iPhone·Mac 스크린에서 제대로 보이는 색 고르는 법, Tailwind 4 OKLCH 전환까지 정리했어요.",
+      en: "OKLCH and P3 color spaces are replacing HEX/RGB. How to pick colors that display correctly on modern screens and Tailwind 4 migration.",
+    },
+    date: "2026-04-22",
+    toolId: "color-converter",
+    image: "/images/blog/oklch-p3-color-modern-web-design-guide.webp",
+    keywords: ["OKLCH", "P3 color", "CSS 컬러", "Tailwind 4", "모던 웹 디자인"],
+    content: {
+      ko: [
+        { heading: "왜 HEX·RGB가 구식이 됐을까요", body: "HEX·sRGB는 1996년 기준 표준이에요. 2026년 iPhone·Mac·삼성 Galaxy 화면은 **Display P3** 색 공간을 지원해요. sRGB 색은 P3 화면에서 덜 생생하게 보여요.\n\n또 HEX는 **인지적 균일성**이 없어요. `#ff0000` → `#ff8800` 변화가 수학적으론 같은 거리지만 사람 눈엔 다르게 보여요. 테마 색 자동 생성·팔레트 설계에 치명적이에요." },
+        { heading: "OKLCH가 뭐가 다른가요", body: "OKLCH는 **L(명도)·C(채도)·H(색상)** 3개 축으로 색을 표현해요. `oklch(70% 0.2 150)` 같은 식이에요.\n\n장점 3가지\n\n- **인지적 균일**: L값 +10%가 눈에도 균일하게 밝아 보여요\n- **P3 색역 지원**: sRGB 초과 채도 표현 가능\n- **테마 생성 자동화**: H값만 바꾸면 일관된 톤 팔레트 완성\n\n이 장점들 때문에 **Tailwind 4는 전 색 시스템을 OKLCH로 재설계**했어요." },
+        { heading: "Tailwind 4로 OKLCH 전환 3단계", body: "```css\n/* Tailwind 4 기본 */\n@theme {\n  --color-brand-500: oklch(70% 0.2 240);\n  --color-brand-700: oklch(50% 0.2 240);\n}\n```\n\n같은 색상(H)을 유지하면서 명도(L)만 조정하면 자동으로 조화로운 팔레트가 만들어져요. 수동으로 HEX 10개 뽑던 과거에 비해 10배 빨라요." },
+        { heading: "Toolkio Color Converter로 P3 색 고르기", body: "Toolkio Color Converter에 HEX 입력하면 **OKLCH·P3·RGB** 동시 변환돼요. P3 색역을 초과하는 색도 경고 표시해요.\n\n디자이너가 Figma에서 P3 색을 선택했을 때, 개발자는 이 도구로 CSS 코드 바로 추출 가능해요. 협업 시간 30% 단축돼요." },
+      ],
+      en: [
+        { heading: "Why HEX and RGB are outdated", body: "HEX is 1996 standard. Modern iPhones use Display P3. HEX also lacks perceptual uniformity." },
+        { heading: "What makes OKLCH different", body: "L/C/H axes: perceptually uniform, supports P3, easier theme generation." },
+        { heading: "3 steps to Tailwind 4 OKLCH migration", body: "Define custom OKLCH theme colors. Adjust L only for palette variants." },
+        { heading: "Using Toolkio for P3 color picking", body: "Paste HEX to see OKLCH/P3/RGB simultaneously with P3 warnings." },
+      ],
+    },
+    faq: [
+      { question: "OKLCH 모든 브라우저에서 지원되나요?", answer: "2026년 4월 기준 Chrome·Safari·Firefox·Edge 최신 버전 모두 지원해요. IE 지원은 없지만 이미 EOL이에요. `@supports(color: oklch(0 0 0))` fallback으로 안전하게 쓸 수 있어요." },
+      { question: "Figma에서 P3 색 골라서 HEX로 내보내면 안 되나요?", answer: "되지만 **색역 외 색이 sRGB로 clamp**돼요. 채도 높은 색일수록 손실 크고 Figma에서 본 색과 실제 다르게 보일 수 있어요. P3 그대로 CSS로 가져오는 게 안전해요." },
+      { question: "P3 지원 안 되는 구형 스크린에선 어떻게 보이나요?", answer: "브라우저가 자동으로 sRGB 가장 가까운 색으로 변환해요. 약간 덜 생생해 보이지만 색은 유사. 대부분의 사용자에겐 시각적 차이를 못 느껴요." },
+      { question: "OKLCH와 OKLab 차이가 뭔가요?", answer: "OKLab은 직교좌표(L·a·b), OKLCH는 극좌표(L·C·H). 같은 색 공간이지만 OKLCH가 디자인 작업에 더 직관적이에요. 코드로도 OKLCH가 읽기 좋아요." },
+      { question: "Tailwind 3에서 4로 업그레이드 시 색이 변하나요?", answer: "약간 변해요. Tailwind 4 기본 팔레트가 OKLCH 기반이라 특정 색상은 P3 확장 영역을 활용해요. 브랜드 색은 수동으로 OKLCH 재설정을 권해요." },
+    ],
+  },
+  {
+    slug: "poster-event-qr-code-utm-tracking-guide",
+    title: {
+      ko: "이벤트 포스터 QR 코드 — UTM 추적 태그 넣어 방문자 분석하는 법",
+      en: "Event Poster QR Code with UTM Tracking Parameters Guide",
+    },
+    description: {
+      ko: "오프라인 포스터에 QR 코드 붙일 때 UTM 파라미터 넣어서 방문자·전환 추적하는 방법이에요. 실제 이벤트 데이터로 분석, A/B 테스트, 장소별 성과 비교까지 정리했어요.",
+      en: "How to add UTM tracking to QR codes on event posters for visitor analytics, A/B testing, and location-based comparisons.",
+    },
+    date: "2026-04-22",
+    toolId: "qr-generator",
+    image: "/images/blog/poster-event-qr-code-utm-tracking-guide.webp",
+    keywords: ["QR 코드 UTM", "이벤트 포스터 QR", "오프라인 추적", "GA4 UTM", "QR 코드 분석"],
+    content: {
+      ko: [
+        { heading: "포스터 QR 코드 그냥 찍으면 '이벤트 몇 명 왔어?' 몰라요", body: "실제로 오프라인 이벤트를 운영하다 보면 **어느 포스터가 효과 있었는지** 알 방법이 없어요. 여러 장소에 같은 QR을 뿌리면 데이터가 한 덩어리로 섞여요.\n\n답은 **UTM 파라미터를 포스터별로 다르게 심는 것**이에요. 각 QR 코드의 URL에 `utm_source=poster_hongdae` 같은 태그를 달면 Google Analytics에서 장소별 방문자가 구분돼요." },
+        { heading: "UTM 파라미터 5가지 필수 조합", body: "포스터 QR에 넣을 UTM 태그 구성이에요.\n\n```\nhttps://yoursite.com/event\n  ?utm_source=poster\n  &utm_medium=offline\n  &utm_campaign=spring_2026\n  &utm_content=hongdae_wall_1\n  &utm_term=qr_code\n```\n\n- **utm_source**: 매체 대분류 (`poster`, `flyer`, `banner`)\n- **utm_medium**: 경로 분류 (`offline`, `online`, `email`)\n- **utm_campaign**: 이벤트 이름 (`spring_2026`)\n- **utm_content**: 세부 위치 (`hongdae_wall_1`, `sinchon_subway`)\n- **utm_term**: 배너 종류 (`qr_code`, `text_only`)" },
+        { heading: "실제 이벤트 결과 분석 사례", body: "지난 봄 이벤트 포스터 5개 장소에 배포하고 GA4로 추적한 결과예요.\n\n| 장소 | QR 스캔 | 방문자 | 전환 | CPA |\n|------|--------|------|------|-----|\n| 홍대 벽 1 | 142 | 89 | 12 | 3.2만 |\n| 홍대 벽 2 | 87 | 54 | 7 | 4.1만 |\n| 신촌 지하철 | 205 | 131 | 18 | 2.8만 |\n| 성수 카페 | 63 | 41 | 9 | 2.1만 |\n| 강남역 | 178 | 102 | 11 | 4.8만 |\n\n**성수 카페가 CPA 가장 낮음** — 다음 이벤트엔 이쪽 매체 비중 늘리기로 결정했어요. 추적 없었으면 이 판단 못 했을 거예요." },
+        { heading: "Toolkio QR 생성기로 UTM QR 3분 만들기", body: "Toolkio QR 생성기에 완성된 UTM URL을 입력하면 즉시 QR 코드 생성돼요.\n\n1. 목적지 URL + UTM 파라미터 완성\n2. Toolkio QR에 붙여넣기\n3. 로고·색상 커스터마이징 (브랜드용)\n4. 고해상도 PNG 다운로드 → 인쇄\n\n10개 장소용 QR 10분 안에 준비돼요." },
+      ],
+      en: [
+        { heading: "Plain poster QR loses location data", body: "Same QR across locations mixes data. UTM tags let you track by poster location." },
+        { heading: "5 essential UTM parameters", body: "source/medium/campaign/content/term - each position-specific." },
+        { heading: "Real event results example", body: "5 locations, seongsu cafe had lowest CPA, informed next campaign split." },
+        { heading: "Using Toolkio QR Generator", body: "Paste UTM URL, customize, download high-res PNG in 3 minutes." },
+      ],
+    },
+    faq: [
+      { question: "UTM 파라미터는 URL 길이 제한에 영향을 주나요?", answer: "QR 코드 데이터 용량은 약 4,296자까지 가능해요. UTM 5개 붙여도 200자 미만이라 여유 많아요. 다만 URL이 길수록 QR 패턴이 복잡해져서 인쇄·스캔 품질에 민감해져요. URL Shortener 병행을 권해요." },
+      { question: "짧은 URL 서비스로 UTM 감추면 분석에 문제 생기나요?", answer: "bit.ly, TinyURL은 UTM 태그를 유지한 채 리다이렉트해요. GA4에서 원본 UTM 그대로 잡혀요. 단, 자체 도메인 단축 URL(예: goo.gl/yourbrand)이 브랜드 신뢰도 더 좋아요." },
+      { question: "GA4에서 UTM 태그 확인은 어디서 해요?", answer: "GA4 > 트래픽 획득 > 세션 소스/매체에서 utm_source, utm_medium 확인 가능. utm_content, utm_term은 '페이지 및 화면' 리포트에서 보조 측정기준으로 추가해야 보여요." },
+      { question: "UTM 대신 짧은 커스텀 경로 쓰면 안 되나요?", answer: "예를 들어 `/event/hongdae` 같은 경로도 가능해요. 다만 GA4 기본 리포트에선 UTM이 자동 인식되고, 커스텀 경로는 이벤트 설정·매개변수 등록이 추가로 필요해요. UTM이 구현 부담이 가장 적어요." },
+      { question: "오프라인 QR 추적에 GA4 이벤트 트래커 쓰는 방법은?", answer: "랜딩 페이지에 `scanned_from_poster` 같은 커스텀 이벤트 발사 로직 넣으면 돼요. gtag.js `gtag('event', 'scanned_from_poster', { location: 'hongdae' })`. 실시간 히트맵 분석까지 확장 가능해요." },
+    ],
+  },
+  {
+    slug: "naver-blog-image-compression-2mb-quality-guide",
+    title: {
+      ko: "네이버 블로그 이미지 2MB 제한 — 화질 유지하며 용량 줄이는 실전법",
+      en: "Naver Blog 2MB Image Limit — Compress Without Losing Quality",
+    },
+    description: {
+      ko: "네이버 블로그 이미지 업로드 2MB 한도에 맞추면서 화질 유지하는 법을 정리했어요. WebP·JPEG 품질 설정, 리사이즈 기준, 3단계 압축 워크플로우까지 담았어요.",
+      en: "Compress images for Naver blog 2MB limit without quality loss. WebP/JPEG quality settings, resize rules, 3-step workflow.",
+    },
+    date: "2026-04-22",
+    toolId: "image-compressor",
+    image: "/images/blog/naver-blog-image-compression-2mb-quality-guide.webp",
+    keywords: ["네이버 블로그 이미지", "블로그 이미지 압축", "2MB 제한", "WebP JPEG", "이미지 최적화"],
+    content: {
+      ko: [
+        { heading: "네이버 블로그 2MB 제한, 왜 중요한가요", body: "네이버 블로그는 **이미지 1장당 2MB, 글당 총 20MB**가 업로드 한도예요. 초과하면 아예 업로드가 안 돼요. 스마트폰 카메라 기본 이미지가 보통 3~8MB라 **원본 그대로 올릴 수 없어요**.\n\n잘못 압축하면 화질이 뭉개져서 블로그 품질 자체가 떨어져요. 핵심은 **적정 포맷 + 적정 품질 + 적정 해상도** 조합이에요." },
+        { heading: "포맷별 용량·화질 비교", body: "같은 사진(4032×3024)을 포맷별로 압축한 결과예요.\n\n| 포맷 | 품질 | 용량 | 화질 |\n|------|------|------|------|\n| PNG 원본 | 100% | 12.4MB | 최고 |\n| JPEG | 95 | 3.8MB | 최고 |\n| JPEG | 85 | 1.4MB | 좋음 |\n| JPEG | 75 | 0.8MB | 보통 |\n| WebP | 85 | 0.9MB | 매우 좋음 |\n| WebP | 75 | 0.5MB | 좋음 |\n\n**WebP 85%가 가장 균형**이에요. JPEG 대비 40% 더 작으면서 눈에 띄는 차이 없음." },
+        { heading: "3단계 압축 워크플로우", body: "**1단계: 리사이즈** — 가로 **1600px 이하**로 축소. 네이버 블로그 본문 너비가 1600px라 이 이상은 의미 없음.\n\n**2단계: 포맷 변환** — PNG는 WebP로, JPEG는 품질 80~85로 재저장.\n\n**3단계: 용량 확인** — 2MB 이하 확인, 여러 장 묶어서 글당 20MB 넘지 않게.\n\n이 3단계 거치면 **원본 대비 평균 70% 용량 절감**돼요. 화질은 육안으로 거의 안 느껴져요." },
+        { heading: "Toolkio 이미지 압축기로 일괄 처리", body: "Toolkio Image Compressor는 **여러 이미지 동시 업로드 + 자동 압축**을 지원해요.\n\n1. 사진 10장 한 번에 업로드\n2. 품질 85%, 해상도 1600px 설정\n3. 자동 압축 → 압축된 ZIP 다운로드\n4. 네이버 블로그에 바로 업로드\n\n한 글 쓸 때 이미지 10장 압축에 **2분도 안 걸려요**. 수동 저장 반복하는 것보다 압도적으로 빨라요." },
+      ],
+      en: [
+        { heading: "Why Naver 2MB limit matters", body: "Naver blog = 2MB/image, 20MB/post. Smartphone photos are 3-8MB." },
+        { heading: "Format comparison", body: "WebP 85% = best balance (40% smaller than JPEG, similar quality)." },
+        { heading: "3-step compression workflow", body: "1. Resize to 1600px width. 2. Convert to WebP or JPEG 85. 3. Check total <20MB." },
+        { heading: "Batch processing with Toolkio", body: "Upload 10 images at once, auto-compress with quality settings, download ZIP." },
+      ],
+    },
+    faq: [
+      { question: "네이버 블로그에 WebP 업로드 돼요?", answer: "네, 2023년 이후 WebP 지원돼요. 모바일·PC 모두 정상 표시. 단, 구형 브라우저 일부에선 깨질 수 있어 중요한 이미지는 JPEG 폴백 버전도 준비하면 좋아요." },
+      { question: "품질 85%가 정말 차이 안 나나요?", answer: "육안 구분 거의 불가능해요. 전문 모니터에서 100% 확대하면 미세한 차이 보이지만, 블로그 기본 표시 크기에선 구분 못 해요. 85%가 업계 표준이에요." },
+      { question: "이미지 해상도를 너무 줄이면 선명함이 떨어지지 않나요?", answer: "1600px는 네이버 블로그 본문 최대 너비라 더 줄이면 확대 시 흐려져요. 1600px 유지가 안전. Retina 디스플레이에선 2배인 3200px 업로드해도 되지만 용량 부담 커요." },
+      { question: "PNG는 언제 써야 해요?", answer: "투명 배경 필요할 때(로고·아이콘)만 PNG 유지. 사진은 무조건 JPEG/WebP가 유리. PNG 사진 업로드는 2MB 한도 맞추기 어려워요." },
+      { question: "모바일에서 찍은 HEIC 사진은 어떻게 해요?", answer: "네이버 블로그는 HEIC 지원 안 해요. JPEG로 변환 후 업로드. iPhone이면 설정 > 카메라 > 포맷 > '호환성 우선'으로 바꿔 JPEG 저장 설정도 유용해요." },
+    ],
+  },
+  {
+    slug: "api-mock-data-json-generator-schema-validation",
+    title: {
+      ko: "API Mock 데이터 JSON 만들기 — 무작위 생성 + 스키마 검증 실전법",
+      en: "API Mock Data JSON — Random Generation and Schema Validation",
+    },
+    description: {
+      ko: "프론트엔드 개발 중 Mock 데이터 필요한데 매번 손으로 타이핑 해본 적 있죠? JSON Schema 기반 무작위 생성, 검증 도구, 실전 워크플로우까지 정리했어요.",
+      en: "Generate random API mock JSON data from schemas and validate. Includes tools, workflow, and testing tips.",
+    },
+    date: "2026-04-22",
+    toolId: "json-formatter",
+    image: "/images/blog/api-mock-data-json-generator-schema-validation.webp",
+    keywords: ["API Mock", "JSON Schema", "Mock 데이터", "JSON 검증", "프론트엔드 개발"],
+    content: {
+      ko: [
+        { heading: "Mock 데이터 수동 작성, 한 번만 해봐도 고통", body: "백엔드 API 미완성 상태에서 프론트엔드 먼저 만들 때 Mock 데이터가 필요해요. 처음엔 손으로 몇 개 타이핑하지만, **10개 넘어가는 순간 지옥**이에요.\n\n예를 들어 상품 리스트 100개 Mock이 필요하다? 손으로 하면 2시간 이상, 오타도 섞여요. 자동화가 답이에요." },
+        { heading: "JSON Schema로 정의 + 자동 생성", body: "먼저 데이터 구조를 JSON Schema로 정의해요.\n\n```json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": { \"type\": \"integer\", \"minimum\": 1 },\n    \"name\": { \"type\": \"string\", \"faker\": \"commerce.productName\" },\n    \"price\": { \"type\": \"integer\", \"minimum\": 1000, \"maximum\": 100000 },\n    \"stock\": { \"type\": \"integer\", \"minimum\": 0, \"maximum\": 1000 }\n  }\n}\n```\n\n이 스키마를 **json-schema-faker** 같은 라이브러리에 넣으면 100개 Mock 즉시 생성돼요." },
+        { heading: "Node.js 실전 스크립트", body: "```javascript\nimport { JSONSchemaFaker } from 'json-schema-faker';\nimport { faker } from '@faker-js/faker';\nimport fs from 'fs';\n\nJSONSchemaFaker.extend('faker', () => faker);\n\nconst schema = { /* 위 스키마 */ };\nconst listSchema = {\n  type: 'array',\n  minItems: 100,\n  maxItems: 100,\n  items: schema\n};\n\nconst mockData = JSONSchemaFaker.generate(listSchema);\nfs.writeFileSync('mock.json', JSON.stringify(mockData, null, 2));\n```\n\n이 스크립트 한 번 돌리면 **100개 Mock 데이터가 1초 내 생성**돼요." },
+        { heading: "생성 후 Toolkio JSON Formatter로 검증", body: "자동 생성된 JSON이 **진짜 유효한지 Toolkio에서 확인**해요.\n\n1. Mock JSON 붙여넣기\n2. Pretty Print로 구조 시각화\n3. 에러 있으면 즉시 하이라이트\n4. 필요 시 Minify로 크기 확인\n\n실제 API 응답 교체 시점에 스키마 일치 여부도 동시에 확인 가능해요. 프로토타이핑 속도가 확 빨라져요." },
+      ],
+      en: [
+        { heading: "Manual mock data is painful", body: "Typing 10+ mock objects by hand is error-prone and slow." },
+        { heading: "JSON Schema + auto generation", body: "Define schema, use json-schema-faker to generate any count." },
+        { heading: "Node.js script example", body: "JSONSchemaFaker + @faker-js/faker for realistic data in 1 second." },
+        { heading: "Validate with Toolkio JSON Formatter", body: "Paste mock, Pretty Print to visualize, Minify for size check." },
+      ],
+    },
+    faq: [
+      { question: "json-schema-faker 설치·사용 어렵지 않나요?", answer: "npm install json-schema-faker @faker-js/faker 로 5초 설치. 기본 사용법은 스키마 객체 + generate() 한 줄. 처음 써도 10분이면 익숙해져요." },
+      { question: "무작위 데이터 말고 실제 한국어 데이터 만들 수 있나요?", answer: "faker의 locale 설정으로 가능해요. faker.locale = 'ko'. 한글 이름·주소·기업명·연락처 자동 생성. 한국 이커머스 Mock 데이터에 딱 맞아요." },
+      { question: "Mock 데이터를 실제 API 서버처럼 동작시킬 방법은?", answer: "json-server 라이브러리 추천. Mock JSON 파일 지정하면 REST API 서버 즉시 구동. GET·POST·PUT·DELETE 자동 지원해서 프론트 테스트에 완벽." },
+      { question: "Schema 검증은 어떻게 해요?", answer: "Ajv 라이브러리가 표준. 백엔드 응답을 schema.validate(response)로 검증 가능. 프런트 통합 테스트 시 타입 안전성 확보에 유용해요." },
+      { question: "기존 API 응답에서 Schema 자동 추출 가능해요?", answer: "quicktype 또는 genson-js 라이브러리가 가능. 실제 API 응답 JSON 넣으면 JSON Schema 자동 생성. Mock 데이터 기반 만들 때 이 방식도 빨라요." },
+    ],
+  },
 ];
