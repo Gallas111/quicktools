@@ -13564,4 +13564,184 @@ export const blogPosts: BlogPost[] = [
       { question: "기존 API 응답에서 Schema 자동 추출 가능해요?", answer: "quicktype 또는 genson-js 라이브러리가 가능. 실제 API 응답 JSON 넣으면 JSON Schema 자동 생성. Mock 데이터 기반 만들 때 이 방식도 빨라요." },
     ],
   },
+  {
+    slug: "bmi-2026-korea-standard-who-comparison",
+    title: {
+      ko: "BMI 2026 한국 기준 — WHO 25 vs 대한비만학회 23, 어느 쪽이 맞을까",
+      en: "BMI 2026 Korea Standard — WHO 25 vs KSSO 23, Which Applies?",
+    },
+    description: {
+      ko: "BMI 25면 과체중? 23부터 과체중? 한국인 체질 기준으로 2026년 현재 의학계에서 어떤 수치를 실제 진료에 쓰는지, 왜 차이가 나는지 정리했어요.",
+      en: "BMI 25 or 23 — which cutoff applies to Koreans? Explains WHO vs Korea Society for Study of Obesity standards in 2026 clinical practice.",
+    },
+    date: "2026-04-23",
+    toolId: "bmi-calculator",
+    image: "/images/blog/bmi-2026-korea-standard-who-comparison.webp",
+    keywords: ["BMI 기준", "BMI 2026", "한국 비만 기준", "WHO BMI", "대한비만학회"],
+    content: {
+      ko: [
+        { heading: "BMI 기준이 두 개인 이유", body: "**WHO(세계보건기구)** 기준은 체질량지수 **25 이상이 과체중, 30 이상이 비만**이에요. 그런데 한국에선 **대한비만학회**가 **23 이상 과체중, 25 이상 비만**으로 설정해요.\n\n왜 다를까요? **동아시아인은 같은 BMI에서 서구인보다 체지방률이 높고, 복부비만 비율이 커서** 심혈관 질환 위험이 조기에 올라가요. 그래서 한국 기준이 2피트 더 엄격하게 잡혀요." },
+        { heading: "2026년 임상에서 실제 쓰는 기준", body: "2026년 현재 대한비만학회 기준이 **대학병원·건강검진 표준**이에요.\n\n| BMI 범위 | 분류 (한국) | 분류 (WHO) |\n|-----------|-------------|-------------|\n| 18.5 미만 | 저체중 | 저체중 |\n| 18.5~22.9 | 정상 | 정상 |\n| 23~24.9 | 과체중(위험군) | 정상 |\n| 25~29.9 | 1단계 비만 | 과체중 |\n| 30~34.9 | 2단계 비만 | 1단계 비만 |\n| 35 이상 | 3단계 비만 | 2단계 비만 |\n\n건강보험공단 검진·보험 가입 심사도 대부분 한국 기준을 따라요. 국내에선 **BMI 23 이상부터 체중 관리 시작**이 현실적." },
+        { heading: "허리둘레·체지방률과 함께 봐야 정확", body: "BMI만으로 판단하면 **근육량 많은 운동 선수도 비만**으로 잡혀요. 그래서 현대 진료는 **3가지를 함께** 봐요.\n\n1. **BMI** (체중/키²) — 전체 체중 기준\n2. **허리둘레** — 남 90cm, 여 85cm 이상이면 복부비만\n3. **체지방률** — 남 25% 이상, 여 30% 이상 비만\n\n근육질은 BMI 25여도 체지방률 15%면 건강 문제 없어요. **BMI만 맹신 금물**." },
+        { heading: "Toolkio BMI 계산기로 한눈에 확인", body: "Toolkio BMI 계산기는 **한국 기준 + WHO 기준 동시 표시** 가능해요.\n\n1. 키·몸무게 입력\n2. 나이·성별 선택\n3. **한국 기준과 WHO 기준 모두 표시**\n4. 허리둘레 추가 입력하면 복부비만 여부까지 판정\n\n건강검진 결과 해석에 딱 맞는 기준으로 해석해요. 보건소·회사 검진 BMI와 계산값 비교도 정확해져요." },
+      ],
+      en: [
+        { heading: "Why two BMI standards exist", body: "WHO uses 25/30 cutoffs; Korea Society for Study of Obesity uses 23/25 because East Asians have higher body fat at same BMI." },
+        { heading: "Korean clinical practice 2026", body: "Hospitals and health insurance use the 23/25 Korean standard — start weight management at BMI 23+." },
+        { heading: "Waist and body fat matter too", body: "BMI alone misclassifies muscular people — combine with waist circumference and body fat percentage." },
+        { heading: "Use Toolkio BMI calculator", body: "Displays both WHO and Korean standards, adds waist input for abdominal obesity detection." },
+      ],
+    },
+    faq: [
+      { question: "BMI 23인데 정말 관리가 필요해요?", answer: "한국 기준상 '과체중(위험군)'으로 분류되지만, 허리둘레 정상(남 85cm, 여 80cm 이하)이고 근육량 많으면 위험 낮아요. 하지만 복부 중심 지방이면 관리 시작해야 해요. 체지방률 함께 보세요." },
+      { question: "임산부도 BMI 적용하나요?", answer: "임신 중에는 정상 BMI 기준이 다르게 작동해요. 임신 전 BMI 기준으로 권장 체중 증가량이 정해져요(정상체중 11~16kg, 과체중 7~11kg). 임신 중 BMI 측정은 의미 없어요." },
+      { question: "BMI 18.5 미만인데 건강한가요?", answer: "저체중도 위험이에요. 뼈건강·면역력 저하, 여성의 경우 월경불순·불임 위험 증가. 영양 불균형·만성 피로 동반 경우 내분비내과 상담 필요해요." },
+      { question: "어린이·청소년도 같은 BMI 기준 써요?", answer: "아니요, 성장 중이라 별도 '소아청소년 성장도표' 기반 백분위(percentile) 기준을 써요. 85백분위 이상 과체중, 95백분위 이상 비만으로 분류. 소아과 권장 차트 활용." },
+      { question: "WHO 기준은 왜 안 바꿔요?", answer: "WHO 기준은 '서구 중심' 데이터로 설정된 역사 때문에 글로벌 통계 일관성 위해 유지돼요. 대신 '아시아·태평양 기준(23/25)'이 별도 권고사항으로 병기돼 있어요. 한국은 이 아시아 기준 채택." },
+    ],
+  },
+  {
+    slug: "dday-exam-moving-wedding-calendar-planning",
+    title: {
+      ko: "시험·이사·결혼 D-day 실전 계산 — 달력 연동 + 업무 플래너 세팅법",
+      en: "D-day for Exams, Moving, Weddings — Calendar Sync and Planner Setup",
+    },
+    description: {
+      ko: "D-day 계산기를 시험·이사·결혼 준비에 실제로 활용하는 법을 정리했어요. 단순 날짜 카운팅 넘어 체크리스트·리마인더·캘린더 연동까지 연결해서 써보세요.",
+      en: "Practical D-day usage for exams, moving, and weddings. Sync with calendar, set reminders, and integrate with task checklists.",
+    },
+    date: "2026-04-23",
+    toolId: "dday-calculator",
+    image: "/images/blog/dday-exam-moving-wedding-calendar-planning.webp",
+    keywords: ["D-day 계산기", "시험 D-day", "이사 D-day", "결혼 D-day", "D-day 활용법"],
+    content: {
+      ko: [
+        { heading: "D-day가 단순 날짜 카운팅 이상인 이유", body: "D-day는 '**목표 날짜까지 남은 시간을 시각화**'하는 도구예요. 사람 뇌는 막연한 미래를 대비 못 해요. '3달 뒤'보다 '**88일 남음**'이 뇌에 훨씬 강하게 박혀요.\n\n대학 입시·자격증 시험·이사 준비·결혼식 등 **체감 긴장도가 올라야 할 이벤트**일수록 D-day 효과가 커요." },
+        { heading: "시험 D-day 실전 활용", body: "**TOEIC·공무원·자격증 시험** 같은 시험은 공부 계획을 D-day 기준으로 역산해요.\n\n- D-90: 기본 개념 정리 (3개월 차)\n- D-60: 문제풀이 시작 (2개월 차)\n- D-30: 실전 모의고사 주 3회\n- D-14: 약점 분야 집중 보강\n- D-7: 컨디션 관리, 시험장 환경 체크\n- D-1: 가벼운 복습, 숙면\n\n각 시점 **Toolkio D-day 계산기**로 체크하면 마음가짐이 달라져요." },
+        { heading: "이사 D-day 체크리스트", body: "이사는 **준비할 게 많은데 날짜가 촉박**한 이벤트예요.\n\n- D-45: 이사 업체 견적 3곳 비교\n- D-30: 계약서 최종 확정, 인터넷·가스 이전 신청\n- D-14: 짐 정리 시작 (버릴 것·가져갈 것 분류)\n- D-7: 이사 짐 포장 박스 구매\n- D-3: 주요 가전·식료품 정리\n- D-1: 당일 현금·중요 서류 가방 준비\n\n**D-day 알림 + 체크리스트**를 함께 써야 놓치는 게 없어요." },
+        { heading: "결혼 D-day + 캘린더 연동", body: "결혼 준비는 **6개월 장기 프로젝트**. D-180부터 카운팅 시작하는 게 좋아요.\n\n- D-180: 결혼식장·스튜디오·드레스 예약\n- D-120: 청첩장 디자인 시작, 혼수 목록 작성\n- D-60: 신혼여행 예약, 하객 리스트 확정\n- D-30: 본식 리허설, 웨딩촬영\n- D-14: 청첩장 발송 완료\n- D-7: 당일 스케줄 최종 확인\n\n**Google 캘린더에 각 D-day 이벤트 등록** + **Toolkio로 즉석 남은 일수 확인**하면 결혼 스트레스가 확 줄어요." },
+      ],
+      en: [
+        { heading: "Why D-day beats vague dates", body: "Our brains respond to '88 days left' far more strongly than 'in 3 months' — D-day makes time tangible." },
+        { heading: "Exam D-day plan", body: "Reverse-plan from D-day: concepts 3mo out, practice 2mo, mocks 1mo, revision last week." },
+        { heading: "Moving D-day checklist", body: "Major milestones at D-45, D-30, D-14, D-7, D-3, D-1 — each with specific tasks." },
+        { heading: "Wedding D-day + calendar sync", body: "Start 6 months out; sync D-days to Google Calendar for automated reminders." },
+      ],
+    },
+    faq: [
+      { question: "D-day를 음수(-1, -2)로 표시하면 지난 이벤트인가요?", answer: "네, 목표일 지나면 D+1, D+2 형태로 표시해요. Toolkio 계산기는 양수는 '남은 일수', 음수는 '경과 일수'로 자동 구분. 기념일 용도엔 D+ 표시가 편해요." },
+      { question: "시간 단위(시·분)까지 카운팅 되나요?", answer: "Toolkio 기준 일 단위까지 정확. 시·분·초는 초정밀 카운트다운 페이지 별도 지원 예정(2026 로드맵). 일 단위면 시험·이사·결혼 계획 수립에 충분해요." },
+      { question: "D-day를 타인과 공유할 수 있나요?", answer: "현재 Toolkio는 링크 공유 미지원. 대신 결과 스크린샷 + 텍스트 공유는 가능. 커플·가족 공유용으론 Google 캘린더 이벤트 공유 병행을 추천해요." },
+      { question: "여러 D-day 동시 관리 방법은?", answer: "브라우저 탭 여러 개 열어서 각자 입력. 저장 기능은 로컬 스토리지로 최근 계산 자동 기억. 장기 관리는 Notion·구글 시트에 D-day 목록 정리를 추천." },
+      { question: "D-day와 D-100(100일 기념) 같은 중간 포인트도 계산되나요?", answer: "네, 시작일 입력하면 자동으로 D-100·D-200·D-365 등 마일스톤 일자도 역산 가능. 연인 기념일, 금연·금주 100일 목표 등에 활용도 높아요." },
+    ],
+  },
+  {
+    slug: "2026-salary-after-tax-4-insurance-increase",
+    title: {
+      ko: "2026년 연봉 실수령액 — 4대보험 인상 반영 세후 금액 정리",
+      en: "2026 Korea Salary After-Tax — Reflecting Social Insurance Rate Hike",
+    },
+    description: {
+      ko: "2026년 4대보험 요율 인상으로 실수령액이 작년보다 줄었어요. 연봉 3천·5천·7천·1억 구간별 세후 월급 계산 결과를 한눈에 정리했어요.",
+      en: "2026 Korea social insurance rate hike reduces net salary. Monthly take-home comparisons for 30M/50M/70M/100M KRW annual salaries.",
+    },
+    date: "2026-04-23",
+    toolId: "salary-calculator",
+    image: "/images/blog/2026-salary-after-tax-4-insurance-increase.webp",
+    keywords: ["2026 실수령액", "연봉 세후", "4대보험 2026", "월급 계산", "세후 연봉"],
+    content: {
+      ko: [
+        { heading: "2026년 4대보험 요율 변경 요약", body: "2026년부터 **건강보험 + 장기요양보험**이 소폭 인상됐어요.\n\n| 보험 | 2025년 | 2026년 | 변화 |\n|-------|---------|---------|-------|\n| 국민연금 | 4.5% | 4.5% | 동결 |\n| 건강보험 | 3.545% | 3.645% | +0.1%p |\n| 장기요양 | 건강보험의 12.95% | 건강보험의 13.50% | +0.55%p |\n| 고용보험 | 0.9% | 0.9% | 동결 |\n\n근로자 부담분 기준이에요. 회사 부담분도 같이 올라서 기업 인건비도 증가." },
+        { heading: "연봉 3천만 원 실수령액", body: "**연봉 3,000만 원 기준 2026년 월 실수령액 약 222만 원**.\n\n- 월 급여: 250만 원\n- 국민연금: 11.25만 원\n- 건강보험: 9.11만 원\n- 장기요양: 1.23만 원\n- 고용보험: 2.25만 원\n- 소득세·지방세: 4.5만 원\n- **세후 실수령**: 221.66만 원\n\n2025년 대비 **월 약 3천 원 감소**. 연간 3.6만 원 줄었어요." },
+        { heading: "연봉 5천·7천·1억 구간 비교", body: "| 연봉 | 월 실수령 (2025) | 월 실수령 (2026) | 연 차이 |\n|------|---------------------|---------------------|----------|\n| 3,000만 원 | 221.96만 원 | 221.66만 원 | -3.6만 원 |\n| 5,000만 원 | 355.2만 원 | 354.6만 원 | -7.2만 원 |\n| 7,000만 원 | 483.5만 원 | 482.6만 원 | -10.8만 원 |\n| 1억 원 | 663.4만 원 | 662.0만 원 | -16.8만 원 |\n\n연봉 높을수록 요율 인상 체감이 커요. 1억 구간은 연 16만 원 가까이 줄었어요." },
+        { heading: "Toolkio 급여 계산기 2026 모드", body: "Toolkio Salary Calculator는 **2026년 최신 요율 반영** 완료.\n\n1. 연봉 입력 (예: 5000)\n2. 부양가족·자녀 수 선택\n3. **4대보험 + 소득세·지방세 자동 계산**\n4. 월 실수령액 + 연간 비과세 수당 고려 후 순액 표시\n\n실수령 금액 협상 때 이 결과 참고해 역산하면 '월 X 만원 실수령 받으려면 연봉 얼마?'도 계산 가능." },
+      ],
+      en: [
+        { heading: "2026 insurance rate changes", body: "Health insurance +0.1%p, long-term care +0.55%p; pension and employment unchanged." },
+        { heading: "30M KRW salary after tax", body: "Monthly net ~2.217M KRW, about 3,000 KRW less than 2025." },
+        { heading: "50M/70M/100M brackets", body: "Higher salaries feel larger absolute impact — 100M bracket loses about 168,000 KRW annually." },
+        { heading: "Use Toolkio calculator", body: "Updated with 2026 rates — enter salary, get monthly net + annual totals." },
+      ],
+    },
+    faq: [
+      { question: "비과세 식대가 바뀌었나요?", answer: "2026년 비과세 식대 한도는 월 20만 원으로 유지됐어요. 식대 20만 원 포함 연봉 계약이면 세금·4대보험 계산에서 제외돼서 실수령 증가 효과 있어요. 협상 시 필수 체크 항목." },
+      { question: "연봉 1억 넘으면 국민연금 계속 오르나요?", answer: "국민연금은 기준소득월액 상한(2026년 월 590만 원, 연 7,080만 원)까지만 오르고 이후 고정이에요. 그래서 고연봉자는 국민연금 부담 비율이 상대적으로 낮아져요." },
+      { question: "성과급은 어떻게 반영되나요?", answer: "성과급도 근로소득이라 과세 대상. 단, 지급 시점에 원천징수해서 연말정산 때 정산돼요. 월 실수령과 별도로 연간 총소득 기준 세율 구간이 결정되니 성과급 받는 달 세후 실수령이 줄어들 수 있어요." },
+      { question: "연말정산 환급은 실수령액과 별도인가요?", answer: "네, 연말정산 환급금은 '과세 기간 동안 낸 세금 중 공제로 줄어든 부분'의 환급이에요. 월 실수령액은 예정세액 기준 원천징수 결과고, 연말에 소득공제·세액공제 반영해 최종 확정. 환급 성공은 '월급 외 보너스' 개념." },
+      { question: "프리랜서는 실수령 계산이 어떻게 달라요?", answer: "프리랜서는 4대보험 대신 사업소득세 3.3% 원천징수. 다만 지역가입자 건강보험·국민연금 별도 납부. 연 소득 3천만 원 수준이면 합산 월 부담 약 60~70만 원이라, 근로자 세후 실수령보다 부담 큰 경우도 있어요." },
+    ],
+  },
+  {
+    slug: "text-diff-contract-change-detection-10s",
+    title: {
+      ko: "텍스트 2개 비교 — 계약서·문서 변경점 10초 안에 찾기",
+      en: "Text Diff Comparison — Find Contract Changes in 10 Seconds",
+    },
+    description: {
+      ko: "계약서 수정본과 원본, 초안과 최종본 사이에 무엇이 바뀌었는지 눈으로 찾기 힘들죠. Diff Checker로 추가·삭제·변경을 자동 하이라이트하는 실전 활용법이에요.",
+      en: "Comparing contract revisions or draft versions is error-prone. Use a diff checker to auto-highlight additions, deletions, and changes.",
+    },
+    date: "2026-04-23",
+    toolId: "diff-checker",
+    image: "/images/blog/text-diff-contract-change-detection-10s.webp",
+    keywords: ["텍스트 비교", "Diff Checker", "계약서 변경점", "문서 비교", "문서 검토"],
+    content: {
+      ko: [
+        { heading: "육안 비교, 한 번만 해봐도 피곤해요", body: "계약서·제안서·이력서 수정본을 받으면 '**어디가 바뀌었지**' 먼저 궁금하죠. 상대가 '몇 군데 수정했다'고만 알려주면 전체 스크롤하면서 비교해야 해요.\n\n10페이지짜리 계약서면 30분 넘게 걸려요. **놓치는 조항이 생기면 법적·재정적 리스크**까지 올라가요." },
+        { heading: "Diff Checker가 찾아주는 3가지", body: "텍스트 비교 도구는 **자동으로 3가지를 하이라이트**해요.\n\n- **추가된 내용** (녹색): 새로 들어간 문장·단어\n- **삭제된 내용** (빨간색): 원본에서 빠진 부분\n- **변경된 내용** (노란색): 표현이 바뀐 부분\n\n눈으로 30분 걸릴 작업이 **5초 안에 시각적으로 완료**. 심지어 문장 순서가 바뀐 것도 감지해요." },
+        { heading: "계약서 검토 실전 3단계", body: "**1단계**: 원본과 수정본 모두 워드·PDF에서 텍스트 복사.\n\n**2단계**: Toolkio Diff Checker에 좌우 붙여넣기.\n\n**3단계**: 하이라이트된 부분 집중 검토.\n- 조항 번호 변경 → 전체 구조 변동 가능성\n- 숫자(금액·일수) 변경 → 가장 중요한 포인트\n- '또는' → '그리고' 같은 접속어 변경 → 의미 뒤바뀜\n\n**팁**: 법무 검토 전 Diff 결과를 공유하면 변호사 검토 시간 40% 절약 가능." },
+        { heading: "개발·블로그·코드 검토에도 유용", body: "Diff Checker는 계약서뿐 아니라 **코드·블로그·번역 교정**에도 써요.\n\n- **블로그 리비전**: 초안 vs 최종본 변경 확인\n- **코드 리뷰**: Git 없이 스니펫 비교\n- **번역 교정**: 원문 vs 번역본 정합성 확인\n- **스크립트 수정**: 동료 편집 전후 차이 찾기\n\nGit 툴 없어도 **브라우저 한 탭으로** 가능해요." },
+      ],
+      en: [
+        { heading: "Why visual comparison fails", body: "Manually spotting changes in a 10-page contract takes 30+ minutes and misses details." },
+        { heading: "Diff Checker highlights 3 things", body: "Additions (green), deletions (red), modifications (yellow) — auto-detected in seconds." },
+        { heading: "3-step contract review", body: "Paste original and revised, scan highlights, focus on clause numbers, amounts, and conjunction changes." },
+        { heading: "Also useful for code, blogs, translations", body: "Compare drafts, code snippets, translation accuracy — all in one browser tab, no Git needed." },
+      ],
+    },
+    faq: [
+      { question: "PDF는 어떻게 비교해요?", answer: "PDF를 먼저 텍스트로 변환해야 해요. Adobe Acrobat 'Export as Text' 또는 무료 PDF-to-Text 변환기로 추출 후 Toolkio Diff Checker에 붙여넣기. 스캔 PDF는 OCR 거친 후 가능." },
+      { question: "한글 문서도 정확히 비교되나요?", answer: "네, 한글·영문·일본어 모두 정상. 띄어쓰기·줄바꿈 차이는 옵션으로 무시 가능. '단어 단위 비교' 모드가 한글 계약서 검토에 특히 유용해요." },
+      { question: "비공개 문서 업로드해도 안전해요?", answer: "Toolkio Diff Checker는 **브라우저 로컬에서만 실행**돼요. 서버 전송 없음. 계약서·내부 문서 비교에도 정보 유출 걱정 없어요. 단, 공용 PC 사용 시엔 브라우저 기록 정리 권장." },
+      { question: "매우 긴 문서(100페이지+) 비교도 가능해요?", answer: "브라우저 성능상 약 10만 자까지 원활. 100페이지 문서면 챕터 단위로 쪼개서 비교하는 게 나아요. 너무 길면 하이라이트 렌더링 느려질 수 있어요." },
+      { question: "Excel·표 데이터 비교에도 쓸 수 있어요?", answer: "Excel은 CSV로 내보낸 후 Diff Checker에 붙이면 행·열 단위 변경 확인 가능. 단, 표 정합성 검토는 전용 Excel Compare 도구가 더 정확해요. 간단한 텍스트 데이터면 Diff Checker로 충분." },
+    ],
+  },
+  {
+    slug: "2026-password-passkey-era-hacking-prevention",
+    title: {
+      ko: "2026년 비밀번호 생성 — Passkey 시대에도 여전히 필요한 4가지 규칙",
+      en: "2026 Password Generation — 4 Rules Still Needed in the Passkey Era",
+    },
+    description: {
+      ko: "Passkey 시대라고 비밀번호가 없어지는 건 아니에요. 2026년 기준 해킹 방지 비밀번호 생성 규칙 4가지와 관리 전략을 정리했어요.",
+      en: "Passkeys are rising but passwords remain. Four essential password-generation rules and management tips for 2026.",
+    },
+    date: "2026-04-23",
+    toolId: "password-generator",
+    image: "/images/blog/2026-password-passkey-era-hacking-prevention.webp",
+    keywords: ["비밀번호 생성", "2026 보안", "Passkey", "해킹 방지", "비밀번호 관리"],
+    content: {
+      ko: [
+        { heading: "Passkey가 모든 비밀번호를 대체하지 못해요", body: "2026년 현재 Apple·Google·Microsoft가 Passkey 지원을 확대했지만, **여전히 비밀번호 필요한 곳이 70% 이상**이에요.\n\n- 구형 웹사이트(공공기관·은행 일부)\n- 레거시 기업 시스템\n- Wi-Fi 공유기\n- 서버 SSH\n- 암호화 파일\n\nPasskey 시대라고 방심하면 오히려 비밀번호가 보안 약점이 돼요." },
+        { heading: "2026년 강력한 비밀번호 4가지 규칙", body: "**1. 최소 16자 이상**\n양자 컴퓨팅 발전으로 8자 비밀번호는 5분 안에 깨져요. 16자 이상이면 현재 기술로는 수백 년.\n\n**2. 영문 대소 + 숫자 + 특수문자**\n조합 복잡도가 기하급수로 올라가요.\n\n**3. 사전 단어 조합 금지**\n'password123' 같은 흔한 패턴은 사전 공격에 5초. '예측 불가능한 무작위'가 필수.\n\n**4. 사이트별 다른 비밀번호**\n한 사이트 유출되면 다른 사이트도 위험. 절대 재사용 금지." },
+        { heading: "비밀번호 관리자 필수", body: "16자 무작위 비밀번호를 **외우는 건 불가능**. 비밀번호 관리자를 쓰세요.\n\n- **1Password** (유료, 연 $36): 가족 공유 기능 강력\n- **Bitwarden** (무료/유료): 오픈소스, 자체 서버 호스팅 가능\n- **Apple iCloud Keychain** (무료): iOS·macOS 사용자 기본\n- **Google Password Manager** (무료): Android·Chrome 사용자 기본\n\n**한 마스터 비밀번호만 외우고, 나머지는 관리자에 위임**이 현대 보안의 기본." },
+        { heading: "Toolkio 비밀번호 생성기 활용", body: "Toolkio Password Generator는 **4가지 규칙 기본값 준수**예요.\n\n1. 길이 16~32자 선택\n2. 대소문자·숫자·특수문자 체크\n3. 헷갈리는 문자(`0`과 `O`, `l`과 `1`) 제외 옵션\n4. **발음 가능 모드**: 외울 일 있을 때\n\n생성 즉시 복사 → 관리자 붙여넣기 → 저장까지 15초. 매번 직접 타이핑하거나 고민할 필요 없어요." },
+      ],
+      en: [
+        { heading: "Passkeys don't replace all passwords", body: "70%+ of sites still need traditional passwords — legacy systems, Wi-Fi, SSH, encryption keys." },
+        { heading: "4 rules for 2026 passwords", body: "16+ characters, mixed case+digits+symbols, no dictionary words, unique per site." },
+        { heading: "Use a password manager", body: "1Password, Bitwarden, Apple Keychain, Google — remember one master, delegate the rest." },
+        { heading: "Toolkio password generator", body: "Built-in length/charset options, look-alike exclusion, pronounceable mode for manual entry cases." },
+      ],
+    },
+    faq: [
+      { question: "Passkey는 무엇이고 왜 안전한가요?", answer: "Passkey는 공개키 암호 기반으로 기기(폰·PC)에 저장되는 인증 정보예요. 서버엔 공개키만 저장되고 개인키는 기기를 떠나지 않아 피싱·유출 위험이 사실상 제로. 다만 모든 사이트가 아직 지원 안 하니 비밀번호도 계속 필요해요." },
+      { question: "2FA(2단계 인증)는 여전히 필요해요?", answer: "필수예요. Passkey 미지원 사이트는 비밀번호 + 2FA가 기본 공식. SMS 2FA보다 Authenticator 앱(Google·Authy·1Password) 또는 하드웨어 키(YubiKey) 추천. SMS는 SIM 스왑 공격 취약해요." },
+      { question: "비밀번호 관리자가 해킹되면 큰일 아닌가요?", answer: "메이저 관리자는 마스터 비밀번호를 서버에 저장하지 않아요(제로 지식 아키텍처). 2022년 LastPass 유출도 암호화된 데이터만 유출됐고 마스터 비번이 강력했던 사용자는 안전했어요. 마스터 비번을 16자 이상 무작위로 설정이 핵심." },
+      { question: "비밀번호를 메모장·엑셀에 저장해도 돼요?", answer: "절대 금지. 랜섬웨어·트로이목마가 가장 먼저 훑는 파일이에요. 한 번 유출되면 모든 계정 털려요. 종이 메모도 분실 위험. 비밀번호 관리자 전환이 유일한 안전 방법." },
+      { question: "제가 쓰던 옛날 비밀번호도 여전히 안전해요?", answer: "한 번이라도 유출된 경험 있으면 즉시 변경. Have I Been Pwned(haveibeenpwned.com)에서 이메일 입력하면 유출 이력 확인 가능. 유출된 비밀번호는 다크웹에서 거래되니 '한 번이라도 유출 = 폐기' 기준 유지." },
+    ],
+  },
 ];
