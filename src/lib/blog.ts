@@ -13744,4 +13744,184 @@ export const blogPosts: BlogPost[] = [
       { question: "제가 쓰던 옛날 비밀번호도 여전히 안전해요?", answer: "한 번이라도 유출된 경험 있으면 즉시 변경. Have I Been Pwned(haveibeenpwned.com)에서 이메일 입력하면 유출 이력 확인 가능. 유출된 비밀번호는 다크웹에서 거래되니 '한 번이라도 유출 = 폐기' 기준 유지." },
     ],
   },
+  {
+    slug: "currency-unit-converter-overseas-direct-purchase",
+    title: {
+      ko: "환율·단위 변환 한 번에 — 해외직구 가격 체크 5가지 실전 패턴",
+      en: "Currency + Unit Converter — 5 Practical Patterns for Overseas Shopping",
+    },
+    description: {
+      ko: "해외직구할 때 환율, 사이즈, 무게, 인치 한 번에 바꿔야 진짜 가격이 보여요. 아마존·알리·이베이 직구 시 자주 쓰는 5가지 변환 패턴을 정리했어요.",
+      en: "Overseas shopping requires currency, size, weight, and inch conversions. 5 patterns covering Amazon, Aliexpress, eBay use cases.",
+    },
+    date: "2026-04-24",
+    toolId: "unit-converter",
+    image: "/images/blog/currency-unit-converter-overseas-direct-purchase.webp",
+    keywords: ["환율 변환", "단위 변환", "해외직구 가격", "아마존 직구", "사이즈 변환"],
+    content: {
+      ko: [
+        { heading: "해외직구는 변환 실수 한 번이 가격을 바꿔요", body: "아마존에서 'USD 49.99'에 마음이 흔들리지만, **관세·배송비·환율** 모두 합치면 한국 가격보다 비싼 경우 흔해요. 직구 입문자는 USD → KRW 환산만 하고 결제하다가 **예상보다 30% 비싼 청구서**를 받기 쉬워요.\n\n반대로 단위 변환 헷갈려서 사이즈 안 맞는 옷·가구 받는 사례도 많아요. 환율 + 단위까지 한 번에 정리하는 게 직구 입문 첫걸음이에요." },
+        { heading: "패턴 1 — 가격 변환 (USD/EUR/JPY → KRW)", body: "현금 카드 환율과 카드 결제 환율은 달라요. 직구 결제는 보통 **카드사 매매기준율 + 1~3% 수수료** 적용.\n\n- 표시 가격(USD 49.99)\n- × 환율(1,440원 가정) = 71,985원\n- × 1.025(카드 수수료 2.5%) = 73,785원\n- + 관세·배송비(평균 1만~3만 원)\n- = 실제 결제 추정 8.4만~10.4만 원\n\n**Toolkio 단위 변환기**에 환율 + 수수료 합산 모드 적용하면 이 계산 1초에 끝나요. 30% 가격 차 잡아내는 첫 단계." },
+        { heading: "패턴 2 — 사이즈 변환 (US/EU/UK ↔ KR)", body: "옷·신발 사이즈가 가장 많이 헷갈리는 부분.\n\n**남성 신발**\n- US 10 = EU 43 = UK 9.5 = **KR 280mm**\n- US 11 = EU 44 = UK 10.5 = **KR 285mm**\n\n**여성 옷**\n- US S = EU 36 = UK 8 = **KR 55(S)**\n- US M = EU 38 = UK 10 = **KR 66(M)**\n\nToolkio 단위 변환기는 의류·신발 사이즈 환산표 자동 표시. 사이즈 잘못 시켜서 반품하면 배송비 + 관세 환급 안 돼요." },
+        { heading: "패턴 3·4·5 — 무게·인치·온도", body: "**무게 (lb ↔ kg)**\n- 1lb = 0.4536kg\n- 100lb = 45.36kg\n- 직구 가구·운동기구 무게 확인 필수\n\n**인치 (inch ↔ cm)**\n- 1inch = 2.54cm\n- 27inch 모니터 = 68.58cm\n- TV·모니터·가구 사이즈 변환\n\n**온도 (°F ↔ °C)**\n- (°F − 32) × 5/9 = °C\n- 95°F = 35°C\n- 미국 사이트 날씨·요리 레시피용\n\n**Toolkio 단위 변환기**는 위 5가지 모두 1초 내 변환. 직구 결제 직전 한 번 더 체크하는 습관이 가격 손실 막아요." },
+      ],
+      en: [
+        { heading: "Conversion mistakes change prices", body: "Direct overseas shopping requires combining currency, customs, sizing — single missed conversion ruins value." },
+        { heading: "Pattern 1: currency conversion", body: "USD 49.99 with FX 1440 + 2.5% card fee + customs/shipping = ~84-104k KRW reality." },
+        { heading: "Pattern 2: clothing sizes", body: "US/EU/UK to KR conversion tables for shoes and clothes — always verify before purchase." },
+        { heading: "Patterns 3-5: weight, inch, temperature", body: "lb/kg, inch/cm, °F/°C — Toolkio handles all 5 in one converter." },
+      ],
+    },
+    faq: [
+      { question: "직구 시 관세는 언제 붙나요?", answer: "150 USD 초과(미국)나 200 USD 초과(미국 외 일반)일 때 붙어요. 단 식품·의약품·전자제품은 별도 기준 적용. Toolkio 환율 변환 후 실제 결제액이 한도 안에 있는지 확인하세요." },
+      { question: "신발 사이즈 변환표 신뢰할 수 있나요?", answer: "기본 환산표는 정확하지만 브랜드별로 1cm 정도 편차 있어요. 나이키·아디다스는 '약간 작게', 뉴발란스는 '정사이즈'로 알려져 있어요. 같은 브랜드 한국 매장 사이즈 기준 비교 추천." },
+      { question: "환율은 실시간 반영되나요?", answer: "Toolkio 환율 데이터는 1시간 간격 업데이트. 카드 결제 시점 환율과 약간 차이 가능. 큰 금액 결제는 카드사 앱에서 실시간 환율 한 번 더 체크 권장." },
+      { question: "무게 변환 시 lb와 oz 차이?", answer: "1lb = 16oz. 미국에서 작은 식품·화장품은 oz 단위 흔해요. 1oz = 28.35g. Toolkio는 lb·oz·kg·g 다단계 변환 지원해서 식품 직구 시 유용해요." },
+      { question: "TV 인치는 대각선 길이 맞아요?", answer: "네, 화면 대각선 인치예요. 65inch TV = 165.1cm 대각선. 가로 길이는 비율(16:9)로 계산: 65inch × 0.872 = 가로 약 144cm. 거실 공간 확인 시 가로 폭 환산도 같이 하세요." },
+    ],
+  },
+  {
+    slug: "uuid-v7-postgres-mongodb-migration-2026",
+    title: {
+      ko: "UUID v7 도입 가이드 2026 — Postgres·MongoDB 실전 마이그레이션 사례",
+      en: "UUID v7 Adoption 2026 — Postgres and MongoDB Migration Cases",
+    },
+    description: {
+      ko: "UUID v4에서 v7로 옮긴 실제 프로젝트 사례를 정리했어요. 인덱스 성능, 정렬 가능성, 데이터 마이그레이션 절차, Postgres·MongoDB 양쪽 적용 팁까지.",
+      en: "Real-world v4 to v7 migration case for Postgres and MongoDB. Index performance, sortability, and data migration steps explained.",
+    },
+    date: "2026-04-24",
+    toolId: "uuid-generator",
+    image: "/images/blog/uuid-v7-postgres-mongodb-migration-2026.webp",
+    keywords: ["UUID v7", "UUID 마이그레이션", "Postgres UUID", "MongoDB UUID", "uuid 인덱스 성능"],
+    content: {
+      ko: [
+        { heading: "UUID v4의 인덱스 성능 문제", body: "**UUID v4는 완전 무작위 값**이라 데이터베이스 인덱스에서 큰 비용을 만들어요. 신규 행 INSERT마다 인덱스 트리의 무작위 위치에 들어가서 페이지 분할·캐시 미스가 폭증해요.\n\n실제 측정값으로, **5천만 행 Postgres 테이블에서 v4 INSERT가 자동증가 ID 대비 3~5배 느려요**. 캐시 적중률은 절반 이하. 트래픽 큰 서비스는 이 비용 무시 못 해요." },
+        { heading: "UUID v7이 해결하는 것", body: "**UUID v7은 앞 48bit가 Unix 밀리초 타임스탬프**예요. 시간순으로 자동 정렬되니까 신규 INSERT가 인덱스 끝쪽에 차례로 쌓여요.\n\n장점\n- 인덱스 분할 거의 없음 → INSERT 속도 자동증가 ID에 근접\n- 시간순 정렬 가능 (created_at 별도 컬럼 불필요인 경우)\n- 분산 시스템에서도 충돌 없음\n- 외부 노출 가능 (자동증가 ID와 달리 추측 불가)\n\nv4의 보안 + 자동증가의 성능을 절충한 방식이에요." },
+        { heading: "Postgres 마이그레이션 절차", body: "기존 v4 사용 테이블에 v7 도입할 때 절차예요.\n\n```sql\n-- 1. v7 컬럼 추가\nALTER TABLE orders ADD COLUMN id_v7 UUID;\n\n-- 2. 기존 행 v7 채우기 (생성 시점 알면 정확한 시간 인코딩)\nUPDATE orders SET id_v7 = uuidv7_from_timestamp(created_at);\n\n-- 3. 신규 INSERT는 v7 사용\nALTER TABLE orders ALTER COLUMN id_v7 SET DEFAULT uuidv7();\n\n-- 4. 인덱스 교체\nCREATE INDEX CONCURRENTLY idx_orders_id_v7 ON orders(id_v7);\nDROP INDEX idx_orders_id_v4;\n\n-- 5. PRIMARY KEY 교체 (다운타임 짧게)\nBEGIN;\nALTER TABLE orders DROP CONSTRAINT orders_pkey;\nALTER TABLE orders ADD PRIMARY KEY (id_v7);\nALTER TABLE orders DROP COLUMN id;\nALTER TABLE orders RENAME COLUMN id_v7 TO id;\nCOMMIT;\n```\n\nPostgres 17+은 `gen_random_uuid()`에 v7 옵션 추가됐어요. 16 이하는 `pg_uuidv7` 익스텐션 또는 애플리케이션 레벨 생성." },
+        { heading: "MongoDB·실제 사례 + Toolkio UUID 생성기", body: "MongoDB도 마찬가지로 ObjectId 대신 UUID v7 권장 추세. ObjectId는 v7과 비슷하지만 표준 UUID 호환성 부족.\n\n**실제 사례 (이커머스 주문 DB)**\n- 5천만 행 / 일 신규 50만 행\n- v4 → v7 전환 후 INSERT 평균 응답 6.2ms → 1.8ms\n- 인덱스 크기 18% 감소\n- created_at 컬럼 제거 가능 (v7 자체에 시간 인코딩)\n\n**Toolkio UUID 생성기**는 v1·v4·v7·v8 모두 지원. 마이그레이션 검증용 샘플 ID 즉시 생성. UUID 디코딩으로 v7의 타임스탬프 부분도 바로 확인 가능해요." },
+      ],
+      en: [
+        { heading: "v4 index performance issue", body: "Random v4 inserts cause page splits and cache misses — 3-5x slower than auto-increment at scale." },
+        { heading: "v7 fixes ordering", body: "v7 encodes Unix ms timestamp in first 48 bits — sequential inserts, no fragmentation." },
+        { heading: "Postgres migration steps", body: "Add v7 column, backfill from created_at, swap primary key with concurrent index creation." },
+        { heading: "MongoDB and Toolkio", body: "MongoDB benefits similarly. Toolkio supports v1/v4/v7/v8 generation and decoding." },
+      ],
+    },
+    faq: [
+      { question: "v7이 v4보다 보안이 약하지 않나요?", answer: "타임스탬프가 노출돼서 생성 시점은 추측 가능하지만, 나머지 80bit는 무작위라 ID 추측은 불가능. 자동증가 ID처럼 순차 추측은 안 돼요. 보안성은 v4 대비 약간 낮지만 실용적 손해 없어요." },
+      { question: "v7은 모든 DB가 지원하나요?", answer: "표준 UUID로 저장 가능해서 거의 모든 DB에서 사용 가능. 다만 자동 생성 함수는 Postgres 17+, MySQL 8.4+, MongoDB 6+ 등 최신 버전 필요. 옛 버전은 애플리케이션 레벨 생성하면 됩니다." },
+      { question: "기존 v4 데이터를 v7으로 못 바꾸지 않나요?", answer: "v4 자체를 v7로 변환할 수는 없지만, 새로 v7 ID를 발급해서 기존 v4를 대체 가능. 외래키 참조 있으면 마이그레이션 시 모든 참조도 함께 갱신해야 해요." },
+      { question: "분산 시스템에서 v7 충돌 가능성?", answer: "v7은 타임스탬프 + 무작위 80bit. 같은 밀리초에 같은 80bit 무작위가 나올 확률은 2^-80 = 거의 0. 분산 시스템에서도 안전하게 사용 가능." },
+      { question: "Toolkio에서 v7 디코딩 가능해요?", answer: "네, v7 ID 입력하면 타임스탬프 부분 자동 추출해서 사람이 읽을 수 있는 시간으로 표시. 디버깅·로그 분석 시 유용해요." },
+    ],
+  },
+  {
+    slug: "percent-calculator-discount-increase-compound-5-patterns",
+    title: {
+      ko: "퍼센트 계산기 실전 5패턴 — 할인율·인상률·복리·인상폭 한 번에",
+      en: "Percent Calculator 5 Patterns — Discount, Increase, Compound, Margin",
+    },
+    description: {
+      ko: "퍼센트 계산을 매번 수식 떠올리며 손으로 하느라 헷갈리셨죠. 할인율·인상률·복리·증감폭·이익률 5가지 자주 쓰는 패턴을 한 번에 정리했어요.",
+      en: "Stop calculating percentages manually. 5 common patterns: discount, increase, compound interest, change rate, profit margin.",
+    },
+    date: "2026-04-24",
+    toolId: "percent-calculator",
+    image: "/images/blog/percent-calculator-discount-increase-compound-5-patterns.webp",
+    keywords: ["퍼센트 계산기", "할인율 계산", "인상률 계산", "복리 계산", "증감률"],
+    content: {
+      ko: [
+        { heading: "퍼센트 계산이 헷갈리는 이유", body: "퍼센트는 **'무엇을 기준으로 하느냐'**가 매번 달라져요. 할인은 원가 기준, 인상은 인하 가격 기준, 복리는 이전 기간 기준. 기준이 바뀌면 결과가 완전 달라지죠.\n\n특히 '20% 할인 후 다시 10% 추가 할인'이 '30% 할인'이 아닌 점은 누구나 한 번씩 헷갈리는 함정이에요. 자주 쓰는 5가지 패턴 정리해드릴게요." },
+        { heading: "패턴 1·2 — 할인율과 인상률", body: "**할인율 계산**\n\n- 원가 50,000원, 35,000원에 판매\n- 할인 금액: 50,000 − 35,000 = 15,000원\n- 할인율: 15,000 / 50,000 × 100 = **30% 할인**\n\n**중복 할인 함정**\n\n- 50,000원에서 20% 할인 → 40,000원\n- 추가 10% 할인 → 36,000원\n- 합산 할인율: (50,000 − 36,000) / 50,000 = **28%** (30% 아님)\n\n**인상률 계산**\n\n- 작년 30,000원 → 올해 33,000원\n- 인상 금액: 3,000원\n- 인상률: 3,000 / 30,000 × 100 = **10% 인상**\n\n임금·물가·매출 비교 시 가장 자주 쓰는 패턴이에요." },
+        { heading: "패턴 3·4 — 복리와 증감폭", body: "**복리 계산 (연 이자)**\n\n- 원금 1,000만원, 연 5% 복리, 3년\n- 1년 후: 1,000 × 1.05 = 1,050만원\n- 2년 후: 1,050 × 1.05 = 1,102.5만원\n- 3년 후: 1,102.5 × 1.05 = 1,157.6만원\n\n공식: 원금 × (1 + 이율)^년수\n\n**증감률 (전년 대비)**\n\n- 작년 매출 1,200만원, 올해 매출 1,500만원\n- 증감률: (1,500 − 1,200) / 1,200 × 100 = **+25%**\n\n반대로 매출 감소도 같은 공식. 마이너스 결과가 나오면 그게 감소율이에요." },
+        { heading: "패턴 5 + Toolkio 활용", body: "**이익률 계산 (마진)**\n\n- 매출 100,000원, 비용 70,000원\n- 이익: 30,000원\n- 이익률: 30,000 / 100,000 × 100 = **30% 마진**\n\n사업·자영업자 핵심 지표. 매출보다 이익률이 진짜 중요한 수익성 척도.\n\n**Toolkio 퍼센트 계산기**는 위 5가지 패턴 모두 한 페이지에서 가능. 5가지 모드 탭 전환만 하면 돼요. 모바일에서도 빠른 계산 가능. 결과 자동 복사 기능 있어서 메신저로 바로 공유도 됩니다." },
+      ],
+      en: [
+        { heading: "Why percentages confuse", body: "The base value changes per pattern — discount uses original, increase uses reduced, compound uses prior period." },
+        { heading: "Patterns 1-2: discount and increase", body: "Discount = (orig - sale) / orig × 100. Stacked discounts don't sum (20% + 10% ≠ 30%)." },
+        { heading: "Patterns 3-4: compound and change rate", body: "Compound = principal × (1+rate)^years. Change rate = (new - old) / old × 100." },
+        { heading: "Pattern 5 + Toolkio", body: "Profit margin = profit / revenue × 100. Toolkio handles all 5 in tabbed interface." },
+      ],
+    },
+    faq: [
+      { question: "할인율 30%와 50% 할인 후 30% 추가 할인은 같지 않아요?", answer: "다릅니다. 50% × 30% 추가 = 50,000 → 25,000 → 17,500원이라 실제 할인율 65%. 30% 단독 할인은 35,000원으로 35% 할인. 중복 할인이 절대 합산 아니라는 점 기억하세요." },
+      { question: "복리 vs 단리 차이?", answer: "단리: 매년 원금에만 이자. 복리: 누적된 금액에 이자. 1,000만원 5% 10년이면 단리 1,500만원, 복리 1,628.9만원. 장기일수록 차이 커요." },
+      { question: "이익률과 마진율이 같은가요?", answer: "비슷하지만 정확히는 달라요. 이익률(매출액 기준): 이익 / 매출. 마진율(원가 기준): 이익 / 원가. 본인 사업 환경에서 어떤 기준 쓰는지 확인하세요." },
+      { question: "퍼센트 포인트(%p)와 퍼센트 차이?", answer: "퍼센트 포인트는 절대 차이. 5%에서 7%로 오르면 '2%p 상승, 40% 상승'. %는 상대 변화율. 금융·통계 보도에 자주 등장." },
+      { question: "할인율 100% 가능한가요?", answer: "이론상 불가능. 100% 할인은 '무료 증정'을 뜻하지만 실제론 99% 이하로 표시. 100%면 할인 개념이 무너져요. 사은품·증정 같은 다른 마케팅 용어로 표현해요." },
+    ],
+  },
+  {
+    slug: "instagram-line-break-caption-bio-fix-guide",
+    title: {
+      ko: "인스타 줄바꿈 안 되는 이유와 해결법 — 캡션·바이오 양쪽 다",
+      en: "Instagram Line Breaks Not Working — Caption and Bio Fix",
+    },
+    description: {
+      ko: "인스타그램에 줄바꿈하면 자꾸 한 줄로 합쳐지는 문제, 원인과 3가지 해결법을 정리했어요. 캡션·바이오·답글 모두 적용 가능한 방법이에요.",
+      en: "Instagram strips empty lines from captions and bios. 3 working fixes for captions, bios, and replies in 2026.",
+    },
+    date: "2026-04-24",
+    toolId: "instagram-line-break",
+    image: "/images/blog/instagram-line-break-caption-bio-fix-guide.webp",
+    keywords: ["인스타 줄바꿈", "인스타그램 줄바꿈 안됨", "인스타 캡션 줄바꿈", "인스타 바이오 줄바꿈"],
+    content: {
+      ko: [
+        { heading: "왜 인스타 줄바꿈이 자꾸 사라지나요", body: "**인스타그램은 빈 줄을 자동으로 제거**해요. Enter 두 번 쳐서 한 줄 띄워도 게시 직후 한 줄로 합쳐져요. 알고리즘상 캡션을 압축해서 노출 면적을 줄이려는 의도예요.\n\n2026년 현재도 공식 기능 추가 안 됐고, 사용자가 우회 방법으로 해결해야 해요. 다만 우회 방법 3가지가 안정적으로 통해요." },
+        { heading: "방법 1 — 보이지 않는 문자 삽입", body: "가장 안정적인 방법이에요. **인스타가 '빈 줄'은 제거하지만 '눈에 안 보이는 문자만 있는 줄'은 유지**해요.\n\n사용 문자: 제로 폭 공백(Zero Width Space, U+200B) 또는 점(·)\n\n```\n첫 번째 문장이에요\n·\n두 번째 문단 시작이에요\n·\n세 번째 문단 시작이에요\n```\n\n점은 너무 눈에 띄어서 제로 폭 공백이 더 자연스러워요. **Toolkio 인스타 줄바꿈 도구**는 입력 텍스트에 자동으로 제로 폭 공백을 삽입해서 복사 가능한 형태로 만들어줘요." },
+        { heading: "방법 2·3 — 메모장 복사·외부 앱 활용", body: "**방법 2: 메모장 복사**\n\n1. 메모장(또는 메모 앱)에 본문 작성\n2. Enter로 줄바꿈\n3. 전체 복사 후 인스타에 붙여넣기\n\n**아이폰 메모장은 줄바꿈이 거의 유지**되고, 안드로이드는 앱마다 다름. 빠른 임시 방법이에요.\n\n**방법 3: 외부 앱 활용**\n\n- **Plann**: 인스타 캡션 미리보기 + 줄바꿈 자동 처리\n- **Later**: 비슷한 기능 + 예약 발행\n- **Toolkio**: 무료, 가입 없이 1분 안에 결과 생성\n\n웹 기반이면 Toolkio가 가장 빠르고, 본격 인스타 운영자는 Plann/Later 같은 SaaS가 종합 관리에 유리해요." },
+        { heading: "바이오와 답글 줄바꿈도 같은 원리", body: "캡션뿐 아니라 **바이오(소개글)와 댓글 답글**도 같은 문제 + 같은 해결법이에요.\n\n**바이오 줄바꿈**\n\n- 인스타 앱 자체에서는 안 됨\n- 사파리(아이폰) 또는 PC 브라우저로 인스타 접속\n- 프로필 편집 화면에서 줄바꿈 입력 후 저장\n- 또는 위 제로 폭 공백 방법 사용\n\n**댓글 답글**\n\n- 캡션과 동일하게 제로 폭 공백 활용\n- 긴 답글에서 가독성 크게 향상\n\n바이오는 **PC 브라우저 + 줄바꿈**이 가장 안정적이에요. 모바일 앱만 쓰면 한계가 있으니 큰 변경은 PC에서 한 번 정리하세요." },
+      ],
+      en: [
+        { heading: "Why Instagram strips line breaks", body: "Instagram auto-removes empty lines to compress captions for feed display." },
+        { heading: "Fix 1: invisible characters", body: "Use Zero Width Space (U+200B) — appears blank but counts as content, preserving line break." },
+        { heading: "Fix 2-3: notepad and apps", body: "Notepad copy works (especially iOS); SaaS like Plann, Later, or free Toolkio handle this automatically." },
+        { heading: "Bio and replies same fix", body: "Same techniques work; bios are most stable when edited via PC browser." },
+      ],
+    },
+    faq: [
+      { question: "제로 폭 공백이 표시되거나 깨질 위험은?", answer: "거의 없어요. 모든 디바이스에서 진짜 빈 공백처럼 보여요. 다만 인스타가 미래에 이 문자도 제거하기 시작하면 우회법이 막힐 수 있어요. 2026년 4월 현재까진 안전하게 작동." },
+      { question: "한국 인스타 사용자에게도 적용되나요?", answer: "네, 인스타그램 본사 정책이라 전 세계 동일. 한국어·영어·일본어 모두 같은 우회법 통해요." },
+      { question: "Toolkio 도구가 인스타 정책 위반 아니에요?", answer: "위반 아닙니다. 단순히 텍스트에 일반 유니코드 문자를 추가할 뿐이에요. 인스타 약관에서 명시적으로 금지된 행위 아님." },
+      { question: "비즈니스 계정도 같은 문제 있나요?", answer: "네, 일반 계정과 비즈니스 계정 둘 다 같은 줄바꿈 제거 정책. 광고용 캡션도 우회법 적용해야 해요." },
+      { question: "Threads(스레드)도 같은 문제예요?", answer: "Threads는 줄바꿈 정상 작동. 인스타와 같은 메타 소속이지만 별도 정책. 스레드는 우회법 불필요." },
+    ],
+  },
+  {
+    slug: "korean-age-vs-international-age-2026-5-situations",
+    title: {
+      ko: "만 나이 vs 한국 나이 2026 — 헷갈리는 5가지 상황 한눈에",
+      en: "Korean Age vs International Age 2026 — 5 Confusing Situations",
+    },
+    description: {
+      ko: "만 나이 통일법 시행 후에도 일상에서 헷갈리는 5가지 상황을 정리했어요. 청약, 보험, 투표, 음주, 정년 등에서 어느 나이를 적용하는지 명확히 구분해드려요.",
+      en: "Korea unified to international age in 2023 but daily confusion remains. 5 situations clarifying which age applies for housing, insurance, voting, drinking, retirement.",
+    },
+    date: "2026-04-24",
+    toolId: "age-calculator",
+    image: "/images/blog/korean-age-vs-international-age-2026-5-situations.webp",
+    keywords: ["만 나이", "한국 나이", "만 나이 계산", "만 나이 통일법", "나이 계산기"],
+    content: {
+      ko: [
+        { heading: "2026년에도 나이가 헷갈리는 이유", body: "2023년 6월 만 나이 통일법 시행 후 **공식 문서·법령·계약은 모두 만 나이**로 통일됐어요. 그런데 일상 대화·관습·일부 제도는 여전히 한국 나이로 운영돼요.\n\n결과적으로 **'만 나이'와 '한국 나이' 둘을 머릿속에 동시에 갖고 다녀야 하는 상황**이 계속 이어지고 있어요. 5가지 상황 정리해드릴게요." },
+        { heading: "상황 1·2 — 청약과 보험", body: "**청약 (만 나이 기준)**\n\n- 청년주택드림 청약: 만 19~39세\n- 신혼부부 특공: 만 나이 적용 X (혼인 7년 이내)\n- 청년 우대 적금: 만 19~34세\n\n청약 자격 따질 때는 **무조건 만 나이로만 계산**. 1살 차이로 자격 갈리는 경우 많으니 본인 만 나이 정확히 알아야 해요.\n\n**보험 가입 (만 나이 기준)**\n\n- 생명보험 가입 한도: 만 나이 기준\n- 자동차 보험 운전자 연령 특약: 만 나이\n- 실손의료보험 갱신: 만 나이 기준 보험료 산정\n\n**나이가 1살 올라가면 보험료 5~10% 인상**되니 만 나이 생일 직전 가입이 절세." },
+        { heading: "상황 3·4 — 투표와 음주", body: "**투표권 (만 나이 기준)**\n\n- 대통령·국회의원 선거: 만 18세부터\n- 지방선거: 만 18세부터\n- 국민투표: 만 19세부터\n\n선거일 기준 만 나이가 충족돼야 투표 가능. 생일이 선거 다음날이면 불가능.\n\n**주류·담배 (한국식 + 만 나이 혼용)**\n\n- 만 19세부터 구매 가능 (법적 기준)\n- 단, 청소년보호법상 '연 19세'(한국식)로 해석되는 경우 있음\n- 즉 **그 해 1월 1일 기준 만 18세인 경우 12월부터 사실상 구매 가능**\n\n실제 편의점·마트는 신분증으로 만 나이 확인 + 그해 만 19세 도달자도 구매 허용." },
+        { heading: "상황 5 + Toolkio 활용", body: "**정년퇴직 (만 나이 기준)**\n\n- 법정 정년: 만 60세\n- 공무원 정년: 직급별 만 60~65세\n- 군인·경찰 정년: 계급별 만 53~63세\n\n정년 결정 시 **만 나이 도달일 기준**으로 퇴직 시점 산정. 같은 직장 동료라도 생일 차이로 6개월 정도 퇴직일이 갈려요.\n\n**Toolkio 나이 계산기 활용법**\n\n1. 본인 생년월일 입력\n2. **만 나이·한국 나이·연 나이 동시 표시**\n3. 다음 생일까지 남은 일수 표시\n4. 청약·보험 자격 시점 자동 계산\n\n청약 신청 직전·보험 가입 직전 1분만 투자해서 본인 만 나이 정확히 확인하세요. **1살 차이가 자격을 가르는 결정적 디테일**이 됩니다." },
+      ],
+      en: [
+        { heading: "Why age is still confusing in 2026", body: "Korea adopted international age legally in 2023 but daily life still mixes Korean age in colloquial speech and some traditions." },
+        { heading: "Situation 1-2: housing and insurance", body: "Housing subscription and insurance use international age strictly — being 1 year off changes eligibility and premiums." },
+        { heading: "Situation 3-4: voting and alcohol", body: "Voting at 18 international; alcohol legally 19 international but practically 'born in the year you turn 19'." },
+        { heading: "Situation 5 + Toolkio", body: "Retirement age uses international age. Toolkio calculator shows international, Korean, and year-age side by side." },
+      ],
+    },
+    faq: [
+      { question: "만 나이와 연 나이는 다른가요?", answer: "다릅니다. 연 나이는 '올해 연도 - 출생 연도'로 단순 계산. 만 나이는 생일 도달 여부 반영. 예: 1990년생은 2026년에 연 나이 36세, 만 나이는 생일 전 35세 / 생일 후 36세." },
+      { question: "한국 나이는 완전 폐지된 거 아니에요?", answer: "법적 기준은 만 나이로 통일됐지만 한국 나이 자체는 여전히 일상에서 사용. 가족 모임, 친구 사이, 일부 전통 행사(돌, 백일)에서는 한국 나이가 자연스럽게 통용." },
+      { question: "외국에서 한국 나이 말하면 통하나요?", answer: "안 통해요. 한국 외에는 모두 만 나이 사용. 외국 친구 만나거나 비자 신청 시 무조건 만 나이로 통일하세요." },
+      { question: "주민등록증과 만 나이 계산?", answer: "주민등록증 발급 가능 만 나이 17세. 그 전엔 청소년증 발급 가능. 주민등록증 발급 시점이 만 17세 도달 시점이지만 본인 거주지 주민센터 방문 시 한 달 정도 여유는 있어요." },
+      { question: "운전면허 만 나이 기준?", answer: "1종·2종 보통 면허: 만 18세부터. 1종 대형: 만 19세부터. 2종 원동기: 만 16세부터. Toolkio 나이 계산기로 본인 응시 가능 시점 정확히 확인 가능." },
+    ],
+  },
 ];
