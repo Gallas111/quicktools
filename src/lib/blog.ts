@@ -13924,4 +13924,184 @@ export const blogPosts: BlogPost[] = [
       { question: "운전면허 만 나이 기준?", answer: "1종·2종 보통 면허: 만 18세부터. 1종 대형: 만 19세부터. 2종 원동기: 만 16세부터. Toolkio 나이 계산기로 본인 응시 가능 시점 정확히 확인 가능." },
     ],
   },
+  {
+    slug: "regex-test-5-patterns-validation-real-cases",
+    title: {
+      ko: "정규식 5패턴 검증 — 이메일·전화·주민번호·IP·한글 실전 매칭",
+      en: "Regex 5 Patterns — Real-World Email, Phone, ID, IP, Korean Validation",
+    },
+    description: {
+      ko: "실무에서 가장 많이 쓰는 정규식 5패턴을 정리했어요. 이메일·전화·주민번호·IP·한글 검증을 정규식 테스터로 즉시 확인하고 코드에 바로 붙이는 가이드.",
+      en: "5 most used regex patterns in real projects: email, phone, Korean ID, IP, Korean text. Test instantly and copy to your code.",
+    },
+    date: "2026-04-25",
+    toolId: "regex-tester",
+    image: "/images/blog/regex-test-5-patterns-validation.webp",
+    keywords: ["정규식 테스트", "정규식 이메일", "정규식 전화번호", "regex pattern", "정규식 검증"],
+    content: {
+      ko: [
+        { heading: "정규식이 왜 5패턴만 알면 충분한가", body: "실무에서 정규식 검증은 거의 다 5가지 카테고리예요. 이메일, 전화번호, 주민번호, IP 주소, 한글 텍스트.\n\n이 5패턴만 본인 코드 라이브러리에 갖고 있으면 신규 프로젝트 시작할 때 검증 로직 90% 커버됩니다. Toolkio 정규식 테스터로 즉시 검증하고 코드에 붙이세요." },
+        { heading: "패턴 1·2 — 이메일과 전화번호", body: "**이메일 정규식 (실무 표준)**\n\n`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`\n\n- 영문·숫자·점·하이픈 모두 허용\n- @ 뒤 도메인 + 최소 2자 TLD\n- abc@example.com → 통과\n- abc@ → 거절\n- @com → 거절\n\n**전화번호 정규식 (한국 형식)**\n\n`^01[0-9]-?[0-9]{3,4}-?[0-9]{4}$`\n\n- 010·011·016·017·018·019 시작\n- 하이픈 있어도 없어도 허용\n- 010-1234-5678 → 통과\n- 01012345678 → 통과\n- 010-12345-678 → 거절" },
+        { heading: "패턴 3·4 — 주민번호와 IP", body: "**주민번호 정규식 (한국)**\n\n`^[0-9]{6}-[1-4][0-9]{6}$`\n\n- 앞 6자리 + 하이픈 + 뒤 7자리\n- 뒤 첫 자리 1~4만 허용 (성별·세대 코드)\n- 901225-1234567 → 통과\n- 901225-5234567 → 거절 (5는 외국인 코드라 별도 처리)\n\n**보안 주의**: 주민번호는 클라이언트 검증 후 서버 전송 시 즉시 마스킹 또는 해시. 평문 저장 절대 금지.\n\n**IP 주소 정규식 (IPv4)**\n\n`^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$`\n\n- 0~255 4개 + 점\n- 192.168.1.1 → 통과\n- 256.1.1.1 → 거절\n- 길어 보이지만 0~255 범위 검증 위해 필수" },
+        { heading: "패턴 5 + Toolkio 활용", body: "**한글 텍스트 정규식**\n\n`^[가-힣ㄱ-ㅎㅏ-ㅣ\\s]+$`\n\n- 한글 음절 + 자모 + 공백 허용\n- '홍길동' → 통과\n- 'Hong길동' → 거절\n- '홍 길동' → 통과 (공백 허용)\n\n**한글 + 영문 혼합 허용 시**\n\n`^[가-힣a-zA-Z\\s]+$`\n\n**Toolkio 정규식 테스터 활용 5단계**\n\n1. 정규식 입력란에 위 패턴 붙여넣기\n2. 테스트 문자열에 검증할 데이터 입력\n3. 매칭 결과 즉시 확인 (초록 = 통과, 빨강 = 거절)\n4. 매칭 그룹별 추출 결과 표시\n5. 검증 통과 후 본인 코드에 복사\n\n5패턴 한 번에 라이브러리화 해두면 신규 프로젝트마다 30분 이상 절약됩니다." },
+      ],
+      en: [
+        { heading: "Why only 5 patterns matter", body: "90% of validation in real projects is email, phone, ID, IP, Korean text. Master these 5 to cover most use cases." },
+        { heading: "Patterns 1-2: email and phone", body: "Email pattern handles standard format. Korean phone pattern accepts both with and without hyphens." },
+        { heading: "Patterns 3-4: Korean ID and IP", body: "Korean Resident Registration Number 6-7 digit format. IPv4 pattern with proper 0-255 range validation." },
+        { heading: "Pattern 5 + Toolkio", body: "Korean text validation includes all Hangul + spaces. Toolkio tester validates instantly with color-coded match groups." },
+      ],
+    },
+    faq: [
+      { question: "정규식이 어렵게 느껴져요", answer: "처음엔 누구나 그래요. 5패턴만 외우지 말고 Toolkio 테스터로 100번 정도 직접 입력해보면 패턴 직관적으로 이해돼요. 머리로 외우는 게 아니라 손에 익히는 게 답이에요." },
+      { question: "Python re 모듈에서 그대로 쓸 수 있나요?", answer: "네 가능. Python, JavaScript, Java, C# 모두 PCRE 호환이라 위 5패턴 그대로 사용 가능. 다만 Python에선 raw string 표기 r'pattern' 권장." },
+      { question: "주민번호 검증이 형식만 통과하면 끝인가요?", answer: "아니에요. 형식 통과 후 실제 유효한 번호인지 체크섬 검증 별도. 마지막 자리가 앞 12자리 가중치 합 mod 11 결과여야 진짜 주민번호. 정규식은 1차 필터일 뿐." },
+      { question: "이메일 정규식이 RFC 5322 준수 맞나요?", answer: "엄격한 RFC 5322 검증은 더 복잡하지만 실무에선 위 패턴이 99% 커버. 학술적 정확성보다 실용성 우선." },
+      { question: "한글 정규식에서 'ㄱ-ㅎㅏ-ㅣ'가 왜 필요해요?", answer: "한글 자모(ㄱ, ㄴ, ㅏ, ㅣ)도 검증 대상에 포함시키려면 필요. 입력 중간에 자모가 잠시 떨어져 있는 IME 상태도 허용하려면 추가 권장." },
+    ],
+  },
+  {
+    slug: "unix-timestamp-sql-db-migration-5-cases",
+    title: {
+      ko: "Unix 타임스탬프 SQL DB 마이그레이션 — 실전 5케이스 변환 가이드",
+      en: "Unix Timestamp SQL DB Migration — 5 Real Cases of Conversion",
+    },
+    description: {
+      ko: "DB 마이그레이션에서 Unix 타임스탬프를 한국시간으로 변환하는 5가지 실전 케이스를 정리했어요. PostgreSQL·MySQL·MongoDB 변환 SQL 한 줄까지 포함.",
+      en: "5 real DB migration cases for converting Unix timestamps. Includes PostgreSQL, MySQL, MongoDB SQL one-liners.",
+    },
+    date: "2026-04-25",
+    toolId: "timestamp-converter",
+    image: "/images/blog/unix-timestamp-sql-db-migration.webp",
+    keywords: ["Unix 타임스탬프", "타임스탬프 변환", "DB 마이그레이션", "PostgreSQL 시간", "MySQL 시간"],
+    content: {
+      ko: [
+        { heading: "DB 마이그레이션에서 타임스탬프가 골치 아픈 이유", body: "DB 옮길 때마다 시간 형식이 달라서 한 번씩 사고 나는 항목이 타임스탬프예요. Unix 타임스탬프(epoch)는 초 단위 정수인데, 받아들이는 쪽 DB가 datetime이면 변환 필요하고 시간대(KST/UTC) 처리도 따로 해야 해요.\n\n실무 5케이스를 직접 다뤄본 변환 SQL과 함께 정리했어요. Toolkio 타임스탬프 변환기로 검증 후 SQL에 그대로 붙이세요." },
+        { heading: "케이스 1·2 — PostgreSQL과 MySQL", body: "**케이스 1 — PostgreSQL: Unix → KST datetime**\n\n```sql\nSELECT to_timestamp(unix_ts) AT TIME ZONE 'Asia/Seoul' AS kst_time\nFROM logs;\n```\n\n- to_timestamp() 함수로 epoch → timestamp 변환\n- AT TIME ZONE으로 KST 변환\n- 1714032000 → 2026-04-25 17:00:00 KST\n\n**케이스 2 — MySQL: Unix → KST datetime**\n\n```sql\nSELECT FROM_UNIXTIME(unix_ts) AS kst_time\nFROM logs;\n```\n\n- FROM_UNIXTIME() 자동 KST 변환 (서버 타임존 KST 가정)\n- 서버 UTC면 CONVERT_TZ() 추가 필요\n\n```sql\nSELECT CONVERT_TZ(FROM_UNIXTIME(unix_ts), 'UTC', 'Asia/Seoul') AS kst_time\nFROM logs;\n```" },
+        { heading: "케이스 3·4 — MongoDB와 BigQuery", body: "**케이스 3 — MongoDB: ISODate → KST**\n\n```javascript\ndb.logs.aggregate([\n  { $project: {\n    kst_time: { $dateToString: {\n      date: '$created_at',\n      format: '%Y-%m-%d %H:%M:%S',\n      timezone: 'Asia/Seoul'\n    }}\n  }}\n]);\n```\n\n- ISODate는 자동 UTC 저장\n- $dateToString으로 KST 변환 + 포맷팅\n\n**케이스 4 — BigQuery: Unix → KST**\n\n```sql\nSELECT TIMESTAMP_SECONDS(unix_ts) AS utc_time,\n       FORMAT_TIMESTAMP('%Y-%m-%d %H:%M:%S', \n         TIMESTAMP_SECONDS(unix_ts), 'Asia/Seoul') AS kst_str\nFROM `project.dataset.logs`;\n```\n\n- TIMESTAMP_SECONDS()로 epoch → UTC\n- FORMAT_TIMESTAMP() 3번째 인자에 'Asia/Seoul' 지정 → KST 출력" },
+        { heading: "케이스 5 + Toolkio 활용", body: "**케이스 5 — 마이그레이션 안전 체크 (모든 DB)**\n\nDB 마이그레이션 시 변환된 시간이 정확한지 검증하는 5가지 체크예요.\n\n1. **샘플 1건 확인**: Toolkio에 unix_ts 입력 → KST 결과와 SQL 결과 비교\n2. **자정 경계**: UTC 자정 ↔ KST 오전 9시 정확히 나오는지\n3. **윤초 처리**: 윤초가 들어간 시점 (1970~2026 누적 27초) 확인\n4. **밀리초 vs 초**: 자바스크립트는 밀리초, 유닉스는 초. 1000으로 나눠야 정확\n5. **시간대 누적**: 일부 DB는 변환을 두 번 해서 시간대가 18시간 차이나는 사고 발생\n\n**Toolkio 타임스탬프 변환기 활용**\n\n- 입력: 1714032000 (10자리 = 초) 또는 1714032000000 (13자리 = 밀리초)\n- 출력: 자동으로 UTC + KST 동시 표시\n- DB SQL 결과와 즉시 비교 → 1초라도 어긋나면 변환 로직 점검\n\n프로덕션 마이그레이션 전 샘플 100건 정도 Toolkio 검증 후 진행하면 사고 거의 없어요." },
+      ],
+      en: [
+        { heading: "Why timestamps matter in migration", body: "DB migrations often fail at timestamps because epoch integers and datetime types differ across DBs and timezones." },
+        { heading: "Cases 1-2: PostgreSQL, MySQL", body: "PostgreSQL uses to_timestamp() with AT TIME ZONE; MySQL uses FROM_UNIXTIME() and CONVERT_TZ()." },
+        { heading: "Cases 3-4: MongoDB, BigQuery", body: "MongoDB uses $dateToString aggregation; BigQuery uses TIMESTAMP_SECONDS and FORMAT_TIMESTAMP." },
+        { heading: "Case 5 + Toolkio", body: "Sample-verify 100 rows with Toolkio before production migration. Cross-check UTC vs KST output." },
+      ],
+    },
+    faq: [
+      { question: "Unix 타임스탬프 10자리 13자리 차이?", answer: "10자리는 초 단위(s), 13자리는 밀리초 단위(ms). JavaScript Date.now()는 13자리 ms, Unix epoch는 10자리 s. 변환 시 1000으로 곱하거나 나눠야 정확. Toolkio 자동 인식." },
+      { question: "마이그레이션 중 시간이 9시간 어긋나면?", answer: "타임존 오인. UTC를 KST로 한 번 더 변환했거나 KST를 UTC로 변환 안 했거나. 한 번에 한 번만 변환하는 게 핵심. 변환 로그 남기고 검증 권장." },
+      { question: "MongoDB의 ISODate 그대로 쓰면 안 돼요?", answer: "쓸 수 있지만 클라이언트 표시할 때 UTC라 KST 변환 필요. 백엔드에서 응답할 때 KST로 변환해서 ISO 8601 문자열로 보내는 게 안전." },
+      { question: "윤초 처리가 진짜 필요해요?", answer: "정밀 로깅·금융·과학 분야면 필요. 일반 웹 서비스는 무시해도 거의 무관. 1초 차이로 결정적 사고 나는 분야에서만 신경 쓰세요." },
+      { question: "타임스탬프 -1 또는 0이 들어오면?", answer: "-1은 보통 \"미설정\" 표시. 0은 1970-01-01 00:00:00 UTC. 마이그레이션 시 이 두 값을 NULL로 변환할지 그대로 둘지 정책 결정 필요." },
+    ],
+  },
+  {
+    slug: "markdown-table-alignment-4-tricks",
+    title: {
+      ko: "마크다운 표 정렬 4가지 트릭 — GitHub README·Notion 깔끔 정리",
+      en: "Markdown Table Alignment — 4 Tricks for Clean GitHub README and Notion",
+    },
+    description: {
+      ko: "마크다운 표를 깔끔하게 정렬하는 4가지 트릭을 정리했어요. 좌·중앙·우 정렬, 셀 줄바꿈, 셀 병합 우회, 한글 폭 맞추기까지 한 번에 풀이.",
+      en: "4 tricks for clean markdown tables: left/center/right alignment, line breaks in cells, merging workarounds, Korean text width.",
+    },
+    date: "2026-04-25",
+    toolId: "markdown-preview",
+    image: "/images/blog/markdown-table-alignment-tricks.webp",
+    keywords: ["마크다운 표", "마크다운 테이블", "GitHub README 표", "Notion 표", "마크다운 정렬"],
+    content: {
+      ko: [
+        { heading: "마크다운 표가 안 예쁜 이유", body: "마크다운 표는 만들기 쉬운데 정렬이 자주 깨져요. GitHub에서는 잘 보이는데 Notion에서는 어긋나고, 한글이 들어가면 셀 폭이 들쭉날쭉해지는 게 흔한 문제예요.\n\n4가지 트릭만 알면 어디서나 깔끔하게 보이는 표를 만들 수 있어요. Toolkio 마크다운 미리보기로 즉시 결과 확인하면서 따라가세요." },
+        { heading: "트릭 1·2 — 정렬과 줄바꿈", body: "**트릭 1 — 좌·중앙·우 정렬**\n\n```markdown\n| 좌측 | 중앙 | 우측 |\n|:-----|:----:|-----:|\n| 데이터 | 데이터 | 데이터 |\n```\n\n- `:---` 좌측 정렬 (기본)\n- `:---:` 중앙 정렬\n- `---:` 우측 정렬\n- 숫자 컬럼은 우측, 텍스트는 좌측, 헤더는 중앙이 보기 좋아요\n\n**트릭 2 — 셀 안 줄바꿈**\n\n```markdown\n| 항목 | 설명 |\n|------|------|\n| A | 첫째 줄<br>둘째 줄 |\n```\n\n- 셀 안에서 줄바꿈은 `<br>` 태그 사용\n- `\\n`이나 엔터 키로는 안 됨\n- GitHub·Notion 모두 호환" },
+        { heading: "트릭 3·4 — 셀 병합과 한글 폭", body: "**트릭 3 — 셀 병합 우회**\n\n마크다운은 표준 셀 병합 미지원. 우회 방법 2가지예요.\n\n```markdown\n| 카테고리 | 항목 | 값 |\n|---------|------|-----|\n| 음식 | 김치 | A |\n|     | 떡볶이 | B |\n|     | 라면 | C |\n```\n\n- 같은 카테고리는 첫 행만 채우고 나머지 빈칸\n- 시각적으로 병합처럼 보임\n\n**HTML 테이블 직접 사용 (GitHub Pages 호환)**\n\n```html\n<table>\n  <tr><td rowspan=\"3\">음식</td><td>김치</td><td>A</td></tr>\n  <tr><td>떡볶이</td><td>B</td></tr>\n  <tr><td>라면</td><td>C</td></tr>\n</table>\n```\n\n**트릭 4 — 한글 폭 맞추기**\n\n한글은 영문 대비 폭이 1.5~2배라 표가 어긋나요.\n\n```markdown\n| 한글     | 영문   |\n|----------|--------|\n| 안녕하세요 | Hi     |\n| 잘가요   | Bye    |\n```\n\n- 마크다운 원본에서 한글 셀 폭 맞추기 (스페이스로 패딩)\n- 렌더링 결과는 자동 정렬되니 시각적 정렬은 미리보기에서 확인" },
+        { heading: "Toolkio 마크다운 미리보기 활용 5단계", body: "표를 한 번에 깔끔하게 만드는 워크플로예요.\n\n1. **데이터 입력**: 표 구조 + 데이터 마크다운 작성\n2. **정렬 지정**: `:---`, `:---:`, `---:` 추가\n3. **줄바꿈**: 긴 셀에 `<br>` 추가\n4. **Toolkio 미리보기**: 좌측 입력 → 우측 즉시 렌더링 확인\n5. **GitHub/Notion 붙여넣기**: 미리보기 결과 OK 시 복사\n\n**자주 발생하는 실수 5가지**\n\n- `|` 앞뒤 스페이스 누락 → 일부 렌더러에서 인식 안 됨\n- 헤더 구분선(`---`) 칼럼 수 안 맞춤\n- 셀 안에 `|` 직접 사용 (탈출 `\\|` 필요)\n- 한글 폭 차이 무시 → 원본 어긋남 (렌더링은 OK)\n- 셀 안 빈 줄 → 표 분리됨\n\nToolkio 미리보기에서 이상하게 보이면 위 5가지 체크하세요. 거의 다 해결돼요." },
+      ],
+      en: [
+        { heading: "Why markdown tables break", body: "Tables look fine on GitHub but break on Notion, and Korean text widths are inconsistent." },
+        { heading: "Tricks 1-2: alignment and line breaks", body: "Use :--- for left, :---: for center, ---: for right alignment. Use <br> for in-cell line breaks." },
+        { heading: "Tricks 3-4: merge workaround and Korean width", body: "Markdown lacks cell merge — use empty cells or HTML <table> with rowspan. Pad Korean cells in source for visual alignment." },
+        { heading: "Toolkio preview workflow", body: "Type → preview → fix → paste. 5 common mistakes covered: spacing, header divider count, escaping pipes, Korean width, blank lines." },
+      ],
+    },
+    faq: [
+      { question: "GitHub와 Notion 둘 다 호환되는 표를 어떻게 만들어요?", answer: "기본 마크다운 + <br> 태그까지가 안전. 셀 병합은 GitHub만 HTML <table>로 지원. Notion은 마크다운 표를 자체 표로 변환하니 <br> 정도까지만 사용 권장." },
+      { question: "표 안에 코드 블록 넣을 수 있어요?", answer: "한 줄 인라인 코드 `code`는 가능. 여러 줄 코드 블록(```)은 표 셀 안에선 작동 안 해요. <br>로 줄바꿈하면서 인라인 코드 여러 개로 쪼개는 우회법 사용." },
+      { question: "표가 너무 길면 화면 밖으로 나가요", answer: "마크다운 자체엔 가로 스크롤 미지원. GitHub·Notion은 자동 스크롤. 정 안 되면 표를 두 개로 쪼개거나 HTML <table>로 max-width 지정." },
+      { question: "한글 셀 폭이 너무 들쭉날쭉해요", answer: "원본 마크다운만 어긋남. 렌더링 결과는 자동 정렬되니 미리보기에서 확인. 원본 정리는 VSCode 'Markdown All in One' 확장 추천." },
+      { question: "표 안 텍스트 정렬을 셀별로 다르게 가능해요?", answer: "마크다운으론 컬럼 단위까지만 가능. 셀별 다른 정렬은 HTML <td align='right'>처럼 직접 작성 필요. 일반적으론 컬럼 단위 정렬로 충분." },
+    ],
+  },
+  {
+    slug: "json-lint-debug-5-steps-syntax-error",
+    title: {
+      ko: "JSON Lint 디버깅 5단계 — 콤마·따옴표·이스케이프 에러 빠르게 찾기",
+      en: "JSON Lint Debug 5 Steps — Find Comma, Quote, Escape Errors Fast",
+    },
+    description: {
+      ko: "JSON 구문 에러 95%가 5가지 패턴이에요. 후행 콤마·따옴표 종류·이스케이프·BOM·중복 키까지 5단계 디버깅 가이드를 정리했어요.",
+      en: "95% of JSON errors fall into 5 patterns: trailing comma, quote types, escape, BOM, duplicate keys. 5-step debug guide.",
+    },
+    date: "2026-04-25",
+    toolId: "json-formatter",
+    image: "/images/blog/json-lint-debug-5-steps.webp",
+    keywords: ["JSON Lint", "JSON 디버깅", "JSON 에러", "JSON 검증", "JSON 포맷터"],
+    content: {
+      ko: [
+        { heading: "JSON 에러 95%는 5가지 패턴", body: "API 응답에서 JSON parse 에러 만나면 막막하죠. 그런데 실무에서 보는 JSON 에러 95%는 5가지 패턴 안에 들어가요. 이 5가지만 알면 디버깅 시간 90% 줄어들어요.\n\nToolkio JSON 포맷터에 의심 JSON 붙여넣고 단계별로 체크하면 어디가 문제인지 즉시 알 수 있어요." },
+        { heading: "단계 1·2 — 후행 콤마와 따옴표", body: "**단계 1 — 후행 콤마 (Trailing Comma)**\n\n가장 흔한 에러. JSON 표준은 후행 콤마 미허용.\n\n```json\n// 에러\n{\n  \"name\": \"홍길동\",\n  \"age\": 30,   ← 마지막 요소 뒤 콤마\n}\n\n// 정상\n{\n  \"name\": \"홍길동\",\n  \"age\": 30\n}\n```\n\nJavaScript 객체에선 허용되지만 JSON은 엄격. ESLint·Prettier가 자동으로 잡아내지만 수동 작성 시 주의.\n\n**단계 2 — 따옴표 종류**\n\nJSON은 큰따옴표(\")만 허용. 작은따옴표(') 사용 시 에러.\n\n```json\n// 에러\n{ 'name': 'value' }\n\n// 정상\n{ \"name\": \"value\" }\n```\n\n복사해서 붙여넣을 때 스마트 따옴표(“”)로 변환되는 사고도 있음. 일반 큰따옴표(\") 확인." },
+        { heading: "단계 3·4 — 이스케이프와 BOM", body: "**단계 3 — 이스케이프 누락**\n\n특수 문자는 백슬래시 이스케이프 필수.\n\n```json\n// 에러\n{ \"path\": \"C:\\Users\\test\" }\n\n// 정상\n{ \"path\": \"C:\\\\Users\\\\test\" }\n```\n\n**자주 놓치는 이스케이프 5가지**\n\n- `\\\"` → 큰따옴표\n- `\\\\` → 백슬래시\n- `\\n` → 줄바꿈\n- `\\t` → 탭\n- `\\u0000` → 유니코드\n\n**단계 4 — BOM (Byte Order Mark)**\n\nUTF-8 with BOM으로 저장된 파일은 첫 바이트에 보이지 않는 문자(EF BB BF)가 있어요. JSON 파서가 첫 문자를 못 읽어서 에러.\n\n**해결법**\n\n- 텍스트 에디터에서 'UTF-8 (BOM 없이)' 옵션으로 저장\n- VSCode: 우하단 인코딩 → UTF-8 선택 (UTF-8 with BOM 아님)\n- Notepad++: 인코딩 → UTF-8 (without BOM) 선택" },
+        { heading: "단계 5 + Toolkio 활용", body: "**단계 5 — 중복 키 (Duplicate Keys)**\n\nJSON 표준은 중복 키 처리가 모호. 일부 파서는 마지막 값만 받고, 일부는 에러.\n\n```json\n// 위험\n{\n  \"name\": \"A\",\n  \"name\": \"B\"   ← 중복\n}\n```\n\n실무에선 중복 키 자체를 에러로 취급. JSON 검증 도구가 잡아내요.\n\n**Toolkio JSON 포맷터 활용 5단계**\n\n1. 의심 JSON 붙여넣기\n2. 'Format' 클릭 → 들여쓰기 정리\n3. 빨간 에러 표시 → 정확한 행·열 표시\n4. 위 5가지 패턴 중 어디 해당하는지 확인\n5. 수정 → 재검증 → 통과 시 복사\n\n**팁: 큰 JSON에서 빠르게 찾기**\n\n- 1MB 이상 JSON은 화면에서 못 찾음\n- Toolkio는 행·열 단위 에러 위치 표시\n- 에러 위치 ± 50자 잘라내서 좁게 검사\n- 95% 5분 안에 해결됨\n\nJSON 에러는 어렵지 않아요. 5단계만 순서대로 따라가면 거의 다 풀려요." },
+      ],
+      en: [
+        { heading: "95% of JSON errors are 5 patterns", body: "Trailing comma, quote types, escapes, BOM, duplicate keys cover most real-world JSON parsing errors." },
+        { heading: "Steps 1-2: trailing comma, quotes", body: "JSON forbids trailing commas. Only double quotes allowed; single quotes and smart quotes fail." },
+        { heading: "Steps 3-4: escapes, BOM", body: "Escape special chars: \\\\ \\\" \\n \\t. UTF-8 BOM (EF BB BF) breaks parsers — save as UTF-8 without BOM." },
+        { heading: "Step 5 + Toolkio", body: "Duplicate keys are ambiguous in spec — most parsers reject. Toolkio shows exact row/col of error for fast fix." },
+      ],
+    },
+    faq: [
+      { question: "JSON과 JavaScript 객체 차이는?", answer: "JS 객체는 후행 콤마 허용, 키에 따옴표 생략 가능, 함수 포함 가능. JSON은 엄격해서 후행 콤마 금지, 키 큰따옴표 필수, 함수 미포함. JSON.parse() 통과해야 진짜 JSON." },
+      { question: "JSON5는 뭐가 달라요?", answer: "JSON5는 후행 콤마, 작은따옴표, 주석 모두 허용하는 확장 표준. 사람이 작성하기 편함. 다만 표준 JSON 파서로는 못 읽으니 JSON5 전용 파서 필요." },
+      { question: "JSON 안에 주석 쓸 수 있어요?", answer: "표준 JSON은 주석 미지원. /* */ 또는 // 사용 시 에러. 주석 필요하면 JSON5 사용 또는 별도 'comment' 키 추가." },
+      { question: "유니코드가 깨져 보여요", answer: "한글이 \\uXXXX 로 표시되는 건 정상. JSON은 ASCII 표현 권장. JSON.stringify() 옵션 ensure_ascii=False 또는 UTF-8 직접 출력으로 한글 그대로 가능." },
+      { question: "큰 JSON 파일 (10MB 이상) 어떻게 처리?", answer: "텍스트 에디터로 못 열면 jq CLI 도구나 streaming 파서(JSONStream) 사용. Toolkio도 1~2MB까지는 처리 가능하나 그 이상은 분할 권장." },
+    ],
+  },
+  {
+    slug: "crlf-lf-line-ending-windows-mac-converter",
+    title: {
+      ko: "CRLF LF 변환 — Windows·Mac 줄바꿈 호환과 Git 사고 방지",
+      en: "CRLF LF Converter — Windows/Mac Line Endings and Git Diff Issues",
+    },
+    description: {
+      ko: "CRLF와 LF 줄바꿈 차이로 발생하는 Git 사고를 방지하는 변환 가이드예요. .gitattributes 설정, autocrlf, 변환 도구 활용까지 한 번에 정리했어요.",
+      en: "Prevent Git diff catastrophes caused by CRLF/LF mismatch. Cover .gitattributes, autocrlf, conversion tools.",
+    },
+    date: "2026-04-25",
+    toolId: "case-converter",
+    image: "/images/blog/crlf-lf-line-ending-converter.webp",
+    keywords: ["CRLF LF 변환", "Windows Mac 줄바꿈", "Git autocrlf", "줄바꿈 변환", "line ending"],
+    content: {
+      ko: [
+        { heading: "CRLF와 LF 차이가 진짜 문제인가요?", body: "맞아요. 매일 일하다 보면 한 번씩 사고 나는 항목이 줄바꿈이에요.\n\n**CRLF (\\r\\n)**: Windows 표준. 텍스트 파일 한 줄 끝에 캐리지 리턴(CR) + 라인 피드(LF) 두 문자.\n\n**LF (\\n)**: Mac·Linux 표준. 라인 피드 한 문자.\n\n같은 코드 파일을 Windows와 Mac에서 번갈아 편집하면 Git이 줄바꿈 차이 때문에 \"전체 파일이 변경됐다\"고 표시. 실제 변경은 1줄인데 100줄 diff가 뜨는 사고가 생겨요." },
+        { heading: "방지 1·2 — .gitattributes와 autocrlf", body: "**방지 1 — .gitattributes 설정 (가장 강력)**\n\n프로젝트 루트에 `.gitattributes` 파일 생성:\n\n```\n* text=auto\n*.sh text eol=lf\n*.bat text eol=crlf\n*.png binary\n*.jpg binary\n```\n\n- `text=auto`: Git이 자동 감지\n- `eol=lf`: 강제 LF (셸 스크립트)\n- `eol=crlf`: 강제 CRLF (Windows 배치)\n- `binary`: 변환 안 함 (이미지·폰트)\n\n팀원 모두 .gitattributes 적용되니 OS 다 달라도 안전.\n\n**방지 2 — git config autocrlf**\n\n`git config --global core.autocrlf input` (Mac/Linux)\n`git config --global core.autocrlf true` (Windows)\n\n- input: commit 시 LF로 변환, checkout 시 그대로\n- true: commit 시 LF, checkout 시 CRLF로 변환\n- false: 변환 안 함 (.gitattributes 있으면 권장)" },
+        { heading: "방지 3·4 — 에디터와 도구", body: "**방지 3 — 에디터 기본 줄바꿈 통일**\n\nVSCode 설정 (`settings.json`):\n```json\n{\n  \"files.eol\": \"\\n\"\n}\n```\n\n- `\\n`: LF (Mac/Linux 호환)\n- `\\r\\n`: CRLF (Windows 전용)\n\n프로젝트 워크스페이스 단위로 LF 통일이 일반적. 모든 OS 호환.\n\n**방지 4 — 일괄 변환 도구**\n\n기존 파일 일괄 변환 시 명령줄 도구 활용.\n\n**dos2unix (Linux/Mac)**\n```bash\ndos2unix file.txt\nfind . -name '*.js' -exec dos2unix {} \\;\n```\n\n**unix2dos (Windows)**\n```bash\nunix2dos file.txt\n```\n\n**sed (모든 OS)**\n```bash\nsed -i 's/\\r$//' file.txt   # CRLF → LF\n```" },
+        { heading: "Toolkio 활용 + 사고 사례", body: "**Toolkio 변환 도구 활용 4단계**\n\n1. 변환할 텍스트 입력란에 붙여넣기\n2. 'CRLF → LF' 또는 'LF → CRLF' 선택\n3. 변환 결과 즉시 미리보기\n4. 복사 → 본인 프로젝트에 붙여넣기\n\n작은 파일·코드 일부 변환에 적합. 대량 파일은 dos2unix CLI 권장.\n\n**실제 사고 사례**\n\n사례 1: Mac 개발자가 작성한 셸 스크립트를 Windows에서 편집 후 Linux 서버에 올림 → 줄 끝에 보이지 않는 \\r 때문에 스크립트 실행 에러 (`bad interpreter: /bin/bash\\r`)\n\n해결: `.gitattributes`에 `*.sh eol=lf` 추가\n\n사례 2: Windows 팀과 Mac 팀이 같이 작업 → Git diff에 \"전체 파일 변경\" 표시. 실제 변경 라인 1개. PR 리뷰 불가능.\n\n해결: `core.autocrlf input` 통일 + `.gitattributes` 적용\n\n사례 3: SQL 파일 줄바꿈이 BOM과 함께 깨져서 DB 에러\n\n해결: 에디터 인코딩 'UTF-8 (BOM 없이)' + LF로 통일\n\n3가지 사고 예방하는 가장 안전한 방법은 **프로젝트 시작 시 `.gitattributes` 작성 + 팀 전체 autocrlf 통일**이에요. 30분 투자면 평생 사고 0." },
+      ],
+      en: [
+        { heading: "Why CRLF vs LF matters", body: "Windows uses CRLF, Mac/Linux LF. Cross-OS editing causes 'whole file changed' diffs in Git." },
+        { heading: "Prevent 1-2: .gitattributes, autocrlf", body: ".gitattributes is strongest. autocrlf input on Mac, true on Windows for cross-team consistency." },
+        { heading: "Prevent 3-4: editors and tools", body: "VSCode files.eol setting unifies. dos2unix/unix2dos for bulk conversion. sed works everywhere." },
+        { heading: "Toolkio + real cases", body: "Toolkio for small text. CLI for large files. 3 real incidents covered: shell script bad interpreter, full-file diff, SQL BOM error." },
+      ],
+    },
+    faq: [
+      { question: "CRLF가 안 보이는데 어떻게 확인해요?", answer: "VSCode 우하단에 'LF' 또는 'CRLF' 표시. 클릭하면 변경 가능. 또는 명령줄에서 `cat -A file.txt` 시 줄 끝에 `^M$` 보이면 CRLF, `$`만 보이면 LF." },
+      { question: ".gitattributes vs core.autocrlf 어느 쪽이 우선?", answer: ".gitattributes가 우선. 팀 단위로 통일된 정책 적용 가능하니 .gitattributes를 먼저 설정하고 core.autocrlf는 보조로." },
+      { question: "이미지·폰트도 변환되면 깨지나요?", answer: "네. 바이너리 파일은 변환 시 깨져요. .gitattributes에 `*.png binary`, `*.ttf binary` 명시하면 변환 안 함." },
+      { question: "Git에서 이미 CRLF로 들어간 파일 어떻게 정리?", answer: "`git rm --cached -r .` → `git reset --hard` → 다시 add → commit. 또는 `git add --renormalize .` 사용. .gitattributes 적용 후 한 번 정리하면 끝." },
+      { question: "Markdown·텍스트 파일은 어떻게 통일?", answer: "일반적으로 LF 통일 권장. .gitattributes에 `*.md text eol=lf` 명시. GitHub·GitLab도 LF 기반이라 호환성 좋아요." },
+    ],
+  },
 ];
