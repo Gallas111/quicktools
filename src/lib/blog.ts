@@ -14464,4 +14464,184 @@ export const blogPosts: BlogPost[] = [
       { question: "BMR 계산이 정확한가요?", answer: "추정치 (±10%). 실제 측정은 의료기관 (간접 측정 칼로리미터). 일반 사용은 Mifflin-St Jeor 공식으로 충분. 본인 체중 변화 보고 조정." },
     ],
   },
+  {
+    slug: "resume-self-intro-character-limits-naver-instagram-cards",
+    title: {
+      ko: "이력서·자기소개서 글자수 제한 정리 - 네이버·인스타·카드뉴스 한도",
+      en: "Resume and Self-intro Character Limits - Naver, Instagram, Card News",
+    },
+    description: {
+      ko: "이력서·자기소개서·SNS·블로그 글자수 제한을 한눈에 정리했어요. 공백 포함/제외 차이, 바이트 한도, 매체별 표시 길이까지 5분 안에 확인하세요.",
+      en: "Korean character limits for resumes, self-intros, blogs, social media all in one place.",
+    },
+    date: "2026-04-28",
+    toolId: "character-counter",
+    image: "/images/blog/resume-self-intro-character-limits-naver-instagram-cards.webp",
+    keywords: ["이력서 글자수", "자기소개서 글자수", "네이버 블로그 글자수", "인스타그램 글자수", "카드뉴스 글자수"],
+    content: {
+      ko: [
+        { heading: "이력서·자기소개서 표준 한도", body: "**기업 자기소개서 평균**\n\n- 항목당 500자 (가장 흔함)\n- 공백 포함 1,000자 (대기업 특정 항목)\n- 1,500자 이상 (특이 케이스)\n\n**대기업별 차이**\n\n- 삼성: 항목당 700자\n- 현대차: 항목당 1,000자\n- LG: 항목당 1,500자\n- SK: 항목당 1,000자\n- 카카오·네이버: 항목당 500~1,000자\n\n**이력서 특화 한도**\n\n- 자기소개 한 줄: 50자\n- 직무 요약: 200자\n- 경력 사항 (한 회사): 300~500자\n- 자기소개서 (전체): 1,500~3,000자\n\n**팁**\n\n공백 포함 vs 제외는 기업마다 다름. 입력란에 카운터 있는지 먼저 확인. 안전하게는 공백 제외 기준으로 작성." },
+        { heading: "SNS·블로그 글자수 한도", body: "**Twitter/X**\n\n- 트윗: 280자 (영문 기준)\n- 한국어: 약 140자 (한 글자 = 2바이트)\n- 프리미엄 가입: 25,000자\n\n**Instagram**\n\n- 캡션: 2,200자 (해시태그 포함)\n- 댓글: 2,200자\n- 바이오 (프로필): 150자\n- 첫 줄 (피드 표시): 125자 — 이 안에 후킹 필수\n\n**Facebook**\n\n- 게시물: 63,206자 (사실상 무제한)\n- 권장: 80자 이내 (참여율 최고)\n\n**네이버 블로그**\n\n- 제목: 50자\n- 본문: 무제한 (실질 한도 약 6만자)\n- 권장: 1,500~3,000자 (SEO 최적)\n\n**카카오톡 채널**\n\n- 메시지: 1,000자\n- 알림톡: 1,000자\n\n**유튜브**\n\n- 제목: 100자\n- 설명: 5,000자\n- 댓글: 10,000자" },
+        { heading: "카드뉴스·전단지 한도", body: "**인스타 카드뉴스**\n\n- 한 장 추천: 60~100자\n- 최대: 150자 (가독성 한계)\n- 핵심 메시지: 30자 이내\n- 한 줄당 12~16자 (모바일 가독성)\n\n**전단지·포스터**\n\n- 헤드라인: 15자\n- 서브 헤드라인: 30자\n- 본문 (1단): 100~200자\n- CTA: 10~15자\n\n**카카오톡 카드뉴스**\n\n- 한 장: 80~120자\n- 4~6장 시리즈 권장\n\n**팁**\n\n- 한 장에 너무 많이 = 안 읽음\n- 핵심 1개씩 — 다음 장으로 유도\n- 모바일 화면 기준 16자 × 6줄 = 96자가 황금 비율" },
+        { heading: "Toolkio 글자수 + 활용 팁", body: "**Toolkio 글자수 카운터**\n\n- 공백 포함/제외 동시 표시\n- 바이트 (UTF-8) 표시 — 한글 3바이트, 영문 1바이트\n- 단어 수·줄 수 표시\n- 실시간 입력 카운트\n\n**활용 시나리오**\n\n1. **자기소개서 작성**\n   - 항목별 카운트\n   - 공백 포함/제외 둘 다 확인\n   - 마감 직전 마지막 점검\n\n2. **SNS 작성**\n   - 인스타 첫 줄 125자\n   - 트위터 280자\n   - 카카오 1,000자\n\n3. **카드뉴스 디자인**\n   - 한 장 100자 룰\n   - 한 줄 16자 룰\n\n**자주 하는 실수**\n\n- 공백 포함 한도인데 공백 제외로 작성 → 부족\n- HTML 태그 포함 카운트 (블로그 쪽) → 실제보다 길게 보임\n- 이모지 카운트 (1~4 바이트 차이) → 의외의 초과\n\n팁: 마감 30분 전 카운터로 최종 점검 필수." },
+      ],
+      en: [
+        { heading: "Resume limits", body: "Korean corporate self-intro: 500-1,500 chars per item. Samsung 700, Hyundai/LG/SK 1000-1500." },
+        { heading: "SNS limits", body: "Twitter 280, Instagram 2200, Naver blog title 50, YouTube title 100." },
+        { heading: "Card news limits", body: "Per slide 60-150 chars. 16 chars per line on mobile. CTA under 15." },
+        { heading: "Toolkio + tips", body: "Counter shows with/without spaces, bytes. Watch for HTML tags and emoji counting." },
+      ],
+    },
+    faq: [
+      { question: "자기소개서 글자수 공백 포함인지 어떻게 확인하나요?", answer: "기업 입력란에 카운터 있으면 그 기준 따름. 카운터 없으면 채용 공고 안내 확인. 모호하면 공백 제외 기준으로 안전하게 작성." },
+      { question: "한글 한 글자가 몇 바이트인가요?", answer: "UTF-8 기준 3바이트 (대부분 시스템). EUC-KR 기준 2바이트 (구형 시스템). 일반적으론 3바이트로 계산." },
+      { question: "이모지가 글자수에 어떻게 카운트되나요?", answer: "기본 이모지 1~2 바이트, 결합 이모지 4~8 바이트. 시스템마다 다름. 정확한 카운트는 Toolkio 같은 도구로 측정." },
+      { question: "인스타 캡션 첫 줄에 후킹 왜 필수?", answer: "피드 표시는 첫 125자만. 그 다음은 \"더 보기\" 클릭. 첫 줄에 핵심 메시지 + 후킹 없으면 스크롤로 넘어감. 첫 줄이 광고 카피의 90%." },
+      { question: "네이버 블로그 SEO에 글자수 영향 있나요?", answer: "직접적 한도는 없지만 1,500자 미만은 SEO 평가 낮음. 1,500~3,000자가 가장 좋음. 너무 길어도 (5,000자+) 분산되어 효과 떨어짐." },
+    ],
+  },
+  {
+    slug: "qr-code-payment-korea-5-uses-kakao-toss",
+    title: {
+      ko: "QR 코드 결제·송금 5가지 활용 - 카카오·토스·삼성페이 실전",
+      en: "QR Code Payment 5 Uses in Korea - Kakao, Toss, Samsung Pay",
+    },
+    description: {
+      ko: "한국에서 QR 코드 결제·송금 활용하는 5가지 방법이에요. 카카오페이·토스·삼성페이·제로페이·네이버페이 차이와 매장 도입 가이드까지.",
+      en: "5 QR payment uses in Korea: Kakao, Toss, Samsung Pay, Zero Pay, Naver Pay.",
+    },
+    date: "2026-04-28",
+    toolId: "qr-generator",
+    image: "/images/blog/qr-code-payment-korea-5-uses-kakao-toss.webp",
+    keywords: ["QR 코드 결제", "카카오페이 QR", "토스 QR", "QR 송금", "제로페이"],
+    content: {
+      ko: [
+        { heading: "한국형 QR 결제 5종 비교", body: "**카카오페이 QR**\n\n- 4,500만 가입자 (국내 1위)\n- 매장 결제 + 친구 송금\n- 카카오톡 통합\n- 수수료: 매장 0.5~1.0%\n\n**토스 QR**\n\n- 2,000만 가입자\n- 송금 무료 (5만원 이하)\n- 빠른 UX\n- 수수료: 매장 0.5~0.8%\n\n**삼성페이 QR**\n\n- 갤럭시 폰 기본 탑재\n- NFC + QR 듀얼\n- 신용카드 연동 강함\n- 수수료: 신용카드 수수료 (2~3%)\n\n**제로페이**\n\n- 정부 주도 (소상공인)\n- 수수료 0% (8억원 이하 매장)\n- 30% 소득공제\n- 사용자 적음 (1,500만)\n\n**네이버페이 QR**\n\n- 네이버 통합 (쇼핑·블로그)\n- 포인트 적립 강함\n- 매장 적음\n- 수수료: 매장 0.7~1.2%" },
+        { heading: "활용 1·2 — 매장 도입·송금", body: "**활용 1 — 매장 QR 결제 도입**\n\n5분 만에 가능.\n\n- 카카오페이 비즈 신청 (사업자번호 필요)\n- 토스 비즈 등록\n- 매장 QR 스티커 인쇄\n- 결제 알림 받을 핸드폰 설정\n\n**도입 효과**\n\n- 카드 단말기 없어도 OK (소규모 매장)\n- 수수료 절감 (제로페이 0%)\n- 빠른 결제 (3초 내)\n- 비대면 결제 (코로나 이후 표준)\n\n**활용 2 — 친구 송금**\n\n- 카카오: 카카오톡 친구 → QR로 송금\n- 토스: 비밀번호 4자리만 → 즉시 이체\n- 1일 한도: 카카오 200만원, 토스 100만원\n- 무료 한도: 카카오 5만원/회, 토스 5만원/일\n\n**활용 사례**\n\n- 회식비 1/N 정산\n- 친구 빌린 돈 즉시 갚기\n- 결혼식·돌잔치 축의금\n- 부모님 용돈" },
+        { heading: "활용 3·4·5 — 이벤트·명함·세금", body: "**활용 3 — 이벤트 QR**\n\n오프라인 매장·전시 부스에서.\n\n- 출석 체크 QR\n- 설문조사 QR\n- 사은품 응모 QR\n- 인스타 팔로우 QR\n- 카카오톡 채널 추가 QR\n\n**활용 4 — 디지털 명함**\n\n- 이름·연락처·이메일 정보 QR\n- 명함 뒷면에 인쇄\n- 받은 사람이 스캔 → 자동 연락처 저장\n- 환경 친화 (종이 절감)\n\n**디지털 명함 정보 표준 (vCard)**\n\n```\nBEGIN:VCARD\nVERSION:3.0\nFN:홍길동\nORG:회사명\nTEL:010-1234-5678\nEMAIL:hong@example.com\nEND:VCARD\n```\n\n**활용 5 — 부가세 신고 QR (현금영수증)**\n\n- 매장에서 QR 스캔 → 자동 현금영수증 발행\n- 국세청 홈택스 연동\n- 소득공제 자동 적용\n- 영수증 보관 부담 X" },
+        { heading: "Toolkio QR + 도입 팁", body: "**Toolkio QR 생성기**\n\n- URL·텍스트·연락처·WiFi·이메일 등 다양한 형식\n- 색상·로고 추가 (브랜드 QR)\n- PNG·SVG 다운로드\n- 무료·무제한·로그인 X\n\n**매장 QR 도입 5단계**\n\n1. **사업자 등록증 준비** (개인사업자 OK)\n2. **카카오페이 비즈·토스 비즈 가입**\n3. **매장 QR 스티커 신청** (무료 발송)\n4. **결제 알림 설정** (소리 + 진동)\n5. **첫 결제 테스트** (본인 폰으로 1,000원 결제)\n\n**비용 비교 (월 매출 1,000만원 기준)**\n\n- 카드 단말기: 수수료 2.5% = 25만원\n- QR 결제: 수수료 0.5~1.0% = 5~10만원\n- 제로페이: 수수료 0% = 0원\n\n월 15~25만원 절약. 1년 200~300만원 차이.\n\n**자주 하는 실수**\n\n- QR 스티커 코팅 안 함 → 손님 손때로 인식 안 됨\n- 매장 깊숙이 부착 → 손님이 못 봄\n- 결제 알림 안 받음 → 결제 누락\n\n팁: 카운터 정면 + A5 크기 + 코팅 + 알림 30dB 이상." },
+      ],
+      en: [
+        { heading: "5 Korean QR services", body: "Kakao Pay (45M users), Toss (20M), Samsung Pay, Zero Pay (gov), Naver Pay." },
+        { heading: "Store and transfer", body: "Free 5min setup. P2P transfer free under 50k won. Zero Pay 0% fee for small biz." },
+        { heading: "Events, cards, tax", body: "Event check-in, vCard digital cards, auto cash receipt for tax filing." },
+        { heading: "Toolkio + tips", body: "Free unlimited QR. Store setup 5 steps. Save 15-25万원/month vs card terminals." },
+      ],
+    },
+    faq: [
+      { question: "QR 결제와 NFC 결제 어떤 게 좋아요?", answer: "QR은 단말기 없어도 가능 (스티커만), NFC는 단말기 필요. 소규모 매장은 QR, 큰 매장·프랜차이즈는 NFC + QR 둘 다." },
+      { question: "QR 결제 수수료가 정말 0%인가요?", answer: "제로페이는 매출 8억원 이하 매장 수수료 0%. 카카오·토스·네이버는 0.5~1.2% 부과. 단, 카드 결제 (2~3%)보다 절반 이하." },
+      { question: "외국인 관광객도 한국 QR 결제 쓸 수 있나요?", answer: "기본은 한국 계좌·카드 연동 필요해서 어려움. 알리페이·위챗페이는 한국 매장 일부 호환. 외국인은 신용카드가 일반적." },
+      { question: "QR 스티커 어떻게 만드나요?", answer: "Toolkio 같은 무료 QR 생성기 → PNG 다운로드 → 일반 인쇄소에서 코팅 인쇄 (1장 1,000~3,000원). 카카오·토스 비즈 신청하면 무료 스티커 발송." },
+      { question: "QR 결제할 때 보안 안전한가요?", answer: "결제 시 비밀번호·생체인증 필수라 도난당해도 결제 어려움. 다만 QR 자체는 누구나 스캔 가능 → 결제 비밀번호 절대 노출 X." },
+    ],
+  },
+  {
+    slug: "base64-5-uses-email-image-api-auth-webhook",
+    title: {
+      ko: "Base64 인코딩 5가지 실전 활용 - 이메일·이미지·API·인증·웹훅",
+      en: "Base64 5 Uses - Email, Image, API, Auth, Webhook",
+    },
+    description: {
+      ko: "Base64 인코딩이 어디에 쓰이는지 5가지 실전 사례로 정리했어요. 이메일 첨부·이미지 임베딩·API 헤더·Basic 인증·웹훅 검증 코드 예시 포함.",
+      en: "5 real-world Base64 uses: email attachments, image embedding, API, Basic auth, webhook.",
+    },
+    date: "2026-04-28",
+    toolId: "base64",
+    image: "/images/blog/base64-5-uses-email-image-api-auth-webhook.webp",
+    keywords: ["Base64 활용", "Base64 이메일", "Base64 이미지", "API Base64", "Basic 인증"],
+    content: {
+      ko: [
+        { heading: "Base64 기본 원리", body: "**Base64는 무엇인가**\n\n- 이진 데이터(바이너리)를 텍스트 64개 문자로 변환\n- 사용 문자: A-Z, a-z, 0-9, +, /, = (패딩)\n- 데이터 크기 약 33% 증가\n- 인코딩이지 암호화 아님 (보안 X)\n\n**왜 필요한가**\n\n- 텍스트만 처리하는 시스템에 바이너리 전달\n- 이메일·HTTP 헤더·JSON 등\n- URL 안전 변환\n\n**기본 변환 예시**\n\n- 원본: `Hello`\n- Base64: `SGVsbG8=`\n\n**URL Safe Base64**\n\n- 일반 Base64의 `+`, `/`을 `-`, `_`로 대체\n- URL 파라미터·쿼리스트링에 안전\n- JWT 토큰 등에 사용\n\n**디코딩**\n\n- Base64 → 원본 바이너리\n- 텍스트·이미지·PDF 등 복원" },
+        { heading: "활용 1·2 — 이메일·이미지", body: "**활용 1 — 이메일 첨부 (MIME)**\n\n이메일 표준은 텍스트만 전송. 첨부파일은 Base64 인코딩.\n\n```\nContent-Type: image/png; name=\"photo.png\"\nContent-Transfer-Encoding: base64\n\niVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAA...\n```\n\n**활용 사례**\n\n- 자동화 이메일 발송 (Python·Node.js)\n- API로 이메일 첨부 보내기 (SendGrid·Mailgun)\n- 첨부 데이터 데이터베이스 저장\n\n**활용 2 — 이미지 인라인 임베딩 (Data URL)**\n\nHTML·CSS에 이미지를 외부 파일 없이 직접 삽입.\n\n```\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEU...\" />\n```\n\n**언제 좋은가**\n\n- 작은 아이콘 (10KB 이하)\n- 외부 요청 줄여 빠른 로딩\n- 이메일 본문 이미지 (외부 차단 회피)\n\n**언제 나쁜가**\n\n- 큰 이미지 (Base64는 33% 증가)\n- HTTP 캐싱 안 됨\n- 가독성 떨어짐 (HTML 길어짐)" },
+        { heading: "활용 3·4 — API·인증", body: "**활용 3 — API 헤더 (바이너리 전송)**\n\nHTTP 헤더는 텍스트만 — 바이너리 전송 시 Base64.\n\n**예시 — 이미지 업로드 API**\n\n```\nPOST /upload\nX-Image-Data: iVBORw0KGgoAAAANSUhEU...\nContent-Type: application/json\n\n{\"filename\": \"photo.png\"}\n```\n\n**JSON 안에 바이너리 포함**\n\n```json\n{\n  \"name\": \"photo.png\",\n  \"data\": \"iVBORw0KGgoAAAANSUhEU...\",\n  \"size\": 12345\n}\n```\n\n**활용 4 — Basic 인증 (HTTP)**\n\nHTTP Basic Auth 표준.\n\n```\nAuthorization: Basic dXNlcjpwYXNz\n```\n\n**디코딩**\n\n- `dXNlcjpwYXNz` → `user:pass`\n- 형식: `username:password`\n\n**보안 주의**\n\n- Base64는 암호화 아님 — HTTPS 필수\n- 누구나 디코딩 가능 → 평문 노출\n- 운영에선 OAuth·JWT 권장" },
+        { heading: "활용 5 + Toolkio + 보안", body: "**활용 5 — 웹훅 서명 검증**\n\n웹훅 (GitHub·Slack·Stripe) 서명에 Base64 사용.\n\n**Stripe 웹훅 예시**\n\n```\nStripe-Signature: t=1614556800,v1=Base64인코딩서명...\n```\n\n**검증 단계**\n\n1. 페이로드 + 시크릿 → HMAC SHA256\n2. 결과를 Base64 인코딩\n3. 헤더의 v1과 비교\n4. 일치하면 정상 웹훅\n\n**Node.js 검증 코드**\n\n```javascript\nconst crypto = require('crypto');\nconst hash = crypto.createHmac('sha256', secret)\n  .update(payload)\n  .digest('base64');\nconst valid = hash === signature;\n```\n\n**Toolkio Base64 변환기**\n\n- 텍스트 ↔ Base64 양방향\n- 파일 → Base64 (이미지·PDF)\n- URL Safe 옵션\n- 결과 즉시 복사\n\n**보안 주의**\n\n- Base64는 암호화 아니에요 — 누구나 디코딩\n- 비밀번호·API 키를 Base64로 \"숨겼다\"고 안전한 게 아님\n- 진짜 보안은 AES·RSA 같은 암호화\n- HTTPS는 필수 (Base64만으론 평문 노출)\n\n**활용 결정 가이드**\n\n- 바이너리 → 텍스트 전송: ✅ Base64\n- 이메일 첨부: ✅ Base64 (MIME 표준)\n- API 인증: ⚠️ HTTPS + Basic 또는 OAuth\n- 비밀번호 저장: ❌ Base64 X (해시 사용)\n- 데이터 암호화: ❌ Base64 X (AES 사용)" },
+      ],
+      en: [
+        { heading: "Base64 basics", body: "Encode binary to 64-char text. 33% size increase. NOT encryption." },
+        { heading: "Email and image", body: "MIME email attachments, HTML data URL for small icons. Avoid for large images." },
+        { heading: "API and auth", body: "Binary in HTTP headers, JSON. Basic Auth: base64(user:pass). HTTPS required." },
+        { heading: "Webhook + Toolkio", body: "Stripe/GitHub webhook signature validation. Toolkio for instant conversion." },
+      ],
+    },
+    faq: [
+      { question: "Base64는 암호화인가요?", answer: "아닙니다. 인코딩(텍스트 변환)일 뿐. 누구나 디코딩 가능. 비밀번호·민감 정보를 Base64로 \"숨겼다\"고 안전한 게 아님. 진짜 보안은 암호화 (AES·RSA) 또는 해싱 (bcrypt)." },
+      { question: "Base64 vs URL Encoding 차이?", answer: "Base64는 바이너리 → 텍스트 전체 변환 (33% 증가). URL Encoding은 특수문자만 % 형식 변환 (가벼움). 용도 다름. URL 파라미터에 바이너리 넣으려면 Base64 + URL Encoding 둘 다 사용." },
+      { question: "Base64 디코딩이 깨지면 어떻게 하나요?", answer: "원인: 1) 패딩 = 누락 2) URL Safe vs 일반 Base64 차이 3) 줄바꿈·공백 포함. Toolkio는 자동 처리. 수동 디코딩 시 패딩 보충 후 시도." },
+      { question: "이미지를 Base64로 바꿀 때 크기 증가가 문제 안 되나요?", answer: "10KB 이하 아이콘은 OK (HTTP 요청 절감 효과). 큰 이미지는 일반 외부 파일이 빠름 (캐싱 작동). 1MB 이미지는 Base64 1.3MB → 매번 다운로드 → 느림." },
+      { question: "Basic Auth가 보안에 안전한가요?", answer: "HTTPS와 함께 쓰면 OK (전송 중 암호화). HTTPS 없으면 평문 노출 (Wireshark로 볼 수 있음). 운영 환경은 OAuth 2.0 또는 JWT 토큰 권장. 내부 API는 Basic 가능." },
+    ],
+  },
+  {
+    slug: "md5-vs-sha256-which-hash-when-security-speed",
+    title: {
+      ko: "MD5 vs SHA-256 - 어떤 해시를 써야 할까 (보안·속도 비교)",
+      en: "MD5 vs SHA-256 - Which Hash to Use (Security and Speed)",
+    },
+    description: {
+      ko: "MD5와 SHA-256의 차이를 보안·속도·용도별로 정리했어요. 비밀번호·파일 검증·디지털 서명에 어떤 해시가 적절한지 결정 가이드.",
+      en: "MD5 vs SHA-256 differences in security, speed, use cases. Decision guide.",
+    },
+    date: "2026-04-28",
+    toolId: "hash-generator",
+    image: "/images/blog/md5-vs-sha256-which-hash-when-security-speed.webp",
+    keywords: ["MD5 SHA-256 비교", "해시 함수 차이", "비밀번호 해시", "파일 무결성", "디지털 서명"],
+    content: {
+      ko: [
+        { heading: "MD5와 SHA-256 핵심 차이", body: "**MD5 (Message Digest 5)**\n\n- 출력: 128비트 (16바이트, 32 헥사 문자)\n- 발표: 1992년\n- 속도: 매우 빠름 (CPU 5GB/초)\n- 보안: ❌ 깨짐 (2004년 충돌 발견)\n- 용도: 단순 무결성 체크 (보안 X)\n\n**SHA-256 (Secure Hash Algorithm 256)**\n\n- 출력: 256비트 (32바이트, 64 헥사 문자)\n- 발표: 2001년\n- 속도: 빠름 (CPU 1.5GB/초, MD5의 1/3)\n- 보안: ✅ 안전 (충돌 미발견)\n- 용도: 보안 + 무결성 모두\n\n**길이 차이 시각화**\n\n```\nMD5:     5d41402abc4b2a76b9719d911017c592\nSHA-256: 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824\n```\n\n**핵심 결론**\n\n- 보안 필요 → SHA-256\n- 보안 무관·속도 우선 → MD5 OK\n- 비밀번호 → 둘 다 X (bcrypt·argon2 사용)" },
+        { heading: "보안 차이 — 충돌·역산", body: "**MD5의 약점**\n\n**1. 충돌 (Collision) 공격 가능**\n\n다른 두 입력이 같은 MD5 해시를 만들 수 있음.\n\n```\n입력 A: \"Hello\"      → 8b1a9953c4611296a827abf8c47804d7\n입력 B: 조작된 바이너리 → 8b1a9953c4611296a827abf8c47804d7\n```\n\n2004년 발견, 현재 노트북으로 분 단위 가능.\n\n**2. 사전 공격 (Preimage Attack)**\n\n- MD5 해시 → 원본 추정 가능 (특정 조건)\n- 짧은 비밀번호는 무지개 테이블로 즉시 깨짐\n\n**SHA-256의 강점**\n\n**1. 충돌 발견 안 됨**\n\n- 이론상 2^128 시도 필요 — 현실 불가능\n- Bitcoin·HTTPS 등 핵심 시스템 사용\n\n**2. 사전 공격 어려움**\n\n- 256비트 출력 → 2^256 가능성\n- 무차별 대입 시간 우주 나이 초과\n\n**실전 영향**\n\n- 디지털 서명: MD5 ❌ → SHA-256 필수\n- SSL/TLS 인증서: SHA-256 표준\n- Bitcoin: SHA-256 사용\n- 정부·금융: SHA-256 의무" },
+        { heading: "용도별 어떤 걸 써야 하나", body: "**1. 비밀번호 저장**\n\n- ❌ MD5: 깨지기 너무 쉬움\n- ❌ SHA-256: 너무 빠름 (무차별 대입 가능)\n- ✅ bcrypt: 의도적 느림 (적정 보안)\n- ✅ argon2: 최신 표준\n- ✅ scrypt: 메모리 기반\n\n**2. 파일 무결성 (다운로드 검증)**\n\n- ⚠️ MD5: 일반 파일 OK (악의적 변조 위험 시 X)\n- ✅ SHA-256: 표준 권장\n- ✅ SHA-3: 차세대\n\n**3. 디지털 서명·인증서**\n\n- ❌ MD5: 절대 X (충돌 공격)\n- ✅ SHA-256: 현재 표준\n- ✅ SHA-3: 미래 대비\n\n**4. 데이터베이스 인덱스**\n\n- ✅ MD5: 빠르고 충돌 거의 없음\n- ⚠️ SHA-256: 가능하지만 길이 증가 → 인덱스 크기↑\n\n**5. 캐시 키·중복 검사**\n\n- ✅ MD5: 충분 (속도 우선)\n- ✅ SHA-256: 더 안전하지만 오버킬\n\n**6. 블록체인·암호화폐**\n\n- ❌ MD5: 보안 핵심 분야 절대 X\n- ✅ SHA-256: Bitcoin 표준\n- ✅ Keccak-256: Ethereum" },
+        { heading: "Toolkio 해시 + 실전 가이드", body: "**Toolkio 해시 생성기**\n\n- MD5·SHA-1·SHA-256·SHA-512 모두 지원\n- 텍스트·파일 입력\n- 결과 즉시 복사\n- 무료·무제한\n\n**실전 활용 5가지**\n\n1. **다운로드 파일 무결성 검증**\n   - 공식 사이트 SHA-256 비교\n   - 변조·손상 확인\n\n2. **데이터 중복 검사**\n   - 큰 파일 같은지 빠르게 확인\n   - MD5로 충분 (속도 우선)\n\n3. **Git 커밋 해시**\n   - SHA-1 사용 (이력만 추적, 보안 X)\n\n4. **블록체인 트랜잭션**\n   - SHA-256 표준\n\n5. **API 서명**\n   - HMAC-SHA-256 표준\n\n**명령줄 도구**\n\n```bash\n# Linux/Mac\nmd5sum file.zip\nsha256sum file.zip\n\n# Windows PowerShell\nGet-FileHash file.zip -Algorithm MD5\nGet-FileHash file.zip -Algorithm SHA256\n```\n\n**자주 하는 실수**\n\n- MD5로 비밀번호 저장 → 즉시 깨짐\n- SHA-256으로 비밀번호 → 무차별 대입에 약함\n- HTTPS 없이 해시 전송 → 중간자 공격\n- 솔트 (Salt) 없이 해시 → 무지개 테이블 깨짐\n\n**결론**\n\n- 일반 무결성: MD5 또는 SHA-256\n- 보안 필요: SHA-256 무조건\n- 비밀번호: bcrypt·argon2 (해시 함수 X)" },
+      ],
+      en: [
+        { heading: "Core differences", body: "MD5: 128-bit, broken since 2004. SHA-256: 256-bit, secure standard." },
+        { heading: "Security gap", body: "MD5 collision attacks easy. SHA-256 collision impossible in practice." },
+        { heading: "Use cases", body: "Passwords: bcrypt/argon2. Files: SHA-256. DB index: MD5 OK. Crypto: SHA-256." },
+        { heading: "Toolkio + tips", body: "Toolkio supports all hashes. Use HMAC-SHA-256 for API. Always salt passwords." },
+      ],
+    },
+    faq: [
+      { question: "왜 MD5가 아직도 쓰이나요?", answer: "보안과 무관한 무결성 체크에 빠르고 편함. 파일 중복 검사·캐시 키·DB 인덱스는 MD5 충분. 단, 디지털 서명·보안 핵심 분야는 절대 X." },
+      { question: "SHA-256보다 더 안전한 해시 있나요?", answer: "SHA-3 (Keccak), SHA-512 더 안전. 다만 SHA-256이 현재 산업 표준. 미래 대비 SHA-3 채택 늘어나는 중. 비트코인·이더리움도 SHA-256·Keccak." },
+      { question: "비밀번호 해싱에 SHA-256 왜 안 되나요?", answer: "너무 빠름. 무차별 대입 (GPU로 초당 수십억) 가능. bcrypt·argon2는 의도적으로 느려서 (1초 1회) 무차별 대입 어려움. 비밀번호용 전용 함수." },
+      { question: "Salt가 뭐고 왜 필요한가요?", answer: "비밀번호에 무작위 문자열 추가 후 해시. 같은 비밀번호도 다른 해시 결과. 무지개 테이블 (사전) 공격 방어. bcrypt·argon2는 자동 솔트 포함." },
+      { question: "내 비밀번호 안전한지 어떻게 확인?", answer: "Have I Been Pwned (haveibeenpwned.com)에서 이메일 검색. 유출됐으면 즉시 변경. 매니저(1Password·Bitwarden) 사용 + 2FA 활성화." },
+    ],
+  },
+  {
+    slug: "korean-dummy-text-design-tools-comparison-5",
+    title: {
+      ko: "디자인 더미 텍스트 한국어 5종 - 사이트별 권장 도구 비교",
+      en: "Korean Dummy Text 5 Tools - Design Mockup Comparison",
+    },
+    description: {
+      ko: "디자인 시안·시제품에 쓸 한국어 더미 텍스트 5가지 옵션을 비교했어요. Lorem Ipsum의 한계, 한국어 대체 도구·생성기·자동 텍스트 사이트 정리.",
+      en: "5 Korean dummy text options compared. Alternatives to Lorem Ipsum.",
+    },
+    date: "2026-04-28",
+    toolId: "lorem-ipsum",
+    image: "/images/blog/korean-dummy-text-design-tools-comparison-5.webp",
+    keywords: ["한국어 더미 텍스트", "Lorem Ipsum 한국어", "디자인 시안 텍스트", "한글 더미", "샘플 텍스트"],
+    content: {
+      ko: [
+        { heading: "왜 한국어 더미 텍스트가 필요한가", body: "**Lorem Ipsum의 한계**\n\n- 라틴어 기반 → 한글 디자인엔 어색\n- 글자 너비 다름 → 실제 레이아웃과 차이\n- 행간·자간 검증 어려움\n- 클라이언트가 \"가독성 모르겠다\" 피드백\n\n**한국어 더미가 필요한 시나리오**\n\n1. 한글 웹사이트 디자인 시안\n2. 모바일 앱 UI 시제품\n3. 카드뉴스·SNS 콘텐츠\n4. 출판물 (책·잡지) 레이아웃\n5. 한글 폰트 테스트\n\n**좋은 더미 텍스트 조건**\n\n- 한글 자모 균등 분포 (모든 자음·모음 포함)\n- 길이 다양 (짧은 단어 + 긴 단어)\n- 문장 구조 자연스러움\n- 띄어쓰기 정상\n- 의미 너무 강하지 않음 (디자인 집중 방해 X)" },
+        { heading: "5가지 한국어 더미 텍스트 옵션", body: "**옵션 1 — 한국어 Lorem Ipsum 생성 사이트**\n\n- ko.lipsum.com\n- jaeminhan.github.io/korean-lorem-ipsum\n- 무료·즉시 사용\n- 단점: 의미 없는 한글 음절 나열 (자연스럽지 않음)\n\n**옵션 2 — 김춘수 시·한글 명문**\n\n- 김춘수 \"꽃\" 시 발췌\n- 김소월 \"진달래꽃\"\n- 윤동주 \"서시\"\n- 장점: 한글 자모 균등 분포\n- 단점: 의미 강해 디자인 집중 방해\n\n**옵션 3 — 위키백과 임의 문서**\n\n- ko.wikipedia.org/wiki/특수:임의 문서\n- 진짜 한국어 자연스러운 문장\n- 길이 다양\n- 단점: 매번 다른 내용\n\n**옵션 4 — Toolkio Lorem Ipsum + 한국어 변환**\n\n- 영문 Lorem Ipsum → 한국어 번역\n- 길이 조절 가능\n- 자연스러운 문장 구조\n- 무료·무제한\n\n**옵션 5 — 자체 작성 더미 (브랜드 적합)**\n\n- 본인 산업 관련 단어 + 자연스러운 문장\n- 클라이언트 시연 시 효과 큼\n- 단점: 시간 소요" },
+        { heading: "사이트별 권장 더미 선택 가이드", body: "**기업 웹사이트 시안**\n\n- 옵션 4 (Toolkio + 번역) 또는 옵션 5 (자체 작성)\n- 자연스러운 비즈니스 문장\n- 클라이언트 신뢰도 ↑\n\n**모바일 앱 UI 프로토타입**\n\n- 옵션 1 (한국어 Lorem) 또는 옵션 4\n- 짧은 텍스트 위주 (앱 특성)\n- 길이 빠르게 조절\n\n**카드뉴스·SNS**\n\n- 옵션 5 (자체 작성)\n- 실제 콘텐츠와 톤·느낌 비슷해야\n- 클라이언트 피드백 정확\n\n**출판물 (책·잡지)**\n\n- 옵션 2 (시·명문) 또는 옵션 4\n- 긴 문장 + 다양한 구조\n- 행간·자간 검증\n\n**한글 폰트 테스트**\n\n- \"동해물과 백두산이 마르고 닳도록\"\n- \"키스의 고유 조건은 함박꽃\"\n- 자모 균등 분포 우선\n- 폰트 디자이너 표준 문장" },
+        { heading: "Toolkio + 실전 팁", body: "**Toolkio Lorem Ipsum 활용**\n\n- 영문 Lorem 생성\n- 길이 조절 (단어 수·단락 수)\n- 즉시 복사\n- 한국어 번역은 별도 도구 (DeepL·Papago)\n\n**실전 워크플로**\n\n1. **시안 단계**: Lorem Ipsum (영문) → 빠른 레이아웃\n2. **검수 단계**: 한국어 더미 → 한글 가독성 확인\n3. **클라이언트 시연**: 자체 작성 더미 → 신뢰도\n4. **최종 단계**: 실제 콘텐츠로 교체\n\n**자주 하는 실수**\n\n- Lorem Ipsum 그대로 클라이언트 보여줌 → \"이거 무슨 내용?\"\n- 너무 강한 의미의 텍스트 → 디자인보다 텍스트에 집중\n- 모든 영역 같은 더미 → 단조로움\n- 길이 일정 → 실제 데이터 변동성 미반영\n\n**디자이너 추천 더미 모음**\n\n```\n짧은 문장: \"한국어 디자인 시안에 쓸 더미 텍스트입니다.\"\n중간 문장: \"이 영역은 본문 내용이 들어갈 자리예요. 폰트 가독성과 행간을 확인하기 좋습니다.\"\n긴 문장: \"제품 상세 설명이 들어갈 영역입니다. 실제 콘텐츠는 클라이언트 측에서 제공할 예정이며, 디자인 단계에서는 임시 더미 텍스트로 레이아웃을 검증합니다.\"\n```\n\n**효율 팁**\n\n- 자주 쓰는 더미 5종 미리 저장\n- Figma·Sketch 컴포넌트로 등록\n- 1초 만에 적용·교체" },
+      ],
+      en: [
+        { heading: "Why Korean dummy text", body: "Lorem Ipsum is Latin, doesn't reflect Korean character widths, kerning, line height." },
+        { heading: "5 options", body: "Korean Lorem sites, classic poems, Wikipedia, Toolkio + translation, custom written." },
+        { heading: "Use case guide", body: "Web: option 4-5. App: option 1-4. Cards: option 5. Print: option 2-4." },
+        { heading: "Toolkio + tips", body: "Lorem English → translate. 4-step workflow: rough → review → demo → real content." },
+      ],
+    },
+    faq: [
+      { question: "Lorem Ipsum 한국어 버전이 정말 필요한가요?", answer: "한글 디자인이라면 필수. 영문은 글자 너비·자간이 한글과 달라서 레이아웃 검증 부정확. 모바일 앱·카드뉴스 같이 한 줄 글자수 중요한 곳은 한국어 더미 우선." },
+      { question: "어떤 한국어 시·문장이 더미로 쓰기 좋아요?", answer: "한국어능력시험 (TOPIK) 지문, 김춘수·김소월 시, 위키백과 \"한국어\" 문서. 자모 균등 분포 + 자연스러운 문장 구조. 의미 너무 강하지 않은 게 좋음." },
+      { question: "한국어 더미와 실제 콘텐츠 차이가 있나요?", answer: "있음. 실제 콘텐츠는 브랜드 톤·전문 용어·CTA 표현 포함. 더미는 일반 문장. 디자인 검수 단계에선 더미 OK, 최종 단계에선 반드시 실제 콘텐츠 교체." },
+      { question: "디자이너 표준 한글 자모 균등 문장 있나요?", answer: "\"키스의 고유 조건은 함박꽃 입술이다\" (자모 거의 모두 포함), \"동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세\" (애국가). 한글 폰트 디자이너 표준." },
+      { question: "Toolkio Lorem Ipsum을 한국어로 바로 만들 수 없나요?", answer: "현재 Toolkio는 영문 Lorem만. 한국어는 DeepL·Papago로 번역하거나 ko.lipsum.com 같은 한국어 전용 사이트 사용. 향후 Toolkio 한국어 옵션 추가 검토 가치 있음." },
+    ],
+  },
 ];
