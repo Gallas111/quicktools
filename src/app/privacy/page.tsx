@@ -80,7 +80,7 @@ export default function PrivacyPage() {
             <h2 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">9. Contact</h2>
             <p>
               If you have questions about this Privacy Policy, please contact us at{" "}
-              <span className="font-medium text-gray-900 dark:text-white">contact@toolkio.com</span>.
+              <span className="font-medium text-gray-900 dark:text-white">kingyw102@gmail.com</span>.
             </p>
           </section>
         </div>
@@ -161,7 +161,7 @@ export default function PrivacyPage() {
           <h2 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">9. 문의</h2>
           <p>
             개인정보처리방침에 관한 문의는{" "}
-            <span className="font-medium text-gray-900 dark:text-white">contact@toolkio.com</span>
+            <span className="font-medium text-gray-900 dark:text-white">kingyw102@gmail.com</span>
             으로 연락해 주세요.
           </p>
         </section>
