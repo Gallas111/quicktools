@@ -14644,4 +14644,184 @@ export const blogPosts: BlogPost[] = [
       { question: "Toolkio Lorem Ipsum을 한국어로 바로 만들 수 없나요?", answer: "현재 Toolkio는 영문 Lorem만. 한국어는 DeepL·Papago로 번역하거나 ko.lipsum.com 같은 한국어 전용 사이트 사용. 향후 Toolkio 한국어 옵션 추가 검토 가치 있음." },
     ],
   },
+  {
+    slug: "bmi-calculation-normal-range-diet-guide",
+    title: {
+      ko: "체질량지수 BMI 계산법 — 정상 범위·대사 위험·다이어트 활용 가이드",
+      en: "BMI Calculation Guide — Normal Range, Health Risk, Diet Use",
+    },
+    description: {
+      ko: "BMI 계산식과 한국 기준 정상 범위, 대사 증후군 위험도, 다이어트 목표 설정 활용법을 정리했어요.",
+      en: "BMI formula, Korean normal range, metabolic risk, diet goal use cases.",
+    },
+    date: "2026-04-29",
+    toolId: "bmi-calculator",
+    image: "/images/blog/bmi-calculation-normal-range-diet-guide.webp",
+    keywords: ["BMI 계산", "체질량지수", "BMI 정상 범위", "BMI 다이어트", "대사 증후군"],
+    content: {
+      ko: [
+        { heading: "BMI 계산식 — 1초로 끝", body: "**공식**: BMI = 체중(kg) ÷ (키(m) × 키(m))\n\n**예시**: 키 170cm, 체중 70kg → 70 ÷ (1.70 × 1.70) = 24.2\n\n**WHO 국제 기준**\n\n- 18.5 미만: 저체중\n- 18.5~24.9: 정상\n- 25~29.9: 과체중\n- 30 이상: 비만\n\n**대한비만학회 한국인 기준 (더 엄격)**\n\n- 18.5 미만: 저체중\n- 18.5~22.9: 정상\n- 23~24.9: 과체중\n- 25~29.9: 비만 1단계\n- 30~34.9: 비만 2단계\n- 35 이상: 비만 3단계\n\n한국인은 같은 BMI에서 내장지방이 더 많아서 기준이 낮음." },
+        { heading: "BMI 한계 5가지", body: "BMI만 보면 안 돼요.\n\n1. **근육량 무시** — 운동선수는 BMI 30이어도 건강\n2. **체지방률 미반영** — 같은 BMI 22여도 체지방률 15%와 30% 다름\n3. **연령 차이 미반영** — 노인은 같은 BMI에서 근감소증 위험\n4. **인종 차이** — 한국·일본은 같은 BMI에서 당뇨 위험 높음\n5. **체형 무시** — 마른비만 (skinny fat) 식별 불가\n\n**보완 지표**\n\n- 허리둘레: 남 90cm, 여 85cm 이상 = 복부비만\n- 체지방률: 인바디 측정\n- 허리·엉덩이 비율 (WHR)\n- 근육량 (인바디 SMM)\n\n**가장 정확한 건강 평가**: BMI + 허리둘레 + 체지방률 3박자." },
+        { heading: "BMI별 건강 위험도", body: "**BMI 23~24.9 (과체중)**\n\n- 당뇨병 위험 1.5배\n- 고혈압 위험 2배\n- 지방간 위험 1.8배\n- 권장: 5kg 감량 목표\n\n**BMI 25~29.9 (비만 1단계)**\n\n- 심혈관 질환 위험 2배\n- 당뇨병 위험 3배\n- 무릎 관절 부담 4배\n- 권장: 식이 + 운동, 의사 상담\n\n**BMI 30 이상 (비만 2~3단계)**\n\n- 모든 만성질환 위험 급증\n- 사망률 1.5~2배\n- 권장: 의학적 비만 치료 (약물·수술 검토)\n\n**BMI 18.5 미만 (저체중)**\n\n- 골다공증 위험\n- 면역력 저하\n- 빈혈\n- 권장: 단백질 + 근력 운동" },
+        { heading: "Toolkio + 다이어트 활용 팁", body: "**Toolkio BMI 계산기 활용**\n\n1. 키·체중 입력 → BMI 즉시 계산\n2. WHO·한국 기준 동시 표시\n3. 정상 체중 범위 자동 계산\n4. 목표 체중 시뮬레이션\n\n**다이어트 목표 설정 4단계**\n\n- **1단계**: 현재 BMI 측정 (시작점)\n- **2단계**: 목표 BMI 설정 (보통 정상 상한 22.9)\n- **3단계**: 주 0.5~1kg 감량 (안전 속도)\n- **4단계**: 4주마다 재측정\n\n**예시 — 키 165cm, 현재 70kg (BMI 25.7)**\n\n- 정상 상한 BMI 22.9 → 목표 체중 62.3kg\n- 감량 목표: 7.7kg\n- 주 0.5kg 기준 → 약 15주 (3.5개월)\n- 식이 -300kcal/일 + 운동 -200kcal/일\n\n**다이어트 시 흔한 실수**\n\n- 너무 빠른 감량 (요요)\n- 근육량 무시 (체중만 본다)\n- 식이만 + 운동 X (대사 저하)\n- 단기 목표만 (장기 유지 X)" },
+      ],
+      en: [
+        { heading: "BMI formula", body: "BMI = weight(kg) / (height(m))^2. Korean standard is stricter than WHO." },
+        { heading: "5 limitations", body: "Ignores muscle, body fat %, age, ethnicity, body shape (skinny fat undetectable)." },
+        { heading: "Risk by BMI", body: "23-24.9: 1.5-2x diabetes/hypertension. 25-29.9: 2-3x. 30+: severe risk." },
+        { heading: "Diet use + tips", body: "Set target BMI 22.9. Lose 0.5-1kg/week. Re-measure monthly. Combine BMI + waist + body fat %." },
+      ],
+    },
+    faq: [
+      { question: "BMI 정상인데 배가 나왔어요. 괜찮은가요?", answer: "마른비만(skinny fat)일 가능성. 허리둘레(남 90cm, 여 85cm 초과) 또는 체지방률 측정 필수. BMI 정상이라도 복부비만은 당뇨·고혈압 위험 동일하게 높음." },
+      { question: "운동선수인데 BMI 30이에요. 비만인가요?", answer: "근육량 많으면 BMI 높아도 건강. BMI는 근육·지방 구분 안 함. 인바디로 체지방률 확인. 체지방률 남 25% 미만, 여 30% 미만이면 비만 아님." },
+      { question: "한국 기준이 WHO보다 엄격한 이유는?", answer: "한국인·일본인은 같은 BMI에서 내장지방이 서구인보다 많아서 당뇨·심혈관 위험 더 큼. 그래서 대한비만학회는 비만 기준을 25 이상으로 더 엄격하게 설정." },
+      { question: "어린이도 BMI 같은 기준 적용하나요?", answer: "어린이는 성장 중이라 성인 기준 적용 안 함. 소아·청소년 BMI 백분위수표 사용. 같은 나이·성별 또래 대비 위치로 판단. 소아과 진료 필수." },
+      { question: "BMI보다 정확한 건강 지표 있나요?", answer: "체성분 분석(인바디)이 더 정확. 체지방률·근육량·내장지방 수준 세부 측정. BMI는 빠른 스크리닝, 인바디는 정밀 평가. 둘 다 활용이 베스트." },
+    ],
+  },
+  {
+    slug: "dday-calculator-7-uses-exam-anniversary-deadline",
+    title: {
+      ko: "D-day 계산기 활용 7가지 — 시험·기념일·프로젝트 마감 자동 관리",
+      en: "D-day Calculator 7 Uses — Exam, Anniversary, Project Deadlines",
+    },
+    description: {
+      ko: "D-day 계산기 활용 7가지 — 시험·기념일·프로젝트 마감 자동 관리법. 동기부여·우선순위 설정·심리적 효과까지.",
+      en: "D-day calculator 7 uses for exams, anniversaries, project deadlines.",
+    },
+    date: "2026-04-29",
+    toolId: "dday-calculator",
+    image: "/images/blog/dday-calculator-7-uses-exam-anniversary-deadline.webp",
+    keywords: ["D-day 계산", "디데이 계산기", "시험 카운트다운", "기념일 계산", "마감일 관리"],
+    content: {
+      ko: [
+        { heading: "D-day 효과 — 동기부여 심리학", body: "**왜 D-day가 효과적인가**\n\n- **시간 시각화** — 추상적 '미래'를 구체적 '7일 후'로 변환\n- **긴급감 형성** — 마감 임박 시 집중력 2~3배 (Parkinson's Law)\n- **진행률 측정** — 매일 D-day 갱신으로 성취감\n- **목표 명확화** — 모호한 '나중에' → 명확한 '5월 15일까지'\n\n**연구 결과**\n\n- 명확한 마감 + 카운트다운 = 작업 완료율 67% 상승 (Harvard Business Review)\n- 시각적 D-day 표시 = 미루기 30% 감소\n- 매일 알림 = 목표 달성률 2배\n\n**D-day 잘못 쓰면 역효과**\n\n- 너무 먼 미래 (D-365): 긴급감 없음\n- 너무 많은 D-day: 주의 분산\n- 비현실적 마감: 스트레스 + 포기" },
+        { heading: "활용 1~3 — 시험·자격증·취업", body: "**1. 시험 카운트다운**\n\n- 수능, 토익, 자격증 시험\n- 매일 책상에 D-day 표시\n- 주차별 학습 계획 역산\n- 예시: 수능 D-100 → 단원별 학습 분배\n\n**2. 자격증 취득 일정**\n\n- 시험 일자 → 등록 마감 → 학습 시작\n- 단계별 D-day (D-90: 학습 시작, D-30: 모의고사, D-7: 최종 정리)\n- 합격수기 단계별 D-day 분석 활용\n\n**3. 취업 준비**\n\n- 공채 마감일 기준 자기소개서·면접 준비\n- 인적성 시험 D-day\n- 면접일 D-7 → 모의 면접 5회 일정\n- 입사 첫날 D-day → 회사 사전 학습" },
+        { heading: "활용 4~7 — 기념일·프로젝트·목표·여행", body: "**4. 기념일 관리**\n\n- 100일·1주년·결혼기념일 D-day\n- 부모님 생신·자녀 생일\n- D-30 알림 → 선물·예약 준비\n- D-7 → 식당 예약·이벤트 디테일\n\n**5. 프로젝트 마감 관리**\n\n- 회사 프로젝트 납기일\n- 단계별 마일스톤 D-day\n- 팀 공유 캘린더 + D-day 표시\n- 예시: 신제품 출시 D-90 → 시제품 D-60 → 마케팅 D-30 → 출시 D-0\n\n**6. 개인 목표 추적**\n\n- 다이어트 목표일 (3개월)\n- 책 출간 목표 (6개월)\n- 운동 챌린지 (30일)\n- 학습 목표 (영어 회화 100일)\n\n**7. 여행·이사·이벤트**\n\n- 여행 출발일 D-day → 항공권·숙박 예약 일정\n- 이사 D-day → 짐 정리·계약·청소 일정\n- 결혼식 D-day → 단계별 준비 (드레스, 청첩장, 식순)" },
+        { heading: "Toolkio D-day + 효과적 활용 팁", body: "**Toolkio D-day 계산기 활용**\n\n1. 목표 날짜 입력\n2. D-day 자동 계산\n3. 남은 일수·시간·분 단위 표시\n4. 과거 날짜는 +day로 표시 (기념일)\n\n**효과 극대화 5가지 팁**\n\n- **눈에 보이는 곳에** — 책상·핸드폰 잠금화면·노트북\n- **단계별 D-day** — 1개 마감보다 5개 단계 D-day\n- **현실적 목표** — D-7~D-90 사이가 가장 효과적\n- **매일 갱신** — 자동화 (위젯·알림)\n- **함께 공유** — 친구·가족·팀과 D-day 공유 시 책임감 ↑\n\n**D-day 함정 5가지**\n\n- D-day만 보고 진척 없음 (계획 없는 카운트다운)\n- 너무 많은 D-day → 우선순위 혼란\n- 마감 임박 시 벼락치기 (D-day 효과 부정)\n- 실패 시 좌절 (D-day 망상)\n- D-day 의존 (스스로 동기부여 못 함)\n\n**추천 D-day 조합**\n\n- 큰 목표 1개 (D-90~D-180)\n- 중간 목표 3개 (D-30~D-60)\n- 단기 목표 5개 (D-7~D-14)\n- 일일 작업 (D-1~D-3)" },
+      ],
+      en: [
+        { heading: "D-day psychology", body: "Visualizes time, creates urgency, measures progress. Parkinson's Law boosts focus 2-3x." },
+        { heading: "Uses 1-3", body: "Exams, certifications, job hunting. Multi-stage D-days (D-90 study, D-30 mock, D-7 review)." },
+        { heading: "Uses 4-7", body: "Anniversaries, projects, personal goals, travel/wedding planning." },
+        { heading: "Toolkio + tips", body: "Visible spot, multi-stage, realistic 7-90 days, daily auto-update, shared accountability." },
+      ],
+    },
+    faq: [
+      { question: "D-day가 너무 멀면 효과 없나요?", answer: "맞아요. D-180 이상은 긴급감 약함. D-90~D-30 사이가 가장 효과적. 큰 목표는 단계별 D-day(D-180 → D-90 → D-30 → D-7)로 분할." },
+      { question: "D-day 알림 빈도는 어느 정도가 좋나요?", answer: "매일 1회(아침 또는 저녁)가 효과적. 너무 자주(시간마다)는 알림 무시 시작. D-7 이내는 매일 2회(아침·저녁) 권장." },
+      { question: "기념일 D-day와 마감 D-day 차이는?", answer: "기념일은 +day(지난 날 카운트), 마감은 D-day(남은 날). Toolkio 계산기는 둘 다 자동 처리. 결혼기념일 +1825일(5주년)로 표시." },
+      { question: "팀 프로젝트 D-day 공유는 어떻게?", answer: "구글 캘린더·노션·슬랙에 D-day 표시. 팀 단위 카운트다운 위젯. 매주 1회 'D-X 진척률 회의' 정례화. 단계별 마일스톤 표시." },
+      { question: "D-day 실패 시 어떻게 회복하나요?", answer: "실패 분석 → 새 D-day 재설정. '실패한 D-day' 자체보다 '다음 시도' 중요. 너무 비현실적이었다면 목표 자체 재조정. 실패 → 학습 → 재도전 사이클." },
+    ],
+  },
+  {
+    slug: "salary-calculator-2026-net-pay-tax-insurance",
+    title: {
+      ko: "연봉 실수령액 계산 2026 — 4대보험·소득세·세후 정확히 보는 법",
+      en: "Salary Calculator 2026 — Net Pay, 4 Insurances, Income Tax",
+    },
+    description: {
+      ko: "연봉 실수령액 계산법 2026. 4대보험·소득세·지방세 공제 단계, 비과세 항목, 연봉 인상 시 실수령 변화까지 정리.",
+      en: "2026 net salary calculation. 4 insurances, income tax, non-taxable items.",
+    },
+    date: "2026-04-29",
+    toolId: "salary-calculator",
+    image: "/images/blog/salary-calculator-2026-net-pay-tax-insurance.webp",
+    keywords: ["연봉 실수령액", "세후 연봉", "4대보험 계산", "월급 실수령", "연봉 계산기"],
+    content: {
+      ko: [
+        { heading: "연봉 → 실수령액 공제 구조 (2026)", body: "**연봉 5,000만원 예시**\n\n- 월 급여(세전): 약 4,166,667원\n- 4대보험 (근로자 부담분):\n  - 국민연금 4.5% — 약 187,500원\n  - 건강보험 3.545% — 약 147,710원\n  - 장기요양 0.4591% — 약 19,127원\n  - 고용보험 0.9% — 약 37,500원\n  - **소계**: 약 391,837원\n- 소득세 (간이세액표): 약 165,540원\n- 지방소득세 (소득세 10%): 약 16,554원\n- **총 공제**: 약 573,931원\n- **월 실수령**: 약 3,592,736원\n- **연 실수령**: 약 4,311만원\n\n실수령률 약 86.2%. 연봉 5천만원 → 실수령 4,311만원.\n\n**연봉별 실수령 비율 (대략)**\n\n- 3천만원: 약 89% (267만원/월)\n- 4천만원: 약 87% (290만원/월)\n- 5천만원: 약 86% (359만원/월)\n- 6천만원: 약 84% (421만원/월)\n- 8천만원: 약 81% (540만원/월)\n- 1억원: 약 78% (650만원/월)\n\n연봉 올라갈수록 실수령률 떨어짐 (누진세 효과)." },
+        { heading: "4대보험 세부 (2026 기준)", body: "**국민연금 (기준 소득월액 기준)**\n\n- 근로자 4.5% + 회사 4.5% = 9%\n- 상한선 월 590만원 (소득 무관 53.1만원 한도)\n- 노후 연금 수령\n\n**건강보험 (보수월액 기준)**\n\n- 근로자 3.545% + 회사 3.545% = 7.09%\n- 상한선 없음\n- 의료비 보장\n\n**장기요양보험 (건강보험료의 12.95%)**\n\n- 건강보험에 자동 포함\n- 노인 요양 서비스 재원\n\n**고용보험 (실업급여)**\n\n- 근로자 0.9% + 회사 1.05~1.55%\n- 상한선 없음\n- 실업·육아휴직 급여\n\n**산재보험**\n\n- 회사 100% 부담 (근로자 부담 없음)\n- 업종별 0.7~18.6%\n\n**총 부담률 (근로자)**\n\n- 4대보험 합계 약 9.4%\n- + 소득세·지방세 = 약 12~22% (연봉별)" },
+        { heading: "비과세 항목 — 세금 절약법", body: "**대표 비과세 항목**\n\n1. **식대** — 월 20만원까지 비과세\n2. **자가운전보조금** — 월 20만원까지\n3. **출산·보육 수당** — 월 20만원까지 (만 6세 이하)\n4. **육아휴직급여** — 전액 비과세\n5. **연구활동비** — 월 20만원까지 (연구원)\n6. **벽지수당** — 월 20만원까지\n7. **건강보험·국민연금 본인 부담분** — 소득공제\n\n**연봉 5,000만원 + 식대 240만원 비과세 적용 시**\n\n- 과세 대상: 4,760만원\n- 세금 절약: 약 30~40만원/년\n\n**비과세 활용 팁**\n\n- 채용 협상 시 '식대·운전보조금 별도' 요청\n- 회사 복지로 분리 (직접 지급 대신 회사 카드)\n- 연말정산 시 비과세 항목 누락 점검\n\n**비과세 한도 초과 시**\n\n- 한도 넘는 부분은 과세 대상\n- 식대 25만원 → 5만원 과세, 20만원 비과세" },
+        { heading: "Toolkio + 연봉 협상 활용 팁", body: "**Toolkio 연봉 계산기 활용**\n\n1. 연봉(세전) 입력\n2. 4대보험·소득세 자동 계산\n3. 비과세 항목 옵션 추가\n4. 월 실수령·연 실수령 동시 표시\n5. 연봉 인상 시뮬레이션 (예: +500만원 시 실수령 변화)\n\n**연봉 협상 시 5가지 체크**\n\n- **세전 vs 세후** — 협상은 세전, 비교는 세후\n- **비과세 분리** — 식대 240만원 비과세 추가 시 실수령 30~40만원/년 ↑\n- **성과급 포함 여부** — 약정 vs 변동\n- **복지 환산** — 식대·교통비·교육비 합산\n- **퇴직금 누적** — 1년 평균 임금의 1개월\n\n**연봉 인상 vs 실수령 인상 차이**\n\n- 연봉 5천 → 6천 (+1천만원, +20%)\n- 실수령: 4,311 → 5,055만원 (+744만원, +17%)\n- 차이 256만원은 세금·보험으로 사라짐\n- 누진세 영향으로 인상률 감소\n\n**이직 시 실수령 비교 표 작성**\n\n```\n현 직장: 연 5천(세전) - 4,311(세후) - 식대 0\n이직 A:  연 5,500 - 4,712 - 식대 240\n이직 B:  연 5,200 - 4,485 - 식대 360\n```\n\n실수령 + 비과세 + 복지 종합 비교 필수." },
+      ],
+      en: [
+        { heading: "Net pay structure 2026", body: "Salary 50M KRW: 4 insurances ~9.4% + income tax + local tax = ~14% deduction. Net ~86%." },
+        { heading: "4 insurances detail", body: "Pension 4.5% + Health 3.545% + Long-term care 12.95% of health + Unemployment 0.9%." },
+        { heading: "Non-taxable items", body: "Meal 200K, car 200K, childcare 200K, parental leave 100% non-taxable." },
+        { heading: "Toolkio + tips", body: "Negotiate gross + non-taxable separately. Compare net + benefits, not gross." },
+      ],
+    },
+    faq: [
+      { question: "연봉이 똑같은데 실수령이 다른 이유는?", answer: "비과세 항목 차이가 큼. 식대 20만원·운전보조금 20만원·연구활동비 같은 비과세 적용 시 같은 연봉에도 실수령 30~80만원/년 차이. 채용 계약 시 비과세 항목 명시 요청." },
+      { question: "연봉 인상보다 비과세 늘리는 게 나은가요?", answer: "낮은 연봉 구간에선 인상이 유리. 고연봉(7천만원+)에선 누진세 효과로 비과세가 더 효율적. 식대·교육비 비과세는 100% 절세." },
+      { question: "프리랜서·사업자도 실수령 계산이 같나요?", answer: "다름. 프리랜서는 4대보험 직접 가입(이중 부담 없음, 단 100% 본인 부담), 사업소득세는 종합소득세로 별도 계산." },
+      { question: "성과급은 실수령 계산에 포함되나요?", answer: "포함되지만 별도 계산. 정기 성과급은 평균 임금 합산, 일시 보너스는 받는 달에만 세율 인상. 성과급 천만원 받으면 그 달만 세율 6~38% 적용 후 환급." },
+      { question: "연봉 1억 실수령 얼마인가요?", answer: "약 7,800만원/년 (월 650만원). 실수령률 78%. 4대보험 540만원 + 소득세·지방세 1,660만원 공제. 비과세 활용 시 약 7,900만원까지 가능." },
+    ],
+  },
+  {
+    slug: "percent-calculator-discount-increase-decrease-5-uses",
+    title: {
+      ko: "할인율·증감률 계산법 — 쇼핑·재테크·통계 활용 5가지",
+      en: "Percent Calculator — Discount, Increase/Decrease 5 Uses",
+    },
+    description: {
+      ko: "할인율, 증감률, 부가세, 이자율, 통계 비교까지 퍼센트 계산 5가지 실전 활용법과 흔한 실수를 정리.",
+      en: "Percent calculation 5 real-world uses: discount, growth rate, VAT, interest, statistics.",
+    },
+    date: "2026-04-29",
+    toolId: "percent-calculator",
+    image: "/images/blog/percent-calculator-discount-increase-decrease-5-uses.webp",
+    keywords: ["할인율 계산", "증감률 계산", "퍼센트 계산", "부가세 계산", "이자율 계산"],
+    content: {
+      ko: [
+        { heading: "퍼센트 계산 기본 공식", body: "**3가지 핵심 공식**\n\n1. **A의 X%는?** = A × (X / 100)\n   - 예: 50,000원의 30% = 50,000 × 0.3 = 15,000원\n\n2. **A는 B의 몇 %인가?** = (A / B) × 100\n   - 예: 30,000원은 50,000원의 60%\n\n3. **A에서 B로 변화율** = ((B − A) / A) × 100\n   - 예: 100 → 130: ((130-100)/100) × 100 = +30%\n   - 예: 100 → 70: ((70-100)/100) × 100 = -30%\n\n**자주 헷갈리는 차이**\n\n- 30% 인상 ≠ 30%p 인상\n- 30% 할인 + 30% 할인 ≠ 60% 할인\n- 1.3 → 1.0이 -23% (1.0 → 1.3이 +30%와 다름)\n\n**복합 할인 계산**\n\n- 30% 할인 → 다시 20% 추가 할인\n- 100,000 × 0.7 × 0.8 = 56,000\n- 총 할인율 44% (50%가 아님)" },
+        { heading: "활용 1~3 — 쇼핑·연봉·통계", body: "**1. 쇼핑 할인 계산**\n\n- 50,000원 35% 할인 → 32,500원\n- 추가 카드 5% → 30,875원\n- 적립 3% → 실 부담 29,949원\n- 할인 적용 순서 중요 (선할인 → 카드 → 적립)\n\n**2. 연봉·임금 인상**\n\n- 4,500만원 → 5,000만원: +11.1%\n- 실수령 기준 확인 (세금·보험 누진)\n- 인플레이션 4% 차감 시 실질 인상 7.1%\n- 5년 누적 인상률 = (1.05)^5 = 27.6% (단순 합산 25% ≠)\n\n**3. 통계 비교 — 증감률 정확히**\n\n- 회사 매출 작년 100억 → 올해 130억: +30%\n- 부서별 점유율 변화\n- 소비자 물가 지수 (전년 대비)\n- 흔한 오류: 2배 = 100% 증가 (200% 증가 X)" },
+        { heading: "활용 4~5 — 부가세·이자율", body: "**4. 부가세 (VAT) 계산**\n\n- 한국 부가세 10%\n- 공급가액 → 부가세 포함 금액: ×1.10\n- 부가세 포함 금액 → 공급가액: ÷1.10\n- 부가세 자체: 부가세 포함 금액 ÷ 1.10 × 0.10\n\n**예시**\n\n- 공급가액 100,000원 → 부가세 포함 110,000원\n- 부가세 포함 110,000원 → 공급가액 100,000원, 부가세 10,000원\n- 영수증 110,000원 = 100,000 + 10,000\n\n**5. 이자율·복리 계산**\n\n- 단리: 원금 × 이자율 × 기간\n- 복리: 원금 × (1 + 이자율)^기간\n- 1,000만원 연 5% 5년\n  - 단리: 1,000 × 0.05 × 5 = 250만원 이자\n  - 복리: 1,000 × (1.05)^5 - 1,000 = 276만원 이자\n  - 차이 26만원 (5년 기준)\n\n**복리 마법 (장기)**\n\n- 1,000만원 연 5% 30년\n  - 단리: +1,500만원 (총 2,500)\n  - 복리: +3,322만원 (총 4,322)\n  - 차이 1,822만원 (단리의 2배 이상)" },
+        { heading: "Toolkio + 흔한 실수 5가지", body: "**Toolkio 퍼센트 계산기 활용**\n\n1. A의 X% 계산\n2. A는 B의 몇 % 계산\n3. A → B 증감률 계산\n4. 할인율·할증률 시뮬레이션\n5. 복합 할인 자동 계산\n\n**흔한 실수 5가지**\n\n- **30% + 20% = 50% 착각** — 실제는 44% (복합 할인)\n- **2배 = 200% 증가 착각** — 실제는 100% 증가\n- **30% 인상 후 30% 할인 = 원위치 착각** — 실제는 -9% (100→130→91)\n- **퍼센트(%)와 퍼센트포인트(%p) 혼동** — 5% → 7%는 +2%p (40% 증가가 아님)\n- **단리·복리 혼동** — 장기 투자는 복리, 단기는 단리\n\n**비즈니스 퍼센트 활용**\n\n- **마진율 vs 마크업 차이**\n  - 마진율: 이익 / 판매가 = 30%\n  - 마크업: 이익 / 원가 = 43%\n- **이익률 분류**\n  - 매출총이익률 = (매출 - 매출원가) / 매출\n  - 영업이익률 = 영업이익 / 매출\n  - 순이익률 = 당기순이익 / 매출\n\n**투자 수익률 계산**\n\n- 매수가 100만원 → 매도가 130만원\n- 수익률 30%, 수익액 30만원\n- 보유 기간 1년 = 연 30%\n- 보유 기간 6개월 = 연 환산 60%\n- 세금 (양도세 22%) 차감 시 실 수익 23.4%" },
+      ],
+      en: [
+        { heading: "Basic formulas", body: "X% of A = A * X/100. A is X% of B = A/B * 100. Change rate = (B-A)/A * 100." },
+        { heading: "Uses 1-3", body: "Shopping discounts (compound), salary raise (vs inflation), statistics (year-over-year)." },
+        { heading: "Uses 4-5", body: "VAT 10% (multiply 1.10), interest (simple vs compound, 30yr makes 2x difference)." },
+        { heading: "Toolkio + 5 mistakes", body: "30%+20% != 50%. 2x != 200%. % vs %p. Simple vs compound. Margin vs markup." },
+      ],
+    },
+    faq: [
+      { question: "30% 할인 후 20% 추가 할인 = 50% 할인 아닌가요?", answer: "아니에요. 100원 → 70원 → 56원 = 44% 할인. 복합 할인은 곱셈 (1-0.30) × (1-0.20) = 0.56. 처음 가격의 56%가 최종 가격." },
+      { question: "퍼센트(%)와 퍼센트포인트(%p) 차이는?", answer: "퍼센트는 비율 변화, 퍼센트포인트는 절대값 변화. 금리 5% → 7%: +2%p (절대 변화), +40% (상대 변화). 뉴스에서 '금리 0.25%p 인상'은 절대 변화 0.25%." },
+      { question: "단리와 복리 차이는?", answer: "단리는 원금에만 이자, 복리는 원금+이자에 이자. 1,000만원 5% 30년: 단리 +1,500만원, 복리 +3,322만원. 장기 투자는 복리가 압도적." },
+      { question: "마진율과 마크업 차이는?", answer: "마진율 = 이익 ÷ 판매가, 마크업 = 이익 ÷ 원가. 1,000원 사서 1,300원 판매: 마진율 23%, 마크업 30%. 사업자는 둘 다 알아야 함." },
+      { question: "물가 상승률 4%일 때 연봉 5% 인상은?", answer: "실질 인상률 약 1% (5% - 4%). 인플레이션 차감 후 진짜 구매력 상승. 매년 물가만 2~4% 오르므로 연봉 인상 4% 미만은 사실상 후퇴." },
+    ],
+  },
+  {
+    slug: "youtube-thumbnail-extract-hd-sd-download-guide",
+    title: {
+      ko: "유튜브 썸네일 추출 가이드 — HD·SD 사이즈별 다운로드 완전 정리",
+      en: "YouTube Thumbnail Extract Guide — HD/SD Download",
+    },
+    description: {
+      ko: "유튜브 영상 ID로 썸네일 4가지 사이즈(maxres·hq·mq·sd) 다운로드 방법, 활용 팁, 저작권 주의사항을 정리.",
+      en: "YouTube thumbnail download by ID, 4 sizes, copyright tips.",
+    },
+    date: "2026-04-29",
+    toolId: "youtube-thumbnail",
+    image: "/images/blog/youtube-thumbnail-extract-hd-sd-download-guide.webp",
+    keywords: ["유튜브 썸네일", "썸네일 추출", "유튜브 썸네일 다운로드", "youtube thumbnail", "영상 썸네일 다운"],
+    content: {
+      ko: [
+        { heading: "유튜브 썸네일 4가지 사이즈", body: "**유튜브 썸네일 URL 패턴**\n\n```\nhttps://img.youtube.com/vi/{영상ID}/{사이즈}.jpg\n```\n\n**사이즈 옵션**\n\n- **maxresdefault** (1280×720) — HD, 최고 품질\n- **hqdefault** (480×360) — High Quality\n- **mqdefault** (320×180) — Medium Quality\n- **sddefault** (640×480) — Standard\n- **default** (120×90) — 가장 작음\n\n**예시 (영상 ID: dQw4w9WgXcQ)**\n\n- HD: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg\n- High: https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg\n\n**maxresdefault 주의**\n\n- 일부 오래된 영상은 HD 썸네일 없음 (404 에러)\n- 그 경우 hqdefault로 fallback\n- Toolkio는 자동 fallback 처리\n\n**영상 ID 추출법**\n\n- youtube.com/watch?v=**dQw4w9WgXcQ** ← v= 뒤\n- youtu.be/**dQw4w9WgXcQ** ← / 뒤\n- youtube.com/shorts/**dQw4w9WgXcQ** ← /shorts/ 뒤" },
+        { heading: "썸네일 활용 5가지", body: "**1. 영상 분석 (벤치마킹)**\n\n- 인기 채널 썸네일 디자인 분석\n- 텍스트·색상·구도 패턴 학습\n- 클릭률 높은 썸네일 공통점 파악\n\n**2. 블로그 임베드**\n\n- 추천 영상 소개 시 썸네일 + 링크\n- 영상 임베드보다 가벼움 (페이지 속도 ↑)\n- 클릭 시 유튜브 이동\n\n**3. SNS 콘텐츠 제작**\n\n- 유튜브 영상 홍보 인스타·X 게시물\n- 썸네일 + 짧은 설명 → 채널 유입\n- 카드뉴스 시리즈 (주간 베스트)\n\n**4. 자료·발표 활용**\n\n- 강의 자료에 영상 미리보기\n- 회의 자료에 참고 영상 썸네일\n- 보고서·기획서 시각 자료\n\n**5. 본인 영상 백업**\n\n- 본인 채널 썸네일 백업\n- A/B 테스트 결과 비교 자료\n- 채널 성장 기록" },
+        { heading: "Toolkio + 저작권 주의사항", body: "**Toolkio 유튜브 썸네일 추출 사용법**\n\n1. 유튜브 URL 또는 영상 ID 입력\n2. 4가지 사이즈 자동 표시\n3. 원하는 사이즈 클릭 → 다운로드\n4. 모든 처리는 브라우저 (서버 전송 X)\n\n**저작권·이용 약관**\n\n- 유튜브 썸네일은 **영상 제작자 저작물**\n- 개인적 학습·분석 목적은 OK\n- 상업적 사용 시 제작자 허락 필요\n- 무단 사용 + 본인 콘텐츠로 게시 = 저작권 침해\n\n**합법 사용 가이드**\n\n- 영상 임베드 또는 링크 (저작권 안전)\n- 분석·리뷰 콘텐츠에 fair use\n- 출처 명시 + 원작자 채널 링크\n- 본인 채널 영상 썸네일은 자유\n\n**불법 사용 사례**\n\n- 다른 채널 썸네일 그대로 본인 영상에 사용\n- 썸네일 도용해서 클릭 유도\n- 유튜버 얼굴 무단 사용 (초상권)\n- 상업 광고에 무단 사용\n\n**썸네일 디자인 팁 (본인 영상용)**\n\n- 1280×720 (HD) 사이즈\n- 큰 텍스트 (3~5단어, 90pt+)\n- 대비 강한 색상\n- 인물 표정 (감정 전달)\n- 일관된 채널 브랜딩" },
+        { heading: "고급 활용 — API·자동화", body: "**YouTube Data API**\n\n- 영상 ID로 정확한 썸네일 URL 획득\n- 채널 전체 영상 썸네일 자동 다운로드\n- 무료 할당량 일일 10,000 units\n- 개발자만 활용 (코딩 필요)\n\n**자동화 시나리오**\n\n- 채널 신규 영상 알림 → 썸네일 자동 분석\n- 경쟁 채널 모니터링 (썸네일 패턴 변화)\n- 본인 영상 썸네일 일괄 백업\n- 썸네일 A/B 테스트 결과 추적\n\n**자동화 도구**\n\n- Make.com (시나리오 빌더)\n- Zapier\n- n8n (셀프호스팅)\n- 직접 코드 (Python·Node.js)\n\n**보안·윤리**\n\n- API 키 노출 금지 (.env 또는 시크릿 매니저)\n- Rate limit 준수\n- 무단 대량 다운로드 금지 (서버 부담)\n- 개인정보 포함 썸네일 처리 주의" },
+      ],
+      en: [
+        { heading: "4 thumbnail sizes", body: "maxresdefault (1280x720), hqdefault (480x360), mqdefault, sddefault. URL: img.youtube.com/vi/{ID}/{size}.jpg" },
+        { heading: "5 use cases", body: "Analysis, blog embed, SNS content, presentations, backup own videos." },
+        { heading: "Copyright + Toolkio", body: "Personal study OK. Commercial requires permission. Toolkio runs in browser, no server." },
+        { heading: "API + automation", body: "YouTube Data API for batch download. Make/Zapier for monitoring. Mind rate limits." },
+      ],
+    },
+    faq: [
+      { question: "maxresdefault가 안 나오는 영상은 왜 그래요?", answer: "오래된 영상(2014년 이전)이나 저화질 업로드는 HD 썸네일 자동 생성 안 됐을 수 있음. 그 경우 hqdefault(480×360)가 최대 사이즈. Toolkio는 자동 fallback 처리." },
+      { question: "유튜브 쇼츠 썸네일도 가능한가요?", answer: "가능. URL 형식 youtube.com/shorts/{ID}에서 ID 추출 후 동일하게 처리. 단 쇼츠는 세로 영상이라 썸네일도 세로 비율로 자동 크롭됨." },
+      { question: "썸네일 무단 사용하면 어떻게 되나요?", answer: "유튜브 약관 + 저작권법 위반. 신고 시 삭제 + 채널 경고. 반복 시 채널 삭제·법적 분쟁 가능. 분석·리뷰 fair use는 OK, 본인 콘텐츠로 위장 사용은 위험." },
+      { question: "썸네일 다운로드 도구 안전한가요?", answer: "Toolkio는 100% 브라우저 처리, 서버 전송 X. URL 직접 호출 방식이라 광고·트래커 없음. 일부 무료 사이트는 광고·악성 코드 있을 수 있어 주의." },
+      { question: "본인 영상 썸네일 일괄 다운로드 방법은?", answer: "YouTube Data API + Python 스크립트로 채널 전체 영상 ID 획득 → 일괄 처리. 또는 YouTube Studio에서 영상별 직접 다운로드. 100개 이상은 API 자동화 권장." },
+    ],
+  },
 ];
