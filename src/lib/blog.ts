@@ -14824,4 +14824,453 @@ export const blogPosts: BlogPost[] = [
       { question: "본인 영상 썸네일 일괄 다운로드 방법은?", answer: "YouTube Data API + Python 스크립트로 채널 전체 영상 ID 획득 → 일괄 처리. 또는 YouTube Studio에서 영상별 직접 다운로드. 100개 이상은 API 자동화 권장." },
     ],
   },
+  {
+    slug: "timestamp-converter-unix-utc-5-scenarios",
+    title: {
+      ko: "타임스탬프 변환기 활용 — Unix 시간과 UTC 시간대 변환 5가지 시나리오",
+      en: "Timestamp Converter — 5 Practical Scenarios for Unix Time and UTC Conversion",
+    },
+    description: {
+      ko: "Unix 타임스탬프를 한국 시간으로 변환하고, UTC와 KST를 헷갈리지 않게 다루는 5가지 실전 시나리오를 정리했어요.",
+      en: "Convert Unix timestamps to Korean time and handle UTC vs KST confusion with 5 real-world scenarios.",
+    },
+    date: "2026-04-30",
+    toolId: "timestamp-converter",
+    image: "/images/blog/timestamp-converter-unix-utc-5-scenarios.webp",
+    keywords: ["타임스탬프 변환", "Unix 시간", "UTC KST 변환", "epoch time", "timestamp converter"],
+    content: {
+      ko: [
+        {
+          heading: "Unix 타임스탬프란?",
+          body: "Unix 타임스탬프는 1970년 1월 1일 00:00:00 UTC부터 지난 초 단위 숫자예요. 예) 1735689600은 2025년 1월 1일 00:00 UTC.\n\n왜 이런 방식을 쓸까요? 시간대·서머타임·윤년 같은 변수를 모두 한 숫자로 압축해서 컴퓨터끼리 시간 정보를 정확히 주고받을 수 있어서예요. 데이터베이스·로그·API 응답에서 거의 모든 시스템이 Unix 타임스탬프를 기본으로 사용해요.",
+        },
+        {
+          heading: "시나리오 1) 로그 파일 분석",
+          body: "서버 로그에 `[1735689600]` 같은 숫자가 찍히는데 이게 언제인지 모를 때 변환기가 필수예요.\n\n- 13자리: 밀리초 단위 (Java·JavaScript Date.now())\n- 10자리: 초 단위 (Linux·PHP time())\n- 16자리: 마이크로초 (PostgreSQL TIMESTAMP)\n\n자릿수로 단위를 먼저 판단하고 변환해야 정확한 시각이 나와요.",
+        },
+        {
+          heading: "시나리오 2) UTC vs KST 시간대 헷갈림",
+          body: "한국 시간(KST)은 UTC+9. 외국 서비스 API는 대부분 UTC 기준이라 한국 사용자에겐 9시간 차이가 발생해요.\n\n예: API 응답 `created_at: 1735689600`\n- UTC 기준: 2025-01-01 00:00:00\n- KST 기준: 2025-01-01 09:00:00\n\n잘못 표시하면 '하루 차이' 버그 자주 발생. 변환기로 두 시간대 동시 확인하는 게 안전해요.",
+        },
+        {
+          heading: "시나리오 3) 데이터베이스 쿼리 작성",
+          body: "PostgreSQL·MySQL에서 특정 날짜 범위 조회 시 타임스탬프 변환이 필요해요.\n\n```sql\nSELECT * FROM orders\nWHERE created_at BETWEEN 1735689600 AND 1735776000;\n```\n\n이런 쿼리에서 시작·끝 시각이 정확한지 변환기로 미리 확인. 잘못 계산해서 '24시간 누락' 같은 사고가 자주 나거든요.",
+        },
+        {
+          heading: "시나리오 4) JWT 토큰 만료 시간 확인",
+          body: "JWT(JSON Web Token)의 `exp` 필드는 Unix 타임스탬프예요.\n\n```json\n{\n  \"exp\": 1735776000,\n  \"iat\": 1735689600\n}\n```\n\n- iat: 발급 시각\n- exp: 만료 시각\n\n토큰이 언제 만료되는지 변환기로 즉시 확인 가능. 디버깅 시 시간 동기화 문제 빠르게 파악할 수 있어요.",
+        },
+        {
+          heading: "시나리오 5) 크론(cron) 스케줄 디버깅",
+          body: "Linux cron 작업이 예상과 다른 시각에 실행됐을 때 로그 타임스탬프와 cron 표현식 비교가 필수예요.\n\n예) `0 9 * * *`은 매일 09:00 KST 실행 (서버 시간대 KST 기준).\n서버가 UTC면 같은 표현식이 매일 18:00 KST 실행. 시간대 차이로 인한 미스 매치를 변환기로 빠르게 찾을 수 있어요.",
+        },
+        {
+          heading: "Toolkio 타임스탬프 변환기 사용법",
+          body: "1. 변환기에 13자리·10자리 숫자 붙여넣기\n2. 자동으로 단위 감지 (초·밀리초)\n3. UTC·KST 두 시간대 동시 표시\n4. 반대 방향(날짜 → 타임스탬프)도 가능\n\n브라우저 안에서만 처리되니까 API 키·민감 시간 데이터 입력해도 외부 전송 안 돼요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is a Unix Timestamp?",
+          body: "A Unix timestamp is the number of seconds since 1970-01-01 00:00:00 UTC. For example, 1735689600 represents 2025-01-01 00:00 UTC.\n\nIt's used because it compresses time zones, daylight saving, and leap years into a single number that computers can exchange precisely. Databases, logs, and APIs all default to Unix timestamps.",
+        },
+        {
+          heading: "Scenario 1) Log File Analysis",
+          body: "When you see [1735689600] in server logs, you need a converter to know when it happened.\n\n- 13 digits: milliseconds (Java/JavaScript Date.now())\n- 10 digits: seconds (Linux/PHP time())\n- 16 digits: microseconds (PostgreSQL TIMESTAMP)\n\nIdentify the unit by digit count first, then convert.",
+        },
+        {
+          heading: "Scenario 2) UTC vs Local Time Confusion",
+          body: "Most APIs return UTC. If your users are in different time zones, you need conversion. A 9-hour difference (KST) often causes 'one day off' bugs.",
+        },
+        {
+          heading: "Scenario 3) Database Query Building",
+          body: "Validate timestamps before running BETWEEN queries to avoid '24-hour missing' bugs.",
+        },
+        {
+          heading: "Scenario 4) JWT Token Expiration",
+          body: "JWT 'exp' and 'iat' fields use Unix timestamps. A converter helps you debug expiration issues quickly.",
+        },
+        {
+          heading: "Scenario 5) Cron Schedule Debugging",
+          body: "When a cron job runs at unexpected times, compare log timestamps to cron expression timing. Server time zone matters.",
+        },
+        {
+          heading: "Using Toolkio Timestamp Converter",
+          body: "Auto-detects seconds vs milliseconds. Shows UTC and local time simultaneously. Works fully in your browser — no data sent to servers.",
+        },
+      ],
+    },
+    faq: [
+      { question: "10자리와 13자리 타임스탬프 차이는?", answer: "10자리는 초(second), 13자리는 밀리초(millisecond) 단위. JavaScript Date.now()는 13자리, Python time.time()은 10자리(.소수점). 변환 시 단위 일치 필수예요." },
+      { question: "타임스탬프가 음수일 수 있나요?", answer: "있어요. 1970년 1월 1일 이전 시각은 음수로 표현. 단 일부 시스템은 음수 타임스탬프 미지원이라 1970년 이전 날짜는 별도 포맷(ISO 8601) 권장이에요." },
+      { question: "JavaScript에서 타임스탬프 변환 방법은?", answer: "new Date(1735689600 * 1000)으로 Date 객체 생성. 13자리는 *1000 곱하지 않음. toISOString()으로 UTC 문자열 출력 가능해요." },
+      { question: "엑셀에서 Unix 타임스탬프 변환은?", answer: "수식: =A1/86400+DATE(1970,1,1) 후 셀 서식을 날짜로 변경. 86400은 하루 초 수. KST 변환은 +9/24 추가." },
+      { question: "ISO 8601 형식과 Unix 타임스탬프 차이는?", answer: "ISO 8601은 사람이 읽기 쉬운 '2025-01-01T00:00:00Z' 형식, Unix 타임스탬프는 '1735689600' 숫자. API에서 ISO 8601 권장(시간대 정보 포함). 내부 저장은 Unix가 효율적." },
+      { question: "윤초(leap second)는 어떻게 처리되나요?", answer: "Unix 타임스탬프는 윤초를 무시하고 계산. POSIX 표준이 그렇게 정의돼 있어서. 윤초 정확도가 필요한 시스템(천문·금융 정밀)은 별도 처리 필요." },
+    ],
+  },
+  {
+    slug: "uuid-generator-database-keys-tokens-guide",
+    title: {
+      ko: "UUID 생성기 활용법 — 데이터베이스 키부터 토큰 생성까지",
+      en: "UUID Generator Guide — From Database Keys to Token Generation",
+    },
+    description: {
+      ko: "UUID v1·v4·v7 차이와 데이터베이스 기본키·세션 토큰·파일명 등 5가지 실전 활용 시나리오를 정리했어요.",
+      en: "Differences between UUID v1, v4, v7 and 5 real-world scenarios for database keys, tokens, and filenames.",
+    },
+    date: "2026-04-30",
+    toolId: "uuid-generator",
+    image: "/images/blog/uuid-generator-database-keys-tokens-guide.webp",
+    keywords: ["UUID 생성", "UUID v4", "UUID v7", "데이터베이스 키", "세션 토큰"],
+    content: {
+      ko: [
+        {
+          heading: "UUID란 무엇인가?",
+          body: "UUID(Universally Unique Identifier)는 128비트 길이의 식별자예요. 형태는 `550e8400-e29b-41d4-a716-446655440000` 처럼 36자(하이픈 4개 + 32자 16진수).\n\n왜 쓸까요? 분산 환경에서 서버가 여러 대여도 충돌 없이 고유 ID 생성 가능. 매년 10억 개씩 100년 만들어도 충돌 확률 50% 미만이라 사실상 안전해요. 데이터베이스 기본키·세션 토큰·파일명 등에 광범위하게 사용돼요.",
+        },
+        {
+          heading: "버전별 차이 — v1·v4·v7",
+          body: "UUID는 여러 버전이 있어요. 가장 많이 쓰는 3개 비교.\n\n- **v1**: 시간 + MAC 주소 기반. 시각 정렬 가능하지만 MAC 노출 보안 이슈\n- **v4**: 완전 랜덤. 가장 흔히 쓰임. 정렬 불가\n- **v7**: 2024년 표준화. 시간 + 랜덤 결합. 시각 정렬 가능 + 보안 개선\n\n신규 프로젝트는 v7 권장. 호환성 중요하면 v4가 안전. v1은 보안 이슈로 새 프로젝트에서 거의 안 써요.",
+        },
+        {
+          heading: "시나리오 1) 데이터베이스 기본키",
+          body: "전통적 AUTO_INCREMENT 정수 키 대신 UUID 사용 시 장점.\n\n- 서버 여러 대에서 동시 INSERT 가능 (충돌 X)\n- ID 노출 시 다음 ID 추측 불가 (보안 ↑)\n- 마이그레이션 시 ID 충돌 없음\n\n단점: 인덱스 크기 4배(8B → 16B), 정렬 효율 낮음(v4 기준). v7로 정렬 문제 해결되면서 신규 DB는 UUID 기본화 추세예요.",
+        },
+        {
+          heading: "시나리오 2) 세션 토큰·인증",
+          body: "사용자 로그인 후 발급되는 세션 ID에 UUID 사용.\n\n```\nsession_id: 550e8400-e29b-41d4-a716-446655440000\n```\n\n128비트 랜덤이라 brute force 사실상 불가능. 단, 토큰을 URL에 노출하지 말고 쿠키 HttpOnly + Secure 플래그로 저장해야 안전해요.",
+        },
+        {
+          heading: "시나리오 3) 파일 업로드 시 충돌 방지",
+          body: "사용자가 같은 이름 파일 업로드 시 덮어쓰기 방지를 위해 UUID로 파일명 변경.\n\n```\n원본: profile.jpg\n저장: 550e8400-e29b-41d4-a716-446655440000.jpg\n```\n\nDB에는 UUID + 원본 이름 함께 저장하면 사용자에겐 원본 이름으로 표시 가능. AWS S3·CloudFlare R2 같은 객체 스토리지에서 표준 방식이에요.",
+        },
+        {
+          heading: "시나리오 4) 분산 시스템 트랜잭션 ID",
+          body: "마이크로서비스에서 한 요청이 여러 서비스를 거칠 때 추적용 trace ID로 UUID 사용.\n\n```\nrequest_id: 550e8400-e29b-41d4-a716-446655440000\n```\n\n로그 분석 시 같은 request_id로 묶어서 전체 흐름 추적 가능. OpenTelemetry·Jaeger 같은 분산 추적 도구의 기본 패턴이에요.",
+        },
+        {
+          heading: "시나리오 5) 게임·채팅 방 ID",
+          body: "게임 매치메이킹·실시간 채팅방 생성 시 짧은 ID 대신 UUID 사용. 추측 불가능해서 외부 침입 방지.\n\n```\nroom_url: chat.example.com/r/550e8400-e29b-41d4-a716-446655440000\n```\n\n단 사용자가 URL 공유해야 하니 너무 긴 게 단점. 짧은 친구 코드(6자리)와 UUID 룸 ID를 함께 운영하는 패턴이 흔해요.",
+        },
+        {
+          heading: "Toolkio UUID 생성기 사용법",
+          body: "1. 생성 버튼 클릭 시 즉시 UUID v4 생성\n2. 한 번에 1·10·100개까지 일괄 생성 가능\n3. 클릭 한 번으로 클립보드 복사\n4. 대시 제거 옵션(짧은 형식 필요 시)\n\n로컬 브라우저에서 crypto.randomUUID() API로 생성. 서버 전송 없어서 안전해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is a UUID?",
+          body: "A UUID (Universally Unique Identifier) is a 128-bit identifier formatted like 550e8400-e29b-41d4-a716-446655440000. The probability of collision is virtually zero, making it safe for distributed systems.",
+        },
+        {
+          heading: "Version Differences — v1, v4, v7",
+          body: "v1 = time + MAC (security concerns), v4 = random (most common), v7 = time + random (sortable, modern standard, recommended for new projects).",
+        },
+        {
+          heading: "Scenario 1) Database Primary Keys",
+          body: "UUID keys allow multi-server INSERTs without collision and prevent ID guessing. Trade-off: 4x index size vs INT.",
+        },
+        {
+          heading: "Scenario 2) Session Tokens",
+          body: "128-bit randomness makes brute force impractical. Always store in HttpOnly Secure cookies, never in URLs.",
+        },
+        {
+          heading: "Scenario 3) File Upload Collision Prevention",
+          body: "Rename uploaded files with UUIDs to prevent overwrites. Store original name in DB for display.",
+        },
+        {
+          heading: "Scenario 4) Distributed Trace IDs",
+          body: "Microservices use UUID request IDs for distributed tracing across multiple services.",
+        },
+        {
+          heading: "Scenario 5) Game/Chat Room IDs",
+          body: "Unguessable room URLs prevent unauthorized access. Pair with short codes for shareability.",
+        },
+        {
+          heading: "Using Toolkio UUID Generator",
+          body: "Generate 1-100 UUIDs at once, copy with one click, with optional dash removal. Uses browser crypto.randomUUID() — fully local.",
+        },
+      ],
+    },
+    faq: [
+      { question: "UUID v4 충돌 확률은 정말 0인가요?", answer: "수학적으로 0은 아니지만, 매년 10억 개씩 100년 생성해도 충돌 확률 50% 미만. 일반적인 애플리케이션에서는 사실상 0으로 봐도 무방해요." },
+      { question: "UUID 대신 ULID·NanoID 써도 되나요?", answer: "둘 다 좋은 대안. ULID는 시간 정렬 + 짧은 길이(26자), NanoID는 더 짧음(21자) + URL 안전. 다만 표준화 측면에서 UUID v7이 가장 널리 지원돼요." },
+      { question: "MySQL에서 UUID 저장 방식은?", answer: "CHAR(36) 문자열 또는 BINARY(16) 바이너리. BINARY가 4배 작고 빠름. UUID_TO_BIN()/BIN_TO_UUID() 함수 활용 권장이에요." },
+      { question: "UUID와 GUID 차이는?", answer: "기본적으로 같은 개념. GUID는 마이크로소프트에서 부르는 이름이고 UUID는 IETF 표준 명칭. 형식·기능 동일해요." },
+      { question: "v7 UUID는 언제 표준화됐나요?", answer: "2024년 5월 RFC 9562로 정식 표준화. v1·v4를 대체할 수 있는 차세대 표준으로 신규 프로젝트에 추천돼요." },
+      { question: "URL에 UUID 노출해도 안전한가요?", answer: "추측 불가능하긴 하지만 SEO·공유 측면에서 짧은 슬러그 + 내부 UUID 조합 권장. 인증 토큰은 URL 노출 절대 금지(쿠키 사용)." },
+    ],
+  },
+  {
+    slug: "hash-generator-md5-sha256-password-security",
+    title: {
+      ko: "해시 생성기 활용 — MD5·SHA-256 차이와 비밀번호 저장 보안 가이드",
+      en: "Hash Generator Guide — MD5 vs SHA-256 and Password Storage Security",
+    },
+    description: {
+      ko: "MD5·SHA-1·SHA-256·bcrypt 차이와 비밀번호 저장 시 안전한 해시 선택 기준을 5가지 실전 시나리오로 정리했어요.",
+      en: "Differences between MD5, SHA-1, SHA-256, and bcrypt with 5 practical scenarios for secure password storage.",
+    },
+    date: "2026-04-30",
+    toolId: "hash-generator",
+    image: "/images/blog/hash-generator-md5-sha256-password-security.webp",
+    keywords: ["해시 생성", "MD5 SHA-256", "비밀번호 해시", "bcrypt", "hash generator"],
+    content: {
+      ko: [
+        {
+          heading: "해시 함수란?",
+          body: "해시 함수는 어떤 길이의 입력을 받아 고정 길이의 출력으로 변환하는 일방향 함수예요. 같은 입력은 항상 같은 해시값. 단, 해시값으로는 원본 복원 불가.\n\n예) 'hello' → MD5 → '5d41402abc4b2a76b9719d911017c592'\n\n비밀번호 저장·파일 무결성 검증·전자 서명 등에 광범위하게 쓰여요. 다만 알고리즘 선택을 잘못하면 보안 사고 직결되니 용도별 올바른 알고리즘 선택이 핵심이에요.",
+        },
+        {
+          heading: "주요 해시 알고리즘 비교",
+          body: "용도별 적합 알고리즘이 달라요.\n\n| 알고리즘 | 길이 | 속도 | 보안 | 용도 |\n|----------|------|------|------|------|\n| MD5 | 128bit | 빠름 | ❌ 깨짐 | 체크섬만 |\n| SHA-1 | 160bit | 빠름 | ❌ 깨짐 | 레거시 호환 |\n| SHA-256 | 256bit | 빠름 | ✅ 안전 | 디지털 서명·블록체인 |\n| SHA-512 | 512bit | 빠름 | ✅ 안전 | 군사·금융 |\n| bcrypt | 가변 | 느림 | ✅ 안전 | 비밀번호 |\n| Argon2 | 가변 | 느림 | ✅ 최강 | 비밀번호(2026년 권장) |\n\nMD5·SHA-1은 충돌 발견됐으니 보안 용도 절대 금지예요.",
+        },
+        {
+          heading: "시나리오 1) 비밀번호 저장 — bcrypt가 정답",
+          body: "사용자 비밀번호는 절대 평문 저장 금지. SHA-256도 불충분.\n\n이유: SHA-256은 너무 빨라서 GPU로 초당 100억 개 시도 가능. 짧은 비밀번호는 1초 안에 깨져요.\n\nbcrypt·Argon2는 의도적으로 느리게 만든 알고리즘(0.1~1초). 같은 GPU도 초당 100~1,000개만 시도 가능. 깨는 데 수년 필요.\n\n```\n# bcrypt 예시\n$2b$12$EXRkfkdmXn2gzds2SSitu.MW9.gAVqa9eLS1//RYtYCmB1eLHg.9q\n```",
+        },
+        {
+          heading: "시나리오 2) 파일 무결성 검증",
+          body: "다운로드한 파일이 변조되지 않았는지 확인할 때 SHA-256 사용.\n\n```\n공식 사이트: SHA-256 = abc123...\n다운받은 파일: SHA-256 = abc123...\n→ 일치 → 무결성 OK\n```\n\nLinux 배포판·오픈소스 소프트웨어 다운로드 시 거의 표준 절차. MD5도 가능하지만 충돌 위험 때문에 SHA-256 권장이에요.",
+        },
+        {
+          heading: "시나리오 3) API 인증 — HMAC",
+          body: "API 요청 위변조 방지를 위해 HMAC-SHA256 사용.\n\n```\nsignature = HMAC-SHA256(secret_key, request_body)\n```\n\n클라이언트와 서버가 공유하는 비밀키로 서명 생성. 요청 변조 시 서명 불일치로 거부. AWS·Stripe 등 대부분의 API가 이 방식이에요.",
+        },
+        {
+          heading: "시나리오 4) 블록체인 트랜잭션",
+          body: "비트코인·이더리움은 SHA-256(이더리움은 Keccak-256)으로 트랜잭션 해시 생성. 한 글자만 바뀌어도 해시값이 완전히 달라지는 특성으로 변조 즉시 감지.\n\n블록체인의 무결성·신뢰성의 근간이 해시 함수예요.",
+        },
+        {
+          heading: "시나리오 5) 캐시 키·CDN 버전 관리",
+          body: "정적 파일(JS·CSS·이미지)에 해시 추가해서 캐시 무효화.\n\n```\napp.js → app.a1b2c3.js\n```\n\n파일 내용 바뀌면 해시도 바뀌어 브라우저가 새로 다운로드. 내용 같으면 캐시 활용. webpack·Vite 등 모든 번들러가 사용하는 표준 패턴이에요.",
+        },
+        {
+          heading: "Toolkio 해시 생성기 사용법",
+          body: "1. 텍스트 입력 또는 파일 업로드\n2. MD5·SHA-1·SHA-256·SHA-512 동시 생성\n3. 결과값 클릭으로 복사\n4. 대용량 파일도 브라우저 안에서 처리\n\nWeb Crypto API 사용하니까 입력값이 외부 서버로 전송되지 않아요. 비밀번호·민감 데이터도 안전하게 해싱 가능.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is a Hash Function?",
+          body: "A hash function converts any-length input into fixed-length output one-way. Same input always produces same hash, but you can't reverse it. Used in password storage, file integrity, and digital signatures.",
+        },
+        {
+          heading: "Hash Algorithm Comparison",
+          body: "MD5/SHA-1: broken, do not use for security. SHA-256/512: safe for general use. bcrypt/Argon2: required for password storage (intentionally slow).",
+        },
+        {
+          heading: "Scenario 1) Password Storage — Use bcrypt",
+          body: "Never store plaintext passwords. SHA-256 is too fast — GPUs crack 10B/sec. Use bcrypt or Argon2 (slow by design).",
+        },
+        {
+          heading: "Scenario 2) File Integrity Verification",
+          body: "Use SHA-256 to verify downloaded files match official checksums. Standard practice for Linux distros and open-source.",
+        },
+        {
+          heading: "Scenario 3) API Authentication — HMAC",
+          body: "HMAC-SHA256 prevents API request tampering. Used by AWS, Stripe, and most major APIs.",
+        },
+        {
+          heading: "Scenario 4) Blockchain Transactions",
+          body: "Bitcoin uses SHA-256 for transaction hashes. Any change produces a completely different hash, making tampering detectable.",
+        },
+        {
+          heading: "Scenario 5) Cache Keys / CDN Versioning",
+          body: "Bundle hashes (app.a1b2c3.js) invalidate browser cache only when content changes. Standard for webpack/Vite.",
+        },
+        {
+          heading: "Using Toolkio Hash Generator",
+          body: "Generate MD5, SHA-1, SHA-256, SHA-512 simultaneously. Works fully in browser via Web Crypto API — your data never leaves your device.",
+        },
+      ],
+    },
+    faq: [
+      { question: "MD5 정말 깨졌나요?", answer: "네, 2004년부터 충돌 사례 발견. 2026년 현재 일반 PC로도 몇 시간 안에 충돌 발견 가능. 보안 용도 절대 금지. 단순 체크섬·캐시 키는 가능해요." },
+      { question: "SHA-256은 언제까지 안전한가요?", answer: "현재 양자 컴퓨터가 충분히 발전하기 전까지(추정 20~30년) 안전. NIST가 양자 안전 후속 알고리즘(SHA-3·SPHINCS+) 표준화 진행 중이에요." },
+      { question: "bcrypt와 Argon2 중 뭘 써야 하나요?", answer: "신규 프로젝트는 Argon2id 권장(2015 PHC 우승, 2025년 표준). 호환성·성숙도 중요하면 bcrypt도 충분. PBKDF2는 옛 시스템 호환용." },
+      { question: "Salt가 뭐고 왜 필요한가요?", answer: "비밀번호 해싱 시 추가하는 랜덤 데이터. 같은 비밀번호여도 사용자마다 다른 해시 생성. Rainbow Table 공격 방어용. bcrypt·Argon2는 자동 처리해줘요." },
+      { question: "해시값으로 원본 비밀번호 알 수 있나요?", answer: "이론상 불가능. 단 짧고 흔한 비밀번호(123456 등)는 사전 공격(미리 계산해둔 해시 매칭)으로 깨질 수 있어요. 그래서 길이 + 복잡도 + 솔트가 필요해요." },
+      { question: "체크섬과 해시는 같은 건가요?", answer: "체크섬(CRC32 등)은 단순 오류 검출용, 해시는 보안용. 의도적 변조 방어는 SHA-256 같은 암호학적 해시 필요. 둘 다 입력→고정 길이 출력 점은 비슷해요." },
+    ],
+  },
+  {
+    slug: "diff-checker-text-comparison-5-scenarios",
+    title: {
+      ko: "Diff 체커 활용법 — 두 텍스트 차이 비교하는 5가지 실전 시나리오",
+      en: "Diff Checker Guide — 5 Real Scenarios for Comparing Two Texts",
+    },
+    description: {
+      ko: "코드 리뷰부터 계약서 비교까지 두 텍스트의 차이점을 빠르게 찾는 Diff 체커 활용 5가지 실전 시나리오를 정리했어요.",
+      en: "5 practical scenarios for using a diff checker — from code review to contract comparison and proofreading.",
+    },
+    date: "2026-04-30",
+    toolId: "diff-checker",
+    image: "/images/blog/diff-checker-text-comparison-5-scenarios.webp",
+    keywords: ["diff 체커", "텍스트 비교", "문서 차이", "코드 비교", "diff tool"],
+    content: {
+      ko: [
+        {
+          heading: "Diff 체커란?",
+          body: "Diff 체커는 두 텍스트의 차이점을 시각적으로 보여주는 도구예요. 추가된 줄(녹색), 삭제된 줄(빨강), 변경된 부분(노랑)을 한눈에 표시. Git이나 코드 리뷰 도구의 핵심 기능이지만 코드 외 일반 텍스트에도 광범위하게 활용돼요.\n\n수십 페이지짜리 문서에서 한 줄 차이를 눈으로 찾는 건 거의 불가능. Diff 체커 쓰면 1초 안에 찾을 수 있거든요.",
+        },
+        {
+          heading: "시나리오 1) 코드 리뷰 — 변경점 정확히 파악",
+          body: "Git이 가장 대표적이지만 GitHub 없이 두 파일 즉시 비교할 때 유용해요.\n\n예: 동료가 보낸 수정안과 본인 코드 비교, 두 브랜치 충돌 부분 미리 검토, 라이브러리 버전별 변경 사항 확인.\n\n특히 한 함수만 분리해서 비교하면 큰 차이 빠르게 파악. 라인 단위 + 단어 단위 두 모드 둘 다 지원하는 도구가 좋아요.",
+        },
+        {
+          heading: "시나리오 2) 계약서·법률 문서 비교",
+          body: "협상 중 상대방이 수정한 계약서를 받았을 때 어디가 바뀌었는지 정확히 확인하는 게 필수예요.\n\n눈으로 비교하면 한 단어 차이를 놓치는 경우 많고, 그 한 단어가 큰 손해로 직결될 수 있거든요.\n\n예) '~할 수 있다' → '~해야 한다' 한 단어 차이로 의무 발생. Diff 체커가 즉시 잡아줘요.",
+        },
+        {
+          heading: "시나리오 3) 글 교정·교열 작업",
+          body: "원고에 편집자 수정안이 반영됐을 때 어디가 어떻게 바뀌었는지 한눈에 확인.\n\n출판·블로그·기술 문서 작성에 큰 도움. 본인 의도와 다르게 바뀐 부분이 있는지 빠르게 검토 가능. 영어·한글 모두 지원하는 도구를 선택하세요.",
+        },
+        {
+          heading: "시나리오 4) 설정 파일 비교",
+          body: "서버 환경별로 다른 설정 파일(.env·yaml·json)이 어떻게 다른지 비교.\n\n예: 개발·스테이징·프로덕션 환경의 .env 파일 비교 → 누락된 환경변수 즉시 파악.\n\n장애 디버깅 시 '왜 프로덕션만 안 될까' 답이 환경변수 한 줄 차이인 경우 많거든요.",
+        },
+        {
+          heading: "시나리오 5) AI 답변 비교",
+          body: "ChatGPT·Claude·Gemini에 같은 프롬프트 던졌을 때 답변 비교에 활용.\n\n어느 모델이 어떤 부분에서 더 자세한지, 누락된 정보가 있는지 빠르게 파악. 프롬프트 엔지니어링 학습에도 유용. AI별 강점·약점이 명확히 드러나거든요.",
+        },
+        {
+          heading: "Diff 체커 사용 팁",
+          body: "1. **단어 단위 vs 줄 단위**: 코드는 줄 단위, 산문은 단어 단위가 깔끔해요\n2. **공백 무시 옵션**: 코드 비교 시 들여쓰기 차이만 있는 변경 무시 가능\n3. **대소문자 무시**: 영문 비교 시 유용\n4. **최대 길이 제한**: 너무 큰 파일은 분할해서 비교 권장\n5. **결과 저장**: HTML 형식 export 가능 도구가 협업에 좋음",
+        },
+        {
+          heading: "Toolkio Diff 체커 사용법",
+          body: "1. 좌측에 원본, 우측에 비교 텍스트 붙여넣기\n2. 자동으로 차이점 색상 표시\n3. 줄 단위·단어 단위 토글\n4. 공백·대소문자 무시 옵션\n\n브라우저 안에서만 처리되니까 계약서·코드 같은 민감 텍스트도 안전하게 비교할 수 있어요. 외부 서버 전송 없음.",
+        },
+      ],
+      en: [
+        {
+          heading: "What is a Diff Checker?",
+          body: "A diff checker visually highlights differences between two texts. Added lines (green), deleted lines (red), changed segments (yellow). Essential for finding single-character changes in long documents.",
+        },
+        {
+          heading: "Scenario 1) Code Review",
+          body: "Compare two file versions instantly without Git. Great for reviewing pull requests offline or comparing library versions.",
+        },
+        {
+          heading: "Scenario 2) Contract Comparison",
+          body: "Catch single-word changes that could mean major legal differences. 'May' vs 'must' creates obligations.",
+        },
+        {
+          heading: "Scenario 3) Writing Editorial Review",
+          body: "Quickly see what an editor changed in your draft. Useful for publishing and technical writing.",
+        },
+        {
+          heading: "Scenario 4) Configuration File Comparison",
+          body: "Compare .env, yaml, json across dev/staging/production to find missing variables. Common cause of production-only bugs.",
+        },
+        {
+          heading: "Scenario 5) AI Response Comparison",
+          body: "Compare ChatGPT vs Claude vs Gemini outputs to identify model strengths and prompt engineering improvements.",
+        },
+        {
+          heading: "Diff Checker Tips",
+          body: "Use word-level for prose, line-level for code. Ignore whitespace for code formatting changes. Save results as HTML for collaboration.",
+        },
+        {
+          heading: "Using Toolkio Diff Checker",
+          body: "Paste original on left, comparison on right. Toggle line/word mode. Ignore whitespace and case. Fully browser-based — secure for sensitive texts.",
+        },
+      ],
+    },
+    faq: [
+      { question: "Git diff와 뭐가 다른가요?", answer: "Git diff는 버전 관리 시스템에 통합된 형태, Diff 체커는 단독 도구. 임의의 두 텍스트 즉시 비교 가능해서 Git 없이도 사용. 결과는 비슷해요." },
+      { question: "줄 단위와 단어 단위 차이는?", answer: "줄 단위는 한 줄 통째로 변경 표시(코드용), 단어 단위는 단어 하나하나 비교(산문용). 코드는 줄 단위, 글은 단어 단위가 깔끔하게 보여요." },
+      { question: "한국어도 정확히 비교되나요?", answer: "네, UTF-8 텍스트면 한국어·영어·일본어·중국어 모두 정확히 비교. 단 단어 단위 비교는 한국어 형태소 분석 안 해서 띄어쓰기 단위로 처리돼요." },
+      { question: "큰 파일은 어떻게 비교하나요?", answer: "1MB 이상 텍스트는 분할 권장. 또는 데스크톱 도구(WinMerge·Beyond Compare) 사용. 웹 도구는 보통 100KB~1MB 한도예요." },
+      { question: "공백만 차이 나는 부분 무시 가능한가요?", answer: "Toolkio 포함 대부분 도구가 '공백 무시' 옵션 제공. 들여쓰기·줄바꿈 차이만 있는 변경 안 보이게 처리. 코드 리뷰 시 유용해요." },
+      { question: "Diff 결과 공유 방법은?", answer: "HTML export 또는 스크린샷이 일반적. GitHub Gist에 두 파일 올려서 link 공유도 좋음. Diff 체커 자체에는 공유 기능 없는 경우 많아요." },
+    ],
+  },
+  {
+    slug: "ai-prompt-generator-image-coding-writing-templates",
+    title: {
+      ko: "AI 프롬프트 생성기 활용 — 이미지·코딩·글쓰기 분야별 템플릿 가이드",
+      en: "AI Prompt Generator Guide — Image, Coding, Writing Templates by Domain",
+    },
+    description: {
+      ko: "이미지 생성·코딩·블로그 글쓰기 등 분야별 AI 프롬프트 템플릿을 정리했어요. ChatGPT·Claude·Midjourney에 그대로 쓸 수 있는 5가지 패턴.",
+      en: "AI prompt templates by domain — image generation, coding, writing — ready to use with ChatGPT, Claude, and Midjourney.",
+    },
+    date: "2026-04-30",
+    toolId: "ai-prompt-generator",
+    image: "/images/blog/ai-prompt-generator-image-coding-writing-templates.webp",
+    keywords: ["AI 프롬프트", "프롬프트 템플릿", "ChatGPT 프롬프트", "Midjourney 프롬프트", "프롬프트 생성기"],
+    content: {
+      ko: [
+        {
+          heading: "왜 프롬프트 템플릿이 필요한가?",
+          body: "AI에게 같은 질문을 해도 표현 방식에 따라 답변 품질이 2~10배 차이 나요. '~해줘' 같은 짧은 프롬프트보다 역할·맥락·제약을 명시한 프롬프트가 압도적으로 좋은 답을 받죠.\n\n매번 처음부터 짜는 건 비효율적이라 분야별 템플릿을 미리 준비해두는 게 답이에요. 오늘은 이미지·코딩·글쓰기 3대 분야 템플릿을 정리해 드릴게요.",
+        },
+        {
+          heading: "프롬프트 5요소 — 모든 템플릿의 기본",
+          body: "어느 분야든 다음 5요소가 들어가면 답변 품질이 안정적이에요.\n\n1. **역할(Role)**: 'AI는 ~전문가야'\n2. **맥락(Context)**: '나는 ~상황이고 ~을 하려고 해'\n3. **목표(Goal)**: '~결과를 원해'\n4. **제약(Constraint)**: '~하지 마, ~형식으로'\n5. **예시(Example)**: '~처럼'\n\n이 5요소를 빠짐없이 포함하면 어떤 AI든 일관된 품질의 답을 줘요.",
+        },
+        {
+          heading: "이미지 생성 프롬프트 템플릿 (Midjourney·DALL-E)",
+          body: "이미지 프롬프트는 다음 구조로 짜요.\n\n```\n[주제] [세부 묘사] [스타일] [구도] [조명] [품질]\n\n예시:\nA young Korean woman reading a book in a cozy cafe,\nwarm afternoon light, soft bokeh background,\ncinematic style, shallow depth of field,\nshot on Sony A7IV with 85mm lens,\nphotorealistic, 8K, ultra detailed\n```\n\nMidjourney용 추가 파라미터: --ar 16:9 (가로 세로 비율) --style raw (사진 스타일) --v 6 (최신 버전)",
+        },
+        {
+          heading: "코딩 프롬프트 템플릿 (ChatGPT·Claude)",
+          body: "코딩 프롬프트 템플릿이에요.\n\n```\n역할: 너는 [언어] [프레임워크] 전문가야\n\n맥락:\n- 프로젝트: [무엇을 만드는지]\n- 기술 스택: [Next.js, TypeScript 등]\n- 현재 상황: [무슨 문제가 있는지]\n\n목표:\n[원하는 결과 명확히]\n\n제약:\n- TypeScript strict 모드\n- 외부 라이브러리 최소화\n- 함수형 컴포넌트\n\n현재 코드:\n[코드 붙여넣기]\n\n원하는 결과:\n[변경 후 동작 설명]\n```\n\n이 템플릿으로 받으면 코드 품질·재사용성이 훨씬 높아요.",
+        },
+        {
+          heading: "블로그 글쓰기 프롬프트 템플릿",
+          body: "블로그 글 작성용 템플릿이에요.\n\n```\n역할: 너는 [분야] 전문 블로거야\n\n맥락:\n- 블로그 주제: [블로그 톤]\n- 독자: [타겟 페르소나]\n- 검색 의도: [정보형/탐색형/거래형]\n\n목표:\n제목: [핵심 키워드 + 숫자 포함]\n분량: 2,500자 이상\n구조: 도입부 → 본문 3~5섹션 → 결론\n\n제약:\n- 한국어, 친근한 톤 (~예요/거든요 사용)\n- 실제 경험담 포함\n- FAQ 5~7개 포함\n- 구체적 수치·예시 포함\n\n키워드:\n[주요 키워드 5개]\n```\n\n이 구조면 SEO 친화적이면서 자연스러운 글이 나와요.",
+        },
+        {
+          heading: "분야별 추가 템플릿 5가지",
+          body: "1. **이메일 작성**: 역할(비즈니스 라이팅 전문가) + 수신자 + 목적 + 톤 + 분량 제한\n2. **데이터 분석**: 역할(데이터 분석가) + 데이터 설명 + 질문 + 시각화 형식\n3. **번역**: 역할(원어민 번역가) + 분야 + 톤 + 직역/의역 비율 + 용어 사전\n4. **요약**: 역할(요약 전문가) + 원문 + 분량 제한 + 강조점 + 출력 형식\n5. **학습**: 역할(개인 튜터) + 학습자 수준 + 학습 목표 + 학습 스타일 + 평가 방법\n\n각 분야별로 5요소 + 도메인 특화 요소를 추가하는 식이에요.",
+        },
+        {
+          heading: "Toolkio AI 프롬프트 생성기 사용법",
+          body: "1. 분야 선택 (이미지·코딩·글쓰기·이메일 등)\n2. 빈칸 채우기 형식으로 5요소 입력\n3. 자동으로 최적화된 프롬프트 생성\n4. 클립보드에 복사 후 ChatGPT·Claude에 바로 사용\n\n분야별 템플릿이 미리 준비돼 있어서 처음부터 안 짜도 돼요. 본인 자주 쓰는 패턴을 즐겨찾기 저장도 가능해요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why You Need Prompt Templates",
+          body: "Same question phrased differently can produce 2-10x quality differences. Templates with role, context, goal, constraints, and examples consistently produce better outputs.",
+        },
+        {
+          heading: "5 Core Elements of Every Template",
+          body: "Role (you are a...), Context (the situation), Goal (what you want), Constraints (what to avoid), Examples (like this).",
+        },
+        {
+          heading: "Image Generation Template (Midjourney/DALL-E)",
+          body: "Subject + details + style + composition + lighting + quality keywords. Add Midjourney parameters like --ar 16:9, --v 6.",
+        },
+        {
+          heading: "Coding Template (ChatGPT/Claude)",
+          body: "Role + project context + tech stack + current code + desired outcome + constraints. Drastically improves code quality.",
+        },
+        {
+          heading: "Blog Writing Template",
+          body: "Role + audience + search intent + structure + tone constraints + keywords. SEO-friendly outputs by default.",
+        },
+        {
+          heading: "5 More Domain Templates",
+          body: "Email writing, data analysis, translation, summarization, learning — each adapts the 5 core elements with domain-specific additions.",
+        },
+        {
+          heading: "Using Toolkio AI Prompt Generator",
+          body: "Select domain, fill in 5 elements, get optimized prompt. Copy to clipboard, paste into ChatGPT/Claude. Save favorites for reuse.",
+        },
+      ],
+    },
+    faq: [
+      { question: "프롬프트가 너무 길면 안 좋나요?", answer: "AI마다 컨텍스트 한도가 있어 너무 길면 잘려요. ChatGPT는 보통 8,000~32,000 토큰 한도. 핵심 5요소만 명확히 하면 200~500단어로도 충분해요." },
+      { question: "한국어와 영어 프롬프트 차이가 큰가요?", answer: "ChatGPT는 영어 프롬프트가 약간 더 정확. Claude는 한국어도 매우 자연스럽게 처리. Midjourney·DALL-E는 영어 권장. 한국어 입력 후 영어 번역 요청해도 좋아요." },
+      { question: "Midjourney와 DALL-E 프롬프트가 다른가요?", answer: "기본 구조는 비슷하지만 Midjourney는 짧고 키워드 위주, DALL-E는 자연어 문장 잘 받아들임. Midjourney는 --ar, --v 같은 파라미터 사용." },
+      { question: "프롬프트 결과가 매번 다른 이유는?", answer: "AI는 확률 기반이라 같은 프롬프트도 매번 다른 답. temperature 파라미터로 일관성 조절 가능(0=일관, 1=창의). 정형화 필요하면 temperature 낮게." },
+      { question: "프롬프트 인젝션 공격이 뭔가요?", answer: "사용자 입력에 'ignore previous instructions'처럼 시스템 프롬프트를 무력화하는 명령 삽입. AI 서비스 만들 때 입력 검증·sandboxing 필수예요." },
+      { question: "프롬프트 엔지니어링은 정말 학습할 가치가 있나요?", answer: "있어요. AI가 결과의 80%를 만들고 사람이 20% 다듬는 시대. 프롬프트 잘 짜는 사람과 못 짜는 사람의 생산성 차이가 5~10배. 1~2주 투자로 평생 활용 가능." },
+    ],
+  },
 ];
