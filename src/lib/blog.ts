@@ -15273,4 +15273,485 @@ export const blogPosts: BlogPost[] = [
       { question: "프롬프트 엔지니어링은 정말 학습할 가치가 있나요?", answer: "있어요. AI가 결과의 80%를 만들고 사람이 20% 다듬는 시대. 프롬프트 잘 짜는 사람과 못 짜는 사람의 생산성 차이가 5~10배. 1~2주 투자로 평생 활용 가능." },
     ],
   },
+  {
+    slug: "qr-code-free-with-logo-color-5-step-guide",
+    title: {
+      ko: "QR코드 무료로 만들기 5단계 — 로고와 색상 추가까지 완벽 가이드",
+      en: "Free QR Code Generator Guide — Add Logo and Color in 5 Steps",
+    },
+    description: {
+      ko: "사인업 없이 무료로 QR코드를 만들고 로고·색상까지 넣는 5단계. 추천 도구 7개 비교와 인쇄용 벡터 다운로드 팁까지 한 번에 정리했어요.",
+      en: "Generate free QR codes with logo and color in 5 steps. Compare 7 recommended tools and learn vector export tips for print.",
+    },
+    date: "2026-05-01",
+    toolId: "qr-generator",
+    image: "/images/blog/qr-code-free-with-logo-color-5-step-guide.webp",
+    keywords: ["QR코드 만들기", "QR코드 무료", "QR코드 로고", "QR code generator free", "QR코드 색상"],
+    content: {
+      ko: [
+        {
+          heading: "왜 QR코드에 로고와 색상이 필요할까?",
+          body: "메뉴판·명함·포스터에 단순 흑백 QR을 박아두면 클릭률이 떨어져요. QR Code AI 자료에 따르면 디자인 QR은 평균 30%까지 더 많이 스캔되거든요.\n\n브랜드 로고를 가운데에 넣고 회사 색상을 입히면 신뢰도도 올라가요. '이 QR이 진짜 우리 회사 거 맞아?' 의심을 줄여주죠. 오늘은 가입 없이 1분 안에 로고·색상까지 넣는 방법을 5단계로 정리해 드릴게요.",
+        },
+        {
+          heading: "1단계 — 무료 도구 선택 (추천 7개 비교)",
+          body: "2026년 5월 기준 가입 없이 로고·색상까지 무료로 지원하는 도구예요.\n\n- **QRCode Monkey**: 색상·그라데이션·로고 모두 무료, 벡터(SVG·PDF) 다운로드 지원. 인쇄용 1순위\n- **Adobe Express**: QR 만료 없음, 드래그앤드롭 로고 업로드 간편\n- **Canva**: 디자인 템플릿과 통합돼 포스터 그대로 만들기 편함\n- **goqr.me**: vCard·EPS 같은 특수 포맷 지원\n- **QRCodeChimp**: 동적 QR(추적 가능) 무료 한도 제공\n- **Hovercode**: 가입 없음, 빠른 생성 우선\n- **Toolkio QR 생성기**: 한국어 UI, 브라우저 안에서 즉시 생성\n\n인쇄가 목적이면 SVG 다운로드 가능 도구를 고르세요. JPG·PNG는 확대하면 깨지거든요.",
+        },
+        {
+          heading: "2단계 — 데이터 타입 정하기",
+          body: "QR이 담을 수 있는 데이터는 종류가 다양해요.\n\n- URL: 가장 흔함, 짧을수록 QR 패턴이 단순해서 스캔 잘 됨\n- vCard: 명함용, 이름·전화·이메일 한번에 저장\n- WiFi: SSID·비밀번호 자동 연결, 카페·민박에 좋음\n- 결제(KakaoPay·NaverPay): 한국 전용, 대부분 앱 안에서 자동 생성\n- 텍스트·전화번호·이메일·위치 좌표\n\n동적 QR(QRCodeChimp·QR-Server 등)을 쓰면 QR을 그대로 두고 연결 URL만 바꿀 수 있어요. 명함 인쇄 후 회사 사이트 주소 바뀐 경우 유용해요.",
+        },
+        {
+          heading: "3단계 — 색상 입히기 (브랜드 일관성)",
+          body: "색상은 두 곳에 적용해요.\n\n- **전경(Foreground)**: QR 패턴 자체. 어두운 색이어야 인식률 높음\n- **배경(Background)**: 흰색 또는 매우 밝은 색 권장\n\n주의할 점이 있어요. 전경과 배경 명도 차이가 50% 이상 나야 카메라가 인식해요. 노란색 위에 회색 같은 조합은 스캔 실패율이 30% 넘어가거든요.\n\n그라데이션도 가능한데 코너 마커(3개 큰 사각형)는 단색으로 두는 게 안전해요. 마커 색이 흐릿하면 카메라가 QR 자체를 못 찾아요.",
+        },
+        {
+          heading: "4단계 — 로고 삽입 (오류 정정 레벨 H 필수)",
+          body: "QR은 최대 30%까지 손상돼도 스캔 가능해요. 이 원리를 이용해 가운데에 로고를 넣는 거예요.\n\n로고 삽입 시 핵심 설정 두 가지.\n\n1. **오류 정정 레벨을 H(High, 30%)로**: 기본은 L(7%) 또는 M(15%). 로고 넣으려면 H 필수\n2. **로고 크기는 QR 면적의 20~25% 이내**: 더 크면 H 레벨로도 못 읽음\n\n로고 배경은 흰색 사각형 또는 원으로 깔아서 QR 패턴과 겹치지 않게 하세요. 투명 PNG 그대로 올리면 패턴 위에 겹쳐서 인식 실패 위험이 커져요.",
+        },
+        {
+          heading: "5단계 — 다운로드와 테스트",
+          body: "다운로드 전에 반드시 스캔 테스트를 거쳐야 해요. 디자인 욕심 부리다 못 읽는 QR을 1만 장 인쇄하면 그게 손실이거든요.\n\n테스트 체크리스트.\n\n- 핸드폰 기본 카메라로 거리 30cm·1m 두 번 스캔\n- iOS·Android 둘 다 (iOS는 자동 인식, Android는 일부 기종 별도 앱 필요)\n- 어두운 조명에서도 한 번\n- 인쇄용은 5cm × 5cm 출력 후 다시 스캔\n\n포맷 선택. 웹용은 PNG 1024px, 인쇄용은 SVG·PDF·EPS. 명함은 최소 2cm × 2cm 이상이어야 안정적으로 스캔돼요.",
+        },
+        {
+          heading: "QR 만들 때 5가지 흔한 실수",
+          body: "1. **너무 긴 URL**: 100자 넘으면 QR 패턴이 빽빽해져 스캔 어려움. URL 단축기(bit.ly·short.link)로 줄이기\n2. **반전 색상(밝은 전경·어두운 배경)**: 일부 카메라가 못 읽음. 어두운 전경·밝은 배경 원칙 지키기\n3. **로고 크기 과다**: 30% 넘으면 H 레벨로도 인식 실패\n4. **QR 둘레 여백(quiet zone) 부족**: QR 외곽에 4모듈 이상 흰 여백 필수. 명함 가장자리에 딱 붙이면 안 됨\n5. **인쇄 후 테스트 안 함**: 모니터 색과 인쇄 색이 다름. 1장 시범 인쇄 후 본 인쇄 권장",
+        },
+        {
+          heading: "Toolkio QR 생성기 사용법",
+          body: "Toolkio QR 생성기는 가입 없이 브라우저에서 바로 사용해요.\n\n1. URL·텍스트·vCard 등 데이터 타입 선택\n2. 내용 입력\n3. 색상·크기 설정\n4. PNG 또는 SVG 다운로드\n5. 핸드폰으로 스캔 테스트\n\n생성된 QR은 서버로 전송되지 않고 브라우저 안에서 처리돼서 비밀 URL·내부 링크도 안전해요. 더 자세한 색상 설계 팁은 [색상 코드 변환 가이드](/blog/color-code-converter-rgb-hex-guide)에서, 데이터 타입 비교는 [QR 명함 마케팅 7가지 활용](/blog/qr-code-practical-uses-guide)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Add Logo and Color to QR Codes?",
+          body: "Plain black-and-white QR codes get fewer scans. According to QR Code AI data, designed QR codes receive up to 30% more scans on average. Logo and brand colors also build trust.",
+        },
+        {
+          heading: "Step 1 — Choose a Free Tool (Top 7)",
+          body: "QRCode Monkey, Adobe Express, Canva, goqr.me, QRCodeChimp, Hovercode, and Toolkio all offer free logo and color customization. Pick one with SVG export if you need print quality.",
+        },
+        {
+          heading: "Step 2 — Pick Your Data Type",
+          body: "URL, vCard (business cards), WiFi, payment, plain text, phone, email, location. Dynamic QRs let you change the destination later without reprinting.",
+        },
+        {
+          heading: "Step 3 — Apply Brand Colors",
+          body: "Foreground (dark) and background (light) need 50%+ contrast. Keep corner markers solid color even if you use gradient elsewhere.",
+        },
+        {
+          heading: "Step 4 — Insert Logo (Error Correction Level H)",
+          body: "Set error correction to H (30%) and keep logo within 20-25% of QR area. Add a white rounded background behind the logo to avoid pattern overlap.",
+        },
+        {
+          heading: "Step 5 — Download and Test",
+          body: "Test scan on iPhone and Android cameras at 30cm and 1m distances. Print at intended size first before mass printing. Use SVG/PDF for print, PNG 1024px for web.",
+        },
+        {
+          heading: "5 Common QR Mistakes",
+          body: "Long URLs, inverted colors, oversized logo, missing quiet zone (4-module white border), and skipping the print test.",
+        },
+        {
+          heading: "Using Toolkio QR Generator",
+          body: "Choose data type, enter content, customize color and size, download PNG or SVG. Generated entirely in your browser — secure for private links.",
+        },
+      ],
+    },
+    faq: [
+      { question: "QR코드 만들기 정말 평생 무료인가요?", answer: "정적(static) QR은 대부분 평생 무료. 동적(dynamic) QR은 무료 한도(보통 월 100회 스캔) 초과 시 유료. URL 변경 안 할 거면 정적이 더 안전해요." },
+      { question: "QR 가운데 로고 넣으면 스캔 안 될 수도 있나요?", answer: "오류 정정 레벨 H로 설정하고 로고 크기를 QR 면적의 25% 이내로 유지하면 스캔 잘 돼요. 30% 넘으면 인식 실패 확률 급증해요." },
+      { question: "흰 배경 말고 다른 색 배경도 가능한가요?", answer: "가능하지만 전경(어두운 색)과 배경 명도 차가 50% 이상이어야 해요. 노란 배경에 검정 QR은 OK, 회색 배경에 검정은 인식률 떨어져요." },
+      { question: "인쇄용 QR은 어떤 포맷으로 다운로드해야 하나요?", answer: "벡터 포맷(SVG·PDF·EPS) 추천. 확대해도 안 깨져요. PNG·JPG는 웹 전용. QRCode Monkey·goqr.me가 무료 SVG 다운로드 지원해요." },
+      { question: "동적 QR과 정적 QR 차이는?", answer: "정적은 QR 자체에 데이터 직접 저장(URL 변경 불가). 동적은 중간 서버 거쳐서 연결 URL을 나중에 바꿀 수 있음. 명함처럼 인쇄 후 변경 가능성 있으면 동적 추천." },
+      { question: "QR 인식률 높이는 가장 중요한 요인은?", answer: "여백(quiet zone). QR 외곽에 흰 여백을 4모듈(약 QR 크기의 10%) 이상 두세요. 여백 없이 다른 디자인 요소에 딱 붙이면 카메라가 QR 경계를 못 찾아요." },
+    ],
+  },
+  {
+    slug: "json-formatter-5-uses-api-debug-developer",
+    title: {
+      ko: "JSON 포맷터 활용법 5가지 — API 응답 파싱부터 디버깅까지 실전 가이드",
+      en: "JSON Formatter 5 Uses — From API Parsing to Debugging",
+    },
+    description: {
+      ko: "JSON 포맷터로 API 응답을 정리하고 디버깅하는 실전 활용 5가지. 한 줄로 압축된 JSON을 1초 만에 보기 좋게 정리하는 도구 비교까지.",
+      en: "5 practical scenarios for using JSON formatter — API response cleanup, debugging, and tool comparison.",
+    },
+    date: "2026-05-01",
+    toolId: "json-formatter",
+    image: "/images/blog/json-formatter-5-uses-api-debug-developer.webp",
+    keywords: ["JSON 포맷터", "JSON 정리", "API 응답", "json formatter", "JSON 디버깅"],
+    content: {
+      ko: [
+        {
+          heading: "JSON 포맷터가 필요한 진짜 이유",
+          body: "API 응답이 한 줄로 5,000자 이렇게 오면 어디가 어디인지 한눈에 안 들어와요. 들여쓰기가 들어간 순간 트리 구조가 보이고 디버깅 시간이 1/5로 줄어요.\n\n저도 외주 API 연동할 때 JSON 포맷터 안 쓰고 끝까지 가본 적이 있는데, 같은 버그 잡는데 2시간 걸렸어요. 포맷터 한 번 돌리니 5분 만에 잡혔거든요. 오늘은 단순 정리 외에 실전 활용 5가지를 정리해 드릴게요.",
+        },
+        {
+          heading: "활용 1) API 응답 한 줄 → 보기 좋게",
+          body: "Postman·curl로 받은 응답이 한 줄로 길게 나오는 상황이에요.\n\n```bash\ncurl https://api.example.com/users/1\n# {\"id\":1,\"name\":\"Kim\",\"address\":{\"city\":\"Seoul\",\"zip\":\"06000\"}}\n```\n\n이걸 그대로 보면 중첩 구조가 안 보여요. JSON 포맷터에 넣으면 들여쓰기 2칸으로 트리가 펼쳐져요.\n\n```json\n{\n  \"id\": 1,\n  \"name\": \"Kim\",\n  \"address\": {\n    \"city\": \"Seoul\",\n    \"zip\": \"06000\"\n  }\n}\n```\n\nF12 콘솔이 자동 펼침을 지원하긴 하지만 응답이 큰 경우 포맷터에 복사해서 보는 게 빨라요.",
+        },
+        {
+          heading: "활용 2) 잘못된 JSON 문법 잡기",
+          body: "JSON 파싱 에러는 대부분 사소한 문법 실수예요. 흔한 5가지.\n\n1. 마지막 요소 뒤 쉼표(`{\"a\":1,}`)\n2. 키에 따옴표 빠짐(`{a:1}`)\n3. 작은따옴표 사용(`{'a':1}`)\n4. 닫는 괄호 빠짐\n5. 주석(`//`) 포함\n\nJSON 포맷터는 이 다섯 가지를 즉시 알려줘요. JSONLint·Toolkio JSON 포맷터에 붙여넣으면 '5번째 줄, 13번째 글자에서 오류' 식으로 위치 표시. 눈으로 찾는 것보다 50배 빨라요.",
+        },
+        {
+          heading: "활용 3) 미니파이 — 파일 크기 줄이기",
+          body: "API 요청 본문이나 설정 파일 배포 시 들여쓰기·공백 제거하면 30~50% 용량 줄어요.\n\n예시. 1MB JSON 설정 파일을 미니파이하면 500~700KB. 모바일 앱 번들 같은 곳에서는 큰 차이거든요.\n\n주의. 사람이 직접 편집하는 파일(설정·번역)은 미니파이 금지. 디버깅·재편집이 지옥이에요. 미니파이는 빌드 산출물·API 응답 같은 기계가 읽는 용도에만 사용하세요.\n\n미니파이 후에도 키 이름은 그대로라 데이터 의미 손실은 없어요.",
+        },
+        {
+          heading: "활용 4) JSON 스키마 검증",
+          body: "프로젝트가 커지면 JSON 구조를 정의(스키마)하고 그에 맞는지 검증하는 단계가 필요해요.\n\n예. 결제 API가 `{amount, currency, customer_id}` 형식이어야 하는데 누가 `customer` 필드명을 잘못 보내는 경우. 스키마 검증으로 즉시 잡아요.\n\nJSON Schema(json-schema.org 표준) 사용. Python(jsonschema), JavaScript(ajv) 라이브러리 활용. 단순 포맷팅 외에 데이터 신뢰성까지 보장해요. CI 파이프라인에 넣으면 잘못된 PR 자동 차단 가능.",
+        },
+        {
+          heading: "활용 5) JSON ↔ 다른 포맷 변환",
+          body: "실무에서는 JSON 외에 YAML·CSV·XML 형식과 자주 변환해요.\n\n- **JSON → YAML**: Kubernetes·CI 설정. YAML이 사람 친화적\n- **JSON → CSV**: 엑셀로 분석하려는 경우. 중첩은 평탄화 필요\n- **JSON → TypeScript interface**: 타입 자동 생성, 개발 시간 단축\n- **JSON → SQL INSERT**: DB 마이그레이션\n\nQuickType·json2csv·yq 같은 도구들이 1~2초 안에 변환해줘요. 손으로 옮기다 오타 내는 것보다 100배 안전해요.",
+        },
+        {
+          heading: "JSON 포맷터 도구 비교",
+          body: "온라인 vs 확장 프로그램 vs 데스크톱 비교예요.\n\n- **온라인(JSONLint·JSON Formatter & Validator·Toolkio)**: 가입 없음, 빠름. 민감 데이터는 주의\n- **Chrome 확장(JSON Formatter·JSONVue)**: API URL 직접 열면 자동 포맷. 설치 5초\n- **VS Code 내장**: `Shift+Alt+F`로 즉시 포맷팅. 코드 작성 중 전환 없이 사용\n- **데스크톱(Visual JSON·JSON Viewer Pro)**: 100MB+ 큰 파일 처리. 회사 내부 데이터 전용\n\n민감 데이터(고객 정보·인증 토큰)는 **로컬 도구만 사용**. 온라인 포맷터에 그대로 붙여넣으면 그 서버에 로그가 남을 수 있어요.",
+        },
+        {
+          heading: "Toolkio JSON 포맷터 사용법",
+          body: "1. JSON 데이터 붙여넣기\n2. '포맷팅' 클릭 → 들여쓰기 적용\n3. '미니파이' 클릭 → 한 줄로 압축\n4. 문법 오류 위치 자동 표시\n5. 결과 복사·다운로드\n\n모든 처리가 브라우저 안에서 일어나서 외부 서버 전송 없음. 인증 토큰·고객 데이터 같은 민감 JSON도 안심하고 정리할 수 있어요. 더 깊은 디버깅 패턴은 [JSON Lint 5단계 디버깅](/blog/json-lint-debug-5-steps)에서, 개발자용 10가지 활용은 [JSON 포맷터 10가지 패턴](/blog/json-formatter-developer-10-use-cases)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why JSON Formatter Matters",
+          body: "API responses come as a single line of 5,000 characters. Indentation reveals the tree structure and cuts debugging time by 80%.",
+        },
+        {
+          heading: "Use 1) Format API Responses",
+          body: "curl/Postman responses are single-line. Paste into a formatter to see the nested structure clearly.",
+        },
+        {
+          heading: "Use 2) Catch JSON Syntax Errors",
+          body: "Trailing commas, unquoted keys, single quotes, missing brackets, comments. Formatters point to the exact line and column.",
+        },
+        {
+          heading: "Use 3) Minify to Reduce Size",
+          body: "Removing whitespace cuts 30-50% file size. Use for build artifacts and API payloads, not human-edited config files.",
+        },
+        {
+          heading: "Use 4) JSON Schema Validation",
+          body: "Define expected structure with JSON Schema, validate with ajv (JS) or jsonschema (Python). Catch wrong field names in CI.",
+        },
+        {
+          heading: "Use 5) JSON to Other Formats",
+          body: "Convert JSON to YAML for Kubernetes, CSV for Excel, TypeScript interfaces for type safety, SQL INSERT for DB migration.",
+        },
+        {
+          heading: "Tool Comparison",
+          body: "Online (JSONLint, Toolkio), Chrome extension (JSON Formatter), VS Code (Shift+Alt+F), desktop (Visual JSON for 100MB+ files). Use local tools for sensitive data.",
+        },
+        {
+          heading: "Using Toolkio JSON Formatter",
+          body: "Paste JSON, click format or minify. Errors highlighted with location. All processing in browser — safe for sensitive data.",
+        },
+      ],
+    },
+    faq: [
+      { question: "JSON 포맷터를 온라인 도구로 써도 안전한가요?", answer: "공개 데이터는 안전. 인증 토큰·고객 정보·내부 API 응답은 로컬 도구(VS Code·Chrome 확장·Toolkio처럼 브라우저 처리) 사용 권장. 온라인 서버 로그에 남을 위험 있어요." },
+      { question: "JSON 미니파이하면 데이터가 손실되나요?", answer: "데이터 자체는 그대로. 들여쓰기·줄바꿈·공백만 제거. 키 이름·값·구조 100% 유지. 다시 포맷팅하면 원래 형태로 돌아와요." },
+      { question: "JSON에 주석 쓸 수 있나요?", answer: "표준 JSON은 주석 금지. JSON5·JSONC(JSON with Comments) 같은 변형은 주석 허용. VS Code의 settings.json은 JSONC라 주석 가능. API 통신용은 표준 JSON만 쓰세요." },
+      { question: "큰 JSON 파일(10MB+)은 어떻게 처리하나요?", answer: "온라인 도구는 보통 1~5MB 한도. 큰 파일은 jq(CLI), VS Code, 또는 데스크톱 도구 사용. 스트리밍 파서(JSONStream·oboe.js)로 메모리 절약도 가능." },
+      { question: "JSON과 JSON5 차이가 뭔가요?", answer: "JSON5는 JSON 확장으로 주석·후행 쉼표·작은따옴표 허용. 사람이 편집하는 설정 파일에 편함. 단 표준 JSON 파서는 JSON5 못 읽어요. 호환성 중요하면 표준 JSON만." },
+      { question: "JSON 들여쓰기는 2칸과 4칸 중 뭐가 표준?", answer: "표준 없음. 관습은 2칸이 다수(읽기 좋고 가로 공간 절약). Python·Java 진영은 4칸. 팀 내 통일이 핵심. ESLint·Prettier로 자동화 권장." },
+    ],
+  },
+  {
+    slug: "markdown-preview-7-uses-vscode-github-notion",
+    title: {
+      ko: "마크다운 미리보기 7가지 활용 — VS Code, GitHub, Notion 비교 가이드",
+      en: "Markdown Preview 7 Uses — VS Code, GitHub, Notion Compared",
+    },
+    description: {
+      ko: "마크다운 미리보기를 활용하는 7가지 실전 시나리오. VS Code 단축키부터 GitHub README, Notion 호환 차이까지 한번에 정리했어요.",
+      en: "7 practical uses of markdown preview — VS Code shortcuts, GitHub README, Notion compatibility, and more.",
+    },
+    date: "2026-05-01",
+    toolId: "markdown-preview",
+    image: "/images/blog/markdown-preview-7-uses-vscode-github-notion.webp",
+    keywords: ["마크다운 미리보기", "마크다운 VS Code", "GitHub README", "Notion 마크다운", "markdown preview"],
+    content: {
+      ko: [
+        {
+          heading: "마크다운 미리보기가 왜 중요한가?",
+          body: "마크다운은 작성 문법(`**굵게**`, `## 제목`)과 렌더링 결과가 달라요. 미리보기 없이 작성하면 'GitHub에서는 표가 깨진다', 'Notion에서는 코드 블록이 안 된다' 같은 문제를 발견 못 해요.\n\n저도 README 처음 쓸 때 표가 깨져서 다섯 번 푸시한 기억이 있어요. 미리보기 도구를 옆에 띄워두면 1초 만에 확인되거든요. 오늘은 환경별 차이까지 포함한 7가지 활용을 정리해 드릴게요.",
+        },
+        {
+          heading: "활용 1) VS Code 실시간 미리보기",
+          body: "VS Code에서 가장 많이 쓰는 패턴이에요.\n\n- `Ctrl+Shift+V` (Mac: `Cmd+Shift+V`): 새 탭에 미리보기\n- `Ctrl+K V`: 현재 탭 옆에 미리보기 분할\n\n분할 미리보기를 쓰면 왼쪽 작성·오른쪽 결과가 동시에 보여서 작업 속도가 2배 빨라요. 스크롤도 동기화돼요.\n\n확장 프로그램 'Markdown Preview Enhanced'를 추가로 설치하면 수식(LaTeX)·다이어그램(Mermaid)·차트까지 렌더링돼요. 기술 문서 쓰는 사람 필수.",
+        },
+        {
+          heading: "활용 2) GitHub README 검증",
+          body: "GitHub와 VS Code는 마크다운 렌더링이 약간 달라요. 흔한 차이.\n\n- **줄바꿈**: GitHub는 한 줄 띄워야 줄바꿈, VS Code는 자동으로 처리\n- **표 정렬**: GitHub만 `:---:` 정렬 지원\n- **체크박스**: `- [ ]` GitHub 전용 (Markdown 표준 X)\n- **이모지**: `:rocket:` GitHub만 자동 변환\n\nGitHub 미리보기가 가장 정확해요. 푸시 전에 PR 미리보기 또는 README 편집 화면의 'Preview' 탭으로 확인하세요.",
+        },
+        {
+          heading: "활용 3) Notion·Obsidian 호환",
+          body: "Notion·Obsidian도 마크다운 기반이지만 자체 확장 문법이 있어요.\n\n- **Notion**: `[[페이지명]]` 내부 링크 (위키 스타일). 표준 마크다운 X\n- **Notion**: 콜아웃 블록 자체 문법\n- **Obsidian**: `[[파일명#섹션]]` 같은 강력한 내부 링크\n- **Obsidian**: 수학·다이어그램 플러그인 풍부\n\n표준 마크다운으로 작성하면 셋 다 호환되지만 각자 강점 활용하려면 별도 작성 필요해요. 한 곳에서 작성 후 복사하면 Notion 콜아웃 같은 건 깨지거든요.",
+        },
+        {
+          heading: "활용 4) 발표 자료 만들기 (Marp·Slidev)",
+          body: "마크다운으로 슬라이드 만드는 도구가 늘었어요.\n\n- **Marp**: VS Code 확장, `---`로 슬라이드 구분, PDF·PPTX 변환\n- **Slidev**: Vue 기반, 코드 블록 그대로 슬라이드, 개발자 발표용\n- **reveal.js**: 웹 기반 프레젠테이션\n\nPowerPoint 키노트 작성보다 5배 빨라요. 디자인은 단조롭지만 코드 위주 발표(컨퍼런스·내부 공유)에 최적이에요. 미리보기를 띄워두고 슬라이드별 분량 조절하기 편해요.",
+        },
+        {
+          heading: "활용 5) 블로그·정적 사이트 작성",
+          body: "Jekyll·Hugo·Next.js·Astro 같은 정적 사이트는 모두 마크다운 기반이에요.\n\n작성 흐름.\n\n1. `.md` 또는 `.mdx` 파일 작성\n2. 로컬에서 `npm run dev`로 실시간 미리보기\n3. 푸시 → Vercel·Cloudflare Pages 자동 배포\n\nMDX는 마크다운 안에 React 컴포넌트 삽입 가능해서 차트·인터랙티브 요소까지 가능해요. 단 표준 마크다운보다 학습 곡선이 있고 GitHub 미리보기에서는 안 보여요.",
+        },
+        {
+          heading: "활용 6) 회의록·일일 노트",
+          body: "회의 중 빠르게 작성해야 하는 상황이에요.\n\n- **Obsidian Daily Note**: 매일 새 노트 자동 생성, 템플릿 적용\n- **VS Code + Foam**: VS Code 안에서 Obsidian 같은 양방향 링크\n- **Logseq**: 블록 단위 노트, 그래프 뷰 우수\n\n핵심은 미리보기로 정리된 결과를 즉시 확인하는 거예요. 회의 끝나자마자 깔끔한 문서를 공유할 수 있거든요. 양방향 링크(`[[회의명]]`)로 시간 지나도 검색 쉬워요.",
+        },
+        {
+          heading: "활용 7) 이메일·메신저용 서식 변환",
+          body: "마크다운으로 작성 후 다른 형식으로 변환하는 시나리오예요.\n\n- **마크다운 → HTML**: 이메일 뉴스레터, 일부 메신저\n- **마크다운 → Word(.docx)**: Pandoc 사용, 회사 보고서\n- **마크다운 → PDF**: 문서 배포, Marp·Pandoc 활용\n- **마크다운 → 카카오톡 리치 메시지**: 비공식, 복사 시 일부 서식 유지\n\n같은 원본을 다양한 포맷으로 재활용 가능해서 Single Source of Truth(SSOT) 원칙에 맞아요. 한 번 작성하고 여러 곳 배포할 수 있어요.",
+        },
+        {
+          heading: "Toolkio 마크다운 미리보기 사용법",
+          body: "1. 좌측에 마크다운 입력\n2. 우측에 실시간 렌더링\n3. GFM(GitHub Flavored Markdown) 스타일 기본 적용\n4. 결과 HTML 복사 또는 다운로드\n\n브라우저 안에서 처리되므로 회사 내부 문서·기밀 메모도 안전해요. 표·코드 블록 호환성 점검은 [마크다운 표·코드 5가지 흔한 실수](/blog/markdown-table-code-5-common-mistakes)에서, 표 정렬 트릭은 [마크다운 표 정렬 4가지](/blog/markdown-table-alignment-4-tricks)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Markdown Preview Matters",
+          body: "Markdown source and rendered output differ. Without preview, you discover GitHub table breakage or Notion incompatibility too late.",
+        },
+        {
+          heading: "Use 1) VS Code Live Preview",
+          body: "Ctrl+Shift+V opens preview. Ctrl+K V splits side-by-side. Markdown Preview Enhanced extension adds LaTeX, Mermaid, charts.",
+        },
+        {
+          heading: "Use 2) GitHub README Validation",
+          body: "GitHub differs from VS Code in line breaks, table alignment, checkboxes, and emojis. Use GitHub's own preview tab.",
+        },
+        {
+          heading: "Use 3) Notion/Obsidian Compatibility",
+          body: "Both extend standard markdown with [[wiki-links]] and custom blocks. Standard markdown works everywhere; advanced features need separate authoring.",
+        },
+        {
+          heading: "Use 4) Presentation Slides (Marp/Slidev)",
+          body: "Marp (VS Code), Slidev (Vue-based), reveal.js — write slides 5x faster than PowerPoint. Best for code-heavy talks.",
+        },
+        {
+          heading: "Use 5) Blog/Static Site Authoring",
+          body: "Jekyll, Hugo, Next.js, Astro all use markdown. MDX adds React components inline.",
+        },
+        {
+          heading: "Use 6) Meeting Notes/Daily Logs",
+          body: "Obsidian Daily Notes, VS Code + Foam, Logseq. Bidirectional links make searching across time easy.",
+        },
+        {
+          heading: "Use 7) Format Conversion",
+          body: "Markdown to HTML (email), to .docx (reports via Pandoc), to PDF (Marp/Pandoc). Single source of truth.",
+        },
+        {
+          heading: "Using Toolkio Markdown Preview",
+          body: "Paste markdown left, see rendered HTML right. GFM style by default. Browser-processed — safe for confidential notes.",
+        },
+      ],
+    },
+    faq: [
+      { question: "GitHub와 VS Code 마크다운 차이가 큰가요?", answer: "기본 문법은 같지만 줄바꿈·표 정렬·체크박스·이모지에서 차이. GitHub용은 GitHub 미리보기로 최종 확인 권장. VS Code 미리보기는 작성 중 빠른 확인용." },
+      { question: "Notion에서 마크다운 그대로 붙여넣으면 되나요?", answer: "Notion이 자동으로 마크다운 인식해 변환. 단 콜아웃·토글 같은 Notion 특수 블록은 깨짐. 표준 문법(제목·목록·표·코드)은 잘 변환돼요." },
+      { question: "마크다운으로 PDF 만드는 가장 쉬운 방법은?", answer: "Marp(VS Code 확장) 또는 Pandoc CLI. Marp는 슬라이드 형식, Pandoc은 일반 문서. 둘 다 무료. 디자인 더 세밀하면 HTML 변환 후 브라우저 인쇄 PDF." },
+      { question: "Mermaid 다이어그램은 어디서 보이나요?", answer: "GitHub README·VS Code(Markdown Preview Enhanced 확장)·Notion·Obsidian 모두 지원. Toolkio 미리보기는 표준 마크다운 위주라 Mermaid는 별도 도구 필요." },
+      { question: "마크다운 표 작성이 너무 번거로운데?", answer: "Tables Generator(tablesgenerator.com), VS Code Markdown Table Editor 확장 사용. CSV·엑셀에서 변환도 가능. 손으로 `|` 그리는 건 행 5개 넘으면 비효율적." },
+      { question: "MDX는 일반 마크다운과 뭐가 다른가요?", answer: "MDX는 마크다운 + JSX(React 컴포넌트). 마크다운 안에 인터랙티브 요소·차트 삽입 가능. Next.js·Gatsby에서 주로 사용. 단 GitHub·Notion 같은 표준 환경에서는 안 보여요." },
+    ],
+  },
+  {
+    slug: "lorem-ipsum-dummy-text-5-uses-designer-developer",
+    title: {
+      ko: "Lorem Ipsum 더미 텍스트 활용 — 디자이너 개발자 5가지 사용처와 한국어 대안",
+      en: "Lorem Ipsum 5 Uses — For Designers & Developers (with Korean Alternatives)",
+    },
+    description: {
+      ko: "Lorem Ipsum 더미 텍스트가 왜 라틴어인지부터 디자인 시안·개발 테스트 활용 5가지, 한국어 대체 도구까지 정리했어요.",
+      en: "Why Lorem Ipsum is Latin, 5 use cases in design and development, and Korean alternatives explained.",
+    },
+    date: "2026-05-01",
+    toolId: "lorem-ipsum",
+    image: "/images/blog/lorem-ipsum-dummy-text-5-uses-designer-developer.webp",
+    keywords: ["Lorem Ipsum", "더미 텍스트", "디자인 시안", "lorem ipsum generator", "한국어 더미"],
+    content: {
+      ko: [
+        {
+          heading: "왜 'Lorem Ipsum'이라는 이상한 라틴어를 쓸까?",
+          body: "Lorem Ipsum은 1500년대 인쇄소에서 활자 견본으로 사용된 라틴어 텍스트예요. 키케로의 'De Finibus Bonorum et Malorum'(BC 45년)에서 발췌됐다고 알려져 있어요.\n\n왜 라틴어를 쓸까? 디자인 시안에 진짜 한국어를 넣으면 사람들이 텍스트 내용에 집중해서 정작 봐야 할 디자인을 못 봐요. 의미 없어 보이지만 글자 모양·줄 길이·블록 형태가 자연스러운 라틴어가 적당한 거죠.\n\n오늘은 5가지 실전 활용과 한국어 더미 대안까지 정리해 드릴게요.",
+        },
+        {
+          heading: "활용 1) 디자인 시안 (Figma·Sketch·Adobe XD)",
+          body: "디자이너가 가장 많이 쓰는 시나리오예요.\n\n사용 패턴.\n\n- **타이포그래피 시안**: 본문 폰트 가독성 테스트\n- **레이아웃 시안**: 카드·블록 크기와 여백 조정\n- **반응형 테스트**: 모바일·태블릿에서 줄 바뀜 확인\n- **클라이언트 시안**: 텍스트 내용 정해지기 전 디자인 먼저\n\nFigma·Sketch·XD 모두 Lorem Ipsum 플러그인이 있어서 클릭 한 번에 채워져요. 단어 수·문단 수까지 지정 가능. 디자인 시안 평균 80% 이상이 Lorem Ipsum 사용 중이에요.",
+        },
+        {
+          heading: "활용 2) 프론트엔드 개발 테스트",
+          body: "컴포넌트 만들 때 텍스트 길이별 동작 확인용이에요.\n\n흔한 버그.\n\n- 짧은 텍스트로만 테스트하다 긴 텍스트 들어가면 레이아웃 깨짐\n- 영어로만 테스트하다 한글 들어가면 줄바꿈 처리 다름\n- 한 단어가 너무 길면 컨테이너 밖으로 튀어나감\n\nLorem Ipsum으로 짧은·중간·긴 버전 세 가지 테스트하면 90% 버그 잡혀요. 실무에서는 `lorem-ipsum` npm 패키지로 단위 테스트에도 활용해요.",
+        },
+        {
+          heading: "활용 3) 데이터베이스 시드 데이터",
+          body: "개발 환경에 가짜 데이터 100건·1,000건 미리 채워놓는 용도예요.\n\n예. 블로그 시스템 개발 중인데 글이 1개도 없으면 페이지네이션·정렬·필터 기능을 테스트할 수 없어요. 시드 데이터로 100건 미리 넣으면 모든 기능 검증 가능.\n\n도구.\n\n- **Faker.js**: 이름·이메일·주소·문장 자동 생성. 가장 인기\n- **Mockaroo**: 1,000건 무료, CSV·SQL·JSON 다운로드\n- **JSON Generator**: 스키마 정의 후 대량 생성\n\n진짜 고객 데이터 쓰면 개인정보 위험. 시드 데이터로 분리하는 게 보안 원칙이에요.",
+        },
+        {
+          heading: "활용 4) 이메일·뉴스레터 템플릿 미리보기",
+          body: "마케팅 팀이 뉴스레터 템플릿 만들 때 본문 들어가기 전 디자인 검토용이에요.\n\n실무 흐름.\n\n1. Mailchimp·Stibee·Resend 같은 도구에 Lorem Ipsum 채운 시안 만들기\n2. 데스크톱·모바일·다크모드 미리보기 확인\n3. 클라이언트·내부 승인\n4. 본문 텍스트 교체 후 발송\n\n실제 본문 쓰기 전에 디자인부터 합의하면 수정 횟수가 1/3로 줄어요. 본문 쓰는 시간도 절약돼요.",
+        },
+        {
+          heading: "활용 5) PPT·인쇄물 시안",
+          body: "PowerPoint·Keynote·인쇄물 디자인에서도 활용해요.\n\n- 책·잡지 레이아웃 시안\n- 명함·브로셔 시안\n- 박람회 부스·간판 시안\n\nAdobe InDesign은 'Type → Fill with Placeholder Text' 기능 내장. 클릭 한 번에 채워져요. 인쇄물은 폰트 크기와 자간이 화면과 다르게 보이므로 더미로 먼저 인쇄해서 가독성 확인이 중요해요.",
+        },
+        {
+          heading: "한국어 더미 텍스트 대안",
+          body: "한국어 사이트는 Lorem Ipsum이 어색해 보일 때가 있어요. 한국어 대안.\n\n- **한국어 더미 텍스트 생성기**: 한국어 문장 무작위 생성\n- **김광섭·이상 시 발췌**: 저작권 만료(70년) 한국 문학 활용\n- **나무위키·위키백과 무작위 문서**: 길이 자유 조절\n- **민중의 소리·동화 발췌**: 친근한 톤\n\n주의. 김춘수·정호승 같은 현대 시인은 저작권 살아있어요. 발표 자료에 임의로 쓰면 저작권 침해. 저작권 만료 작품(1955년 이전 사망 작가) 또는 직접 만든 더미만 안전해요.",
+        },
+        {
+          heading: "Lorem Ipsum 변형 5가지 (재미있는 대안)",
+          body: "표준 라틴어 외 재미있는 버전들이에요.\n\n1. **Hipster Ipsum**: 힙스터 단어(craft beer·artisanal) 위주\n2. **Bacon Ipsum**: 베이컨·요리 관련 단어\n3. **Cat Ipsum**: 고양이 관련 단어\n4. **Cupcake Ipsum**: 디저트 단어, 달콤한 톤\n5. **Pirate Ipsum**: 해적 어휘, 캐주얼 사이트용\n\n프로젝트 톤에 맞는 더미를 쓰면 클라이언트와 디자인 회의 분위기도 좋아져요. 단 진지한 비즈니스·금융 사이트에는 표준 Lorem Ipsum이 안전해요.",
+        },
+        {
+          heading: "Toolkio Lorem Ipsum 생성기 사용법",
+          body: "1. 단어 수·문단 수·문장 수 선택\n2. '생성' 클릭\n3. 자동으로 라틴어 더미 텍스트 출력\n4. 클립보드에 복사 → Figma·코드·PPT 어디든 붙여넣기\n\n100단어부터 5,000단어까지 자유롭게 생성. 작성 결과는 외부 전송 없이 브라우저에서만 처리돼요. 더 자세한 활용은 [Lorem Ipsum 활용법](/blog/lorem-ipsum-dummy-text-usage-guide)에서, 한국어 더미 5종은 [한국어 더미 텍스트 5종](/blog/korean-lorem-ipsum-dummy-text-5-types)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why 'Lorem Ipsum' Latin?",
+          body: "Latin text from Cicero's De Finibus (45 BC), used by printers since the 1500s. Letters look natural without distracting readers from the design.",
+        },
+        {
+          heading: "Use 1) Design Mockups (Figma/Sketch/XD)",
+          body: "Typography, layout, responsive testing, client mockups. Plugin available in all major tools — fills with one click.",
+        },
+        {
+          heading: "Use 2) Frontend Component Testing",
+          body: "Test short, medium, long text variations to catch overflow and word-break bugs early.",
+        },
+        {
+          heading: "Use 3) Database Seed Data",
+          body: "Pre-populate 100-1000 fake records using Faker.js, Mockaroo, or JSON Generator. Avoid real customer data in dev.",
+        },
+        {
+          heading: "Use 4) Email/Newsletter Templates",
+          body: "Design template before content is finalized. Reduces revision cycles by 67%.",
+        },
+        {
+          heading: "Use 5) PPT/Print Mockups",
+          body: "Books, magazines, brochures, booths. InDesign has 'Fill with Placeholder Text' built-in.",
+        },
+        {
+          heading: "Korean Alternatives",
+          body: "Korean dummy generators, Kim Gwang-seop and Yi Sang poetry (copyright expired), random Wikipedia articles. Avoid living poets due to copyright.",
+        },
+        {
+          heading: "Fun Variants",
+          body: "Hipster Ipsum, Bacon Ipsum, Cat Ipsum, Cupcake Ipsum, Pirate Ipsum. Match project tone, but use standard Lorem for serious business sites.",
+        },
+        {
+          heading: "Using Toolkio Lorem Ipsum Generator",
+          body: "Choose words/paragraphs/sentences count, click generate, copy to clipboard. 100 to 5,000 words supported. Browser-processed.",
+        },
+      ],
+    },
+    faq: [
+      { question: "Lorem Ipsum이 정말 의미 있는 라틴어인가요?", answer: "원본은 키케로 'De Finibus' 문장이지만 인쇄용 더미는 단어 순서가 바뀌고 일부 변형돼서 의미는 없어요. 라틴어 학자가 봐도 거의 무의미한 단어 나열이에요." },
+      { question: "한국어 사이트에 라틴어 더미가 어색하지 않나요?", answer: "디자인 단계에서는 무관. 클라이언트 시안은 한국어 더미가 더 친근해 보이므로 한국어 더미 생성기 사용. 단 폰트 가독성 테스트는 라틴어가 더 중립적이에요." },
+      { question: "Lorem Ipsum 단어 수는 보통 얼마나 쓰나요?", answer: "디자인 시안 한 카드: 30~50단어. 블로그 본문 더미: 300~500단어. 책·잡지 페이지: 200~400단어. 너무 길면 시안 검토자가 텍스트 읽으려 해서 디자인 집중 흐려져요." },
+      { question: "더미 데이터로 진짜 고객 데이터를 써도 되나요?", answer: "절대 금지. 개인정보보호법 위반·데이터 유출 위험. Faker.js·Mockaroo로 가짜 데이터 생성 권장. 이름·이메일·주소·전화번호 모두 합리적으로 보이는 가짜 생성 가능." },
+      { question: "Lorem Ipsum이 SEO에 영향이 있나요?", answer: "있어요. 라이브 사이트에 Lorem Ipsum 남아있으면 Google이 'thin content'로 분류. 검색 순위 하락. 배포 전 모든 더미 텍스트 제거 필수. 자동 검사 스크립트 권장." },
+      { question: "이미지 더미는 어디서 받나요?", answer: "Lorem Picsum(picsum.photos)·Unsplash·placeholder.com 같은 사이트에서 무료 더미 이미지 받기 가능. CSS·JS에서 URL 직접 호출도 가능해요." },
+    ],
+  },
+  {
+    slug: "css-minifier-website-speed-5-tips-guide",
+    title: {
+      ko: "CSS Minifier 압축 가이드 — 웹사이트 로딩 속도 개선 5가지 실전 팁",
+      en: "CSS Minifier Guide — 5 Tips to Speed Up Your Website",
+    },
+    description: {
+      ko: "CSS 미니파이로 파일 크기를 30~60% 줄이고 gzip까지 더해 80~90% 압축하는 5가지 실전 팁. Webpack·Vite 자동화부터 Critical CSS까지.",
+      en: "Reduce CSS file size 30-60% with minification, 80-90% with gzip. 5 practical tips including Webpack/Vite automation and Critical CSS.",
+    },
+    date: "2026-05-01",
+    toolId: "css-minifier",
+    image: "/images/blog/css-minifier-website-speed-5-tips-guide.webp",
+    keywords: ["CSS Minifier", "CSS 압축", "웹사이트 속도", "css minify", "CSS 최적화"],
+    content: {
+      ko: [
+        {
+          heading: "CSS 압축이 웹사이트 속도에 미치는 영향",
+          body: "Google 자료에 따르면 페이지 로딩이 1초 늘어날 때마다 이탈률이 32% 올라가요. CSS는 보통 페이지 첫 화면 렌더링을 막는 자원(render-blocking)이라 압축 효과가 즉시 나타나요.\n\nCSS 미니파이만으로도 파일 크기 30~60% 감소, gzip까지 적용하면 80~90% 줄어들어요. 200KB CSS가 18KB까지 줄어드는 사례도 있죠. 오늘은 미니파이 기본부터 자동화·고급 최적화까지 5가지 실전 팁을 정리해 드릴게요.",
+        },
+        {
+          heading: "팁 1) 미니파이 기본 — 공백·주석·줄바꿈 제거",
+          body: "미니파이가 제거하는 것.\n\n- 들여쓰기 공백\n- 줄바꿈\n- 주석(`/* */`)\n- 마지막 세미콜론(선택)\n- 빈 규칙\n- 사용 안 하는 마지막 0(예: `0.5px` → `.5px`)\n\n예시. 다음 코드.\n\n```css\n/* Header styles */\n.header {\n  background-color: #ffffff;\n  padding: 16px 24px;\n}\n```\n\n미니파이 후.\n\n```css\n.header{background-color:#fff;padding:16px 24px}\n```\n\n공백 91% 감소. 의미는 동일. 브라우저 동작은 100% 같아요.",
+        },
+        {
+          heading: "팁 2) 빌드 자동화 — Webpack·Vite·esbuild",
+          body: "수동 미니파이는 한 번뿐. 자동화가 핵심이에요.\n\n도구별 설정.\n\n- **Webpack**: `MiniCssExtractPlugin` + `CssMinimizerPlugin`. production 모드 자동 적용\n- **Vite**: 기본 내장. `vite build` 명령만 실행하면 자동 미니파이\n- **esbuild**: `--minify` 플래그. 가장 빠름(JS 도구 중 10~100배)\n- **PostCSS + cssnano**: 가장 강력한 최적화. 색상 단순화·중복 규칙 제거까지\n\nNext.js·Nuxt·Astro·Remix는 모두 빌드 시 자동으로 CSS 미니파이해요. 별도 설정 거의 불필요.",
+        },
+        {
+          heading: "팁 3) gzip·Brotli 압축까지 적용",
+          body: "미니파이만으로는 부족해요. 서버에서 gzip·Brotli 압축까지 적용해야 80~90% 절감.\n\n사례. 200KB 원본 CSS.\n\n- 미니파이만: 90KB (55% 절감)\n- 미니파이 + gzip: 18KB (91% 절감)\n- 미니파이 + Brotli: 15KB (93% 절감, gzip보다 약간 더 효율적)\n\n설정.\n\n- **Cloudflare Pages·Vercel**: 자동 적용 (gzip·Brotli 둘 다)\n- **Nginx**: `gzip on`, `brotli on` 설정 추가\n- **Apache**: `mod_deflate`, `mod_brotli` 활성화\n\n2026년 기준 모든 모던 브라우저가 Brotli 지원하니 둘 다 켜면 자동으로 더 효율적인 걸 사용해요.",
+        },
+        {
+          heading: "팁 4) 사용 안 하는 CSS 제거 (Tree Shaking)",
+          body: "큰 프레임워크(Bootstrap·Tailwind·Material UI) 쓰면 사용 안 하는 CSS 코드가 80% 넘어요. Tree Shaking으로 실제 사용된 CSS만 남기기.\n\n도구.\n\n- **PurgeCSS**: HTML·JS 분석해서 사용 안 한 클래스 제거\n- **Tailwind JIT**: 필요한 클래스만 동적으로 생성. 기본 활성화\n- **UnCSS**: 빌드 시 데드 CSS 자동 제거\n\nTailwind를 PurgeCSS와 함께 쓰면 3MB CSS가 10~30KB로 줄어들기도 해요. 미니파이 효과보다 훨씬 큰 절감. 도입 우선순위 1번이에요.",
+        },
+        {
+          heading: "팁 5) Critical CSS 인라인 — 첫 화면 즉시 렌더링",
+          body: "고급 최적화. 첫 화면(above-the-fold)에 필요한 CSS만 HTML 안에 인라인으로 넣고 나머지는 비동기 로드.\n\n흐름.\n\n1. Critical(Penthouse·Critters 도구로 추출): 첫 화면 CSS 5~10KB\n2. HTML `<head>`에 `<style>` 태그로 직접 삽입\n3. 나머지 CSS는 `<link rel=\"preload\">` 또는 `media=\"print\"` 트릭으로 비동기 로드\n\nLargest Contentful Paint(LCP) 점수가 1~2초 빨라져요. Google PageSpeed Insights에서 명시적으로 권장하는 최적화. Next.js·Nuxt에는 내장 플러그인 있음.",
+        },
+        {
+          heading: "측정 — Before/After 비교 도구",
+          body: "최적화 효과 측정 도구예요.\n\n- **Google PageSpeed Insights**: LCP·FCP·CLS 측정, 무료\n- **WebPageTest**: 폭포수 차트로 자원별 로드 시간 시각화\n- **Lighthouse**: Chrome DevTools 내장, 빠른 점검\n- **GTmetrix**: 무료 회원 가입 시 히스토리 추적\n\n측정 → 최적화 → 재측정 사이클이 핵심. 막연히 '빠르겠지'가 아니라 숫자로 검증하세요. 보통 미니파이만으로 PageSpeed 점수 5~10점 상승해요.",
+        },
+        {
+          heading: "Toolkio CSS Minifier 사용법",
+          body: "1. CSS 코드 붙여넣기\n2. '미니파이' 클릭\n3. 압축 결과와 절감 비율 확인\n4. 클립보드 복사 또는 다운로드\n\n빌드 도구를 따로 셋업할 시간 없을 때나 한두 파일만 빠르게 압축할 때 유용해요. 모든 처리는 브라우저 안에서 이뤄지므로 회사 내부 CSS도 안전. 더 깊은 웹 성능 최적화는 [웹사이트 이미지 최적화 가이드](/blog/website-image-optimization-speed-guide)에서, CSS 압축의 다른 측면은 [CSS 압축 웹 성능 가이드](/blog/css-minifier-web-performance-guide)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "How CSS Compression Affects Speed",
+          body: "Google data: 1 extra second of load time = 32% bounce rate increase. CSS is render-blocking, so compression has immediate impact.",
+        },
+        {
+          heading: "Tip 1) Basic Minify — Remove Whitespace",
+          body: "Removes indentation, line breaks, comments, trailing semicolons, leading zeros. 91% size reduction common, identical browser behavior.",
+        },
+        {
+          heading: "Tip 2) Build Automation",
+          body: "Webpack (CssMinimizerPlugin), Vite (built-in), esbuild (--minify), PostCSS + cssnano. Next.js/Nuxt/Astro auto-minify in production.",
+        },
+        {
+          heading: "Tip 3) Apply gzip/Brotli",
+          body: "200KB CSS → 90KB (minify) → 18KB (gzip, 91% reduction) → 15KB (Brotli, 93%). Cloudflare/Vercel apply automatically.",
+        },
+        {
+          heading: "Tip 4) Tree Shaking — Remove Unused CSS",
+          body: "PurgeCSS, Tailwind JIT, UnCSS analyze HTML/JS to remove unused classes. Tailwind 3MB → 10-30KB possible.",
+        },
+        {
+          heading: "Tip 5) Critical CSS Inline",
+          body: "Extract above-the-fold CSS (Penthouse/Critters), inline in HTML head, lazy-load rest. Improves LCP 1-2 seconds.",
+        },
+        {
+          heading: "Measurement Tools",
+          body: "PageSpeed Insights, WebPageTest, Lighthouse, GTmetrix. Measure → optimize → measure cycle is key.",
+        },
+        {
+          heading: "Using Toolkio CSS Minifier",
+          body: "Paste CSS, click minify, see reduction ratio, copy or download. All processing in browser. Useful for one-off compression.",
+        },
+      ],
+    },
+    faq: [
+      { question: "CSS 미니파이하면 디버깅 어렵지 않나요?", answer: "라이브 환경에 미니파이된 CSS 배포. 개발 환경(localhost)은 원본 유지. Source Map 생성하면 미니파이된 CSS도 원본 위치로 매핑돼서 DevTools에서 디버깅 가능해요." },
+      { question: "CSS 미니파이 후 디자인이 깨질 수 있나요?", answer: "표준 미니파이는 100% 안전. 단 cssnano 같은 고급 옵션(색상 단순화·규칙 병합)은 가끔 의도치 않은 변경 발생. 배포 전 시각 회귀 테스트(visual regression test) 권장." },
+      { question: "미니파이와 gzip 중 뭘 먼저 적용해야 하나요?", answer: "둘 다. 미니파이가 먼저(빌드 단계), gzip은 서버에서 자동(런타임). 미니파이된 CSS를 gzip으로 압축하면 효과 극대화. Cloudflare·Vercel은 gzip 자동 적용." },
+      { question: "Tailwind CSS는 미니파이 효과가 큰가요?", answer: "Tailwind JIT 모드는 사용한 클래스만 생성하므로 이미 최적. PurgeCSS 같은 추가 도구 거의 불필요. 빌드 결과 보통 10~30KB로 작음. 미니파이는 +5~10% 추가 절감." },
+      { question: "Critical CSS 추출이 정말 필요한가요?", answer: "사이트 트래픽 큰 경우 LCP 점수에 큰 영향. 트래픽 적으면 우선순위 낮음. 먼저 미니파이·gzip·Tree Shaking 적용 후 PageSpeed 80점 미만일 때 도입 고려." },
+      { question: "CSS 변수(--color)도 미니파이되나요?", answer: "변수 이름은 보존(브라우저가 런타임에 사용). 단 PostCSS 플러그인으로 변수 이름 짧게 변환 가능(`--primary-color` → `--p`). 이름 짧을수록 추가 절감되지만 가독성과 트레이드오프." },
+    ],
+  },
 ];
