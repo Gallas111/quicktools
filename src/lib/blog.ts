@@ -15754,4 +15754,477 @@ export const blogPosts: BlogPost[] = [
       { question: "CSS 변수(--color)도 미니파이되나요?", answer: "변수 이름은 보존(브라우저가 런타임에 사용). 단 PostCSS 플러그인으로 변수 이름 짧게 변환 가능(`--primary-color` → `--p`). 이름 짧을수록 추가 절감되지만 가독성과 트레이드오프." },
     ],
   },
+  {
+    slug: "excel-len-lenb-character-count-korean",
+    title: {
+      ko: "엑셀 LEN 함수 글자수 세기 — LEN과 LENB 차이 5가지 활용법",
+      en: "Excel LEN vs LENB — 5 Practical Uses for Korean Character Counting",
+    },
+    description: {
+      ko: "엑셀 LEN과 LENB 함수의 차이를 한글 기준으로 정리. 자기소개서·SMS·DB 컬럼 길이 검증 5가지 실전 사례까지 한 번에 정리했어요.",
+      en: "Excel LEN vs LENB function differences for Korean text. 5 practical use cases including resume validation, SMS limits, and database column length checks.",
+    },
+    date: "2026-05-02",
+    toolId: "character-counter",
+    image: "/images/blog/excel-len-lenb-character-count-korean.webp",
+    keywords: ["글자수 세기 함수", "엑셀 LEN 함수", "엑셀 LENB 함수", "한글 바이트", "Excel LEN LENB"],
+    content: {
+      ko: [
+        {
+          heading: "LEN과 LENB는 뭐가 다를까?",
+          body: "엑셀에서 글자수 셀 때 가장 자주 쓰는 함수가 `LEN`이에요. 그런데 한글이 섞이면 LEN만으로는 안 되는 경우가 있어요.\n\n- `LEN(셀)`: 문자 개수를 셈. 한글·영어·숫자 모두 1로 계산\n- `LENB(셀)`: 바이트 단위로 셈. 한글은 2바이트, 영어·숫자·공백은 1바이트\n\n예시.\n\n- `LEN(\"가나다\")` → 3\n- `LENB(\"가나다\")` → 6\n- `LEN(\"abc가\")` → 4\n- `LENB(\"abc가\")` → 5 (a·b·c는 1바이트씩, 가는 2바이트)\n\nSMS·자기소개서·DB 컬럼처럼 바이트 단위 제한이 있는 곳에서는 LENB가 진짜 글자 길이를 알려줘요.",
+        },
+        {
+          heading: "활용 1) 자기소개서 글자수 정확하게 검증",
+          body: "공기업·공무원 자기소개서는 보통 '한글 1000자' 또는 '공백 포함 2000바이트' 식으로 제한이 다양해요.\n\n- 글자수 기준: `=LEN(A1)`\n- 공백 제외 글자수: `=LEN(SUBSTITUTE(A1,\" \",\"\"))`\n- 바이트 기준: `=LENB(A1)`\n- 공백 제외 바이트: `=LENB(SUBSTITUTE(A1,\" \",\"\"))`\n\n사례. 'NCS 자기소개서 1500자 이내'라고 적혀 있으면 LEN 기준이에요. 'KOTRA 인턴 지원서 4000바이트 이내'라면 LENB 기준이라 한글 위주로 쓰면 약 2000자 한도가 돼요.\n\n바이트 기준 글자수를 모르고 LEN으로 맞추다가 업로드 거부 당하는 사례가 흔해요. 모집 요강을 다시 한번 확인하세요.",
+        },
+        {
+          heading: "활용 2) SMS·LMS·MMS 분기 자동 판별",
+          body: "한국 SMS 표준은 한글 45자(90바이트) 이내, 그 이상은 LMS·MMS로 자동 전환되면서 요금이 올라가요.\n\n수식.\n\n- `=IF(LENB(A1)<=90,\"SMS\",IF(LENB(A1)<=2000,\"LMS\",\"MMS\"))`\n\nA1 셀에 메시지 입력하면 SMS·LMS·MMS 자동 판별. 마케팅 발송 시 비용 추정에 유용해요.\n\n주의. SMS 90바이트는 한글 45자 + 공백 0개 기준. 공백·이모지 들어가면 한도 더 줄어들어요. `=LENB(A1) & \" 바이트\"` 컬럼을 함께 두면 시각적으로 확인하기 좋아요.",
+        },
+        {
+          heading: "활용 3) DB VARCHAR 컬럼 길이 검증",
+          body: "MySQL·Oracle 같은 DB에 데이터 넣기 전에 VARCHAR 길이 초과 여부를 엑셀에서 미리 확인해요.\n\n수식.\n\n- 컬럼이 VARCHAR(50) UTF-8: `=IF(LENB(A1)<=50,\"OK\",\"초과\")`\n- 컬럼이 VARCHAR(50) UTF-8MB4(이모지 지원): 한글 3바이트, 이모지 4바이트라 별도 함수 필요\n- 컬럼이 NVARCHAR(50) MSSQL: `=IF(LEN(A1)<=50,\"OK\",\"초과\")` (NVARCHAR는 글자 단위)\n\n주의. UTF-8에서 한글은 3바이트인데 엑셀 LENB는 2바이트로 계산해요(EUC-KR 기준). UTF-8 바이트 정확히 셀 거면 [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)에서 'UTF-8 바이트' 모드로 확인하세요.",
+        },
+        {
+          heading: "활용 4) 텍스트 길이 통계로 데이터 품질 검증",
+          body: "고객 리뷰·설문 응답 같은 텍스트 데이터를 분석할 때 길이 통계로 이상치 찾기.\n\n수식.\n\n- 평균 길이: `=AVERAGE(LEN(A2:A100))` (배열 수식, Ctrl+Shift+Enter)\n- 최대 길이: `=MAX(LEN(A2:A100))`\n- 5자 미만 응답 개수: `=COUNTIF(B2:B100,\"<5\")` (B열에 LEN 결과)\n- 표준편차: `=STDEV(LEN(A2:A100))`\n\n사례. 만족도 설문에서 평균 응답 길이가 50자인데 5자 미만이 20개 있다면 무성의 응답일 가능성이 커요. 따로 빼서 검토하세요.\n\n반대로 너무 긴 응답(평균 +2σ 이상)도 의심 사례 — 외부에서 복사·붙여넣기했거나 봇 응답일 수 있어요.",
+        },
+        {
+          heading: "활용 5) 가운데 글자 추출 — MID·LEN 조합",
+          body: "전화번호·계좌번호·주민번호 같은 일정 형식 데이터에서 특정 위치 글자 추출.\n\n예시.\n\n- 전화번호 `010-1234-5678`에서 가운데 4자리: `=MID(A1,5,4)` → `1234`\n- 계좌번호 끝 4자리: `=RIGHT(A1,4)`\n- 글자수 가변일 때 끝 5자: `=RIGHT(A1,LEN(A1)-LEN(A1)+5)` → `=RIGHT(A1,MIN(5,LEN(A1)))`\n- 첫 공백 전까지: `=LEFT(A1,FIND(\" \",A1)-1)`\n\nLEN 함수는 단독으로도 쓰지만 MID·LEFT·RIGHT·FIND와 조합할 때 진짜 위력이 나와요. 텍스트 자동화의 90%가 이 조합으로 해결돼요.",
+        },
+        {
+          heading: "함정 5가지 — 자주 나오는 실수",
+          body: "1. **공백 처리 헷갈림**: LEN은 공백 포함, 모집 요강 다시 확인\n2. **셀 줄바꿈(Alt+Enter) 영향**: 줄바꿈 문자도 1글자로 셈, 정확하려면 `LEN(SUBSTITUTE(A1,CHAR(10),\"\"))`\n3. **LENB의 한글 2바이트 vs 실제 UTF-8 3바이트**: 엑셀 LENB는 EUC-KR 기준 (Windows 한국어 환경), DB가 UTF-8이면 별도 계산 필요\n4. **`#NAME?` 에러**: LENB가 일부 환경에서 사용 불가 (Excel for Mac, Office Online 일부 버전)\n5. **이모지(😀) 처리**: LEN으로는 1, 실제 메모리는 4바이트. 엑셀이 surrogate pair를 1로 셈",
+        },
+        {
+          heading: "Toolkio 글자수 세기 도구로 정확하게 측정",
+          body: "엑셀 LENB는 EUC-KR 기준이라 UTF-8 환경(웹·DB·API)에서는 부정확해요. 그럴 땐 [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)를 쓰세요.\n\n장점.\n\n1. **UTF-8·EUC-KR 동시 표시**: 같은 문자열의 두 인코딩 바이트 동시 확인\n2. **공백 포함·제외 자동 구분**\n3. **한글 음절 vs 자모 분리 옵션** (예: '가' vs 'ㄱ+ㅏ')\n4. **이모지·특수문자 정확 처리**\n\n자기소개서는 엑셀 LEN으로, SMS·DB 컬럼은 Toolkio로 — 용도별로 나눠 쓰면 실수 없어요. 더 자세한 글자수 활용은 [한국어 자기소개서 글자수](/blog/korean-resume-char-count)에서, 영어 글자수는 [영어 글자수 세기](/blog/english-character-counter-guide)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "LEN vs LENB Difference",
+          body: "LEN counts characters (Korean=1, English=1), LENB counts bytes (Korean=2, English=1). For SMS/DB column length validation, LENB gives true byte size.",
+        },
+        {
+          heading: "Use 1) Resume Character Validation",
+          body: "Government/public sector resumes use varying limits — 1000 chars, 2000 bytes. Match LEN or LENB to spec exactly to avoid upload rejection.",
+        },
+        {
+          heading: "Use 2) SMS/LMS/MMS Auto Detection",
+          body: "Korean SMS = 90 bytes (45 Korean chars). Use IF(LENB(A1)<=90,\"SMS\",IF(LENB(A1)<=2000,\"LMS\",\"MMS\")) for automatic billing tier detection.",
+        },
+        {
+          heading: "Use 3) DB VARCHAR Length Check",
+          body: "VARCHAR(50) UTF-8 — Korean takes 3 bytes, but Excel LENB uses EUC-KR (2 bytes). For accurate UTF-8 byte count, use Toolkio character counter.",
+        },
+        {
+          heading: "Use 4) Text Length Statistics",
+          body: "AVERAGE(LEN(range)), MAX(LEN(range)), COUNTIF for outlier detection. Survey responses under 5 chars are likely low-effort, very long responses likely bot/copy-paste.",
+        },
+        {
+          heading: "Use 5) MID + LEN for Substring Extraction",
+          body: "Phone middle 4 digits: MID(A1,5,4). Last 4: RIGHT(A1,4). Until first space: LEFT(A1,FIND(\" \",A1)-1). 90% of text automation uses these combos.",
+        },
+        {
+          heading: "5 Common Pitfalls",
+          body: "Whitespace, line breaks (CHAR(10)), LENB EUC-KR vs UTF-8, #NAME? error on Mac/Online, emoji surrogate pairs counted as 1.",
+        },
+        {
+          heading: "Use Toolkio for UTF-8 Accuracy",
+          body: "Excel LENB is EUC-KR based. For UTF-8 environments (web/DB/API), Toolkio character counter shows both encodings simultaneously plus emoji-correct handling.",
+        },
+      ],
+    },
+    faq: [
+      { question: "LENB가 안 보이거나 #NAME? 에러가 나요. 왜 그래요?", answer: "Excel for Mac이나 Office Online 일부 버전에서 LENB 미지원. 한국어 Windows Excel은 기본 지원해요. Mac이면 `=LEN(SUBSTITUTE(A1,\"가\",\"가가\"))` 같은 우회 수식으로 한글만 2배 가산 가능." },
+      { question: "엑셀 LENB와 UTF-8 바이트가 왜 달라요?", answer: "엑셀 LENB는 EUC-KR 기준(한글 2바이트). 웹·DB는 UTF-8 기준(한글 3바이트). 정확한 UTF-8 계산은 [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)에서 'UTF-8 바이트' 모드로 확인하세요." },
+      { question: "이모지가 들어간 텍스트 글자수는 어떻게 세요?", answer: "엑셀은 이모지를 1글자로 세지만 실제 메모리는 4바이트. SMS·DB·API에서는 4바이트로 차감되므로 LENB도 부정확. Toolkio나 Python `len(text.encode('utf-8'))`로 확인 권장." },
+      { question: "셀 안에 줄바꿈(Alt+Enter) 있을 때 LEN은?", answer: "줄바꿈 문자(CHAR(10))도 1글자로 셈. 줄바꿈 제외하려면 `=LEN(SUBSTITUTE(A1,CHAR(10),\"\"))`. 자기소개서 글자수 셀 때 줄바꿈 포함·제외 기준 모집 요강 확인 필수." },
+      { question: "LEN과 LEFT·RIGHT·MID 같이 쓸 때 주의점은?", answer: "LEN으로 가변 길이 처리. `=RIGHT(A1,LEN(A1)-FIND(\"@\",A1))`처럼 위치 + LEN 조합으로 동적 추출. 단 FIND는 못 찾으면 #VALUE! 에러 — `IFERROR(...,\"\")`로 감싸기." },
+      { question: "엑셀 LENB와 한컴오피스(셀) 글자수가 다른 이유는?", answer: "한컴오피스는 한글 워드 자체 함수 사용, 엑셀과 약간 다름. 자기소개서·공문서는 한컴 기준이 표준일 때가 많으니 한컴에서 한 번 더 확인 권장." },
+    ],
+  },
+  {
+    slug: "image-compress-200kb-resume-id-photo",
+    title: {
+      ko: "이미지 압축 200KB 만들기 — 증명사진 이력서 첨부용 5가지 방법",
+      en: "Compress Images to 200KB — 5 Methods for Resume and ID Photos",
+    },
+    description: {
+      ko: "취업 사이트 200KB 제한에 딱 맞춰 증명사진 이미지 압축하는 5가지 방법. 품질 손실 없이 50% 줄이는 실전 팁과 사이즈 규격까지 정리했어요.",
+      en: "Compress images to exactly 200KB for job site uploads. 5 practical methods including ID photo size standards and quality preservation tips.",
+    },
+    date: "2026-05-02",
+    toolId: "image-compressor",
+    image: "/images/blog/image-compress-200kb-resume-id-photo.webp",
+    keywords: ["이미지 압축 200KB", "증명사진 압축", "이력서 사진 크기", "image compressor 200kb", "사진 용량 줄이기"],
+    content: {
+      ko: [
+        {
+          heading: "왜 200KB로 압축해야 할까?",
+          body: "사람인·잡코리아·워크넷·공기업 채용사이트에 증명사진 올릴 때 '200KB 이하' 제한이 흔해요. 핸드폰으로 찍은 원본 사진은 보통 3~10MB라 그대로 올리면 업로드 거부.\n\n200KB 제한이 까다로운 이유.\n\n- 너무 줄이면 화질 손상 → 면접관에게 흐릿한 인상\n- 픽셀 크기는 맞췄는데 용량 초과 → 다시 압축 필요\n- 포맷 잘못 선택 → 같은 화질에 용량 더 큼\n\n오늘은 200KB 정확히 맞추면서 화질 유지하는 5가지 방법을 정리해 드릴게요.",
+        },
+        {
+          heading: "방법 1) 증명사진 표준 사이즈 먼저 맞추기",
+          body: "이력서·자기소개서용 사진은 픽셀 크기부터 표준에 맞춰야 해요.\n\n표준 규격.\n\n- **이력서·자기소개서**: 3cm × 4cm (가로 × 세로) — 보통 295×413px (300dpi 기준)\n- **여권·운전면허**: 3.5cm × 4.5cm — 354×472px\n- **공무원·공기업**: 사이트별로 다름 — 보통 295×413px 또는 250×350px\n\n픽셀 크기를 먼저 맞추면 용량이 자동으로 줄어들어요. 4000×3000 원본을 295×413으로 줄이면 그것만으로 80% 이상 절감. 200KB 목표가 훨씬 쉬워져요.\n\n사이트별 정확한 규격은 채용공고 안내에 적혀 있으니 꼭 확인하세요.",
+        },
+        {
+          heading: "방법 2) JPEG 품질 슬라이더 80~85% 권장",
+          body: "JPEG는 품질을 0~100으로 조절할 수 있어요. 200KB 목표에 적합한 설정.\n\n- **품질 90~100**: 거의 무손실, 용량 큼 (보통 300~500KB)\n- **품질 80~85**: 눈으로 구분 어려움, 용량 절반 (가장 추천)\n- **품질 70~75**: 약간 흐릿, 200KB 안에 들어옴\n- **품질 60 이하**: 모서리 깨짐 보임, 권장 X\n\n사례. 295×413 사진을 품질 85로 저장하면 보통 150~200KB. 품질 80이면 100~150KB. 화질과 용량 균형은 80~85가 sweet spot이에요.\n\n온라인 압축 도구는 대부분 품질 슬라이더를 제공해요. 결과 미리보기로 확인하면서 조절하세요.",
+        },
+        {
+          heading: "방법 3) PNG 대신 JPEG로 변환",
+          body: "PNG는 무손실이라 사진에는 비효율적. 같은 사진 PNG와 JPEG 비교.\n\n- 원본 PNG: 1.2MB\n- JPEG 품질 90: 350KB\n- JPEG 품질 85: 220KB\n- JPEG 품질 80: 180KB\n\n증명사진은 사진 데이터(자연 이미지)라 JPEG가 최적. PNG는 로고·아이콘·스크린샷처럼 단순한 색·문자가 많은 이미지에 적합해요.\n\n주의. 'PNG → JPEG 변환' 시 투명 배경은 사라져요. 증명사진은 보통 흰 배경이라 문제 없지만, 다른 용도면 흰색 또는 지정 배경색 추가 후 변환.",
+        },
+        {
+          heading: "방법 4) 메타데이터 제거로 추가 절감",
+          body: "스마트폰 사진에는 GPS·카메라 모델·촬영 시간 같은 EXIF 메타데이터가 들어 있어요. 보통 50~100KB 차지.\n\n증명사진에는 메타데이터 불필요. 제거하면.\n\n- 용량 50~100KB 추가 절감\n- 개인정보(GPS) 제거 — 이력서에 GPS 데이터 노출 막음\n- 일부 채용 시스템에서 메타데이터 깨졌을 때 업로드 거부 방지\n\n도구.\n\n- **Toolkio 이미지 압축**: 자동 EXIF 제거 옵션\n- **온라인 EXIF 제거 사이트**: imgexif.com, exifcleaner.com\n- **Photoshop**: 다른 이름으로 저장 → '메타데이터 없음' 선택\n- **Mac 미리보기**: 도구 → 위치정보 표시 → 위치 정보 제거",
+        },
+        {
+          heading: "방법 5) 200KB 정확 맞추기 — 단계별 압축",
+          body: "200KB '이하'가 아닌 '정확히 가까이' 맞추고 싶을 때 단계별로.\n\n1. 픽셀 크기 295×413 또는 354×472로 리사이즈\n2. JPEG 품질 90으로 저장 → 용량 확인\n3. 200KB 초과면 품질 5씩 낮춰서 재시도\n4. EXIF 메타데이터 제거\n5. 최종 확인 — 너무 흐릿하면 한 단계 위로\n\n[Toolkio 이미지 압축](https://toolkio.com/tools/image-compressor)은 슬라이더 조절하면서 용량 실시간으로 보여줘요. '품질 82, 198KB' 같은 식으로 정확히 맞추기 좋아요.\n\n공기업 채용에서는 흐릿한 사진이 첫인상 마이너스. 화질 70 이하로 떨어뜨리지 마세요.",
+        },
+        {
+          heading: "압축 후 확인 체크리스트",
+          body: "1. 파일 크기 — 정확히 200KB 이하 (197KB 정도면 안전)\n2. 픽셀 크기 — 사이트 권장 규격 (보통 295×413 또는 354×472)\n3. 화질 — 얼굴 윤곽·머리카락 모서리 확인 (50% 확대해서)\n4. 색상 — 너무 어둡거나 밝지 않은지 (조명 보정)\n5. 배경 — 깨끗한 흰색 or 채용 사이트 권장 배경\n6. EXIF 메타데이터 제거됨\n7. 이름·확장자 — `이름_증명사진.jpg` 같은 명확한 파일명\n\n이 7가지 통과하면 99% 사이트에서 업로드 성공해요.",
+        },
+        {
+          heading: "Toolkio 이미지 압축 도구 사용법",
+          body: "Toolkio [이미지 압축](https://toolkio.com/tools/image-compressor)은 브라우저에서 바로 실행돼요. 사진을 서버로 보내지 않으니 개인정보 걱정 없이 증명사진도 안전.\n\n1. 사진 드래그 또는 클릭 업로드\n2. 품질 슬라이더 80~85 설정\n3. 최대 너비 295px(이력서) 또는 354px(여권)\n4. 출력 포맷 JPEG 선택\n5. EXIF 자동 제거 체크\n6. 압축 결과 확인 (원본·압축 용량 비교)\n7. 다운로드\n\n여러 장 한 번에 압축도 가능. 더 자세한 압축 원리는 [이미지 압축 알고리즘](/blog/image-compression-algorithm-explained)에서, 웹용 최적화는 [웹 이미지 최적화](/blog/web-image-optimization-guide)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why 200KB?",
+          body: "Korean job sites (Saramin, JobKorea) commonly limit photos to 200KB. Original phone photos are 3-10MB, requiring compression before upload.",
+        },
+        {
+          heading: "Method 1) Standard ID Photo Size First",
+          body: "Resume photo: 3cm × 4cm (295×413px @ 300dpi). Passport: 3.5cm × 4.5cm (354×472px). Resizing alone cuts 80%+ from a 4000×3000 original.",
+        },
+        {
+          heading: "Method 2) JPEG Quality 80-85",
+          body: "Quality 90-100: 300-500KB. Quality 80-85: ~150-220KB (sweet spot). Quality 70-75: under 200KB but slightly soft. Below 60: visible artifacts.",
+        },
+        {
+          heading: "Method 3) PNG to JPEG Conversion",
+          body: "PNG 1.2MB → JPEG quality 85: 220KB. JPEG is optimal for photos. PNG suits logos/icons/screenshots with limited colors.",
+        },
+        {
+          heading: "Method 4) Strip EXIF Metadata",
+          body: "Phone photos contain 50-100KB of GPS/camera metadata. Removing strips data, hides location info, prevents some upload rejections.",
+        },
+        {
+          heading: "Method 5) Hit 200KB Precisely",
+          body: "1) Resize to spec, 2) JPEG quality 90, 3) Lower 5 at a time if over, 4) Strip EXIF, 5) Final check. Toolkio shows live size as you adjust quality.",
+        },
+        {
+          heading: "Post-Compress Checklist",
+          body: "Size ≤200KB, correct pixel dimensions, sharp face/hair edges at 50% zoom, proper exposure, clean background, EXIF stripped, clear filename.",
+        },
+        {
+          heading: "Use Toolkio Image Compressor",
+          body: "Drag/upload, set quality 80-85, max width 295/354px, JPEG output, auto-EXIF strip, compare sizes, download. All in browser, no server upload.",
+        },
+      ],
+    },
+    faq: [
+      { question: "200KB 맞추는 게 왜 어려워요?", answer: "픽셀 크기를 안 줄이고 품질만 낮추면 너무 흐릿해져요. 픽셀 크기 → JPEG 변환 → 품질 조절 → EXIF 제거 순서로 가면 화질 유지하면서 200KB 가능해요." },
+      { question: "온라인 압축 도구에 사진 올려도 안전해요?", answer: "Toolkio는 브라우저에서 처리해서 서버 전송 없음. 다른 도구는 서버 업로드 후 처리하는 경우 많아 주의. 증명사진처럼 민감한 이미지는 브라우저 처리 도구를 우선." },
+      { question: "300×400 같은 픽셀 크기는 어디 기준이에요?", answer: "이력서 표준 3×4cm를 300dpi 인쇄 해상도로 환산. 295×413이 정확. 채용 사이트가 250×350 또는 200×280 요구하면 그 규격에 맞추세요." },
+      { question: "JPEG 품질 100으로 저장해도 200KB 안 들어가요. 어떻게 해요?", answer: "픽셀 크기를 더 줄이세요. 4000×3000을 600×800로 줄이면 품질 100이라도 200KB 가능. 너무 줄이면 인쇄 시 깨지므로 295×413 이상 유지 권장." },
+      { question: "PNG는 200KB로 못 줄여요?", answer: "PNG는 무손실이라 사진은 줄이기 어려움. JPEG로 변환이 정답. 단 로고·차트·스크린샷처럼 색이 적은 이미지는 PNG가 더 작을 수 있어요." },
+      { question: "압축 후 사진이 흐릿해 보여요. 어떻게 해요?", answer: "JPEG 품질을 5~10 올리세요. 80→85로 올리면 용량 약간 늘지만 화질 개선. 그래도 안 되면 픽셀 크기를 키운 뒤 압축 — 295→400 늘리면 같은 품질에 화질 좋아져요." },
+    ],
+  },
+  {
+    slug: "base64-command-line-linux-mac-windows",
+    title: {
+      ko: "Base64 명령어 정리 — Linux Mac Windows에서 인코딩 디코딩 실전",
+      en: "Base64 Commands — Encoding/Decoding on Linux, Mac, and Windows",
+    },
+    description: {
+      ko: "터미널 명령어로 Base64 인코딩·디코딩하는 방법을 OS별로 정리. Linux base64, Mac base64, Windows certutil/PowerShell, 크로스플랫폼 OpenSSL까지 한 번에.",
+      en: "Encode and decode Base64 from the terminal across Linux, Mac, and Windows. Native base64, certutil, PowerShell, and OpenSSL examples included.",
+    },
+    date: "2026-05-02",
+    toolId: "base64",
+    image: "/images/blog/base64-command-line-linux-mac-windows.webp",
+    keywords: ["base64 명령어", "base64 command line", "certutil base64", "openssl base64", "Base64 인코딩 디코딩"],
+    content: {
+      ko: [
+        {
+          heading: "왜 명령어로 Base64 다뤄야 할까?",
+          body: "Base64는 바이너리 데이터를 텍스트로 안전하게 옮기는 인코딩 방식. 이메일 첨부, JWT 토큰, API 키, SSH 공개키 같은 곳에 흔히 쓰여요.\n\nGUI 도구(웹사이트·앱)도 좋지만 터미널 명령어가 빠를 때가 많아요.\n\n- **CI/CD 파이프라인**: GitHub Actions·Jenkins에서 시크릿 인코딩\n- **서버 작업**: SSH 접속해서 파일 인코딩\n- **자동화 스크립트**: bash·PowerShell에서 변수 처리\n- **민감 데이터**: 외부 사이트로 안 보내고 로컬에서 처리\n\n오늘은 Linux·Mac·Windows 각 OS의 기본 명령어 + 크로스플랫폼 OpenSSL까지 5가지 방식을 정리해 드릴게요.",
+        },
+        {
+          heading: "Linux — base64 명령어 (기본 내장)",
+          body: "거의 모든 리눅스 배포판에 `base64` 명령어가 기본 설치되어 있어요(coreutils 패키지).\n\n인코딩.\n\n```bash\n# 문자열 인코딩\necho -n \"Hello World\" | base64\n# → SGVsbG8gV29ybGQ=\n\n# 파일 인코딩\nbase64 image.png > image.b64\n\n# 줄바꿈 없이(한 줄로) 인코딩\necho -n \"long text...\" | base64 -w 0\n```\n\n디코딩.\n\n```bash\n# 문자열 디코딩\necho \"SGVsbG8gV29ybGQ=\" | base64 -d\n# → Hello World\n\n# 파일 디코딩\nbase64 -d image.b64 > image.png\n```\n\n주의. `echo`는 기본으로 줄바꿈을 추가해요. `-n` 옵션 빼먹으면 결과가 달라집니다.",
+        },
+        {
+          heading: "Mac — base64 명령어 (BSD 버전)",
+          body: "macOS는 BSD 기반 `base64`라서 옵션이 살짝 달라요.\n\n인코딩.\n\n```bash\n# 문자열 인코딩 (Linux와 동일)\necho -n \"Hello World\" | base64\n\n# 파일 인코딩 — Mac은 -i 옵션 필요\nbase64 -i image.png -o image.b64\n# 또는 리다이렉션\nbase64 image.png > image.b64\n```\n\n디코딩.\n\n```bash\n# Mac은 -D 대문자 (Linux는 -d 소문자)\necho \"SGVsbG8gV29ybGQ=\" | base64 -D\n\n# 파일 디코딩\nbase64 -D -i image.b64 -o image.png\n```\n\n주의. Mac의 `base64 -d` 일부 버전은 동작하는데 공식적으론 `-D` 대문자. 호환성 위해 대문자 권장.",
+        },
+        {
+          heading: "Windows — certutil 명령어 (기본 내장)",
+          body: "Windows에는 `base64` 명령어 없지만 `certutil`이 대체.\n\n인코딩.\n\n```cmd\n:: 파일 인코딩\ncertutil -encode input.txt output.b64\n```\n\n결과 파일 시작에 `-----BEGIN CERTIFICATE-----`, 끝에 `-----END CERTIFICATE-----` 헤더가 추가돼요. 순수 Base64만 필요하면 헤더 제거 후 사용.\n\n디코딩.\n\n```cmd\ncertutil -decode input.b64 output.txt\n```\n\nPowerShell에서 헤더 없이 처리.\n\n```powershell\n# 인코딩\n$bytes = [System.IO.File]::ReadAllBytes(\"input.png\")\n[Convert]::ToBase64String($bytes) | Out-File output.b64\n\n# 디코딩\n$b64 = Get-Content input.b64\n[System.IO.File]::WriteAllBytes(\"output.png\", [Convert]::FromBase64String($b64))\n```\n\nPowerShell .NET 방식이 헤더 추가 없이 깔끔.",
+        },
+        {
+          heading: "OpenSSL — 크로스플랫폼 통일 (모든 OS)",
+          body: "Linux·Mac·Windows(Git Bash·WSL)에 OpenSSL 설치되어 있으면 같은 명령어가 동작.\n\n인코딩.\n\n```bash\n# 문자열\necho -n \"Hello World\" | openssl base64\n# → SGVsbG8gV29ybGQ=\n\n# 한 줄로 (개행 없이)\necho -n \"Hello World\" | openssl base64 -A\n\n# 파일\nopenssl base64 -in image.png -out image.b64\n```\n\n디코딩.\n\n```bash\n# 문자열\necho \"SGVsbG8gV29ybGQ=\" | openssl base64 -d\n\n# 파일\nopenssl base64 -d -in image.b64 -out image.png\n```\n\n주의. OpenSSL은 기본으로 64자마다 줄바꿈 삽입. JWT 같이 한 줄이 필요한 곳은 `-A` 플래그 필수.",
+        },
+        {
+          heading: "URL-safe Base64 — JWT·API 토큰 처리",
+          body: "표준 Base64는 `+`, `/`, `=` 문자를 사용하는데 URL에서 특수 의미가 있어요. URL-safe Base64는 `+→-`, `/→_`, `=` 제거(또는 URL 인코딩).\n\nJWT·OAuth·일부 API에서는 URL-safe 사용 필수.\n\nLinux/Mac.\n\n```bash\n# 인코딩 + URL-safe 변환\necho -n \"data\" | base64 | tr '+/' '-_' | tr -d '='\n\n# 디코딩 — = 패딩 복원 후\nINPUT=\"abc-_xyz\"\nPADDED=$(printf '%s' \"$INPUT\" | tr '_-' '/+' )\nLEN=$((${#PADDED} % 4))\nif [ $LEN -ne 0 ]; then PADDED=\"$PADDED$(printf '%*s' $((4-LEN)) '' | tr ' ' '=')\"; fi\necho \"$PADDED\" | base64 -d\n```\n\nPython이 더 간단.\n\n```python\nimport base64\nbase64.urlsafe_b64encode(b\"data\").decode()\nbase64.urlsafe_b64decode(\"abc-_xyz\")\n```",
+        },
+        {
+          heading: "흔한 5가지 실수와 해결",
+          body: "1. **`echo`의 자동 개행**: `-n` 빼먹으면 `\\n` 포함된 채 인코딩, 결과가 달라요. `echo -n` 또는 `printf` 사용\n2. **줄바꿈 삽입(64자마다)**: 표준 base64 출력은 64자마다 개행. JWT처럼 한 줄 필요하면 Linux는 `-w 0`, OpenSSL은 `-A`\n3. **`certutil` 헤더 잔존**: Windows certutil은 PEM 헤더 추가. PowerShell .NET이 더 깔끔\n4. **인코딩 차이**: 시스템 기본 인코딩(UTF-8 vs CP949)에 따라 한글 결과 달라짐. UTF-8 명시 권장\n5. **패딩 `=` 처리**: URL-safe에서 `=` 제거 후 디코딩하려면 길이 4의 배수로 복원 필요",
+        },
+        {
+          heading: "Toolkio Base64 도구로 빠르게 처리",
+          body: "터미널 명령어가 익숙하지 않거나 빠르게 한두 번만 변환할 때는 [Toolkio Base64 인코더/디코더](https://toolkio.com/tools/base64)가 편해요.\n\n장점.\n\n1. **OS 상관없이 동일하게 동작** — 브라우저만 있으면 됨\n2. **표준·URL-safe 둘 다 지원**\n3. **이미지 → Base64 미리보기** — Data URL로 바로 활용 가능\n4. **개행 옵션** — 64자마다 vs 한 줄\n5. **서버 전송 없음** — 시크릿·API 키도 안전\n\n명령어는 자동화·반복 작업, Toolkio는 일회성·테스트에 — 용도별로 나눠 쓰면 좋아요. 더 자세한 Base64 활용은 [Base64 5가지 활용](/blog/base64-5-uses-email-image-api-auth-webhook)에서, 디코딩 트러블슈팅은 [Base64 디코딩 문제 해결](/blog/base64-decode-troubleshooting-guide)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Use Base64 Commands?",
+          body: "CI/CD pipelines, SSH server tasks, automation scripts, sensitive data — local CLI processing avoids exposing secrets to web tools.",
+        },
+        {
+          heading: "Linux — base64 (Built-in)",
+          body: "echo -n 'text' | base64. base64 -d to decode. -w 0 for no line breaks. Pre-installed on virtually all distros via coreutils.",
+        },
+        {
+          heading: "Mac — base64 (BSD)",
+          body: "Encode same as Linux. Decode uses -D (uppercase). File mode requires -i input -o output flags.",
+        },
+        {
+          heading: "Windows — certutil (Built-in)",
+          body: "certutil -encode input output. Adds PEM headers. PowerShell [Convert]::ToBase64String/FromBase64String is cleaner.",
+        },
+        {
+          heading: "OpenSSL — Cross-Platform",
+          body: "openssl base64 -in file -out file.b64. -A for single line (JWT). Works identically on Linux, Mac, Windows (Git Bash/WSL).",
+        },
+        {
+          heading: "URL-Safe Base64 (JWT/OAuth)",
+          body: "Replace + with -, / with _, strip =. Linux: base64 | tr '+/' '-_' | tr -d '='. Python urlsafe_b64encode is simplest.",
+        },
+        {
+          heading: "5 Common Mistakes",
+          body: "echo auto-newline (use -n), 64-char line wraps, certutil PEM headers, encoding differences (UTF-8 vs CP949), padding restoration for URL-safe decode.",
+        },
+        {
+          heading: "Use Toolkio Base64 Tool",
+          body: "Browser-based, OS-independent, supports standard and URL-safe, image-to-DataURL, line break toggle, no server upload.",
+        },
+      ],
+    },
+    faq: [
+      { question: "Linux base64와 Mac base64가 왜 옵션이 달라요?", answer: "Linux는 GNU coreutils, Mac은 BSD 기반이라 옵션 차이. 디코딩이 Linux=`-d` 소문자, Mac=`-D` 대문자. 호환성 위해 OpenSSL 사용이 가장 안전해요." },
+      { question: "Windows에 base64 명령어 추가하는 방법 있어요?", answer: "Git Bash·WSL 설치하면 Linux와 동일한 base64 사용 가능. PowerShell .NET 메서드(Convert::ToBase64String)도 헤더 없이 깔끔. certutil은 PEM 헤더 때문에 추가 가공 필요." },
+      { question: "JWT 토큰은 왜 한 줄이어야 해요?", answer: "JWT는 헤더.페이로드.서명 형식의 한 줄 토큰. 표준 base64 64자 줄바꿈이 들어가면 파싱 실패. `base64 -w 0` 또는 `openssl base64 -A`로 한 줄 인코딩 필수." },
+      { question: "한글 텍스트가 디코딩 후 깨져요. 왜 그래요?", answer: "인코딩할 때와 디코딩할 때 캐릭터셋 불일치 가능성. UTF-8로 통일 권장. Windows에서는 `chcp 65001`로 코드페이지 변경 후 처리. PowerShell은 `[Text.Encoding]::UTF8` 명시." },
+      { question: "Base64 인코딩하면 용량이 33% 늘어나요. 왜 그래요?", answer: "3바이트를 4문자로 표현하는 구조. 33% 증가는 정상. 그래서 Base64는 압축이 아니라 인코딩(텍스트 안전 전송용). 용량 줄이려면 gzip → base64 순서로." },
+      { question: "URL-safe Base64와 표준 Base64 호환되나요?", answer: "데이터는 같지만 문자가 달라 직접 호환 X. URL-safe `-_` ↔ 표준 `+/` 치환, 패딩 `=` 추가/제거 처리 필요. JWT는 URL-safe 의무, 이메일 첨부는 표준." },
+    ],
+  },
+  {
+    slug: "vscode-markdown-shortcuts-7-tips",
+    title: {
+      ko: "VS Code 마크다운 단축키 7가지 — 작성 속도 2배 올리는 실전 팁",
+      en: "VS Code Markdown Shortcuts — 7 Tips to Double Your Writing Speed",
+    },
+    description: {
+      ko: "VS Code에서 마크다운 미리보기·표 정렬·헤더 자동 ID·서식 단축키 7가지. Markdown All in One 확장과 기본 키바인딩을 한 번에 정리했어요.",
+      en: "VS Code Markdown shortcuts including preview toggle, table alignment, auto headers, and formatting. Built-in keybindings plus Markdown All in One tips.",
+    },
+    date: "2026-05-02",
+    toolId: "markdown-preview",
+    image: "/images/blog/vscode-markdown-shortcuts-7-tips.webp",
+    keywords: ["VSCode 마크다운 단축키", "마크다운 미리보기 단축키", "VS Code Markdown shortcuts", "Markdown All in One", "마크다운 작성"],
+    content: {
+      ko: [
+        {
+          heading: "마크다운, 단축키 알면 작성 속도 두 배",
+          body: "VS Code는 가장 인기 있는 마크다운 에디터예요. 깃허브·노션·블로그 글 모두 마크다운으로 쓰고 있다면 단축키 7가지만 외워두세요. 작성 속도가 두 배는 빨라져요.\n\n오늘 정리할 단축키.\n\n1. 미리보기 토글\n2. 미리보기 옆에 띄우기\n3. 굵게·기울임 서식\n4. 표 자동 정렬\n5. 체크박스 토글\n6. 링크 빠른 삽입\n7. 헤더 ID 자동 생성\n\nVS Code 1.80+ 기준 (2026년 5월). 일부는 Markdown All in One 확장 필요해요. 그것도 함께 안내드릴게요.",
+        },
+        {
+          heading: "단축키 1) 미리보기 토글 — Ctrl+Shift+V",
+          body: "가장 자주 쓰는 단축키. 마크다운 파일에서 누르면 미리보기 탭이 열려요.\n\n- **Windows·Linux**: Ctrl+Shift+V\n- **Mac**: Cmd+Shift+V\n\n동작.\n\n- 마크다운 편집 화면에서 누르면 → 별도 탭에 미리보기 열림\n- 다시 누르면 → 편집 화면으로 돌아감\n- 미리보기 탭에서 누르면 → 같은 탭 안에서 편집 모드로 (확장 따라 다름)\n\n주의. 빈 새 파일에서는 동작 안 함. `.md` 확장자로 저장하거나 우측 하단 언어 모드를 'Markdown'으로 변경 후 사용.\n\n2026년 1월 GitHub 이슈에서 'editor에서 preview로 같은 탭 토글' 기능 요청이 진행 중. 정식 채택되면 워크플로 더 깔끔.",
+        },
+        {
+          heading: "단축키 2) 미리보기 옆에 — Ctrl+K V",
+          body: "편집과 미리보기를 동시에 보고 싶을 때.\n\n- **Windows·Linux**: Ctrl+K, V (Ctrl+K 누른 후 V)\n- **Mac**: Cmd+K V\n\n결과. 화면 왼쪽 편집, 오른쪽 미리보기. 스크롤이 자동 동기화돼서 긴 글 작성에 최고예요.\n\n팁. 미리보기 탭에서 마우스 우클릭 → '미리보기 잠금'을 켜두면 다른 마크다운 파일 열어도 같은 미리보기 유지. 여러 파일 동시 작업할 때 유용해요.\n\n블로그 포스트처럼 표·이미지·코드 블록이 많은 글은 이 모드로 쓰면 실수 절반으로 줄어들어요.",
+        },
+        {
+          heading: "단축키 3) 굵게·기울임 — Ctrl+B / Ctrl+I",
+          body: "Markdown All in One 확장 설치하면 워드처럼 단축키로 서식 적용.\n\n확장 설치.\n\n```\n확장 검색: Markdown All in One\n게시자: Yu Zhang\n```\n\n단축키.\n\n- **굵게**: Ctrl+B → `**텍스트**`\n- **기울임**: Ctrl+I → `*텍스트*`\n- **취소선**: 단축키 없음, 직접 `~~텍스트~~` 입력\n- **인라인 코드**: Ctrl+M, C → `` `텍스트` ``\n\n사용법. 텍스트 선택 후 단축키. 또는 단축키 누른 뒤 입력.\n\n팁. 같은 단축키 다시 누르면 서식 해제. `**굵게**` 선택 후 Ctrl+B → `굵게`로 변환.",
+        },
+        {
+          heading: "단축키 4) 표 자동 정렬 — Ctrl+Shift+I",
+          body: "마크다운 표를 손으로 맞추면 시간 잡아먹어요. 자동 정렬 단축키.\n\n전제. Markdown All in One 또는 'Markdown Table Formatter' 확장 설치.\n\n단축키.\n\n- **표 자동 정렬**: Ctrl+Shift+I (행마다 너비 자동 맞춤)\n- 또는 명령 팔레트(F1) → 'Format Document'\n\n예시. 정렬 전.\n\n```\n| 이름 | 나이 | 직업 |\n|--|--|--|\n| 김 | 30 | 개발자 |\n| 이 | 25 | 디자이너 |\n```\n\n정렬 후.\n\n```\n| 이름 | 나이 | 직업     |\n| ---- | ---- | -------- |\n| 김   | 30   | 개발자   |\n| 이   | 25   | 디자이너 |\n```\n\n표 행 추가도 편해요. 마지막 셀에서 Tab 누르면 다음 행 자동 생성.",
+        },
+        {
+          heading: "단축키 5) 체크박스 토글 — Alt+C",
+          body: "TODO 리스트 체크할 때 `[ ]` ↔ `[x]` 토글.\n\n전제. Markdown All in One 확장.\n\n단축키.\n\n- **체크박스 토글**: Alt+C\n\n사용법. 체크박스 라인 위에 커서 두고 Alt+C. `[ ]` → `[x]` 또는 반대.\n\n다중 라인 선택 후 한 번에 토글도 가능. 회의록·할 일 목록 마무리할 때 빠름.\n\n팁. 체크박스 미리보기에서 클릭으로도 토글되는데, VS Code 1.80+에서 settings.json에 `\"markdown.preview.openMarkdownLinks\": \"inEditor\"` 설정하면 더 자연스러움.",
+        },
+        {
+          heading: "단축키 6) 링크 빠른 삽입 — Ctrl+L",
+          body: "URL 복사한 뒤 본문에 마크다운 링크로 삽입.\n\n전제. Markdown All in One 확장.\n\n단축키.\n\n- **링크 삽입**: Ctrl+L → `[](URL)` 자동 삽입, 클립보드 URL 자동 채움\n\n사용법.\n\n1. 외부 URL 복사 (Ctrl+C)\n2. VS Code 본문에 텍스트 선택\n3. Ctrl+L → 선택 텍스트가 링크 텍스트, 클립보드 URL이 링크 주소\n\n예시. '이 글' 선택 후 Ctrl+L → `[이 글](https://example.com)`.\n\n링크 작성 시간 80% 절감. 외부 자료 인용 많은 블로그 작성에 필수.",
+        },
+        {
+          heading: "단축키 7) 헤더 ID 자동 생성 — Markdown All in One",
+          body: "긴 글에서 목차(TOC) 만들 때 헤더 ID 필요. Markdown All in One이 자동 생성.\n\n사용법.\n\n명령 팔레트(F1) → 'Markdown All in One: Create Table of Contents'\n\n결과. 글 상단에 목차 자동 삽입.\n\n```\n- [도입](#도입)\n- [본론](#본론)\n  - [세부 1](#세부-1)\n  - [세부 2](#세부-2)\n- [결론](#결론)\n```\n\n자동 갱신.\n\n```\n명령 팔레트 → 'Markdown All in One: Update Table of Contents'\n```\n\n파일 저장 시 자동 갱신하려면 settings.json에 `\"markdown.extension.toc.updateOnSave\": true`.\n\n블로그 글 2000자 넘으면 TOC 있는 게 가독성·SEO 모두 좋아요.",
+        },
+        {
+          heading: "Toolkio 마크다운 미리보기 도구로 빠르게",
+          body: "VS Code 안 켜고 빠르게 마크다운 미리보기 하고 싶을 때 [Toolkio 마크다운 미리보기](https://toolkio.com/tools/markdown-preview)가 편해요.\n\n장점.\n\n1. **설치 불필요** — 브라우저에서 즉시\n2. **GitHub 스타일 렌더링**\n3. **표·코드 블록·이미지 모두 지원**\n4. **모바일에서도 가능** — 회사 PC에서 작성, 폰으로 확인\n5. **공유 링크 생성** — 다른 사람에게 보여주기 편함\n\nVS Code는 정식 글, Toolkio는 짧은 노트·즉석 확인 — 용도별로 나누면 좋아요. 더 자세한 마크다운 활용은 [마크다운 미리보기 7가지 활용](/blog/markdown-preview-7-uses-vscode-github-notion)에서, 표 작성 팁은 [마크다운 표 정렬 4가지 트릭](/blog/markdown-table-alignment-4-tricks)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Markdown Shortcuts Double Your Speed",
+          body: "VS Code 1.80+ with Markdown All in One extension provides 7 essential shortcuts for fast Markdown writing.",
+        },
+        {
+          heading: "Shortcut 1) Preview Toggle — Ctrl+Shift+V",
+          body: "Built-in. Opens preview tab. Mac: Cmd+Shift+V. Won't work on unsaved buffers — save as .md first.",
+        },
+        {
+          heading: "Shortcut 2) Side-by-Side — Ctrl+K V",
+          body: "Edit on left, preview on right. Auto-scroll sync. Best for long blog posts with tables and images.",
+        },
+        {
+          heading: "Shortcut 3) Bold/Italic — Ctrl+B / Ctrl+I",
+          body: "Requires Markdown All in One. Word-style toggling. Ctrl+M C for inline code.",
+        },
+        {
+          heading: "Shortcut 4) Table Format — Ctrl+Shift+I",
+          body: "Auto-aligns column widths. Markdown Table Formatter or Markdown All in One. Tab in last cell creates new row.",
+        },
+        {
+          heading: "Shortcut 5) Checkbox Toggle — Alt+C",
+          body: "Toggles [ ] ↔ [x]. Multi-line selection works. Faster than clicking in preview.",
+        },
+        {
+          heading: "Shortcut 6) Quick Link — Ctrl+L",
+          body: "Auto-inserts [selection](clipboard URL). Saves 80% of link insertion time. Critical for citation-heavy posts.",
+        },
+        {
+          heading: "Shortcut 7) Auto Header IDs / TOC",
+          body: "F1 → 'Markdown All in One: Create TOC'. Auto-update on save with settings.json toc.updateOnSave: true.",
+        },
+        {
+          heading: "Use Toolkio Markdown Preview",
+          body: "Browser-based, no installation, GitHub-style rendering, mobile-friendly. Pair with VS Code: VS Code for serious docs, Toolkio for quick checks.",
+        },
+      ],
+    },
+    faq: [
+      { question: "Markdown All in One 확장 꼭 설치해야 해요?", answer: "기본 단축키(미리보기 Ctrl+Shift+V, 옆에 Ctrl+K V)는 내장. 굵게·기울임·표·체크박스는 확장 필요. 마크다운 자주 쓰면 무조건 설치 권장 (다운로드 1000만+, 평점 5/5)." },
+      { question: "단축키가 다른 프로그램과 충돌해요. 어떻게 해요?", answer: "VS Code → 파일 → 기본 설정 → 키보드 단축키. 검색해서 새 단축키로 변경. 예) Ctrl+L이 다른 데서 사용 중이면 Ctrl+Alt+L로 재할당." },
+      { question: "미리보기에서 한국어가 깨져요. 인코딩 어떻게 설정해요?", answer: "VS Code 우측 하단 'UTF-8' 표시 확인. 다르면 클릭해서 'UTF-8 with BOM' 또는 'UTF-8'로 변경. 기본은 거의 UTF-8이라 보통 문제 없어요." },
+      { question: "VS Code 외에 마크다운 잘 되는 에디터 있어요?", answer: "Typora, Obsidian, Mark Text 등. VS Code는 개발 통합 + 확장 생태계가 강점. Typora는 WYSIWYG로 글쓰기 자체가 편함. 용도 따라 선택." },
+      { question: "마크다운 미리보기 폰트 바꾸고 싶어요", answer: "VS Code → settings.json → `\"markdown.preview.fontFamily\": \"Noto Sans KR, sans-serif\"` 추가. 한글 폰트 지정하면 미리보기 가독성 향상." },
+      { question: "VS Code에서 마크다운 자동 저장은 어떻게 해요?", answer: "파일 → 자동 저장 체크. 또는 settings.json `\"files.autoSave\": \"afterDelay\"` 추가. 마크다운 + Markdown All in One TOC 자동 갱신과 함께 쓰면 워크플로 매끄러움." },
+    ],
+  },
+  {
+    slug: "qr-code-scan-failure-5-causes-fixes",
+    title: {
+      ko: "QR코드 스캔이 안 될 때 5가지 원인과 해결법 — 인쇄 디지털 모두",
+      en: "QR Code Won't Scan — 5 Common Causes and Fixes for Print and Digital",
+    },
+    description: {
+      ko: "QR코드 스캔 실패 5가지 원인을 ISO 표준 기준으로 정리. 명도 차이·여백·오류 정정 레벨·크기·반사까지 인쇄와 디지털 모두 해결책 안내.",
+      en: "5 ISO-standard causes of QR scan failure with fixes. Contrast, quiet zone, error correction, size, and reflection issues for both print and digital QR codes.",
+    },
+    date: "2026-05-02",
+    toolId: "qr-generator",
+    image: "/images/blog/qr-code-scan-failure-5-causes-fixes.webp",
+    keywords: ["QR코드 스캔 안됨", "QR코드 인식 실패", "QR scan failure", "QR코드 명도", "QR코드 여백"],
+    content: {
+      ko: [
+        {
+          heading: "QR코드가 왜 안 읽힐까?",
+          body: "메뉴판·명함·포스터에 QR코드 박았는데 손님들이 '안 읽혀요' 한다면 5가지 원인 중 하나예요.\n\n2026년 ISO/IEC 18004 표준 기준 가장 흔한 실패 원인.\n\n1. 명도 차이 부족 (40% 미만)\n2. 여백(quiet zone) 4모듈 미만\n3. 오류 정정 레벨 부족 (로고 가려짐)\n4. 너무 작은 크기 (스캔 거리 대비)\n5. 반사·구겨짐·인쇄 품질 문제\n\nQR Code AI 자료에 따르면 디자인 QR의 30%가 첫 시도에 인식 실패. 다 같은 패턴이에요. 오늘은 원인별 진단법과 해결책을 단계별로 정리해 드릴게요.",
+        },
+        {
+          heading: "원인 1) 명도 차이 부족 — 40% 룰",
+          body: "QR 카메라가 '이건 어두운 모듈, 이건 밝은 모듈' 판단할 수 있어야 해요. 표준은 전경(어두운 부분)과 배경(밝은 부분)의 luminance 차이가 40% 이상.\n\n실패 예시.\n\n- 노란 배경에 회색 QR → 명도 차이 25%, 절반 이상 카메라가 못 읽음\n- 어두운 갈색 배경에 검정 QR → 명도 차이 15%, 거의 인식 X\n- 그라데이션 배경 (밝은 부분과 어두운 부분 섞임) → 부분적 인식 실패\n\n해결.\n\n- 전경: 검정·짙은 남색·짙은 갈색 (luminance 20% 이하)\n- 배경: 흰색·아이보리·연한 회색 (luminance 80% 이상)\n- 차이 60% 이상이면 거의 100% 스캔\n\n명도 측정 도구. WebAIM Contrast Checker, Stark Plugin (Figma·Sketch). 4.5:1 비율 이상이면 안전.",
+        },
+        {
+          heading: "원인 2) 여백 부족 — 4모듈 quiet zone",
+          body: "QR코드 외곽에 흰 여백이 있어야 카메라가 'QR 경계'를 인식해요. ISO 표준은 4모듈(약 QR 크기의 10%) 이상.\n\n실패 예시.\n\n- 명함 가장자리에 QR 딱 붙임 → 인식 실패율 50% 이상\n- 포스터 디자인 요소가 QR 경계까지 닿음 → 카메라가 어디까지가 QR인지 못 판단\n- 검정 배경에 QR 직접 인쇄 (테두리 없음) → 거의 못 읽음\n\n해결.\n\n- QR 둘레에 최소 4모듈 흰 여백 (QR이 1cm × 1cm면 여백 1mm 이상)\n- 큰 QR(5cm)에는 여백 5mm 이상 권장\n- 배경이 어두우면 QR 주변에 흰 사각형 깔고 그 위에 QR\n\n도구가 자동으로 여백을 추가하는 경우가 많은데, 인쇄·디자인 단계에서 잘려나갈 수 있어요. 최종 산출물에서 여백 다시 확인하세요.",
+        },
+        {
+          heading: "원인 3) 오류 정정 레벨 — 로고 넣었으면 H 필수",
+          body: "QR은 일부 손상돼도 스캔 가능하도록 오류 정정 코드를 포함해요. 4단계.\n\n- **L(Low)**: 7% 손상까지 복구 — 깨끗한 QR에 적합\n- **M(Medium)**: 15% — 기본값\n- **Q(Quartile)**: 25%\n- **H(High)**: 30% — 로고 삽입 시 필수\n\n실패 예시.\n\n- 로고 25% 크기로 가운데 박음 + 레벨 L → 인식 실패\n- 인쇄 후 가장자리 살짝 잘림 + 레벨 M → 부분 실패\n\n해결.\n\n- 로고 삽입 시 무조건 H 레벨 (생성 도구에서 'High' 또는 'H' 선택)\n- 로고 크기는 QR 면적의 25% 이내\n- 인쇄·라미네이팅 후에도 손상 가능성 있으면 H 권장\n\n주의. 레벨 높을수록 QR 패턴 빽빽해져요. URL 길면 더 빽빽 → 작게 인쇄 시 인식률 떨어짐. URL 단축 후 H 레벨이 안전.",
+        },
+        {
+          heading: "원인 4) 크기 vs 스캔 거리 — 10:1 룰",
+          body: "QR 크기는 스캔 거리의 1/10 이상이어야 해요.\n\n예시.\n\n- 30cm 거리(테이블 메뉴판): QR 3cm × 3cm 이상\n- 1m 거리(매장 입구 포스터): QR 10cm × 10cm 이상\n- 3m 거리(전시회 부스): QR 30cm × 30cm 이상\n- 10m 거리(빌보드 광고): QR 1m × 1m 이상\n\n실패 예시.\n\n- 명함 뒤에 1cm × 1cm QR → 30cm 거리에서 카메라가 못 잡음\n- 카페 포스터 5m 떨어진 곳에 5cm QR → 거의 못 읽음\n\n해결.\n\n- 스캔 거리를 먼저 정하고 거리/10 이상으로 QR 크기 설정\n- 명함은 최소 2cm × 2cm (얼굴 가까이 들고 스캔 가정)\n- 광고판·전단지는 거리에 맞게 크게 — 작은 QR은 디자인 욕심으로 안 됨\n\n팁. 핸드폰 카메라 줌 기능으로 작은 QR도 멀리서 읽을 수 있지만 사용자 입장에서 번거로움. 처음부터 크게 만드세요.",
+        },
+        {
+          heading: "원인 5) 반사·구겨짐·인쇄 품질",
+          body: "디지털 QR은 OK인데 인쇄하면 안 읽히는 경우.\n\n실패 원인.\n\n- **광택 코팅**: 형광등 반사로 카메라가 패턴 못 읽음\n- **구겨진 종이**: QR 패턴 찌그러짐\n- **저해상도 인쇄**: 300dpi 미만이면 모듈 경계 흐릿\n- **컬러 인쇄 색상 변형**: 디지털과 인쇄 색이 달라 명도 차이 부족\n- **얇은 종이 비침**: 뒷면 인쇄 비치면 QR 패턴 혼란\n\n해결.\n\n- **무광 코팅** 권장 (광택 → 무광)\n- **두꺼운 종이** (200g/㎡ 이상)\n- **300dpi 이상 인쇄** (가능하면 600dpi)\n- **인쇄 후 시범 스캔** — 본 인쇄 전 1장 시범 출력 후 스캔 테스트\n- **벡터 포맷**(SVG·PDF) 다운로드 후 인쇄 — 확대해도 안 깨짐\n\n다양한 환경에서 테스트. iOS·Android 둘 다, 어두운 조명·밝은 조명 모두, 원거리·근거리 모두.",
+        },
+        {
+          heading: "스캔 실패 진단 5단계 체크리스트",
+          body: "QR 안 읽힌다는 신고 받으면 이 순서로 점검.\n\n1. **명도 차이 측정** — 전경·배경 색을 WebAIM에 넣고 4.5:1 이상인지\n2. **여백 확인** — QR 둘레 4모듈 이상 흰 공간\n3. **오류 정정 레벨 확인** — 로고 있으면 H 레벨인지\n4. **크기 vs 거리** — 스캔 거리 / 10 이상인지\n5. **인쇄 품질** — 광택·구김·저해상도 여부\n\n각 단계에서 문제 있으면 그것부터 해결. 다 OK인데도 안 되면 QR 데이터 자체 문제 (URL 너무 길거나 특수문자 포함).\n\n[Toolkio QR 생성기](https://toolkio.com/tools/qr-generator)는 명도·여백·오류 정정 자동 권장값으로 설정돼요. 처음 만드는 거면 기본값 그대로 쓰고, 디자인 욕심내려면 위 체크리스트 꼭 따르세요.",
+        },
+        {
+          heading: "Toolkio QR 생성기로 안전하게",
+          body: "[Toolkio QR 생성기](https://toolkio.com/tools/qr-generator)는 ISO 표준 기본값으로 자동 설정.\n\n자동 보호 기능.\n\n1. **명도 검증** — 전경·배경 색이 너무 비슷하면 경고\n2. **자동 4모듈 여백**\n3. **로고 삽입 시 H 레벨 자동 전환**\n4. **권장 크기 가이드** — 스캔 거리 입력하면 권장 크기 표시\n5. **벡터 SVG 다운로드** — 인쇄 시 깨짐 방지\n\n사용 흐름.\n\n1. URL·텍스트 입력\n2. 색상·로고 추가\n3. 미리보기에서 핸드폰으로 직접 스캔 테스트\n4. SVG·PNG 다운로드\n\n명함·메뉴판·포스터 모두 한 번에 OK. 더 자세한 QR 디자인은 [QR코드 무료 만들기 5단계](/blog/qr-code-free-with-logo-color-5-step-guide)에서, 색상 커스텀은 [QR 색상 커스터마이징](/blog/qr-code-color-customization)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why QR Codes Fail to Scan",
+          body: "ISO/IEC 18004 standards reveal 5 common failure causes: contrast, quiet zone, error correction, size, print quality. 30% of designed QRs fail first scan.",
+        },
+        {
+          heading: "Cause 1) Insufficient Contrast — 40% Rule",
+          body: "Foreground/background luminance must differ 40%+. Yellow on grey (25%) fails. Use dark foreground (luminance <20%) on light background (>80%).",
+        },
+        {
+          heading: "Cause 2) Missing Quiet Zone — 4 Modules",
+          body: "ISO requires 4 modules (10% of QR size) of white margin. Edge-to-edge placement on business cards fails 50%+ of scans.",
+        },
+        {
+          heading: "Cause 3) Error Correction Level",
+          body: "L (7%), M (15%), Q (25%), H (30%). Logo insertion requires H. Logo max 25% of QR area. Higher level = denser pattern.",
+        },
+        {
+          heading: "Cause 4) Size vs Scan Distance — 10:1",
+          body: "QR size = scan distance / 10. 30cm reading: 3cm QR. 1m poster: 10cm. 10m billboard: 1m. Business card minimum 2cm.",
+        },
+        {
+          heading: "Cause 5) Print Quality Issues",
+          body: "Glossy coating reflects, wrinkles distort, low DPI blurs. Use matte coating, 200g+ paper, 300+dpi, vector SVG, test print before mass production.",
+        },
+        {
+          heading: "5-Step Diagnostic Checklist",
+          body: "1) Contrast 4.5:1, 2) 4-module quiet zone, 3) ECC level H if logo, 4) size = distance/10, 5) print quality. Toolkio applies safe defaults automatically.",
+        },
+        {
+          heading: "Use Toolkio QR Generator",
+          body: "Auto-validates contrast, applies 4-module margin, switches to H level for logos, suggests size by distance. SVG export for print.",
+        },
+      ],
+    },
+    faq: [
+      { question: "디지털에서는 잘 되는데 인쇄하면 안 돼요. 왜 그래요?", answer: "광택 코팅·저해상도·색상 변형이 주된 원인. 무광 코팅 + 300dpi 이상 + 시범 인쇄 후 스캔 테스트 권장. 벡터(SVG·PDF) 다운로드 후 인쇄가 가장 안전해요." },
+      { question: "검정 QR + 흰 배경인데도 안 읽혀요. 또 뭐가 문제일까요?", answer: "여백 부족 가능성 1순위. QR 둘레 흰 여백이 QR 크기의 10% 이상 있는지 확인. 그래도 안 되면 QR 자체 손상(인쇄 잘림·이미지 압축으로 패턴 깨짐) 점검." },
+      { question: "QR 안에 로고 크게 넣고 싶은데 가능한가요?", answer: "오류 정정 레벨 H로 설정하고 로고는 QR 면적의 25% 이내. 30% 넘으면 H 레벨로도 인식 실패 급증. 로고 배경에 흰 사각형(둥근 모서리) 깔고 그 위에 로고 권장." },
+      { question: "어두운 색 배경에 QR 넣어도 되나요?", answer: "기술적으로 가능하지만 인식률 떨어짐. 어두운 배경 → QR 부분만 흰 사각형으로 깔고 그 위에 검정 QR이 안전. 또는 QR 자체를 흰색으로 하고 배경을 검정 — 일부 카메라가 못 읽으므로 권장 X." },
+      { question: "QR 모서리 둥글게 만들면 인식이 안 되나요?", answer: "코너 마커(3개 큰 사각형) 모양 변경하면 일부 카메라 인식 실패. 디자인 QR 도구(QRCode Monkey)는 마커 변형 옵션 있는데 표준 사각형 유지가 가장 안전. 데이터 모듈은 둥글게 해도 OK." },
+      { question: "QR 스캔이 핸드폰별로 다르게 동작해요. 표준 어디서 확인해요?", answer: "ISO/IEC 18004:2024 표준이 공식. iOS는 카메라 자동 인식, Android는 기종별로 별도 앱 필요한 경우 있음. 두 OS·다양한 기종에서 테스트 권장 — 가장 까다로운 환경(저가 안드로이드)에서 통과해야 안전." },
+    ],
+  },
 ];
