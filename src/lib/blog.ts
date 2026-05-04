@@ -16708,4 +16708,429 @@ export const blogPosts: BlogPost[] = [
       { question: "온라인 도구에 자기소개서 PDF 올려도 안전해요?", answer: "공개 채용 자기소개서면 큰 문제 없으나 개인정보(주민번호·전화번호) 포함 시 위험. PDF24·Smallpdf는 1시간 후 자동 삭제 명시. 민감 문서는 오프라인 도구(Word·Adobe) 권장." },
     ],
   },
+  {
+    slug: "korean-age-foreigner-overseas-citizen-dual-nationality-5-cases",
+    title: {
+      ko: "만 나이 계산 — 외국 출생자·재외국민·이중국적 5가지 케이스",
+      en: "Korean Age Calculation — 5 Cases for Overseas-Born, Citizens Abroad, Dual Nationality",
+    },
+    description: {
+      ko: "만 나이 통일법(2023년 6월 28일 시행) 이후에도 헷갈리는 5가지 케이스. 외국 출생자·재외국민·이중국적자·해외 학교 입학·복수국적 병역까지 정리했어요.",
+      en: "Korean unified age law (in force since June 28 2023) edge cases — overseas-born, citizens abroad, dual nationality, overseas school enrollment, and military service rules.",
+    },
+    date: "2026-05-03",
+    toolId: "age-calculator",
+    image: "/images/blog/korean-age-foreigner-overseas-citizen-dual-nationality-5-cases.webp",
+    keywords: ["만 나이 계산", "만 나이 통일법", "재외국민 만 나이", "이중국적 나이", "korean age law"],
+    content: {
+      ko: [
+        {
+          heading: "만 나이 통일법 — 2023년 6월 28일부터 행정·민사 기본",
+          body: "2023년 6월 28일 만 나이 통일법(행정기본법 제7조의2 신설)이 시행됐어요. 행정·민사상 모든 나이 계산은 만 나이가 원칙. 한국 나이(태어나면 1살)·연 나이(생일과 무관, 그 해 1월 1일 한 살 더)는 법령에 별도 규정이 있을 때만 적용돼요.\n\n생일이 안 지난 사람은 출생연도부터 현재 연도를 빼고 1을 더 빼고, 생일 지나면 출생연도만 빼면 끝.\n\n- 1990년 5월 10일생, 오늘 2026년 5월 4일 → 생일 안 지남 → 2026 - 1990 - 1 = **35세**\n- 1990년 4월 10일생, 오늘 2026년 5월 4일 → 생일 지남 → 2026 - 1990 = **36세**\n\n그런데 이 단순 계산이 안 통하는 5가지 케이스가 있어요. 외국 출생자·재외국민·이중국적자·국적 회복자·복수국적 병역. 오늘 그 5가지를 정리할게요.\n\n공식 정보는 법제처 [만 나이 통일법 가이드북](https://www.moleg.go.kr/menu.es?mid=a10111060000) 참고. 실무 계산은 [Toolkio 만나이 계산기](https://toolkio.com/tools/age-calculator)에서 생년월일만 넣으면 만 나이·한국 나이·연 나이 한 번에 나와요.",
+        },
+        {
+          heading: "케이스 1) 외국에서 출생한 한국 국적자 — 한국 시간 기준",
+          body: "미국·일본·유럽에서 출생한 한국 국적자(부모 중 한 명이라도 한국 국적)는 출생지가 어디든 한국 만 나이 계산은 **한국 시간(KST) 기준**으로 해요.\n\n예시. 미국 LA 시간 2024년 12월 31일 23시 30분 출생. 한국 시간으로는 2025년 1월 1일 오후 4시 30분.\n\n- 출생증명서(Birth Certificate)에는 LA 시간 2024년 12월 31일\n- 한국 가족관계등록부에는 한국 시간 2025년 1월 1일\n\n만 나이 계산 시 어느 날짜를 쓸까요? **가족관계등록부 등재일(한국 시간)**이 한국 행정 기본. 그래서 미국 친구는 \"나는 2024년생\"인데 한국 서류에는 2025년생으로 등록돼요.\n\n주민등록증 발급·여권 발급·학교 입학·운전면허 모두 가족관계등록부 기준. 출생증명서를 한국 영사관에 신고할 때 시차 환산이 자동으로 이뤄지므로 본인이 별도 계산할 필요는 없어요. 등록 시 영사관 직원이 KST로 환산해서 등재.\n\n주의. 미국 시간으로 12월 31일생 → 한국 시간 1월 1일생으로 등재되면 **빠른 년생** 효과. 한 학년 위로 입학 가능했던 시절(2008년 이전)에는 유리했지만, 현재는 만 나이 통일로 큰 차이 없어요.",
+        },
+        {
+          heading: "케이스 2) 재외국민 — 한국 입국 시 만 나이 그대로",
+          body: "재외국민(해외 영주권자·시민권 안 받은 한국 국적자)이 한국에 들어오면 만 나이 계산은 일반 국민과 동일. 단 해외 학력·경력 환산할 때 시차 발생.\n\n사례. 캐나다에서 19세까지 살다가 2026년 한국 대학원 입학. 캐나다는 18세부터 성인, 한국은 만 19세부터 성인.\n\n- 캐나다 만 18세 = 한국 만 19세 직전 (생일 따라 다름)\n- 한국에서 음주·운전 가능 시점은 만 19세\n- 본인이 캐나다에서 \"성인 18세\"였더라도 한국 입국 후 만 19세 안 됐으면 음주 X\n\n재외국민 자녀 학교 입학.\n\n- 한국 초등학교 입학 기준: **그 해 1월 1일 만 6세**가 되는 어린이 (초·중등교육법 제13조)\n- 외국에서 다니던 학년과 다를 수 있음 → 학력인정 절차로 학년 배치\n- 캐나다 6학년(만 11세 8월) → 한국 5학년 또는 6학년 (생년·학년 조정)\n\n주의. 재외국민 학력인정은 교육청 학력심의위원회 결정. 만 나이만으로 자동 결정 X.",
+        },
+        {
+          heading: "케이스 3) 이중국적자(복수국적자) — 한국 행정에선 만 나이",
+          body: "한국·미국 이중국적자, 한국·캐나다 이중국적자 등 복수국적자는 한국 행정에서 만 나이로 처리. 미국 등 일부 국가는 birthday 기준이라 만 나이와 동일하니 큰 문제 없어요.\n\n혼란 포인트.\n\n1. **여권 만 나이**: 한국 여권은 만 나이, 미국 여권도 birthday 기준 (실질 만 나이) → 일치\n2. **세금**: 한국 거주자는 한국 만 나이로 노인 공제·청년 공제 결정. 미국 거주자는 미국 IRS 기준 (대부분 12월 31일 만 나이)\n3. **상속**: 한국 가족관계등록부 만 나이로 미성년자(만 19세 미만) 판단. 후견인 필요 여부.\n\n복수국적 자녀 한국 학교 입학.\n\n- 만 6세 되는 해 1월 1일 기준\n- 외국 학교 다니다 한국으로 이주 시 학력 평가\n- 재학 중 외국 학교로 갈 때 한국 학교는 휴학·복학 인정\n\n복수국적자 본인은 만 22세 전에 한국 국적 또는 외국 국적 중 하나를 선택해야 해요(국적법 제12조). 22세 만 나이로 계산. 출생연도 + 22 = 선택 마감 연도(생일 지난 후).\n\n예시. 2004년 6월생 → 2026년 6월 이후 만 22세 → 2026년 6월 안에 국적 선택 신고.",
+        },
+        {
+          heading: "케이스 4) 국적 회복자 — 회복일 기준 vs 출생일 기준",
+          body: "외국 국적을 가졌다가 한국 국적을 다시 회복한 사람(국적 회복). 만 나이는 출생일 기준이 원칙이지만 행정 시점에 따라 다른 적용 사례가 있어요.\n\n65세 이상 외국국적동포 국적 회복.\n\n- 만 65세 이상이면 복수국적 허용 (국적법 제10조 제2항)\n- 만 65세 판단: 한국 가족관계등록부상 출생일 기준\n- 미국 시민권자 1958년 6월 15일생 → 2023년 6월 15일 만 65세 → 그 이후 국적 회복 신청 가능\n\n국적 회복 후 한국 거주.\n\n- 의료보험·국민연금 가입 시점부터 만 나이 적용\n- 노인장기요양보험 등 노령 복지는 회복 즉시 가능 (만 65세 이상이면)\n- 단 노령연금 수급은 가입 기간 별도 (10년 이상 납부 또는 임의가입)\n\n서류 처리.\n\n- 가족관계등록부 회복일자 기준이 아니라 **원래 출생일** 기준으로 만 나이 계산\n- 회복일은 신분 변경 시점일 뿐 만 나이와 무관\n\n주의. 일부 외국 출생증명서가 분실·소실된 경우 영사관에서 별도 신원조회 후 출생일 확정. 이 절차에 시간 걸림 (2~6개월).",
+        },
+        {
+          heading: "케이스 5) 복수국적 남성 병역 — 만 18세 1월 1일 기준",
+          body: "복수국적 남성은 병역 의무가 큰 이슈. 만 나이 계산이 핵심.\n\n병역법 핵심.\n\n- 만 18세 되는 해의 1월 1일부터 병역 의무 (병역법 제8조)\n- 만 18세 기준: 그 해 1월 1일에 만 18세에 도달하는 사람\n- 즉 출생연도 + 18 = 병역 시작 연도\n- 1월 1일 한 살 더 먹는 \"연 나이\" 적용 (만 나이 통일법 예외)\n\n복수국적자 국적 이탈.\n\n- 만 18세 되는 해 3월 31일까지 한국 국적 이탈 신고 가능\n- 3월 31일 지나면 병역 면제·연기 후에야 이탈 가능 (만 38세 이후 또는 병역 이행 후)\n- 외국에서 출생·성장한 복수국적 남성 다수가 이 기한 놓침\n\n사례.\n\n- 2008년 6월 15일 미국 출생, 한·미 복수국적\n- 2026년 1월 1일부터 만 18세 (한국 연 나이 기준)\n- 2026년 3월 31일까지 한국 국적 이탈 가능\n- 4월 1일 이후 → 병역 의무 발생 → 38세까지 이탈 X\n\n실무. 만 17세에 이미 결정해야 안전. 미국 시민권 유지하면서 한국 자유 출입국 원하면 3월 31일 전 이탈 신고. 한국 거주·취업 의향 있으면 병역 이행 후 복수국적 가능.\n\n자세한 정보는 [병무청 복수국적 안내](https://www.mma.go.kr/contents.do?mc=usr0000193) 또는 가까운 영사관 문의. 신고 기한 놓치면 되돌릴 수 없으므로 만 17세 전에 가족이 함께 결정 권장.",
+        },
+        {
+          heading: "Toolkio 만나이 계산기로 5초 만에 확인",
+          body: "[Toolkio 만 나이 계산기](https://toolkio.com/tools/age-calculator)에 생년월일만 넣으면 자동으로 다음을 보여줘요.\n\n- 만 나이 (행정·민사 기본)\n- 한국 나이 (전통 한국식)\n- 연 나이 (병역·청소년보호법 등 일부 법률)\n- D-day 다음 생일까지 남은 일수\n- 만 18세·19세·22세·65세 도달 일자\n\n복수국적자·재외국민도 동일하게 계산. 단 시차 출생자는 한국 가족관계등록부 등재일을 입력해야 정확.\n\n실전 활용.\n\n1. 자녀 초등학교 입학 — 만 6세 도달일\n2. 본인 만 19세 음주 가능일\n3. 만 22세 국적 선택 마감일 (복수국적자)\n4. 만 65세 복지 혜택 시작일\n5. 만 18세 병역 시작 연도 (남성)\n\n관련 글로 [한국 나이 vs 만 나이 vs 연 나이 5가지 상황](/blog/korean-age-vs-international-age-2026-5-situations)에서 일상 적용 사례, [GPA 4.5 → 4.0 변환](/blog/gpa-4-5-to-4-0-conversion-overseas-grad-school-5-cases)에서 해외 대학원 준비 시 동시 점검할 항목까지 이어 보세요.\n\n나이 계산 헷갈리면 행정 절차에서 손해 봐요. 5초 투자로 정확히.",
+        },
+      ],
+      en: [
+        {
+          heading: "Korean Unified Age Law in Force Since June 28 2023",
+          body: "Article 7-2 of the Administrative Basics Act made Western age (man-nai) the default for all administrative and civil matters. Subtract birth year from current year, minus 1 if birthday hasn't passed.",
+        },
+        {
+          heading: "Case 1) Born Abroad to Korean Citizen — KST Rule",
+          body: "Family register uses KST. LA birth Dec 31 2024 23:30 = KST Jan 1 2025 16:30. Korean records show 2025-born even though US records say 2024-born. Affects all Korean administrative procedures.",
+        },
+        {
+          heading: "Case 2) Citizens Abroad Returning to Korea",
+          body: "Same age formula but cross-system reconciliation needed for school placement. Canadian 6th grade (age 11.8) may map to Korean 5th or 6th grade per provincial education board ruling.",
+        },
+        {
+          heading: "Case 3) Dual Nationality — Korean Admin Uses Man-nai",
+          body: "Korean and US passports both birthday-based, so de facto identical. Tax residency determines which country's age applies for tax credits. Nationality election deadline at 22 (Nationality Act §12).",
+        },
+        {
+          heading: "Case 4) Reacquired Citizenship — Birth Date Wins",
+          body: "Restored Korean citizens use original birth date for age, not restoration date. Age 65+ allows dual citizenship. Welfare eligibility starts immediately if 65+ at restoration.",
+        },
+        {
+          heading: "Case 5) Dual-National Males and Conscription",
+          body: "Conscription duty starts Jan 1 of year turning 18 (yeon-nai). Nationality renunciation deadline March 31 of that year. Miss it and duty applies until age 38 or after service completion.",
+        },
+        {
+          heading: "Use Toolkio Age Calculator",
+          body: "Input birthdate, see man-nai, traditional Korean age, yeon-nai, days to next birthday, milestone dates (18, 19, 22, 65). Foreign-born should use family register date for accuracy.",
+        },
+      ],
+    },
+    faq: [
+      { question: "외국에서 출생한 자녀, 한국 만 나이는 어떻게 계산해요?", answer: "한국 가족관계등록부에 등재된 출생일자 기준. 시차로 인해 외국 출생증명서와 하루 차이날 수 있음. 영사관에서 KST로 자동 환산해서 등재. 본인 별도 계산 X." },
+      { question: "복수국적 자녀의 한국 학교 입학은 언제예요?", answer: "그 해 1월 1일 만 6세 되는 어린이가 초등학교 입학. 외국 학교 학년과 다를 수 있음. 교육청 학력심의위원회가 학년 결정. 자동 X." },
+      { question: "만 22세 국적 선택을 놓치면 어떻게 돼요?", answer: "국적법 제12조에 따라 만 22세까지 선택 마감. 놓치면 한국 국적 자동 상실 가능 (실제 통보 절차 거침). 외국 국적 신청 시 한국 국적 자동 상실 신고 의무." },
+      { question: "복수국적 남성 만 18세 3월 31일 기한 놓쳤어요. 한국 입국 가능해요?", answer: "병역 의무 미이행 상태로 입국하면 출국 정지 가능. 만 38세까지 (병역법 개정으로 만 41세 이후 면제). 단기 방문은 외국 여권으로 가능하나 위험. 병무청 사전 상담 필수." },
+      { question: "만 65세 이상 외국 시민권자가 한국에 살러 와요. 의료보험 바로 되나요?", answer: "국적 회복하면 즉시 건강보험 가입 가능. F-4(재외동포) 비자로도 가능 (조건 따름). 만 65세 이상은 노인장기요양보험 가입 가능. 노령연금은 가입 기간 별도." },
+      { question: "Toolkio 만나이 계산기는 시차 자동 반영하나요?", answer: "한국 시간(KST) 기준으로 계산. 외국 출생자는 가족관계등록부 등재일을 입력해야 정확. 출생증명서 날짜 그대로 입력하면 1일 오차 가능." },
+    ],
+  },
+  {
+    slug: "hex-decimal-binary-confusion-css-mac-address-5-cases",
+    title: {
+      ko: "16진수 헷갈림 — 0xFF·#FFFFFF·CSS·MAC주소 5가지 진법 실전",
+      en: "Hex Decimal Binary Confusion — 5 Real-World Number Base Cases",
+    },
+    description: {
+      ko: "0xFF·#FFFFFF·MAC 주소·UTF-8·서브넷 마스크에서 헷갈리는 진법 5가지 실전. 16진수·10진수·2진수 변환과 자주 틀리는 함정까지 정리했어요.",
+      en: "5 real-world cases of hex/decimal/binary confusion: 0xFF, CSS color, MAC address, UTF-8, subnet mask — common pitfalls explained.",
+    },
+    date: "2026-05-03",
+    toolId: "number-base-converter",
+    image: "/images/blog/hex-decimal-binary-confusion-css-mac-address-5-cases.webp",
+    keywords: ["진법 변환", "16진수", "0xFF 의미", "MAC 주소 진법", "서브넷 마스크"],
+    content: {
+      ko: [
+        {
+          heading: "왜 진법이 자꾸 헷갈릴까요?",
+          body: "코드 보면 `0xFF`, `255`, `0b11111111` 다 보이는데 \"이게 같은 값이야?\" 갸우뚱한 적 있을 거예요. 셋 다 같은 숫자 — 10진수 255. 표기법만 달라요.\n\n진법 표기 컨벤션.\n\n- **2진수(Binary)**: `0b` 접두사 (Python·JavaScript)\n- **8진수(Octal)**: `0o` 또는 `0` (예전 C 스타일)\n- **10진수(Decimal)**: 접두사 없음\n- **16진수(Hex)**: `0x` 또는 `#` (CSS)\n\n오늘 정리할 5가지.\n\n1. C·Python의 `0xFF` — 비트 마스크\n2. CSS `#FFFFFF` — 색상 코드\n3. MAC 주소 `00:1A:2B:3C:4D:5E` — 6바이트 16진수\n4. UTF-8 `EA B0 80` — 한글 한 글자 3바이트\n5. 서브넷 마스크 `255.255.255.0` ↔ `/24` ↔ 2진수\n\n실전 변환 시 [Toolkio 진법 변환기](https://toolkio.com/tools/number-base-converter)에 한 번에 넣고 4가지 진법 동시 확인.",
+        },
+        {
+          heading: "케이스 1) 0xFF — 비트 마스크와 1바이트 최댓값",
+          body: "C, Python, JavaScript 코드에서 `0xFF`는 자주 등장. 의미는 1바이트(8비트)가 모두 1인 값.\n\n변환.\n\n- 16진수: `0xFF`\n- 2진수: `0b11111111` (1이 8개)\n- 10진수: `255`\n\n자주 쓰이는 곳.\n\n```python\n# 하위 8비트 추출 (마스킹)\nvalue = 0x12AB\nlow_byte = value & 0xFF  # 0xAB = 171\n\n# RGB 채널 분리\ncolor = 0xFF8800\nred   = (color >> 16) & 0xFF  # 0xFF = 255\ngreen = (color >> 8) & 0xFF   # 0x88 = 136\nblue  = color & 0xFF          # 0x00 = 0\n```\n\n실수 포인트.\n\n- `0xFF` 와 `255` 헷갈리지 마세요. 같은 값인데 표기 다름\n- C에서 `unsigned char`(0~255) 최댓값 = `0xFF`\n- `signed char`(-128~127) 최댓값 = `0x7F` = 127, 최솟값 = `0x80` = -128 (2의 보수)\n\n2의 보수 함정. `0xFF`를 `signed char`로 해석하면 `-1`. 같은 비트 패턴이 데이터 타입 따라 의미 다름. C 캐스팅 시 자주 발생.",
+        },
+        {
+          heading: "케이스 2) CSS #FFFFFF — RGB 16진수",
+          body: "CSS 색상 `#FFFFFF`는 흰색. 6자리 16진수가 RGB 3채널 각 2자리씩.\n\n분해.\n\n- `#FFFFFF` = `#FF` + `#FF` + `#FF`\n- 빨강 255 + 초록 255 + 파랑 255\n- 10진수 표기: `rgb(255, 255, 255)`\n\n자주 쓰이는 색.\n\n- `#000000` = 검정 (RGB 0,0,0)\n- `#FF0000` = 빨강 (RGB 255,0,0)\n- `#00FF00` = 순녹색 (RGB 0,255,0)\n- `#1E90FF` = 도저블루 (RGB 30,144,255)\n\n3자리 단축 표기.\n\n- `#F00` = `#FF0000` (각 자리 두 번 반복)\n- `#FFF` = `#FFFFFF`\n- `#1A2` = `#11AA22` (주의: 단순 반복 X, `#11`, `#AA`, `#22`)\n\n8자리 RGBA.\n\n- `#FFFFFFFF` = 마지막 2자리가 알파(투명도)\n- `#FFFFFF80` = 50% 투명 흰색\n- 알파 80(16진) = 128(10진) = 0.5 (0~255 범위)\n\nOKLCH·HSL은 16진수 아닌 함수형 표기. 최신 CSS는 [HEX vs RGB vs HSL 차이](/blog/hex-rgb-hsl-difference-designer-guide)에서 비교.",
+        },
+        {
+          heading: "케이스 3) MAC 주소 — 6바이트 16진수",
+          body: "네트워크 인터페이스 MAC 주소. 형식 `XX:XX:XX:XX:XX:XX` (콜론) 또는 `XX-XX-XX-XX-XX-XX` (대시) 또는 `XXXXXXXXXXXX` (구분자 없음).\n\n구조.\n\n- 6바이트 = 48비트\n- 각 바이트 16진수 2자리 (00~FF)\n- 앞 3바이트 = OUI(제조사 식별)\n- 뒤 3바이트 = 제조사 내부 시리얼\n\n예시. `00:1A:2B:3C:4D:5E`\n\n- `00:1A:2B` = OUI (이 예시는 실존 OUI)\n- `3C:4D:5E` = 시리얼\n- 2진수로 펼치면: `00000000 00011010 00101011 00111100 01001101 01011110`\n\n특수 비트.\n\n- 첫 바이트의 LSB(최하위 비트) = 1이면 멀티캐스트, 0이면 유니캐스트\n- 첫 바이트의 두 번째 비트 = 1이면 로컬 관리(랜덤 MAC), 0이면 글로벌(제조사 할당)\n\n예시. `02:1A:2B:3C:4D:5E` → 첫 바이트 02 = 0000 0010 → 두 번째 비트 1 → 로컬 관리 (사용자가 변경한 랜덤 MAC, iPhone·Android 프라이버시 기능).\n\nIPv6 EUI-64 변환 시 MAC 주소 가운데에 `FF:FE`를 끼워넣고 7번째 비트를 반전. 이 과정도 16진수↔2진수 변환의 정수.",
+        },
+        {
+          heading: "케이스 4) UTF-8 한글 — 3바이트 16진수",
+          body: "한글 \"가\" 한 글자를 UTF-8로 인코딩하면 3바이트.\n\n변환 과정.\n\n- 유니코드 코드포인트: U+AC00 (16진)\n- 10진: 44032\n- 2진: `1010 1100 0000 0000` (16비트)\n- UTF-8 인코딩 규칙(U+0800~U+FFFF는 3바이트, 패턴 `1110xxxx 10xxxxxx 10xxxxxx`)\n- 16비트 → 4-6-6 분할 → `1010 + 110000 + 000000`\n- 3바이트 결과: `11101010 10110000 10000000` = `EA B0 80`\n\n검증.\n\n```python\n>>> '가'.encode('utf-8').hex()\n'eab080'\n```\n\nUTF-8 한글 자주 쓰는 범위.\n\n- 가 ~ 힣 = U+AC00 ~ U+D7A3\n- 16진: AC00 ~ D7A3 (총 11,172 글자)\n- UTF-8: EA B0 80 ~ ED 9E A3\n\n주의. URL 인코딩에서 \"가\"는 `%EA%B0%80` (UTF-8 3바이트를 %로 표현). EUC-KR이면 `%B0%A1` (2바이트). 인코딩 다르면 깨짐. 자세한 건 [URL 인코딩 한글 파라미터 깨짐](/blog/url-encoding-korean-parameter-fix-guide)에서.\n\nBase64 변환과도 다름. UTF-8은 바이너리 인코딩, Base64는 그 바이너리를 ASCII로 한 번 더 인코딩.",
+        },
+        {
+          heading: "케이스 5) 서브넷 마스크 — IP, 진법, CIDR",
+          body: "네트워크 서브넷 마스크 `255.255.255.0` ↔ CIDR `/24` ↔ 2진수 변환.\n\n10진수 IPv4 4옥텟.\n\n- `255.255.255.0`\n- 각 옥텟 0~255 (1바이트씩)\n\n2진수 변환.\n\n- 255 → `11111111` (8비트 모두 1)\n- 0 → `00000000`\n- 전체: `11111111.11111111.11111111.00000000`\n\nCIDR 표기.\n\n- 1의 개수 세기: 8 + 8 + 8 + 0 = 24\n- `/24` (슬래시 24)\n\n자주 쓰는 변환.\n\n| 마스크 | CIDR | 호스트 수 |\n|------|------|---------|\n| 255.0.0.0 | /8 | 16,777,214 |\n| 255.255.0.0 | /16 | 65,534 |\n| 255.255.255.0 | /24 | 254 |\n| 255.255.255.128 | /25 | 126 |\n| 255.255.255.192 | /26 | 62 |\n| 255.255.255.224 | /27 | 30 |\n| 255.255.255.240 | /28 | 14 |\n| 255.255.255.248 | /29 | 6 |\n| 255.255.255.252 | /30 | 2 |\n\n호스트 수 = 2^(32-CIDR) - 2 (네트워크 주소·브로드캐스트 제외).\n\n주의. 마스크는 반드시 1이 연속해야 함. `255.255.255.16`처럼 중간에 0 끼면 잘못된 마스크. 2진수로 펼쳐서 확인 필수. 16진수로는 `0xFF.0xFF.0xFF.0x00`.\n\n실무. 라우팅 테이블·방화벽 룰·DHCP 설정에서 매일 등장. 변환 헷갈리면 [Toolkio 진법 변환기](https://toolkio.com/tools/number-base-converter)에 10진수 입력 → 2진수 자동.",
+        },
+        {
+          heading: "Toolkio 진법 변환기 — 4진법 한 번에",
+          body: "[Toolkio 진법 변환기](https://toolkio.com/tools/number-base-converter)에 숫자 하나 입력하면 2·8·10·16진수 동시 표시. 비트 시각화도 제공해서 마스킹·시프트 디버깅에 유용.\n\n사용 예.\n\n1. `0xFF` 입력 → 255, 0b11111111, 0o377 즉시\n2. `255.255.255.0` 한 옥텟씩 변환 → `/24` CIDR 도출\n3. UTF-8 디버깅: `0xEAB080` → `15446144` (10진), `1110 1010 1011 0000 1000 0000` (2진)\n4. RGB → HEX: `rgb(30,144,255)` → 30=0x1E, 144=0x90, 255=0xFF → `#1E90FF`\n5. MAC 주소 OUI 검색 시 `00:1A:2B`만 따로 변환 → 10진수로 OUI 데이터베이스 조회\n\n관련 글로 [HEX vs RGB 색상 변환 원리](/blog/hex-rgb-color-conversion-principle)에서 색상 진법 심화, [URL 인코딩 한글 파라미터](/blog/url-encoding-korean-parameter-fix-guide)에서 UTF-8 인코딩 디버깅을 이어 보세요.\n\n진법 헷갈림은 한 번 정리하면 평생 가요. 5초 변환으로 디버깅 시간 1시간 절약.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Number Bases Confuse",
+          body: "0xFF, 255, 0b11111111 are the same value in different notations. Hex prefix 0x or # (CSS), binary 0b, octal 0o, decimal no prefix.",
+        },
+        {
+          heading: "Case 1) 0xFF — Bit Mask and 1-Byte Max",
+          body: "0xFF = 255 = 0b11111111. Common in masking (value & 0xFF), RGB extraction. Beware signed char interpretation: 0xFF as signed = -1 (two's complement).",
+        },
+        {
+          heading: "Case 2) CSS #FFFFFF — Hex RGB",
+          body: "6-digit hex = RGB. #FFFFFF = white = rgb(255,255,255). 3-digit shorthand #F00 = #FF0000. 8-digit RGBA: #FFFFFF80 = 50% transparent white.",
+        },
+        {
+          heading: "Case 3) MAC Address — 6-Byte Hex",
+          body: "00:1A:2B:3C:4D:5E. First 3 bytes = OUI (manufacturer). LSB of first byte = multicast flag. Bit 2 = locally administered (random MAC privacy).",
+        },
+        {
+          heading: "Case 4) UTF-8 Korean — 3 Bytes Hex",
+          body: "Korean syllable U+AC00 ('가') encodes to UTF-8 0xEA B0 80 (3 bytes). URL encoded as %EA%B0%80. EUC-KR is 2 bytes (%B0%A1) — different.",
+        },
+        {
+          heading: "Case 5) Subnet Mask — IP, Base, CIDR",
+          body: "255.255.255.0 = /24 = 24 ones in binary. Hosts = 2^(32-CIDR) - 2. Mask must have contiguous ones; gaps are invalid.",
+        },
+        {
+          heading: "Use Toolkio Base Converter",
+          body: "Input one number, see all four bases at once. Useful for masking, RGB-to-hex, UTF-8 debugging, MAC OUI lookup, subnet planning.",
+        },
+      ],
+    },
+    faq: [
+      { question: "0xFF가 왜 -1이 될 수 있어요?", answer: "C·C++에서 signed char(-128~127)로 캐스팅하면 비트 패턴은 같지만 2의 보수 해석이라 -1. unsigned char로 캐스팅하면 그대로 255. 데이터 타입 명시 중요." },
+      { question: "CSS #FFF와 #FFFFFF는 똑같아요?", answer: "맞아요. 3자리 단축은 각 자리를 두 번 반복. #FFF = #FFFFFF, #F00 = #FF0000, #1A2 = #11AA22. 색상 자체는 동일." },
+      { question: "MAC 주소 콜론·대시·구분자 없는 형식 다 같은 거예요?", answer: "내용은 같음. 표기법만 다름. 00:1A:2B:3C:4D:5E = 00-1A-2B-3C-4D-5E = 001A2B3C4D5E. Cisco는 점 구분 (001A.2B3C.4D5E) 사용." },
+      { question: "한글 한 글자가 왜 UTF-8에서 3바이트인가요?", answer: "UTF-8은 코드포인트 범위에 따라 가변 길이. ASCII(U+0000~007F)는 1바이트, U+0080~07FF는 2바이트, U+0800~FFFF는 3바이트, 그 이상은 4바이트. 한글은 U+AC00~D7A3이라 3바이트." },
+      { question: "서브넷 마스크 255.255.255.16은 가능한가요?", answer: "불가능. 마스크는 1이 연속해야 함. 16 = 00010000이라 2진수로 펼치면 1이 흩어짐. 라우터·OS가 거부 또는 예측 불가 동작. 항상 2진수로 검증." },
+      { question: "Toolkio 진법 변환기는 음수도 변환되나요?", answer: "양수 기준 직접 변환. 음수는 2의 보수 표기로 입력 (예: 8비트 -1 = 0xFF, 16비트 -1 = 0xFFFF). 데이터 타입 비트 수에 따라 결과 다름." },
+    ],
+  },
+  {
+    slug: "uuid-v4-collision-probability-3-billion-real-test-5-scenarios",
+    title: {
+      ko: "UUID v4 충돌 확률 — 36억개 만들면 진짜 충돌? 실측 5가지",
+      en: "UUID v4 Collision Probability — 5 Real Scenarios from 100M Tests",
+    },
+    description: {
+      ko: "UUID v4 충돌은 실제로 일어날까? 122비트 랜덤·생일 역설·2.71 quintillion 50% 임계점·실측 100M 테스트·DB 유니크 인덱스 5가지 시나리오 정리.",
+      en: "Does UUID v4 collision really happen? 122-bit randomness, birthday paradox, 2.71 quintillion 50% threshold, real 100M test results, and DB unique index strategy.",
+    },
+    date: "2026-05-03",
+    toolId: "uuid-generator",
+    image: "/images/blog/uuid-v4-collision-probability-3-billion-real-test-5-scenarios.webp",
+    keywords: ["UUID v4 충돌", "UUID 중복 확률", "생일 역설 UUID", "UUID 보안", "uuid collision"],
+    content: {
+      ko: [
+        {
+          heading: "UUID v4 충돌 — 실제로 가능한가요?",
+          body: "신입 개발자가 자주 묻는 질문. \"UUID v4 두 번 만들면 같은 게 나올 수 있어요?\" 답은 \"이론상 가능, 현실상 거의 불가능\".\n\n핵심 숫자.\n\n- UUID v4는 128비트 중 6비트가 버전·variant 표시 → **랜덤 비트 122비트**\n- 가능한 UUID 수: 2^122 ≈ 5.3 × 10^36 (약 5.3 undecillion)\n- 50% 충돌 확률 도달 시점: **2.71 quintillion(2.71 × 10^18)개** 생성\n- 1초에 10억 개씩 만들어도 86년 걸려야 50% 도달\n\n오늘 정리할 5가지 시나리오.\n\n1. 생일 역설 수식 — 충돌 확률 계산법\n2. 36억(3.6 × 10^9) 개 만들면? — 일반 서비스 규모\n3. 100M(1억) 실측 — FastUUID 보고\n4. PRNG 약점 — Math.random() 위험\n5. DB 유니크 인덱스 — 만일에 대비\n\n공식 출처는 [Wikipedia UUID 항목](https://en.wikipedia.org/wiki/Universally_unique_identifier) 및 [The Birthday Paradox in Production](https://tomarcher.io/posts/birthday-paradox/) 분석 글 참고.",
+        },
+        {
+          heading: "시나리오 1) 생일 역설 — 50% 충돌 확률 수식",
+          body: "방에 23명만 있어도 생일 같은 사람이 있을 확률이 50% 넘어요. 이게 생일 역설(Birthday Paradox).\n\nUUID 충돌도 같은 수학.\n\n수식.\n\n- N = 가능한 UUID 수 = 2^122\n- n = 생성한 UUID 수\n- 충돌 확률 P ≈ 1 - exp(-n²/(2N))\n\n50% 도달 임계.\n\n- n²/(2N) ≈ 0.693 (ln 2)\n- n ≈ √(2N × 0.693) ≈ √(2^122 × 1.386)\n- ≈ 2.71 × 10^18 = **2.71 quintillion**\n\n비교 감각.\n\n- 인류 인구 80억 ≈ 8 × 10^9\n- 인류 1인당 3억 4천만 개 만들어야 50% 도달\n- 1나노초마다 한 개 만들어도 2,710억 초 ≈ 8,600년\n\n낮은 확률. 1 in 1 billion(10억분의 1) 충돌.\n\n- n ≈ 103 trillion(1.03 × 10^14)\n- 즉 103조 개 만들어도 충돌 1/10억\n\n실용 결론. 일반 서비스에서 UUID v4 충돌 신경 쓸 필요 거의 없음.",
+        },
+        {
+          heading: "시나리오 2) 36억 개 — 일반 서비스 규모",
+          body: "스타트업·중견 서비스 1년 생성량 추정.\n\n- 사용자 100만 × 1인당 일일 활동 1,000건 × 365일 = 3.65 × 10^11 (3,650억)\n- 보통 서비스는 이보다 훨씬 적음 (수억~수십억)\n\n36억 개(3.6 × 10^9) 만들 때 충돌 확률.\n\n- P ≈ 1 - exp(-(3.6e9)² / (2 × 5.3e36))\n- ≈ 1 - exp(-1.22 × 10^-18)\n- ≈ **1.22 × 10^-18 (1.22 quintillionth)**\n\n비교.\n\n- 벼락 맞을 확률 (평생): 1 / 12,000 = 8.3 × 10^-5\n- UUID 36억 개 충돌: 1.22 × 10^-18\n- → 충돌이 벼락 맞기보다 6.8 × 10^13배 어려움\n\n100억 개(10^10) 만들어도 P ≈ 9.4 × 10^-18. 여전히 무시 가능.\n\n결론. 토스·카카오뱅크급 서비스도 UUID v4 충돌 걱정 X. 단 실제 PRNG 품질이 충분히 균일해야 함.",
+        },
+        {
+          heading: "시나리오 3) 100M 실측 — FastUUID 보고서",
+          body: "[FastUUID 100M 테스트](https://fastuuid.com/learn-about-uuids/100-million-uuids-collisions)에서 1억 개 UUID v4 생성 후 충돌 검사. 결과 **3건 충돌** 발견.\n\n잠깐, 수학적으로는?\n\n- n = 10^8\n- 예상 충돌 = n² / (2N) ≈ 10^16 / 1.06 × 10^37 ≈ 9.4 × 10^-22\n- 1억 개로는 충돌 0건이 정상\n\n그런데 3건? 이유.\n\n- **PRNG 약점**: 일부 언어·라이브러리의 기본 난수 생성기가 균일하지 않음\n- **시드 충돌**: 같은 시간에 같은 시드로 시작되면 같은 UUID\n- **버그**: UUID 라이브러리 초기화 버그\n\n검증 환경.\n\n- Java SecureRandom: 충돌 0건\n- Python uuid.uuid4(): 충돌 0건\n- Node.js crypto.randomUUID(): 충돌 0건\n- 일부 비표준 라이브러리: 드물게 발생\n\n교훈. **표준 라이브러리** 사용. 직접 구현 X. Math.random() 기반 UUID는 절대 X.",
+        },
+        {
+          heading: "시나리오 4) Math.random() 함정 — 절대 쓰지 마세요",
+          body: "JavaScript에서 옛날 코드.\n\n```javascript\n// ❌ 위험한 UUID 생성기\nfunction badUUID() {\n  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {\n    const r = Math.random() * 16 | 0;\n    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);\n  });\n}\n```\n\n문제.\n\n1. `Math.random()`은 PRNG (Pseudo Random Number Generator) — 시드만 알면 예측 가능\n2. V8 엔진은 xorshift128+ 사용. 보안 난수 X\n3. 충돌 자체는 드물지만 **예측 가능 = 보안 위험**\n4. UUID로 인증 토큰·세션 ID 만들면 공격 가능\n\n안전한 대체.\n\n```javascript\n// ✅ Web Crypto API 사용 (브라우저·Node 18+)\nconst uuid = crypto.randomUUID();\n// 'a3b1c2d4-...' 형식, 암호학적으로 안전\n\n// ✅ Node.js 14+ 외부 라이브러리\nconst { v4: uuidv4 } = require('uuid');\nconst id = uuidv4();\n```\n\n구분.\n\n- Math.random() = 게임 주사위·UI 애니메이션 OK\n- crypto.randomUUID() = 사용자 식별·세션 토큰\n\n2019년 이후 보안 사고 다수가 \"Math.random() 기반 토큰\" 원인. UUID 생성에는 **반드시** Web Crypto 또는 표준 라이브러리.",
+        },
+        {
+          heading: "시나리오 5) DB 유니크 인덱스 — 만일에 대비",
+          body: "수학적 충돌 확률 1/10^18이라도 PRNG 버그·시드 사고로 충돌 가능. 안전망은 데이터베이스 유니크 인덱스.\n\nPostgreSQL.\n\n```sql\nCREATE TABLE users (\n  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n  email TEXT NOT NULL\n);\n-- PRIMARY KEY = 자동 UNIQUE 인덱스\n```\n\nMongoDB.\n\n```javascript\ndb.users.createIndex({ uuid: 1 }, { unique: true });\n```\n\n충돌 시 동작.\n\n- INSERT 시 PostgreSQL: `duplicate key violates unique constraint` 에러 (PG 23505)\n- MongoDB: `E11000 duplicate key` 에러\n- 애플리케이션: 에러 캐치 → UUID 재생성 → 재시도\n\n재시도 로직.\n\n```python\nfor attempt in range(3):\n    try:\n        new_id = str(uuid.uuid4())\n        db.execute('INSERT INTO users (id, email) VALUES (?, ?)',\n                   (new_id, email))\n        break\n    except IntegrityError as e:\n        if 'unique' in str(e) and attempt < 2:\n            continue  # UUID 재생성 후 재시도\n        raise\n```\n\n실무. 1억 INSERT 중 충돌 0~3건이라도 재시도 로직 있으면 자동 복구. UUID 자체는 안전한 ID 체계지만 **DB 레벨 검증**이 마지막 안전장치.\n\n관련해서 [UUID 데이터베이스 키 토큰 가이드](/blog/uuid-generator-database-keys-tokens-guide)에서 PK·세션 토큰 활용을, [UUID v7 PostgreSQL 마이그레이션](/blog/uuid-v7-postgres-mongodb-migration-2026)에서 시간순 정렬 가능한 UUID v7 도입을 이어 보세요.",
+        },
+        {
+          heading: "Toolkio UUID 생성기 — 표준 RFC 9562 보장",
+          body: "[Toolkio UUID 생성기](https://toolkio.com/tools/uuid-generator)는 Web Crypto API 기반. RFC 9562 표준 v4 보장.\n\n특징.\n\n1. 브라우저 `crypto.randomUUID()` 호출 (V8·Spider Monkey·JavaScriptCore 모두 CSPRNG)\n2. 암호학적으로 안전한 난수\n3. Math.random() 절대 사용 X\n4. v1·v4·v7 동시 지원 (옵션 선택)\n\n사용 시.\n\n- 단일 생성: 한 번 클릭으로 1개\n- 대량 생성: 100개·1000개 한 번에 (CSV 다운로드)\n- 형식 옵션: 하이픈 포함/제외, 대소문자\n\n참고. UUID v4 충돌 확률은 사실상 0이지만 보안 토큰으로 쓸 때는 추가 검증 필요. 인증·세션은 더 긴 시크릿 (256비트 이상) 권장. UUID v4는 122비트 엔트로피.\n\n결론. 일반 서비스 PK·식별자로는 UUID v4 충분. 보안 토큰은 별도 시크릿. DB 유니크 인덱스 무조건 걸기. 이 3가지면 충돌 걱정 끝.",
+        },
+      ],
+      en: [
+        {
+          heading: "UUID v4 Collisions — Possible but Negligible",
+          body: "UUID v4 has 122 random bits = 5.3 × 10^36 possibilities. 50% collision threshold at 2.71 quintillion generations — 86 years at 1B/sec.",
+        },
+        {
+          heading: "Birthday Paradox Math",
+          body: "P(collision) ≈ 1 - exp(-n²/2N). N = 2^122. 50% threshold ≈ √(2N × 0.693) ≈ 2.71 × 10^18.",
+        },
+        {
+          heading: "3.6 Billion Generations — Negligible",
+          body: "P ≈ 1.22 × 10^-18 for 3.6B UUIDs. Lightning strike probability is 6.8 × 10^13 times more likely.",
+        },
+        {
+          heading: "100M Real Test — 3 Collisions Found",
+          body: "FastUUID test: 3 collisions in 100M, but mathematically expected zero. Cause: weak PRNG in non-standard libs. Use stdlib only.",
+        },
+        {
+          heading: "Math.random() Trap",
+          body: "Math.random() is PRNG — predictable. Never use for UUID. Use crypto.randomUUID() (Web Crypto, browser + Node 14+) for cryptographically secure.",
+        },
+        {
+          heading: "DB Unique Index Safety Net",
+          body: "PostgreSQL UNIQUE PRIMARY KEY catches edge-case collisions. Catch IntegrityError, regenerate UUID, retry up to 3 times.",
+        },
+        {
+          heading: "Use Toolkio UUID Generator",
+          body: "Web Crypto API based, RFC 9562 compliant. v1/v4/v7 supported, batch generation up to 1000, CSV export.",
+        },
+      ],
+    },
+    faq: [
+      { question: "UUID v4 정말 절대 충돌 안 나요?", answer: "수학적으로 122비트 랜덤이라 50% 충돌 확률 도달까지 2.71 × 10^18개 필요. 일반 서비스에서는 0에 수렴. 단 PRNG 약한 라이브러리·Math.random() 기반은 충돌 가능." },
+      { question: "Math.random()으로 UUID 만들면 왜 위험해요?", answer: "Math.random()은 PRNG. 시드 알면 예측 가능. 충돌 자체보다 보안 위험이 더 큼. 인증 토큰으로 쓰면 공격자가 다음 UUID 추측 가능. crypto.randomUUID() 또는 표준 라이브러리 필수." },
+      { question: "UUID v4 vs v7 어느 게 좋아요?", answer: "DB PK는 v7 (시간순 정렬 가능 → B-tree 효율). 외부 노출 ID는 v4 (예측 불가능). 보안 토큰은 둘 다 권장 X — 256비트 시크릿 따로." },
+      { question: "100M 테스트에서 3건 나왔다는데 무서워요. 어떻게 막아요?", answer: "표준 라이브러리(Java SecureRandom, Python uuid, Node crypto) 사용 + DB UNIQUE 인덱스 + 재시도 로직 3개 조합으로 100% 차단. 직접 구현 X." },
+      { question: "UUID 충돌 시 DB 동작은요?", answer: "PostgreSQL은 INSERT 시 23505 SQLSTATE 에러. MongoDB는 E11000 duplicate key 에러. 애플리케이션 try-catch로 처리 → UUID 재생성 → 재시도." },
+      { question: "Toolkio UUID 생성기는 안전한가요?", answer: "브라우저 crypto.randomUUID() API 호출. V8·SpiderMonkey 등 모든 메이저 엔진이 CSPRNG. Math.random() 절대 사용 X. RFC 9562 표준 준수." },
+    ],
+  },
+  {
+    slug: "diet-unit-converter-kcal-bmr-lb-ounce-5-fitness-scenarios",
+    title: {
+      ko: "다이어트 단위 변환 — kcal·BMR·lb·온스 5가지 헬스 시나리오",
+      en: "Diet Unit Converter — kcal, BMR, lb, oz in 5 Fitness Scenarios",
+    },
+    description: {
+      ko: "헬스장·다이어트에서 자주 헷갈리는 단위 5가지 — 칼로리 4·4·9 매크로, kg·lb 환산, 온스·g, BMR 계산, 미국 식품 영양표시까지 정리했어요.",
+      en: "5 unit confusions in fitness — 4/4/9 macro calories, kg-lb, oz-g, BMR calculation, US nutrition label conversion.",
+    },
+    date: "2026-05-03",
+    toolId: "unit-converter",
+    image: "/images/blog/diet-unit-converter-kcal-bmr-lb-ounce-5-fitness-scenarios.webp",
+    keywords: ["다이어트 단위 변환", "칼로리 계산", "lb kg 변환", "BMR 계산", "온스 그램"],
+    content: {
+      ko: [
+        {
+          heading: "왜 헬스·다이어트에 단위 변환이 자주 필요한가요?",
+          body: "유튜브·인스타그램 헬스 콘텐츠 대부분이 영어권. 단위가 lb·oz·cal·tsp 등으로 들어와요. 한국 식품 영양 정보는 g·kcal·ml. 매번 환산해야 정확.\n\n자주 등장하는 단위 5가지.\n\n1. 칼로리 매크로(4·4·9): 탄수화물·단백질 4kcal/g, 지방 9kcal/g, 알코올 7kcal/g\n2. 체중 kg ↔ lb: 1lb = 0.4536kg / 1kg = 2.2046lb\n3. 온스(oz) ↔ g: 1oz = 28.35g (질량) — 액량 온스(fl oz)는 다름\n4. BMR 계산: Harris-Benedict, Mifflin-St Jeor 공식\n5. 미국 영양표시: 컵·tsp·tbsp 부피 단위\n\n오늘 5가지 시나리오로 실전 변환·계산 정리. 실제 변환은 [Toolkio 단위 변환기](https://toolkio.com/tools/unit-converter) 한 번에.",
+        },
+        {
+          heading: "시나리오 1) 칼로리 4·4·9 — 매크로로 칼로리 직접 계산",
+          body: "식품 라벨 보면 \"단백질 20g, 탄수화물 30g, 지방 10g\". 칼로리 직접 계산할 수 있어요.\n\n매크로별 칼로리 (4·4·9 규칙).\n\n- **탄수화물**: 1g = 4kcal\n- **단백질**: 1g = 4kcal\n- **지방**: 1g = 9kcal\n- **알코올**: 1g = 7kcal (제4의 매크로)\n- 식이섬유: 0~2kcal (한국 라벨은 보통 0)\n\n예시. 닭가슴살 100g (단백질 23g, 지방 1g, 탄수화물 0g).\n\n- 23×4 + 1×9 + 0×4 = 92 + 9 = **101kcal**\n- 라벨 표시: 약 110kcal (식이섬유·기타 미세 차이)\n\n다이어트 핵심.\n\n- 단백질 1g/체중1kg → 70kg 사람 일일 70g (280kcal)\n- 지방 0.8g/kg → 56g (504kcal)\n- 탄수화물은 잔여 (총 칼로리 - 단백질 - 지방)\n\n주의. 100g당 표기와 1회 제공량 표기 다를 수 있음. 항상 분량 확인. 미국 라벨은 1 serving size, 한국은 1 portion 또는 100g.\n\n알코올 함정. 맥주 500ml(알코올 5%) = 25ml × 0.79g/ml = **약 20g 알코올** = 140kcal. 거기에 탄수화물 17g(68kcal) 합쳐 ~210kcal. 다이어트 적.",
+        },
+        {
+          heading: "시나리오 2) kg ↔ lb — 미국 헬스 영상 기록 환산",
+          body: "유튜브 헬스 영상 \"I bench 225lb!\" → kg 얼마?\n\n공식.\n\n- 1lb = 0.4536kg\n- 1kg = 2.2046lb\n- 빠른 암산: kg = lb × 0.45 (오차 0.8%)\n- 빠른 암산: lb = kg × 2.2 (오차 0.2%)\n\n주요 무게 환산표.\n\n| lb | kg (정확) | kg (암산) |\n|----|---------|---------|\n| 25 | 11.34 | 11.25 |\n| 45 | 20.41 | 20.25 |\n| 100 | 45.36 | 45 |\n| 135 | 61.23 | 60.75 |\n| 225 | 102.06 | 101.25 |\n| 315 | 142.88 | 141.75 |\n| 405 | 183.71 | 182.25 |\n| 495 | 224.53 | 222.75 |\n\n헬스 플레이트.\n\n- 미국 표준 빈 바벨: 45lb (20.4kg)\n- 한국 표준 빈 바벨: 20kg (44.1lb)\n- 양쪽에 45lb 플레이트 1개씩: 45 + 45 + 45 = 135lb (61.2kg)\n- 한국식 환산: 20 + 20 + 20 = 60kg (132.3lb)\n\n예시 영상 \"225lb deadlift\" = 102.06kg ≈ 100kg. 미국 표준에서는 \"plates 2개\" 기준이라 \"2 plates\" = 225lb. 한국식 \"100kg 데드\" 정도.\n\n실수 포인트. lb는 짐숙(weight), oz는 더 작은 단위. 1lb = 16oz. 검색 시 \"lb\"와 \"lbs\" 모두 같은 의미 (lbs는 복수).",
+        },
+        {
+          heading: "시나리오 3) 온스(oz) ↔ g — 식품과 액체 둘 다 주의",
+          body: "온스(ounce, oz)는 질량과 부피 두 가지로 쓰여요. 헷갈리면 칼로리 계산 완전 망함.\n\n질량 온스 (avoirdupois ounce).\n\n- 1oz = 28.35g\n- 1lb = 16oz\n- 식품 무게·금속 표기에 사용\n- 미국 닭가슴살 \"6oz\" = 170g\n\n액량 온스 (fluid ounce, fl oz).\n\n- 1 US fl oz = 29.57ml\n- 1 UK fl oz = 28.41ml (약간 다름)\n- 음료·기름·물 부피에 사용\n- 미국 \"16 fl oz\" 음료 = 473ml ≈ 500ml 페트병\n\n구분 핵심.\n\n- 라벨에 \"oz\" 단독: 보통 질량 (28.35g)\n- 라벨에 \"fl oz\": 부피 (29.57ml)\n- 영문 식품 패키지: NET WT 6oz (질량) vs FLUID 16 oz (부피)\n\n쉐이크 만들 때 함정.\n\n- 단백질 파우더 \"1 scoop = 30g protein, 32g serving\"\n- 우유 \"8 fl oz = 240ml\"\n- 한국 우유 200ml 한 팩 → 약 6.76 fl oz\n- 미국 레시피 \"1 cup milk\" = 8 fl oz = 240ml\n\n부피 단위 추가.\n\n- 1 US cup = 240ml = 8 fl oz\n- 1 tablespoon (tbsp) = 15ml\n- 1 teaspoon (tsp) = 5ml\n- 한국 \"한 컵\"은 보통 200ml — 미국 컵과 다름",
+        },
+        {
+          heading: "시나리오 4) BMR 계산 — Mifflin-St Jeor 공식이 정확",
+          body: "기초대사량(BMR, Basal Metabolic Rate). 가만히 있어도 소모하는 칼로리. 다이어트의 시작.\n\n공식 2종.\n\n**Harris-Benedict (1919, 1984 개정)**.\n\n- 남성: BMR = 88.362 + (13.397 × 체중kg) + (4.799 × 키cm) - (5.677 × 나이)\n- 여성: BMR = 447.593 + (9.247 × 체중kg) + (3.098 × 키cm) - (4.330 × 나이)\n\n**Mifflin-St Jeor (1990, 더 정확)**.\n\n- 남성: BMR = (10 × kg) + (6.25 × cm) - (5 × 나이) + 5\n- 여성: BMR = (10 × kg) + (6.25 × cm) - (5 × 나이) - 161\n\n예시. 30세 남성, 75kg, 175cm.\n\n- Mifflin-St Jeor: 10×75 + 6.25×175 - 5×30 + 5 = 750 + 1093.75 - 150 + 5 = **1,698.75 kcal**\n- Harris-Benedict: 88.362 + 13.397×75 + 4.799×175 - 5.677×30 = 88.362 + 1004.78 + 839.83 - 170.31 = **1,762.66 kcal**\n\n현대 체격 기준 Mifflin-St Jeor가 더 정확 (Harris는 100년 전 데이터).\n\nTDEE (Total Daily Energy Expenditure) 활동량 보정.\n\n- 좌식: BMR × 1.2\n- 가벼운 운동(주 1~3회): × 1.375\n- 중간 운동(주 3~5회): × 1.55\n- 강한 운동(주 6~7회): × 1.725\n- 매우 강함(주 2회 이상 + 육체노동): × 1.9\n\n위 예시 + 중간 운동: 1,698.75 × 1.55 ≈ **2,633kcal/일**\n\n다이어트.\n\n- 감량: TDEE - 500kcal/일 → 주 0.45kg 감량\n- 빠른 감량: TDEE - 1,000kcal/일 → 주 0.91kg (위험, 영양 부족 가능)\n- 증량: TDEE + 250~500kcal/일 → 근육 증가\n\n[Toolkio BMR 계산기](https://toolkio.com/tools/bmr-calculator)에서 두 공식 동시 비교 가능. [BMI vs 체지방률 5가지 비만 판정](/blog/bmi-vs-body-fat-percentage-real-obesity)에서 체지방 기준도 함께 확인.",
+        },
+        {
+          heading: "시나리오 5) 미국 영양표시 — Daily Value % 환산",
+          body: "미국 식품 영양표시는 % Daily Value(DV) 표시. 한국 라벨은 영양소 g/kcal 직접.\n\n미국 DV 기준 (2,000kcal 식단).\n\n| 영양소 | 100% DV |\n|------|---------|\n| 총 지방 | 78g |\n| 포화지방 | 20g |\n| 콜레스테롤 | 300mg |\n| 나트륨 | 2,300mg |\n| 총 탄수화물 | 275g |\n| 식이섬유 | 28g |\n| 첨가당 | 50g |\n| 단백질 | 50g |\n| 비타민 D | 20μg |\n| 칼슘 | 1,300mg |\n| 철 | 18mg |\n| 칼륨 | 4,700mg |\n\n예시. 시리얼 1 serving \"Sodium 240mg, 10% DV\".\n\n- 한국식 환산: 1회분에 나트륨 240mg = 일일 권장(2,300mg)의 약 10%\n- 한국 권장량 2,000mg 기준이면 12% (약간 더 높음)\n\nServing size 함정.\n\n- 미국 시리얼 1 serving = 30g (한 줌)\n- 실제 사람들은 60~90g 먹음 → 칼로리·나트륨 2~3배\n- 라벨 그대로 믿으면 오해\n\n실용 환산.\n\n- 미국 영양표시 \"Calories 250 per serving\" → kcal 같은 의미 (Cal = kcal in 식품 컨텍스트)\n- 미국 \"Calories\" 대문자 = 1,000 cal (소문자) = 1 kilocalorie = 한국 1 kcal\n- 헷갈리는 단위지만 식품에서는 \"Cal = kcal\"\n\n미국 영양 라벨은 부피 단위(컵·tsp·tbsp)와 무게 단위(oz·lb) 혼용. 액체는 ml 또는 fl oz, 고체는 g 또는 oz로 환산.",
+        },
+        {
+          heading: "Toolkio 단위 변환기로 헬스 일상 정리",
+          body: "[Toolkio 단위 변환기](https://toolkio.com/tools/unit-converter)에서 길이·무게·부피·온도 등 100여 단위 즉시 변환. 헬스·다이어트 자주 쓰는 조합.\n\n1. **lb → kg**: 미국 헬스 영상 무게 환산\n2. **oz → g**: 미국 식품 라벨 → 한국 g\n3. **fl oz → ml**: 음료 부피 환산\n4. **cup → ml**: 미국 레시피 → 한국식\n5. **칼로리 매크로**: 직접 계산 (탄단지 4·4·9)\n\n관련 도구 함께 사용.\n\n- [BMR 계산기](https://toolkio.com/tools/bmr-calculator) — Mifflin-St Jeor 자동\n- [BMI 계산기](https://toolkio.com/tools/bmi-calculator) — 체질량지수\n\n실전 팁. 다이어트 일주일에 1번 식단 정리할 때 미국 단위 영상 보면 즉시 환산하면 시간 아껴요. 운동 기록도 lb·kg 둘 다 적어두면 글로벌 헬스 커뮤니티에서 공유 편리.\n\n관련 글 [BMI 계산 정상 범위 다이어트 가이드](/blog/bmi-calculation-normal-range-diet-guide)에서 BMI 기준, [퍼센트 계산 5가지 패턴](/blog/percent-calculator-discount-increase-compound-5-patterns)에서 % DV 응용까지 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Fitness Needs Unit Conversion",
+          body: "Most fitness content uses lb/oz/cal/tsp. Korean food labels use g/kcal/ml. Daily conversion essential.",
+        },
+        {
+          heading: "Scenario 1) 4/4/9 Macro Calories",
+          body: "Carbs and protein 4kcal/g, fat 9kcal/g, alcohol 7kcal/g. Direct calorie calculation from macros within 5% of label.",
+        },
+        {
+          heading: "Scenario 2) kg ↔ lb",
+          body: "1lb = 0.4536kg. Quick: kg = lb × 0.45 (0.8% error). 225lb bench = 102kg. US standard barbell 45lb (20.4kg).",
+        },
+        {
+          heading: "Scenario 3) oz ↔ g vs fl oz ↔ ml",
+          body: "1 oz mass = 28.35g. 1 fl oz volume = 29.57ml. NET WT vs FLUID labels distinguish them. 1 cup = 240ml = 8 fl oz.",
+        },
+        {
+          heading: "Scenario 4) BMR with Mifflin-St Jeor",
+          body: "BMR (male) = 10kg + 6.25cm - 5age + 5. Multiply by activity (1.2 sedentary to 1.9 very active) for TDEE. Cut 500kcal for 0.45kg/wk loss.",
+        },
+        {
+          heading: "Scenario 5) US Nutrition Label DV",
+          body: "% Daily Value based on 2000kcal diet. Sodium 100% DV = 2300mg. Serving size often smaller than actual portion — recalculate.",
+        },
+        {
+          heading: "Use Toolkio Unit Converter",
+          body: "100+ units. Common fitness combos: lb→kg, oz→g, fl oz→ml, cup→ml. Pair with BMR/BMI calculators for full diet planning.",
+        },
+      ],
+    },
+    faq: [
+      { question: "1lb는 정확히 몇 kg인가요?", answer: "1lb = 0.45359237kg (정확). 일반 사용은 0.4536kg 또는 0.45kg. 1kg = 2.2046lb. 100kg 데드리프트 = 220.46lb ≈ 225lb (헬스장 기준 양쪽 plate 2개)." },
+      { question: "온스(oz)와 액량 온스(fl oz)는 다른가요?", answer: "다름. oz는 질량 28.35g. fl oz는 부피 29.57ml(미국). 라벨에 'oz' 단독은 질량, 'fl oz'는 부피. 단백질 라벨 6oz = 170g 무게이고, 음료 16 fl oz = 473ml 부피." },
+      { question: "BMR 공식 Harris-Benedict와 Mifflin-St Jeor 어느 게 더 정확해요?", answer: "Mifflin-St Jeor (1990)가 더 정확. Harris는 1919년 데이터로 현대 체격에 안 맞음. 일반적으로 Mifflin이 5~10% 낮게 나오며 실제 측정에 가까움. 헬스 앱 대부분 Mifflin 사용." },
+      { question: "다이어트 위해 일일 칼로리 얼마나 줄여야 해요?", answer: "TDEE에서 500kcal/일 빼면 주 0.45kg(1lb) 감량. 1,000kcal는 위험 (근육 손실, 대사 저하). 단백질 1g/kg 유지 + 적자 500kcal가 안전선." },
+      { question: "미국 시리얼 'Calories 250'은 한국 250kcal와 같아요?", answer: "맞아요. 식품 표기 'Calorie' 대문자 = kilocalorie(소문자 calorie 1,000개). 한국 kcal와 동일. 단 'calorie' 소문자 단독은 1cal = 0.001kcal라 헷갈림. 식품 컨텍스트에서는 'Cal = kcal'." },
+      { question: "Toolkio 단위 변환기로 칼로리 계산도 가능해요?", answer: "단위 변환기는 무게·부피·길이 등 표준 단위. 칼로리 매크로 계산은 BMR 계산기 따로. 단백질 g 입력하면 4kcal/g 자동 계산은 BMR 계산기 보조 기능." },
+    ],
+  },
+  {
+    slug: "gpa-4-5-to-4-0-conversion-overseas-grad-school-5-cases",
+    title: {
+      ko: "GPA 4.5 만점 환산 — 미국 대학원·해외 취업 4.0 변환 5가지 사례",
+      en: "GPA 4.5 to 4.0 Conversion — 5 Cases for US Grad School and Overseas Jobs",
+    },
+    description: {
+      ko: "한국 대학 4.5 만점 GPA를 미국 4.0 스케일로 변환하는 5가지 사례. WES 평가·대학원 지원·해외 취업·교환학생·학점 차등 변환까지 정리.",
+      en: "5 cases of converting Korean 4.5 GPA to US 4.0 scale — WES evaluation, grad school applications, overseas jobs, exchange programs.",
+    },
+    date: "2026-05-03",
+    toolId: "gpa-calculator",
+    image: "/images/blog/gpa-4-5-to-4-0-conversion-overseas-grad-school-5-cases.webp",
+    keywords: ["GPA 4.5 4.0 변환", "미국 대학원 GPA", "해외 취업 학점", "WES 평가", "korean GPA conversion"],
+    content: {
+      ko: [
+        {
+          heading: "GPA 4.5 만점 → 4.0 스케일 — 왜 그냥 \"× 4/4.5\" 안 되는가",
+          body: "한국 대학 학점 4.5 만점. 졸업증명서에 \"GPA 3.85 / 4.5\". 미국 대학원·해외 취업 지원 시 4.0 스케일로 변환 필요. \"3.85 × 4/4.5 = 3.42\" 계산하면 안 돼요.\n\n이유.\n\n1. **단순 비례 변환은 부정확**\n   - A+ (한국 4.5) → 미국 4.0\n   - A (한국 4.0~4.3) → 미국 3.7~4.0\n   - 학점 분포가 다름\n\n2. **WES·SpanTran 등 공식 평가 필요**\n   - 미국 대학원은 \"공식 평가서\" 요구\n   - 단순 비례 변환 인정 X\n   - WES 평가가 가장 일반적\n\n3. **학교마다 변환 정책 다름**\n   - 하버드: 자체 변환표\n   - MIT: WES 또는 자체\n   - UC계열: SpanTran 또는 자체\n\n오늘 정리할 5가지.\n\n1. 단순 비례 vs 등급 변환\n2. WES 공식 변환표\n3. GKS(Global Korea Scholarship) 정부 표준\n4. 미국 대학원 admission 기준\n5. 해외 취업 시 GPA 표기법\n\n공식 변환표는 [GPA Calculator South Korea](https://gpacalculator.net/grade-conversion/south-korea/) 및 [GKS 공식 변환표](https://www.topikguide.com/global-korea-scholarship-gks-official-gpa-conversion-table/) 참고.",
+        },
+        {
+          heading: "사례 1) 단순 비례 변환 — 빠르지만 부정확",
+          body: "가장 흔히 쓰는 방법. **GPA_4.0 = (한국 GPA / 4.5) × 4.0**.\n\n예시 변환표.\n\n| 한국 4.5 | 단순 비례 4.0 |\n|---------|------------|\n| 4.5 | 4.00 |\n| 4.3 | 3.82 |\n| 4.0 | 3.56 |\n| 3.7 | 3.29 |\n| 3.5 | 3.11 |\n| 3.0 | 2.67 |\n| 2.5 | 2.22 |\n\n장점.\n\n- 빠름, 즉석 환산\n- 자기소개서·이력서 \"GPA: 3.85/4.5 (≈ 3.42/4.0)\" 표기\n\n단점.\n\n- 미국 대학원 공식 인정 X\n- A+(4.5)와 A0(4.0) 차이가 미국에서는 작음 (둘 다 A 범주)\n- 단순 비례는 한국 학점 분포 무시\n\n실용. 본인이 1차 자기 평가용 OK. 지원서에는 \"공식 평가서 첨부\" 필요.\n\n[Toolkio GPA 계산기](https://toolkio.com/tools/gpa-calculator)에서 4.5 만점 입력하면 4.0·4.3 환산 즉시 표시. 단 공식 지원에는 WES 평가 추가 권장.",
+        },
+        {
+          heading: "사례 2) WES 공식 변환 — 미국 대학원 표준",
+          body: "WES (World Education Services). 비영리 학력 평가 기관. 미국·캐나다 대학원 90% 이상이 WES 평가서 인정.\n\nWES 변환 원칙.\n\n- 한국 4.5 만점 학점을 미국 4.0 스케일로 **등급별** 변환\n- 단순 비례 X, 한국 등급의 미국 등가 등급으로 매핑\n\nWES 한국 변환표 (대략).\n\n| 한국 등급 | 한국 점수 | WES 4.0 |\n|---------|---------|--------|\n| A+ | 4.5 / 95~100 | 4.0 (A) |\n| A0 | 4.0 / 90~94 | 4.0 (A) |\n| A- | 3.7 / 85~89 | 3.7 (A-) |\n| B+ | 3.3 / 80~84 | 3.3 (B+) |\n| B0 | 3.0 / 75~79 | 3.0 (B) |\n| B- | 2.7 / 70~74 | 2.7 (B-) |\n| C+ | 2.3 / 65~69 | 2.3 (C+) |\n| C0 | 2.0 / 60~64 | 2.0 (C) |\n\n핵심. **A+와 A0가 미국에서는 둘 다 A**. 즉 한국 4.5 졸업자(A+ 다수)와 한국 4.0 졸업자가 WES에서 비슷한 4.0 GPA로 평가될 수 있어요.\n\n비용·기간.\n\n- WES 비용: $205 (Course-by-Course evaluation)\n- 처리 기간: 7~10 영업일\n- 한국 대학에서 직접 영문 성적표 WES로 발송\n- 한국 4년제 대부분 학점 인정 (졸업장은 별도 검증)\n\nSpanTran도 비슷한 평가 기관. 일부 대학원은 SpanTran 선호. 지원 학교 요구 사항 확인 필수.",
+        },
+        {
+          heading: "사례 3) GKS 정부 표준 — 외국인 한국 유학 평가",
+          body: "Global Korea Scholarship (GKS). 한국 정부가 외국인 유학생에게 주는 장학금. 한국 대학 학점 → GKS 공식 표 변환.\n\n반대로 응용. 한국 학생이 본인 학점을 \"국제 표준\"으로 가늠할 때 참고.\n\nGKS 공식 변환표.\n\n| 한국 4.5 | 한국 4.3 | 한국 4.0 | GKS 100점 |\n|---------|---------|---------|---------|\n| 4.50 | 4.30 | 4.00 | 100 |\n| 4.27 | 4.08 | 3.80 | 95 |\n| 4.03 | 3.85 | 3.60 | 90 |\n| 3.80 | 3.63 | 3.40 | 85 |\n| 3.57 | 3.41 | 3.20 | 80 |\n| 3.33 | 3.18 | 3.00 | 75 |\n| 3.10 | 2.96 | 2.80 | 70 |\n\n한국 4.5 만점에서 4.0은 GKS 100점 환산 약 90점.\n\n해외 지원 시 활용.\n\n- \"한국 GPA 4.0/4.5 = 약 90/100점\"\n- \"세계 대학 랭킹 학교 평균보다 우수 (Cum Laude 수준)\"\n- 자기소개서에 보충 설명 가능\n\n주의. GKS 표는 한국 정부 공식. 미국 대학원이 인정하는 건 아님. 단 본인 위치 가늠용으로 유용.",
+        },
+        {
+          heading: "사례 4) 미국 대학원 admission — 학교별 변환 정책",
+          body: "미국 대학원 지원 시 학교마다 변환 정책 다름.\n\n**아이비리그·Top10**.\n\n- Harvard, MIT, Stanford, Princeton: 자체 변환 + WES 권장\n- Yale, Columbia: WES 또는 SpanTran 인정\n- 일반 컷오프: 4.0 스케일 3.5+ (보통)\n- 한국 4.5 스케일에서 약 3.93+ 필요\n\n**UC 계열 (Berkeley, UCLA 등)**.\n\n- SpanTran 권장, WES도 인정\n- 자체 변환 시 단순 비례 가까움\n- 컷오프 3.4+ (4.0)\n- 한국 약 3.83+ 필요\n\n**State University 일반**.\n\n- WES 평가 인정\n- 컷오프 3.0+\n- 한국 약 3.38+\n\n실전. 본인 한국 GPA 3.85/4.5라면.\n\n- 단순 비례: 3.42/4.0 → State 통과, UC 어려움\n- WES 등급 변환: 3.5~3.7/4.0 → UC 가능, Top10 어려움\n- 추천서·SOP·연구 경험 보강이 GPA 차이 메움\n\n원서 비밀. \"GPA: 3.85 / 4.5 (Korean scale)\" 표기 + WES 첨부. 단순 비례 변환만 적으면 학교가 자체 평가 → 더 낮게 나올 수 있음.\n\n관련해서 [만 나이 계산 외국 출생자 5가지](/blog/korean-age-foreigner-overseas-citizen-dual-nationality-5-cases)에서 해외 진학 시 동시 점검할 나이 관련 행정도 함께 확인하세요.",
+        },
+        {
+          heading: "사례 5) 해외 취업 — 이력서 GPA 표기법",
+          body: "미국·유럽 IT·금융 회사 지원 시 이력서 GPA 표기 규칙.\n\n**미국 표준**.\n\n- \"GPA: 3.85 / 4.5\" — 한국 스케일 명시\n- \"GPA: 3.85 / 4.5 (Major: 3.92)\" — 전공 학점 별도\n- \"GPA: ≈ 3.42 / 4.0 (US scale)\" — 환산 병기\n- 4.0 스케일 환산은 단순 비례 OK (이력서는 공식 평가 X)\n\n**언제 GPA 적나?**\n\n- 신입(졸업 후 3년 이내): GPA 3.5/4.0 이상 → 적기\n- 경력직: 보통 안 적음\n- 학점 낮으면(3.0 미만): 안 적음, 경력·프로젝트 강조\n- 컴퓨터 공학·금융 직군: 학점 중요시\n\n**유럽**.\n\n- ECTS 기준: A~E 등급 + 학점\n- GPA 개념 약함, 졸업 등급(Distinction, Merit, Pass)으로 표기\n- 영국: First Class (4.0+), Upper Second (3.3~4.0), Lower Second (2.7~3.3)\n- 한국 4.0/4.5 ≈ Upper Second (2:1)\n\n**아시아 (싱가포르·홍콩)**.\n\n- 4.5 또는 5.0 스케일 사용\n- 그대로 적되 \"out of 4.5\" 명시\n- 싱가포르 NUS 4.5 → 4.0 비례 변환\n\n실수 포인트.\n\n- \"GPA 3.85\" 단독 표기 금지 (스케일 모름)\n- \"GPA 3.85/4.5\" 또는 \"GPA 3.85 (out of 4.5)\" 정확\n- 한국 평균(약 3.4/4.5) 명시하면 도움\n\n[GPA Calculator 4.0 4.3 4.5 변환](/blog/gpa-calculator-4-0-4-3-4-5-conversion)에서 한국 내부 스케일 차이도 함께 정리.",
+        },
+        {
+          heading: "Toolkio GPA 계산기로 5초 환산",
+          body: "[Toolkio GPA 계산기](https://toolkio.com/tools/gpa-calculator)에서 한국 4.5/4.3/4.0 스케일 점수 입력하면 미국 4.0 스케일과 GKS 100점 동시 표시.\n\n사용 예.\n\n1. 4.5 만점 3.85 입력 → 단순 비례 3.42 (4.0), GKS 약 90/100 표시\n2. 학기별 학점 입력 → 누적 GPA 자동\n3. 전공 GPA 별도 계산 (선택 과목 분류)\n4. 졸업까지 필요한 학점 역산 (\"3.5 만점 졸업하려면 다음 학기 평점 X 이상\")\n5. 영문 변환표 다운로드 (지원서 첨부용)\n\n해외 지원 체크리스트.\n\n1. WES 평가 신청 (미국·캐나다)\n2. 영문 졸업증명서·성적증명서 (대학 발급)\n3. SOP·CV에 GPA 4.5 명시 + 4.0 환산\n4. 한국 학점 분포 보충 설명 (선택)\n5. Top10 지원이면 추천서·연구 경력으로 GPA 보완\n\n관련 글 [GPA 4.0 4.3 4.5 변환 가이드](/blog/gpa-calculator-4-0-4-3-4-5-conversion)에서 한국 내 학교 간 차이, [퇴직금 평균임금 vs 통상임금](/blog/retirement-severance-pay-average-vs-ordinary-wage)에서 본인 한국 경력 가치 환산까지.\n\nGPA 환산은 한 번 해두면 평생. 5초 투자 → 해외 지원 자료 정확.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Simple Proportion Doesn't Work",
+          body: "(Korean 4.5 / 4.5) × 4.0 is inaccurate for US grad apps. WES/SpanTran official evaluations remap by grade, not proportion.",
+        },
+        {
+          heading: "Case 1) Simple Proportion — Quick Self-Check",
+          body: "GPA_4.0 = (Korean GPA / 4.5) × 4.0. Use for self-assessment, resume estimate. Not accepted for official grad school applications.",
+        },
+        {
+          heading: "Case 2) WES Official Mapping",
+          body: "WES maps Korean A+ (4.5) and A0 (4.0) both to US A (4.0). Cost $205, 7-10 days. Required by 90% of US/Canada grad schools.",
+        },
+        {
+          heading: "Case 3) GKS Government Standard",
+          body: "Korean government conversion table. Korean 4.0/4.5 ≈ 90/100. Useful for self-positioning vs international standards.",
+        },
+        {
+          heading: "Case 4) US Grad School Policies",
+          body: "Top10 cutoff ~3.5/4.0 (Korean ~3.93/4.5). UC ~3.4 (Korean ~3.83). State ~3.0 (Korean ~3.38). WES + own evaluation common.",
+        },
+        {
+          heading: "Case 5) Overseas Resume Format",
+          body: "Always include scale: 'GPA: 3.85 / 4.5'. Add US conversion. UK uses class (First, 2:1, 2:2). Korean 4.0/4.5 ≈ UK Upper Second.",
+        },
+        {
+          heading: "Use Toolkio GPA Calculator",
+          body: "Input 4.5/4.3/4.0 scale score, see US 4.0 and GKS 100 conversion. Cumulative GPA across semesters, major-only GPA, downloadable table.",
+        },
+      ],
+    },
+    faq: [
+      { question: "한국 4.5 만점 GPA 4.0을 미국에 어떻게 표기해요?", answer: "'GPA 4.0 / 4.5 (Korean scale)' 또는 '≈ 3.56 / 4.0 (US scale)' 병기. 단순 비례는 자기 평가용. 미국 대학원 지원에는 WES 공식 평가서 첨부 필수." },
+      { question: "WES 평가 비용과 기간은?", answer: "Course-by-Course evaluation $205, 7~10 영업일. 한국 대학에서 영문 성적표를 WES로 직접 발송 (이메일·우편). 학생이 직접 보내면 인정 안 됨. 신청은 wes.org에서 온라인." },
+      { question: "한국 4.5 만점 4.0이면 미국 대학원 어디까지 가능해요?", answer: "WES 환산 약 3.5~3.7/4.0. 일반 State University는 통과(3.0+), UC 계열 가능(3.4+), Top10는 어려움(3.5~3.7+). 추천서·SOP·연구 경력으로 보충 가능." },
+      { question: "GPA 외에 어떤 서류가 중요해요?", answer: "추천서 3장 (교수님), SOP(Statement of Purpose), GRE/GMAT 점수, 영어 시험(TOEFL/IELTS), 연구 경력·논문. Top10는 SOP·추천서·연구 비중이 GPA보다 큼." },
+      { question: "유럽 회사 지원에는 GPA 어떻게 표기해요?", answer: "GPA 개념 약하고 졸업 등급 사용. 영국 First Class(4.0+), Upper Second(3.3~4.0), Lower Second(2.7~3.3). 한국 4.0/4.5 ≈ Upper Second(2:1). 'Upper Second equivalent' 표기." },
+      { question: "Toolkio GPA 계산기는 한국·미국·GKS 모두 지원하나요?", answer: "한국 4.5/4.3/4.0 스케일 입력 → 미국 4.0 단순 비례 + GKS 100점 환산 표시. 누적·전공 GPA 자동 계산. WES 공식 변환표는 별도 (단순 비례 X)." },
+    ],
+  },
 ];
