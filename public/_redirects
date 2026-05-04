@@ -21,3 +21,32 @@
 /blog/hex-rgb-color-conversion-guide/  /blog/color-converter-rgb-hex-hsl-5-uses-designer/  301
 /blog/how-to-convert-colors/  /blog/color-converter-rgb-hex-hsl-5-uses-designer/  301
 /blog/oklch-p3-color-modern-web-design-guide/  /blog/color-converter-rgb-hex-hsl-5-uses-designer/  301
+
+# === Phase B-2: image-compressor 클러스터 — best /blog/web-image-optimization-guide/ ===
+/blog/how-to-compress-images/  /blog/web-image-optimization-guide/  301
+/blog/website-image-optimization-speed/  /blog/web-image-optimization-guide/  301
+/blog/website-image-optimization-speed-guide/  /blog/web-image-optimization-guide/  301
+/blog/image-compression-guide-web/  /blog/web-image-optimization-guide/  301
+
+# === Phase B-3: timestamp-converter 클러스터 — best /blog/unix-timestamp-to-current-time/ ===
+/blog/how-to-convert-timestamps/  /blog/unix-timestamp-to-current-time/  301
+/blog/timestamp-excel-conversion-guide/  /blog/unix-timestamp-to-current-time/  301
+/blog/timestamp-conversion-complete-guide/  /blog/unix-timestamp-to-current-time/  301
+/blog/unix-timestamp-conversion-complete-guide/  /blog/unix-timestamp-to-current-time/  301
+/blog/youtube-video-timestamp-usage-guide/  /blog/unix-timestamp-to-current-time/  301
+/blog/online-timer-productivity-guide/  /blog/unix-timestamp-to-current-time/  301
+
+# === Phase B-4: markdown-preview 클러스터 — best /blog/github-markdown-guide/ ===
+/blog/markdown-preview-writing-tips-guide/  /blog/github-markdown-guide/  301
+/blog/how-to-preview-markdown/  /blog/github-markdown-guide/  301
+/blog/markdown-preview-guide-complete/  /blog/github-markdown-guide/  301
+
+# === Phase B-5: url-encoder 클러스터 — best /blog/api-korean-url-encoding-fix/ ===
+/blog/url-encoding-decoding-guide/  /blog/api-korean-url-encoding-fix/  301
+/blog/url-encoding-decoding-easy-guide/  /blog/api-korean-url-encoding-fix/  301
+/blog/how-to-encode-urls/  /blog/api-korean-url-encoding-fix/  301
+
+# === Phase B-6: dday-calculator 클러스터 — best /blog/dday-calculator-7-uses-exam-anniversary-deadline/ ===
+/blog/dday-calculator-countdown-guide/  /blog/dday-calculator-7-uses-exam-anniversary-deadline/  301
+/blog/dday-countdown-practical-uses-guide/  /blog/dday-calculator-7-uses-exam-anniversary-deadline/  301
+/blog/dday-exam-moving-wedding-calendar-planning/  /blog/dday-calculator-7-uses-exam-anniversary-deadline/  301
