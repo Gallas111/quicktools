@@ -16227,4 +16227,485 @@ export const blogPosts: BlogPost[] = [
       { question: "QR 스캔이 핸드폰별로 다르게 동작해요. 표준 어디서 확인해요?", answer: "ISO/IEC 18004:2024 표준이 공식. iOS는 카메라 자동 인식, Android는 기종별로 별도 앱 필요한 경우 있음. 두 OS·다양한 기종에서 테스트 권장 — 가장 까다로운 환경(저가 안드로이드)에서 통과해야 안전." },
     ],
   },
+  {
+    slug: "retirement-severance-pay-average-vs-ordinary-wage",
+    title: {
+      ko: "퇴직금 중간정산 계산 — 평균임금 vs 통상임금 차이 5가지 사례",
+      en: "Severance Pay Calculation — Average Wage vs Ordinary Wage with 5 Real Cases",
+    },
+    description: {
+      ko: "퇴직금 계산할 때 평균임금과 통상임금 어느 쪽이 유리한지 사례 5가지로 정리. 근로기준법 2026년 기준 산정식·중간정산 가능 사유까지 한 번에 안내해요.",
+      en: "Severance pay calculation comparing average wage vs ordinary wage with 5 real-world cases. Korean Labor Standards Act 2026 formula and interim payment conditions explained.",
+    },
+    date: "2026-05-04",
+    toolId: "salary-calculator",
+    image: "/images/blog/retirement-severance-pay-average-vs-ordinary-wage.webp",
+    keywords: ["퇴직금 계산", "퇴직금 중간정산", "평균임금 통상임금", "퇴직금 산정식", "severance pay korea"],
+    content: {
+      ko: [
+        {
+          heading: "퇴직금, 평균임금이 기본인데 왜 통상임금도 봐요?",
+          body: "퇴직금은 근로기준법 제34조와 근로자퇴직급여 보장법 제8조에 따라 '계속 근로 1년에 30일분 평균임금'이 원칙이에요.\n\n그런데 평균임금이 통상임금보다 적으면 통상임금을 기준으로 계산하라고 시행령에 정해져 있어요. 같은 회사 다닌 사람이라도 퇴사 직전 3개월 상황에 따라 어느 쪽이 유리한지 달라져요.\n\n오늘 정리할 것.\n\n1. 평균임금 vs 통상임금 정의\n2. 산정식 정확히 (3개월 임금/일수, 통상임금/시급 환산)\n3. 5가지 실전 사례 비교\n4. 중간정산 가능 사유 (2026년 기준)\n5. 세금 — 퇴직소득세·이연퇴직소득 등\n\n퇴사 통보하기 전에 두 금액 다 계산해보고, 회사가 적게 주려 하면 노동위원회 진정 근거로 활용하세요.",
+        },
+        {
+          heading: "평균임금이 뭐예요? 3개월 총액 ÷ 총일수",
+          body: "평균임금은 산정사유 발생일(보통 퇴사일) 이전 3개월 동안 받은 임금 총액을 그 기간 총 일수로 나눈 금액.\n\n공식.\n\n- 평균임금(1일) = (3개월 임금 총액) ÷ (3개월 총 일수)\n\n예시. 퇴사일 2026년 5월 4일.\n\n- 산정 기간: 2월 4일 ~ 5월 3일 (89일)\n- 임금 총액: 2월 300만, 3월 320만, 4월 310만, 5월 1~3일분 30만 = 합 960만\n- 평균임금 일급: 960만 ÷ 89 = 약 10만 7,865원\n\n포함되는 임금.\n\n- 기본급, 직책수당, 식대, 차량유지비\n- 정기상여금(연 600만 → 월 50만 환산)\n- 연차수당\n\n제외되는 임금.\n\n- 일시적 격려금·경조사비\n- 4대보험 회사 부담분\n- 퇴직금 자체\n\n3개월에 상여금 한 번 받으면 평균임금이 확 올라가요. 반대로 무급휴직·병가가 끼면 떨어져요.",
+        },
+        {
+          heading: "통상임금은 정기·일률·고정성 — 시간당으로 환산",
+          body: "통상임금은 근로 대가로 정기적·일률적·고정적으로 지급되는 임금. 기본급 + 정기수당 위주.\n\n공식.\n\n- 통상임금 시급 = 월 통상임금 ÷ 209시간 (주 40시간 기준)\n- 통상임금 일급 = 시급 × 8시간\n\n예시.\n\n- 기본급 250만 + 직책수당 20만 = 270만 (통상임금)\n- 시급: 270만 ÷ 209 = 12,919원\n- 일급: 12,919 × 8 = 103,348원\n\n포함되는 임금.\n\n- 기본급, 직책수당\n- 매월 일정액 지급되는 식대·교통비\n- 연 단위 고정 보너스 중 정기적인 것 (대법원 2013다14077 판례 — 정기상여금도 통상임금 인정)\n\n제외되는 임금.\n\n- 야근·휴일근로수당\n- 인센티브·실적급\n- 일회성 격려금\n\n통상임금이 평균임금보다 높으면 회사는 통상임금으로 계산해줘야 해요. 노동부 진정 시 가장 흔한 분쟁 포인트.",
+        },
+        {
+          heading: "사례 1) 정기상여금 받기 직전에 퇴사 — 평균임금 유리",
+          body: "월급 280만, 정기상여금 600만(연 2회, 6월·12월), 야근수당 평균 30만/월.\n\n4월 퇴사 (상여금 받기 전).\n\n- 평균임금: (280+30)×3 + 상여금 안분(50만×3=150만) = 1,080만 ÷ 89일 = **121,348원/일**\n- 통상임금 일급: 280만 ÷ 209 × 8 = **107,177원/일**\n- → **평균임금이 약 13% 높음**\n\n퇴직금: 평균임금 일급 × 30일 × 근속연수.\n\n근속 5년 = 121,348 × 30 × 5 = **1,820만**\n통상임금 기준 = 107,177 × 30 × 5 = 1,608만\n\n차액 약 212만. 큰 금액이에요. 퇴사 시점 잡을 때 상여금·야근 많은 시기 직전이 유리.",
+        },
+        {
+          heading: "사례 2) 무급휴직 끼었을 때 — 통상임금 유리",
+          body: "월급 270만, 통상수당 20만 = 통상임금 290만. 퇴사 직전 3개월 중 1개월 무급휴직.\n\n- 평균임금: (290 + 290 + 0) = 580만 ÷ 89일 = **65,168원/일**\n- 통상임금 일급: 290만 ÷ 209 × 8 = **110,526원/일**\n- → **통상임금이 약 70% 높음**\n\n근로기준법 시행령 제2조 1항. 평균임금이 통상임금보다 적으면 통상임금을 평균임금으로 함.\n\n근속 3년 퇴직금.\n\n- 통상임금 기준: 110,526 × 30 × 3 = **994만**\n- 평균임금 그대로면 586만 (회사가 이걸로 주려 하면 위법)\n\n무급휴직·산재 휴직·육아휴직·병가 끼면 무조건 통상임금 확인. 회사가 평균임금 그대로 주려 하면 노동부 진정.",
+        },
+        {
+          heading: "사례 3) 야근수당 많은 직장 — 평균임금 압승",
+          body: "기본급 230만 + 야근수당 월 평균 80만(통상임금 X, 평균임금 O).\n\n- 평균임금: 310만 × 3 = 930만 ÷ 89 = **104,494원/일**\n- 통상임금: 230만 ÷ 209 × 8 = **88,038원/일**\n- → **평균임금 약 19% 높음**\n\n근속 7년 퇴직금.\n\n- 평균임금: 104,494 × 30 × 7 = **2,194만**\n- 통상임금: 88,038 × 30 × 7 = 1,849만\n\n차액 345만. 야근수당이 많은 IT·생산직은 평균임금이 통상임금보다 훨씬 높아요. 회사가 통상임금으로 계산하려 하면 거부 가능.\n\n참고. 야근수당은 통상임금에 포함 X (근로 대가 아닌 시간외 근로의 가산임금이라). 다만 정기상여금은 2013년 대법원 판결로 통상임금에 포함될 수 있어요.",
+        },
+        {
+          heading: "사례 4) 임금 줄어든 직후 퇴사 — 통상임금이 방패",
+          body: "회사가 어려워져 월급 350만 → 280만으로 삭감. 삭감 직후 3개월에 퇴사.\n\n- 평균임금: 280만 × 3 = 840만 ÷ 89 = **94,382원/일**\n- 삭감 전 기준 통상임금: 350만 ÷ 209 × 8 = **134,001원/일** (삭감 전 기본급 기준)\n\n주의. 통상임금은 '현재 시점' 임금이 원칙. 삭감 후 280만이 통상임금이면 281만 ÷ 209 × 8 = 107,560원/일 → 평균임금이 더 높음.\n\n해결.\n\n1. 임금 삭감이 노동자 동의 없이 일방적이면 무효 → 삭감 전 임금이 통상임금\n2. 동의서 받았어도 단체협약·취업규칙 변경 절차 안 거쳤으면 무효\n3. 노동부 진정 → 삭감 전 임금 기준 퇴직금 청구 가능\n\n사례. 코로나 시기 일방 삭감 다수 사례에서 노동위원회가 삭감 무효 판단, 원래 임금 기준 퇴직금 인정.",
+        },
+        {
+          heading: "사례 5) 계약직 만료 — 평균임금 안정적",
+          body: "1년 계약직, 월급 일정 (변동 없음).\n\n- 월급 250만, 식대 10만 = 260만 ÷ 30 = **86,667원/일** (평균임금)\n- 통상임금: 260만 ÷ 209 × 8 = **99,521원/일**\n- → 통상임금 약 15% 높음\n\n계약직은 보통 야근수당·인센티브 없이 고정급 → 통상임금이 평균임금보다 높음.\n\n근로기준법 시행령에 따라 통상임금으로 계산.\n\n- 통상임금 일급 99,521 × 30 = 2,985,632원\n- 1년 계약직 퇴직금 = **약 299만**\n\n주의. 1년 미만 근무 시 퇴직금 청구권 없음 (퇴직급여보장법 제4조). 정확히 1년 + 1일 이상이어야 청구 가능.\n\n계약직 퇴직금 안 주는 회사 많은데 1년 + 1일 넘었으면 무조건 청구 가능. [연봉 실수령액 계산 2026](/blog/salary-calculator-2026-net-pay-tax-insurance)에서 세금 공제까지 함께 확인하세요.",
+        },
+        {
+          heading: "퇴직금 중간정산 — 가능한 6가지 사유 (2026년)",
+          body: "퇴직금은 원칙상 퇴사 시점에 일시 지급. 단 근로자퇴직급여보장법 시행령 제3조에 6가지 사유로 중간정산 가능.\n\n1. **무주택자 본인 명의 주택 구입** (1회 한정)\n2. **무주택자 전세금·임차보증금 부담** (1회)\n3. **본인·배우자·부양가족 6개월 이상 요양** (의료비 부담)\n4. **5년 이내 본인 파산선고**\n5. **5년 이내 본인 개인회생절차 개시**\n6. **자연재해로 본인 거주지·직장 피해**\n\n2025년 개정으로 '주택 구입' 사유가 1회로 제한. 이전에는 무제한이었어요.\n\n신청 절차.\n\n1. 회사에 신청서 + 증빙 (등기부등본·보증금 영수증·진단서·파산결정문)\n2. 회사 승인\n3. 정산 일자 기준 평균임금·통상임금 계산\n4. 정산 후 잔여 근속연수만 새로 시작\n\n주의. 중간정산 후 회사가 부도나도 '이미 받은 정산금'은 보존돼요 (근로기준법 제38조 임금채권 우선).",
+        },
+        {
+          heading: "Toolkio 연봉 계산기로 정확하게",
+          body: "퇴직금은 평균임금·통상임금 두 가지 다 계산해서 큰 쪽으로 받는 게 권리. [Toolkio 연봉 계산기](https://toolkio.com/tools/salary-calculator)에서 연봉을 입력하면 통상임금 기반 시급·일급이 자동 계산돼요.\n\n계산 흐름.\n\n1. 연봉 입력 → 월 통상임금 자동 (연봉 ÷ 12)\n2. 209시간으로 나눈 시급 표시\n3. 일급(시급 × 8) 표시\n4. 근속연수 입력 → 통상임금 기준 퇴직금 계산\n5. 평균임금은 직전 3개월 임금 합 ÷ 89일로 직접 계산 후 비교\n\n세금. 퇴직소득세는 별도. 근속 10년 이상이면 세율 낮음. [연봉 실수령액 가이드](/blog/salary-calculator-2026-net-pay-tax-insurance)에서 4대보험·소득세 공제 확인. 더 자세한 세후 계산은 [2026 연봉 실수령액](/blog/2026-salary-after-tax-4-insurance-increase)에서 이어 보세요.\n\n퇴사 결정하기 전 두 금액 다 계산하고, 회사가 적게 주려 하면 고용노동부 1350 신고가 답이에요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Severance Pay: Average vs Ordinary Wage",
+          body: "Korean Labor Standards Act § 34 sets severance at 30 days of average wage per year of service. If average wage is less than ordinary wage, ordinary wage applies (Enforcement Decree § 2).",
+        },
+        {
+          heading: "Average Wage Formula",
+          body: "Average wage = total wages over 3 months before separation / total days. Includes base, allowances, regular bonuses, annual leave pay. Excludes one-off bonuses, employer's social insurance share.",
+        },
+        {
+          heading: "Ordinary Wage Formula",
+          body: "Ordinary wage = monthly fixed wage ÷ 209 hours (40-hour week). Daily ordinary wage = hourly × 8. Includes base, position allowance, fixed meal/transport. Excludes overtime, performance pay.",
+        },
+        {
+          heading: "Case 1) Right Before Bonus — Average Wage Wins",
+          body: "Monthly 2.8M + bonus 6M (twice/yr) + overtime 300K. Average wage 121K/day vs ordinary 107K/day. 5-year severance differs by 2.12M.",
+        },
+        {
+          heading: "Case 2) Unpaid Leave — Ordinary Wage Wins",
+          body: "Monthly 2.9M, 1 month unpaid in last 3 months. Average wage drops to 65K/day, ordinary stays at 110K/day. 70% higher with ordinary basis.",
+        },
+        {
+          heading: "Case 3) Heavy Overtime — Average Wage Dominates",
+          body: "Base 2.3M + overtime 800K. Average 104K vs ordinary 88K. 7-year severance differs by 3.45M. IT/manufacturing typical.",
+        },
+        {
+          heading: "Case 4) Wage Cut Before Quitting",
+          body: "Unilateral wage cut without proper procedure is invalid. Pre-cut wage applies. Labor Office complaint can recover original-wage severance.",
+        },
+        {
+          heading: "Case 5) Fixed-Term Contract End",
+          body: "Steady monthly wage with no overtime. Ordinary wage typically 15% higher than average. 1-year fixed-term: ~3M severance via ordinary wage rule.",
+        },
+        {
+          heading: "6 Interim Payment Conditions (2026)",
+          body: "Home purchase (once), rental deposit, 6-month medical care, bankruptcy, rehabilitation proceedings, natural disaster damage. 2025 reform limited home purchase to once.",
+        },
+        {
+          heading: "Use Toolkio Salary Calculator",
+          body: "Input annual salary → auto compute hourly (÷209), daily (×8), severance by years of service. Compare with average wage from 3-month total ÷ 89 days.",
+        },
+      ],
+    },
+    faq: [
+      { question: "회사가 퇴직금을 평균임금으로만 계산해서 줬어요. 통상임금이 더 높은데 어떻게 해요?", answer: "근로기준법 시행령 제2조에 따라 평균임금이 통상임금보다 적으면 통상임금이 평균임금. 차액 청구 가능. 고용노동부 1350 또는 노동청 진정. 시효 3년이니 늦어도 3년 안에 청구." },
+      { question: "1년 미만 근무했는데 퇴직금 받을 수 있나요?", answer: "근로자퇴직급여보장법 제4조에 따라 1년 이상 근무자만 청구권 있음. 1년 + 1일이라도 넘으면 청구 가능. 364일은 안 됨. 계약 종료일 정확히 확인." },
+      { question: "정기상여금은 평균임금에 포함되나요?", answer: "정기적으로 받는 상여금은 포함. 3개월 안에 한 번 받았다면 받은 금액 그대로 산입. 1년에 한 번 받는 상여금은 안분 — 600만/12 = 50만씩 3개월에 걸쳐 산입." },
+      { question: "퇴직금 중간정산 받으면 손해예요?", answer: "퇴직 시점에 받는 게 보통 더 유리. 중간정산하면 임금 인상분 반영 X. 단 주택 구입·요양비처럼 당장 큰 돈 필요할 때 활용. 가능하면 IRP 계좌로 받아 세금 이연." },
+      { question: "퇴직소득세는 얼마인가요?", answer: "근속 10년 미만은 세율 높음, 10년 이상부터 점차 감면. 퇴직금 1억, 근속 10년이면 세금 약 5~7%. 정확한 계산은 국세청 홈택스 모의계산. IRP로 받으면 55세까지 과세 이연 가능." },
+      { question: "회사가 부도나면 퇴직금 어떻게 받나요?", answer: "근로기준법 제38조 임금채권 최우선변제. 회사 자산이 있으면 다른 채권보다 먼저 받음. 자산 부족 시 고용노동부 '체당금' 제도로 일부 정부가 지급(상한 있음). 30일 안에 신청." },
+    ],
+  },
+  {
+    slug: "json-flatten-deep-nested-5-patterns",
+    title: {
+      ko: "JSON 깊은 중첩 평탄화 — flatten 함수 5가지 실전 패턴",
+      en: "JSON Deep Flatten — 5 Practical Patterns for Nested Data",
+    },
+    description: {
+      ko: "API 응답·설정 파일·MongoDB 문서의 중첩 JSON을 평탄한 객체로 변환하는 5가지 패턴. 점 표기법·배열 인덱스·역방향 unflatten·에지 케이스까지 정리했어요.",
+      en: "Convert deeply nested JSON to flat objects with 5 patterns. Dot notation, array indices, unflatten reverse, and edge cases for API responses, configs, and MongoDB docs.",
+    },
+    date: "2026-05-04",
+    toolId: "json-formatter",
+    image: "/images/blog/json-flatten-deep-nested-5-patterns.webp",
+    keywords: ["JSON 평탄화", "JSON flatten", "json flatten javascript", "중첩 JSON 변환", "JSON 점 표기법"],
+    content: {
+      ko: [
+        {
+          heading: "JSON 평탄화, 왜 필요할까?",
+          body: "API 응답이나 MongoDB 문서를 받다 보면 중첩이 5단계, 10단계까지 깊어질 때가 있어요. 그대로 다루면 코드가 지저분.\n\n```\n{\n  \"user\": {\n    \"profile\": {\n      \"address\": {\n        \"city\": \"Seoul\"\n      }\n    }\n  }\n}\n```\n\n평탄화하면.\n\n```\n{\n  \"user.profile.address.city\": \"Seoul\"\n}\n```\n\n언제 쓰나.\n\n1. **CSV/엑셀 변환** — 표 형식에 넣으려면 1단계 객체 필요\n2. **MongoDB 부분 업데이트** — `$set: { 'user.profile.city': 'Seoul' }`\n3. **로그 인덱싱** — Elasticsearch는 평탄한 키-값 인덱싱이 빠름\n4. **i18n 번역 키** — `home.nav.signup` 같은 점 표기법이 표준\n5. **설정 파일 비교** — 두 yaml/json 차이 비교 시 평탄화하면 한 줄씩\n\n오늘은 5가지 실전 패턴을 코드와 함께 정리할게요.",
+        },
+        {
+          heading: "패턴 1) 기본 평탄화 — 점 표기법",
+          body: "가장 흔한 패턴. 중첩 키를 점으로 연결.\n\n입력.\n\n```\n{\n  \"a\": 1,\n  \"b\": { \"c\": 2, \"d\": { \"e\": 3 } }\n}\n```\n\n출력.\n\n```\n{\n  \"a\": 1,\n  \"b.c\": 2,\n  \"b.d.e\": 3\n}\n```\n\nJavaScript 구현 (재귀).\n\n```\nfunction flatten(obj, prefix = '', result = {}) {\n  for (const key in obj) {\n    const newKey = prefix ? prefix + '.' + key : key;\n    if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {\n      flatten(obj[key], newKey, result);\n    } else {\n      result[newKey] = obj[key];\n    }\n  }\n  return result;\n}\n```\n\n주의. `null`·배열·Date는 객체로 안 들어감 (그대로 값으로). 이 처리가 빠지면 무한 재귀.",
+        },
+        {
+          heading: "패턴 2) 배열 포함 — 인덱스 표기법",
+          body: "배열까지 평탄화하려면 인덱스를 키에 포함.\n\n입력.\n\n```\n{\n  \"users\": [\n    { \"name\": \"김\", \"age\": 30 },\n    { \"name\": \"이\", \"age\": 25 }\n  ]\n}\n```\n\n출력 (점 인덱스).\n\n```\n{\n  \"users.0.name\": \"김\",\n  \"users.0.age\": 30,\n  \"users.1.name\": \"이\",\n  \"users.1.age\": 25\n}\n```\n\n출력 (대괄호 인덱스 — JSONPath 스타일).\n\n```\n{\n  \"users[0].name\": \"김\",\n  \"users[0].age\": 30\n}\n```\n\nJavaScript.\n\n```\nfunction flatten(obj, prefix = '', result = {}) {\n  for (const key in obj) {\n    const isArray = Array.isArray(obj);\n    const newKey = isArray\n      ? (prefix ? prefix + '[' + key + ']' : '[' + key + ']')\n      : (prefix ? prefix + '.' + key : key);\n    if (typeof obj[key] === 'object' && obj[key] !== null) {\n      flatten(obj[key], newKey, result);\n    } else {\n      result[newKey] = obj[key];\n    }\n  }\n  return result;\n}\n```\n\nMongoDB는 `users.0.name` 점 표기법, JSONPath는 `users[0].name` 대괄호. 용도에 맞춰 선택.",
+        },
+        {
+          heading: "패턴 3) unflatten — 역방향 복원",
+          body: "평탄한 객체를 다시 중첩으로. 점·대괄호 표기법을 파싱.\n\n입력.\n\n```\n{\n  \"user.profile.city\": \"Seoul\",\n  \"user.profile.zip\": \"03000\"\n}\n```\n\n출력.\n\n```\n{\n  \"user\": {\n    \"profile\": {\n      \"city\": \"Seoul\",\n      \"zip\": \"03000\"\n    }\n  }\n}\n```\n\nJavaScript.\n\n```\nfunction unflatten(flat) {\n  const result = {};\n  for (const key in flat) {\n    const parts = key.split('.');\n    let cur = result;\n    for (let i = 0; i < parts.length - 1; i++) {\n      if (!cur[parts[i]]) cur[parts[i]] = {};\n      cur = cur[parts[i]];\n    }\n    cur[parts[parts.length - 1]] = flat[key];\n  }\n  return result;\n}\n```\n\n주의. `users.0.name`처럼 숫자가 섞이면 객체 vs 배열 구분 어려움. 정수면 배열로 만들지, 객체로 둘지 결정해야.\n\n해결. `parseInt(part) >= 0 && !isNaN(part)`이면 배열 인덱스로 처리 — 단 `'01'` 같은 0-prefix 숫자는 객체 키로.",
+        },
+        {
+          heading: "패턴 4) 깊이 제한 — 너무 깊으면 끊기",
+          body: "10단계 이상 중첩되면 키가 너무 길어져 가독성 저하. 깊이 제한.\n\n```\nfunction flatten(obj, prefix = '', result = {}, depth = 0, maxDepth = 3) {\n  for (const key in obj) {\n    const newKey = prefix ? prefix + '.' + key : key;\n    if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key]) && depth < maxDepth - 1) {\n      flatten(obj[key], newKey, result, depth + 1, maxDepth);\n    } else {\n      result[newKey] = obj[key];\n    }\n  }\n  return result;\n}\n```\n\n사용 예. `flatten(data, '', {}, 0, 2)` → 2단계까지만 평탄화, 그 이후는 중첩 객체 그대로 값으로.\n\n사례. Elasticsearch 인덱싱은 보통 3~5단계 권장. 그 이상은 검색 성능 저하 + mapping 폭증. CSV 변환은 2단계까지면 충분한 경우 많음.\n\nlodash의 `_.flatten`은 1단계만 평탄화. 깊은 평탄화는 `_.flattenDeep`. 객체 기준 평탄화는 `flat` npm 라이브러리 사용 권장.",
+        },
+        {
+          heading: "패턴 5) 키 변환 — 케이스 통일",
+          body: "API 응답이 camelCase·snake_case 섞여 있으면 평탄화하면서 통일.\n\n입력.\n\n```\n{\n  \"user_info\": {\n    \"firstName\": \"길동\",\n    \"last_name\": \"홍\"\n  }\n}\n```\n\n출력 (모두 snake_case).\n\n```\n{\n  \"user_info.first_name\": \"길동\",\n  \"user_info.last_name\": \"홍\"\n}\n```\n\nJavaScript.\n\n```\nfunction toSnake(key) {\n  return key.replace(/[A-Z]/g, c => '_' + c.toLowerCase()).replace(/^_/, '');\n}\nfunction flattenSnake(obj, prefix = '', result = {}) {\n  for (const key in obj) {\n    const newKey = prefix ? prefix + '.' + toSnake(key) : toSnake(key);\n    if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {\n      flattenSnake(obj[key], newKey, result);\n    } else {\n      result[newKey] = obj[key];\n    }\n  }\n  return result;\n}\n```\n\n케이스 변환 자세한 가이드는 [대소문자 변환 — camelCase·snake_case·kebab-case](/blog/case-converter-camel-snake-kebab-5-differences)에서 이어 보세요.",
+        },
+        {
+          heading: "에지 케이스 — null·undefined·순환참조",
+          body: "실전에서 부딪히는 6가지 함정.\n\n1. **null 값**: `typeof null === 'object'` 함정. `obj[key] === null` 체크 필수\n2. **undefined**: 명시적으로 키에 들어있을 때 — JSON.stringify는 빼버림. 평탄화는 둘 중 선택\n3. **Date 객체**: `typeof === 'object'`라 재귀 들어가면 ISO 문자열로. `instanceof Date` 체크\n4. **순환참조**: a.b = a면 무한 재귀. WeakSet으로 방문 추적\n5. **빈 객체 `{}`**: 평탄화 시 키가 사라짐. 옵션으로 빈 객체 보존 여부 결정\n6. **배열 안 객체**: `[1, {a:2}, 3]` 같은 혼합. 인덱스 표기법으로 처리\n\nWeakSet으로 순환 방지.\n\n```\nfunction flatten(obj, prefix = '', result = {}, seen = new WeakSet()) {\n  if (seen.has(obj)) return result;\n  seen.add(obj);\n  ...\n}\n```\n\n빈 객체 보존. `Object.keys(obj).length === 0`일 때 `result[prefix] = {}` 추가.",
+        },
+        {
+          heading: "Toolkio JSON 포맷터로 평탄화 시각화",
+          body: "코드 짜기 전에 [Toolkio JSON 포맷터](https://toolkio.com/tools/json-formatter)에 붙여넣고 트리뷰로 구조 파악하면 평탄화 후 어떻게 될지 미리 그림이 그려져요.\n\n작업 흐름.\n\n1. JSON 붙여넣기 → 포맷팅 + 트리뷰 표시\n2. 깊이 단계 카운트 (예: 4단계)\n3. 평탄화 후 키 개수 예상\n4. JavaScript 코드로 변환 후 결과 다시 붙여넣어 검증\n\n주의. 평탄화 후 키 개수가 너무 많으면(1만 개+) Elasticsearch mapping explosion 위험. 깊이 제한 또는 특정 path만 평탄화 권장.\n\nMongoDB `$set` 업데이트 만들 때도 활용. 평탄화한 객체를 그대로 `$set`에 넘기면 부분 업데이트가 한 번에. 더 자세한 JSON 활용은 [JSON 포맷터 5가지 활용](/blog/json-formatter-5-uses-api-debug-developer)에서, 디버깅은 [JSON 린트·디버그 5단계](/blog/json-lint-debug-5-steps-syntax-error)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Flatten JSON?",
+          body: "Convert deep nesting to dot-notation flat object. Use cases: CSV export, MongoDB $set, Elasticsearch indexing, i18n keys, config diffing.",
+        },
+        {
+          heading: "Pattern 1) Basic Dot Notation",
+          body: "Recursive function with prefix accumulator. Skip null/array, recurse into plain objects only. Result: a.b.c notation.",
+        },
+        {
+          heading: "Pattern 2) Arrays with Index",
+          body: "Two styles: dot index (users.0.name) for MongoDB, bracket (users[0].name) for JSONPath. Match target system.",
+        },
+        {
+          heading: "Pattern 3) Unflatten Reverse",
+          body: "Split key by dots, traverse/create nested objects. Numeric segments need array vs object decision based on context.",
+        },
+        {
+          heading: "Pattern 4) Depth Limit",
+          body: "Stop recursion at maxDepth. Elasticsearch mapping explosion happens past 5 levels. Use 2-3 for CSV exports.",
+        },
+        {
+          heading: "Pattern 5) Key Case Conversion",
+          body: "Apply toSnake/toCamel during flatten. Useful when API mixes conventions. Test with mixed-case keys.",
+        },
+        {
+          heading: "Edge Cases",
+          body: "null check (typeof null is object), Date instanceof, circular refs (WeakSet), undefined preservation, empty object retention, mixed array contents.",
+        },
+        {
+          heading: "Visualize with Toolkio",
+          body: "Paste JSON, see tree depth, estimate flat key count, validate result. Avoid mapping explosion on Elasticsearch by limiting depth.",
+        },
+      ],
+    },
+    faq: [
+      { question: "lodash _.flatten 쓰면 안 돼요?", answer: "lodash flatten은 배열 1단계만 평탄화. 객체 평탄화는 `flat` npm 라이브러리 또는 직접 작성. lodash _.toPairs와 _.fromPairs 조합으로도 가능하지만 깊이 처리는 별도." },
+      { question: "MongoDB 부분 업데이트에 평탄화가 왜 필요해요?", answer: "$set: { user: { profile: { city: 'Seoul' } } }은 user.profile 전체 덮어씀. $set: { 'user.profile.city': 'Seoul' }은 city만 변경. 평탄화 없이는 다른 필드 다 사라짐." },
+      { question: "키에 점이 들어있으면 어떻게 해요?", answer: "예: { 'user.email': 'a@b.com' } 그대로 평탄화하면 충돌. 구분자를 점 대신 `__` 또는 `:`로 변경. JSON 표준은 키에 점 허용하므로 데이터 출처 확인 필수." },
+      { question: "TypeScript에서 평탄화 후 타입은 어떻게 정의해요?", answer: "동적 키라 unknown이 안전. `Record<string, unknown>` 또는 `{ [key: string]: any }`. 컴파일 타임에 정확한 키 추론은 어려워서 런타임 검증 추가 권장." },
+      { question: "성능이 중요한 곳에서 평탄화 써도 되나요?", answer: "10MB JSON 평탄화 — 보통 50~200ms. 빈번한 호출이면 캐시. 매우 큰 데이터는 `streaming` JSON 파서(JSONStream, oboe.js) + 부분 평탄화 권장." },
+      { question: "Excel·CSV로 내보낼 때 평탄화 어떻게 해요?", answer: "1단계 평탄화 후 Object.keys로 컬럼 추출. 행마다 평탄화 객체 → CSV 한 줄. PapaParse 같은 라이브러리에 평탄화 객체 배열 그대로 넘기면 자동 CSV 생성." },
+    ],
+  },
+  {
+    slug: "bmi-vs-body-fat-percentage-real-obesity",
+    title: {
+      ko: "BMI vs 체지방률 차이 — 진짜 비만 판정 5가지 기준 비교",
+      en: "BMI vs Body Fat Percentage — 5 Standards for Real Obesity Diagnosis",
+    },
+    description: {
+      ko: "BMI만으로 비만 판단하면 근육질 사람이 비만으로 잘못 분류돼요. 체지방률·허리둘레·내장지방·근육량까지 5가지 기준으로 진짜 비만 여부 정확히 판단하는 법.",
+      en: "BMI alone misclassifies muscular people as obese. Compare with body fat percentage, waist circumference, visceral fat, and muscle mass for accurate obesity diagnosis.",
+    },
+    date: "2026-05-04",
+    toolId: "bmi-calculator",
+    image: "/images/blog/bmi-vs-body-fat-percentage-real-obesity.webp",
+    keywords: ["BMI 체지방률 차이", "체지방률 정상범위", "BMI 한계", "허리둘레 비만", "비만 판정 기준"],
+    content: {
+      ko: [
+        {
+          heading: "BMI만 보면 안 되는 이유",
+          body: "BMI 25 이상이면 비만이라고 하잖아요. 그런데 헬스장 다니는 친구가 BMI 27인데 복근까지 보여요. 이상하지 않나요?\n\nBMI는 1830년대 벨기에 통계학자 Adolphe Quetelet이 인구통계용으로 만든 단순 지표. 키와 몸무게만 봐서 근육·지방·뼈 무게를 구분 못해요.\n\nBMI의 한계.\n\n1. **근육질 사람 오판** — 운동선수 BMI 28인데 체지방 10%, 비만 아님\n2. **마른 비만 놓침** — BMI 22인데 체지방 35%, 진짜 비만\n3. **인종 차이 무시** — 한국인은 BMI 23부터 위험 (서양 25 기준 X)\n4. **체형 무시** — 같은 BMI라도 복부비만이면 더 위험\n5. **나이 무시** — 60대는 BMI 24~27이 사망률 최저\n\n오늘은 BMI 외 4가지 보조 지표를 함께 보고 진짜 비만인지 정확히 판정하는 법을 정리해 드릴게요.",
+        },
+        {
+          heading: "기준 1) 체지방률 — 가장 정확한 지표",
+          body: "체지방률은 전체 체중에서 지방이 차지하는 비율(%). BMI보다 훨씬 정확.\n\n측정 방법.\n\n- **인바디 (BIA)**: 체지방·근육·수분 빠르게 측정 (병원·헬스장)\n- **DEXA 스캔**: 의료용, 가장 정확. 검진센터에서 5~10만원\n- **캘리퍼**: 피부 두께로 추정, 오차 ±5%\n- **수중체중법**: 가장 정확하지만 일반인 접근 어려움\n\n정상 범위 (대한비만학회 2026 기준).\n\n- **남성**: 10~20% 정상, 20~25% 과체중, 25%+ 비만\n- **여성**: 18~28% 정상, 28~33% 과체중, 33%+ 비만\n- **운동선수**: 남 6~13%, 여 14~20%\n\n사례. BMI 27인 남성 — 체지방 13%면 근육형(비만 X). 체지방 28%면 진짜 비만.\n\n인바디는 수분량에 따라 오차 큼 — 아침 공복·운동 전 측정이 가장 정확.",
+        },
+        {
+          heading: "기준 2) 허리둘레 — 복부비만 직접 판정",
+          body: "복부비만은 심혈관 위험이 BMI보다 더 정확하게 예측. 내장지방이 직접 위험인자.\n\n측정. 양 갈비뼈 끝과 골반 위쪽 중간 지점, 숨 가볍게 내쉬고 줄자.\n\n비만 기준 (대한비만학회 2026 한국인 기준).\n\n- **남성**: 90cm 이상 복부비만\n- **여성**: 85cm 이상 복부비만\n- **WHO 기준**: 남 102cm, 여 88cm (서양인 기준이라 한국에 안 맞음)\n\n사례.\n\n- BMI 23 + 허리둘레 95cm 남성 → '마른 비만'. 인슐린 저항성·당뇨 위험 높음\n- BMI 27 + 허리둘레 78cm 남성 → 근육형. 위험 낮음\n\n허리/엉덩이 비율(WHR)도 유용.\n\n- **WHR 공식**: 허리 ÷ 엉덩이\n- 남: 0.9 이상 위험\n- 여: 0.85 이상 위험\n\n2024년 The Lancet 논문에서 WHR이 BMI보다 사망률 예측력 더 높다고 발표.",
+        },
+        {
+          heading: "기준 3) 내장지방 — 진짜 위험한 지방",
+          body: "지방은 두 종류.\n\n- **피하지방**: 피부 바로 아래, 위험 낮음\n- **내장지방**: 장기 사이, 심혈관·당뇨 직접 원인\n\n같은 체지방률이라도 내장지방 비중에 따라 위험 천차만별.\n\n측정.\n\n- **인바디**: 내장지방 레벨 1~30 표시 (10 이하 정상)\n- **CT 스캔**: 가장 정확, 100㎠ 이상이면 위험\n- **허리둘레로 추정**: 남 90cm·여 85cm 넘으면 내장지방 의심\n\n내장지방 많아지는 원인.\n\n1. 과도한 정제탄수화물·당분 (밥·면·빵·음료수)\n2. 운동 부족 + 코르티솔 (스트레스)\n3. 알코올 (특히 맥주)\n4. 수면 부족 (5시간 이하)\n\n해결.\n\n- 유산소 운동 주 150분 (걷기·자전거)\n- 정제탄수화물 제한\n- 16:8 간헐적 단식 (의사 상담 후)\n- 7시간 수면\n\n[BMI 정상 범위 다이어트 가이드](/blog/bmi-calculation-normal-range-diet-guide)에서 내장지방 줄이는 식단까지 이어 보세요.",
+        },
+        {
+          heading: "기준 4) 골격근량 — 마른 비만 판정",
+          body: "체중에서 근육 비중. BMI 22인데 근육량 적으면 '근감소형 비만(sarcopenic obesity)'.\n\n측정 (인바디).\n\n- **골격근량**: 신체 근육 총량(kg)\n- **근육량 표준범위**: 키·체중 대비 정상 ±10%\n- **근감소증**: 표준 -10% 이하 (60대 이상 흔함)\n\n사례.\n\n- 60대 여성, BMI 23, 체중 55kg, 근육량 18kg (표준 22kg) → 근감소증 + 잠재 비만\n- 30대 남성, BMI 22, 체중 70kg, 근육량 35kg → 정상\n\n근감소증 위험.\n\n1. 낙상·골절 위험 3배\n2. 인슐린 저항성 → 당뇨 위험\n3. 만성 염증 증가\n4. 사망률 2배 (60대 이상)\n\n근육량 늘리기.\n\n- 단백질 체중 1kg당 1.2~1.6g (60kg → 72~96g)\n- 주 2~3회 근력운동 (스쿼트·데드리프트·푸시업)\n- 비타민 D + 칼슘 보충 (한국인 90% 부족)\n\n근육량은 30대 이후 매년 1% 감소. 운동 안 하면 60대에 30% 감소.",
+        },
+        {
+          heading: "기준 5) 한국인 BMI 기준 — 23부터 위험",
+          body: "WHO 기준 BMI 25 비만은 서양인 기준. 한국인은 같은 BMI에서 체지방률·내장지방이 더 높아요.\n\n대한비만학회 2026 한국인 기준.\n\n- **저체중**: BMI < 18.5\n- **정상**: 18.5 ~ 22.9\n- **과체중(전비만)**: 23.0 ~ 24.9\n- **비만 1단계**: 25.0 ~ 29.9\n- **비만 2단계**: 30.0 ~ 34.9\n- **고도비만 (3단계)**: 35.0+\n\n주의. WHO 25 기준 그대로 쓰면 한국인 30%가 정상으로 분류 — 실제로는 당뇨·고지혈증 위험군 다수 포함.\n\n2018년 대한비만학회·국제비만학회 공동 연구에서 한국인 BMI 23부터 당뇨·심혈관 위험 급증 확인.\n\n사례. 35세 남성 BMI 24 → WHO 정상이지만 한국 기준 과체중. 허리둘레·체지방률 함께 보고 판단.\n\n어린이·청소년·임산부는 별도 기준 적용 — BMI 단독 사용 X.",
+        },
+        {
+          heading: "5가지 기준 종합 체크리스트",
+          body: "비만 정확하게 판정하려면 5가지 다 확인.\n\n1. **BMI**: 한국인 23 이상 주의\n2. **체지방률**: 남 25%·여 33% 이상 비만\n3. **허리둘레**: 남 90·여 85 이상 복부비만\n4. **내장지방**: 인바디 레벨 10 이상 위험\n5. **근육량**: 표준 -10% 이하 근감소증\n\n조합별 판정.\n\n- BMI 25 + 체지방 30% + 허리 95 → **확실한 비만, 즉시 다이어트**\n- BMI 27 + 체지방 12% + 허리 78 → **근육형, 비만 아님**\n- BMI 22 + 체지방 32% + 허리 86 → **마른 비만, 운동 필요**\n- BMI 23 + 근육량 표준 -15% → **근감소형, 단백질·근력운동**\n- BMI 24 + 내장지방 레벨 12 → **내장지방형, 유산소·식단 조절**\n\n인바디 측정 권장 — 헬스장·보건소 무료 또는 1만원. 6개월에 한 번 추적하면 변화 파악.",
+        },
+        {
+          heading: "Toolkio BMI 계산기로 시작",
+          body: "[Toolkio BMI 계산기](https://toolkio.com/tools/bmi-calculator)에서 키·몸무게 입력하면 BMI + 한국인 기준 판정 자동.\n\n사용 흐름.\n\n1. 키·몸무게 입력 → BMI 자동 계산\n2. 한국 비만학회 기준 등급 표시\n3. 표준 체중 범위 안내\n4. 위험도 색상 표시 (정상=녹·과체중=노·비만=빨)\n\n주의. BMI 단독으로는 충분 X. 같이 확인할 것.\n\n- 인바디 (체지방률·내장지방·근육량)\n- 줄자 (허리둘레)\n- 근력 측정 (악력 측정 — 30kg 이하 근감소증 의심)\n\n다이어트 시작 전 이 5가지 베이스라인 측정 → 한 달 후 재측정 → 무엇이 변했는지 추적. BMI만 보면 근육 줄어든 걸 '체중 감량'으로 착각.\n\n더 자세한 BMI 활용은 [BMI 한국 기준 WHO 비교](/blog/bmi-2026-korea-standard-who-comparison)에서, 칼로리 계산은 [기초대사량 5가지 활용](/blog/bmr-calculator-5-uses-personal-calorie)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why BMI Alone Fails",
+          body: "BMI from 1830s population statistics doesn't distinguish muscle from fat. Misclassifies athletes as obese, misses skinny-fat, ignores ethnicity, body shape, age.",
+        },
+        {
+          heading: "Standard 1) Body Fat Percentage",
+          body: "Most accurate. Men: 10-20% normal, 25%+ obese. Women: 18-28% normal, 33%+ obese. Measure via BIA (InBody), DEXA, calipers.",
+        },
+        {
+          heading: "Standard 2) Waist Circumference",
+          body: "Korean obesity standard: men 90cm, women 85cm. Better predictor than BMI for cardiovascular risk per 2024 Lancet study.",
+        },
+        {
+          heading: "Standard 3) Visceral Fat",
+          body: "Subcutaneous vs visceral. Visceral fat directly causes diabetes/heart disease. InBody level 10+ risky. CT scan most accurate.",
+        },
+        {
+          heading: "Standard 4) Skeletal Muscle Mass",
+          body: "BMI 22 with low muscle = sarcopenic obesity. Common in 60+. Triples fall risk, doubles mortality. Need 1.2-1.6g protein per kg.",
+        },
+        {
+          heading: "Standard 5) Korean BMI Threshold 23",
+          body: "WHO 25 standard is Western-based. Korean Society for Obesity 2026: 23-24.9 overweight, 25+ obese stage 1. Same BMI, higher risk in Asian populations.",
+        },
+        {
+          heading: "5-Point Checklist",
+          body: "BMI ≥23, body fat M25%/F33%, waist M90/F85, visceral fat 10+, muscle <std-10%. Check all 5 for accurate diagnosis.",
+        },
+        {
+          heading: "Use Toolkio BMI Calculator",
+          body: "Enter height/weight, get BMI with Korean standard classification, target weight range, color-coded risk. Pair with InBody and waist measurement.",
+        },
+      ],
+    },
+    faq: [
+      { question: "운동선수는 BMI 비만이라고 나오는데 진짜 비만이에요?", answer: "근육 무게가 지방보다 무거워 BMI 27~28도 흔함. 체지방률 15% 이하면 비만 아님. 인바디로 체지방률·근육량 확인하면 명확." },
+      { question: "체지방률 정확하게 측정하는 법은?", answer: "DEXA 스캔이 가장 정확(±2%), 인바디는 ±5%. 인바디는 측정 시간 영향 큼 — 아침 공복·운동 전·소변 본 후가 가장 정확. 매번 같은 조건에서 측정해야 변화 추적 가능." },
+      { question: "마른 비만은 어떻게 알아요?", answer: "BMI 정상(18.5~22.9)인데 체지방률 30%+(여)·25%+(남)이면 마른 비만. 허리둘레가 BMI 22인 사람 평균보다 큰지 확인. 인바디 무료인 보건소 가서 측정 권장." },
+      { question: "노인은 BMI 24~27이 정상이라는 게 진짜예요?", answer: "60대 이상 코호트 연구에서 BMI 24~27 사망률 최저. 너무 마른 노인은 근감소증·낙상·면역 저하 위험. 단 비만 범위(BMI 30+)는 여전히 위험." },
+      { question: "허리둘레 측정 위치 헷갈려요. 어디예요?", answer: "양 갈비뼈 끝과 골반 위쪽(엉덩이뼈)의 중간 지점. 배꼽 아닌 약간 위. 숨 가볍게 내쉬고 줄자 수평으로. 옷 위로 재면 부정확 — 속옷이나 얇은 셔츠 위에서 측정." },
+      { question: "내장지방 빨리 빼는 방법은?", answer: "유산소 + 정제탄수화물·당분 제한이 가장 빠름. 주 150분 빠른 걷기 + 밥·면·빵·음료수 50% 줄이기 → 8주에 내장지방 20~30% 감소 가능. 무리한 단식은 근육만 줄어듦 — 단백질 충분히." },
+    ],
+  },
+  {
+    slug: "discord-timestamp-auto-format-5-types",
+    title: {
+      ko: "Discord 타임스탬프 자동 변환 — 디스코드 시간 표시 5가지 형식",
+      en: "Discord Timestamp Auto Format — 5 Display Types for Universal Time",
+    },
+    description: {
+      ko: "Discord에서 타임스탬프 코드 한 줄로 모든 사용자 시간대에 맞춰 자동 표시. 5가지 형식(t·T·d·D·F·R)과 Unix 타임스탬프 변환 한 번에 정리했어요.",
+      en: "Discord timestamp formatting auto-adjusts to each user's timezone. 5 display types (t/T/d/D/F/R) with Unix timestamp conversion in one guide.",
+    },
+    date: "2026-05-04",
+    toolId: "timestamp-converter",
+    image: "/images/blog/discord-timestamp-auto-format-5-types.webp",
+    keywords: ["Discord 타임스탬프", "디스코드 시간 표시", "discord timestamp converter", "Unix timestamp Discord", "디스코드 이벤트 시간"],
+    content: {
+      ko: [
+        {
+          heading: "Discord 타임스탬프, 왜 써요?",
+          body: "디스코드 서버에서 이벤트 공지를 영어·한국어·일본어 사용자가 섞여 보면 시간 헷갈리잖아요. 'KST 21시' 적어도 미국 사용자는 다시 계산해야 해요.\n\nDiscord 타임스탬프 코드를 쓰면 한 줄로 모든 사용자에게 각자 시간대로 자동 표시.\n\n예시.\n\n- 입력: `<t:1746374400:F>`\n- 한국 사용자에게: `2026년 5월 5일 일요일 오전 9:00`\n- 미국 사용자에게: `Sunday, May 5, 2026 5:00 PM`\n- 영국 사용자에게: `Sunday, May 5, 2026 00:00`\n\n사용자 OS 시간대에 자동 맞춤. 게임 길드·이벤트·미팅 공지에 필수.\n\n오늘 정리할 것.\n\n1. 타임스탬프 코드 문법\n2. 5가지 형식 (t·T·d·D·F·R)\n3. Unix 타임스탬프 만드는 법\n4. 봇·웹훅에서 활용\n5. 흔한 실수 5가지\n\n5분이면 마스터 가능.",
+        },
+        {
+          heading: "기본 문법 — `<t:UNIX:형식>`",
+          body: "Discord 타임스탬프 형식.\n\n```\n<t:UNIX_TIMESTAMP:FORMAT>\n```\n\n- `<t:` — 시작 태그\n- `UNIX_TIMESTAMP` — 1970-01-01 UTC부터 초 단위 (10자리)\n- `:FORMAT` — 표시 형식 (생략 시 기본 f)\n- `>` — 종료 태그\n\n예시 — 2026년 5월 5일 0시 0분 0초 UTC.\n\n```\n<t:1746374400:F>  → 2026년 5월 5일 일요일 오전 9:00\n<t:1746374400:R>  → 2시간 후\n<t:1746374400>    → 2026년 5월 5일 오전 9:00 (기본)\n```\n\n주의.\n\n- Unix 타임스탬프는 **초 단위 10자리** — JavaScript Date.now()는 밀리초 13자리라 1000으로 나눠야\n- 음수 타임스탬프(1970년 이전)도 가능\n- 13자리 그대로 넣으면 표시 안 됨 (43658년 같은 미래로 인식)",
+        },
+        {
+          heading: "형식 1) 짧은 시간 — `:t`",
+          body: "시간만 짧게 표시 (24시간 또는 12시간 — 사용자 설정 따름).\n\n```\n<t:1746374400:t>\n```\n\n결과.\n\n- 한국: `오전 9:00`\n- 미국 12시간 설정: `5:00 PM`\n- 영국 24시간 설정: `00:00`\n\n사용처.\n\n- 게임 길드 출석 시간 — `매주 금요일 <t:1746374400:t> 모입니다`\n- 짧은 회의 — '내일 <t:...:t>'\n\n날짜 정보 없이 시간만 필요할 때. 같은 날 안에서 시간만 안내할 때 깔끔.",
+        },
+        {
+          heading: "형식 2) 긴 시간·날짜 — `:T` `:d` `:D`",
+          body: "**`:T` 긴 시간** — 초 포함.\n\n```\n<t:1746374400:T>\n```\n\n결과: `오전 9:00:00`\n\n**`:d` 짧은 날짜**.\n\n```\n<t:1746374400:d>\n```\n\n결과.\n\n- 한국: `2026. 5. 5.`\n- 미국: `5/5/2026`\n- 영국: `05/05/2026`\n\n**`:D` 긴 날짜**.\n\n```\n<t:1746374400:D>\n```\n\n결과: `2026년 5월 5일`\n\n**`:f` 짧은 종합** (기본).\n\n```\n<t:1746374400:f>\n```\n\n결과: `2026년 5월 5일 오전 9:00`\n\n**`:F` 긴 종합** — 요일 포함.\n\n결과: `2026년 5월 5일 일요일 오전 9:00`\n\n공식 이벤트는 `:F` 권장. 정보량 가장 많고 모든 시간대 명확.",
+        },
+        {
+          heading: "형식 3) 상대 시간 — `:R`",
+          body: "지금 기준 상대 시간 — '5분 전·2시간 후·3일 전' 식으로 자동 갱신.\n\n```\n<t:1746374400:R>\n```\n\n결과 (현재 시점이 2026-05-04 17:00 KST일 때).\n\n- `약 16시간 후`\n- 영어: `in 16 hours`\n\n사용처.\n\n- 이벤트 카운트다운: `이벤트 시작까지 <t:1746374400:R>`\n- 공지 시점 표시: `공지 발표: <t:1746374400:R>` → '3일 전'\n- 봇 명령어 쿨다운: `다음 사용 가능: <t:1746374400:R>`\n\n장점. 시간이 흐르면 메시지 자동 갱신 — '2시간 후' → '1시간 후' → '5분 후' → '5분 전'.\n\n한계. 근사값 — '16시간 후'지 정확한 분 단위 X. 정확한 시간 함께 보여주고 싶으면 `<t:...:F> (<t:...:R>)`.",
+        },
+        {
+          heading: "Unix 타임스탬프 만드는 4가지 방법",
+          body: "타임스탬프 코드 입력하려면 Unix 시간이 필요. 만드는 방법.\n\n**방법 1) 온라인 도구**.\n\n[Toolkio 타임스탬프 변환기](https://toolkio.com/tools/timestamp-converter)에 날짜·시간 입력 → Unix 자동.\n\n**방법 2) JavaScript 콘솔**.\n\n```\nMath.floor(new Date('2026-05-05T09:00:00+09:00').getTime() / 1000)\n// 1746374400\n```\n\n**방법 3) Python**.\n\n```\nimport datetime\nimport time\ndt = datetime.datetime(2026, 5, 5, 9, 0, 0)\nunix = int(time.mktime(dt.timetuple()))\n# 1746374400\n```\n\n**방법 4) Discord 봇**.\n\n```\n!timestamp 2026-05-05 09:00\n→ <t:1746374400:F>\n```\n\nHammerTime 같은 디스코드 봇 또는 자체 봇으로 자동화. 매번 손으로 변환하면 실수 잦음.\n\n주의. 타임존 명시 필수. `'2026-05-05 09:00'`만 쓰면 로컬 시간대 기준 — 한국 PC면 KST, 미국 PC면 PT. 코드에 `+09:00` 또는 `Z` 명시.",
+        },
+        {
+          heading: "흔한 실수 5가지 — 디버깅 가이드",
+          body: "1. **밀리초 → 초 변환 누락**: `Date.now()`는 13자리, Discord는 10자리. 1000으로 나눠야.\n   ```\n   Math.floor(Date.now() / 1000)\n   ```\n\n2. **타임존 누락**: `new Date('2026-05-05')` → UTC 자정. 한국 시각 명시하려면 `'2026-05-05T00:00:00+09:00'`.\n\n3. **꺾쇠괄호 빠뜨림**: `t:1746374400:F` (X) → `<t:1746374400:F>` (O). 마크다운에서 `<>` 자동 변환되면 깨짐.\n\n4. **형식 대소문자**: `:f` vs `:F` 다름. 소문자는 짧은, 대문자는 긴 형식.\n\n5. **봇 메시지에 적용 안 됨**: 일부 봇은 임베드(embed) 안에서만 타임스탬프 인식. 일반 메시지·임베드 둘 다 테스트.\n\n디버깅. 만든 타임스탬프 본인 메시지에 보내고 결과 확인 → 형식 정상이면 다른 사람에게도 정상.",
+        },
+        {
+          heading: "Toolkio 타임스탬프 변환기로 빠르게",
+          body: "[Toolkio 타임스탬프 변환기](https://toolkio.com/tools/timestamp-converter)에서 날짜·시간·타임존 선택 → Unix 자동 + Discord 형식 자동 생성.\n\n작업 흐름.\n\n1. 이벤트 날짜·시간 선택 (예: 2026-05-05 21:00 KST)\n2. Unix 타임스탬프 자동 계산\n3. Discord 형식 6개 동시 미리보기 (t·T·d·D·f·F·R)\n4. 클릭으로 복사 → 디스코드에 바로 붙여넣기\n\n장점. 봇 안 깔고 웹에서 즉시. 모바일에서도 가능.\n\n주의. 디스코드 모바일은 일부 형식 표시 지연. PC 데스크탑이 가장 안정적.\n\n참고. Discord API 공식 문서 — discord.com/developers/docs/reference#message-formatting-timestamp-styles. 형식 추가는 Discord 결정에 따름. 더 자세한 타임스탬프 활용은 [타임스탬프 변환 5가지 시나리오](/blog/timestamp-converter-unix-utc-5-scenarios)에서, 함정은 [Unix 타임스탬프 5가지 함정](/blog/unix-timestamp-5-pitfalls-timezone-ms)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Discord Timestamps Matter",
+          body: "Single code displays in every user's local timezone. Essential for international servers, gaming guilds, events with mixed-language members.",
+        },
+        {
+          heading: "Basic Syntax",
+          body: "`<t:UNIX:FORMAT>` where UNIX is 10-digit seconds (not 13-digit milliseconds). FORMAT optional, defaults to short combined.",
+        },
+        {
+          heading: "Format 1) Short Time `:t`",
+          body: "Time only, follows user's 12/24 hour preference. Use for same-day events when date context obvious.",
+        },
+        {
+          heading: "Format 2) Long Time/Date `:T` `:d` `:D` `:F`",
+          body: "T includes seconds, d short date, D long date with month name, F full with weekday. Use F for official events.",
+        },
+        {
+          heading: "Format 3) Relative `:R`",
+          body: "Auto-updates: 'in 2 hours' → 'in 5 minutes' → '5 minutes ago'. Approximate, pair with F for precision.",
+        },
+        {
+          heading: "4 Ways to Get Unix Timestamp",
+          body: "Online converter, JavaScript Math.floor(Date.now()/1000), Python time.mktime, Discord bot like HammerTime. Specify timezone in input.",
+        },
+        {
+          heading: "5 Common Mistakes",
+          body: "Milliseconds vs seconds, missing timezone, missing brackets, format case sensitivity, embed vs plain message context.",
+        },
+        {
+          heading: "Use Toolkio Timestamp Converter",
+          body: "Pick date/time/timezone, get Unix + all 6 Discord formats with live preview. Copy and paste directly into Discord.",
+        },
+      ],
+    },
+    faq: [
+      { question: "Discord 모바일에서 타임스탬프 표시가 이상해요", answer: "디스코드 모바일 앱은 일부 형식(특히 :R 상대시간) 갱신 지연. 데스크탑은 즉시. 모바일은 새로고침하면 정상. iOS·Android 둘 다 같은 현상." },
+      { question: "Unix 타임스탬프 13자리 그대로 넣으면 어떻게 돼요?", answer: "13자리는 밀리초 단위 — Discord는 초 단위로 해석해서 43658년 같은 미래 표시. Math.floor(/1000)으로 10자리로 변환 필수." },
+      { question: "1970년 이전 날짜 표시할 수 있어요?", answer: "기술적으로 가능 — 음수 타임스탬프 사용. -2147483648 ~ 0 (1901년 ~ 1970년). 단 일부 라이브러리·봇이 음수 미지원이라 제한될 수 있음." },
+      { question: "타임스탬프가 메시지에서 코드 그대로 보여요. 왜 그래요?", answer: "꺾쇠괄호 누락 가장 흔함. 마크다운 코드 블록(```) 안이거나 인용(>) 안이면 변환 X — 일반 메시지로 보내야 정상 표시." },
+      { question: "Discord 봇이 자동으로 타임스탬프 만드는 법?", answer: "discord.js: `<t:${Math.floor(date.getTime()/1000)}:F>` 임베드에 추가. discord.py: `f'<t:{int(dt.timestamp())}:F>'`. 카운트다운에는 :R 권장." },
+      { question: "한국 시간대(KST)로 정확히 입력하려면?", answer: "JavaScript: `new Date('2026-05-05T21:00:00+09:00').getTime()/1000`. Python: `datetime.datetime(2026,5,5,21, tzinfo=ZoneInfo('Asia/Seoul')).timestamp()`. 타임존 누락 시 로컬 PC 시간대 기준이라 부정확." },
+    ],
+  },
+  {
+    slug: "pdf-character-count-word-hangul-5-methods",
+    title: {
+      ko: "PDF 글자수 세기 — Word 한글 PDF 파일 글자수 확인 5가지 방법",
+      en: "PDF Character Counter — 5 Methods to Count Words/Hangul in PDF Files",
+    },
+    description: {
+      ko: "PDF 파일의 글자수·단어수·바이트를 정확히 세는 5가지 방법. Adobe Acrobat·Word 변환·온라인 도구·Python·OCR까지 한글 PDF에 맞는 방법별 정확도 비교.",
+      en: "Count characters, words, and bytes in PDF files with 5 methods. Adobe Acrobat, Word conversion, online tools, Python, OCR — accuracy compared for Korean text.",
+    },
+    date: "2026-05-04",
+    toolId: "character-counter",
+    image: "/images/blog/pdf-character-count-word-hangul-5-methods.webp",
+    keywords: ["PDF 글자수 세기", "PDF 글자수 확인", "PDF character count", "한글 PDF 글자수", "PDF 단어수"],
+    content: {
+      ko: [
+        {
+          heading: "PDF 글자수, 왜 정확히 세야 할까?",
+          body: "자기소개서·논문·과제·계약서를 PDF로 받았는데 '5,000자 이내' 요건이 있으면 글자수를 세야 해요. PDF는 워드처럼 자동 글자수 표시가 없어서 따로 작업 필요.\n\n언제 필요해.\n\n1. **자기소개서·논문 글자수 검증** — '4,000자 이내' 같은 제출 규정\n2. **번역 견적** — 글자당·단어당 단가 계산\n3. **계약서 검토** — 분량 비교, 변경 추적\n4. **저작권·표절 검사** — 분량 기준 인용 한도 판단\n5. **인쇄 비용 산정** — 페이지·글자 단위 견적\n\n오늘은 5가지 방법을 정확도·편의성으로 비교해 드릴게요. 한글 PDF에서 정확도 차이가 크니까 끝까지 읽으세요.",
+        },
+        {
+          heading: "방법 1) Adobe Acrobat — 가장 정확",
+          body: "유료지만 가장 정확. PDF 표준 만든 회사라 텍스트 추출이 깔끔.\n\n사용법.\n\n1. Adobe Acrobat Pro 또는 DC 열기\n2. PDF 파일 열기\n3. 메뉴 → 편집 → 모두 선택 (Ctrl+A)\n4. 복사 (Ctrl+C)\n5. 워드·메모장에 붙여넣기\n6. 워드 글자수 기능으로 카운트\n\n또는 Acrobat 자체 기능.\n\n1. 메뉴 → 도구 → 통계\n2. 글자수·단어수·문자수 표시\n\n장점.\n\n- 한글·영어·특수문자 정확\n- 페이지·열 구분 인식\n- 표·각주 포함\n\n단점.\n\n- 유료 (월 19,000원)\n- 이미지 PDF는 OCR 필요\n\n전문가용. 회사·연구실에서 자주 쓰면 가성비 좋아요.",
+        },
+        {
+          heading: "방법 2) Word 변환 — 무료, 한글 정확",
+          body: "PDF를 Word(.docx)로 변환 후 글자수 자동 표시. 한컴오피스도 동일.\n\n사용법 (MS Word).\n\n1. Word 열기 → 파일 → 열기 → PDF 선택\n2. '문서로 변환' 알림 나오면 확인\n3. 메뉴 → 검토 → 글자 수 (또는 단어 수)\n4. 글자수·단어수·문장수·줄수·문단수 표시\n\n사용법 (한컴오피스).\n\n1. 한글 → 파일 → PDF 가져오기\n2. 메뉴 → 도구 → 글자 수\n3. 한글·영문·숫자·특수문자별 분석\n\n장점.\n\n- 무료 (Office·한컴 라이선스 있으면)\n- 한글 인식 정확\n- 공백 포함·제외 둘 다\n\n단점.\n\n- 변환 시 레이아웃 깨질 수 있음\n- 표·이미지 안 텍스트 누락 가능\n- 100페이지 이상이면 변환 시간 김 (5~10분)\n\n학생·일반 사용자에게 가장 무난.",
+        },
+        {
+          heading: "방법 3) 온라인 도구 — 빠른 확인",
+          body: "PDF 업로드만으로 글자수 분석. 짧은 문서·즉석 확인에 편리.\n\n주요 도구.\n\n- **PDF24 Tools**: 무료, EU 서버, 한글 OK\n- **Smallpdf**: 월 2회 무료, 그 후 유료\n- **iLovePDF**: 무료, 회원가입 필요\n- **Online2PDF**: 회원가입 X, 한 번에 5MB 제한\n\n사용법 (PDF24).\n\n1. tools.pdf24.org 접속 → 'PDF에서 텍스트 추출'\n2. PDF 업로드\n3. 추출된 텍스트 다운로드\n4. [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)에 붙여넣기 → 글자수·바이트 한 번에\n\n장점.\n\n- 설치 불필요\n- 모바일에서도 가능\n- 빠름 (1분 내)\n\n단점·주의.\n\n- **민감 문서는 업로드 X** — 회사 계약서·개인정보 포함 PDF는 절대 안 됨\n- 무료 버전 파일 크기 제한 (보통 5~10MB)\n- OCR 필요한 스캔 PDF는 추출 안 됨\n\n간단한 자기소개서·블로그 글이면 적합.",
+        },
+        {
+          heading: "방법 4) Python pdfplumber — 자동화",
+          body: "Python으로 글자수 자동 계산. 여러 PDF 일괄 처리에 유리.\n\n설치.\n\n```\npip install pdfplumber\n```\n\n코드.\n\n```\nimport pdfplumber\n\nwith pdfplumber.open('document.pdf') as pdf:\n    text = ''\n    for page in pdf.pages:\n        text += page.extract_text() or ''\n\n# 글자수\nprint(f'전체 글자수: {len(text)}')\nprint(f'공백 제외: {len(text.replace(chr(32), \"\").replace(chr(10), \"\"))}')\n# 단어수\nprint(f'단어수: {len(text.split())}')\n# 한글만\nimport re\nhangul = re.findall(r'[가-힣]', text)\nprint(f'한글 글자수: {len(hangul)}')\n# 바이트\nprint(f'UTF-8 바이트: {len(text.encode(\"utf-8\"))}')\n```\n\n결과 예시.\n\n```\n전체 글자수: 12,345\n공백 제외: 9,876\n단어수: 2,345\n한글 글자수: 8,765\nUTF-8 바이트: 35,678\n```\n\n장점.\n\n- 100개 PDF 일괄 처리 가능\n- 정확도 90%+ (텍스트 PDF)\n- 무료\n\n단점.\n\n- Python 설치·코드 작성 필요\n- 스캔 이미지 PDF는 OCR 추가 필요\n\n개발자·연구자가 다량 처리할 때 추천.",
+        },
+        {
+          heading: "방법 5) OCR — 스캔 이미지 PDF",
+          body: "복사·붙여넣기 안 되는 PDF는 이미지 형태. OCR(광학 문자 인식)로 텍스트화 후 글자수 카운트.\n\n주요 도구.\n\n- **Adobe Acrobat OCR**: 가장 정확, 한글 지원, 유료\n- **Tesseract** (오픈소스): 무료, 한글 학습 데이터 다운로드 필요\n- **네이버 클로바 OCR**: 한글 정확도 95%+, 월 1000건 무료\n- **Google Cloud Vision**: 정확 95%+, 월 1000건 무료\n- **ABBYY FineReader**: 상용, 정확도 가장 높음\n\nTesseract 사용법 (Python).\n\n```\npip install pytesseract pdf2image Pillow\n```\n\n```\nfrom pdf2image import convert_from_path\nimport pytesseract\n\nimages = convert_from_path('scanned.pdf')\ntext = ''\nfor img in images:\n    text += pytesseract.image_to_string(img, lang='kor+eng')\nprint(f'글자수: {len(text)}')\n```\n\n주의.\n\n- 한글 OCR은 영어보다 정확도 낮음 (90~95%)\n- 손글씨·낮은 해상도 스캔은 정확도 70%\n- 처음 OCR 결과 검토 후 보정 권장\n\n공무원 시험 답안지·계약서 스캔본 분석에 필수.",
+        },
+        {
+          heading: "방법별 정확도·편의성 비교",
+          body: "한글 PDF 100페이지 자기소개서 기준 비교.\n\n| 방법 | 정확도 | 비용 | 시간 | 추천 |\n| --- | --- | --- | --- | --- |\n| Adobe Acrobat | 99% | 월 19,000원 | 1분 | 회사·전문가 |\n| Word 변환 | 97% | 무료(라이선스) | 5분 | 일반 사용자 |\n| 온라인 도구 | 95% | 무료 | 1분 | 비민감 문서 |\n| Python | 98% | 무료 | 코딩 30분, 실행 10초 | 다량 처리 |\n| OCR | 92% | 다양 | 5분/페이지 | 스캔 PDF |\n\n빠른 가이드.\n\n- **자기소개서 PDF 한 번 확인**: 온라인 도구 → Toolkio 글자수\n- **회사 보고서**: Word 변환\n- **민감 문서**: Adobe Acrobat (오프라인)\n- **100개 이상**: Python\n- **스캔본**: OCR\n\n어떤 방법이든 결과를 [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)에 붙여넣어 검증하면 글자수·공백 제외·바이트 한 번에 비교 가능.",
+        },
+        {
+          heading: "Toolkio 글자수 세기로 마무리",
+          body: "PDF에서 텍스트 추출했으면 [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)에 붙여넣어 정확한 통계 확인.\n\n표시 정보.\n\n1. **전체 글자수**: 한글·영어·숫자·특수문자\n2. **공백 제외 글자수**: 자기소개서 기준\n3. **단어수**: 영어 띄어쓰기 기준\n4. **문장수**: 마침표·물음표 기준\n5. **문단수**: 줄바꿈 기준\n6. **바이트**: UTF-8 기준 (DB 컬럼·SMS 검증)\n\n사용 흐름.\n\n1. PDF에서 텍스트 추출 (위 5가지 방법 중 하나)\n2. Toolkio에 붙여넣기\n3. 모든 통계 즉시 표시\n4. 자기소개서 요건 (예: 5,000자 이내)와 비교\n\n주의. PDF에 표·각주가 많으면 추출 시 순서 뒤바뀔 수 있어요. 추출된 텍스트 한 번 읽어보고 누락·중복 확인.\n\n더 자세한 글자수 활용은 [엑셀 LEN/LENB 함수 활용](/blog/excel-len-lenb-character-count-korean)에서, 자기소개서 글자수는 [한국어 자기소개서 글자수](/blog/korean-resume-char-count)에서 이어 보세요.",
+        },
+      ],
+      en: [
+        {
+          heading: "Why Count PDF Characters?",
+          body: "Self-introduction limits, paper requirements, translation pricing, copyright fair-use, print cost estimation. PDFs lack auto-counting like Word.",
+        },
+        {
+          heading: "Method 1) Adobe Acrobat",
+          body: "Most accurate (99%). Edit → Select All → Copy → Paste to Word. Or Tools → Statistics built-in. Paid ($20/mo) but precise for Korean.",
+        },
+        {
+          heading: "Method 2) Word Conversion",
+          body: "MS Word: File → Open → PDF, auto-converts. Review → Word Count. Hancom Office similar. Free with license, 97% accurate.",
+        },
+        {
+          heading: "Method 3) Online Tools",
+          body: "PDF24 Tools, Smallpdf, iLovePDF. Upload, extract, paste to Toolkio counter. NEVER for sensitive docs (contracts, personal data).",
+        },
+        {
+          heading: "Method 4) Python pdfplumber",
+          body: "pip install pdfplumber. Extract text, len() for chars, split() for words, regex [가-힣] for Korean only. Best for batch processing 100+ files.",
+        },
+        {
+          heading: "Method 5) OCR for Scans",
+          body: "Tesseract free with kor language pack, Naver Clova OCR 95%+, Google Vision API. Required for image-based PDFs (no copy-paste).",
+        },
+        {
+          heading: "Comparison Table",
+          body: "Acrobat 99%/$20mo, Word 97%/free, online 95%/free, Python 98%/free, OCR 92%/varies. Pick by sensitivity, volume, and PDF type.",
+        },
+        {
+          heading: "Use Toolkio Character Counter",
+          body: "Paste extracted text, see chars (with/without spaces), words, sentences, paragraphs, UTF-8 bytes simultaneously. Verify against limits.",
+        },
+      ],
+    },
+    faq: [
+      { question: "PDF에서 복사가 안 돼요. 어떻게 해요?", answer: "스캔 이미지 PDF일 가능성. OCR 필요. Adobe Acrobat은 자동 OCR 옵션 있음. 무료는 Tesseract(Python) 또는 네이버 클로바 OCR 추천. 한글 정확도 90~95%." },
+      { question: "PDF 글자수와 워드 글자수가 달라요. 왜 그래요?", answer: "PDF 추출 시 머리말·꼬리말·페이지 번호·각주 포함될 수 있음. 워드는 본문만 카운트. 추출 후 머리말 등 수동 제거하면 일치." },
+      { question: "100페이지 PDF 글자수 세는 가장 빠른 방법은?", answer: "Python pdfplumber 코드 30줄로 100페이지가 10초. Word 변환은 5~10분 걸림. 회사 PC가 Python 없으면 Adobe Acrobat 통계 기능이 1분으로 빠름." },
+      { question: "한글 자기소개서 PDF 글자수 정확히 세려면?", answer: "한컴오피스가 가장 정확. PDF 가져오기 → 도구 → 글자 수. 한글·영문·숫자·특수문자 분리 표시. 또는 텍스트 추출 후 Toolkio 글자수 세기에 붙여넣기." },
+      { question: "암호 걸린 PDF는 어떻게 해요?", answer: "암호 해제 후 처리. 본인 문서면 Adobe Acrobat에서 보안 → 제거. 타인 문서는 권한 없음. 무료 도구 사용 시에도 암호 입력 단계 필요." },
+      { question: "온라인 도구에 자기소개서 PDF 올려도 안전해요?", answer: "공개 채용 자기소개서면 큰 문제 없으나 개인정보(주민번호·전화번호) 포함 시 위험. PDF24·Smallpdf는 1시간 후 자동 삭제 명시. 민감 문서는 오프라인 도구(Word·Adobe) 권장." },
+    ],
+  },
 ];
