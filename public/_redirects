@@ -70,6 +70,7 @@
 /blog/how-to-convert-text-case/  /blog/programming-naming-conventions-guide/  301
 /blog/how-to-generate-uuid/  /blog/uuid-use-cases/  301
 /blog/how-to-convert-number-bases/  /blog/number-base-conversion-binary-hex-guide/  301
+# Phase 5.2C: bmi-calculator-health-guide dup-slug 정리 (2 entries 모두 5.2A에서 자연 흡수)
 /blog/bmi-calculator-health-guide/  /blog/how-to-calculate-bmi/  301
 /blog/salary-after-tax-calculation-guide/  /blog/retirement-severance-pay-average-vs-ordinary-wage/  301
 /blog/gpa-calculator-complete-guide/  /blog/gpa-conversion-study-abroad-guide/  301
@@ -257,3 +258,12 @@
 /blog/gpa-calculator-4-0-4-3-4-5-conversion/  /blog/gpa-conversion-study-abroad-guide/  301
 /blog/percent-calculator-discount-increase-decrease-5-uses/  /blog/discount-rate-reverse-calculation/  301
 /blog/ai-prompt-writing-5-stages-chatgpt-claude/  /blog/ai-prompt-generator-image-coding-writing-templates/  301
+
+# === Phase 5.2C dup-slug 정리 (2026-05-04) ===
+# blog.ts에 동일 slug 2번 등장 케이스 5쌍 — Phase 5.2A/5.2B에서 자연 정리됨
+# - bmi-calculator-health-guide  (439+427 ko, 둘 다 thin → 5.2A 삭제 + redirect)
+# - bmr-calculator-diet-guide    (430 thin + 509 cluster MERGE → 5.2A·5.2B 삭제 + redirect)
+# - timestamp-converter-unix-guide  (1172+544, cluster MERGE 2개 → 5.2B 삭제 + redirect)
+# - instagram-line-break-guide   (767 BEST + 549 cluster MERGE → 549만 삭제, 767 잔존)
+# - qr-code-google-form-guide    (794 BEST + 564 cluster MERGE → 564만 삭제, 794 잔존)
+
