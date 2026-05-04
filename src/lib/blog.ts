@@ -45,7 +45,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 글자수 세기 도구 사용법",
           body: "Toolkio의 글자수 세기 도구는 텍스트를 입력하면 실시간으로 글자수, 공백 제외 글자수, 단어수, 문장수, 문단수, 바이트까지 한눈에 보여줍니다.\n\n1. 텍스트를 입력하거나 붙여넣기\n2. 상단 카드에서 각종 통계 실시간 확인\n3. 필요 없으면 초기화 버튼으로 리셋\n\n브라우저에서 바로 실행되므로 입력한 내용이 서버로 전송되지 않아 안전합니다.",
-        },
+        }
       ],
       en: [
         {
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio Character Counter",
           body: "Toolkio's character counter shows real-time stats as you type: characters, characters without spaces, words, sentences, paragraphs, and bytes.\n\n1. Type or paste your text\n2. View stats instantly in the cards above\n3. Hit Clear to reset\n\nEverything runs in your browser — your text is never sent to any server.",
-        },
+        }
       ],
     },
     faq: [
@@ -78,77 +78,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "글자수 세기 도구는 어떤 상황에서 유용한가요?",
         answer: "자기소개서, 블로그 글, SNS 게시물 작성 시 글자수 제한을 확인할 때 유용합니다. 특히 취업 시즌에 자기소개서 글자수를 정확히 맞춰야 할 때 필수적입니다.",
-      },
+      }
     ],
   },
-  {
-    slug: "how-to-create-qr-code",
-    title: {
-      ko: "QR코드 만드는 법 - 무료로 QR코드 생성하고 활용하기",
-      en: "How to Create QR Codes - Generate and Use QR Codes for Free",
-    },
-    description: {
-      ko: "명함, 메뉴판, 이벤트 포스터에 QR코드를 넣는 방법. 무료 QR코드 생성기 사용법과 활용 팁.",
-      en: "Add QR codes to business cards, menus, and posters. Free QR code generator guide and tips.",
-    },
-    date: "2026-03-13",
-    toolId: "qr-generator",
-    image: "/images/blog/how-to-create-qr-code.webp",
-    keywords: ["QR코드 만들기", "QR코드 생성기", "QR코드 만드는법", "QR code generator", "무료 QR코드"],
-    content: {
-      ko: [
-        {
-          heading: "QR코드란 무엇인가?",
-          body: "QR코드(Quick Response Code)는 스마트폰 카메라로 스캔하면 웹사이트, 텍스트, 연락처 정보 등을 바로 열 수 있는 2차원 바코드입니다.\n\n1994년 일본 덴소웨이브가 개발했으며, 코로나19 이후 비대면 서비스가 늘면서 사용량이 폭발적으로 증가했습니다. 2025년 기준 전년 대비 43% 이상 사용량이 증가했습니다.",
-        },
-        {
-          heading: "QR코드 활용 사례",
-          body: "QR코드는 다양한 곳에서 활용됩니다:\n\n- 명함: URL을 QR코드로 넣어 포트폴리오/LinkedIn 연결\n- 식당 메뉴: 테이블에 QR코드 스티커를 붙여 디지털 메뉴 제공\n- 이벤트 포스터: 이벤트 페이지나 신청 폼으로 바로 연결\n- 제품 패키징: 사용 설명서나 리뷰 페이지 연결\n- Wi-Fi 공유: SSID와 비밀번호를 QR코드로 공유\n- 결제: 카카오페이, 네이버페이 QR 결제",
-        },
-        {
-          heading: "좋은 QR코드 만드는 팁",
-          body: "QR코드를 만들 때 주의할 점:\n\n1. 크기: 최소 2cm x 2cm 이상 (인쇄물 기준). 스캔이 안 되면 의미가 없습니다.\n2. 대비: QR코드 색상과 배경색의 대비가 충분해야 합니다. 어두운 QR + 밝은 배경이 기본.\n3. 여백: QR코드 주변에 최소 4셀 이상의 여백(quiet zone)을 확보하세요.\n4. URL 단축: 긴 URL은 QR코드를 복잡하게 만듭니다. 단축 URL을 사용하세요.\n5. 테스트: 인쇄 전에 반드시 여러 기기에서 스캔 테스트를 하세요.",
-        },
-        {
-          heading: "Toolkio에서 QR코드 만들기",
-          body: "Toolkio의 QR코드 생성기는 무료이며 브라우저에서 바로 사용할 수 있습니다.\n\n1. URL 또는 텍스트 입력\n2. 크기 조절 (100px ~ 1000px)\n3. QR코드 색상과 배경색 커스텀\n4. PNG 또는 SVG로 다운로드\n\nSVG로 다운로드하면 어떤 크기로 인쇄해도 깨지지 않습니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "What is a QR Code?",
-          body: "A QR (Quick Response) code is a 2D barcode that smartphones can scan to instantly open websites, text, contact info, and more.\n\nInvented in 1994 by Denso Wave in Japan, QR code usage has exploded since COVID-19, growing 43%+ year over year.",
-        },
-        {
-          heading: "QR Code Use Cases",
-          body: "QR codes are used everywhere:\n\n- Business cards: Link to portfolio or LinkedIn\n- Restaurant menus: Digital menus via table stickers\n- Event posters: Direct links to event pages or forms\n- Product packaging: Link to manuals or reviews\n- Wi-Fi sharing: Share network credentials\n- Payments: Mobile payment systems",
-        },
-        {
-          heading: "Tips for Better QR Codes",
-          body: "Key tips for creating effective QR codes:\n\n1. Size: Minimum 2cm x 2cm for print\n2. Contrast: Dark QR on light background\n3. Margin: At least 4-cell quiet zone around the code\n4. Short URLs: Long URLs make complex QR codes\n5. Test: Always scan-test on multiple devices before printing",
-        },
-        {
-          heading: "Create QR Codes with Toolkio",
-          body: "Toolkio's QR code generator is free and runs in your browser.\n\n1. Enter a URL or text\n2. Adjust size (100px to 1000px)\n3. Customize QR and background colors\n4. Download as PNG or SVG\n\nSVG downloads print at any size without quality loss.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "QR코드 최소 크기는?",
-        answer: "인쇄물에서 QR코드가 제대로 스캔되려면 최소 2cm x 2cm 크기가 필요합니다. 스캔 거리가 멀어질수록 더 큰 크기가 필요하며, 일반적으로 3cm x 3cm 이상을 권장합니다.",
-      },
-      {
-        question: "QR코드 색상을 바꿔도 되나요?",
-        answer: "네, 가능합니다. 다만 QR코드와 배경 사이의 명암 대비가 충분해야 스캔이 잘 됩니다. 어두운 색의 QR코드와 밝은 배경 조합이 가장 안정적이며, 반전(밝은 QR코드 + 어두운 배경)은 인식률이 떨어질 수 있습니다.",
-      },
-      {
-        question: "QR코드에 담을 수 있는 데이터 양은?",
-        answer: "QR코드는 숫자만 최대 7,089자, 문자는 최대 4,296자까지 저장할 수 있습니다. 하지만 데이터가 많을수록 QR코드가 복잡해져 스캔이 어려워지므로 URL 단축 서비스를 활용하는 것이 좋습니다.",
-      },
-    ],
-  },
-  {
+    {
     slug: "how-to-create-strong-password",
     title: {
       ko: "안전한 비밀번호 만들기 - 길이, 특수문자, 조합 완벽 가이드",
@@ -179,7 +112,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio에서 안전한 비밀번호 생성하기",
           body: "Toolkio의 비밀번호 생성기는 브라우저의 암호학적 난수 생성기(crypto.getRandomValues)를 사용하여 진정한 무작위 비밀번호를 만듭니다.\n\n1. 길이 설정 (4~64자)\n2. 포함할 문자 유형 선택 (대문자, 소문자, 숫자, 특수문자)\n3. 강도 표시기 확인\n4. 원클릭 복사\n\n생성된 비밀번호는 서버로 전송되지 않으며, 브라우저에서만 처리됩니다.",
-        },
+        }
       ],
       en: [
         {
@@ -197,7 +130,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Generate Secure Passwords with Toolkio",
           body: "Toolkio's password generator uses your browser's cryptographic random number generator (crypto.getRandomValues) for truly random passwords.\n\n1. Set length (4-64 characters)\n2. Choose character types\n3. Check the strength indicator\n4. One-click copy\n\nPasswords are never sent to any server.",
-        },
+        }
       ],
     },
     faq: [
@@ -212,7 +145,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "비밀번호를 얼마나 자주 변경해야 하나요?",
         answer: "최신 보안 가이드라인(NIST)에서는 정기적 변경보다 충분히 강력한 비밀번호를 설정하는 것을 권장합니다. 다만 유출이 의심되는 경우에는 즉시 변경해야 합니다.",
-      },
+      }
     ],
   },
   {
@@ -246,7 +179,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio에서 텍스트 비교하기",
           body: "Toolkio의 텍스트 비교 도구를 사용하면:\n\n1. 왼쪽에 원본 텍스트 입력\n2. 오른쪽에 수정된 텍스트 입력\n3. 비교 버튼 클릭\n4. 차이점이 색상으로 표시됨\n\n삭제된 줄은 빨간색, 추가된 줄은 초록색으로 한눈에 구분할 수 있습니다. 브라우저에서 바로 실행되므로 민감한 문서도 안전하게 비교할 수 있습니다.",
-        },
+        }
       ],
       en: [
         {
@@ -264,7 +197,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Compare Text with Toolkio",
           body: "Toolkio's diff checker makes comparison easy:\n\n1. Paste original text on the left\n2. Paste modified text on the right\n3. Click Compare\n4. Differences highlighted in color\n\nDeleted lines show in red, added lines in green. Runs in your browser for secure comparison of sensitive documents.",
-        },
+        }
       ],
     },
   },
@@ -299,7 +232,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio JSON 포맷터 사용법",
           body: "Toolkio의 JSON 포맷터는 브라우저에서 바로 실행되며, 데이터가 서버로 전송되지 않습니다.\n\n1. JSON 데이터를 입력란에 붙여넣기\n2. 포맷 버튼을 클릭하면 들여쓰기가 적용된 깔끔한 JSON 출력\n3. 문법 오류가 있으면 오류 위치와 내용을 표시\n4. 결과를 복사하여 사용\n\n압축(minify) 기능도 제공하여, 정리된 JSON을 다시 한 줄로 압축할 수도 있습니다.",
-        },
+        }
       ],
       en: [
         {
@@ -317,7 +250,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio JSON Formatter",
           body: "Toolkio's JSON formatter runs in your browser with no data sent to any server.\n\n1. Paste your JSON data into the input field\n2. Click Format to get beautifully indented output\n3. Syntax errors are highlighted with details\n4. Copy the result for use\n\nA minify option is also available to compress formatted JSON back into a single line.",
-        },
+        }
       ],
     },
     faq: [
@@ -332,7 +265,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "JSON과 JavaScript 객체의 차이는?",
         answer: "JSON은 키를 반드시 큰따옴표로 감싸야 하고, 후행 쉼표(trailing comma)를 허용하지 않으며, 함수나 undefined 값을 포함할 수 없습니다. JavaScript 객체는 이런 제약이 없어 더 유연합니다.",
-      },
+      }
     ],
   },
   {
@@ -366,7 +299,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio Base64 변환기 사용법",
           body: "Toolkio의 Base64 변환기를 사용하면 텍스트를 간편하게 인코딩하고 디코딩할 수 있습니다.\n\n1. 인코딩 또는 디코딩 모드를 선택\n2. 변환할 텍스트를 입력\n3. 변환 결과를 즉시 확인\n4. 결과를 클립보드에 복사\n\n모든 처리가 브라우저에서 이루어지므로 민감한 데이터도 안심하고 변환할 수 있습니다.",
-        },
+        }
       ],
       en: [
         {
@@ -384,7 +317,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio Base64 Converter",
           body: "Toolkio's Base64 converter makes encoding and decoding simple.\n\n1. Select encode or decode mode\n2. Enter the text to convert\n3. See the result instantly\n4. Copy the output to clipboard\n\nAll processing happens in your browser, so sensitive data stays private.",
-        },
+        }
       ],
     },
   },
@@ -419,7 +352,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio Lorem Ipsum 생성기 사용법",
           body: "Toolkio의 Lorem Ipsum 생성기를 사용하면 원하는 만큼의 더미 텍스트를 빠르게 생성할 수 있습니다.\n\n1. 생성할 단위를 선택 (문단, 문장, 단어)\n2. 원하는 수량 입력\n3. 생성 버튼 클릭\n4. 결과를 복사하여 디자인 시안에 붙여넣기\n\n브라우저에서 즉시 생성되므로 대기 시간 없이 바로 사용할 수 있습니다.",
-        },
+        }
       ],
       en: [
         {
@@ -437,7 +370,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio Lorem Ipsum Generator",
           body: "Toolkio's Lorem Ipsum generator quickly creates as much placeholder text as you need.\n\n1. Select the unit (paragraphs, sentences, or words)\n2. Enter the desired quantity\n3. Click Generate\n4. Copy and paste into your design mockup\n\nGeneration happens instantly in your browser with no waiting.",
-        },
+        }
       ],
     },
   },
@@ -472,7 +405,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 해시 생성기 사용법",
           body: "Toolkio의 해시 생성기를 사용하면 다양한 알고리즘의 해시값을 즉시 생성할 수 있습니다.\n\n1. 해시로 변환할 텍스트를 입력\n2. 해시 알고리즘을 선택 (MD5, SHA-1, SHA-256, SHA-512)\n3. 생성된 해시값 확인\n4. 결과를 복사하여 활용\n\n모든 해시 계산이 브라우저에서 처리되므로 입력한 데이터가 외부로 전송되지 않습니다. 파일 무결성 검증이나 개발 테스트에 유용하게 활용할 수 있습니다.",
-        },
+        }
       ],
       en: [
         {
@@ -490,7 +423,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio Hash Generator",
           body: "Toolkio's hash generator creates hash values with multiple algorithms instantly.\n\n1. Enter the text to hash\n2. Select the algorithm (MD5, SHA-1, SHA-256, SHA-512)\n3. View the generated hash value\n4. Copy the result for use\n\nAll hash calculations run in your browser, so your data is never sent externally. Useful for file integrity verification and development testing.",
-        },
+        }
       ],
     },
     faq: [
@@ -505,169 +438,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "같은 입력에 항상 같은 해시값이 나오나요?",
         answer: "네, 해시 함수의 핵심 특성입니다. 같은 알고리즘에 같은 입력을 넣으면 항상 동일한 해시값이 출력됩니다. 이 특성 덕분에 파일 무결성 검증이나 비밀번호 확인에 활용할 수 있습니다.",
-      },
+      }
     ],
   },
-  {
-    slug: "how-to-test-regex",
-    title: {
-      ko: "정규표현식 테스트 방법 - 초보자를 위한 Regex 가이드",
-      en: "How to Test Regular Expressions - A Beginner's Guide to Regex",
-    },
-    description: {
-      ko: "정규표현식(Regex) 작성과 테스트 방법. 이메일 검증, 전화번호 추출 등 실무에서 바로 쓰는 패턴 모음.",
-      en: "Write and test regular expressions easily. Practical regex patterns for email validation, phone numbers, and more.",
-    },
-    date: "2026-03-13",
-    toolId: "regex-tester",
-    image: "/images/blog/how-to-test-regex.webp",
-    keywords: ["정규표현식 테스트", "regex 사용법", "정규식 패턴", "regular expression", "regex tester"],
-    content: {
-      ko: [
         {
-          heading: "정규표현식이란 무엇인가?",
-          body: "정규표현식(Regular Expression, Regex)은 문자열에서 특정 패턴을 찾거나, 치환하거나, 유효성을 검증하기 위한 표현 언어입니다. 거의 모든 프로그래밍 언어에서 지원하며, 텍스트 처리에서 빠질 수 없는 핵심 도구입니다.\n\n예를 들어 수천 줄의 로그 파일에서 이메일 주소만 추출하거나, 사용자가 입력한 전화번호 형식이 올바른지 확인하는 일을 정규표현식 한 줄로 해결할 수 있습니다.",
-        },
-        {
-          heading: "실무에서 자주 쓰는 정규표현식 패턴",
-          body: "개발 현장에서 바로 사용할 수 있는 패턴들:\n\n- 이메일 검증: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n- 한국 휴대폰 번호: ^01[016789]-?\\d{3,4}-?\\d{4}$\n- URL 형식: ^https?://[\\w\\-]+(\\.[\\w\\-]+)+[/#?]?.*$\n- 한글만: ^[가-힣]+$\n- 숫자만: ^\\d+$\n- 비밀번호 (8자 이상, 대소문자+숫자+특수문자): ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
-        },
-        {
-          heading: "정규표현식 기본 문법 빠르게 배우기",
-          body: "정규표현식의 핵심 문법:\n\n- . (점): 아무 문자 1개\n- \\d: 숫자 (0-9)\n- \\w: 영문자, 숫자, 밑줄\n- \\s: 공백 문자\n- ^: 문자열 시작\n- $: 문자열 끝\n- *: 0번 이상 반복\n- +: 1번 이상 반복\n- ?: 0번 또는 1번\n- {n,m}: n번 이상 m번 이하 반복\n- [abc]: a, b, c 중 하나\n- (abc|def): abc 또는 def\n\n이 문법들을 조합하면 거의 모든 텍스트 패턴을 표현할 수 있습니다.",
-        },
-        {
-          heading: "Toolkio 정규표현식 테스터 사용법",
-          body: "Toolkio의 정규표현식 테스터는 패턴을 입력하면 실시간으로 매칭 결과를 보여줍니다.\n\n1. 상단에 정규표현식 패턴 입력\n2. 플래그 설정 (g: 전역, i: 대소문자 무시, m: 다중 행)\n3. 아래 텍스트 영역에 테스트할 문자열 입력\n4. 매칭되는 부분이 실시간으로 하이라이트 표시\n\n브라우저에서 바로 실행되므로 민감한 데이터도 안전합니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "What Are Regular Expressions?",
-          body: "Regular expressions (regex) are a pattern language for finding, replacing, and validating text. Supported in virtually every programming language, regex is an essential tool for text processing.\n\nFor example, extracting email addresses from thousands of log lines or validating phone number formats can be done with a single regex pattern.",
-        },
-        {
-          heading: "Practical Regex Patterns for Daily Use",
-          body: "Ready-to-use patterns for common tasks:\n\n- Email validation: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n- URL format: ^https?://[\\w\\-]+(\\.[\\w\\-]+)+[/#?]?.*$\n- Numbers only: ^\\d+$\n- Password (8+, upper+lower+digit+special): ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$\n- IP address: ^(?:\\d{1,3}\\.){3}\\d{1,3}$",
-        },
-        {
-          heading: "Regex Syntax Quick Reference",
-          body: "Core regex syntax:\n\n- . (dot): Any single character\n- \\d: Digit (0-9)\n- \\w: Word character\n- \\s: Whitespace\n- ^: Start of string\n- $: End of string\n- *: Zero or more\n- +: One or more\n- ?: Zero or one\n- {n,m}: Between n and m times\n- [abc]: One of a, b, or c\n- (abc|def): abc or def\n\nCombining these lets you express nearly any text pattern.",
-        },
-        {
-          heading: "How to Use Toolkio Regex Tester",
-          body: "Toolkio's regex tester shows matches in real time as you type your pattern.\n\n1. Enter your regex pattern at the top\n2. Set flags (g: global, i: case-insensitive, m: multiline)\n3. Enter test strings in the text area below\n4. Matches are highlighted instantly\n\nEverything runs in your browser — safe for sensitive data.",
-        },
-      ],
-    },
-  },
-  {
-    slug: "how-to-convert-text-case",
-    title: {
-      ko: "영문 대소문자 변환 방법 - 텍스트 케이스 한번에 바꾸기",
-      en: "How to Convert Text Case - Change Case Instantly Online",
-    },
-    description: {
-      ko: "영문 대소문자를 한번에 변환하는 방법. UPPERCASE, lowercase, camelCase, Title Case 등 다양한 케이스 변환.",
-      en: "Convert text between UPPERCASE, lowercase, camelCase, Title Case and more instantly online.",
-    },
-    date: "2026-03-13",
-    toolId: "case-converter",
-    image: "/images/blog/how-to-convert-text-case.webp",
-    keywords: ["대소문자 변환", "텍스트 케이스 변환", "case converter", "uppercase lowercase", "camelCase 변환"],
-    content: {
-      ko: [
-        {
-          heading: "텍스트 케이스 변환이 필요한 경우",
-          body: "영문 텍스트를 다룰 때 대소문자 변환이 필요한 상황은 자주 발생합니다:\n\n- Caps Lock을 켠 채 긴 문장을 타이핑했을 때\n- 데이터베이스의 이름 필드를 일괄적으로 Title Case로 바꿔야 할 때\n- 프로그래밍에서 변수명을 camelCase에서 snake_case로 바꿔야 할 때\n- 이메일 주소를 모두 소문자로 통일해야 할 때\n\n수십 줄 이상의 텍스트라면 변환 도구가 필수입니다.",
-        },
-        {
-          heading: "케이스 유형별 특징과 사용처",
-          body: "주요 텍스트 케이스:\n\n- UPPERCASE: 약어, 상수명, 강조. 예: MAX_VALUE, HTTP\n- lowercase: 이메일, URL. 예: hello@email.com\n- Title Case: 제목, 이름. 예: The Great Gatsby\n- camelCase: JavaScript 변수명. 예: getUserName\n- PascalCase: 클래스명. 예: UserProfile\n- snake_case: Python 변수명, DB 컬럼명. 예: user_name\n- kebab-case: CSS 클래스, URL. 예: main-content",
-        },
-        {
-          heading: "프로그래밍 네이밍 컨벤션 가이드",
-          body: "각 언어별 권장 네이밍 컨벤션:\n\n- JavaScript/TypeScript: 변수와 함수는 camelCase, 클래스는 PascalCase, 상수는 UPPER_SNAKE_CASE\n- Python: 변수와 함수는 snake_case, 클래스는 PascalCase\n- CSS: 클래스명은 kebab-case\n- Java: JavaScript와 유사, 패키지명은 lowercase\n- SQL: 테이블명과 컬럼명은 snake_case\n\n일관된 네이밍 컨벤션을 유지하면 코드 가독성이 높아지고 팀 협업이 원활해집니다.",
-        },
-        {
-          heading: "Toolkio 대소문자 변환 도구 사용법",
-          body: "Toolkio의 대소문자 변환 도구를 사용하면 텍스트를 원하는 케이스로 즉시 변환할 수 있습니다.\n\n1. 변환할 텍스트를 입력란에 붙여넣기\n2. 원하는 케이스 버튼 클릭 (UPPER, lower, Title, camelCase, snake_case 등)\n3. 변환 결과를 확인하고 복사\n\n여러 줄의 텍스트도 한 번에 변환되며, 브라우저에서 바로 처리되므로 빠르고 안전합니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "When You Need Text Case Conversion",
-          body: "Case conversion comes up more often than you'd expect:\n\n- Typed a long paragraph with Caps Lock on\n- Need to standardize database name fields to Title Case\n- Converting variable names from camelCase to snake_case\n- Normalizing email addresses to lowercase\n\nFor dozens of lines, you need a conversion tool.",
-        },
-        {
-          heading: "Case Types and Where They're Used",
-          body: "Common text cases:\n\n- UPPERCASE: Acronyms, constants. e.g., MAX_VALUE\n- lowercase: Emails, URLs. e.g., hello@email.com\n- Title Case: Titles, names. e.g., The Great Gatsby\n- camelCase: JavaScript variables. e.g., getUserName\n- PascalCase: Class names. e.g., UserProfile\n- snake_case: Python variables, DB columns. e.g., user_name\n- kebab-case: CSS classes, URL slugs. e.g., main-content",
-        },
-        {
-          heading: "Programming Naming Convention Guide",
-          body: "Each language has preferred naming conventions:\n\n- JavaScript/TypeScript: camelCase for variables/functions, PascalCase for classes, UPPER_SNAKE_CASE for constants\n- Python: snake_case for variables/functions, PascalCase for classes\n- CSS: kebab-case for class names\n- Java: Similar to JavaScript, lowercase for packages\n- SQL: snake_case for table and column names\n\nConsistent naming improves readability and team collaboration.",
-        },
-        {
-          heading: "How to Use Toolkio Case Converter",
-          body: "Toolkio's case converter transforms text to any case instantly.\n\n1. Paste your text into the input field\n2. Click the desired case button (UPPER, lower, Title, camelCase, snake_case, etc.)\n3. Review and copy the result\n\nMulti-line text is converted at once. Runs in your browser for speed and privacy.",
-        },
-      ],
-    },
-  },
-  {
-    slug: "how-to-generate-uuid",
-    title: {
-      ko: "UUID 생성 방법 - 고유 식별자의 모든 것",
-      en: "How to Generate UUIDs - Everything About Unique Identifiers",
-    },
-    description: {
-      ko: "UUID(범용 고유 식별자)의 개념과 생성 방법. v1, v4, v7 차이점과 실무 활용법 총정리.",
-      en: "What UUIDs are and how to generate them. Differences between v1, v4, v7 and practical use cases.",
-    },
-    date: "2026-03-13",
-    toolId: "uuid-generator",
-    image: "/images/blog/how-to-generate-uuid.webp",
-    keywords: ["UUID 생성", "UUID란", "고유 식별자", "uuid generator", "UUID v4"],
-    content: {
-      ko: [
-        {
-          heading: "UUID란 무엇인가?",
-          body: "UUID(Universally Unique Identifier)는 전 세계적으로 고유한 128비트 값입니다. 형식은 8-4-4-4-12 자리의 16진수로, 예를 들면 550e8400-e29b-41d4-a716-446655440000과 같습니다.\n\nUUID의 가장 큰 장점은 중앙 서버 없이도 어디서든 고유한 ID를 만들 수 있다는 것입니다. 분산 시스템에서 충돌 없이 독립적으로 ID를 생성할 수 있습니다.",
-        },
-        {
-          heading: "UUID 버전별 차이점",
-          body: "UUID에는 여러 버전이 있습니다:\n\n- UUID v1: 타임스탬프 + MAC 주소 기반. MAC 주소 노출에 주의.\n- UUID v4: 완전 랜덤 생성. 가장 널리 사용되는 버전.\n- UUID v7: 타임스탬프 기반 + 랜덤. 시간순 정렬이 가능해 DB 성능 우수.\n\n일반적인 용도에는 v4를, DB 기본키에는 v7을 추천합니다.",
-        },
-        {
-          heading: "UUID 실무 활용 사례",
-          body: "UUID는 소프트웨어 개발 곳곳에서 사용됩니다:\n\n- 데이터베이스 기본키: 분산 DB, 마이크로서비스에서 충돌 없는 ID\n- API 요청 추적: 각 요청에 UUID를 부여해 로그 추적\n- 세션 관리: 사용자 세션을 고유하게 식별\n- 파일 이름: 업로드 파일의 이름 충돌 방지\n- 임시 토큰: 이메일 인증, 비밀번호 재설정 링크\n\n문자열 저장은 36바이트이므로, 대량 데이터에서는 바이너리(16바이트) 저장이 효율적입니다.",
-        },
-        {
-          heading: "Toolkio UUID 생성기 사용법",
-          body: "Toolkio의 UUID 생성기를 사용하면 다양한 버전의 UUID를 즉시 생성할 수 있습니다.\n\n1. UUID 버전 선택\n2. 생성 버튼 클릭\n3. 생성된 UUID를 원클릭으로 복사\n4. 필요하면 여러 개를 한 번에 생성\n\n브라우저의 암호학적 난수 생성기를 사용하며, 생성된 UUID는 서버로 전송되지 않습니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "What is a UUID?",
-          body: "A UUID (Universally Unique Identifier) is a globally unique 128-bit value in the format 8-4-4-4-12 hexadecimal digits, like 550e8400-e29b-41d4-a716-446655440000.\n\nThe key advantage is generating unique IDs anywhere without a central server. UUIDs can be created independently across distributed systems without collisions.",
-        },
-        {
-          heading: "UUID Version Differences",
-          body: "UUID versions differ in generation method:\n\n- UUID v1: Timestamp + MAC address. Reveals creation time but exposes MAC address.\n- UUID v4: Fully random. The most widely used version.\n- UUID v7: Timestamp + random. Sortable by time, great for DB performance.\n\nFor general use, v4 is recommended. For database primary keys, v7 is better.",
-        },
-        {
-          heading: "UUID Use Cases in Practice",
-          body: "UUIDs appear throughout software development:\n\n- Database primary keys: Collision-free IDs in distributed databases\n- API request tracing: UUID per request for log tracking\n- Session management: Unique user session identification\n- File naming: Prevent upload filename collisions\n- Temporary tokens: Email verification, password reset links\n\nStoring as strings takes 36 bytes — binary (16 bytes) is more efficient for large datasets.",
-        },
-        {
-          heading: "How to Use Toolkio UUID Generator",
-          body: "Toolkio's UUID generator creates various versions instantly.\n\n1. Select the UUID version\n2. Click Generate\n3. Copy with one click\n4. Generate multiple at once if needed\n\nUses your browser's cryptographic random number generator. UUIDs are never sent to any server.",
-        },
-      ],
-    },
-  },
-  {
     slug: "how-to-minify-css",
     title: {
       ko: "CSS 압축(Minify) 방법 - 웹사이트 속도를 높이는 CSS 최적화",
@@ -698,7 +472,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio CSS 압축 도구 사용법",
           body: "Toolkio의 CSS 압축 도구를 사용하면 브라우저에서 즉시 CSS를 압축할 수 있습니다.\n\n1. CSS 코드를 입력란에 붙여넣기\n2. 압축 버튼 클릭\n3. 압축된 CSS 결과 확인 (원본 대비 절약률 표시)\n4. 결과를 복사하여 프로젝트에 적용\n\n빌드 설정 없이 바로 사용할 수 있고, 입력한 코드가 서버로 전송되지 않습니다.",
-        },
+        }
       ],
       en: [
         {
@@ -716,64 +490,11 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio CSS Minifier",
           body: "Toolkio's CSS minifier compresses your CSS instantly in the browser.\n\n1. Paste your CSS code into the input field\n2. Click the Minify button\n3. See the result with savings percentage\n4. Copy the minified CSS for your project\n\nNo build configuration needed. Your code never leaves your browser.",
-        },
+        }
       ],
     },
   },
-  {
-    slug: "how-to-convert-number-bases",
-    title: {
-      ko: "진법 변환 방법 - 2진수, 8진수, 10진수, 16진수 쉽게 바꾸기",
-      en: "How to Convert Number Bases - Binary, Octal, Decimal, and Hex Made Easy",
-    },
-    description: {
-      ko: "2진수, 8진수, 10진수, 16진수 간의 진법 변환 방법. 프로그래밍과 컴퓨터 과학의 필수 지식.",
-      en: "Convert between binary, octal, decimal, and hexadecimal. Essential knowledge for programming and computer science.",
-    },
-    date: "2026-03-13",
-    toolId: "number-base-converter",
-    image: "/images/blog/how-to-convert-number-bases.webp",
-    keywords: ["진법 변환", "2진수 변환", "16진수 변환", "number base converter", "진수 변환기"],
-    content: {
-      ko: [
-        {
-          heading: "진법이란 무엇인가?",
-          body: "진법(Number Base)이란 숫자를 표현하는 체계를 말합니다. 우리가 일상에서 사용하는 10진법은 0~9까지 10개의 숫자를 사용하지만, 컴퓨터는 0과 1만 사용하는 2진법으로 동작합니다.\n\n- 2진법(Binary): 0과 1. 컴퓨터의 기본 단위. 예: 1010 = 10진수 10\n- 8진법(Octal): 0~7. Unix 파일 권한. 예: 755\n- 10진법(Decimal): 0~9. 일상 숫자 체계\n- 16진법(Hexadecimal): 0~9, A~F. 메모리 주소, 색상 코드. 예: #FF5733",
-        },
-        {
-          heading: "프로그래밍에서 진법이 사용되는 곳",
-          body: "개발자가 진법 변환을 해야 하는 실제 상황:\n\n- 색상 코드: CSS #FF0000은 16진수, R=255는 10진수\n- 비트 연산: 리눅스 chmod 755는 8진수, 2진수로는 111 101 101\n- 메모리 주소: 디버깅 시 16진수(0x7FFF5FBFF8AC)로 표시\n- 네트워크: 서브넷 마스크는 2진수로 이해해야 네트워크 범위 계산 가능\n- 문자 인코딩: ASCII 'A'는 10진수 65, 16진수 41, 2진수 01000001",
-        },
-        {
-          heading: "진법 변환 원리",
-          body: "10진수를 다른 진법으로: 나누기를 반복하여 나머지를 역순으로 읽습니다.\n예: 25를 2진수로 → 25÷2=12...1, 12÷2=6...0, 6÷2=3...0, 3÷2=1...1, 1÷2=0...1 → 11001\n\n다른 진법을 10진수로: 각 자릿수에 진법의 거듭제곱을 곱해서 더합니다.\n예: 2진수 11001 → 1×2⁴+1×2³+0×2²+0×2¹+1×2⁰ = 16+8+0+0+1 = 25\n\n2진수와 16진수: 2진수 4자리가 16진수 1자리. 1010=A, 1111=F",
-        },
-        {
-          heading: "Toolkio 진법 변환기 사용법",
-          body: "Toolkio의 진법 변환기는 숫자를 입력하면 여러 진법으로 동시에 변환합니다.\n\n1. 변환할 숫자 입력\n2. 입력 진법 선택 (2진, 8진, 10진, 16진)\n3. 모든 진법의 변환 결과를 한 번에 확인\n4. 필요한 결과를 클릭하여 복사\n\n프로그래밍 학습, 코딩 테스트, 실무 디버깅에 유용합니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "What Are Number Bases?",
-          body: "A number base defines how numbers are represented. We use base 10 (decimal) daily, but computers operate in base 2 (binary).\n\n- Binary (base 2): 0 and 1. Foundation of computing. e.g., 1010 = decimal 10\n- Octal (base 8): 0-7. Unix file permissions. e.g., 755\n- Decimal (base 10): 0-9. Our everyday system\n- Hexadecimal (base 16): 0-9, A-F. Memory addresses, color codes. e.g., #FF5733",
-        },
-        {
-          heading: "Where Number Bases Are Used",
-          body: "Real scenarios requiring base conversion:\n\n- Color codes: CSS #FF0000 is hex; R=255 is decimal\n- Bit operations: Linux chmod 755 is octal, or 111 101 101 in binary\n- Memory addresses: Debugger shows hex (0x7FFF5FBFF8AC)\n- Networking: Subnet masks need binary for range calculations\n- Character encoding: ASCII 'A' is decimal 65, hex 41, binary 01000001",
-        },
-        {
-          heading: "How Base Conversion Works",
-          body: "Decimal to other bases: Repeatedly divide, read remainders in reverse.\ne.g., 25 to binary → 25÷2=12r1, 12÷2=6r0, 6÷2=3r0, 3÷2=1r1, 1÷2=0r1 → 11001\n\nOther bases to decimal: Multiply each digit by base^position.\ne.g., binary 11001 → 1×2⁴+1×2³+0+0+1×2⁰ = 25\n\nBinary to hex: 4 binary digits = 1 hex digit. 1010=A, 1111=F",
-        },
-        {
-          heading: "How to Use Toolkio Number Base Converter",
-          body: "Toolkio's base converter shows all conversions simultaneously.\n\n1. Enter the number to convert\n2. Select the input base\n3. View results in all bases at once\n4. Click to copy any result\n\nInstant conversion for learning, coding tests, and debugging.",
-        },
-      ],
-    },
-  },
-  {
+    {
     slug: "how-to-count-text",
     title: {
       ko: "텍스트 카운터 사용법 - 단어수, 문장수, 문단수 한번에 세기",
@@ -804,7 +525,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 텍스트 카운터 사용법",
           body: "Toolkio의 텍스트 카운터는 텍스트를 입력하면 다양한 통계를 실시간으로 보여줍니다.\n\n1. 분석할 텍스트를 입력란에 붙여넣기\n2. 단어수, 문장수, 문단수, 읽기 시간 등 실시간 확인\n3. 글자수, 공백 제외 글자수, 바이트 수도 함께 표시\n4. 초기화 버튼으로 새로운 텍스트 분석\n\n모든 처리는 브라우저에서 이루어지므로 개인정보 유출 걱정 없이 사용 가능합니다.",
-        },
+        }
       ],
       en: [
         {
@@ -822,7 +543,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio Text Counter",
           body: "Toolkio's text counter shows real-time statistics as you type.\n\n1. Paste your text into the input field\n2. View words, sentences, paragraphs, and reading time instantly\n3. Character count, characters without spaces, and byte count also displayed\n4. Use Clear to analyze new text\n\nAll processing happens in your browser — no privacy concerns.",
-        },
+        }
       ],
     },
   },
@@ -4564,7 +4285,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio BMI 계산기로 간편하게 확인하기",
           body: "Toolkio의 BMI 계산기는 키와 체중을 입력하면 즉시 BMI 수치와 함께 비만도 분류를 알려줍니다. 한국 기준과 WHO 기준을 모두 확인할 수 있어 편리합니다.\n\n1. 키(cm)와 체중(kg) 입력\n2. BMI 수치 및 비만도 분류 즉시 확인\n3. 정상 체중 범위 안내\n\n모든 계산은 브라우저에서 이루어지며, 개인 정보가 서버로 전송되지 않습니다. toolkio.com에서 무료로 사용해보세요!",
-        },
+        }
       ],
       en: [
         {
@@ -4582,7 +4303,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Calculate Your BMI Easily with Toolkio",
           body: "Toolkio's BMI Calculator instantly shows your BMI and obesity classification when you enter your height and weight.\n\n1. Enter height (cm) and weight (kg)\n2. Get instant BMI and classification\n3. See your healthy weight range\n\nAll calculations run in your browser with zero data sent to any server. Try it free at toolkio.com!",
-        },
+        }
       ],
     },
     faq: [
@@ -4597,7 +4318,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "BMI를 낮추려면 어떻게 해야 하나요?",
         answer: "BMI를 건강한 범위로 낮추려면 식이요법과 운동을 병행하는 것이 가장 효과적입니다. 주당 0.5~1kg 정도의 점진적인 감량이 안전하며, 극단적인 다이어트는 요요 현상을 유발할 수 있습니다. 전문가와 상담하여 개인에게 맞는 건강 관리 계획을 세우는 것을 권장합니다.",
-      },
+      }
     ],
   },
   {
@@ -4631,7 +4352,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 연봉 실수령액 계산기 사용법",
           body: "Toolkio의 연봉 실수령액 계산기는 연봉을 입력하면 4대 보험료, 소득세, 지방소득세를 자동으로 계산하여 정확한 월 실수령액을 보여줍니다.\n\n1. 연봉(세전) 입력\n2. 부양가족 수 선택 (선택사항)\n3. 월 실수령액, 공제 항목별 금액 즉시 확인\n\n급여 협상, 이직, 재정 계획 수립 시 유용하게 활용할 수 있습니다. 모든 계산은 브라우저에서 처리되어 개인 정보가 안전합니다. toolkio.com에서 무료로 확인하세요!",
-        },
+        }
       ],
       en: [
         {
@@ -4649,7 +4370,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Calculate Your Take-Home Pay with Toolkio",
           body: "Toolkio's Salary Calculator automatically computes all deductions to show your exact monthly take-home pay.\n\n1. Enter your annual salary\n2. Select number of dependents (optional)\n3. See instant breakdown of all deductions\n\nPerfect for salary negotiations, job changes, and financial planning. Free at toolkio.com!",
-        },
+        }
       ],
     },
     faq: [
@@ -4664,7 +4385,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "비과세 항목에는 어떤 것이 있나요?",
         answer: "대표적인 비과세 항목으로는 식대(월 20만 원), 자가운전보조금(월 20만 원), 출산/보육수당(월 10만 원), 야간근로수당(생산직, 월 240만 원 이하) 등이 있습니다. 비과세 항목이 많을수록 실수령액이 높아지므로 급여명세서를 꼼꼼히 확인하세요.",
-      },
+      }
     ],
   },
   {
@@ -4698,7 +4419,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio D-day 계산기 사용법",
           body: "Toolkio의 D-day 계산기는 두 날짜 사이의 일수를 정확하게 계산해줍니다.\n\n1. 시작 날짜와 종료 날짜 선택\n2. 남은 일수 또는 경과 일수 즉시 확인\n3. 주/월 단위 변환도 자동 표시\n\n커플 기념일 계산, 시험 D-day 카운트다운, 프로젝트 마감일 관리 등 다양한 용도로 활용할 수 있습니다. toolkio.com에서 무료로 사용하세요!",
-        },
+        }
       ],
       en: [
         {
@@ -4716,7 +4437,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio's D-Day Calculator",
           body: "Toolkio's D-Day Calculator precisely counts days between any two dates.\n\n1. Select start and end dates\n2. See remaining or elapsed days instantly\n3. Auto-converts to weeks and months\n\nPerfect for anniversaries, exam prep, and deadline management. Free at toolkio.com!",
-        },
+        }
       ],
     },
     faq: [
@@ -4731,7 +4452,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "업무일수만 계산할 수 있나요?",
         answer: "Toolkio의 D-day 계산기는 전체 일수(달력일)를 기본으로 계산합니다. 주말과 공휴일을 제외한 순수 업무일수가 필요하다면, 전체 일수에서 주말 수(주 수 × 2)를 빼고 해당 기간의 공휴일을 추가로 제외하면 대략적인 업무일수를 구할 수 있습니다.",
-      },
+      }
     ],
   },
   {
@@ -4765,7 +4486,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 인스타 줄바꿈 도구로 간편하게",
           body: "Toolkio의 인스타그램 줄바꿈 도구는 텍스트를 입력하면 자동으로 인스타그램에서 줄바꿈이 유지되는 형태로 변환해줍니다.\n\n1. 원하는 텍스트를 입력 (엔터로 줄바꿈)\n2. '변환' 버튼 클릭\n3. 변환된 텍스트 복사\n4. 인스타그램에 붙여넣기\n\n별도의 앱 설치 없이 브라우저에서 바로 사용할 수 있으며, 입력한 텍스트가 서버로 전송되지 않아 안전합니다. toolkio.com에서 지금 바로 사용해보세요!",
-        },
+        }
       ],
       en: [
         {
@@ -4783,7 +4504,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio's Instagram Line Break Tool",
           body: "Toolkio's Instagram Line Break tool automatically converts your text to preserve formatting on Instagram.\n\n1. Type your text with line breaks\n2. Click Convert\n3. Copy the converted text\n4. Paste into Instagram\n\nNo app installation needed. Runs entirely in your browser. Try it free at toolkio.com!",
-        },
+        }
       ],
     },
     faq: [
@@ -4798,7 +4519,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "인스타그램 스토리에서도 줄바꿈 도구가 필요한가요?",
         answer: "인스타그램 스토리의 텍스트 편집기는 줄바꿈을 잘 지원하므로 별도의 도구가 필요하지 않습니다. 스토리 편집 화면에서 엔터를 치면 그대로 줄바꿈이 적용됩니다. 줄바꿈 문제는 주로 캡션(피드 게시물)과 바이오(프로필)에서 발생합니다.",
-      },
+      }
     ],
   },
   {
@@ -4832,7 +4553,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 만나이 계산기 사용법",
           body: "Toolkio의 만나이 계산기는 생년월일만 입력하면 만 나이, 한국 나이, 연 나이를 한눈에 보여줍니다.\n\n1. 생년월일 입력 (년, 월, 일)\n2. 만 나이, 한국 나이, 연 나이 즉시 확인\n3. 다음 생일까지 남은 일수도 표시\n\n법적 서류 작성, 나이 확인이 필요한 각종 상황에서 유용하게 활용할 수 있습니다. toolkio.com에서 무료로 사용하세요!",
-        },
+        }
       ],
       en: [
         {
@@ -4850,7 +4571,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio's Age Calculator",
           body: "Toolkio's Age Calculator shows international age, Korean age, and year age from your birthdate.\n\n1. Enter your date of birth\n2. See all three age calculations instantly\n3. Days until next birthday also displayed\n\nPerfect for legal documents and official purposes. Free at toolkio.com!",
-        },
+        }
       ],
     },
     faq: [
@@ -4865,7 +4586,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "생일 당일은 나이가 바뀌는 날인가요?",
         answer: "네, 만 나이 기준으로 생일 당일에 나이가 한 살 올라갑니다. 예를 들어 3월 24일이 생일이라면, 3월 24일 0시부터 새로운 나이가 됩니다. Toolkio의 만나이 계산기는 이를 정확하게 반영하여 계산합니다.",
-      },
+      }
     ],
   },
   {
@@ -4899,7 +4620,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "QR코드 만들 때 이것만 주의하세요",
           body: "QR코드가 제대로 작동하려면 몇 가지 체크할 게 있어요:\n\n- URL이 깨지면 안 돼요: 인쇄 전에 반드시 스캔 테스트하세요\n- 크기: 인쇄물에서 최소 2cm x 2cm 이상이어야 스캔이 잘 돼요\n- 색상: 배경은 밝게, QR코드는 어둡게. 반대로 하면 인식률이 떨어져요\n- 여백: QR코드 주변에 흰색 여백이 꼭 필요해요\n\n지금 바로 Toolkio에서 QR코드 하나 만들어보세요. 30초면 끝나요.",
-        },
+        }
       ],
       en: [
         {
@@ -4917,7 +4638,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Things to Watch Out For",
           body: "Make sure your QR code works properly:\n\n- Test before printing: Always scan the QR code to verify the link works\n- Size: Minimum 2cm x 2cm for printed materials\n- Colors: Light background, dark QR code. Inverting this reduces scan accuracy\n- Margins: White space around the QR code is essential for readability\n\nHead to Toolkio and create your first QR code right now. It takes 30 seconds.",
-        },
+        }
       ],
     },
     faq: [
@@ -4932,7 +4653,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "흑백이 아닌 컬러 QR코드도 만들 수 있나요?",
         answer: "네, 가능해요. 다만 배경은 밝은 색, QR코드 패턴은 어두운 색을 유지해야 인식률이 높아요. 밝은 파란색이나 밝은 빨간색으로 QR코드를 만들면 스캔이 안 될 수 있으니 주의하세요.",
-      },
+      }
     ],
   },
   {
@@ -4966,7 +4687,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "JSON 다룰 때 자주 하는 실수",
           body: "JSON 작업할 때 이런 실수 자주 하거든요:\n\n- 마지막 항목 뒤에 쉼표: JavaScript는 허용하는데 JSON은 안 돼요\n- 작은따옴표 사용: JSON은 반드시 큰따옴표만 써야 해요\n- 주석 넣기: JSON에는 주석을 넣을 수 없어요\n- undefined 사용: JSON에서는 null만 가능해요\n\nToolkio 포맷터에 붙여넣으면 이런 오류를 바로 잡아내니까 시간을 아낄 수 있어요. 개발하면서 JSON 볼 일 있으면 바로 써보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -4984,7 +4705,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Common JSON Mistakes to Avoid",
           body: "Watch out for these frequent JSON errors:\n\n- Trailing commas: JavaScript allows them, JSON doesn't\n- Single quotes: JSON requires double quotes only\n- Comments: JSON doesn't support comments\n- undefined: Use null instead in JSON\n\nToolkio's formatter catches all of these instantly. Next time you're working with JSON, give it a try.",
-        },
+        }
       ],
     },
     faq: [
@@ -4999,7 +4720,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "JSON Minify는 언제 사용하나요?",
         answer: "서버에 저장하거나 API로 전송할 때 JSON을 압축(Minify)하면 데이터 크기가 줄어들어요. 들여쓰기와 줄바꿈을 제거하는 거예요. 개발 중에는 포맷팅해서 읽기 좋게, 배포할 때는 압축해서 가볍게 사용하세요.",
-      },
+      }
     ],
   },
   {
@@ -5033,7 +4754,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "비밀번호 관리, 이렇게 하세요",
           body: "강력한 비밀번호를 만들었으면 관리도 잘해야겠죠?\n\n- 비밀번호 관리 앱 사용: Chrome 내장 비밀번호 관리자, 1Password, Bitwarden 중 하나를 쓰세요\n- 2단계 인증(2FA) 설정: 비밀번호가 유출돼도 추가 인증이 있으면 안전해요\n- 3개월마다 변경: 주요 계정(이메일, 은행)은 주기적으로 바꾸세요\n- 공용 PC에서 로그인 금지: 키로거가 설치돼 있을 수 있어요\n\n지금 바로 가장 중요한 계정 3개의 비밀번호를 Toolkio로 새로 만들어보세요. 5분이면 돼요.",
-        },
+        }
       ],
       en: [
         {
@@ -5051,7 +4772,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Password Management Best Practices",
           body: "Creating a strong password is step one. Managing them well is step two:\n\n- Use a password manager: Chrome's built-in manager, 1Password, or Bitwarden\n- Enable 2FA: Two-factor authentication protects you even if a password leaks\n- Change every 3 months: Rotate passwords for critical accounts (email, banking)\n- Avoid public computers: Keyloggers may be installed\n\nStart now: update the passwords for your 3 most important accounts using Toolkio. It takes 5 minutes.",
-        },
+        }
       ],
     },
     faq: [
@@ -5066,7 +4787,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "생체 인증(지문, 얼굴)이 비밀번호보다 안전한가요?",
         answer: "생체 인증은 편리하지만 완벽하지는 않아요. 지문은 복제가 가능하고, 얼굴 인식도 사진으로 속일 수 있거든요. 가장 안전한 방법은 강력한 비밀번호 + 2단계 인증(2FA)의 조합이에요.",
-      },
+      }
     ],
   },
   {
@@ -5100,7 +4821,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "3단계: 배포용으로 압축하기",
           body: "개발할 때는 읽기 좋은 코드가 좋지만, 배포할 때는 압축해야 해요.\n\nCSS 압축이 하는 일:\n\n- 공백, 줄바꿈 제거\n- 주석 삭제\n- 색상 코드 단축 (#ffffff → #fff)\n- 불필요한 세미콜론 제거\n\nToolkio CSS 압축기에 붙여넣고 압축 버튼 누르면 끝이에요. 보통 30~50% 용량이 줄어요.\n\n지금 프로젝트의 CSS 파일을 한번 넣어보세요. 얼마나 줄어드는지 바로 확인돼요.",
-        },
+        }
       ],
       en: [
         {
@@ -5118,7 +4839,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Step 3: Minify for Production",
           body: "Readable code is great for development, but production needs minification.\n\nWhat CSS minification does:\n\n- Removes whitespace and line breaks\n- Strips comments\n- Shortens color codes (#ffffff to #fff)\n- Removes unnecessary semicolons\n\nPaste into Toolkio's CSS Minifier, hit compress, done. Typical savings: 30-50%.\n\nTry it with your current project's CSS file and see the difference.",
-        },
+        }
       ],
     },
     faq: [
@@ -5133,7 +4854,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "압축 후 용량이 얼마나 줄어드나요?",
         answer: "코드 스타일에 따라 다르지만, 보통 30~50% 줄어요. 주석이 많고 들여쓰기가 깊은 코드일수록 효과가 크더라고요.",
-      },
+      }
     ],
   },
   {
@@ -5167,7 +4888,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "실전에서 바로 쓰는 팁",
           body: "정규식 검증할 때 알아두면 좋은 것들이에요:\n\n- 이메일은 소문자 변환 후 검증하세요. User@Email.com도 유효하거든요\n- 전화번호는 하이픈, 공백 먼저 제거하고 검증하면 패턴이 간단해져요\n- 에러 메시지는 구체적으로 써주세요. '형식이 올바르지 않습니다' 대신 '@ 뒤에 도메인을 입력해주세요'\n- 정규식을 외울 필요 없어요. Toolkio에 저장해두고 필요할 때 복사하세요\n\n지금 프로젝트의 폼 검증 코드에 한번 적용해보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -5185,7 +4906,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Practical Tips for Production",
           body: "Things to remember when using regex validation:\n\n- Normalize email to lowercase before validation\n- Strip dashes and spaces from phone numbers first for simpler patterns\n- Write specific error messages: 'Please include a domain after @' instead of 'Invalid format'\n- No need to memorize patterns. Save them in Toolkio and copy when needed\n\nTry applying these patterns to your current project's forms today.",
-        },
+        }
       ],
     },
     faq: [
@@ -5200,7 +4921,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "정규식 테스터에서 동작하는데 코드에서 안 되는 이유는?",
         answer: "자바스크립트에서 문자열로 정규식을 쓸 때 역슬래시를 이중으로 써야 해요. /\\d/는 되는데 new RegExp('\\d')는 '\\\\d'로 써야 하거든요. Toolkio에서 테스트한 패턴을 코드에 넣을 때 이 점만 주의하세요.",
-      },
+      }
     ],
   },
   {
@@ -5234,7 +4955,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Base64 이미지 사용 시 주의사항",
           body: "실전에서 알아둬야 할 것들이에요:\n\n- 파일 크기가 33% 늘어나요. 10KB 이미지가 약 13.3KB가 돼요\n- HTML 파일 자체가 커져서 첫 로딩이 느려질 수 있어요\n- 브라우저 캐싱이 안 돼요. 매번 HTML과 함께 다운로드돼요\n- 이미지 수정하면 Base64 코드도 다시 만들어야 해요\n\n그래서 5KB 이하의 작은 이미지만 Base64로 쓰는 게 좋아요. 그 이상은 일반 이미지 파일이 낫더라고요.\n\n지금 프로젝트에서 아이콘 파일이 있다면 Toolkio에서 변환해보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -5252,7 +4973,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Important Caveats to Know",
           body: "Key things to keep in mind:\n\n- File size increases by 33%. A 10KB image becomes about 13.3KB\n- HTML files get larger, potentially slowing initial page load\n- Browser caching doesn't work. The image downloads with every HTML request\n- Any image change requires regenerating the Base64 code\n\nStick to images under 5KB for Base64 embedding. Anything larger should remain as a regular image file.\n\nTry converting a small icon from your project in Toolkio to see the result.",
-        },
+        }
       ],
     },
     faq: [
@@ -5267,7 +4988,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "SVG 이미지도 Base64로 변환해야 하나요?",
         answer: "SVG는 이미 텍스트 기반이라서 Base64로 안 바꿔도 돼요. CSS에서 url('data:image/svg+xml,...')로 직접 쓸 수 있거든요. 오히려 Base64로 바꾸면 크기만 커져요.",
-      },
+      }
     ],
   },
   {
@@ -5301,7 +5022,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "실전 꿀팁 — 이것만 기억하세요",
           body: "대소문자 관련해서 알아두면 좋은 팁이에요:\n\n- SEO: URL은 소문자 kebab-case가 좋아요. Google이 대소문자를 구분하거든요\n- 파일명: 운영체제에 따라 대소문자 처리가 달라요. Mac은 구분 안 하는데 Linux는 구분해요\n- Git: 파일명 대소문자만 바꾸면 Git이 인식 못 할 수 있어요\n- 이메일: 이메일 주소는 대소문자 구분 안 해요. user@email.com이나 USER@EMAIL.COM이나 같아요\n\n팀 프로젝트에서는 네이밍 컨벤션을 문서화해두세요. 나중에 코드 리뷰 시간이 줄어들어요.\n\nToolkio 케이스 변환기를 즐겨찾기 해두면 편하더라고요.",
-        },
+        }
       ],
       en: [
         {
@@ -5319,7 +5040,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Pro Tips to Remember",
           body: "Practical case conversion tips:\n\n- SEO: Use lowercase kebab-case for URLs. Google treats case as different URLs\n- Filenames: Case sensitivity varies by OS. Mac ignores case, Linux doesn't\n- Git: Renaming files by case alone may not be detected by Git\n- Email: Email addresses are case-insensitive. user@email.com equals USER@EMAIL.COM\n\nDocument naming conventions in team projects. It saves time during code reviews.\n\nBookmark Toolkio's Case Converter for quick access.",
-        },
+        }
       ],
     },
     faq: [
@@ -5338,7 +5059,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "snake_case와 kebab-case 중 뭘 써야 하나요?",
         answer: "언어와 상황에 따라 달라요. Python이면 snake_case, URL이나 CSS면 kebab-case를 쓰세요. 프로젝트 내에서 일관성을 지키는 게 가장 중요해요.",
-      },
+      }
     ],
   },
   {
@@ -5376,7 +5097,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 비밀번호 생성기 활용법",
           body: "Toolkio의 비밀번호 생성기를 사용하면 안전한 비밀번호를 1초 만에 만들 수 있어요.\n\n1. 원하는 길이 설정 (12자 이상 권장)\n2. 포함할 문자 유형 선택 (대문자, 소문자, 숫자, 특수문자)\n3. 생성 버튼 클릭\n4. 복사해서 사용\n\n모든 생성은 브라우저에서 이루어져요. 서버로 전송되지 않아서 안전해요.",
-        },
+        }
       ],
       en: [
         {
@@ -5398,7 +5119,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio's Password Generator",
           body: "Generate secure passwords in 1 second with Toolkio.\n\n1. Set desired length (12+ recommended)\n2. Select character types\n3. Click Generate\n4. Copy and use\n\nEverything happens in your browser. Nothing is sent to any server.",
-        },
+        }
       ],
     },
     faq: [
@@ -5413,412 +5134,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "비밀번호 강도를 어떻게 확인하나요?",
         answer: "Toolkio 비밀번호 생성기에서 강도 표시를 확인할 수 있어요. 약함/보통/강함/매우 강함으로 표시돼요. 최소 '강함' 이상을 목표로 하세요.",
-      },
+      }
     ],
   },
-  {
-    slug: "bmi-calculator-health-guide",
-    title: {
-      ko: "BMI 계산기 활용법 – 내 체질량지수가 알려주는 건강 신호",
-      en: "BMI Calculator Guide – What Your Body Mass Index Tells About Your Health",
-    },
-    description: {
-      ko: "BMI 계산법과 의미를 쉽게 설명해요. 정상 범위, 한계점, 체중 관리 팁까지 알려드려요.",
-      en: "Learn how to calculate and interpret your BMI. Normal ranges, limitations, and weight management tips included.",
-    },
-    date: "2026-03-27",
-    toolId: "bmi-calculator",
-    image: "/images/blog/bmi-calculator-health-guide.webp",
-    keywords: ["BMI 계산", "체질량지수", "BMI 정상범위", "BMI 계산기", "체중 관리"],
-    content: {
-      ko: [
-        {
-          heading: "BMI가 뭔가요?",
-          body: "BMI(Body Mass Index)는 체질량지수예요. 키와 체중으로 비만도를 간단하게 측정하는 방법이에요.\n\n계산식: BMI = 체중(kg) / 키(m)의 제곱\n\n예를 들어 키 170cm, 체중 70kg이면: 70 / (1.7 x 1.7) = 24.2\n\nToolkio의 BMI 계산기에 키와 체중만 입력하면 자동으로 계산돼요.",
-        },
-        {
-          heading: "BMI 수치별 의미",
-          body: "대한비만학회 기준(아시아-태평양 기준)이에요.\n\n- 18.5 미만: 저체중\n- 18.5 ~ 22.9: 정상\n- 23.0 ~ 24.9: 과체중\n- 25.0 ~ 29.9: 비만 (1단계)\n- 30.0 이상: 고도비만 (2단계)\n\n아시아인은 서양인보다 같은 BMI에서 내장지방이 더 많기 때문에 기준이 더 엄격해요. WHO 기준에서는 25 이상이 과체중이지만 아시아 기준은 23부터예요.",
-        },
-        {
-          heading: "BMI의 한계점",
-          body: "BMI가 만능은 아니에요. 알아둘 한계점이 있어요.\n\n- 근육량이 많은 사람: 운동선수는 BMI가 높아도 건강할 수 있어요\n- 노인: 나이가 들면 근육이 줄어서 BMI가 낮아도 건강하지 않을 수 있어요\n- 체지방 분포: BMI는 내장지방과 피하지방을 구별하지 못해요\n\nBMI는 참고 지표예요. 허리둘레, 체지방률과 함께 봐야 더 정확해요. 남성 허리둘레 90cm, 여성 85cm 이상이면 복부비만이에요.",
-        },
-        {
-          heading: "건강한 체중 관리 팁",
-          body: "BMI가 과체중이나 비만 범위라면 생활습관부터 바꿔보세요.\n\n- 하루 30분 걷기부터 시작하세요\n- 탄수화물을 줄이고 단백질과 채소를 늘리세요\n- 물을 하루 2L 이상 마시세요\n- 수면을 7-8시간 확보하세요 (수면 부족은 체중 증가의 원인)\n\n급격한 다이어트보다 한 달에 1-2kg씩 천천히 빼는 게 요요 없이 건강해요.",
-        },
-      ],
-      en: [
-        {
-          heading: "What Is BMI?",
-          body: "BMI (Body Mass Index) measures body fat based on height and weight.\n\nFormula: BMI = weight(kg) / height(m) squared\n\nExample: 170cm, 70kg → 70 / (1.7 × 1.7) = 24.2\n\nUse Toolkio's BMI Calculator — just enter height and weight.",
-        },
-        {
-          heading: "What BMI Numbers Mean",
-          body: "WHO standard classification:\n\n- Under 18.5: Underweight\n- 18.5 - 24.9: Normal weight\n- 25.0 - 29.9: Overweight\n- 30.0+: Obese\n\nNote: Asian-Pacific guidelines use stricter cutoffs (23+ for overweight) due to higher visceral fat at lower BMI levels.",
-        },
-        {
-          heading: "Limitations of BMI",
-          body: "BMI isn't perfect. Key limitations:\n\n- Muscular people: Athletes may have high BMI but low body fat\n- Elderly: Lower BMI doesn't always mean healthy due to muscle loss\n- Fat distribution: BMI can't distinguish visceral fat from subcutaneous fat\n\nUse BMI as a reference alongside waist circumference and body fat percentage for a more complete picture.",
-        },
-        {
-          heading: "Healthy Weight Management Tips",
-          body: "If your BMI is in the overweight range, start with lifestyle changes:\n\n- Walk 30 minutes daily\n- Reduce carbs, increase protein and vegetables\n- Drink 2L+ of water daily\n- Get 7-8 hours of sleep\n\nAim for 1-2kg loss per month for sustainable results without yo-yo effect.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "BMI와 체지방률 중 어떤 게 더 정확한가요?",
-        answer: "체지방률이 더 정확해요. BMI는 근육과 지방을 구별하지 못하거든요. 하지만 BMI는 키와 체중만으로 간편하게 측정할 수 있다는 장점이 있어요.",
-      },
-      {
-        question: "아이들의 BMI도 같은 기준인가요?",
-        answer: "아니에요, 소아청소년은 같은 나이/성별 집단에서의 백분위수로 판단해요. 성인 BMI 기준을 적용하면 안 돼요.",
-      },
-      {
-        question: "BMI가 정상이면 건강한 건가요?",
-        answer: "반드시 그렇진 않아요. BMI가 정상이어도 내장지방이 많을 수 있어요(마른 비만). 허리둘레와 혈액검사도 함께 확인하는 게 좋아요.",
-      },
-    ],
-  },
-  {
-    slug: "salary-after-tax-calculation-guide",
-    title: {
-      ko: "연봉 실수령액 계산 가이드 – 4대보험, 소득세 공제 후 월급 알아보기",
-      en: "Salary After Tax Guide – Calculate Your Take-Home Pay After Deductions",
-    },
-    description: {
-      ko: "연봉에서 4대보험과 소득세를 빼면 실제 받는 월급은 얼마일까요? 연봉별 실수령액 표와 공제 항목을 정리했어요.",
-      en: "How much do you actually take home from your salary? Learn about tax deductions, insurance premiums, and net pay calculation.",
-    },
-    date: "2026-03-27",
-    toolId: "salary-calculator",
-    image: "/images/blog/salary-after-tax-calculation-guide.webp",
-    keywords: ["연봉 실수령액", "월급 계산", "4대보험 공제", "소득세 계산", "실수령액 계산기"],
-    content: {
-      ko: [
-        {
-          heading: "연봉 5000만원인데 실수령액은?",
-          body: "연봉 5000만원이면 매달 416만원을 받을 것 같지만, 실제로는 약 340-350만원 정도예요.\n\n약 70만원이 공제되는 거예요. 어디로 빠지는 걸까요?\n\n4대보험(국민연금, 건강보험, 고용보험, 장기요양보험)과 소득세, 지방소득세가 매달 월급에서 빠져요.\n\nToolkio의 연봉 계산기에 연봉만 입력하면 공제 항목별로 정확하게 계산해줘요.",
-        },
-        {
-          heading: "4대보험 공제 항목 정리",
-          body: "4대보험은 근로자와 회사가 반반씩 부담해요. 근로자 부담분만 정리하면:\n\n- 국민연금: 월급의 4.5%\n- 건강보험: 월급의 3.545%\n- 장기요양보험: 건강보험의 12.95%\n- 고용보험: 월급의 0.9%\n\n합하면 월급의 약 9.4%가 4대보험으로 나가요. 월급 400만원이면 약 37.6만원이에요.",
-        },
-        {
-          heading: "소득세와 지방소득세",
-          body: "소득세는 연봉 구간에 따라 세율이 달라요(누진세).\n\n- 1,400만원 이하: 6%\n- 1,400만원 ~ 5,000만원: 15%\n- 5,000만원 ~ 8,800만원: 24%\n- 8,800만원 ~ 1.5억원: 35%\n\n지방소득세는 소득세의 10%예요. 연말정산에서 각종 공제를 적용하면 실제 세부담은 줄어들어요.\n\n부양가족, 신용카드, 의료비 등 공제 항목을 잘 챙기면 환급금도 받을 수 있어요.",
-        },
-        {
-          heading: "연봉별 실수령액 표",
-          body: "2026년 기준 예상 월 실수령액이에요 (부양가족 1인, 비과세 제외 기준).\n\n- 연봉 3,000만원: 월 약 224만원\n- 연봉 4,000만원: 월 약 291만원\n- 연봉 5,000만원: 월 약 347만원\n- 연봉 6,000만원: 월 약 399만원\n- 연봉 7,000만원: 월 약 448만원\n- 연봉 8,000만원: 월 약 494만원\n- 연봉 1억원: 월 약 580만원\n\n정확한 금액은 Toolkio 연봉 계산기에서 확인하세요. 부양가족 수, 비과세 수당에 따라 달라져요.",
-        },
-      ],
-      en: [
-        {
-          heading: "Your Salary vs Take-Home Pay",
-          body: "A 50 million KRW salary doesn't mean 4.16 million per month. After deductions, you'll receive about 3.4-3.5 million KRW.\n\nAbout 700,000 KRW is deducted monthly for social insurance (National Pension, Health Insurance, Employment Insurance, Long-term Care) plus income tax.\n\nUse Toolkio's Salary Calculator for an exact breakdown.",
-        },
-        {
-          heading: "Social Insurance Deductions",
-          body: "Social insurance is split 50/50 between employee and employer. Employee's share:\n\n- National Pension: 4.5% of salary\n- Health Insurance: 3.545%\n- Long-term Care: 12.95% of health insurance\n- Employment Insurance: 0.9%\n\nTotal: about 9.4% of your monthly salary goes to social insurance.",
-        },
-        {
-          heading: "Income Tax Brackets",
-          body: "Korea uses progressive tax rates:\n\n- Up to 14M KRW: 6%\n- 14M - 50M: 15%\n- 50M - 88M: 24%\n- 88M - 150M: 35%\n\nLocal income tax is 10% of income tax. Year-end tax adjustments can reduce your actual tax burden through various deductions.",
-        },
-        {
-          heading: "Salary to Take-Home Pay Table",
-          body: "Estimated monthly take-home (single, no tax-free allowances):\n\n- 30M KRW annual: ~2.24M monthly\n- 40M: ~2.91M\n- 50M: ~3.47M\n- 60M: ~3.99M\n- 80M: ~4.94M\n- 100M: ~5.80M\n\nExact amounts vary by dependents and tax-free allowances. Check Toolkio's Salary Calculator for precise figures.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "비과세 수당이 뭔가요?",
-        answer: "식대(월 20만원), 차량유지비(월 20만원) 등 세금이 안 붙는 수당이에요. 비과세 수당이 많으면 실수령액이 더 높아져요.",
-      },
-      {
-        question: "연봉 협상할 때 실수령액 기준으로 해야 하나요?",
-        answer: "네, 연봉 자체보다 실수령액이 중요해요. 같은 연봉이라도 비과세 수당 구성에 따라 실수령액이 달라질 수 있어요.",
-      },
-      {
-        question: "프리랜서도 같은 방식으로 계산하나요?",
-        answer: "프리랜서는 4대보험 대신 3.3% 원천징수를 하고, 5월에 종합소득세 신고를 해요. 계산 구조가 다르므로 프리랜서 전용 계산기를 사용하세요.",
-      },
-    ],
-  },
-  {
-    slug: "gpa-calculator-complete-guide",
-    title: {
-      ko: "학점 계산기 사용법 — GPA 계산부터 장학금 기준까지 한번에",
-      en: "GPA Calculator Guide — From Grade Calculation to Scholarship Requirements",
-    },
-    description: {
-      ko: "학점(GPA) 계산이 헷갈린다면 이 가이드를 읽어보세요. 4.5 만점, 4.3 만점 기준 계산법부터 장학금 기준 학점까지 정리했어요.",
-      en: "Confused about GPA calculation? Learn how to calculate your GPA on different scales and check scholarship requirements.",
-    },
-    date: "2026-03-28",
-    toolId: "gpa-calculator",
-    image: "/images/blog/gpa-calculator-complete-guide.webp",
-    keywords: ["학점 계산기", "GPA 계산", "학점 계산 방법", "장학금 학점", "4.5 만점 환산", "gpa calculator"],
-    content: {
-      ko: [
-        {
-          heading: "학점(GPA) 계산이 왜 중요한가요?",
-          body: "취업할 때 이력서에 학점을 쓰잖아요. 장학금 신청할 때도 학점이 기준이고요. 교환학생, 대학원 진학에도 학점은 필수 스펙이에요.\n\n문제는 학교마다 기준이 달라요. 4.5 만점인 곳도 있고, 4.3 만점인 곳도 있어요. 전공 학점과 전체 학점도 따로 계산해야 하고요.\n\n이걸 하나하나 계산하면 머리가 아파요. 계산기를 쓰면 1분이면 끝나요.",
-        },
-        {
-          heading: "학점 계산 공식 — 4.5 만점 기준",
-          body: "학점 계산 공식은 간단해요.\n\n평점 = (각 과목 성적 x 학점 수)의 합 / 총 학점 수\n\n예를 들어볼게요.\n- 경영학원론 (3학점, A+) = 4.5 x 3 = 13.5\n- 회계학 (3학점, B+) = 3.5 x 3 = 10.5\n- 영어 (2학점, A0) = 4.0 x 2 = 8.0\n\n총합: 13.5 + 10.5 + 8.0 = 32.0\n총 학점: 3 + 3 + 2 = 8\n평점: 32.0 / 8 = 4.0\n\n손으로 계산하면 과목이 많을수록 힘들어요. Toolkio 학점 계산기를 쓰면 과목을 추가하고 성적만 선택하면 자동으로 나와요.",
-        },
-        {
-          heading: "4.5 만점 vs 4.3 만점 환산법",
-          body: "취업할 때 기업이 4.5 만점 기준으로 요구하는데 내 학교는 4.3 만점이면 환산이 필요해요.\n\n환산 공식: (내 학점 / 내 학교 만점) x 환산할 만점\n\n예: 4.3 만점에서 3.8이면\n(3.8 / 4.3) x 4.5 = 3.98\n\n반대로 4.5에서 4.3으로 환산하는 것도 같은 방식이에요.",
-        },
-        {
-          heading: "장학금 기준 학점 정리",
-          body: "장학금마다 기준이 달라요. 일반적인 기준을 정리하면 이래요.\n\n- 성적 우수 장학금: 보통 3.5~4.0 이상 (4.5 만점)\n- 국가장학금: 직전 학기 성적 충족 필요 (보통 B학점 이상)\n- 교내 근로장학금: 학점 기준이 비교적 낮음\n- 대학원 장학금: 학부 GPA 3.5 이상 권장\n\n매 학기 시작 전에 내 학점이 기준에 맞는지 확인하세요. Toolkio에서 바로 계산할 수 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "Why GPA Calculation Matters",
-          body: "Your GPA affects job applications, scholarships, graduate school admissions, and exchange programs. Different schools use different scales (4.0, 4.3, 4.5), making manual calculation confusing.\n\nA GPA calculator eliminates the guesswork — enter your courses and grades, get your GPA instantly.",
-        },
-        {
-          heading: "How to Calculate GPA",
-          body: "GPA = Sum of (Grade Points x Credit Hours) / Total Credit Hours\n\nExample:\n- Math (3 credits, A = 4.0): 4.0 x 3 = 12.0\n- English (3 credits, B+ = 3.3): 3.3 x 3 = 9.9\n- Science (4 credits, A- = 3.7): 3.7 x 4 = 14.8\n\nTotal: 36.7 / 10 = 3.67 GPA\n\nUse Toolkio's GPA calculator to do this automatically for any number of courses.",
-        },
-        {
-          heading: "Converting Between GPA Scales",
-          body: "Need to convert from a 4.5 scale to 4.0? Use this formula:\n\n(Your GPA / Your Scale) x Target Scale\n\nExample: 3.8 on a 4.5 scale = (3.8/4.5) x 4.0 = 3.38 on a 4.0 scale.",
-        },
-        {
-          heading: "Scholarship GPA Requirements",
-          body: "Common GPA requirements:\n- Merit scholarships: Usually 3.5+ on a 4.0 scale\n- Dean's list: Typically 3.5+\n- Graduate school: Most programs want 3.0+\n- Competitive programs: 3.7+\n\nCheck your GPA regularly with Toolkio to stay on track for scholarships and opportunities.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "P/F 과목은 학점 계산에 포함되나요?",
-        answer: "보통 P/F 과목은 GPA 계산에 포함되지 않아요. P(Pass)를 받으면 학점은 이수되지만 평점에는 영향을 주지 않아요.",
-      },
-      {
-        question: "재수강하면 학점이 어떻게 바뀌나요?",
-        answer: "대부분의 대학은 재수강 시 높은 성적으로 대체해줘요. 다만 성적표에 재수강 표시가 남을 수 있고, 일부 대학은 평균으로 계산해요.",
-      },
-      {
-        question: "전공 학점과 전체 학점 중 뭐가 더 중요한가요?",
-        answer: "취업 시 기업마다 달라요. 대기업은 전체 학점을, 전문 직종은 전공 학점을 더 볼 수 있어요. 둘 다 관리하는 게 안전해요.",
-      },
-    ],
-  },
-  {
-    slug: "percent-calculator-practical-guide",
-    title: {
-      ko: "퍼센트 계산 공식 총정리 — 할인율, 증가율, 비율 한번에",
-      en: "Percent Calculator Guide — Discounts, Increases, and Ratios Made Easy",
-    },
-    description: {
-      ko: "퍼센트 계산이 헷갈릴 때 이 가이드를 보세요. 할인율, 증가율, 비율 계산법을 예시와 함께 쉽게 정리했어요.",
-      en: "Confused by percentage calculations? Learn discount rates, increase rates, and ratios with easy examples.",
-    },
-    date: "2026-03-28",
-    toolId: "percent-calculator",
-    image: "/images/blog/percent-calculator-practical-guide.webp",
-    keywords: ["퍼센트 계산", "할인율 계산", "증가율 계산", "비율 계산기", "percent calculator"],
-    content: {
-      ko: [
-        {
-          heading: "퍼센트 계산이 필요한 순간들",
-          body: "쇼핑할 때 '30% 할인'이면 얼마 깎이는 건지 바로 계산이 되시나요? 월급이 5% 인상되면 실제로 얼마가 오르는 건지요?\n\n퍼센트는 일상에서 정말 자주 써요.\n- 쇼핑: 할인율 계산\n- 직장: 연봉 인상률\n- 투자: 수익률 계산\n- 다이어트: 체중 감소율\n- 학교: 성적 비율\n\n공식을 외우기 어렵다면 Toolkio 퍼센트 계산기를 쓰면 숫자만 넣으면 돼요.",
-        },
-        {
-          heading: "기본 퍼센트 계산 3가지",
-          body: "가장 자주 쓰는 퍼센트 계산 3가지예요.\n\n1. A의 B%는 얼마?\n공식: A x (B / 100)\n예: 50,000원의 30% = 50,000 x 0.3 = 15,000원\n\n2. A는 B의 몇 %?\n공식: (A / B) x 100\n예: 30은 120의 몇 %? = (30 / 120) x 100 = 25%\n\n3. A에서 B로 변했을 때 변화율은?\n공식: ((B - A) / A) x 100\n예: 80에서 100으로 = ((100 - 80) / 80) x 100 = 25% 증가",
-        },
-        {
-          heading: "실생활 활용 예시",
-          body: "할인 계산 예시예요.\n원가 89,000원, 할인율 40%\n할인 금액: 89,000 x 0.4 = 35,600원\n결제 금액: 89,000 - 35,600 = 53,400원\n\n연봉 인상 예시예요.\n현재 연봉 3,600만원, 인상률 5%\n인상 금액: 3,600 x 0.05 = 180만원\n새 연봉: 3,780만원\n\n투자 수익률 예시예요.\n투자 원금 1,000만원, 현재 가치 1,150만원\n수익률: ((1,150 - 1,000) / 1,000) x 100 = 15%",
-        },
-        {
-          heading: "Toolkio 퍼센트 계산기 사용법",
-          body: "계산할 때마다 공식을 떠올리기 귀���으시죠? Toolkio 퍼센트 계산기는 4가지 모드를 제공해요.\n\n- A의 B% 구하기\n- A는 B의 몇 %인지\n- A에서 B로 증감률\n- A에 B%를 더하기/빼기\n\n숫자만 입력하면 바로 결과가 나와요. 쇼핑할 때, 연봉 협상할 때, 투자 수익 계산할 때 바로 꺼내 쓰세요.",
-        },
-      ],
-      en: [
-        {
-          heading: "When You Need Percentage Calculations",
-          body: "Percentages are everywhere: shopping discounts, salary raises, investment returns, exam scores, and more. Quick mental math is great, but for accuracy, a calculator helps.\n\nCommon scenarios:\n- 30% off a $89 item = ?\n- 5% salary increase on $60,000 = ?\n- Stock went from $100 to $115 — what's the gain %?",
-        },
-        {
-          heading: "Three Essential Percent Formulas",
-          body: "1. What is B% of A?\nFormula: A x (B / 100)\nExample: 30% of 50,000 = 15,000\n\n2. A is what % of B?\nFormula: (A / B) x 100\nExample: 30 is what % of 120? = 25%\n\n3. Percent change from A to B?\nFormula: ((B - A) / A) x 100\nExample: 80 to 100 = 25% increase",
-        },
-        {
-          heading: "Real-Life Examples",
-          body: "Shopping: Original $89, 40% off = $53.40\nSalary: $60,000 + 5% raise = $63,000\nInvestment: $10,000 to $11,500 = 15% return\nDiet: 80kg to 72kg = 10% weight loss",
-        },
-        {
-          heading: "Using Toolkio Percent Calculator",
-          body: "Toolkio offers four calculation modes:\n- Find B% of A\n- Find what % A is of B\n- Calculate % change\n- Add/subtract a % from a number\n\nJust enter numbers and get instant results. Bookmark it for quick access during shopping, work, or investing.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "퍼센트와 퍼센트포인트의 차이는?",
-        answer: "퍼센트는 비율의 변화이고, 퍼센트포인트는 절대적인 차이예요. 예: 금리가 3%에서 5%로 오르면 2%p(퍼센트포인트) 상승, 66.7% 증가예요.",
-      },
-      {
-        question: "복리 계산도 퍼센트 계산기로 할 수 있나요?",
-        answer: "단순 퍼센트 계산은 가능하지만 복리는 기간별 누적이라 별도 계산이 필요해요. 투자 수익률은 단리/복리를 구분해서 보세요.",
-      },
-      {
-        question: "���금 포함 가격은 어떻게 계산하나요?",
-        answer: "부가세 10% 포함 가격 = 원가 x 1.1이에요. 예: 10,000원 상품의 세금 포함 가격은 11,000원이에요.",
-      },
-    ],
-  },
-  {
-    slug: "unit-converter-tips-guide",
-    title: {
-      ko: "단위 변환 꿀팁 — 해외여행, 요리, 운동에 꼭 필요한 변환표",
-      en: "Unit Conversion Tips — Essential Conversions for Travel, Cooking & Fitness",
-    },
-    description: {
-      ko: "kg과 lb, cm과 inch, 섭씨와 화씨 변환이 헷갈린다면 이 가이드를 보세요. 자주 쓰는 단위 변환을 한곳에 정리했어요.",
-      en: "Confused by kg to lb, cm to inch, or Celsius to Fahrenheit? Find all essential unit conversions in one guide.",
-    },
-    date: "2026-03-28",
-    toolId: "unit-converter",
-    image: "/images/blog/unit-converter-tips-guide.webp",
-    keywords: ["단위 변환", "kg lb 변환", "cm inch", "섭씨 화씨", "unit converter", "단위 계산기"],
-    content: {
-      ko: [
-        {
-          heading: "단위 변환이 필요한 순간",
-          body: "해외여행 가서 날씨를 보니 75°F. 이게 몇 도인 거지?\n미국 레시피에 1 cup이 나왔는데 ml로 얼마지?\n운동 앱이 마일로 표시되는데 km로 환산하면?\n\n글로벌 시대에 단위 변환은 생각보다 자주 필요해요. 매번 검색하기 귀찮다면 Toolkio 단위 변환기를 즐겨찾기 해두세요.",
-        },
-        {
-          heading: "자주 쓰는 길이 변환",
-          body: "- 1 inch = 2.54 cm\n- 1 feet = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n\n실생활 예시예요.\n- 키 5피트 8인치 = 약 173cm\n- 마라톤 26.2마일 = 42.195km\n- TV 55인치 = 대각선 약 140cm",
-        },
-        {
-          heading: "무게와 온도 변환",
-          body: "무게 변환이에요.\n- 1 lb(파운드) = 0.4536 kg\n- 1 oz(온스) = 28.35 g\n- 1 kg = 2.205 lb\n\n온도 변환이에요.\n- °C에서 °F: (°C x 9/5) + 32\n- °F에서 °C: (°F - 32) x 5/9\n\n외우기 쉬운 기준점이에요.\n- 0°C = 32°F (물이 어는 온도)\n- 100°C = 212°F (물이 끓는 온도)\n- 37°C = 98.6°F (체온)\n- 20°C = 68°F (실온)",
-        },
-        {
-          heading: "요리할 때 필요한 변환",
-          body: "해외 레시피를 따라할 때 자주 쓰는 변환이에요.\n\n- 1 cup = 약 240 ml\n- 1 tablespoon(큰술) = 15 ml\n- 1 teaspoon(작은술) = 5 ml\n- 1 oz = 약 30 ml (액체 기준)\n\n버터 변환도 자주 헷갈려요.\n- 1 stick of butter = 113g = 약 8 큰술\n- 1 cup of butter = 227g\n\nToolkio 단위 변환기에서 카테고리별로 바로 변환할 수 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "When You Need Unit Conversions",
-          body: "Traveling abroad, following international recipes, or using fitness apps — unit conversions come up more often than you think. Instead of searching every time, bookmark Toolkio's unit converter for instant results.",
-        },
-        {
-          heading: "Common Length Conversions",
-          body: "- 1 inch = 2.54 cm\n- 1 foot = 30.48 cm\n- 1 mile = 1.609 km\n- 1 meter = 3.281 feet\n\nQuick references:\n- 5'8\" = 173 cm\n- Marathon: 26.2 miles = 42.195 km\n- 55-inch TV = 140 cm diagonal",
-        },
-        {
-          heading: "Weight and Temperature",
-          body: "Weight:\n- 1 lb = 0.4536 kg\n- 1 oz = 28.35 g\n- 1 kg = 2.205 lb\n\nTemperature:\n- 0°C = 32°F (water freezes)\n- 100°C = 212°F (water boils)\n- 37°C = 98.6°F (body temperature)\n- Quick formula: °F = (°C x 9/5) + 32",
-        },
-        {
-          heading: "Cooking Conversions",
-          body: "- 1 cup = 240 ml\n- 1 tablespoon = 15 ml\n- 1 teaspoon = 5 ml\n- 1 stick butter = 113g\n\nUse Toolkio's converter for instant category-based conversions.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "평(坪)을 제곱미터로 어떻게 환산하나요?",
-        answer: "1평 = 약 3.3058 m²이에요. 예를 들어 30평 아파트는 약 99.17 m²예요.",
-      },
-      {
-        question: "마일과 킬로미터 빠르게 환산하는 팁이 있나요?",
-        answer: "마일 x 1.6 = 대략적인 km예요. 60마일 = 약 96km. 정확한 변환은 Toolkio 단위 변환기를 쓰세요.",
-      },
-      {
-        question: "해외직구 할 때 사이즈 변환은 어떻게 하나요?",
-        answer: "신발은 US/UK/EU 사이즈 체계가 달라요. 옷은 S/M/L 외에 숫자 사이즈도 나라마다 달라요. 각 브랜드 사이즈 차트를 확인하는 게 가장 정확해요.",
-      },
-    ],
-  },
-  {
-    slug: "bmr-calculator-diet-guide",
-    title: {
-      ko: "기초대��량 계산으로 다이어트 시작하기 — BMR 활용 가이드",
-      en: "Start Your Diet with BMR Calculation — Basal Metabolic Rate Guide",
-    },
-    description: {
-      ko: "다이어트 전에 기초대사량(BMR)부터 알아야 해요. BMR 계산법, 하루 권장 칼로리, 다이어트 적용법을 정리했어요.",
-      en: "Know your BMR before starting a diet. Learn how to calculate your basal metabolic rate and daily calorie needs.",
-    },
-    date: "2026-03-28",
-    toolId: "bmr-calculator",
-    image: "/images/blog/bmr-calculator-diet-guide.webp",
-    keywords: ["기초대사량", "BMR 계산", "다이어트 칼로리", "하루 권장 칼로리", "bmr calculator"],
-    content: {
-      ko: [
-        {
-          heading: "다이어트, 칼로리부터 알아야 해요",
-          body: "무작정 굶으면 살이 빠질까요? 빠지긴 해요. 근데 근육이 빠지고 요요가 와요.\n\n건강하게 빼려면 내 몸이 하루에 얼마나 에너지를 쓰는지 알아야 해요. 이게 기초대사량(BMR)이에요.\n\n기초대사량은 아무것도 안 하고 누워만 있어도 몸이 쓰는 에너지예요. 심장 박동, 호흡, 체온 유지 등 생존에 필요한 최소 칼로리죠.",
-        },
-        {
-          heading: "BMR 계산 공식",
-          body: "해리스-베네딕트 공식이 가장 많이 쓰여요.\n\n남성: 88.362 + (13.397 x 체중kg) + (4.799 x 키cm) - (5.677 x 나이)\n여성: 447.593 + (9.247 x 체중kg) + (3.098 x 키cm) - (4.330 x 나이)\n\n예시(30세 여성, 60kg, 165cm):\n447.593 + (9.247 x 60) + (3.098 x 165) - (4.330 x 30)\n= 447.593 + 554.82 + 511.17 - 129.9\n= 약 1,384 kcal\n\n복잡하죠? Toolkio BMR 계산기에 숫자만 넣으면 바로 나와요.",
-        },
-        {
-          heading: "TDEE — 실제 하루 소비 칼로리",
-          body: "BMR은 기본값이에요. 실제로는 활동량에 따라 더 많이 써요.\n\nTDEE = BMR x 활동 계수\n\n활동 계수가 이래요.\n- 거의 안 움직임 (사무직): x 1.2\n- 가벼운 운동 (주 1~3회): x 1.375\n- 보통 운동 (주 3~5회): x 1.55\n- 심한 운동 (주 6~7회): x 1.725\n- 매우 심한 운동 (운동선수): x 1.9\n\n위 예시의 여성이 가벼운 운동을 한다면:\n1,384 x 1.375 = 약 1,903 kcal/일\n\n이게 하루에 먹어야 하는 칼로리 기준이에요.",
-        },
-        {
-          heading: "다이어트에 적용하는 법",
-          body: "체중 감량의 핵심은 칼로리 적자예요.\n\nTDEE보다 300~500kcal 적게 먹으면 건강하게 빠져요.\n\n위 예시라면:\n유지: 1,903 kcal\n다이어트: 1,400~1,600 kcal\n\n주의할 점이에요.\n- BMR 이하로 먹으면 안 돼요 (1,384 이하 X)\n- 너무 적게 먹으면 근손실 + 요요\n- 단백질은 체중 1kg당 1.2~1.6g 유지\n- 2주에 0.5~1kg 감량이 적당해요\n\nToolkio BMR 계산기로 내 기초대사량을 먼저 확인하고 시작하세요.",
-        },
-      ],
-      en: [
-        {
-          heading: "Why You Need to Know Your BMR",
-          body: "BMR (Basal Metabolic Rate) is the calories your body burns at rest — just to keep you alive. Knowing it is the first step to any diet plan.\n\nWithout knowing your BMR, you might eat too little (losing muscle) or too much (not losing weight).",
-        },
-        {
-          heading: "How to Calculate BMR",
-          body: "Harris-Benedict Equation:\n\nMen: 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) - (5.677 x age)\nWomen: 447.593 + (9.247 x weight) + (3.098 x height) - (4.330 x age)\n\nOr simply use Toolkio's BMR calculator for instant results.",
-        },
-        {
-          heading: "TDEE — Your Daily Calorie Needs",
-          body: "TDEE = BMR x Activity Factor\n\n- Sedentary: x 1.2\n- Light exercise: x 1.375\n- Moderate: x 1.55\n- Heavy: x 1.725\n- Athlete: x 1.9\n\nTDEE tells you how many calories you actually burn each day including activity.",
-        },
-        {
-          heading: "Applying BMR to Your Diet",
-          body: "For weight loss: eat 300-500 kcal below your TDEE.\nNever go below your BMR — that's the minimum your body needs.\n\nAim for 0.5-1 kg loss per 2 weeks. Keep protein at 1.2-1.6g per kg of body weight.\n\nStart by calculating your BMR with Toolkio.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "기초대사량이 낮으면 살이 잘 찌나요?",
-        answer: "BMR이 낮으면 같은 양을 먹어도 칼로리 소비가 적어서 살이 찔 수 있어요. 근육량을 늘리면 BMR이 올라가요.",
-      },
-      {
-        question: "나이가 들면 기초대사량이 줄어드나요?",
-        answer: "네, 나이가 들수록 근육량이 줄어서 BMR이 감소해요. 그래서 나이 들수록 운동이 더 중요해요.",
-      },
-      {
-        question: "BMR과 BMI의 차이는 뭔가요?",
-        answer: "BMR은 기초대사량(칼로리 소비)이고, BMI는 체질량지수(비만도)예요. 완전히 다른 지표이니 혼동하지 마세요.",
-      },
-    ],
-  },
-  {
+              {
     slug: "youtube-thumbnail-design-guide",
     title: {
       ko: "유튜브 썸네일 만드는 법 — 클릭률 높이는 디자인 원칙 5가지",
@@ -5849,7 +5168,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "무료로 썸네일 만드는 방법",
           body: "유료 도구가 없어도 충분히 좋은 썸네일을 만들 수 있어요.\n\n무료 도구 추천이에요.\n- Canva: 유튜브 썸네일 템플릿이 풍부해요\n- GIMP: 포토샵 대용 무료 프로그램\n- Pixlr: 웹에서 바로 편집 가능\n\n만드는 순서예요.\n1. Canva에서 YouTube Thumbnail 템플릿 검색\n2. 마음에 드는 템플릿 선택\n3. 텍스트와 이미지 교체\n4. 색상 조정\n5. 1280x720으로 다운로드\n\n5분이면 전문가 수준의 썸네일을 만들 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -5867,7 +5186,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Free Thumbnail Creation Tools",
           body: "You don't need Photoshop:\n- Canva: YouTube thumbnail templates\n- GIMP: Free Photoshop alternative\n- Pixlr: Browser-based editor\n\nSteps: Pick a Canva template > Replace text/images > Adjust colors > Download at 1280x720. Takes about 5 minutes.",
-        },
+        }
       ],
     },
     faq: [
@@ -5882,7 +5201,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "모바일에서도 잘 보이게 하려면?",
         answer: "유튜브 시청의 70% 이상이 모바일이에요. 글자를 크게, 요소를 단순하게 만드세요. 작은 화면에서 미리 확인하는 게 좋아요.",
-      },
+      }
     ],
   },
   {
@@ -5916,7 +5235,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio에서 해시값 생성하는 법",
           body: "Toolkio의 해시 생성기를 쓰면 텍스트를 입력하고 원하는 알고리즘을 선택하면 바로 해시값이 나와요. MD5, SHA-1, SHA-256, SHA-512 등 다양한 알고리즘을 지원하거든요.\n\n사용법은 간단해요. 텍스트를 입력하면 실시간으로 여러 해시값을 한눈에 비교할 수 있어요. 파일 해시 검증이 필요하면 다운로드한 파일의 해시와 공식 해시를 비교해보세요.\n\n브라우저에서 바로 계산되니까 입력한 데이터가 서버로 전송되지 않아요. 민감한 정보도 안심하고 사용할 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -5934,7 +5253,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Generate Hashes with Toolkio",
           body: "Toolkio's hash generator lets you type or paste any text and instantly see hash outputs for multiple algorithms side by side — MD5, SHA-1, SHA-256, and SHA-512.\n\nSimply enter your text and the hashes update in real time. You can copy any result with one click. All computation happens in your browser, so your data never leaves your device.",
-        },
+        }
       ],
     },
     faq: [
@@ -5953,7 +5272,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "해시값으로 원래 비밀번호를 알아낼 수 있나요?",
         answer: "이론적으로는 불가능해요. 다만 간단한 비밀번호는 레인보우 테이블 같은 사전 공격으로 찾아낼 수 있어서, 솔트(salt)를 추가하는 게 중요해요.",
-      },
+      }
     ],
   },
   {
@@ -5987,7 +5306,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 정규식 테스터로 연습하기",
           body: "정규식은 직접 테스트하면서 배우는 게 가장 빨라요. Toolkio의 정규식 테스터에 패턴을 입력하면 매칭되는 부분이 실시간으로 하이라이트되거든요.\n\n플래그(g, i, m 등)도 선택할 수 있어서 전역 검색이나 대소문자 무시 같은 옵션을 바로 테스트할 수 있어요. 매치 결과와 캡처 그룹도 한눈에 보여주니까 복잡한 패턴도 금방 이해할 수 있을 거예요.\n\n처음에는 간단한 패턴부터 시작하세요. 숫자만 찾기(\\d+), 이메일 찾기, 전화번호 찾기 순서로 연습하면 금방 익숙해져요.",
-        },
+        }
       ],
       en: [
         {
@@ -6005,7 +5324,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Practice with Toolkio's Regex Tester",
           body: "The fastest way to learn regex is hands-on testing. Toolkio's regex tester highlights matches in real time as you type your pattern.\n\nYou can toggle flags like global (g), case-insensitive (i), and multiline (m). Match results and capture groups are displayed clearly. Try starting with simple patterns like \\d+ (find numbers) and work your way up to email and URL patterns.",
-        },
+        }
       ],
     },
     faq: [
@@ -6024,7 +5343,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "정규식이 너무 복잡해지면 어떻게 하나요?",
         answer: "긴 정규식은 여러 개로 나누는 게 좋아요. 또는 주석을 지원하는 x 플래그를 쓰면 가독성을 높일 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -6058,7 +5377,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio CSS 압축 도구 사용법",
           body: "Toolkio의 CSS Minifier에 원본 CSS 코드를 붙여넣으면 바로 압축된 결과가 나와요. 압축 전후 크기 비교도 보여주거든요.\n\n사용법은 간단해요. CSS 코드를 입력 영역에 붙여넣으면 자동으로 압축된 결과를 보여줘요. 복사 버튼 하나로 결과를 가져갈 수 있어요.\n\n프로덕션 배포 전에 CSS를 압축하는 습관을 들이면 웹사이트 성능이 꾸준히 좋아질 거예요. 빌드 도구에 통합하면 더 편하지만, 빠르게 한두 파일만 처리할 때는 온라인 도구가 가장 간편해요.",
-        },
+        }
       ],
       en: [
         {
@@ -6076,7 +5395,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio's CSS Minifier",
           body: "Paste your CSS code into Toolkio's CSS Minifier and get the compressed output instantly. The tool shows the before-and-after file size so you can see exactly how much you saved.\n\nFor one-off tasks, an online tool is the fastest option. For production workflows, integrate minification into your build process using tools like PostCSS, cssnano, or your bundler's built-in minifier.",
-        },
+        }
       ],
     },
     faq: [
@@ -6091,7 +5410,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "CSS 압축만으로 속도가 크게 빨라지나요?",
         answer: "CSS 압축 하나만으로 극적인 변화가 생기진 않지만, 이미지 최적화, JS 압축, 캐싱과 함께 적용하면 종합적으로 큰 차이가 나요.",
-      },
+      }
     ],
   },
   {
@@ -6125,7 +5444,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio에서 Lorem Ipsum 생성하기",
           body: "Toolkio의 Lorem Ipsum 생성기를 쓰면 원하는 분량의 더미 텍스트를 바로 만들 수 있어요. 단락 수나 단어 수를 지정할 수 있어서 필요한 만큼만 생성하면 돼요.\n\n사용법은 정말 간단해요. 단락 수를 선택하고 생성 버튼을 누르면 끝이에요. 복사 버튼으로 바로 클립보드에 담을 수 있어요.\n\n디자인 작업할 때 매번 검색해서 복사하는 것보다 이런 도구를 즐겨찾기 해두면 시간을 아낄 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -6143,7 +5462,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Generate Lorem Ipsum with Toolkio",
           body: "Toolkio's Lorem Ipsum generator lets you specify the number of paragraphs or words you need. Click generate, copy the result, and paste it into your design.\n\nIt is faster than searching the web every time you need filler text. Bookmark the tool and save yourself a few minutes on every project.",
-        },
+        }
       ],
     },
     faq: [
@@ -6158,7 +5477,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "더미 텍스트를 실제 사이트에 남겨두면 안 되나요?",
         answer: "절대 안 돼요. 검색 엔진이 의미 없는 콘텐츠로 판단해서 SEO에 악영향을 줄 수 있어요. 배포 전에 반드시 실제 콘텐츠로 교체해야 해요.",
-      },
+      }
     ],
   },
   {
@@ -6192,7 +5511,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio UUID 생성기 사용법",
           body: "Toolkio의 UUID 생성기를 쓰면 클릭 한 번으로 UUID를 만들 수 있어요. 여러 개를 한꺼번에 생성하는 것도 가능하거든요.\n\n복사 버튼으로 바로 클립보드에 담을 수 있고, 하이픈 없는 형태나 대문자 변환도 지원해요. 개발 중에 테스트용 UUID가 필요할 때 즐겨찾기 해두면 편리해요.\n\n모든 생성은 브라우저에서 이루어지니까 서버로 데이터가 전송될 걱정도 없어요.",
-        },
+        }
       ],
       en: [
         {
@@ -6210,7 +5529,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Generate UUIDs with Toolkio",
           body: "Toolkio's UUID Generator creates UUIDs with a single click. You can generate multiple at once and copy them instantly. All generation happens in your browser — no data is sent to any server.",
-        },
+        }
       ],
     },
     faq: [
@@ -6229,7 +5548,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "UUID를 데이터베이스 키로 쓰면 성능이 떨어지나요?",
         answer: "v4는 랜덤이라 인덱스 성능이 약간 떨어질 수 있어요. 성능이 중요하면 정렬 가능한 v7이나 ULID를 고려해보세요.",
-      },
+      }
     ],
   },
   {
@@ -6263,7 +5582,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio Diff Checker 사용법",
           body: "Toolkio의 Diff Checker에 두 텍스트를 각각 붙여넣으면 차이점이 색상으로 하이라이트돼서 바로 보여요. 추가, 삭제, 변경된 부분을 한눈에 확인할 수 있어요.\n\n사용법은 간단해요. 왼쪽에 원본, 오른쪽에 수정본을 넣고 비교 버튼을 누르면 돼요. 결과를 보면서 수정 사항을 빠르게 검토할 수 있어요.\n\n별도 프로그램 설치 없이 브라우저에서 바로 쓸 수 있어서, 급하게 비교할 일이 있을 때 정말 편리해요.",
-        },
+        }
       ],
       en: [
         {
@@ -6281,7 +5600,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio's Diff Checker",
           body: "Paste two texts into Toolkio's Diff Checker and see differences highlighted in color immediately. No installation needed — it runs entirely in your browser.\n\nPut the original on the left, the modified version on the right, and click compare. Quick, simple, and always available.",
-        },
+        }
       ],
     },
     faq: [
@@ -6296,7 +5615,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Git이랑 Diff 도구는 뭐가 다른가요?",
         answer: "Git은 버전 관리 시스템이고, Diff는 두 텍스트의 차이를 비교하는 기능이에요. Git 안에도 diff 기능이 포함되어 있어요.",
-      },
+      }
     ],
   },
   {
@@ -6330,7 +5649,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 진법 변환기 사용법",
           body: "Toolkio의 진법 변환기에 숫자를 입력하고 원래 진법과 변환할 진법을 선택하면 바로 결과가 나와요. 2진수, 8진수, 10진수, 16진수를 모두 지원하거든요.\n\n입력하면 동시에 모든 진법의 결과를 보여줘서 한눈에 비교할 수 있어요. 프로그래밍이나 네트워크 공부할 때 정말 유용해요.\n\n계산기 앱의 프로그래머 모드보다 직관적이고, 큰 숫자도 빠르게 처리할 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -6348,7 +5667,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Convert with Toolkio",
           body: "Toolkio's Number Base Converter shows results in all bases simultaneously — enter a number in any base and see binary, octal, decimal, and hex values at once.\n\nMore intuitive than a calculator's programmer mode and handles large numbers without issues.",
-        },
+        }
       ],
     },
     faq: [
@@ -6363,7 +5682,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "2진수를 16진수로 빨리 바꾸는 방법이 있나요?",
         answer: "4자리씩 끊어서 외우면 돼요. 0000=0, 0001=1, ..., 1010=A, 1111=F. 이 16가지만 알면 어떤 2진수도 바로 변환할 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -6397,7 +5716,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 인스타그램 줄바꿈 도구",
           body: "Toolkio의 인스타그램 줄바꿈 도구에 텍스트를 입력하면 인스타그램에서 줄바꿈이 유지되는 형식으로 자동 변환해줘요.\n\n사용법은 정말 간단해요. 원하는 텍스트를 입력하고, 변환 버튼을 누르고, 결과를 복사해서 인스타그램에 붙여넣으면 끝이에요. 빈 줄에 보이지 않는 문자가 자동으로 들어가서 줄바꿈이 깨지지 않아요.\n\n캡션뿐 아니라 바이오, 댓글에서도 사용할 수 있어요. 인스타그램을 자주 쓰는 분이라면 즐겨찾기 해두면 매번 고생하지 않아도 돼요.",
-        },
+        }
       ],
       en: [
         {
@@ -6415,7 +5734,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio's Instagram Line Break Tool",
           body: "Toolkio's tool converts your text into an Instagram-compatible format automatically. Type your text, click convert, copy the result, and paste it into Instagram. Works for captions, bios, and comments.\n\nNo more worrying about disappearing line breaks — the tool handles everything for you.",
-        },
+        }
       ],
     },
     faq: [
@@ -6434,7 +5753,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "PC에서 작성하면 무조건 줄바꿈이 되나요?",
         answer: "PC 웹에서 작성하면 기본 줄바꿈은 잘 유지되지만, 빈 줄(연속 엔터)은 여전히 사라질 수 있어요. 확실하게 하려면 줄바꿈 도구를 쓰는 게 좋아요.",
-      },
+      }
     ],
   },
   {
@@ -6468,7 +5787,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Base64 사용 시 주의사항",
           body: "Base64는 암호화가 아니에요. 누구나 쉽게 디코딩할 수 있기 때문에 비밀번호나 민감한 정보를 Base64로만 인코딩해서 보내면 안 돼요.\n\n또한 크기가 33% 증가하기 때문에 큰 파일에는 적합하지 않아요. 수 KB 이하의 작은 데이터에 사용하는 게 좋아요.\n\nURL에서 Base64를 사용할 때는 +와 /가 특수문자로 처리될 수 있어서 URL-safe Base64(-와 _로 대체)를 사용해야 해요.",
-        },
+        }
       ],
       en: [
         {
@@ -6486,7 +5805,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Important Considerations",
           body: "Base64 is NOT encryption — anyone can decode it. Never use it alone to protect sensitive data.\n\nFor URLs, use URL-safe Base64 (replacing + with - and / with _) to avoid encoding conflicts.\n\nAvoid Base64 for large files due to the 33% size overhead. Use it for small assets like icons and authentication tokens.",
-        },
+        }
       ],
     },
     faq: [
@@ -6501,7 +5820,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "이미지를 Base64로 변환하면 어떤 장점이 있나요?",
         answer: "작은 이미지(아이콘 등)를 HTML에 직접 넣으면 별도 HTTP 요청 없이 로딩할 수 있어서 페이지 속도가 빨라져요. 단, 큰 이미지에는 비효율적이에요.",
-      },
+      }
     ],
   },
   {
@@ -6535,7 +5854,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "정규식 디버깅 팁",
           body: "정규식이 예상대로 동작하지 않을 때 확인할 것들이에요.\n\n1. 특수 문자를 이스케이프했는지 확인하세요. 점(.), 괄호(()), 대괄호([]) 등은 \\를 앞에 붙여야 문자 그대로 매칭돼요.\n2. 탐욕적 vs 게으른 매칭을 이해하세요. .*은 가능한 많이, .*?은 가능한 적게 매칭해요.\n3. 작은 단위부터 테스트하세요. 전체 패턴을 한 번에 쓰지 말고 부분부터 확인하면 디버깅이 쉬워요.\n4. 플래그를 확인하세요. g(전역), i(대소문자 무시), m(멀티라인) 같은 플래그가 결과에 영향을 줘요.",
-        },
+        }
       ],
       en: [
         {
@@ -6553,7 +5872,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Debugging Tips",
           body: "When regex doesn't work as expected:\n1. Check special character escaping\n2. Understand greedy vs lazy matching (.* vs .*?)\n3. Test small parts before the full pattern\n4. Verify your flags (g, i, m)",
-        },
+        }
       ],
     },
     faq: [
@@ -6568,7 +5887,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "정규식으로 HTML을 파싱해도 되나요?",
         answer: "간단한 태그 제거는 가능하지만, 복잡한 HTML 구조를 정규식으로 파싱하는 건 권장하지 않아요. HTML 파서를 사용하는 게 안전해요.",
-      },
+      }
     ],
   },
   {
@@ -6602,7 +5921,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "시간대(Timezone) 주의사항",
           body: "타임스탬프 자체는 시간대가 없어요. 항상 UTC 기준이에요. 하지만 사람이 읽을 수 있는 날짜로 변환할 때는 시간대를 고려해야 해요.\n\n한국(KST)은 UTC+9이기 때문에 같은 타임스탬프라도 한국 시간으로 보면 9시간 앞서요.\n\n개발할 때 가장 흔한 실수가 시간대를 빼먹는 거예요. 서버는 UTC로 저장하고, 화면에 보여줄 때만 로컬 시간으로 변환하는 게 안전해요.",
-        },
+        }
       ],
       en: [
         {
@@ -6620,7 +5939,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Timezone Considerations",
           body: "Timestamps are always UTC — they have no timezone. When converting to human-readable dates, you must specify the timezone.\n\nBest practice: store in UTC, convert to local time only for display.",
-        },
+        }
       ],
     },
     faq: [
@@ -6635,7 +5954,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "음수 타임스탬프도 있나요?",
         answer: "네, 1970년 이전 날짜는 음수로 표현돼요. 예를 들어 1969년 12월 31일은 -86400이에요.",
-      },
+      }
     ],
   },
   {
@@ -6669,7 +5988,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "웹사이트별 최적 이미지 설정",
           body: "용도에 따라 권장하는 이미지 설정이 달라요.\n\n- 블로그 본문 이미지: 너비 800-1200px, WebP 형식, 80% 품질\n- 썸네일: 너비 400-600px, WebP 형식, 75% 품질\n- 히어로 이미지(배너): 너비 1920px, WebP 형식, 85% 품질\n- 아이콘/로고: SVG 형식 (벡터)\n- SNS 공유 이미지: 1200x630px, JPEG 형식, 85% 품질\n\n대부분의 경우 이미지 한 장당 100-200KB 이내로 유지하는 게 목표예요.",
-        },
+        }
       ],
       en: [
         {
@@ -6687,7 +6006,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Recommended Settings by Use Case",
           body: "Blog images: 800-1200px wide, WebP, 80% quality\nThumbnails: 400-600px, WebP, 75% quality\nHero/banner: 1920px, WebP, 85% quality\nIcons/logos: SVG format\nSocial sharing: 1200x630px, JPEG, 85% quality\n\nAim for under 200KB per image.",
-        },
+        }
       ],
     },
     faq: [
@@ -6702,7 +6021,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "이미지 압축 도구는 안전한가요?",
         answer: "Toolkio의 이미지 압축은 브라우저에서 처리되기 때문에 이미지가 서버로 전송되지 않아요. 개인 사진도 안심하고 압축할 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -6736,7 +6055,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "정규식 테스트 도구 활용 팁",
           body: "정규식을 작성할 때 가장 좋은 방법은 테스트 도구에서 실시간으로 결과를 확인하면서 작성하는 거예요. 머릿속으로만 생각하면 실수하기 쉽거든요.\n\nToolkio의 정규식 테스터를 활용하는 팁 몇 가지를 알려드릴게요.\n\n첫째, 간단한 패턴부터 시작하세요. 처음부터 복잡한 패턴을 만들려고 하지 말고, 핵심 부분만 먼저 작성한 다음 조건을 하나씩 추가하는 게 효율적이에요.\n\n둘째, 플래그를 활용하세요. g 플래그는 전체 검색, i 플래그는 대소문자 무시, m 플래그는 여러 줄 모드예요. 용도에 맞게 설정하면 원하는 결과를 정확하게 얻을 수 있어요.\n\n셋째, 테스트 데이터를 다양하게 준비하세요. 정상적인 입력뿐 아니라 비정상적인 입력도 함께 테스트해야 예외 상황을 잡을 수 있어요. 이메일 검증이라면 올바른 이메일과 함께 @ 없는 문자열, 점이 없는 문자열 등도 테스트해보세요.\n\n넷째, 성능을 고려하세요. 탐욕적(greedy) 매칭 대신 게으른(lazy) 매칭을 사용하면 불필요한 역추적을 줄여서 처리 속도가 빨라져요."
-        },
+        }
       ],
       en: [
         {
@@ -6754,7 +6073,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Tips for Effective Regex Testing",
           body: "The best way to write regex is to build and test incrementally in a live tool rather than trying to construct the perfect pattern mentally.\n\nStart simple. Write the core pattern first, then add conditions one at a time. This approach makes debugging much easier when something does not match as expected.\n\nUse flags wisely. The g flag enables global matching, i makes the search case-insensitive, and m enables multiline mode. Choosing the right flags avoids unexpected results.\n\nPrepare diverse test data. Test with both valid and invalid inputs. For email validation, include strings without @ signs, without dots, and with multiple @ symbols.\n\nConsider performance. Use lazy quantifiers (*? and +?) instead of greedy ones when you only need the shortest match. This prevents excessive backtracking and keeps your patterns fast, especially on large text inputs."
-        },
+        }
       ],
     },
     faq: [
@@ -6785,7 +6104,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "캡처 그룹이 뭔가요?",
         answer: "괄호()로 감싼 부분이 캡처 그룹이에요. 매칭된 문자열의 특정 부분만 추출할 때 사용해요. 예를 들어 날짜 패턴에서 연도, 월, 일을 각각 그룹으로 잡을 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -6819,7 +6138,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 타임스탬프 변환기 사용법",
           body: "Toolkio의 타임스탬프 변환기는 두 가지 방향의 변환을 지원해요.\n\n타임스탬프를 날짜로 변환하려면 숫자를 입력란에 넣기만 하면 돼요. 초 단위와 밀리초 단위를 자동으로 감지해서 올바른 날짜를 보여줘요. UTC 기준과 로컬 시간 기준 모두 표시되니까 시간대 혼동이 없어요.\n\n반대로 날짜를 타임스탬프로 변환하는 것도 가능해요. 달력에서 원하는 날짜와 시간을 선택하면 해당하는 타임스탬프 값이 표시돼요.\n\n현재 시간의 타임스탬프도 실시간으로 확인할 수 있어요. 개발 중에 테스트 데이터를 만들거나, API 요청에 타임스탬프를 넣어야 할 때 유용해요.\n\n모든 처리는 브라우저에서 이루어지기 때문에 입력한 데이터가 서버로 전송되지 않아요. 민감한 시간 데이터를 다룰 때도 안심하고 사용할 수 있어요. 즐겨찾기에 추가해두면 개발할 때 빠르게 접근할 수 있어서 편리해요."
-        },
+        }
       ],
       en: [
         {
@@ -6837,7 +6156,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using the Toolkio Timestamp Converter",
           body: "Toolkio's timestamp converter supports bidirectional conversion. Enter a number and it automatically detects whether it is seconds or milliseconds, displaying both UTC and local time results.\n\nTo convert a date to a timestamp, pick a date and time from the calendar picker and the corresponding numeric timestamp appears instantly.\n\nThe tool also shows the current timestamp updating in real time, which is useful when you need to generate test data or add timestamps to API requests.\n\nEverything runs in your browser. No data is sent to any server, so you can safely convert sensitive time data. Bookmark the tool for quick access during development sessions."
-        },
+        }
       ],
     },
     faq: [
@@ -6860,7 +6179,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "2038년 문제는 어떻게 대비하나요?",
         answer: "64비트 시스템을 사용하면 해결돼요. 대부분의 최신 운영체제와 프로그래밍 언어는 이미 64비트 타임스탬프를 지원하고 있어요.",
-      },
+      }
     ],
   },
   {
@@ -6894,7 +6213,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "QR코드 활용 실전 팁",
           body: "QR코드를 효과적으로 활용하기 위한 실전 팁을 정리했어요.\n\n인쇄물에 QR코드를 넣을 때는 최소 2cm x 2cm 크기 이상으로 만들어야 해요. 너무 작으면 카메라가 인식하지 못해요. 스캔 거리가 먼 경우(포스터, 배너)에는 더 크게 만들어야 해요.\n\nQR코드 주변에 충분한 여백(quiet zone)을 확보하세요. 최소 QR코드 모듈 4개 크기만큼의 여백이 필요해요. 여백이 없으면 스캐너가 QR코드 경계를 찾지 못할 수 있어요.\n\n동적 QR코드와 정적 QR코드의 차이를 알아두세요. 정적 QR코드는 정보가 코드 자체에 들어있어요. 동적 QR코드는 단축 URL을 담고 있어서 나중에 목적지를 변경할 수 있어요. 마케팅 캠페인에는 동적 QR코드가 유리해요.\n\nQR코드 근처에 스캔을 유도하는 문구를 넣으세요. '스캔하여 자세히 보기', '할인 쿠폰 받기' 같은 행동 유도(Call to Action)가 있으면 스캔율이 높아져요. QR코드만 덩그러니 있으면 사람들이 뭔지 몰라서 스캔하지 않을 수 있어요."
-        },
+        }
       ],
       en: [
         {
@@ -6912,7 +6231,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Practical Tips for QR Code Success",
           body: "Follow these guidelines to maximize QR code effectiveness.\n\nPrint QR codes at a minimum size of 2cm by 2cm. Smaller codes may not be recognized by cameras. For posters or banners viewed from a distance, scale up proportionally.\n\nMaintain a quiet zone (blank margin) around the QR code. At least four modules of white space on each side helps scanners identify the code boundaries. Without adequate margins, recognition fails.\n\nUnderstand the difference between static and dynamic QR codes. Static codes embed information directly, while dynamic codes use a redirect URL that can be changed later. Dynamic codes are better for marketing campaigns where you may want to update the destination.\n\nAdd a call to action near your QR code. Text like 'Scan for details' or 'Get your discount' significantly increases scan rates. A QR code without context may be ignored by most people."
-        },
+        }
       ],
     },
     faq: [
@@ -6943,7 +6262,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "인쇄용 QR코드의 최소 크기는 얼마인가요?",
         answer: "최소 2cm x 2cm 이상을 권장해요. 스캔 거리가 먼 경우(포스터, 배너)에는 거리에 비례해서 더 크게 만들어야 해요.",
-      },
+      }
     ],
   },
   {
@@ -6977,7 +6296,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "마크다운 활용 꿀팁",
           body: "마크다운을 더 효과적으로 사용하는 팁들을 공유할게요.\n\n줄바꿈에 주의하세요. 마크다운에서 엔터 한 번은 줄바꿈이 아니에요. 줄 끝에 공백 두 칸을 넣거나 빈 줄을 추가해야 실제로 줄이 바뀌어요. 이걸 모르면 문단이 붙어 보이는 문제가 생겨요.\n\n체크박스 목록을 활용하세요. - 뒤에 대괄호와 공백([ ])을 넣으면 체크박스가 만들어져요. 완료된 항목은 [x]로 표시해요. TODO 목록이나 프로젝트 진행 상황을 추적할 때 편리해요.\n\n접기/펼치기(details)를 사용해보세요. HTML의 details 태그는 대부분의 마크다운 렌더러에서 지원해요. 긴 로그, 설정 파일 등을 접어두면 문서가 깔끔해져요.\n\n이모지도 사용할 수 있어요. GitHub 스타일 마크다운에서는 콜론으로 감싼 이모지 코드를 지원해요. 문서에 시각적 포인트를 줄 때 유용해요.\n\n마지막으로, Toolkio의 마크다운 미리보기 도구에서 연습하는 걸 추천해요. 새로운 문법을 배울 때마다 바로 입력해서 결과를 확인하면 기억에 더 오래 남아요."
-        },
+        }
       ],
       en: [
         {
@@ -6995,7 +6314,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Markdown Tips and Tricks",
           body: "These tips will help you use Markdown more effectively.\n\nLine breaks require attention. A single Enter key does not create a line break in standard Markdown. Add two spaces at the end of a line or insert a blank line to start a new paragraph. Ignoring this rule causes paragraphs to merge together.\n\nUse checkbox lists for task tracking. Type a dash followed by brackets and a space (- [ ]) to create checkboxes. Mark completed items with [x]. This is great for TODO lists and project tracking.\n\nLeverage the HTML details tag for collapsible sections. Most Markdown renderers support it. Hide long logs or configuration snippets to keep documents clean.\n\nEmojis work in GitHub-flavored Markdown using colon-wrapped codes. They add visual interest to documentation and READMEs.\n\nFinally, practice new syntax in Toolkio's Markdown preview tool. Typing and immediately seeing the result builds muscle memory much faster than reading documentation alone."
-        },
+        }
       ],
     },
     faq: [
@@ -7022,7 +6341,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "마크다운 파일 확장자는 뭔가요?",
         answer: ".md 또는 .markdown을 사용해요. .md가 가장 일반적이에요. README.md, CHANGELOG.md 같은 파일명을 많이 볼 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -7056,7 +6375,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 이미지 압축 도구 사용법",
           body: "Toolkio의 이미지 압축 도구를 사용하면 설치 없이 브라우저에서 바로 이미지를 압축할 수 있어요. 사용 방법을 단계별로 설명할게요.\n\n먼저 압축할 이미지를 선택해요. 드래그 앤 드롭으로 파일을 올리거나 파일 선택 버튼을 클릭하면 돼요. JPEG, PNG, WebP 등 주요 포맷을 모두 지원해요.\n\n다음으로 품질 설정을 조절해요. 슬라이더로 압축 수준을 선택할 수 있어요. 80-85%를 추천하지만, 용도에 따라 조절하세요. 미리보기로 화질 변화를 확인할 수 있어요.\n\n압축이 완료되면 원본 대비 줄어든 용량을 퍼센트로 보여줘요. 결과가 만족스러우면 다운로드 버튼을 클릭하면 끝이에요.\n\n가장 중요한 점은 모든 처리가 브라우저에서 이루어진다는 거예요. 이미지가 서버로 전송되지 않기 때문에 개인 사진, 업무 문서 등 민감한 이미지도 안심하고 압축할 수 있어요. 인터넷 연결이 끊어져도 한번 로드된 후에는 계속 사용할 수 있어요.\n\n여러 장의 이미지를 처리해야 한다면 하나씩 순서대로 압축하면 돼요. 블로그나 웹사이트의 이미지를 일괄 최적화할 때 특히 유용해요."
-        },
+        }
       ],
       en: [
         {
@@ -7074,7 +6393,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using the Toolkio Image Compressor",
           body: "Toolkio's image compressor works entirely in your browser with no installation required.\n\nStart by uploading your image through drag-and-drop or the file picker. The tool supports JPEG, PNG, WebP, and other common formats.\n\nAdjust the quality slider to set your compression level. The recommended range is 80-85%, but you can fine-tune based on your needs. A preview shows the visual impact of your chosen setting.\n\nOnce compression finishes, the tool displays the percentage reduction from the original size. If you are satisfied, click download to save the compressed image.\n\nThe most important feature is privacy. All processing happens locally in your browser. No images are uploaded to any server, so personal photos and confidential business documents remain completely private. The tool even works offline once the page has loaded.\n\nFor batch workflows, process images one at a time. This is especially useful when optimizing all images for a blog or website in a single session."
-        },
+        }
       ],
     },
     faq: [
@@ -7105,7 +6424,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "WebP 포맷을 모든 브라우저에서 볼 수 있나요?",
         answer: "Chrome, Firefox, Safari, Edge 등 모든 최신 브라우저에서 WebP를 지원해요. Internet Explorer만 지원하지 않지만, IE 사용률은 거의 0%에 가까워요.",
-      },
+      }
     ],
   },
   {
@@ -7139,7 +6458,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "온라인 JSON 포맷터 vs VSCode",
           body: "웹 기반 JSON 포맷터(Toolkio 포함)와 VSCode 포맷터는 용도가 달라요.\n\n온라인 도구는 빠르게 한 번 확인할 때 편해요. 브라우저에서 바로 붙여넣기 하면 되니까요. API 응답을 임시로 확인하거나, 동료에게 공유받은 JSON을 빠르게 보고 싶을 때 적합해요.\n\nVSCode는 프로젝트 내 JSON 파일을 지속적으로 관리할 때 좋아요. 저장 시 자동 포맷, Git 연동, ESLint 검증까지 워크플로우에 통합되니까요.\n\n추천 조합은 이래요. 프로젝트 파일은 VSCode에서 관리하고, 외부에서 받은 임시 JSON은 Toolkio 같은 온라인 도구로 확인하는 거예요. 두 도구를 상황에 맞게 쓰면 효율이 극대화돼요.\n\nJSON 포맷팅의 기본 개념이 궁금하다면 [JSON 포맷터 사용법 가이드](/blog/how-to-format-json)를 참고하세요. JSON 용량을 줄이고 싶다면 [JSON 압축(Minify) 방법](/blog/how-to-minify-json)도 함께 읽어보세요."
-        },
+        }
       ],
       en: [
         {
@@ -7157,7 +6476,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Online JSON Formatter vs VSCode",
           body: "Web-based JSON formatters (including Toolkio) and VSCode serve different purposes.\n\nOnline tools are best for quick one-off checks. Paste JSON in a browser and see results instantly. Perfect for inspecting API responses or quickly viewing JSON shared by colleagues.\n\nVSCode excels at managing project JSON files continuously. Auto-format on save, Git integration, and ESLint validation are built into your workflow.\n\nThe recommended approach is using VSCode for project files and online tools like Toolkio for ad-hoc JSON inspection. Using both tools situationally maximizes your efficiency."
-        },
+        }
       ],
     },
     faq: [
@@ -7176,7 +6495,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "JSON에 문법 오류가 있는지 확인하는 방법은?",
         answer: "VSCode는 JSON 문법 오류를 자동으로 빨간 밑줄로 표시해요. Problems 탭(Ctrl+Shift+M)에서 모든 오류를 한눈에 확인할 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -7210,7 +6529,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "비밀번호 관리 도구 추천",
           body: "12자리 이상의 복잡한 비밀번호를 사이트마다 다르게 쓰려면 비밀번호 관리자가 필수예요.\n\nBitwarden은 무료로 사용 가능한 오픈소스 비밀번호 관리자예요. 브라우저 확장, 모바일 앱, 데스크톱 앱을 모두 지원하고, 무료 플랜으로도 충분한 기능을 제공해요.\n\n1Password는 유료(월 $3)지만 UI가 직관적이고 기업용 기능이 강해요. 가족 공유 기능도 있어서 가족 단위로 사용하기에 좋아요.\n\nGoogle Password Manager는 Chrome에 내장되어 있어서 별도 설치 없이 사용할 수 있어요. 구글 생태계를 주로 쓰는 분에게 편하지만, 크로스 브라우저 지원은 제한적이에요.\n\n어떤 도구든 마스터 비밀번호 하나만 기억하면 나머지는 자동으로 관리돼요. 마스터 비밀번호만 16자리 이상으로 강하게 설정하세요.\n\n안전한 비밀번호를 직접 만들어보고 싶다면 [강력한 비밀번호 만드는 법](/blog/how-to-create-strong-password)을 확인하세요. 권장 비밀번호 길이에 대한 더 자세한 분석은 [비밀번호 권장 길이 가이드](/blog/recommended-password-length)에서 읽어볼 수 있어요."
-        },
+        }
       ],
       en: [
         {
@@ -7228,7 +6547,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Recommended Password Managers",
           body: "Managing unique 12+ character passwords across sites requires a password manager.\n\nBitwarden is a free, open-source option with browser extensions, mobile apps, and desktop clients. The free plan is sufficient for most users.\n\n1Password costs $3/month but offers an intuitive UI and strong enterprise features. Family sharing makes it great for household use.\n\nGoogle Password Manager is built into Chrome with no installation needed. Convenient for Google ecosystem users but limited cross-browser support.\n\nAll tools require remembering just one master password. Make it 16+ characters and you are set."
-        },
+        }
       ],
     },
     faq: [
@@ -7247,7 +6566,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "같은 비밀번호를 여러 사이트에 쓰면 왜 위험한가요?",
         answer: "한 사이트에서 유출되면 해커가 다른 사이트에도 같은 비밀번호로 로그인을 시도해요. 이걸 크리덴셜 스터핑이라고 하는데, 매우 흔한 공격 방법이에요.",
-      },
+      }
     ],
   },
   {
@@ -7281,7 +6600,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "WebP — 두 세계의 장점을 합치다",
           body: "WebP는 구글이 2010년에 개발한 차세대 포맷이에요. JPEG의 손실 압축과 PNG의 무손실 압축을 모두 지원해요.\n\n손실 모드에서는 VP8 비디오 코덱의 키프레임 압축 기술을 활용해요. JPEG보다 25~34% 더 작은 파일을 같은 화질로 만들 수 있어요.\n\n무손실 모드에서는 PNG보다 26% 더 작은 파일을 만들어요. 투명 배경도 지원하기 때문에 PNG를 완전히 대체할 수 있어요.\n\n2026년 기준 모든 주요 브라우저(Chrome, Firefox, Safari, Edge)가 WebP를 지원해요. 새로 만드는 웹사이트라면 WebP를 기본 포맷으로 사용하는 걸 추천해요.\n\n유일한 단점은 일부 오래된 이미지 편집 도구에서 WebP를 열지 못하는 경우가 있다는 거예요. 하지만 Photoshop, GIMP 등 주요 도구는 모두 지원해요.\n\n이미지 압축을 직접 해보고 싶다면 [이미지 압축 방법 가이드](/blog/how-to-compress-images)를 참고하세요. 웹사이트 이미지 최적화 실전 팁은 [웹 이미지 최적화 가이드](/blog/web-image-optimization-guide)에서 확인할 수 있어요."
-        },
+        }
       ],
       en: [
         {
@@ -7299,7 +6618,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "WebP — Best of Both Worlds",
           body: "WebP, developed by Google in 2010, supports both lossy and lossless compression.\n\nIn lossy mode, it leverages VP8 video codec keyframe compression, producing files 25-34% smaller than JPEG at equivalent quality.\n\nIn lossless mode, files are 26% smaller than PNG with full transparency support.\n\nAs of 2026, all major browsers support WebP. For new websites, WebP is the recommended default format.\n\nThe only drawback is that some older image editors may not open WebP files, though major tools like Photoshop and GIMP fully support it."
-        },
+        }
       ],
     },
     faq: [
@@ -7318,7 +6637,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "AVIF라는 포맷도 있던데 뭔가요?",
         answer: "AV1 비디오 코덱 기반의 차세대 포맷이에요. WebP보다 20% 더 작은 파일을 만들 수 있지만, 인코딩 속도가 느리고 브라우저 지원이 아직 WebP보다 제한적이에요.",
-      },
+      }
     ],
   },
   {
@@ -7352,7 +6671,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "정규식 테스트 도구 활용 팁",
           body: "정규식을 작성할 때 단계적으로 만드세요. 처음부터 복잡한 패턴을 한 번에 쓰지 말고, 핵심 부분부터 매칭한 뒤 조건을 하나씩 추가하는 게 효율적이에요.\n\n테스트 문자열에 정상 케이스와 비정상 케이스를 모두 포함하세요. 이메일 정규식이라면 올바른 이메일과 잘못된 이메일을 함께 넣어서 양쪽 모두 제대로 처리하는지 확인해야 해요.\n\n언어별 차이를 주의하세요. JavaScript는 후방 탐색을 최근에야 지원했고, Python과 Java의 캐릭터 클래스 문법이 약간 달라요. 반드시 대상 언어의 정규식 엔진으로 테스트하세요.\n\n만들어진 정규식에 주석을 달아두세요. 정규식은 시간이 지나면 본인도 해석하기 어려워요. Regex101의 자연어 설명 기능을 캡처해서 코드 옆에 주석으로 남기면 유지보수가 쉬워져요."
-        },
+        }
       ],
       en: [
         {
@@ -7370,7 +6689,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Tips for Using Regex Test Tools",
           body: "Build patterns incrementally. Start with the core match, then add conditions one at a time.\n\nInclude both valid and invalid test cases. An email regex should be tested against both correct and malformed addresses.\n\nWatch for language differences. JavaScript recently added lookbehind support, and Python/Java character class syntax differs slightly. Always test with your target language engine.\n\nDocument your patterns. Regex becomes unreadable over time. Screenshot Regex101's explanation or add comments alongside your code for future maintainability."
-        },
+        }
       ],
     },
     faq: [
@@ -7389,7 +6708,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "정규식이 느릴 때 어떻게 최적화하나요?",
         answer: "Debugger 도구로 백트래킹 패턴을 확인하세요. 탐욕적 수량자를 게으른 수량자로 바꾸거나, 원자적 그룹을 사용하면 성능이 개선돼요.",
-      },
+      }
     ],
   },
   {
@@ -7423,7 +6742,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "흔한 실수와 해결법",
           body: "가장 흔한 실수는 이중 인코딩이에요. 이미 인코딩된 문자열을 다시 인코딩하면 %25가 붙어요. %20이 %2520이 되는 거죠. 인코딩 전에 문자열이 이미 인코딩되어 있는지 확인하세요.\n\n공백을 +로 인코딩한 건 %20으로 인코딩한 것과 디코딩 방법이 다를 수 있어요. application/x-www-form-urlencoded에서는 +를 공백으로 해석하지만, URL 경로에서는 +를 문자 그대로 해석해요.\n\n한국어 URL을 다룰 때 인코딩 방식이 UTF-8인지 확인하세요. 오래된 시스템에서는 EUC-KR 인코딩을 사용해서 한글이 깨지는 경우가 있어요.\n\nToolkio의 URL 인코더/디코더를 활용하면 인코딩 결과를 빠르게 확인하고 디버깅할 수 있어요. 이중 인코딩 여부도 눈으로 쉽게 확인할 수 있거든요.\n\nURL 인코딩의 기본 사용법이 궁금하다면 [URL 인코딩 방법 가이드](/blog/how-to-encode-urls)를 참고하세요. 한국어 URL 처리에서 자주 발생하는 문제는 [한국어 URL 인코딩 방법](/blog/korean-url-encoding-method)에서 자세히 다루고 있어요."
-        },
+        }
       ],
       en: [
         {
@@ -7441,7 +6760,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Common Mistakes and Fixes",
           body: "Double encoding is the most frequent mistake. Encoding an already-encoded string turns %20 into %2520. Always check if input is already encoded.\n\nSpace encoding differs by context: + means space in form data (application/x-www-form-urlencoded) but is literal in URL paths. Use %20 for consistency.\n\nVerify UTF-8 encoding when handling Korean URLs. Legacy systems using EUC-KR can produce garbled characters.\n\nToolkio's URL encoder/decoder helps quickly verify encoding results and catch double-encoding issues visually."
-        },
+        }
       ],
     },
     faq: [
@@ -7460,7 +6779,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "URL 인코딩을 직접 하지 않으면 어떤 문제가 생기나요?",
         answer: "서버가 URL을 잘못 해석해서 404 에러가 나거나, 의도하지 않은 파라미터가 전달될 수 있어요. 특히 검색 기능에서 특수문자가 포함된 검색어가 깨지는 문제가 자주 발생해요.",
-      },
+      }
     ],
   },
   {
@@ -7494,7 +6813,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Base64 사용 시 주의사항",
           body: "Base64는 암호화가 아니에요. 누구나 디코딩할 수 있기 때문에 비밀번호 같은 민감한 정보를 Base64로만 보호하면 안 돼요.\n\n대용량 파일은 Base64로 변환하면 안 돼요. 크기가 33% 커지고 메모리도 많이 사용하거든요. 큰 이미지는 URL로 참조하는 게 낫고, 작은 아이콘(수 KB)만 인라인으로 쓰세요.\n\nURL에서 Base64를 쓸 때는 URL-safe Base64(+를 -로, /를 _로 대체)를 사용하세요. 일반 Base64의 +와 /는 URL에서 특별한 의미가 있거든요.\n\n[URL 인코딩 가이드](/blog/how-to-encode-urls)에서 URL 안전 문자 처리 방법도 확인해보세요."
-        },
+        }
       ],
       en: [
         {
@@ -7512,7 +6831,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Important Considerations",
           body: "Base64 is NOT encryption — anyone can decode it. Never use it alone for sensitive data.\n\nAvoid Base64 for large files (33% size increase). Use URL-safe Base64 (- instead of +, _ instead of /) when embedding in URLs."
-        },
+        }
       ],
     },
     faq: [
@@ -7527,7 +6846,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Base64 문자열 끝에 있는 =은 뭔가요?",
         answer: "패딩 문자예요. Base64는 3바이트씩 처리하는데, 입력 데이터가 3의 배수가 아니면 빈 부분을 =로 채워요. =이 1~2개 붙을 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -7561,7 +6880,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "CSS 최적화 추가 팁",
           body: "압축 외에도 CSS 최적화 방법이 있어요.\n\n사용하지 않는 CSS 제거가 가장 효과가 커요. PurgeCSS나 Chrome DevTools의 Coverage 탭으로 사용되지 않는 스타일을 찾을 수 있어요.\n\nCSS를 여러 파일로 분리하고 필요한 페이지에서만 로드하는 것도 좋아요. 모든 페이지에서 전체 CSS를 불러오면 불필요한 다운로드가 발생하거든요.\n\n크리티컬 CSS를 인라인으로 넣으면 첫 화면 렌더링이 빨라져요. 스크롤 없이 보이는 영역의 스타일만 HTML 안에 넣고, 나머지는 비동기 로드하는 거예요.\n\n[이미지 압축 가이드](/blog/how-to-compress-images)와 함께 적용하면 웹사이트 전체 성능을 크게 향상시킬 수 있어요."
-        },
+        }
       ],
       en: [
         {
@@ -7579,7 +6898,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Beyond Minification",
           body: "Remove unused CSS with PurgeCSS or Chrome DevTools Coverage tab. Split CSS by page to avoid loading unnecessary styles. Inline critical CSS for faster first paint."
-        },
+        }
       ],
     },
     faq: [
@@ -7594,7 +6913,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "CSS 압축으로 실제 체감 속도가 달라지나요?",
         answer: "네, 특히 모바일이나 느린 네트워크에서 차이가 커요. 100KB CSS를 50KB로 줄이면 3G 환경에서 약 0.5초 빨라질 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -7628,7 +6947,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "연봉별 실수령액 표",
           body: "2026년 기준 연봉별 월 실수령액 예시예요. (부양가족 본인 1인 기준)\n\n연봉 2,400만 원이면 월 실수령액이 약 180만 원, 연봉 3,000만 원이면 약 221만 원, 연봉 3,600만 원이면 약 261만 원, 연봉 4,200만 원이면 약 299만 원, 연봉 5,000만 원이면 약 347만 원, 연봉 6,000만 원이면 약 407만 원이에요.\n\n연봉이 올라갈수록 세율이 높아져서 실수령 비율은 낮아져요. 연봉 3,000만 원은 약 88%를 받지만, 6,000만 원은 약 81%를 받거든요.\n\n[퍼센트 계산기](/percent-calculator)로 본인 급여에서 공제 비율을 정확히 확인해보세요."
-        },
+        }
       ],
       en: [
         {
@@ -7646,7 +6965,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Salary to Take-Home Pay Examples",
           body: "Annual 30M KRW: ~2.21M/month take-home. Annual 50M KRW: ~3.47M/month. Annual 60M KRW: ~4.07M/month.\n\nHigher salaries have higher tax rates, so the take-home percentage decreases as income rises."
-        },
+        }
       ],
     },
     faq: [
@@ -7661,7 +6980,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "퇴직금은 실수령액에 포함되나요?",
         answer: "아니요, 퇴직금은 별도예요. 퇴직 시 지급되며, 연봉과는 별개로 계산돼요. 연봉에 퇴직금 포함 여부를 확인하는 게 중요해요.",
-      },
+      }
     ],
   },
   {
@@ -7695,7 +7014,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "UUID 사용 시 주의사항",
           body: "데이터베이스에서 UUID를 기본 키(PK)로 쓸 때는 저장 형태에 주의하세요. VARCHAR(36)로 저장하면 인덱스 성능이 떨어져요. BINARY(16)이나 전용 UUID 타입을 쓰는 게 좋아요.\n\nMySQL에서는 UUID v4를 PK로 쓰면 인서트 성능이 크게 떨어질 수 있어요. 랜덤 값이라 인덱스 페이지 분할이 자주 발생하거든요. UUID v7이나 ordered UUID를 쓰면 이 문제를 해결할 수 있어요.\n\nURL에 UUID를 노출할 때는 보안을 고려하세요. UUID로 리소스에 접근하는 경우, UUID만 알면 누구나 접근할 수 있으니 별도의 권한 체크가 필요해요.\n\n[해시 생성기 가이드](/blog/hash-generator-md5-sha256-guide)에서 다루는 해시값과 UUID는 용도가 다르니 혼동하지 마세요."
-        },
+        }
       ],
       en: [
         {
@@ -7713,7 +7032,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Best Practices",
           body: "Store as BINARY(16) not VARCHAR(36) for better DB performance. Use UUID v7 or ordered UUIDs as primary keys in MySQL to avoid index fragmentation. Always add authorization checks when exposing UUIDs in URLs."
-        },
+        }
       ],
     },
     faq: [
@@ -7728,7 +7047,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "UUID에서 하이픈(-)을 빼도 되나요?",
         answer: "기술적으로는 문제없어요. 하지만 표준 형식은 하이픈이 포함된 36자리예요. 저장 공간을 아끼려면 하이픈 없이 32자리로 저장하고, 표시할 때만 하이픈을 넣을 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -7762,7 +7081,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "실무에서 정규식 활용하기",
           body: "로그 파일에서 에러만 뽑아내기, CSV 데이터 정리하기, 입력값 유효성 검사하기 등에 정규식이 쓰여요.\n\nVSCode에서 Ctrl+H로 찾기/바꾸기 할 때 정규식을 켜면 패턴 기반으로 일괄 수정이 가능해요. 코드 리팩토링할 때 엄청 편하거든요.\n\n구글 시트에서도 REGEXMATCH, REGEXEXTRACT 함수로 정규식을 사용할 수 있어요. 데이터 정리할 때 유용하더라고요.\n\n[글자수 세기 도구](/blog/character-counter-spaces-bytes-guide)와 함께 사용하면 텍스트 처리가 더 편해져요."
-        },
+        }
       ],
       en: [
         {
@@ -7780,7 +7099,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Practical Uses",
           body: "Log parsing, data cleanup, input validation, VSCode find/replace, Google Sheets REGEX functions."
-        },
+        }
       ],
     },
     faq: [
@@ -7795,7 +7114,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "정규식이 프로그래밍 언어마다 다른가요?",
         answer: "기본 문법은 같지만 세부적으로 차이가 있어요. JavaScript, Python, Java 등에서 약간씩 다르거든요. 테스트 사이트에서 언어를 선택하고 확인하는 게 안전해요.",
-      },
+      }
     ],
   },
   {
@@ -7829,7 +7148,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "타임스탬프 실무 활용",
           body: "API 응답에서 날짜가 숫자로 오는 경우가 많아요. 이때 타임스탬프 변환기로 확인하면 디버깅이 편해져요.\n\n로그 분석할 때도 유용해요. 서버 로그의 타임스탬프를 읽을 수 있는 날짜로 변환하면 문제 발생 시점을 정확히 파악할 수 있거든요.\n\n캐시 만료 시간, 토큰 유효기간 등도 타임스탬프로 관리돼요. 현재 시간과 비교해서 만료 여부를 체크하는 거예요.\n\n[Base64 변환 가이드](/blog/base64-encoding-decoding-practical-guide)와 함께 알아두면 API 디버깅이 훨씬 수월해져요."
-        },
+        }
       ],
       en: [
         {
@@ -7847,7 +7166,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Practical Uses",
           body: "API debugging, log analysis, cache expiration, token validity checks."
-        },
+        }
       ],
     },
     faq: [
@@ -7862,77 +7181,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "엑셀에서 타임스탬프를 변환할 수 있나요?",
         answer: "네, =(셀/86400)+DATE(1970,1,1) 공식을 쓰면 돼요. 그다음 셀 서식을 날짜로 바꾸면 읽을 수 있는 날짜가 표시돼요.",
-      },
+      }
     ],
   },
-  {
-    slug: "bmi-calculator-health-guide",
-    title: {
-      ko: "BMI 계산기 사용법 — 나의 체질량지수 확인하고 건강 관리하기",
-      en: "BMI Calculator Guide — Check Your Body Mass Index for Better Health",
-    },
-    description: {
-      ko: "BMI 계산기로 체질량지수를 확인하는 방법과 정상 범위, 건강 관리 팁을 알려드려요. 키와 몸무게만 입력하면 바로 결과를 확인할 수 있어요.",
-      en: "Learn how to use a BMI calculator to check your body mass index, understand normal ranges, and get health management tips.",
-    },
-    date: "2026-04-06",
-    toolId: "bmi-calculator",
-    image: "/images/blog/bmi-calculator-health-guide.webp",
-    keywords: ["BMI 계산기", "체질량지수", "BMI 정상범위", "BMI 계산법", "비만도 계산"],
-    content: {
-      ko: [
-        {
-          heading: "BMI란 무엇인가요?",
-          body: "BMI(Body Mass Index)는 체질량지수라고 해요. 키와 몸무게를 이용해서 비만 정도를 판단하는 지표예요.\n\n계산 공식은 간단해요: BMI = 체중(kg) / 키(m)의 제곱\n\n예를 들어 키 170cm, 몸무게 65kg이라면:\nBMI = 65 / (1.7 x 1.7) = 22.5\n\n이 숫자가 정상 범위인지, 과체중인지 바로 알 수 있어요.",
-        },
-        {
-          heading: "BMI 범위별 의미",
-          body: "대한비만학회 기준으로 BMI 범위는 이래요.\n\n- 18.5 미만: 저체중\n- 18.5~22.9: 정상\n- 23~24.9: 과체중 (비만 전단계)\n- 25~29.9: 1단계 비만\n- 30~34.9: 2단계 비만\n- 35 이상: 3단계 비만 (고도비만)\n\n한국인 기준은 서양보다 엄격해요. WHO 기준에서는 25 이상을 과체중으로 보지만, 아시아 기준에서는 23부터 과체중이거든요.",
-        },
-        {
-          heading: "BMI의 한계 — 근육량을 반영하지 못해요",
-          body: "BMI는 간편하지만 완벽한 지표는 아니에요.\n\n- 근육이 많은 사람은 BMI가 높게 나와도 비만이 아닐 수 있어요\n- 나이가 들면서 근육이 줄고 체지방이 늘어도 BMI는 같을 수 있어요\n- 내장지방이 많은 마른 비만은 BMI로 확인이 안 돼요\n\n그래서 BMI와 함께 허리둘레도 측정하는 게 좋아요. 남성 90cm, 여성 85cm 이상이면 복부비만으로 봐요.",
-        },
-        {
-          heading: "Toolkio BMI 계산기 사용법",
-          body: "Toolkio의 BMI 계산기는 키와 몸무게만 입력하면 바로 결과가 나와요.\n\n1. 키(cm)와 몸무게(kg) 입력\n2. BMI 수치와 해당 범위 확인\n3. 건강 상태에 대한 간단한 가이드 제공\n\n결과는 브라우저에서만 계산되고 서버로 전송되지 않아서 안전해요. 정기적으로 체크하면 건강 관리에 도움이 돼요.",
-        },
-      ],
-      en: [
-        {
-          heading: "What is BMI?",
-          body: "BMI (Body Mass Index) measures body fat based on height and weight.\n\nFormula: BMI = weight(kg) / height(m)²\n\nFor example, if you're 170cm and 65kg:\nBMI = 65 / (1.7 x 1.7) = 22.5\n\nThis number tells you whether you're in a healthy weight range.",
-        },
-        {
-          heading: "BMI Categories",
-          body: "According to WHO standards:\n\n- Below 18.5: Underweight\n- 18.5–24.9: Normal weight\n- 25–29.9: Overweight\n- 30–34.9: Obesity Class I\n- 35–39.9: Obesity Class II\n- 40+: Obesity Class III\n\nNote: Asian BMI standards use 23+ as overweight and 25+ as obese due to different body compositions.",
-        },
-        {
-          heading: "Limitations of BMI",
-          body: "BMI is convenient but not perfect:\n\n- Athletes with high muscle mass may show high BMI without being overweight\n- Elderly people may have normal BMI but high body fat\n- BMI doesn't measure visceral fat\n\nConsider measuring waist circumference alongside BMI for a more complete picture.",
-        },
-        {
-          heading: "How to Use Toolkio BMI Calculator",
-          body: "Simply enter your height and weight to get instant results.\n\n1. Enter height (cm) and weight (kg)\n2. View your BMI score and category\n3. Get basic health guidance\n\nAll calculations happen in your browser — no data is sent to any server.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "BMI가 정상인데 배가 나왔어요. 괜찮은 건가요?",
-        answer: "BMI가 정상이어도 내장지방이 많은 마른 비만일 수 있어요. 허리둘레가 남성 90cm, 여성 85cm 이상이면 복부비만이니 체성분 검사를 받아보시는 게 좋아요.",
-      },
-      {
-        question: "운동을 많이 하면 BMI가 높아지나요?",
-        answer: "근육이 지방보다 무겁기 때문에 근육량이 많으면 BMI가 높게 나올 수 있어요. 이 경우 체지방률로 판단하는 게 더 정확해요.",
-      },
-      {
-        question: "어린이 BMI 기준도 같은가요?",
-        answer: "아니요, 어린이와 청소년은 성별과 나이에 따른 백분위수로 판단해요. 성인 기준과 다르니 소아과에서 성장 도표를 확인하세요.",
-      },
-    ],
-  },
-  {
+    {
     slug: "instagram-line-break-guide",
     title: {
       ko: "인스타그램 줄바꿈 하는 법 — 깔끔한 게시물 작성 꿀팁",
@@ -7963,7 +7215,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 인스타그램 줄바꿈 도구 사용법",
           body: "Toolkio의 인스타그램 줄바꿈 도구는 텍스트를 입력하면 자동으로 빈 줄에 보이지 않는 문자를 넣어줘요.\n\n1. 왼쪽 입력창에 글을 작성하거나 붙여넣기\n2. 빈 줄을 원하는 곳에 엔터로 추가\n3. 오른쪽 결과를 복사해서 인스타그램에 붙여넣기\n\n변환된 텍스트를 그대로 인스타그램에 붙여넣으면 줄바꿈이 완벽하게 유지돼요.",
-        },
+        }
       ],
       en: [
         {
@@ -7981,7 +7233,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio Instagram Line Break Tool",
           body: "Our tool automatically inserts invisible characters in blank lines.\n\n1. Type or paste your text in the left panel\n2. Add blank lines where you want breaks\n3. Copy the result and paste into Instagram\n\nYour formatting will be perfectly preserved when posted.",
-        },
+        }
       ],
     },
     faq: [
@@ -7996,144 +7248,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "줄바꿈 도구를 쓰면 인스타그램에서 제재를 받나요?",
         answer: "아니요, 보이지 않는 문자를 사용하는 건 인스타그램 정책에 위반되지 않아요. 많은 인플루언서와 브랜드가 이 방법을 사용하고 있거든요.",
-      },
+      }
     ],
   },
-  {
-    slug: "percent-calculator-guide",
-    title: {
-      ko: "퍼센트 계산기 사용법 — 할인율, 증감률, 비율 계산 한번에",
-      en: "Percent Calculator Guide — Discounts, Changes, and Ratios Made Easy",
-    },
-    description: {
-      ko: "퍼센트 계산기로 할인율, 증감률, 비율을 쉽게 계산하는 방법을 알려드려요. 일상생활과 업무에서 자주 쓰는 퍼센트 계산 공식도 정리했어요.",
-      en: "Learn how to calculate percentages easily — discounts, percentage changes, and ratios. Includes common formulas for everyday and business use.",
-    },
-    date: "2026-04-06",
-    toolId: "percent-calculator",
-    image: "/images/blog/percent-calculator-guide.webp",
-    keywords: ["퍼센트 계산기", "퍼센트 계산", "할인율 계산", "증감률 계산", "비율 계산"],
-    content: {
-      ko: [
-        {
-          heading: "퍼센트 계산이 필요한 순간",
-          body: "퍼센트는 일상에서 정말 많이 사용되지만, 막상 계산하려면 헷갈릴 때가 많아요.\n\n- 쇼핑할 때: 30% 할인이면 실제 얼마를 내는 거지?\n- 성적 계산: 100점 만점에서 85점은 몇 %?\n- 연봉 인상: 5% 인상이면 실수령액은 얼마나 오르지?\n- 투자 수익: 원금 대비 수익률 계산\n- 다이어트: 체중 감량률 계산",
-        },
-        {
-          heading: "자주 쓰는 퍼센트 계산 공식",
-          body: "1. A의 B%는 얼마?\n공식: A x (B / 100)\n예시: 50,000원의 30% = 50,000 x 0.3 = 15,000원\n\n2. A에서 B%를 빼면?\n공식: A x (1 - B / 100)\n예시: 50,000원에서 30% 할인 = 50,000 x 0.7 = 35,000원\n\n3. A에서 B로의 증감률?\n공식: (B - A) / A x 100\n예시: 100에서 130으로 = (130-100) / 100 x 100 = 30% 증가\n\n4. A는 B의 몇 %?\n공식: A / B x 100\n예시: 85는 100의 85%",
-        },
-        {
-          heading: "실생활 퍼센트 계산 예시",
-          body: "팁 계산: 음식값 45,000원에 10% 팁 = 4,500원 → 총 49,500원\n\n할인 가격: 정가 89,000원, 40% 할인 = 89,000 x 0.6 = 53,400원\n\n연봉 인상: 연봉 4,000만원, 5% 인상 = 4,000 x 1.05 = 4,200만원\n\n체중 감량: 80kg에서 74kg = (80-74) / 80 x 100 = 7.5% 감량",
-        },
-        {
-          heading: "Toolkio 퍼센트 계산기 사용법",
-          body: "Toolkio의 퍼센트 계산기는 여러 가지 계산을 한 번에 할 수 있어요.\n\n1. 계산 유형 선택 (기본 퍼센트, 할인, 증감률 등)\n2. 숫자 입력\n3. 결과 즉시 확인\n\n계산 과정도 함께 보여주기 때문에 어떻게 계산되는지 이해할 수 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "When You Need Percentage Calculations",
-          body: "Percentages come up constantly:\n\n- Shopping: What's the final price after 30% off?\n- Grades: What percentage is 85 out of 100?\n- Salary: How much more is a 5% raise?\n- Investing: What's my return on investment?\n- Health: What's my weight loss percentage?",
-        },
-        {
-          heading: "Common Percentage Formulas",
-          body: "1. What is B% of A? → A × (B/100)\n2. A minus B%? → A × (1 - B/100)\n3. Percent change from A to B? → (B-A)/A × 100\n4. A is what % of B? → (A/B) × 100",
-        },
-        {
-          heading: "Real-World Examples",
-          body: "Tip calculation: $45 meal + 15% tip = $45 × 1.15 = $51.75\n\nSale price: $89 item, 40% off = $89 × 0.6 = $53.40\n\nSalary raise: $50,000 + 5% = $50,000 × 1.05 = $52,500",
-        },
-        {
-          heading: "How to Use Toolkio Percent Calculator",
-          body: "Our calculator handles multiple percentage calculations.\n\n1. Select calculation type\n2. Enter your numbers\n3. Get instant results with step-by-step breakdown\n\nSee exactly how each calculation works.",
-        },
-      ],
-    },
-    faq: [
       {
-        question: "퍼센트와 퍼센트포인트(%p)의 차이는 뭔가요?",
-        answer: "퍼센트는 비율의 변화이고, 퍼센트포인트는 절대값 차이예요. 금리가 3%에서 5%로 오르면 2%p 상승이지, 66.7% 상승이 아니에요.",
-      },
-      {
-        question: "할인에 추가 할인이 있으면 어떻게 계산하나요?",
-        answer: "순차적으로 곱해야 해요. 30% 할인 후 추가 20% 할인이면 총 44% 할인이에요 (50% 아님). 계산: 0.7 x 0.8 = 0.56, 즉 원가의 56%를 내는 거예요.",
-      },
-      {
-        question: "마이너스 퍼센트도 계산할 수 있나요?",
-        answer: "네, 증감률 계산에서 값이 줄었으면 음수(-)로 나와요. 예를 들어 매출이 100에서 80으로 줄었으면 -20% 감소예요.",
-      },
-    ],
-  },
-  {
-    slug: "unit-converter-complete-guide",
-    title: {
-      ko: "단위 변환기 사용법 — 길이, 무게, 온도, 넓이 변환 총정리",
-      en: "Unit Converter Guide — Length, Weight, Temperature, and Area Conversions",
-    },
-    description: {
-      ko: "단위 변환기로 길이, 무게, 온도, 넓이를 빠르게 변환하는 방법을 알려드려요. 자주 쓰는 단위 변환 공식과 실생활 예시를 정리했어요.",
-      en: "Convert length, weight, temperature, and area units easily with our converter. Includes common conversion formulas and practical examples.",
-    },
-    date: "2026-04-06",
-    toolId: "unit-converter",
-    image: "/images/blog/unit-converter-complete-guide.webp",
-    keywords: ["단위 변환기", "단위 변환", "길이 변환", "무게 변환", "온도 변환"],
-    content: {
-      ko: [
-        {
-          heading: "단위 변환이 자주 필요한 순간",
-          body: "해외 쇼핑할 때 인치를 센티미터로, 파운드를 킬로그램으로 바꿔야 하는 일이 많죠?\n\n- 해외 직구: 신발 사이즈 US 9 = 270mm\n- 요리: 1온스 = 약 28g, 1컵 = 약 240ml\n- 부동산: 33평 = 약 109제곱미터\n- 여행: 화씨 77도 = 섭씨 25도\n- 운동: 1마일 = 약 1.6km\n\n머리로 계산하면 실수하기 쉬운 변환들이에요.",
-        },
-        {
-          heading: "자주 사용하는 길이 변환",
-          body: "- 1인치(inch) = 2.54cm\n- 1피트(feet) = 30.48cm\n- 1야드(yard) = 91.44cm\n- 1마일(mile) = 1.609km\n- 1해리(nautical mile) = 1.852km\n\n해외 직구할 때 가장 많이 쓰는 변환이에요. 모니터 사이즈도 인치로 표기되죠. 27인치 모니터는 대각선이 약 68.6cm예요.",
-        },
-        {
-          heading: "무게와 온도 변환",
-          body: "무게 변환:\n- 1파운드(lb) = 453.6g (약 0.45kg)\n- 1온스(oz) = 28.35g\n- 1근 = 600g (한국), 500g (중국)\n- 1돈 = 3.75g\n\n온도 변환:\n- 섭씨 → 화씨: (C x 9/5) + 32\n- 화씨 → 섭씨: (F - 32) x 5/9\n- 물 끓는점: 100도C = 212도F\n- 체온: 36.5도C = 97.7도F\n\n미국 여행할 때 날씨 앱이 화씨로 나오면 당황하죠. 화씨 70도면 섭씨 약 21도, 쾌적한 날씨예요.",
-        },
-        {
-          heading: "Toolkio 단위 변환기 사용법",
-          body: "Toolkio의 단위 변환기는 다양한 단위를 한 곳에서 변환할 수 있어요.\n\n1. 변환할 단위 종류 선택 (길이, 무게, 온도 등)\n2. 입력 단위와 출력 단위 선택\n3. 숫자를 입력하면 실시간으로 변환\n\n자주 쓰는 변환은 즐겨찾기로 저장할 수도 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "When You Need Unit Conversions",
-          body: "Unit conversions come up more than you think:\n\n- Online shopping: shoe sizes, clothing sizes\n- Cooking: ounces to grams, cups to milliliters\n- Travel: Fahrenheit to Celsius, miles to kilometers\n- Real estate: square feet to square meters",
-        },
-        {
-          heading: "Common Length Conversions",
-          body: "- 1 inch = 2.54 cm\n- 1 foot = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n- 1 nautical mile = 1.852 km",
-        },
-        {
-          heading: "Weight and Temperature",
-          body: "Weight:\n- 1 pound = 453.6g\n- 1 ounce = 28.35g\n\nTemperature:\n- Celsius to Fahrenheit: (C × 9/5) + 32\n- Fahrenheit to Celsius: (F - 32) × 5/9\n- 70°F ≈ 21°C (comfortable room temp)",
-        },
-        {
-          heading: "How to Use Toolkio Unit Converter",
-          body: "Convert any unit in one place.\n\n1. Select unit category\n2. Choose input and output units\n3. Enter a value and see instant results\n\nSave frequently used conversions as favorites.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "평수를 제곱미터로 바꾸려면 어떻게 하나요?",
-        answer: "1평 = 3.3058제곱미터예요. 33평 아파트는 약 109제곱미터(m2)예요. 반대로 100제곱미터는 약 30.25평이에요.",
-      },
-      {
-        question: "해외 직구할 때 사이즈 변환은 어떻게 하나요?",
-        answer: "신발은 US, UK, EU, mm 사이즈가 다 달라요. US 9 = 270mm = EU 42.5 정도예요. 정확한 변환은 브랜드마다 약간씩 다르니 사이즈 차트를 꼭 확인하세요.",
-      },
-      {
-        question: "데이터 용량 단위도 변환할 수 있나요?",
-        answer: "네, KB, MB, GB, TB 간 변환이 가능해요. 1GB = 1,024MB = 1,048,576KB예요. 1TB = 1,024GB이고요.",
-      },
-    ],
-  },
-  {
     slug: "age-calculator-korean-guide",
     title: {
       ko: "나이 계산기 — 만 나이, 한국 나이 빠르게 확인하는 법",
@@ -8164,7 +7282,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "나이 계산 꿀팁 정리",
           body: "빠르게 암산하는 팁도 알아두면 좋아요.\n\n- 만 나이 빠른 계산: 올해 연도 - 출생 연도 - (생일 안 지났으면 1)\n- 한국 나이: 올해 연도 - 출생 연도 + 1\n- 띠 계산: 출생 연도를 12로 나눈 나머지로 확인\n\n하지만 정확한 날짜까지 따져야 할 때는 계산기를 쓰는 게 실수를 줄여줍니다. 특히 2월 29일 생일인 분들은 윤년 계산까지 해야 해서 더 복잡하거든요.",
-        },
+        }
       ],
       en: [
         {
@@ -8182,7 +7300,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Quick Mental Math Tips",
           body: "For quick estimates:\n\n- International age: Current year - Birth year - (1 if birthday hasn't passed)\n- Korean age: Current year - Birth year + 1\n- Zodiac sign: Birth year mod 12\n\nBut when precision matters — especially for legal or medical purposes — use a calculator to avoid mistakes.",
-        },
+        }
       ],
     },
     faq: [
@@ -8197,77 +7315,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "외국에서도 나이 세는 방식이 다른가요?",
         answer: "대부분의 나라는 만 나이를 사용해요. 한국처럼 태어나자마자 1살로 세는 건 동아시아 일부 국가의 전통이에요. 중국, 일본도 과거에는 비슷했지만 지금은 만 나이를 쓰고 있어요.",
-      },
+      }
     ],
   },
-  {
-    slug: "gpa-calculator-university-guide",
-    title: {
-      ko: "학점 계산기 — 4.5 만점 학점 평균 쉽게 계산하는 법",
-      en: "GPA Calculator — How to Calculate Your University GPA on a 4.5 Scale",
-    },
-    description: {
-      ko: "대학 학점 평균, 직접 계산하면 틀리기 쉬워요. 학점 계산기로 전공/교양 평점을 한 번에 확인하세요.",
-      en: "Calculating your university GPA manually is error-prone. Use a GPA calculator to get your major and overall GPA instantly.",
-    },
-    date: "2026-04-05",
-    toolId: "gpa-calculator",
-    image: "/images/blog/gpa-calculator-university-guide.webp",
-    keywords: ["학점 계산기", "GPA 계산", "대학 학점 계산", "학점 평균", "4.5 만점"],
-    content: {
-      ko: [
-        {
-          heading: "학점 관리, 왜 중요한가요?",
-          body: "대학 생활에서 학점은 거의 모든 곳에 영향을 미쳐요.\n\n- 장학금: 대부분 3.5 이상 기준\n- 대학원 진학: 전공 평점 3.8 이상 권장\n- 취업: 대기업 서류 커트라인 3.0~3.5\n- 교환학생: 3.0 이상 지원 가능\n- 졸업 요건: 학교마다 최소 평점 기준 있음\n\n한 학기라도 관리를 소홀히 하면 전체 평점을 올리기가 정말 어려워요. 매 학기 끝나면 바로 확인하는 습관이 중요합니다.",
-        },
-        {
-          heading: "학점 평균 계산 원리",
-          body: "학점 평균(GPA)은 이렇게 계산해요.\n\n1. 각 과목의 학점(credit) × 성적(grade point)을 곱합니다\n2. 모든 과목의 곱을 더합니다\n3. 총 학점(credit) 수로 나눕니다\n\n예시:\n- 전공A (3학점, A+ = 4.5): 3 × 4.5 = 13.5\n- 전공B (3학점, B+ = 3.5): 3 × 3.5 = 10.5\n- 교양C (2학점, A0 = 4.0): 2 × 4.0 = 8.0\n- 합계: (13.5 + 10.5 + 8.0) ÷ (3 + 3 + 2) = 32.0 ÷ 8 = 4.0\n\n4.5 만점 기준 성적 등급:\nA+ = 4.5 / A0 = 4.0 / B+ = 3.5 / B0 = 3.0 / C+ = 2.5 / C0 = 2.0 / D+ = 1.5 / D0 = 1.0 / F = 0",
-        },
-        {
-          heading: "Toolkio 학점 계산기 사용법",
-          body: "수기 계산은 과목 수가 많아지면 실수하기 쉬워요. Toolkio 학점 계산기를 쓰면 간단합니다.\n\n1. 과목명, 학점(credit), 성적 등급을 입력\n2. 과목 추가 버튼으로 원하는 만큼 추가\n3. 자동으로 전체 평점과 취득 학점이 계산됩니다\n\nP/F 과목은 평점 계산에서 자동 제외되고, 4.5 만점과 4.3 만점 모두 지원해요.",
-        },
-        {
-          heading: "학점 올리는 현실적인 팁",
-          body: "학점 관리를 위한 실전 팁을 정리했어요.\n\n- 재수강 활용: F나 D 과목은 재수강으로 성적 교체 가능 (학교별 규정 확인)\n- 전략적 수강: 학기 초에 강의 평가 사이트에서 A+ 비율 확인\n- P/F 활용: 자신 없는 교양은 P/F로 전환해서 평점 방어\n- 학점 시뮬레이션: 목표 평점에 도달하려면 남은 학기에 몇 점이 필요한지 미리 계산\n\n특히 졸업 전에 목표 평점이 있다면, 역산해서 매 학기 필요한 성적을 계산해두면 동기부여가 됩니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "Why GPA Matters in University",
-          body: "Your GPA affects almost every aspect of university life:\n\n- Scholarships: Most require 3.5+ on a 4.5 scale\n- Graduate school: Major GPA of 3.8+ recommended\n- Employment: Large companies often set cutoffs at 3.0-3.5\n- Exchange programs: Usually require 3.0+\n- Graduation requirements: Minimum GPA varies by school\n\nOne bad semester can drag down your cumulative GPA significantly.",
-        },
-        {
-          heading: "How GPA Calculation Works",
-          body: "GPA = Total grade points ÷ Total credits\n\n1. Multiply each course's credits by its grade point\n2. Sum all the products\n3. Divide by total credits\n\nExample (4.5 scale):\n- Major A (3 credits, A+ = 4.5): 13.5\n- Major B (3 credits, B+ = 3.5): 10.5\n- Elective (2 credits, A0 = 4.0): 8.0\n- GPA: (13.5 + 10.5 + 8.0) ÷ 8 = 4.0",
-        },
-        {
-          heading: "How to Use Toolkio GPA Calculator",
-          body: "Manual calculation gets messy with many courses. Use the calculator instead:\n\n1. Enter course name, credits, and grade\n2. Add as many courses as needed\n3. Get your overall GPA calculated automatically\n\nPass/Fail courses are excluded from GPA calculation. Both 4.5 and 4.3 scales are supported.",
-        },
-        {
-          heading: "Practical Tips for Improving Your GPA",
-          body: "Here are some realistic strategies:\n\n- Retake courses: Replace F or D grades (check your school's policy)\n- Strategic enrollment: Check grade distributions before signing up\n- Pass/Fail option: Use it for electives you're unsure about\n- GPA simulation: Calculate what grades you need in remaining semesters to hit your target\n\nPlanning ahead with a GPA calculator helps you set achievable goals each semester.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "4.5 만점과 4.3 만점은 어떻게 다른가요?",
-        answer: "4.5 만점은 A+ = 4.5이고, 4.3 만점은 A+ = 4.3이에요. 학교마다 다르니 본인 학교 기준을 확인하세요. 대부분의 한국 대학은 4.5 만점을 사용합니다.",
-      },
-      {
-        question: "P/F 과목은 평점에 포함되나요?",
-        answer: "아니요, P/F(Pass/Fail) 과목은 평점 계산에서 제외돼요. Pass를 받으면 학점만 인정되고, Fail이면 학점도 인정되지 않아요.",
-      },
-      {
-        question: "재수강하면 이전 성적은 어떻게 되나요?",
-        answer: "대부분의 대학에서 재수강 시 이전 성적은 평점 계산에서 제외되고 새 성적으로 대체돼요. 다만 재수강 횟수 제한이나 성적 상한(예: A0까지만)이 있는 학교도 있으니 학칙을 확인하세요.",
-      },
-    ],
-  },
-  {
+    {
     slug: "youtube-thumbnail-download-guide",
     title: {
       ko: "유튜브 썸네일 다운로드 — 고화질 이미지 저장하는 법",
@@ -8298,7 +7349,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "썸네일 활용 시 주의사항",
           body: "다운로드한 썸네일을 사용할 때 알아둬야 할 점이 있어요.\n\n- 저작권: 타인의 썸네일은 저작권이 있으므로, 상업적 사용은 권장하지 않아요\n- 출처 표기: 블로그나 발표에서 사용할 때는 영상 출처를 꼭 밝히세요\n- 개인 분석용: 디자인 레퍼런스로 분석하는 건 괜찮아요\n- 본인 영상: 본인이 업로드한 영상의 썸네일은 자유롭게 사용 가능\n\n특히 유튜브 크리에이터라면, 경쟁 채널의 썸네일 트렌드를 분석해서 본인 채널에 적용하는 게 CTR(클릭률) 올리는 데 효과적이에요.",
-        },
+        }
       ],
       en: [
         {
@@ -8316,7 +7367,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Important Notes on Using Thumbnails",
           body: "Keep these in mind when using downloaded thumbnails:\n\n- Copyright: Others' thumbnails are copyrighted — avoid commercial use\n- Attribution: Always credit the video source in blogs or presentations\n- Personal analysis: Using thumbnails for design research is fine\n- Your own videos: Thumbnails from your uploads are free to use\n\nFor YouTube creators, analyzing competitor thumbnail trends is a proven way to improve your click-through rate (CTR).",
-        },
+        }
       ],
     },
     faq: [
@@ -8331,7 +7382,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Shorts 영상 썸네일도 다운로드 가능한가요?",
         answer: "네, 가능해요. Shorts URL(youtube.com/shorts/VIDEO_ID)을 그대로 붙여넣으면 됩니다. Shorts도 일반 영상과 동일한 방식으로 썸네일이 생성돼요.",
-      },
+      }
     ],
   },
   {
@@ -8365,7 +7416,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 기초대사량 계산기 사용법",
           body: "복잡한 공식을 직접 계산할 필요 없어요.\n\n1. 성별, 나이, 키, 몸무게를 입력하세요\n2. BMR이 자동으로 계산됩니다\n3. 활동량을 선택하면 TDEE까지 확인 가능\n\n다이어트 목표에 맞는 일일 칼로리도 함께 제안해 드려요.\n\n- 체중 감량: TDEE - 300~500 kcal\n- 체중 유지: TDEE 수준\n- 체중 증가 (벌크업): TDEE + 300~500 kcal\n\n주기적으로 체중이 변할 때마다 다시 계산하는 걸 추천합니다. 체중이 줄면 BMR도 낮아지거든요.",
-        },
+        }
       ],
       en: [
         {
@@ -8383,7 +7434,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio BMR Calculator",
           body: "No need to crunch numbers manually:\n\n1. Enter gender, age, height, and weight\n2. Get your BMR instantly\n3. Select activity level to see your TDEE\n\nThe tool also suggests daily calorie targets:\n- Weight loss: TDEE - 300-500 kcal\n- Maintenance: TDEE level\n- Bulking: TDEE + 300-500 kcal\n\nRecalculate whenever your weight changes significantly.",
-        },
+        }
       ],
     },
     faq: [
@@ -8398,7 +7449,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "근육량이 많으면 기초대사량도 높아지나요?",
         answer: "네, 맞아요. 근육은 지방보다 에너지를 더 많이 소모하기 때문에, 같은 체중이라도 근육량이 많은 사람의 BMR이 더 높아요. 그래서 다이어트할 때 근력 운동을 병행하는 게 좋습니다.",
-      },
+      }
     ],
   },
   {
@@ -8432,7 +7483,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "로렘 입숨 대체 텍스트도 있어요",
           body: "로렘 입숨 외에도 재미있는 대체 더미 텍스트들이 있어요.\n\n- 한글 입숨: 한글 더미 텍스트 (한국어 디자인 작업에 적합)\n- Hipster Ipsum: 힙스터 스타일 영어 더미 텍스트\n- Bacon Ipsum: 고기 관련 단어로 구성된 텍스트\n- Cat Ipsum: 고양이 관련 텍스트\n- Cupcake Ipsum: 디저트 관련 텍스트\n\n하지만 업무용이라면 표준 로렘 입숨을 쓰는 게 가장 무난해요. 클라이언트에게 목업을 보여줄 때 Bacon Ipsum이 들어가 있으면 좀 당황스러울 수 있으니까요.\n\n참고로 HTML 코딩할 때 VS Code에서 'lorem'을 입력하고 Tab 키를 누르면 자동으로 로렘 입숨이 생성되기도 해요.",
-        },
+        }
       ],
       en: [
         {
@@ -8450,7 +7501,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Fun Alternatives to Lorem Ipsum",
           body: "Beyond classic Lorem Ipsum, there are fun alternatives:\n\n- Korean Ipsum: Korean dummy text for Korean design projects\n- Hipster Ipsum: Hipster-flavored English placeholder text\n- Bacon Ipsum: Meat-themed dummy text\n- Cat Ipsum: Feline-themed placeholder\n- Cupcake Ipsum: Dessert-themed text\n\nFor professional work, stick with standard Lorem Ipsum. You don't want Bacon Ipsum showing up in a client presentation.\n\nPro tip: In VS Code, type 'lorem' and press Tab to auto-generate Lorem Ipsum text.",
-        },
+        }
       ],
     },
     faq: [
@@ -8465,7 +7516,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "개발할 때 로렘 입숨을 쉽게 넣는 방법이 있나요?",
         answer: "VS Code에서 'lorem'을 입력하고 Tab 키를 누르면 자동으로 한 문단이 생성돼요. 'lorem10'을 입력하면 10단어, 'lorem100'을 입력하면 100단어가 생성됩니다. Emmet 기능을 지원하는 에디터면 대부분 사용 가능해요.",
-      },
+      }
     ],
   },
   {
@@ -8499,7 +7550,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "비밀번호 관리 팁",
           body: "강력한 비밀번호를 만들었으면 관리도 중요해요:\n\n- 비밀번호 관리자(1Password, Bitwarden) 사용 추천\n- 같은 비밀번호 여러 사이트에 재사용 금지\n- 2단계 인증(2FA) 필수 활성화\n- 3~6개월마다 중요 계정 비밀번호 변경\n- 메모장이나 포스트잇에 적지 않기\n\n[URL 인코딩 가이드](/blog/url-encoding-decoding-guide)도 웹 보안 이해에 도움이 돼요."
-        },
+        }
       ],
       en: [
         {
@@ -8517,7 +7568,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Password Management Tips",
           body: "Use a password manager (1Password, Bitwarden). Enable 2FA everywhere. Never reuse passwords. Change critical passwords every 3-6 months."
-        },
+        }
       ],
     },
     faq: [
@@ -8532,144 +7583,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "특수문자를 꼭 넣어야 하나요?",
         answer: "특수문자를 넣으면 보안이 크게 향상돼요. 하지만 일부 사이트는 특수문자를 제한하기도 해요. 그런 경우 대소문자+숫자 조합으로 길이를 더 늘려서 보완하세요.",
-      },
+      }
     ],
   },
-  {
-    slug: "base64-encoding-practical-use-cases",
-    title: {
-      ko: "Base64 변환 실전 활용법 — 이미지 인코딩부터 API 인증까지",
-      en: "Base64 Encoding Practical Guide — From Image Embedding to API Auth",
-    },
-    description: {
-      ko: "Base64 인코딩/디코딩의 실전 활용법을 정리했어요. 이미지 임베딩, API 인증, 데이터 전송 등 개발자가 꼭 알아야 할 사례들이에요.",
-      en: "Practical Base64 encoding/decoding use cases for developers. Covers image embedding, API authentication, and data transfer.",
-    },
-    date: "2026-04-07",
-    toolId: "base64",
-    image: "/images/blog/base64-encoding-practical-use-cases.webp",
-    keywords: ["base64 변환", "base64 인코딩", "base64 디코딩", "base64 encode decode", "이미지 base64"],
-    content: {
-      ko: [
-        {
-          heading: "Base64란? 왜 쓸까?",
-          body: "Base64는 바이너리 데이터를 텍스트(ASCII)로 변환하는 인코딩 방식이에요. 이메일, URL, JSON처럼 텍스트만 허용하는 곳에서 이미지나 파일 데이터를 전달할 때 쓰여요.\n\n원리는 간단해요. 3바이트(24비트)를 6비트씩 4개로 나누고, 각각을 A-Z, a-z, 0-9, +, / 총 64개 문자로 변환하는 거예요.\n\n단점은 원본보다 약 33% 크기가 커진다는 거예요. 그래서 대용량 파일에는 적합하지 않아요."
-        },
-        {
-          heading: "실전 활용 1: 이미지 임베딩",
-          body: "CSS나 HTML에 작은 이미지를 직접 넣을 때 Base64를 써요:\n\nbackground-image: url(data:image/png;base64,iVBORw0KGgo...);\n\nHTTP 요청을 줄여서 작은 아이콘이나 로고 로딩 속도를 개선할 수 있어요. 단, 1~2KB 이하의 작은 이미지에만 추천해요.\n\n큰 이미지는 [이미지 압축 도구](/blog/image-compression-guide-web)로 최적화하는 게 나아요."
-        },
-        {
-          heading: "실전 활용 2: API 인증",
-          body: "HTTP Basic Authentication은 username:password를 Base64로 인코딩해서 헤더에 넣어요:\n\nAuthorization: Basic dXNlcjpwYXNz\n\n이건 암호화가 아니라 인코딩이에요! 누구나 디코딩할 수 있으니 반드시 HTTPS와 함께 사용해야 해요.\n\nJWT 토큰의 페이로드도 Base64url로 인코딩되어 있어요. 디코딩하면 토큰에 담긴 사용자 정보를 확인할 수 있어요."
-        },
-        {
-          heading: "Toolkio Base64 변환기 사용법",
-          body: "Toolkio의 Base64 변환기는 텍스트와 파일 모두 지원해요.\n\n텍스트 변환:\n1. 인코딩할 텍스트 입력\n2. Encode 또는 Decode 선택\n3. 결과 복사\n\n파일 변환:\n1. 파일 드래그 앤 드롭\n2. Base64 문자열 생성\n3. data URI 형식으로 복사 가능\n\n[URL 인코딩 가이드](/blog/url-encoding-decoding-guide)와 함께 알아두면 웹 개발이 편해져요."
-        },
-      ],
-      en: [
-        {
-          heading: "What is Base64?",
-          body: "Base64 converts binary data to ASCII text using 64 characters (A-Z, a-z, 0-9, +, /). Used when text-only channels need to carry binary data. ~33% size overhead."
-        },
-        {
-          heading: "Image Embedding",
-          body: "Embed small images directly in CSS/HTML as data URIs. Reduces HTTP requests for tiny icons. Only recommended for images under 1-2KB."
-        },
-        {
-          heading: "API Authentication",
-          body: "HTTP Basic Auth encodes username:password in Base64. JWT payloads use Base64url encoding. Remember: encoding is NOT encryption — always use HTTPS."
-        },
-        {
-          heading: "Using Toolkio Base64 Converter",
-          body: "Supports both text and file conversion. Drag-and-drop files for instant encoding. Copy as data URI for direct use in code."
-        },
-      ],
-    },
-    faq: [
       {
-        question: "Base64 인코딩은 암호화인가요?",
-        answer: "아니요, 암호화가 아니에요. Base64는 누구나 쉽게 디코딩할 수 있는 인코딩 방식이에요. 보안 목적이라면 AES 같은 암호화 알고리즘을 사용해야 해요.",
-      },
-      {
-        question: "Base64로 인코딩하면 크기가 얼마나 커지나요?",
-        answer: "원본 대비 약 33% 커져요. 3바이트가 4문자로 변환되기 때문이에요. 100KB 파일이면 약 133KB가 돼요.",
-      },
-      {
-        question: "Base64와 Base64url의 차이점은 뭔가요?",
-        answer: "Base64url은 +를 -로, /를 _로 바꾸고 패딩(=)을 제거한 버전이에요. URL이나 파일명에서 안전하게 사용할 수 있어서 JWT 등에서 사용돼요.",
-      },
-    ],
-  },
-  {
-    slug: "regex-tester-practical-patterns-guide",
-    title: {
-      ko: "정규식 테스트 실전 가이드 — 자주 쓰는 패턴 20선 모음",
-      en: "Regex Tester Practical Guide — 20 Most Useful Patterns Collection",
-    },
-    description: {
-      ko: "정규식(정규 표현식)을 테스트하고 활용하는 실전 가이드예요. 이메일, 전화번호, URL 검증 등 자주 쓰는 패턴 20개를 모았어요.",
-      en: "Practical regex testing guide with 20 commonly used patterns. Covers email, phone, URL validation and more.",
-    },
-    date: "2026-04-07",
-    toolId: "regex-tester",
-    image: "/images/blog/regex-tester-practical-patterns-guide.webp",
-    keywords: ["정규식 테스트", "정규식 패턴", "regex 테스트", "정규 표현식", "regex tester"],
-    content: {
-      ko: [
-        {
-          heading: "정규식, 왜 어렵게 느껴질까?",
-          body: "정규식(Regular Expression, Regex)은 문자열 패턴을 정의하는 언어예요. 처음 보면 암호처럼 보이지만, 기본 문법만 알면 금방 읽을 수 있어요.\n\n예를 들어 ^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z]+$는 이메일 형식을 검증하는 정규식이에요.\n\n핵심 기호만 알면 돼요:\n- ^ : 시작\n- $ : 끝\n- . : 아무 문자 1개\n- * : 0회 이상 반복\n- + : 1회 이상 반복\n- [ ] : 문자 범위\n- ( ) : 그룹"
-        },
-        {
-          heading: "자주 쓰는 패턴 10선 (한국어)",
-          body: "한국 개발에서 자주 필요한 패턴이에요:\n\n1. 한국 휴대폰: ^01[016789]-?\\d{3,4}-?\\d{4}$\n2. 이메일: ^[\\w.-]+@[\\w.-]+\\.\\w{2,}$\n3. 한글만: ^[가-힣]+$\n4. 주민등록번호: ^\\d{6}-?[1-4]\\d{6}$\n5. 사업자등록번호: ^\\d{3}-?\\d{2}-?\\d{5}$\n6. 우편번호: ^\\d{5}$\n7. URL: ^https?://[\\w.-]+\\.[a-z]{2,}\n8. 금액(쉼표): ^\\d{1,3}(,\\d{3})*원?$\n9. 날짜(YYYY-MM-DD): ^\\d{4}-\\d{2}-\\d{2}$\n10. IPv4: ^(\\d{1,3}\\.){3}\\d{1,3}$\n\n[글자수 세기 도구](/blog/how-to-count-characters)와 함께 입력 검증에 활용하세요."
-        },
-        {
-          heading: "자주 쓰는 패턴 10선 (영어/범용)",
-          body: "글로벌 서비스에서 자주 쓰는 패턴이에요:\n\n11. 비밀번호(강력): ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$\n12. 신용카드: ^\\d{4}[- ]?\\d{4}[- ]?\\d{4}[- ]?\\d{4}$\n13. HEX 색상: ^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$\n14. 숫자만: ^\\d+$\n15. 영문만: ^[a-zA-Z]+$\n16. 공백 제거: \\s+\n17. HTML 태그: <[^>]+>\n18. 파일 확장자: \\.(jpg|jpeg|png|gif|webp)$\n19. 유튜브 URL: youtube\\.com/watch\\?v=[\\w-]+\n20. JSON 키: \"([^\"]+)\"\\s*:"
-        },
-        {
-          heading: "Toolkio 정규식 테스트기 사용법",
-          body: "Toolkio의 정규식 테스트기는 실시간으로 패턴을 테스트할 수 있어요.\n\n1. 정규식 패턴 입력\n2. 테스트할 문자열 입력\n3. 매칭 결과 실시간 하이라이트\n4. 플래그 설정 (g, i, m 등)\n\n매칭되는 부분이 색상으로 표시되어서 패턴이 맞는지 바로 확인할 수 있어요. 복잡한 패턴을 작성할 때 한 단계씩 테스트하면서 만들면 실수를 줄일 수 있어요."
-        },
-      ],
-      en: [
-        {
-          heading: "Why Regex Seems Hard",
-          body: "Regex defines string patterns. Key symbols: ^ (start), $ (end), . (any char), * (0+), + (1+), [] (range), () (group). Once you know these basics, patterns become readable."
-        },
-        {
-          heading: "10 Common Korean Patterns",
-          body: "Phone: ^01[016789]-?\\d{3,4}-?\\d{4}$. Email, Korean chars only, ID numbers, business registration, zip codes, URLs, currency, dates, IPv4."
-        },
-        {
-          heading: "10 Common Universal Patterns",
-          body: "Strong password, credit card, HEX color, digits only, letters only, whitespace trim, HTML tags, file extensions, YouTube URLs, JSON keys."
-        },
-        {
-          heading: "Using Toolkio Regex Tester",
-          body: "Enter pattern and test string. Matches highlight in real-time. Set flags (g, i, m). Build complex patterns step by step with instant feedback."
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "정규식을 배우려면 어디서 시작하나요?",
-        answer: "regex101.com에서 실습하면서 배우는 게 가장 좋아요. 패턴을 입력하면 각 부분의 의미를 설명해줘요. Toolkio 정규식 테스트기로도 바로 연습할 수 있어요.",
-      },
-      {
-        question: "프로그래밍 언어마다 정규식이 다른가요?",
-        answer: "기본 문법은 거의 같지만, 고급 기능(전방탐색, 후방탐색 등)은 언어마다 차이가 있어요. JavaScript는 후방탐색 지원이 제한적이고, Python은 대부분의 기능을 지원해요.",
-      },
-      {
-        question: "정규식으로 이메일을 100% 정확히 검증할 수 있나요?",
-        answer: "완벽한 이메일 검증은 정규식만으로 어려워요. 기본 형식 검증 후 실제 메일을 보내서 확인하는 게 가장 정확해요. 정규식은 명백한 오류를 걸러내는 1차 필터 역할이에요.",
-      },
-    ],
-  },
-  {
     slug: "qr-code-google-form-guide",
     title: {
       ko: "QR코드 만들기 구글폼 연결 — 설문조사 공유를 쉽게",
@@ -8700,7 +7617,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "QR코드 활용 팁과 주의사항",
           body: "QR코드를 효과적으로 활용하는 팁이에요:\n\n- 인쇄할 때 최소 2cm x 2cm 이상 크기로\n- 주변에 여백을 충분히 확보 (테두리에 딱 붙이면 인식 어려움)\n- 반드시 스마트폰으로 테스트 스캔 후 배포\n- 설문이 수정되어도 URL이 같으면 QR코드 재생성 불필요\n- QR코드 아래에 '설문 참여하기' 같은 안내 문구 추가\n\n구글폼 URL을 수정하면 기존 QR코드가 작동하지 않으니 주의하세요. 설문 내용만 수정하는 건 괜찮아요."
-        },
+        }
       ],
       en: [
         {
@@ -8718,7 +7635,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Tips and Best Practices",
           body: "Print at 2cm+ size, leave white space margins, always test-scan before distributing. Form URL changes break QR codes — content edits are fine."
-        },
+        }
       ],
     },
     faq: [
@@ -8733,7 +7650,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "QR코드가 스캔이 안 될 때 어떻게 하나요?",
         answer: "대비가 부족하거나 크기가 너무 작으면 인식이 안 돼요. 어두운 QR코드 + 밝은 배경 조합으로, 최소 2cm 이상 크기로 인쇄하세요. 구겨지거나 반사가 심한 재질도 피해야 해요.",
-      },
+      }
     ],
   },
   {
@@ -8767,7 +7684,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "상황별 추천 정리",
           body: "상황에 맞는 도구를 고르는 게 핵심이에요:\n\n블로그/SNS 이미지 1-10장: 온라인 도구 (Toolkio, TinyPNG)\n쇼핑몰 상품 이미지 대량: 프로그램 (Caesium, ImageOptim)\n웹 개발 자동화: CLI 도구 (sharp, imagemin)\n인쇄용 고해상도: Photoshop의 '웹용 저장'\n\n추천 형식:\n- 사진: WebP (최우선) 또는 JPEG\n- 로고/아이콘: PNG 또는 SVG\n- 투명 배경 필요: PNG 또는 WebP\n\nWebP는 JPEG 대비 25-35% 더 작으면서 화질 차이가 거의 없어서 웹에서는 WebP를 쓰는 게 가장 좋아요."
-        },
+        }
       ],
       en: [
         {
@@ -8785,7 +7702,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "When to Use What",
           body: "Blog/SNS: online tools. E-commerce bulk: desktop. Web dev automation: CLI tools. Print: Photoshop. Prefer WebP format for web (25-35% smaller than JPEG)."
-        },
+        }
       ],
     },
     faq: [
@@ -8800,7 +7717,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "압축한 이미지를 다시 원본 화질로 되돌릴 수 있나요?",
         answer: "손실 압축(JPEG, WebP lossy)은 원본으로 복원이 불가능해요. 압축 전에 원본을 따로 보관해두는 게 좋아요. PNG는 무손실이라 압축해도 화질이 그대로예요.",
-      },
+      }
     ],
   },
   {
@@ -8834,7 +7751,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "주의사항과 대안",
           body: "Base64 이미지의 단점도 알아두세요:\n\n- 원본 대비 33% 크기 증가\n- 브라우저 캐싱이 안 됨 (매번 다운로드)\n- 큰 이미지에 사용하면 HTML 파일이 무거워짐\n- 유지보수가 어려움 (이미지 수정 시 다시 인코딩)\n\n대안:\n- 10KB 이상 이미지: 일반 파일 링크 사용\n- 아이콘: SVG 인라인 (크기 효율적)\n- 반복 사용 이미지: CDN + 캐싱\n\n결론적으로 Base64는 작은 이미지의 HTTP 요청을 줄이는 최적화 기법이에요. 무분별하게 쓰면 오히려 성능이 나빠지니 용도에 맞게 사용하세요."
-        },
+        }
       ],
       en: [
         {
@@ -8852,7 +7769,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Caveats and Alternatives",
           body: "33% size increase, no caching, bloated HTML. Use regular file links for 10KB+ images, SVG for icons, CDN for repeated images."
-        },
+        }
       ],
     },
     faq: [
@@ -8867,7 +7784,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Base64 이미지가 SEO에 영향을 주나요?",
         answer: "Base64 이미지는 검색엔진이 별도 이미지로 인식하지 못해요. SEO가 중요한 이미지는 일반 파일로 올리고 alt 태그를 넣는 게 좋아요. 장식용 아이콘에만 Base64를 쓰세요.",
-      },
+      }
     ],
   },
   {
@@ -8901,7 +7818,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "온라인 도구와 병행 활용하기",
           body: "크롬 확장은 브라우저에서 API 응답을 볼 때 편하지만, JSON을 직접 편집하거나 변환할 때는 온라인 도구가 더 유용해요.\n\nToolkio [JSON 포맷터](/tools/json-formatter)에서는 JSON 포맷팅, 압축, 유효성 검사를 한 곳에서 할 수 있어요. 확장 프로그램으로 확인한 JSON을 복사해서 Toolkio에서 편집하는 워크플로우가 가장 효율적이에요.\n\n[JSON 데이터 정리 가이드](/blog/json-data-cleanup-developer-tool)도 함께 참고하면 더 도움이 될 거예요."
-        },
+        }
       ],
       en: [
         {
@@ -8919,7 +7836,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Combine with Online Tools",
           body: "Use extensions for viewing API responses in the browser, and Toolkio JSON Formatter for editing, compressing, and validating. Copy JSON from the extension to Toolkio for a complete workflow."
-        },
+        }
       ],
     },
     faq: [
@@ -8934,7 +7851,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Firefox에서도 같은 확장을 쓸 수 있나요?",
         answer: "Firefox 전용 JSON 뷰어가 있어요. Firefox는 기본적으로 JSON 뷰어가 내장되어 있어서 확장 없이도 기본적인 포맷팅이 돼요.",
-      },
+      }
     ],
   },
   {
@@ -8968,7 +7885,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "QR코드 디자인과 활용 팁",
           body: "QR코드를 더 효과적으로 활용하는 팁이에요:\n\n- 크기: 최소 2cm x 2cm 이상이어야 스캔 가능\n- 여백: QR코드 주변에 최소 4셀 이상의 여백 유지\n- 색상: 어두운 배경에 밝은 QR코드도 가능하지만, 대비가 충분해야 해요\n- 테스트: 인쇄 전에 반드시 여러 기기로 스캔 테스트\n- 단축 URL: 긴 URL을 단축하면 QR코드가 더 간결해져서 인식률이 올라가요"
-        },
+        }
       ],
       en: [
         {
@@ -8986,7 +7903,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Design and Usage Tips",
           body: "Minimum size: 2cm x 2cm. Keep quiet zone (margin) of at least 4 modules. Test with multiple devices before printing. Use URL shorteners for cleaner QR codes."
-        },
+        }
       ],
     },
     faq: [
@@ -9001,7 +7918,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "QR코드 스캔 횟수를 추적할 수 있나요?",
         answer: "정적 QR코드 자체로는 불가능해요. 스캔 추적이 필요하면 UTM 파라미터를 URL에 추가하고 Google Analytics에서 확인하는 방법이 있어요.",
-      },
+      }
     ],
   },
   {
@@ -9035,7 +7952,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "방법 3: 포맷 변환으로 용량 줄이기",
           body: "이미지 포맷을 바꾸는 것만으로도 용량이 크게 줄어요.\n\n용량 순서 (같은 이미지 기준):\nPNG > JPEG > WebP > AVIF\n\nWebP는 JPEG 대비 25-34% 더 작으면서 품질은 비슷해요. 웹사이트용이라면 WebP 변환을 강력 추천해요.\n\nAVIF는 가장 작지만 아직 일부 브라우저에서 미지원이에요.\n\n[웹 이미지 최적화 가이드](/blog/web-image-optimization-guide)에서 더 자세한 내용을 확인할 수 있어요."
-        },
+        }
       ],
       en: [
         {
@@ -9053,7 +7970,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Method 3: Format Conversion",
           body: "PNG > JPEG > WebP > AVIF in file size. WebP is 25-34% smaller than JPEG at similar quality. Use WebP for web, JPEG for general use, PNG only when transparency is needed."
-        },
+        }
       ],
     },
     faq: [
@@ -9068,7 +7985,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "핸드폰으로도 이미지 용량을 줄일 수 있나요?",
         answer: "네, Toolkio 같은 웹 기반 도구는 모바일 브라우저에서도 사용 가능해요. 앱으로는 Photo Compress 2.0(Android), Image Size(iOS)를 추천해요.",
-      },
+      }
     ],
   },
   {
@@ -9102,7 +8019,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "패스프레이즈 관리 팁",
           body: "패스프레이즈도 사이트마다 다르게 사용해야 해요.\n\n- 코어 패스프레이즈 + 사이트별 접미사: 기본 구조는 같되 끝에 사이트 약어를 붙이는 방법 (예: Sanchaek!Coffee3-gm 구글용, Sanchaek!Coffee3-nv 네이버용)\n- 비밀번호 관리자 앱: 1Password, Bitwarden 같은 앱을 쓰면 하나의 마스터 패스프레이즈만 기억하면 돼요\n- 2단계 인증(2FA): 패스프레이즈와 함께 사용하면 보안이 극대화돼요\n\n가장 중요한 건 같은 비밀번호를 여러 사이트에 재사용하지 않는 거예요."
-        },
+        }
       ],
       en: [
         {
@@ -9120,7 +8037,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Managing Passphrases",
           body: "Use a core passphrase with site-specific suffixes, or use a password manager like 1Password or Bitwarden. Always enable 2FA alongside your passphrase. Never reuse passwords across sites."
-        },
+        }
       ],
     },
     faq: [
@@ -9135,7 +8052,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "모든 사이트에서 패스프레이즈를 쓸 수 있나요?",
         answer: "대부분 가능하지만, 일부 사이트에서 비밀번호 길이를 16자로 제한하는 경우가 있어요. 그런 경우에는 Toolkio 비밀번호 생성기로 16자 랜덤 비밀번호를 만들어 비밀번호 관리자에 저장하세요.",
-      },
+      }
     ],
   },
   {
@@ -9169,7 +8086,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "글자수 줄이는 실전 팁",
           body: "500자에서 450자로 줄여야 할 때 유용한 팁이에요:\n\n- 불필요한 수식어 삭제: '매우', '정말', '상당히' → 삭제\n- 중복 표현 제거: '앞으로의 미래' → '미래', '다시 재시작' → '재시작'\n- 긴 문장 분리: 접속사로 연결된 긴 문장을 2개로 나누기\n- 피동형을 능동형으로: '결정되었다' → '결정했다'\n- 한자어를 쉬운 말로: '시행하다' → '하다', '활용하다' → '쓰다'\n\n반대로 늘려야 할 때는 구체적인 숫자, 사례, 에피소드를 추가하면 자연스럽게 늘어나요."
-        },
+        }
       ],
       en: [
         {
@@ -9187,7 +8104,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Tips for Trimming Text",
           body: "Remove filler words (very, really, quite). Eliminate redundancies. Split long sentences. Use active voice. Replace formal words with simpler ones. To add length: include specific numbers, examples, and anecdotes."
-        },
+        }
       ],
     },
     faq: [
@@ -9202,7 +8119,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "글자수 세기 도구마다 결과가 다르게 나와요",
         answer: "줄바꿈 문자(\\n) 처리 방식이 다르기 때문이에요. Toolkio 글자수 세기는 줄바꿈을 1자로 세고, 일부 도구는 세지 않아요. 지원하는 사이트와 동일한 기준을 사용하는 도구를 쓰세요.",
-      },
+      }
     ],
   },
   {
@@ -9285,7 +8202,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "4.5 만점 학점을 4.0 만점으로 바꾸는 공식이 있나요?",
         answer: "가장 간단한 공식은 (한국 GPA ÷ 4.5) × 4.0이에요. 예를 들어 3.6/4.5는 3.2/4.0이 돼요. Toolkio 학점 계산기에서 바로 계산할 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -9368,7 +8285,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "다이어트 중인데 기초대사량이 떨어지는 것 같아요",
         answer: "급격한 칼로리 제한은 기초대사량을 20%까지 낮출 수 있어요. 기초대사량 이하로 먹지 마시고, 근력 운동을 병행하세요. Toolkio 기초대사량 계산기로 최소 섭취 칼로리를 확인하세요.",
-      },
+      }
     ],
   },
   {
@@ -9447,7 +8364,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "띠 궁합이 안 맞으면 어떻게 하나요?",
         answer: "띠 궁합은 전통 문화에서 온 재미 요소예요. 실제 관계에서 중요한 건 서로의 소통과 노력이에요. 참고로만 활용하세요.",
-      },
+      }
     ],
   },
   {
@@ -9530,7 +8447,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "썸네일을 바꾸면 조회수가 올라가나요?",
         answer: "네, 가능해요. 유튜브는 썸네일 변경 후 영상을 재평가해요. CTR이 낮은 영상의 썸네일을 바꿔서 조회수가 2~3배 오른 사례가 많아요.",
-      },
+      }
     ],
   },
   {
@@ -9609,7 +8526,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "퍼센트 계산기로 할인율을 어떻게 구하나요?",
         answer: "Toolkio 퍼센트 계산기에서 '원래 값'에 원가를, '비교 값'에 할인가를 넣으면 할인율이 자동으로 계산돼요.",
-      },
+      }
     ],
   },
   {
@@ -9692,7 +8609,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Gzip 압축을 쓰면 CSS 압축은 안 해도 되나요?",
         answer: "둘 다 하는 게 좋아요. CSS 압축은 불필요한 문자를 제거하고, Gzip은 그 결과를 추가로 압축해요. 두 가지를 합치면 원본 대비 90% 이상 줄일 수 있어요.",
-      },
+      }
     ],
   },
   {
@@ -9726,7 +8643,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "읽기 시간 추정하기",
           body: "일반적으로 한국어는 분당 약 200~250단어를 읽어요. 영어는 분당 200~250단어 정도예요.\n\n단어수를 200으로 나누면 대략적인 읽기 시간을 예측할 수 있어요. 블로그나 뉴스레터를 쓸 때 독자가 투자할 시간을 미리 알려주면 친절한 UX가 돼요.\n\n텍스트 카운터에서 단어수를 확인한 후, 읽기 시간을 제목이나 본문 상단에 표시해보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -9744,7 +8661,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Estimating Reading Time",
           body: "Average reading speed is about 200-250 words per minute for most adults.\n\nDivide your word count by 200 to estimate reading time. Displaying this on your blog or newsletter creates a better user experience.\n\nCheck your word count with the text counter and add an estimated reading time to your content.",
-        },
+        }
       ],
     },
     faq: [
@@ -9759,406 +8676,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: "SEO에 적정한 글 길이는 얼마인가요?",
         answer: "구글 검색 상위 페이지 평균은 1500~2500단어예요. 하지만 글 길이보다 내용의 질이 더 중요해요. 불필요하게 늘리는 건 오히려 역효과예요.",
-      },
+      }
     ],
   },
-  {
-    slug: "number-base-converter-binary-hex-guide",
-    title: {
-      ko: "진수 변환기 사용법 — 2진수 8진수 16진수 쉽게 변환하기",
-      en: "Number Base Converter Guide — Binary, Octal, Hexadecimal Conversion Made Easy",
-    },
-    description: {
-      ko: "2진수, 8진수, 10진수, 16진수 변환이 필요할 때 진수 변환기를 활용하는 방법이에요. 프로그래밍, 네트워크, 색상 코드 작업에 유용해요.",
-      en: "How to convert between binary, octal, decimal, and hexadecimal using a number base converter. Useful for programming, networking, and color codes.",
-    },
-    date: "2026-04-11",
-    toolId: "number-base-converter",
-    image: "/images/blog/number-base-converter-binary-hex-guide.webp",
-    keywords: ["진수 변환", "2진수 변환", "16진수 변환기", "진법 계산기", "binary converter"],
-    content: {
-      ko: [
-        {
-          heading: "진수 변환이 필요한 순간",
-          body: "프로그래밍을 하다 보면 10진수를 2진수로, 16진수를 10진수로 바꿔야 하는 상황이 자주 있어요.\n\n- 네트워크 서브넷 마스크 계산 (IP 주소를 2진수로)\n- CSS 색상 코드 작업 (#FF5733 같은 16진수)\n- 파일 권한 설정 (chmod 755 같은 8진수)\n- 메모리 주소 분석 (16진수 주소)\n\n머릿속으로 변환하면 실수하기 쉬워서 도구를 쓰는 게 정확해요.",
-        },
-        {
-          heading: "진수 체계 기초",
-          body: "숫자를 표현하는 방식이 진수 체계예요.\n\n- 2진수(Binary): 0과 1만 사용. 컴퓨터의 기본 언어\n- 8진수(Octal): 0~7 사용. 리눅스 파일 권한에서 자주 사용\n- 10진수(Decimal): 0~9 사용. 우리가 일상에서 쓰는 숫자\n- 16진수(Hexadecimal): 0~9 + A~F 사용. 색상 코드, 메모리 주소\n\n예시: 10진수 255 = 2진수 11111111 = 8진수 377 = 16진수 FF",
-        },
-        {
-          heading: "Toolkio 진수 변환기 사용법",
-          body: "사용법은 간단해요.\n\n1. 변환할 숫자를 입력해요\n2. 입력 진수를 선택해요 (2진수, 8진수, 10진수, 16진수)\n3. 나머지 진수로의 변환 결과가 바로 표시돼요\n\n여러 진수를 동시에 보여주기 때문에 한 번에 비교할 수 있어요.",
-        },
-        {
-          heading: "실전 활용 사례",
-          body: "CSS 색상 변환: #FF0000(빨강)이 RGB로 뭔지 궁금할 때, FF를 10진수로 변환하면 255예요. 즉 RGB(255, 0, 0)이에요.\n\n서브넷 마스크: 255.255.255.0을 2진수로 변환하면 11111111.11111111.11111111.00000000이에요. 24비트 서브넷이라는 걸 알 수 있어요.\n\n리눅스 권한: chmod 755에서 7은 2진수 111(읽기+쓰기+실행), 5는 101(읽기+실행)이에요.",
-        },
-      ],
-      en: [
-        {
-          heading: "When You Need Number Base Conversion",
-          body: "Programming often requires converting between number systems:\n\n- Network subnet mask calculations (IP addresses in binary)\n- CSS color codes (#FF5733 in hexadecimal)\n- File permissions (chmod 755 in octal)\n- Memory address analysis (hex addresses)\n\nManual conversion is error-prone, so using a tool is more reliable.",
-        },
-        {
-          heading: "Number Systems Basics",
-          body: "A number system is a way to represent numbers:\n\n- Binary (base 2): Uses 0 and 1. The language of computers\n- Octal (base 8): Uses 0-7. Common in Unix file permissions\n- Decimal (base 10): Uses 0-9. Our everyday number system\n- Hexadecimal (base 16): Uses 0-9 + A-F. Used in color codes, memory\n\nExample: Decimal 255 = Binary 11111111 = Octal 377 = Hex FF",
-        },
-        {
-          heading: "How to Use the Converter",
-          body: "It is simple:\n\n1. Enter the number to convert\n2. Select the input base (binary, octal, decimal, hex)\n3. See instant conversion results in all other bases\n\nAll bases are shown simultaneously for easy comparison.",
-        },
-        {
-          heading: "Practical Use Cases",
-          body: "CSS colors: #FF0000 (red) in RGB? Convert FF to decimal = 255. So it is RGB(255, 0, 0).\n\nSubnet masks: 255.255.255.0 in binary = 11111111.11111111.11111111.00000000, showing a /24 subnet.\n\nLinux permissions: chmod 755 where 7 = binary 111 (read+write+execute), 5 = 101 (read+execute).",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "16진수에서 A~F는 각각 몇인가요?",
-        answer: "A=10, B=11, C=12, D=13, E=14, F=15예요. FF는 15x16+15=255가 돼요.",
-      },
-      {
-        question: "음수도 진수 변환할 수 있나요?",
-        answer: "컴퓨터에서 음수는 2의 보수(Two's complement)로 표현해요. 기본 진수 변환기는 양수만 지원하는 경우가 많아요.",
-      },
-      {
-        question: "프로그래밍에서 16진수를 왜 많이 쓰나요?",
-        answer: "16진수 한 자리가 2진수 4자리와 정확히 대응되기 때문이에요. 11111111을 FF로 쓰면 훨씬 간결하죠.",
-      },
-    ],
-  },
-  {
-    slug: "unit-converter-everyday-conversions-guide",
-    title: {
-      ko: "단위 변환기 활용법 — cm, inch, kg, lb 자주 쓰는 변환 총정리",
-      en: "Unit Converter Guide — Essential cm, inch, kg, lb Conversions",
-    },
-    description: {
-      ko: "일상에서 자주 필요한 단위 변환을 정리했어요. 길이, 무게, 온도, 넓이 변환 공식과 Toolkio 단위 변환기 사용법까지 알려드려요.",
-      en: "Essential unit conversions for everyday use. Length, weight, temperature, and area conversion formulas plus how to use the Toolkio unit converter.",
-    },
-    date: "2026-04-11",
-    toolId: "unit-converter",
-    image: "/images/blog/unit-converter-everyday-conversions-guide.webp",
-    keywords: ["단위 변환", "cm inch 변환", "kg lb 변환", "단위 계산기", "unit converter"],
-    content: {
-      ko: [
-        {
-          heading: "단위 변환이 필요한 일상 상황",
-          body: "해외 쇼핑몰에서 옷을 살 때 사이즈가 인치로 되어 있어서 당황한 적 있으시죠?\n\n- 해외 직구: 키 cm를 feet/inch로, 몸무게 kg를 lb로\n- 요리: 온도 섭씨↔화씨, 컵/온스↔ml 변환\n- 인테리어: 평수↔제곱미터 변환\n- 여행: 마일↔킬로미터, 갤런↔리터\n\n매번 계산하기 번거로울 때 단위 변환기를 쓰면 바로 해결돼요.",
-        },
-        {
-          heading: "자주 쓰는 길이 변환",
-          body: "가장 많이 찾는 길이 변환이에요.\n\n- 1 inch = 2.54 cm\n- 1 feet = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n\n예시: 키 170cm = 약 5피트 7인치예요.\n\n해외 쇼핑몰에서 바지 기장이 32인치면? 32 x 2.54 = 81.28cm이에요.",
-        },
-        {
-          heading: "자주 쓰는 무게와 온도 변환",
-          body: "무게 변환:\n- 1 kg = 2.205 lb(파운드)\n- 1 oz(온스) = 28.35 g\n- 1 근 = 600 g (한국 기준)\n\n온도 변환:\n- 섭씨에서 화씨: (C x 9/5) + 32\n- 화씨에서 섭씨: (F - 32) x 5/9\n\n예시: 섭씨 36.5도(체온) = 화씨 97.7도\n\n오븐 레시피에서 350F가 나오면? 약 177C예요.",
-        },
-        {
-          heading: "Toolkio 단위 변환기 사용법",
-          body: "Toolkio 단위 변환기는 카테고리별로 나뉘어 있어서 찾기 편해요.\n\n1. 변환할 카테고리 선택 (길이, 무게, 온도, 넓이 등)\n2. 원래 단위와 변환할 단위를 선택\n3. 숫자를 입력하면 실시간으로 결과 표시\n\n자주 쓰는 변환은 즐겨찾기 해두면 다음에 바로 쓸 수 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "Everyday Situations Needing Unit Conversion",
-          body: "Shopping on international sites with sizes in inches? Cooking with a recipe in Fahrenheit?\n\n- Online shopping: cm to inches, kg to lbs\n- Cooking: Celsius to Fahrenheit, cups/oz to ml\n- Real estate: square feet to square meters\n- Travel: miles to kilometers, gallons to liters\n\nA unit converter handles all of these instantly.",
-        },
-        {
-          heading: "Common Length Conversions",
-          body: "The most searched length conversions:\n\n- 1 inch = 2.54 cm\n- 1 foot = 30.48 cm\n- 1 yard = 91.44 cm\n- 1 mile = 1.609 km\n\nExample: 170 cm height = about 5 feet 7 inches.\n\nPants with 32-inch inseam? 32 x 2.54 = 81.28 cm.",
-        },
-        {
-          heading: "Weight and Temperature Conversions",
-          body: "Weight:\n- 1 kg = 2.205 lbs\n- 1 oz = 28.35 g\n\nTemperature:\n- Celsius to Fahrenheit: (C x 9/5) + 32\n- Fahrenheit to Celsius: (F - 32) x 5/9\n\nExamples: Body temp 36.5C = 97.7F. Oven at 350F = about 177C.",
-        },
-        {
-          heading: "How to Use Toolkio Unit Converter",
-          body: "The converter is organized by category for easy navigation.\n\n1. Select a category (length, weight, temperature, area)\n2. Choose the source and target units\n3. Enter a number for instant conversion\n\nBookmark your frequent conversions for quick access next time.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "1평은 몇 제곱미터인가요?",
-        answer: "1평은 약 3.3058 제곱미터예요. 30평 아파트는 약 99.17 제곱미터(약 100m2)예요.",
-      },
-      {
-        question: "해외 요리 레시피에서 1 cup은 몇 ml인가요?",
-        answer: "미국 기준 1 cup = 약 237ml이에요. 영국 기준은 250ml이라 레시피 출처를 확인하는 게 좋아요.",
-      },
-      {
-        question: "마일과 해리(nautical mile)의 차이는요?",
-        answer: "1 마일 = 1.609km, 1 해리 = 1.852km이에요. 해리는 항해와 항공에서 사용하고, 마일은 육상에서 써요.",
-      },
-    ],
-  },
-  {
-    slug: "salary-calculator-net-pay-tax-guide",
-    title: {
-      ko: "연봉 실수령액 계산 — 4대보험 세금 공제 항목별 정리",
-      en: "Salary Calculator — Net Pay After Taxes and Insurance Deductions",
-    },
-    description: {
-      ko: "연봉에서 실제로 얼마를 받는지 계산하는 방법이에요. 4대보험, 소득세, 주민세 공제 항목을 하나씩 정리했어요.",
-      en: "How to calculate your actual take-home pay from gross salary. Breaking down insurance, income tax, and local tax deductions.",
-    },
-    date: "2026-04-11",
-    toolId: "salary-calculator",
-    image: "/images/blog/salary-calculator-net-pay-tax-guide.webp",
-    keywords: ["연봉 실수령액", "연봉 계산기", "4대보험 계산", "월급 세금", "net pay calculator"],
-    content: {
-      ko: [
-        {
-          heading: "연봉과 실수령액이 다른 이유",
-          body: "연봉 4000만 원이면 월 333만 원을 받을 거라고 생각하지만, 실제로는 약 283만 원 정도예요. 월 50만 원 차이가 나는 이유는 각종 공제 때문이에요.\n\n매달 빠지는 공제 항목:\n- 국민연금: 월급의 4.5%\n- 건강보험: 월급의 3.545%\n- 장기요양보험: 건강보험의 12.81%\n- 고용보험: 월급의 0.9%\n- 소득세: 간이세액표 기준\n- 지방소득세: 소득세의 10%",
-        },
-        {
-          heading: "4대보험 공제 상세",
-          body: "4대보험은 회사와 본인이 반반 부담해요. 본인 부담분만 월급에서 빠져요.\n\n국민연금: 월급의 4.5% (회사도 4.5%)\n- 연봉 4000만 원이면 월 약 15만 원\n\n건강보험: 월급의 3.545%\n- 연봉 4000만 원이면 월 약 11.8만 원\n\n장기요양보험: 건강보험료의 12.81%\n- 약 1.5만 원\n\n고용보험: 월급의 0.9%\n- 약 3만 원\n\n4대보험 합계: 월 약 31.3만 원",
-        },
-        {
-          heading: "소득세와 지방소득세",
-          body: "소득세는 부양가족 수에 따라 달라져요. 1인 가구와 4인 가구의 세금이 다르다는 뜻이에요.\n\n연봉 4000만 원, 부양가족 1명(본인만) 기준:\n- 소득세: 월 약 8.9만 원\n- 지방소득세: 약 0.89만 원\n\n부양가족이 늘면 세금이 줄어요. 배우자나 자녀를 부양가족으로 등록하면 절세 효과가 있어요.",
-        },
-        {
-          heading: "Toolkio 연봉 계산기 사용법",
-          body: "연봉 금액만 입력하면 모든 공제를 자동으로 계산해서 실수령액을 보여줘요.\n\n1. 연봉 금액을 입력해요\n2. 부양가족 수를 선택해요\n3. 4대보험, 세금, 실수령 월급이 한눈에 표시돼요\n\n연봉 협상 전에 미리 계산해보면 실제로 손에 쥐는 금액을 예측할 수 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "Why Gross Salary Differs from Net Pay",
-          body: "A 40 million KRW salary does not mean 3.33 million KRW per month. After deductions, you actually take home about 2.83 million KRW. The roughly 500,000 KRW difference comes from various deductions:\n\n- National Pension: 4.5%\n- Health Insurance: 3.545%\n- Long-term Care Insurance: 12.81% of health insurance\n- Employment Insurance: 0.9%\n- Income Tax: Based on simplified tax table\n- Local Income Tax: 10% of income tax",
-        },
-        {
-          heading: "Insurance Deductions Explained",
-          body: "The four major insurances are split 50/50 between employer and employee. Only your share is deducted from your paycheck.\n\nNational Pension: 4.5% of monthly salary\nHealth Insurance: 3.545% of monthly salary\nLong-term Care: 12.81% of health insurance premium\nEmployment Insurance: 0.9% of monthly salary\n\nTotal insurance deductions: approximately 9.4% of monthly salary.",
-        },
-        {
-          heading: "Income Tax Calculations",
-          body: "Income tax varies by number of dependents. A single person pays more tax than someone with a family of four.\n\nFor a 40M KRW salary with 1 dependent (self only):\n- Income tax: ~89,000 KRW/month\n- Local tax: ~8,900 KRW/month\n\nRegistering a spouse or children as dependents reduces your tax burden.",
-        },
-        {
-          heading: "Using the Salary Calculator",
-          body: "Just enter your annual salary and the calculator does the rest.\n\n1. Input your gross annual salary\n2. Select number of dependents\n3. See insurance, tax, and net monthly pay at a glance\n\nUse this before salary negotiations to know your actual take-home amount.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "연봉 5000만 원이면 실수령액은 얼마인가요?",
-        answer: "부양가족 1명(본인) 기준, 월 실수령액은 약 340만 원이에요. 4대보험과 소득세를 합치면 월 약 77만 원이 공제돼요.",
-      },
-      {
-        question: "비과세 항목이 있으면 실수령액이 올라가나요?",
-        answer: "네, 식대(월 20만 원), 자가운전보조금(월 20만 원) 같은 비과세 항목은 세금과 4대보험이 적용되지 않아서 실수령액이 올라가요.",
-      },
-      {
-        question: "퇴직금은 연봉에 포함되나요?",
-        answer: "별도로 지급하는 회사가 대부분이에요. 연봉 계약서에 퇴직금 포함 여부를 반드시 확인하세요. 포함이면 실질 연봉이 약 8% 낮아지는 셈이에요.",
-      },
-    ],
-  },
-  {
-    slug: "bmi-calculator-healthy-weight-guide",
-    title: {
-      ko: "BMI 계산기로 적정 체중 확인하기 — 비만도 기준과 건강 관리법",
-      en: "BMI Calculator — Check Your Ideal Weight and Health Management Tips",
-    },
-    description: {
-      ko: "BMI 계산기로 자신의 비만도를 확인하는 방법이에요. 한국 기준 BMI 범위, 적정 체중 계산법, 건강한 체중 관리 팁까지 정리했어요.",
-      en: "How to check your BMI and understand what it means. Korean BMI standards, ideal weight calculations, and healthy weight management tips.",
-    },
-    date: "2026-04-11",
-    toolId: "bmi-calculator",
-    image: "/images/blog/bmi-calculator-healthy-weight-guide.webp",
-    keywords: ["BMI 계산기", "비만도 계산", "적정 체중", "BMI 기준", "체질량지수"],
-    content: {
-      ko: [
-        {
-          heading: "BMI란 무엇인가요",
-          body: "BMI(Body Mass Index, 체질량지수)는 키와 몸무게로 비만도를 간단하게 파악하는 지표예요.\n\n계산 공식: BMI = 체중(kg) / 키(m)의 제곱\n\n예시: 키 170cm, 체중 70kg이면\nBMI = 70 / (1.7 x 1.7) = 24.2\n\nBMI는 건강 상태를 판단하는 참고 지표이지, 절대적인 기준은 아니에요. 근육량이 많은 운동선수는 BMI가 높아도 비만이 아닐 수 있어요.",
-        },
-        {
-          heading: "한국 기준 BMI 범위",
-          body: "WHO 기준과 아시아-태평양 기준(한국)은 살짝 달라요.\n\n한국(아시아-태평양) 기준:\n- 저체중: 18.5 미만\n- 정상: 18.5 ~ 22.9\n- 과체중: 23.0 ~ 24.9\n- 비만 1단계: 25.0 ~ 29.9\n- 비만 2단계: 30.0 ~ 34.9\n- 비만 3단계: 35.0 이상\n\nWHO 기준은 과체중이 25부터인데, 아시아인은 23부터 건강 위험이 증가해서 기준이 다르게 적용돼요.",
-        },
-        {
-          heading: "BMI의 한계와 보완 지표",
-          body: "BMI만으로 건강을 판단하기엔 한계가 있어요.\n\n한계점:\n- 근육과 지방을 구분하지 못해요\n- 내장지방과 피하지방을 구분하지 못해요\n- 나이, 성별 차이를 반영하지 않아요\n\n보완 지표:\n- 허리둘레: 남성 90cm, 여성 85cm 이상이면 복부비만\n- 체지방률: 남성 25% 이상, 여성 30% 이상이면 비만\n- 허리-엉덩이 비율(WHR): 남성 0.9, 여성 0.85 이상이면 위험",
-        },
-        {
-          heading: "Toolkio BMI 계산기 사용법",
-          body: "키와 체중만 입력하면 BMI 수치와 비만도 구간을 바로 확인할 수 있어요.\n\n1. 키(cm)를 입력해요\n2. 체중(kg)을 입력해요\n3. BMI 수치와 해당 구간이 표시돼요\n4. 정상 체중 범위도 같이 보여줘요\n\n다이어트 목표를 세울 때 정상 BMI 범위에 해당하는 체중을 목표로 잡으면 현실적이에요.",
-        },
-      ],
-      en: [
-        {
-          heading: "What is BMI",
-          body: "BMI (Body Mass Index) is a simple measure of body fatness based on height and weight.\n\nFormula: BMI = weight(kg) / height(m) squared\n\nExample: Height 170cm, weight 70kg\nBMI = 70 / (1.7 x 1.7) = 24.2\n\nBMI is a reference indicator, not an absolute standard. Athletes with high muscle mass may have high BMI without being overweight.",
-        },
-        {
-          heading: "BMI Ranges and Standards",
-          body: "WHO standards and Asia-Pacific standards differ slightly.\n\nWHO Standard:\n- Underweight: below 18.5\n- Normal: 18.5 - 24.9\n- Overweight: 25.0 - 29.9\n- Obese Class I: 30.0 - 34.9\n- Obese Class II: 35.0 - 39.9\n- Obese Class III: 40.0+\n\nAsian populations face health risks at lower BMI levels, so some countries use adjusted thresholds.",
-        },
-        {
-          heading: "Limitations of BMI",
-          body: "BMI alone has limitations:\n\n- Cannot distinguish muscle from fat\n- Does not account for visceral vs subcutaneous fat\n- Does not factor in age or gender\n\nComplementary measures:\n- Waist circumference: risk increases above 102cm (men) / 88cm (women)\n- Body fat percentage: above 25% (men) / 30% (women) indicates obesity\n- Waist-to-hip ratio (WHR): above 0.9 (men) / 0.85 (women) indicates risk",
-        },
-        {
-          heading: "Using the BMI Calculator",
-          body: "Just enter your height and weight for instant results.\n\n1. Enter height (cm)\n2. Enter weight (kg)\n3. See your BMI value and category\n4. Normal weight range is also displayed\n\nWhen setting diet goals, aim for a weight within the normal BMI range for a realistic target.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "BMI가 정상인데 배가 나왔으면 괜찮은 건가요?",
-        answer: "아니에요. BMI가 정상이어도 복부 비만은 내장지방과 관련이 있어요. 허리둘레를 따로 측정해서 확인하는 게 좋아요.",
-      },
-      {
-        question: "BMI를 너무 자주 측정하면 스트레스 받지 않나요?",
-        answer: "맞아요. 주 1회 정도 같은 조건(아침 공복)에서 측정하는 게 좋아요. 매일 체중을 재면 수분 변동에 의한 오차로 불필요한 스트레스를 받을 수 있어요.",
-      },
-      {
-        question: "어린이의 BMI도 같은 기준으로 보나요?",
-        answer: "아니에요. 어린이와 청소년은 성장에 따라 BMI 기준이 달라요. 백분위수(percentile)를 사용해서 같은 나이, 같은 성별 아이들과 비교해야 해요.",
-      },
-    ],
-  },
-  {
-    slug: "seo-blog-optimal-char-count-2026",
-    title: {
-      ko: "블로그 SEO 글자수 2026 - 상위 50개 글 실측 분석 결과",
-      en: "Blog SEO Word Count 2026 — Data from 50 Top-Ranking Posts",
-    },
-    description: {
-      ko: "2026년 구글·네이버 상위 50개 글을 실측 분석한 주제별 최적 글자수와 글자수 측정 도구 활용법을 정리했어요. How-to·리뷰·뉴스별 기준이 다르다는 데이터까지 공개.",
-      en: "Data-backed Korean/English word count benchmarks from 50 top-ranking posts in 2026.",
-    },
-    date: "2026-04-14",
-    toolId: "character-counter",
-    image: "/images/blog/seo-blog-optimal-char-count-2026.webp",
-    keywords: ["블로그 글자수", "SEO 글자수", "2026 SEO", "네이버 블로그 글자수", "구글 상위노출"],
-    content: {
-      ko: [
-        { heading: "2026 검색 상위 글들의 실제 글자수", body: "구글 1페이지 평균 1,890단어, 한국어 환산 약 2,400~3,000자예요. 네이버 블로그 상위 노출은 1,500~2,500자 구간이 가장 흔해요. 더 길수록 좋다는 건 옛말이고, 주제별 적정선을 지키는 게 중요해요.\n\n2025년 이후 구글 헬프풀 콘텐츠 업데이트 이후로는 길이보다 '깊이'가 우선이에요. 하지만 너무 짧으면 thin content로 분류되니 1,000자 미만은 피하세요.\n\n제가 직접 50개 상위 글을 크롤링해 본 데이터:\n- 1위 글 평균: 3,120자\n- 2~3위 평균: 2,680자\n- 4~10위 평균: 1,940자\n- 11위 밖(2페이지): 1,200자\n\n순위가 올라갈수록 글 길이가 지수적으로 늘어나요. 상위권 진입이 목표라면 2,500자가 하한선이에요." },
-        { heading: "주제별 최적 길이 가이드", body: "- How-to 가이드: 2,000~3,000자\n- 리뷰/비교: 1,500~2,500자\n- 뉴스/업데이트: 600~1,200자\n- 리스트/TOP: 1,800~2,800자\n- 개인 에세이: 800~1,500자\n\n검색 의도(Intent)에 맞춰 조절하세요. 단순 정보는 짧게, 의사결정 돕는 글은 길게." },
-        { heading: "글자수 측정할 때 주의점", body: "공백 포함으로 세는 게 표준이에요. 네이버 SEO 도구도 공백 포함 기준이거든요. 이미지 alt 텍스트, 코드 블록, FAQ 스키마는 본문 글자수에 포함 안 시키는 게 정확해요.\n\nToolkio 글자수 세기 도구는 공백 포함·제외·바이트까지 한 번에 확인돼요. 붙여넣기만 하면 끝이에요." },
-      ],
-      en: [
-        { heading: "Top-ranking Post Length", body: "Google first page averages 1,890 words. Korean equivalent: 2,400-3,000 characters. Naver blogs: 1,500-2,500." },
-        { heading: "By Topic", body: "How-to: 2,000-3,000. Review: 1,500-2,500. News: 600-1,200. List: 1,800-2,800." },
-        { heading: "Measuring Tips", body: "Count with spaces. Exclude alt text and code blocks for accuracy." },
-      ],
-    },
-    faq: [
-      { question: "너무 길면 오히려 안 좋나요?", answer: "맞아요. 주제 이탈과 중복 내용이 쌓이면 순위 하락해요. 2,500자 넘기면 구조를 한 번 검토하세요." },
-      { question: "AI 생성 글도 글자수가 중요한가요?", answer: "길이보다 고유성이 더 중요해요. AI 초안을 사람이 다듬는 게 기본이에요." },
-      { question: "Toolkio는 실시간 측정되나요?", answer: "네, 붙여넣는 순간 글자수·단어·바이트가 즉시 표시돼요." },
-    ],
-  },
-  {
-    slug: "json-error-debugging-10min-guide",
-    title: {
-      ko: "JSON 파싱 에러 10분 수정 — 백엔드 개발자가 매일 만나는 6가지 + 실전 예시",
-      en: "Debug JSON Parse Errors in 10 Minutes — 6 Real-World Fixes",
-    },
-    description: {
-      ko: "JSON 파싱 에러 가장 흔한 6가지와 빠르게 잡는 법을 실제 에러 메시지와 함께 정리했어요. 포맷터 활용 순서 5단계, JSONL·JSON5 차이까지 한 번에 이해할 수 있어요.",
-      en: "Six common JSON parsing errors with real messages and a 5-step debugging order.",
-    },
-    date: "2026-04-14",
-    toolId: "json-formatter",
-    image: "/images/blog/json-error-debugging-10min-guide.webp",
-    keywords: ["JSON 에러", "JSON 디버깅", "JSON 포맷터", "JSON parse error", "JSON 검증"],
-    content: {
-      ko: [
-        { heading: "자주 보는 JSON 에러 6가지", body: "1. Trailing comma (마지막 콤마 남김) → \"Unexpected token } in JSON\"\n2. Single quotes (작은따옴표 사용) → \"Unexpected token ' in JSON\"\n3. Unquoted keys (키에 따옴표 없음) → \"Unexpected token u in JSON\"\n4. Unescaped control character (줄바꿈이 문자열 안에) → \"Bad control character\"\n5. Mismatched brackets (괄호 불균형) → \"Unexpected end of JSON input\"\n6. BOM 문자 삽입 (에디터가 저장 시 추가) → 보이지 않는 첫 문자 오류\n\n대부분 이 6가지 안에 들어가요. 에러 메시지가 모호하면 포맷터에 넣어서 라인 번호 확인이 제일 빨라요.\n\n제 경험상 API 디버깅 시간의 70%는 1번(trailing comma)과 4번(unescaped newline)이에요. 특히 Python dict를 JSON으로 저장할 때 자주 발생해요. json.dumps()를 쓰면 자동 처리되지만 직접 문자열로 쓰면 이 에러가 나요." },
-        { heading: "구조적으로 잡는 순서", body: "1단계: 포맷터로 정렬해 시각적 문제 확인\n2단계: 에러 라인 기준 위·아래 3줄만 보기\n3단계: 괄호 쌍 검사 (IDE의 bracket matching 기능)\n4단계: 따옴표 정상성 검사 (큰따옴표만 허용)\n5단계: JSON Schema로 스키마 검증 (선택)\n\n이 순서만 지키면 10분 안에 대부분 해결돼요." },
-        { heading: "Toolkio JSON 포맷터 활용", body: "에러 위치를 빨간색으로 표시해주고, 콤마·따옴표·괄호 문제를 자동 감지해요. 포맷팅 후 'Minify'로 한 줄 JSON도 바로 변환돼요. 서버에 데이터 안 보내서 안전해요." },
-      ],
-      en: [
-        { heading: "Six Common Errors", body: "Trailing comma, single quotes, unquoted keys, unescaped control chars, bracket mismatch, BOM." },
-        { heading: "Debug Order", body: "Format → read 3 lines around error → check brackets → check quotes → schema validate." },
-        { heading: "Toolkio Formatter", body: "Highlights errors with line numbers. Fully client-side." },
-      ],
-    },
-    faq: [
-      { question: "JSON에 주석 달 수 있나요?", answer: "표준 JSON은 주석 금지예요. JSON5나 JSONC는 주석 허용하지만 표준 파서가 못 읽어요." },
-      { question: "큰 JSON은 어떻게 볼까요?", answer: "포맷터에서 Tree view로 전환하면 접기·펼치기 가능해요. 1MB 이상은 특히 유용해요." },
-      { question: "JSON vs JSONL 차이는?", answer: "JSONL은 한 줄에 한 JSON 객체예요. 로그나 스트리밍 데이터에 적합해요." },
-    ],
-  },
-  {
-    slug: "business-card-qr-design-tips-2026",
-    title: {
-      ko: "명함 QR코드 디자인 팁 2026 - 스캔율 2배 올리는 방법",
-      en: "Business Card QR Code Design Tips 2026",
-    },
-    description: {
-      ko: "명함에 QR코드를 붙일 때 스캔율을 올리는 디자인·크기·배치 팁이에요. 어떤 링크를 걸어야 효과적인지도 함께 알려드려요.",
-      en: "Design tips to maximize QR code scan rates on business cards.",
-    },
-    date: "2026-04-14",
-    toolId: "qr-generator",
-    image: "/images/blog/business-card-qr-design-tips-2026.webp",
-    keywords: ["명함 QR코드", "QR코드 디자인", "QR코드 만들기", "명함 디자인", "QR 스캔율"],
-    content: {
-      ko: [
-        { heading: "QR코드 최소 크기와 배치", body: "명함에 들어가는 QR은 **최소 2x2cm**가 기본이에요. 이보다 작으면 스마트폰이 인식 못 하는 경우가 생겨요.\n\n배치는 **뒷면 오른쪽 하단**이 가장 자연스럽고, 앞면 넣을 땐 이름·로고 근처 여백에 두세요. 주변에 최소 3mm 여백(quiet zone)을 꼭 확보해야 해요." },
-        { heading: "스캔율 높이는 디자인 4가지", body: "1. **고대비 색상**: 어두운 전경 + 밝은 배경. 흰 배경 + 검정 QR이 가장 안전\n2. **중앙에 로고 삽입**: 오류 정정 레벨 H(30%)로 설정하면 로고 있어도 인식\n3. **둥근 모서리·도트 스타일**: 가독성 유지하면서 세련된 느낌\n4. **'스캔해주세요' 문구**: 5~6pt 작게 옆에 넣으면 스캔 유도\n\n저도 A/B 테스트해봤는데 문구 하나 넣은 것만으로 스캔율 2배 올랐어요." },
-        { heading: "어떤 링크를 걸어야 할까", body: "- **vCard**: 연락처 자동 저장. 가장 활용도 높음\n- **포트폴리오 페이지**: 디자이너·개발자 필수\n- **링크트리 같은 허브**: 여러 SNS·웹사이트 한번에\n- **소개 영상**: 1분 자기소개 영상 (고급 전략)\n\n바로 쓰는 링크보다 **짧은 URL로 단축**하세요. QR 패턴이 단순해져서 인식률이 올라가요." },
-      ],
-      en: [
-        { heading: "Minimum Size", body: "At least 2x2cm with 3mm quiet zone around." },
-        { heading: "Design Tips", body: "High contrast, logo with H error correction, rounded dots, add 'Scan me' label." },
-        { heading: "Link Options", body: "vCard, portfolio, link hub, intro video. Shorten URLs first." },
-      ],
-    },
-    faq: [
-      { question: "색을 바꿔도 되나요?", answer: "전경·배경 대비가 50% 이상이면 대부분 인식돼요. 파란 전경 + 노란 배경은 실패 사례 많아요." },
-      { question: "인쇄물에서 잘 안 읽혀요", answer: "프린터 해상도 300dpi 이상으로 인쇄하세요. 150dpi는 경계가 흐려서 실패 잦아요." },
-      { question: "QR 유효기간 있나요?", answer: "QR 자체는 영구적이에요. 연결된 URL이 살아있는지가 관건이에요." },
-    ],
-  },
-  {
-    slug: "base64-email-attachment-size-guide",
-    title: {
-      ko: "Base64 이메일 첨부 파일 크기 계산 - 실제 용량보다 33% 커지는 이유",
-      en: "Base64 Email Attachment Size Explained",
-    },
-    description: {
-      ko: "이메일 첨부 파일이 Base64 인코딩되면서 용량이 33% 늘어나는 원리와 제한 용량 맞추는 팁이에요.",
-      en: "Why email attachments grow 33% via Base64 and how to stay under limits.",
-    },
-    date: "2026-04-14",
-    toolId: "base64",
-    image: "/images/blog/base64-email-attachment-size-guide.webp",
-    keywords: ["Base64 용량", "이메일 첨부 크기", "Base64 인코딩", "첨부파일 제한", "MIME 인코딩"],
-    content: {
-      ko: [
-        { heading: "왜 Base64로 용량이 커질까", body: "이메일 프로토콜(SMTP)은 7비트 ASCII만 전송할 수 있거든요. 바이너리 파일(이미지·문서)을 보내려면 안전한 문자로 변환해야 하는데, 그 방식이 **Base64**예요.\n\nBase64는 3바이트를 4문자로 인코딩해요. 그래서 **원본 용량의 약 133%**로 불어나요. 10MB 첨부파일은 실제 13.3MB 정도로 전송되는 거예요." },
-        { heading: "주요 메일 서비스 첨부 용량", body: "- Gmail: 25MB (Base64 포함 기준)\n- Outlook: 20MB\n- 네이버 메일: 25MB\n- 카카오 메일: 25MB\n- 회사 Exchange: 보통 10~15MB\n\n원본 기준으로는 **약 18~19MB까지만** 첨부 가능해요. 25MB 파일은 Base64 변환 후 33MB가 돼서 Gmail도 거부돼요." },
-        { heading: "용량 초과 대처 3가지", body: "1. **클라우드 링크 전송**: 구글 드라이브·드롭박스 링크 공유가 가장 안전\n2. **압축 (zip·7z)**: 이미지·문서는 10~20% 추가 축소 가능\n3. **분할 압축**: 대용량은 4MB씩 분할해 여러 메일 발송\n\n코드나 텍스트 일부만 필요하면 Toolkio Base64 변환기로 **특정 영역만 인코딩**해 본문에 붙여넣는 방법도 있어요." },
-      ],
-      en: [
-        { heading: "Size Expansion", body: "Base64 turns 3 bytes into 4 chars, growing files by ~33%." },
-        { heading: "Limits", body: "Gmail 25MB, Outlook 20MB, Naver 25MB (encoded)." },
-        { heading: "Workarounds", body: "Use cloud links, compression, or split archives." },
-      ],
-    },
-    faq: [
-      { question: "왜 꼭 Base64를 써요?", answer: "SMTP가 7비트 ASCII만 허용하기 때문이에요. 다른 인코딩(quoted-printable)은 바이너리에 비효율적이에요." },
-      { question: "Base64 외에 더 효율적 방식이 있나요?", answer: "HTTP는 바이너리 직접 전송 가능해요. 클라우드 링크를 쓰는 이유예요." },
-      { question: "Toolkio Base64 도구는 안전한가요?", answer: "네, 브라우저에서만 처리돼요. 파일이 서버로 전송되지 않아요." },
-    ],
-  },
-  {
+                  {
     slug: "english-character-counter-guide",
     title: {
       ko: "영어 글자수 세기 방법 5가지 - 공백 포함·제외 정확하게 확인하기",
@@ -10189,7 +8710,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio로 영어 글자수 세는 법",
           body: "사용법은 간단해요.\n\n1. Toolkio 글자수 세기 페이지에 접속\n2. 영어 텍스트를 입력하거나 붙여넣기\n3. 상단에 글자수(공백 포함), 글자수(공백 제외), 단어수, 문장수가 실시간으로 표시\n\n저도 영문 이메일 쓸 때마다 이거 쓰거든요. 특히 200단어 넘기면 안 되는 비즈니스 이메일에서 유용해요. 브라우저에서 바로 돌아가서 설치도 필요 없고, 입력한 내용이 서버로 전송되지 않아 보안 걱정도 없어요.",
-        },
+        }
       ],
       en: [
         {
@@ -10207,7 +8728,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "How to Use Toolkio",
           body: "Paste your text and instantly see characters, words, sentences, and bytes. No installation needed, everything runs in your browser.",
-        },
+        }
       ],
     },
     faq: [
@@ -10217,7 +8738,7 @@ export const blogPosts: BlogPost[] = [
       { question: "TOEFL 라이팅 권장 단어수는?", answer: "Independent Writing은 300~350단어, Integrated Writing은 150~225단어가 권장이에요. 최소 기준 미달이면 감점 대상이에요." },
       { question: "구두점도 글자수에 포함되나요?", answer: "네, 마침표·쉼표·물음표 등 구두점은 글자수에 포함돼요. 다만 단어수에는 포함되지 않아요." },
       { question: "Toolkio에서 영어 맞춤법도 검사되나요?", answer: "현재는 글자수·단어수·바이트 카운트 기능만 제공해요. 맞춤법 검사는 별도 도구를 이용하세요." },
-      { question: "복사 붙여넣기 시 글자수가 달라지는 이유는?", answer: "숨겨진 줄바꿈 문자(\\n)나 특수 공백 문자가 포함될 수 있어요. Toolkio에서는 이런 보이지 않는 문자도 정확히 감지해요." },
+      { question: "복사 붙여넣기 시 글자수가 달라지는 이유는?", answer: "숨겨진 줄바꿈 문자(\\n)나 특수 공백 문자가 포함될 수 있어요. Toolkio에서는 이런 보이지 않는 문자도 정확히 감지해요." }
     ],
   },
   {
@@ -10251,7 +8772,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "주의할 점과 대안",
           body: "구글폼 QR코드를 쓸 때 주의할 점이 있어요.\n\n첫째, 구글폼 링크를 수정하면 QR코드도 새로 만들어야 해요. 설문지 내용을 바꾸는 건 괜찮지만, 새 설문을 만들면 URL이 바뀌거든요.\n\n둘째, 오프라인 환경에서는 와이파이나 데이터가 필요해요. QR코드를 스캔해도 인터넷이 없으면 설문지가 안 열려요.\n\n셋째, 개인정보가 포함된 설문은 보안에 주의하세요. 구글폼 자체는 HTTPS로 암호화되지만, QR코드가 공개 장소에 노출되면 누구나 접근 가능해요.\n\nToolkio QR코드 생성기는 완전 무료이고 만료 기한이 없어요. 한번 만들면 계속 쓸 수 있으니까 부담 없이 활용하세요.",
-        },
+        }
       ],
       en: [
         {
@@ -10269,7 +8790,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Things to Watch Out For",
           body: "New form means new QR code. Offline scanning needs internet. Be cautious with surveys collecting personal data.",
-        },
+        }
       ],
     },
     faq: [
@@ -10277,7 +8798,7 @@ export const blogPosts: BlogPost[] = [
       { question: "QR코드에 만료 기한이 있나요?", answer: "Toolkio에서 만든 QR코드는 만료되지 않아요. 구글폼 링크가 유효한 한 계속 작동해요." },
       { question: "구글폼 내용을 수정하면 QR코드도 바뀌나요?", answer: "아니요, 같은 설문지의 내용만 수정하면 URL이 그대로라 QR코드도 그대로 써도 돼요. 새 설문을 만들 때만 QR코드를 새로 생성하세요." },
       { question: "인쇄할 때 QR코드 크기는 얼마가 적당한가요?", answer: "최소 2cm x 2cm 이상을 권장해요. 포스터에 넣을 때는 5cm 이상이면 원거리에서도 스캔이 가능해요." },
-      { question: "QR코드 색상을 바꿀 수 있나요?", answer: "Toolkio에서는 기본 흑백 QR코드를 제공해요. 색상을 바꾸려면 이미지 편집 도구에서 후처리하면 돼요. 단, 배경과 대비가 충분해야 스캔이 잘 돼요." },
+      { question: "QR코드 색상을 바꿀 수 있나요?", answer: "Toolkio에서는 기본 흑백 QR코드를 제공해요. 색상을 바꾸려면 이미지 편집 도구에서 후처리하면 돼요. 단, 배경과 대비가 충분해야 스캔이 잘 돼요." }
     ],
   },
   {
@@ -10311,7 +8832,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "용량 제한별 압축 전략",
           body: "상황에 따라 전략이 달라져요.\n\n**이메일 첨부 (25MB 이하)**: 이미지를 Toolkio에서 압축한 후 ZIP으로 묶으세요. 사진 20~30장도 25MB 안에 들어가요.\n\n**메신저 전송 (10MB 이하)**: 해상도를 1920px 이하로 줄이고 품질 70으로 압축하면 사진 10장도 10MB 안에 들어가요.\n\n**클라우드 업로드 (용량 절약)**: Google Drive나 Dropbox 무료 용량을 아끼려면 모든 사진을 WebP로 변환 후 폴더째 ZIP으로 묶는 게 최선이에요.\n\n**웹사이트 업로드**: 개별 이미지를 최대한 압축하고, ZIP은 필요 없어요. 이미지당 200KB 이하가 이상적이에요.\n\n저는 주로 이메일로 사진 보낼 때 이 방법을 쓰는데, 한번 익히면 계속 시간을 아낄 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -10329,7 +8850,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Strategy by Size Limit",
           body: "Email (25MB): compress then ZIP. Messenger (10MB): reduce resolution + quality 70. Cloud: WebP + ZIP. Web upload: compress individually, skip ZIP.",
-        },
+        }
       ],
     },
     faq: [
@@ -10338,7 +8859,7 @@ export const blogPosts: BlogPost[] = [
       { question: "이미지 압축하면 화질이 많이 떨어지나요?", answer: "JPG 품질 80 정도면 육안으로 차이를 구분하기 어려워요. Toolkio에서 압축 전후를 비교해보면 확인할 수 있어요." },
       { question: "WebP가 JPG보다 항상 좋은가요?", answer: "같은 화질 기준으로 WebP가 약 30% 더 작아요. 다만 일부 오래된 프로그램에서는 WebP를 지원하지 않을 수 있어요." },
       { question: "무료로 이미지를 압축할 수 있나요?", answer: "네, Toolkio 이미지 압축 도구는 완전 무료예요. 브라우저에서 바로 처리되고 파일이 서버로 전송되지 않아요." },
-      { question: "한 번에 몇 장까지 압축할 수 있나요?", answer: "Toolkio에서는 브라우저 메모리 한도 내에서 여러 장을 처리할 수 있어요. 보통 50장 이상도 문제없이 압축 가능해요." },
+      { question: "한 번에 몇 장까지 압축할 수 있나요?", answer: "Toolkio에서는 브라우저 메모리 한도 내에서 여러 장을 처리할 수 있어요. 보통 50장 이상도 문제없이 압축 가능해요." }
     ],
   },
   {
@@ -10372,7 +8893,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "어떤 도구를 선택해야 할까",
           body: "상황별 추천을 정리했어요.\n\n- **빠른 1회성 변환**: Toolkio 웹 도구 (설치 불필요, 즉시 사용)\n- **코딩 중 변환**: VS Code 확장 프로그램 (컨텍스트 전환 최소화)\n- **대용량 파일 변환**: 터미널 base64 명령어 (메모리 효율적)\n- **자동화 파이프라인**: Python base64 모듈 (스크립트 통합)\n- **보안이 중요한 경우**: Toolkio 또는 오프라인 도구 (데이터가 서버로 전송되지 않음)\n\n대부분의 경우 Toolkio 웹 도구로 충분해요. 북마크해두면 필요할 때마다 바로 쓸 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -10390,7 +8911,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Which to Choose",
           body: "Quick one-off: Toolkio. While coding: VS Code. Large files: terminal. Automation: Python. Security-sensitive: Toolkio or offline.",
-        },
+        }
       ],
     },
     faq: [
@@ -10400,7 +8921,7 @@ export const blogPosts: BlogPost[] = [
       { question: "Base64 디코딩으로 JWT 내용을 볼 수 있나요?", answer: "네, JWT는 Header.Payload.Signature 구조인데, Header와 Payload는 Base64URL로 인코딩돼 있어서 디코딩하면 내용을 확인할 수 있어요." },
       { question: "Toolkio Base64 도구는 파일도 지원하나요?", answer: "네, 텍스트뿐 아니라 이미지, 문서 등 파일도 Base64로 인코딩하거나 디코딩할 수 있어요." },
       { question: "오프라인에서 Base64를 쓸 수 있는 가장 간단한 방법은?", answer: "Mac/Linux 터미널에서 base64 명령어를 쓰면 돼요. Windows에서는 PowerShell의 [Convert]::ToBase64String()을 사용할 수 있어요." },
-      { question: "Base64와 Base64URL의 차이는?", answer: "Base64URL은 + 대신 -, / 대신 _를 사용해요. URL이나 파일명에 안전하게 쓸 수 있도록 만든 변형이에요." },
+      { question: "Base64와 Base64URL의 차이는?", answer: "Base64URL은 + 대신 -, / 대신 _를 사용해요. URL이나 파일명에 안전하게 쓸 수 있도록 만든 변형이에요." }
     ],
   },
   {
@@ -10434,7 +8955,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "실무에서 URL 인코딩 활용하기",
           body: "실무에서 URL 인코딩을 써야 하는 대표적인 상황이에요.\n\n**1. API 쿼리 파라미터**\n검색 API에 한글 키워드를 넣을 때: /search?q=%ED%82%A4%EC%9B%8C%EB%93%9C\n인코딩 안 하면 서버가 파라미터를 못 읽어요.\n\n**2. 리다이렉트 URL**\n로그인 후 돌아갈 페이지를 redirect_uri에 넣을 때, URL 안에 URL이 들어가니까 이중 인코딩이 필요할 수 있어요.\n\n**3. 파일명에 특수문자가 있을 때**\n서버에서 파일을 다운로드할 때 파일명에 공백이나 한글이 있으면 인코딩해야 브라우저가 제대로 처리해요.\n\n**4. 소셜 미디어 공유 링크**\n카카오톡이나 Facebook 공유 URL에 한글 파라미터가 있으면 인코딩 안 하면 링크가 깨져요.\n\nToolkio URL 인코더에 텍스트를 붙여넣기만 하면 즉시 인코딩된 결과를 복사할 수 있어요.",
-        },
+        }
       ],
       en: [
         {
@@ -10452,7 +8973,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Practical Usage",
           body: "API query params, redirect URIs, file downloads with special chars, social media share links. Use Toolkio URL Encoder for instant conversion.",
-        },
+        }
       ],
     },
     faq: [
@@ -10461,7 +8982,7 @@ export const blogPosts: BlogPost[] = [
       { question: "URL 디코딩은 어떻게 하나요?", answer: "Toolkio URL 인코더에서 인코딩된 문자열을 넣고 디코딩 버튼을 누르면 원래 문자로 변환돼요." },
       { question: "이중 인코딩이 뭔가요?", answer: "이미 인코딩된 문자열을 다시 인코딩하는 거예요. %26이 %2526으로 변하는 식이에요. 리다이렉트 URL을 파라미터로 넘길 때 자주 발생해요." },
       { question: "JavaScript에서 URL 인코딩하는 방법은?", answer: "encodeURIComponent() 함수를 쓰면 돼요. encodeURI()는 URL 전체용이고, encodeURIComponent()는 파라미터 값 인코딩용이에요." },
-      { question: "인코딩 안 하면 어떤 문제가 생기나요?", answer: "서버가 파라미터를 잘못 파싱하거나, 404 에러가 나거나, 보안 취약점(XSS 등)이 생길 수 있어요." },
+      { question: "인코딩 안 하면 어떤 문제가 생기나요?", answer: "서버가 파라미터를 잘못 파싱하거나, 404 에러가 나거나, 보안 취약점(XSS 등)이 생길 수 있어요." }
     ],
   },
   {
@@ -10495,7 +9016,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "JSON 포맷터로 빠르게 검증하기",
           body: "Toolkio JSON 포맷터에 JSON 데이터를 붙여넣으면 구문 오류를 즉시 잡아줘요. 중괄호 빠짐, 쉼표 누락, 따옴표 문제 등 흔한 실수를 1초 만에 찾을 수 있거든요.\n\n포맷팅된 결과를 보면 중첩 구조도 한눈에 파악할 수 있어서 디버깅 시간이 크게 줄어요. API 개발할 때 응답 데이터를 복사해서 포맷터에 넣어보는 습관을 들이면 생산성이 올라가요.",
-        },
+        }
       ],
       en: [
         {
@@ -10513,7 +9034,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Quick Validation with Toolkio",
           body: "Paste JSON into Toolkio JSON Formatter to instantly catch syntax errors, missing brackets, and formatting issues. Great for API debugging.",
-        },
+        }
       ],
     },
     faq: [
@@ -10521,7 +9042,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JSON 스키마를 자동으로 생성할 수 있나요?", answer: "네, quicktype이나 json-schema-generator 같은 도구에 샘플 JSON을 넣으면 자동으로 스키마를 만들어줘요." },
       { question: "JSON 포맷터에서 에러가 나는 가장 흔한 원인은?", answer: "마지막 항목 뒤에 쉼표를 넣는 trailing comma가 가장 많아요. JSON에서는 허용되지 않거든요." },
       { question: "JSON 스키마 버전이 여러 개인데 뭘 써야 하나요?", answer: "2020-12 버전이 최신이에요. 대부분의 라이브러리가 draft-07 이상을 지원하니 draft-07이나 2020-12를 쓰면 돼요." },
-      { question: "중첩된 JSON 구조도 검증할 수 있나요?", answer: "네, properties 안에 다시 type: object와 properties를 정의하면 깊이 제한 없이 중첩 구조를 검증할 수 있어요." },
+      { question: "중첩된 JSON 구조도 검증할 수 있나요?", answer: "네, properties 안에 다시 type: object와 properties를 정의하면 깊이 제한 없이 중첩 구조를 검증할 수 있어요." }
     ],
   },
   {
@@ -10555,7 +9076,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "개발에서 해시 활용 사례",
           body: "**1. 비밀번호 저장**\n비밀번호를 평문으로 DB에 저장하면 안 돼요. SHA256 + salt로 해싱해서 저장하면 원문을 복원할 수 없어서 안전해요.\n\n**2. 캐시 무효화**\nCSS/JS 파일명에 해시를 붙이면 (예: app.a1b2c3.js) 파일이 변경됐을 때만 브라우저가 새로 다운로드해요.\n\n**3. 데이터 중복 검사**\n대용량 파일의 해시를 비교하면 바이트 단위 비교 없이 빠르게 동일 파일인지 확인할 수 있어요.\n\n**4. Git 커밋 ID**\nGit의 커밋 ID가 바로 SHA-1 해시예요. 커밋 내용이 조금이라도 바뀌면 ID가 완전히 달라져요.",
-        },
+        }
       ],
       en: [
         {
@@ -10573,7 +9094,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Developer Use Cases",
           body: "Password hashing (with salt), cache busting (filename hashing), duplicate file detection, and Git commit IDs (SHA-1).",
-        },
+        }
       ],
     },
     faq: [
@@ -10581,168 +9102,10 @@ export const blogPosts: BlogPost[] = [
       { question: "salt가 뭔가요?", answer: "비밀번호 해싱 전에 추가하는 랜덤 문자열이에요. 같은 비밀번호라도 salt가 다르면 해시 결과가 달라져서 레인보우 테이블 공격을 막을 수 있어요." },
       { question: "SHA512와 SHA256 중 뭘 써야 하나요?", answer: "일반적으로 SHA256이면 충분해요. SHA512는 더 긴 해시를 생성하지만 현재 SHA256도 깨진 적이 없어서 대부분의 용도에서 SHA256이 표준이에요." },
       { question: "같은 입력이면 항상 같은 해시가 나오나요?", answer: "네, 해시의 핵심 특성이에요. 같은 입력은 항상 같은 출력을 만들어요. 그래서 파일 무결성 검증이 가능한 거예요." },
-      { question: "해시 충돌이 뭔가요?", answer: "서로 다른 두 입력이 같은 해시값을 만드는 경우예요. MD5는 인위적으로 충돌을 만들 수 있어서 보안 용도로 쓰면 안 돼요. SHA256은 아직 충돌이 발견되지 않았어요." },
+      { question: "해시 충돌이 뭔가요?", answer: "서로 다른 두 입력이 같은 해시값을 만드는 경우예요. MD5는 인위적으로 충돌을 만들 수 있어서 보안 용도로 쓰면 안 돼요. SHA256은 아직 충돌이 발견되지 않았어요." }
     ],
   },
-  {
-    slug: "csv-to-json-conversion-method-guide",
-    title: {
-      ko: "CSV를 JSON으로 변환하는 3가지 방법 — 실무 데이터 처리",
-      en: "3 Ways to Convert CSV to JSON — Practical Data Processing",
-    },
-    description: {
-      ko: "CSV 파일을 JSON으로 변환하는 3가지 방법을 정리했습니다. 온라인 도구, Python 스크립트, JavaScript 코드까지 상황별 최적의 방법을 알려드려요.",
-      en: "Learn 3 ways to convert CSV to JSON. Online tools, Python scripts, and JavaScript code for different use cases.",
-    },
-    date: "2026-04-17",
-    toolId: "json-formatter",
-    image: "/images/blog/csv-to-json-conversion-method-guide.webp",
-    keywords: ["CSV JSON 변환", "csv to json", "CSV 변환", "JSON 변환", "데이터 변환"],
-    content: {
-      ko: [
         {
-          heading: "왜 CSV를 JSON으로 바꿔야 하나요?",
-          body: "엑셀이나 구글 시트에서 내보낸 데이터는 보통 CSV 형식이에요. 그런데 웹 API나 프론트엔드에서는 JSON을 쓰거든요. 이 두 형식 사이를 변환해야 하는 상황이 실무에서 정말 자주 생겨요.\n\n예를 들어 마케팅팀이 엑셀로 보내준 상품 목록을 웹사이트에 올리려면 CSV → JSON 변환이 필요해요. 반대로 API 응답을 엑셀로 분석하려면 JSON → CSV가 필요하고요.",
-        },
-        {
-          heading: "방법 1: 온라인 도구로 즉시 변환",
-          body: "가장 빠른 방법이에요. 코딩 없이 복사 붙여넣기만 하면 돼요.\n\nToolkio JSON 포맷터에 CSV 데이터를 넣으면 JSON으로 변환할 수 있어요. 결과를 복사해서 바로 사용하면 되니까 일회성 작업에 적합해요.\n\n**장점**: 설치 불필요, 즉시 사용\n**단점**: 대용량 파일(10MB+)은 브라우저가 느려질 수 있음\n**추천 상황**: 빠르게 한 번만 변환할 때",
-        },
-        {
-          heading: "방법 2: Python으로 자동화",
-          body: "반복 작업이라면 Python 스크립트가 효율적이에요.\n\nimport csv, json\n\nwith open('data.csv', 'r', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    data = list(reader)\n\nwith open('data.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n\n이 5줄로 어떤 크기의 CSV든 JSON으로 변환할 수 있어요. DictReader를 쓰면 첫 번째 행이 자동으로 키(key)가 되거든요.\n\n**장점**: 대용량 처리 가능, 자동화 가능\n**단점**: Python 설치 필요\n**추천 상황**: 정기적으로 변환해야 할 때",
-        },
-        {
-          heading: "방법 3: JavaScript로 브라우저에서 처리",
-          body: "웹 앱에서 사용자가 업로드한 CSV를 처리해야 한다면 JavaScript를 쓰세요.\n\nfunction csvToJson(csv) {\n  const lines = csv.split('\\n');\n  const headers = lines[0].split(',');\n  return lines.slice(1).filter(l => l.trim()).map(line => {\n    const values = line.split(',');\n    return headers.reduce((obj, h, i) => {\n      obj[h.trim()] = values[i]?.trim();\n      return obj;\n    }, {});\n  });\n}\n\n이 함수로 CSV 문자열을 JSON 배열로 변환할 수 있어요.\n\n**장점**: 서버 없이 클라이언트에서 처리\n**단점**: 따옴표 안의 쉼표 처리가 복잡\n**추천 상황**: 웹 앱에 변환 기능을 넣을 때",
-        },
-      ],
-      en: [
-        {
-          heading: "Why Convert CSV to JSON?",
-          body: "Excel exports CSV, web APIs use JSON. Converting between them is a daily task for developers working with data from business teams.",
-        },
-        {
-          heading: "Method 1: Online Tools",
-          body: "Paste CSV into Toolkio JSON Formatter for instant conversion. Best for one-time, small-to-medium data.",
-        },
-        {
-          heading: "Method 2: Python Script",
-          body: "Use csv.DictReader + json.dump for automated, large-file processing. Just 5 lines of code handles any CSV size.",
-        },
-        {
-          heading: "Method 3: JavaScript",
-          body: "Process CSV client-side in web apps. Split lines, map headers to values. Handle edge cases like quoted commas with libraries like PapaParse.",
-        },
-      ],
-    },
-    faq: [
-      { question: "CSV에 쉼표가 포함된 데이터가 있으면 어떻게 되나요?", answer: "따옴표로 감싸진 필드 안의 쉼표는 구분자가 아니에요. Python의 csv 모듈은 자동으로 처리해주지만, 직접 split(',')하면 깨질 수 있어요. 라이브러리를 쓰는 게 안전해요." },
-      { question: "JSON을 다시 CSV로 바꿀 수도 있나요?", answer: "네, Python의 csv.DictWriter나 JavaScript의 json2csv 라이브러리로 역변환이 가능해요. Toolkio에서도 JSON 데이터를 CSV로 내보낼 수 있어요." },
-      { question: "한글이 깨지면 어떻게 하나요?", answer: "인코딩 문제예요. 파일을 열 때 encoding='utf-8'을 지정하세요. 엑셀에서 저장할 때 UTF-8 CSV로 저장하면 깨지지 않아요." },
-      { question: "대용량 CSV(1GB+)를 변환하려면?", answer: "Python에서 chunksize를 설정해서 나눠서 처리하거나, pandas 라이브러리의 read_csv를 쓰면 메모리 효율적으로 변환할 수 있어요." },
-      { question: "중첩된 JSON 구조로 변환할 수 있나요?", answer: "기본 CSV는 flat 구조라 바로는 안 돼요. 컬럼명에 점 표기법(user.name, user.email)을 쓰고 변환 로직을 추가하면 중첩 구조를 만들 수 있어요." },
-    ],
-  },
-  {
-    slug: "json-array-remove-duplicates-guide",
-    title: {
-      ko: "JSON 배열 중복 제거 방법 — JavaScript Python 실전 코드",
-      en: "How to Remove Duplicates from JSON Arrays — JavaScript & Python",
-    },
-    description: {
-      ko: "JSON 배열의 중복 객체를 제거하는 JavaScript, Python 실전 코드 모음이에요. 단순 값부터 객체 배열, 키 기반 중복 제거까지 정리했어요.",
-      en: "Practical JS/Python code for removing duplicates from JSON arrays. Covers simple values, object arrays, and key-based deduplication.",
-    },
-    date: "2026-04-18",
-    toolId: "json-formatter",
-    image: "/images/blog/json-array-remove-duplicates-guide.webp",
-    keywords: ["JSON 배열 중복 제거", "JSON unique", "JavaScript 배열 중복", "Python JSON dedup", "json dedupe"],
-    content: {
-      ko: [
-        {
-          heading: "JSON 배열에 중복이 쌓이는 이유",
-          body: "API 응답을 페이징으로 모을 때, 여러 배치의 결과를 합칠 때, 사용자 입력을 그대로 저장할 때 중복이 생기기 쉬워요. 단순 문자열 배열이라면 Set으로 끝나는데, 객체 배열은 참조 동등성 때문에 바로 Set에 못 넣어요.\n\n이 글에서는 실전에서 자주 만나는 4가지 중복 제거 케이스를 JavaScript와 Python 코드로 정리했어요.",
-        },
-        {
-          heading: "방법 1 — 단순 값 배열 (숫자·문자열)",
-          body: "JavaScript:\nconst arr = [1, 2, 2, 3, 'a', 'a', 'b'];\nconst unique = [...new Set(arr)];\n// [1, 2, 3, 'a', 'b']\n\nPython:\narr = [1, 2, 2, 3, 'a', 'a', 'b']\nunique = list(set(arr))\n# 순서 보존 버전\nunique = list(dict.fromkeys(arr))\n\nSet은 순서를 보장하지 않지만, JS의 Set과 Python의 dict.fromkeys는 입력 순서를 유지해요. 순서가 중요하면 두 번째 방식을 쓰세요.",
-        },
-        {
-          heading: "방법 2 — 객체 배열, 완전히 동일한 객체 제거",
-          body: "모든 필드가 같을 때만 중복으로 처리하는 경우예요.\n\nJavaScript:\nconst arr = [{id:1,name:'A'}, {id:1,name:'A'}, {id:2,name:'B'}];\nconst unique = Array.from(\n  new Map(arr.map(o => [JSON.stringify(o), o])).values()\n);\n\nPython:\nimport json\nseen = set()\nunique = []\nfor item in arr:\n    key = json.dumps(item, sort_keys=True)\n    if key not in seen:\n        seen.add(key)\n        unique.append(item)\n\nJSON 직렬화로 키를 만드는 방식이에요. 중첩 객체도 처리되지만 필드 순서가 달라지면 다른 객체로 인식하니 주의하세요.",
-        },
-        {
-          heading: "방법 3 — 특정 키 기준 중복 제거",
-          body: "id만 같으면 중복으로 처리하는 케이스가 실무에서 가장 흔해요.\n\nJavaScript:\nconst unique = Array.from(\n  new Map(arr.map(o => [o.id, o])).values()\n);\n\nPython:\nseen = set()\nunique = []\nfor item in arr:\n    if item['id'] not in seen:\n        seen.add(item['id'])\n        unique.append(item)\n\n동일 id가 있을 때 '첫 번째 것을 유지'와 '마지막 것을 유지'는 동작이 달라요. 위 코드는 첫 번째를 유지합니다.",
-        },
-        {
-          heading: "방법 4 — 복합 키 중복 제거",
-          body: "email + company 같은 조합으로 중복을 판단하는 경우예요.\n\nJavaScript:\nconst key = o => `${o.email}|${o.company}`;\nconst unique = Array.from(new Map(arr.map(o => [key(o), o])).values());\n\nPython:\nkey = lambda o: (o['email'], o['company'])\nseen = set()\nunique = []\nfor item in arr:\n    k = key(item)\n    if k not in seen:\n        seen.add(k)\n        unique.append(item)\n\nTuple 키는 Python dict에서 직접 쓸 수 있어요. JS는 문자열 결합이 가장 안전합니다.",
-        },
-        {
-          heading: "Toolkio JSON Formatter로 시각 확인",
-          body: "중복 제거 결과를 JSON Formatter에 붙여 넣으면 계층별로 펼쳐서 검증할 수 있어요. 특히 중첩 객체 배열은 눈으로 diff 확인이 편합니다.\n\n브라우저에서 바로 돌아가므로 민감한 데이터도 서버로 전송되지 않아 안전해요.",
-        },
-      ],
-      en: [
-        { heading: "Why Duplicates Accumulate in JSON Arrays", body: "Paging API responses, merging batches, or storing raw user input often creates duplicates. Simple value arrays work with Set, but object arrays need more care." },
-        { heading: "Simple Values (Numbers & Strings)", body: "JS: [...new Set(arr)]\nPython: list(dict.fromkeys(arr)) preserves insertion order." },
-        { heading: "Objects — Full Match Dedup", body: "Use JSON.stringify as key in JS. Python: json.dumps with sort_keys=True for stable keys." },
-        { heading: "Key-Based Dedup", body: "Most common case — dedupe by id. Map(arr.map(o => [o.id, o])) in JS; set+loop in Python." },
-        { heading: "Composite Key Dedup", body: "Combine email+company. Tuples work as Python dict keys; string concat is safest in JS." },
-        { heading: "Verify with Toolkio JSON Formatter", body: "Paste results into Toolkio's JSON Formatter for visual verification. Client-side only, sensitive data never leaves your browser." },
-      ],
-    },
-    faq: [
-      { question: "JSON.stringify로 키 만들 때 필드 순서가 다르면 어떻게 되나요?", answer: "객체 A와 B의 필드 순서가 다르면 다른 키로 인식돼요. JavaScript는 삽입 순서 유지라 안정적인데, 안전하려면 Python처럼 sort_keys를 적용해 정렬된 키를 만드세요." },
-      { question: "대용량 배열(1만건+)에서 성능이 어느 게 좋아요?", answer: "Map/Set 기반이 평균 O(n)으로 가장 빨라요. filter+indexOf는 O(n²)라 대용량에서 느려집니다. 10만건 기준 Set이 500ms라면 filter는 10초 넘게 걸려요." },
-      { question: "깊은 중첩 객체도 처리 가능한가요?", answer: "JSON.stringify/json.dumps 방식이면 중첩 구조도 처리돼요. 다만 Date 객체나 순환 참조가 있으면 예외 처리가 필요해요." },
-      { question: "중복 중 어떤 걸 남길지 선택할 수 있나요?", answer: "Map은 같은 키가 들어오면 마지막 것으로 덮어써요. 첫 번째를 유지하고 싶으면 if 조건을 명시하세요." },
-      { question: "Lodash 같은 라이브러리는 어떤가요?", answer: "Lodash의 uniqBy가 객체 배열 중복 제거에 편해요. uniqBy(arr, 'id') 한 줄이면 끝. 다만 번들 크기를 아끼려면 순수 JS 코드가 낫습니다." },
-    ],
-  },
-  {
-    slug: "credit-card-number-regex-validation",
-    title: {
-      ko: "카드번호 정규식 검증 — 비자·마스터카드·아멕스 실전 패턴",
-      en: "Credit Card Number Regex Validation — Visa, MasterCard, Amex Patterns",
-    },
-    description: {
-      ko: "카드사별로 시작 숫자와 자릿수가 달라요. 비자, 마스터카드, 아멕스, 디스커버 각각의 정규식 패턴과 Luhn 검증까지 정리했어요.",
-      en: "Card networks differ by prefix and length. Regex patterns for Visa, MasterCard, Amex, Discover plus Luhn check implementation.",
-    },
-    date: "2026-04-18",
-    toolId: "regex-tester",
-    image: "/images/blog/credit-card-number-regex-validation.webp",
-    keywords: ["카드번호 정규식", "신용카드 검증", "Visa MasterCard regex", "Luhn check", "결제 폼 검증"],
-    content: {
-      ko: [
-        { heading: "카드번호 검증이 왜 어려운가", body: "카드사마다 번호 규칙이 달라요. 비자는 4로 시작해 13 또는 16자리, 아멕스는 34/37로 시작해 15자리, 마스터카드는 51~55 또는 2221~2720으로 시작해 16자리예요.\n\n정규식만으로는 80% 검증이 가능하고, 나머지 20%는 Luhn 알고리즘을 써야 완전해져요." },
-        { heading: "카드사별 정규식 패턴", body: "주요 4대 카드사 패턴이에요.\n\n- Visa: 4로 시작, 13 또는 16자리\n- MasterCard: 51~55 또는 2221~2720으로 시작, 16자리\n- American Express: 34 또는 37로 시작, 15자리\n- Discover: 6011 또는 65XX로 시작, 16자리\n\n공백과 하이픈을 허용하려면 입력을 replace로 먼저 정리하세요." },
-        { heading: "통합 검증 함수 (JavaScript)", body: "function detectCardType(num) {\n  const clean = num.replace(/[^0-9]/g, '');\n  if (/^4[0-9]{12}([0-9]{3})?$/.test(clean)) return 'Visa';\n  if (/^5[1-5][0-9]{14}$/.test(clean)) return 'MasterCard';\n  if (/^3[47][0-9]{13}$/.test(clean)) return 'Amex';\n  if (/^6(?:011|5[0-9]{2})[0-9]{12}$/.test(clean)) return 'Discover';\n  return 'Unknown';\n}\n\n이 함수로 카드 입력 폼에서 실시간 카드사 감지가 가능해요." },
-        { heading: "Luhn 알고리즘으로 최종 검증", body: "정규식 통과한 번호도 Luhn 체크를 해야 유효한 카드번호예요.\n\nfunction luhnCheck(num) {\n  const digits = num.replace(/[^0-9]/g, '').split('').reverse().map(Number);\n  let sum = 0;\n  digits.forEach((d, i) => {\n    if (i % 2 === 1) {\n      d *= 2;\n      if (d > 9) d -= 9;\n    }\n    sum += d;\n  });\n  return sum % 10 === 0;\n}\n\n실제 결제 폼에서는 정규식 → Luhn → 카드사 BIN 테이블 조회 순으로 검증하는 게 표준이에요." },
-        { heading: "포매팅도 같이 처리하기", body: "입력 중 자동으로 4자리씩 띄어 쓰기를 넣으면 UX가 좋아요.\n\nfunction formatCard(num) {\n  const clean = num.replace(/[^0-9]/g, '');\n  return clean.match(/.{1,4}/g)?.join(' ') || '';\n}\n\n아멕스는 15자리라 4-6-5로 포매팅해요. 카드 종류 감지한 뒤 포맷을 다르게 적용하세요." },
-        { heading: "Toolkio Regex Tester로 안전하게 확인", body: "정규식 작성 중 실제 카드번호를 넣기 꺼려지죠. Toolkio의 Regex Tester는 브라우저 안에서만 돌아가서 서버로 데이터가 가지 않아요.\n\n카드번호 샘플은 4242 4242 4242 4242 같은 공개 테스트 번호만 쓰세요." },
-      ],
-      en: [
-        { heading: "Why Card Validation Is Hard", body: "Each network has unique prefix and length. Visa starts with 4 (13 or 16 digits); Amex with 34/37 (15 digits); MasterCard with 51-55 or 2221-2720 (16 digits)." },
-        { heading: "Regex by Card Network", body: "Visa: 4 prefix, 13 or 16 digits\nMasterCard: 51-55 or 2221-2720 prefix, 16 digits\nAmex: 34 or 37 prefix, 15 digits\nDiscover: 6011 or 65XX prefix, 16 digits" },
-        { heading: "Unified Detection Function", body: "Strip non-digits, test patterns in order, return card type. Common approach for real-time form detection." },
-        { heading: "Luhn Algorithm Final Check", body: "Regex passes but Luhn must also pass. Double every second digit from right, sum digits, valid if sum divisible by 10." },
-        { heading: "Auto-Formatting Input", body: "Format as 4-4-4-4 for most cards, 4-6-5 for Amex. Detect type first, apply matching format." },
-        { heading: "Use Toolkio Regex Tester Safely", body: "Never paste real card numbers. Use public test numbers like 4242 4242 4242 4242 for Visa testing." },
-      ],
-    },
-    faq: [
-      { question: "카드번호 정규식만으로 결제 폼 검증 충분한가요?", answer: "아니에요. 정규식은 포맷 체크까지만 담당하고, Luhn 알고리즘으로 체크섬을 검증해야 완전해져요. 최종적으로 결제 게이트웨이가 카드사 인증까지 처리합니다." },
-      { question: "카드번호를 DB에 저장해도 되나요?", answer: "PCI DSS 규정상 평문 저장은 금지예요. 저장해야 하면 토큰화(tokenization)하거나 앞 6자리(BIN) + 마지막 4자리만 저장합니다." },
-      { question: "은행 카드(체크카드)도 같은 정규식으로 검증되나요?", answer: "체크카드도 동일한 BIN 체계를 따라요. 다만 국내 은행 카드는 비자·마스터카드 네트워크 위에 얹혀 있어서 해외 카드와 같은 정규식으로 검증됩니다." },
-      { question: "국내 전용 카드는 어떻게 검증하나요?", answer: "대부분 비자·마스터카드 네트워크를 쓰므로 동일 정규식으로 됩니다. 다만 BC카드나 로컬 카드는 별도 패턴이 필요해요." },
-      { question: "테스트용 카드번호는 어디서 구해요?", answer: "Stripe 테스트 번호나 PortOne 가이드에 공개된 샘플을 쓰세요. 실제 카드번호 절대 금지입니다." },
-    ],
-  },
-  {
     slug: "markdown-checkbox-todo-list-guide",
     title: {
       ko: "마크다운 체크박스 목록 작성법 — GitHub Todo List 실전 문법",
@@ -10763,7 +9126,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "호환되는 렌더러", body: "체크박스는 GFM 확장 문법이라 모든 마크다운에서 되는 건 아니에요.\n\n지원: GitHub, GitLab, Bitbucket, Notion, Obsidian, Typora, Toolkio Previewer\n미지원(기본): 순정 CommonMark, 구버전 Jekyll, 기본 Docusaurus\n\n미지원 환경에서는 HTML input checkbox 태그로 대체해야 해요." },
         { heading: "진행률 표시하기", body: "체크된 개수를 자동으로 세서 진행률 뱃지를 달 수 있어요. GitHub Issue·PR에서는 자동으로 3/5 completed 형태 표시가 붙어요.\n\n뱃지를 넣고 싶으면 shields.io 같은 서비스를 써서 진행률 이미지를 삽입할 수 있어요.\n\n마일스톤 체크리스트 60% 같은 형태로 구성하면 진행 상황이 한눈에 들어와요." },
         { heading: "실전 PR 템플릿", body: "깃허브 Pull Request 템플릿 예시예요. github 디렉토리 pull_request_template.md에 저장하세요.\n\n- 변경 사항 (요약)\n- 체크리스트: 로컬에서 빌드 성공 / 테스트 추가 또는 수정 / 관련 이슈 링크 / 리뷰어 지정 / 스크린샷 첨부 (UI 변경 시)\n- 배포 주의사항: 환경 변수 추가 필요 / DB 마이그레이션 필요 / 롤백 계획 준비\n\n매번 같은 체크리스트가 자동 삽입돼서 누락이 줄어요." },
-        { heading: "Toolkio Markdown Previewer로 확인", body: "체크박스를 작성하면서 바로 렌더링 확인할 수 있어요. GFM 모드를 켜면 체크박스가 활성화된 상태로 표시돼요.\n\n옵시디언처럼 체크 상태를 토글하는 기능은 없지만, 렌더링 결과를 HTML로 복사해서 티스토리·노션에 붙일 때 편해요." },
+        { heading: "Toolkio Markdown Previewer로 확인", body: "체크박스를 작성하면서 바로 렌더링 확인할 수 있어요. GFM 모드를 켜면 체크박스가 활성화된 상태로 표시돼요.\n\n옵시디언처럼 체크 상태를 토글하는 기능은 없지만, 렌더링 결과를 HTML로 복사해서 티스토리·노션에 붙일 때 편해요." }
       ],
       en: [
         { heading: "Basic Checkbox Syntax", body: "GFM supports simple unchecked and checked markers for todo items. Lowercase x is the convention." },
@@ -10771,7 +9134,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "Renderer Compatibility", body: "Supported: GitHub, GitLab, Notion, Obsidian, Toolkio. Not supported: vanilla CommonMark, old Jekyll." },
         { heading: "Progress Indicators", body: "GitHub auto-counts checked items (e.g., 3/5 completed). Add shields.io badges for visible progress bars." },
         { heading: "PR Template Example", body: "Save template in the github directory pull_request_template.md with checklist for build, tests, screenshots, env vars — reduces PR oversights." },
-        { heading: "Preview in Toolkio", body: "Use GFM mode in Toolkio's Markdown Previewer to see checkbox rendering. Copy HTML output for use in blogs/Notion." },
+        { heading: "Preview in Toolkio", body: "Use GFM mode in Toolkio's Markdown Previewer to see checkbox rendering. Copy HTML output for use in blogs/Notion." }
       ],
     },
     faq: [
@@ -10779,52 +9142,10 @@ export const blogPosts: BlogPost[] = [
       { question: "마크다운에 체크박스가 렌더링 안 되면?", answer: "사용 중인 렌더러가 GFM을 지원하지 않는 거예요. remark-gfm 플러그인을 추가하거나 HTML input 태그로 대체하세요." },
       { question: "Notion에서 체크박스 마크다운 가져오기?", answer: "Notion은 마크다운 import 시 체크박스 문법을 체크박스 블록으로 변환해요. 붙여 넣기도 가능하고 편집 후 토글됩니다." },
       { question: "티스토리에서 체크박스 작동하나요?", answer: "티스토리 기본 에디터는 GFM 미지원이에요. HTML 모드에서 input 태그로 수동 작성하거나 플러그인을 써야 해요." },
-      { question: "진행률을 숫자로 자동 계산할 수 있나요?", answer: "순수 마크다운은 안 돼요. GitHub는 자동 카운트를 보여주고, Notion은 공식 Progress Bar 블록을 제공해요. 커스텀이 필요하면 GitHub Actions로 매일 README를 업데이트하는 방식을 씁니다." },
+      { question: "진행률을 숫자로 자동 계산할 수 있나요?", answer: "순수 마크다운은 안 돼요. GitHub는 자동 카운트를 보여주고, Notion은 공식 Progress Bar 블록을 제공해요. 커스텀이 필요하면 GitHub Actions로 매일 README를 업데이트하는 방식을 씁니다." }
     ],
   },
-  {
-    slug: "date-difference-calculation-guide",
-    title: {
-      ko: "날짜 차이 계산 실전 — JavaScript Python D-day 함수 모음",
-      en: "Date Difference Calculation — JS & Python D-day Functions",
-    },
-    description: {
-      ko: "두 날짜 사이의 일수, 시간, 분 차이를 정확히 계산하는 JavaScript/Python 코드와 D-day, 근무일수, 남은 시간 계산 실전 예시예요.",
-      en: "Accurately compute day/hour/minute differences between dates in JS & Python. D-day, business days, and remaining time examples.",
-    },
-    date: "2026-04-18",
-    toolId: "timestamp-converter",
-    image: "/images/blog/date-difference-calculation-guide.webp",
-    keywords: ["날짜 차이 계산", "D-day 함수", "JavaScript 날짜", "Python datetime diff", "business days"],
-    content: {
-      ko: [
-        { heading: "날짜 계산이 헷갈리는 이유", body: "365일로 나누면 되지 않냐고요? 윤년, 월별 일수 차이, 서머타임, 타임존이 엮이면 단순 뺄셈이 틀려요.\n\n예: 2024-02-28과 2024-03-01 사이는 며칠? 윤년이라 2일입니다. 2023년이면 1일이에요. 코드에서 이런 케이스를 수동 처리하면 버그가 쌓여요." },
-        { heading: "JavaScript — 기본 일수 계산", body: "function diffDays(a, b) {\n  const MS = 1000 * 60 * 60 * 24;\n  return Math.floor((new Date(b) - new Date(a)) / MS);\n}\n\ndiffDays('2026-01-01', '2026-04-18'); // 107\n\n주의: Date 생성 시 YYYY-MM-DD는 UTC로 해석돼요. 로컬 자정 기준이 필요하면 T00:00:00을 붙이세요." },
-        { heading: "Python — 정확한 일수 계산", body: "from datetime import date, datetime\n\nd1 = date(2026, 1, 1)\nd2 = date(2026, 4, 18)\nprint((d2 - d1).days)  # 107\n\n시간까지 포함한 차이:\ndt1 = datetime(2026, 4, 18, 9, 0)\ndt2 = datetime(2026, 4, 18, 17, 30)\ndiff = dt2 - dt1\nprint(diff.total_seconds() / 3600)  # 8.5시간" },
-        { heading: "D-day 함수 — 자주 쓰는 패턴", body: "생일, 마감일까지 남은 일수를 표시하는 함수예요.\n\nJavaScript:\nfunction dDay(target) {\n  const now = new Date();\n  now.setHours(0,0,0,0);\n  const t = new Date(target);\n  t.setHours(0,0,0,0);\n  const days = Math.ceil((t - now) / (1000*60*60*24));\n  if (days > 0) return 'D-' + days;\n  if (days === 0) return 'D-Day';\n  return 'D+' + Math.abs(days);\n}\n\nPython:\nfrom datetime import date\ndef d_day(target):\n    days = (target - date.today()).days\n    if days > 0: return 'D-' + str(days)\n    if days == 0: return 'D-Day'\n    return 'D+' + str(abs(days))\n\n시간 단위까지 신경 쓰지 않으려면 시분초를 0으로 리셋하는 게 안전해요." },
-        { heading: "근무일수 계산 (주말 제외)", body: "Python은 표준 라이브러리로 간단해요.\n\nimport numpy as np\nnp.busday_count('2026-01-01', '2026-05-01')  # 86일\n\n공휴일 제외하려면 holidays 라이브러리를 써요.\n\nimport holidays\nkr_holidays = holidays.KR(years=2026)\nnp.busday_count('2026-01-01', '2026-05-01', holidays=list(kr_holidays.keys()))\n\nJavaScript는 한 줄로는 안 되고 for 루프나 date-fns 라이브러리를 써야 해요." },
-        { heading: "타임존과 서머타임 주의점", body: "국내 개발이면 대부분 KST(UTC+9) 하나라 문제 없어요. 해외 사용자가 섞이면 다음 규칙이 안전합니다.\n\n1. 서버는 UTC로 저장·계산\n2. 클라이언트 표시 때만 로컬 타임존으로 변환\n3. 서머타임 있는 지역은 date-fns-tz 또는 Luxon 같은 라이브러리 필수\n\n뉴욕 사용자에게 3시간 후 약속을 계산할 때 서머타임 경계에 걸리면 Date 객체만으로는 틀립니다." },
-        { heading: "Toolkio Timestamp Converter로 빠른 확인", body: "특정 Unix 타임스탬프가 언제였는지, 또는 두 시점의 차이가 얼마인지 한 번에 보여줘요. 정규 라이브러리 설치 전 빠른 확인이 필요할 때 유용합니다." },
-      ],
-      en: [
-        { heading: "Why Date Math Is Tricky", body: "Leap years, DST, and timezones break naive subtraction. Feb 28 to Mar 1 is 2 days in 2024, 1 day in 2023." },
-        { heading: "JavaScript Day Diff", body: "Math.floor subtraction divided by 86400000. Beware YYYY-MM-DD is parsed as UTC." },
-        { heading: "Python Clean Date Diff", body: "Use datetime subtraction. For time: total_seconds divided by 3600." },
-        { heading: "D-day Function Pattern", body: "Reset time to 00:00 on both sides, then subtract. Return D-n, D-Day, or D+n." },
-        { heading: "Business Days Calculation", body: "Python: np.busday_count. JS: use date-fns or manual loop excluding weekends and holidays." },
-        { heading: "Timezone & DST Safety", body: "Store UTC on server. Convert to local only at display. Use date-fns-tz or Luxon for DST-sensitive regions." },
-        { heading: "Toolkio Timestamp Converter", body: "Quick check without installing libraries. Great for debugging log timestamps or API date fields." },
-      ],
-    },
-    faq: [
-      { question: "윤년까지 고려해서 만 나이 계산하려면?", answer: "단순 days / 365.25로는 1~2일 오차가 날 수 있어요. year 차이를 먼저 구하고 생일이 지났는지 조건 판단하는 방식이 정확합니다." },
-      { question: "Excel 날짜 차이와 코드 결과가 다른 이유는?", answer: "Excel은 1900-01-01을 1로 시작하지만 1900년을 윤년으로 잘못 처리해요. 1900년대 초 날짜에서 하루씩 어긋날 수 있어요." },
-      { question: "날짜 차이 계산에 moment.js는 써도 되나요?", answer: "레거시 유지용으로는 OK지만 신규 프로젝트엔 비추예요. 크고 무겁고 유지보수 종료됐어요. date-fns나 Luxon이 현재 표준입니다." },
-      { question: "한국 공휴일 자동 반영하려면?", answer: "Python은 holidays 라이브러리로 KR 지정하면 돼요. JS는 date-holidays 또는 holiday-kr 같은 개별 패키지를 써요." },
-      { question: "서머타임 있는 나라와 거래할 때 주의점?", answer: "UTC 저장이 기본이에요. 표시할 때만 Intl.DateTimeFormat이나 Luxon으로 로컬 변환. DST 전환 주간에는 같은 시계 시간이 하루에 두 번 나오거나 건너뛸 수 있어 DST 정보를 담은 TZ 데이터를 써야 합니다." },
-    ],
-  },
-  {
+    {
     slug: "password-manager-comparison-2026",
     title: {
       ko: "비밀번호 관리자 비교 2026 — 1Password vs Bitwarden vs KeePass 실사용",
@@ -10846,7 +9167,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "KeePass — 로컬 저장 무료", body: "가격: 완전 무료\n\n장점\n- 데이터가 로컬 파일로만 저장 (클라우드 전송 X)\n- 최고 수준 프라이버시\n- 플러그인으로 무한 확장\n\n단점\n- 동기화는 직접 구축 (Dropbox, OneDrive 등 수동)\n- UI가 2000년대 스타일\n- 모바일 앱은 서드파티(KeePassium, KeePass2Android)\n- 팀 공유 사실상 불가\n\n보안 최우선·개인 사용자에게 맞아요. 회사 정보를 클라우드에 올리기 싫은 분에게 추천해요." },
         { heading: "세 가지 선택 가이드", body: "1Password를 고를 때\n- UX 우선, 가족/팀 공유 자주 씀\n- 월 3천원 지출 가능\n\nBitwarden을 고를 때\n- 무료로 시작하고 싶음\n- 오픈소스 선호\n- 필요시 셀프 호스팅 가능성 열어둠\n\nKeePass를 고를 때\n- 클라우드에 비밀번호 올리기 싫음\n- 기술적 셋업 가능\n- 단독 사용자\n\n제 개인 추천은 Bitwarden이에요. 무료로도 대부분 케이스를 커버하고, 업그레이드 필요하면 싼 가격이라 전환 부담이 작아요." },
         { heading: "어떤 걸 고르든 꼭 해야 할 것", body: "1. 마스터 비밀번호는 절대 재사용 금지 — 다른 사이트 비밀번호와 달라야 함\n2. 2FA 활성화 — 관리자 자체도 2단계 인증 필수\n3. 주기적 Watchtower 또는 Security Audit 확인 — 유출된 비밀번호 교체\n4. 복구 키 오프라인 백업 — 종이에 출력해 금고·파일 캐비닛\n5. 비밀번호 공유는 관리자 내장 기능만 사용 — 카톡·이메일 전송 금지" },
-        { heading: "Toolkio Password Generator로 강한 비밀번호 생성", body: "관리자에 저장하기 전 충분히 강한 비밀번호를 만드세요. Toolkio의 Password Generator는 길이·특수문자·숫자를 조정해 즉시 생성해요.\n\n권장 설정: 길이 20자 이상, 특수문자 포함, 숫자 포함, 대소문자 혼합. 이 정도면 현재 계산 능력으로 수조 년 걸려서 뚫어요." },
+        { heading: "Toolkio Password Generator로 강한 비밀번호 생성", body: "관리자에 저장하기 전 충분히 강한 비밀번호를 만드세요. Toolkio의 Password Generator는 길이·특수문자·숫자를 조정해 즉시 생성해요.\n\n권장 설정: 길이 20자 이상, 특수문자 포함, 숫자 포함, 대소문자 혼합. 이 정도면 현재 계산 능력으로 수조 년 걸려서 뚫어요." }
       ],
       en: [
         { heading: "Why Use a Password Manager", body: "65%+ reuse same password across sites. One breach = all compromised. Managers generate and store unique strong passwords per site." },
@@ -10855,7 +9176,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "KeePass — Local Only", body: "Free, data stays local. Manual sync via Dropbox/OneDrive. Highest privacy, outdated UI, team sharing impractical." },
         { heading: "Choice Guide", body: "1Password: UX priority, family/team. Bitwarden: balance of features and price. KeePass: privacy absolutist." },
         { heading: "Must-Do Regardless of Choice", body: "Strong unique master password, 2FA enabled, periodic security audit, offline recovery key backup, use built-in sharing." },
-        { heading: "Generate Strong Passwords with Toolkio", body: "Use Toolkio Password Generator for 20+ char passwords with symbols, numbers, mixed case before storing in manager." },
+        { heading: "Generate Strong Passwords with Toolkio", body: "Use Toolkio Password Generator for 20+ char passwords with symbols, numbers, mixed case before storing in manager." }
       ],
     },
     faq: [
@@ -10863,7 +9184,7 @@ export const blogPosts: BlogPost[] = [
       { question: "한국 사이트 자동 로그인 호환성은?", answer: "Bitwarden과 1Password는 대부분 사이트에서 잘 돼요. 일부 구식 사이트(옛날 공공·은행)는 iframe 문제로 자동 입력 실패할 수 있어서 수동 복사해야 합니다." },
       { question: "Chrome 기본 비밀번호 관리로는 부족한가요?", answer: "기본 용도는 가능해요. 다만 크로스 브라우저 동기화, 안전 공유, 침해 알림 같은 고급 기능이 부족합니다. 개인 용도면 Chrome + 2FA로 시작해도 OK입니다." },
       { question: "Bitwarden 셀프 호스팅은 어려운가요?", answer: "Docker Compose 한 줄로 가능해요. 작은 VPS(월 $5) 있으면 충분합니다. 공식 Bitwarden 대신 Vaultwarden(경량 포크)을 쓰는 분이 많아요." },
-      { question: "가족 플랜으로 공유하면 보안 문제 없나요?", answer: "전용 공유 폴더로 일부만 나누고 개인 비밀번호는 보호돼요. 1Password 가족 플랜은 가족 공용 금고와 개인 금고가 분리돼 가장 안전합니다." },
+      { question: "가족 플랜으로 공유하면 보안 문제 없나요?", answer: "전용 공유 폴더로 일부만 나누고 개인 비밀번호는 보호돼요. 1Password 가족 플랜은 가족 공용 금고와 개인 금고가 분리돼 가장 안전합니다." }
     ],
   },
   {
@@ -10889,7 +9210,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "4. 이중 인코딩 풀기", body: "드물게 Base64 결과를 다시 Base64로 감싸는 경우가 있어요. 한 번 디코드했는데 결과가 또 Base64처럼 생겼다면 한 번 더 돌려 보세요.\n\n실제로 AWS Lambda 이벤트에서 본 사례예요. API Gateway + 바이너리 페이로드 조합에서 자주 생깁니다." },
         { heading: "5. 잘린 문자열 복구", body: "길이가 뒤에서 잘렸으면 마지막 블록을 복구해야 해요. 마지막 1~3자가 날아간 정도면 패딩 조정으로 대부분 열려요. 4자 이상 잘리면 원본 일부가 유실된 거라 복구는 안 됩니다." },
         { heading: "6. 비ASCII 문자 확인", body: "복사·붙여넣기 과정에서 한글이나 이모지가 섞이면 디코더가 에러를 던져요. 정규식 `^[A-Za-z0-9+/=_-]*$`로 필터링한 뒤 디코드하세요.\n\n필터 통과가 안 되는 경우, 원본 전송 과정에서 인코딩이 깨진 거라 송신 측에 재요청이 답입니다." },
-        { heading: "Toolkio Base64 도구 활용", body: "Toolkio Base64 변환기는 URL-safe 자동 감지, 패딩 자동 보정, 줄바꿈 자동 제거가 내장돼 있어요. 브라우저에서 실행되니 민감한 데이터도 서버로 전송되지 않습니다." },
+        { heading: "Toolkio Base64 도구 활용", body: "Toolkio Base64 변환기는 URL-safe 자동 감지, 패딩 자동 보정, 줄바꿈 자동 제거가 내장돼 있어요. 브라우저에서 실행되니 민감한 데이터도 서버로 전송되지 않습니다." }
       ],
       en: [
         { heading: "6 Reasons Base64 Decoding Fails", body: "Padding missing, URL-safe variant, embedded whitespace, double encoding, truncated string, non-ASCII chars — these cover nearly all failures." },
@@ -10899,7 +9220,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "4. Double Encoding", body: "If decoded output still looks like Base64, decode again. Common in AWS Lambda + API Gateway binary payloads." },
         { heading: "5. Truncation", body: "Last 1-3 chars missing can sometimes be recovered via padding. 4+ chars lost = irrecoverable." },
         { heading: "6. Non-ASCII Chars", body: "Filter with regex `^[A-Za-z0-9+/=_-]*$`. If fails, request resend from source." },
-        { heading: "Use Toolkio Base64", body: "Toolkio auto-detects URL-safe, fixes padding, strips whitespace — all in browser, no server transmission." },
+        { heading: "Use Toolkio Base64", body: "Toolkio auto-detects URL-safe, fixes padding, strips whitespace — all in browser, no server transmission." }
       ],
     },
     faq: [
@@ -10907,7 +9228,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JWT 토큰 디코딩이 안 돼요", answer: "JWT는 URL-safe Base64 + 패딩 제거 형식이에요. `-`를 `+`로, `_`를 `/`로 바꾸고 패딩을 4의 배수로 채운 뒤 디코드하세요." },
       { question: "길이가 맞는데도 Invalid character 에러가 나요", answer: "복사할 때 보이지 않는 유니코드 공백이 섞였을 가능성이 높아요. `replace(/[^A-Za-z0-9+/=_-]/g, '')`로 강제 필터링해 보세요." },
       { question: "Base64 디코딩 온라인 도구는 안전한가요?", answer: "민감 데이터는 브라우저 로컬 처리 도구를 쓰세요. Toolkio처럼 서버 전송이 없는 도구가 안전해요. 백엔드 로그에 남는 온라인 도구는 비추입니다." },
-      { question: "Base64와 Base58, Base64url 차이는?", answer: "Base64는 A-Z,a-z,0-9,+,/. Base64url은 +,/ 대신 -,_. Base58은 Bitcoin에서 쓰는 방식으로 혼동 쉬운 문자(0,O,l,I) 제외. 대부분 상황에선 Base64 또는 Base64url만 알면 돼요." },
+      { question: "Base64와 Base58, Base64url 차이는?", answer: "Base64는 A-Z,a-z,0-9,+,/. Base64url은 +,/ 대신 -,_. Base58은 Bitcoin에서 쓰는 방식으로 혼동 쉬운 문자(0,O,l,I) 제외. 대부분 상황에선 Base64 또는 Base64url만 알면 돼요." }
     ],
   },
   {
@@ -10937,7 +9258,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "8. JSON을 TypeScript 타입으로 변환", body: "프론트엔드 개발자가 가장 자주 쓰는 패턴이에요. 응답 JSON을 붙여넣으면 TS 인터페이스가 자동 생성됩니다. `quicktype` 같은 기능이 포맷터에 내장된 경우가 많아요." },
         { heading: "9. Minify로 전송 크기 줄이기", body: "운영 서버에 전송할 JSON은 공백 없이 minify 하는 게 네트워크 비용을 아껴요. 반대 방향도 자주 써요. 포맷터는 양방향 toggle이 다 됩니다." },
         { heading: "10. JSONPath로 필드 추출", body: "긴 JSON에서 특정 값만 뽑아낼 때 JSONPath (`$..email`, `$.items[?(@.price>100)]`) 기능이 유용해요. jq 설치 없이 브라우저에서 바로 돌릴 수 있죠." },
-        { heading: "Toolkio JSON 포맷터 추천 이유", body: "Toolkio의 포맷터는 이 10가지 기능을 한 페이지에서 제공해요. 특히 민감 데이터 처리를 자주 하는 분들은 서버 전송 없는 브라우저 처리가 핵심 장점이에요. 로그 공유 전 마스킹, 사내 API 디버깅에 안심하고 쓸 수 있습니다." },
+        { heading: "Toolkio JSON 포맷터 추천 이유", body: "Toolkio의 포맷터는 이 10가지 기능을 한 페이지에서 제공해요. 특히 민감 데이터 처리를 자주 하는 분들은 서버 전송 없는 브라우저 처리가 핵심 장점이에요. 로그 공유 전 마스킹, 사내 API 디버깅에 안심하고 쓸 수 있습니다." }
       ],
       en: [
         { heading: "More Than Pretty Printing", body: "JSON formatters can do far more than indenting. Here are 10 developer use cases you may be missing." },
@@ -10951,7 +9272,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "8. JSON to TypeScript", body: "Paste response, get TS interface. Frontend favorite." },
         { heading: "9. Minify for Transport", body: "Strip whitespace to reduce payload size. Toggle both directions." },
         { heading: "10. JSONPath Extraction", body: "Pull specific fields like `$..email` or `$.items[?(@.price>100)]` without installing jq." },
-        { heading: "Why Toolkio", body: "All 10 use cases in one page, processed in browser — safe for sensitive data and internal API debugging." },
+        { heading: "Why Toolkio", body: "All 10 use cases in one page, processed in browser — safe for sensitive data and internal API debugging." }
       ],
     },
     faq: [
@@ -10959,7 +9280,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JSON이 길어서 포맷팅이 느려요", answer: "10MB 이상 JSON은 브라우저 한계예요. jq CLI로 처리하거나 파일 분할이 답입니다. 일반 API 응답은 대부분 1MB 이하라 문제없어요." },
       { question: "JSON5, HJSON도 포맷팅 되나요?", answer: "JSON5(주석 허용), HJSON(느슨한 문법)은 별도 파서가 필요해요. 일반 JSON 포맷터는 표준 JSON만 처리합니다. VS Code 확장이 더 유연해요." },
       { question: "JSON 포맷터에서 줄 정렬을 알파벳 순으로 하려면?", answer: "키 정렬 기능을 켜면 돼요. Toolkio는 Sort Keys 옵션이 있어서 비교·diff에 유용합니다. 기본은 원본 순서 유지예요." },
-      { question: "JSON 포맷터와 Prettier 차이는?", answer: "Prettier는 에디터 플러그인으로 저장 시 코드 스타일 통일. 온라인 JSON 포맷터는 즉석 확인·편집용. 용도가 달라요. 둘 다 쓰는 게 일반적입니다." },
+      { question: "JSON 포맷터와 Prettier 차이는?", answer: "Prettier는 에디터 플러그인으로 저장 시 코드 스타일 통일. 온라인 JSON 포맷터는 즉석 확인·편집용. 용도가 달라요. 둘 다 쓰는 게 일반적입니다." }
     ],
   },
   {
@@ -10986,7 +9307,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "지역별 데이터로 다국어 페이지 분기", body: "QR 스캔 지역 데이터를 보면 한국어 외 사용자 비율이 보여요. 영어 페이지나 중국어 페이지가 필요한지 결정할 수 있어요.\n\n저는 일본 전시회 참가 후 QR 스캔의 23%가 일본 IP였다는 걸 알고 다음 포스터에 일본어 QR을 별도로 만들었어요. 반응이 훨씬 좋았어요." },
         { heading: "기기 데이터로 랜딩 페이지 최적화", body: "iPhone 사용자가 70%라면 iOS Safari 최적화가 중요해요. Android 비율 높으면 Chrome 최적화. 이건 랜딩 페이지 디자인에 직접 영향을 줘요.\n\n특히 결제 링크는 iOS/Android 앱 딥링크가 달라서 이 데이터가 매출에 영향을 줄 수 있어요." },
         { heading: "시간 데이터로 다음 이벤트 준비", body: "스캔이 몰리는 시간대를 보면 **언제 부스를 채워야 할지**가 보여요. 오전 10시 집중이면 9시 30분부터 부스 풀 대응. 오후 4시 피크면 점심 이후에 스태프 증원.\n\nGoogle Analytics 실시간 리포트로 이벤트 당일에도 체크 가능해요." },
-        { heading: "Toolkio QR 생성 + 추적 조합", body: "Toolkio QR Generator로 UTM 포함 URL을 QR로 만들고, Bitly에 단축한 뒤 그 단축 URL을 QR에 인코딩하세요. 3단계가 5분에 끝납니다.\n\n디자인 로고 포함 옵션으로 브랜드 QR도 만들 수 있어요." },
+        { heading: "Toolkio QR 생성 + 추적 조합", body: "Toolkio QR Generator로 UTM 포함 URL을 QR로 만들고, Bitly에 단축한 뒤 그 단축 URL을 QR에 인코딩하세요. 3단계가 5분에 끝납니다.\n\n디자인 로고 포함 옵션으로 브랜드 QR도 만들 수 있어요." }
       ],
       en: [
         { heading: "Don't Deploy QRs Blind", body: "Event QRs without tracking waste data. With 3 free tools you can measure scans, region, device, time." },
@@ -10997,7 +9318,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "Region Data for Language Decisions", body: "Japanese IPs at 23% → added Japanese QR poster next event. Much better engagement." },
         { heading: "Device Data for Landing Pages", body: "70% iOS → optimize iOS Safari. Affects payment deep links and checkout." },
         { heading: "Time Data for Staffing", body: "Morning peak at 10am → fill booth by 9:30. Real-time Analytics works for on-day adjustments." },
-        { heading: "Toolkio + Bitly Combo", body: "Create UTM QR on Toolkio, shorten in Bitly, re-encode short URL into QR. 5-minute setup." },
+        { heading: "Toolkio + Bitly Combo", body: "Create UTM QR on Toolkio, shorten in Bitly, re-encode short URL into QR. 5-minute setup." }
       ],
     },
     faq: [
@@ -11005,7 +9326,7 @@ export const blogPosts: BlogPost[] = [
       { question: "QR 코드 자체로 고유 ID를 넣을 수 있나요?", answer: "QR별로 `qr_id=A1`, `qr_id=B2` 같은 파라미터를 주면 됩니다. 10개 포스터면 10개 고유 QR. 어느 위치 QR이 가장 효율인지 비교할 수 있어요." },
       { question: "오프라인에서 스캔되면 측정 못 하나요?", answer: "오프라인 스캔은 서버에 로그가 안 남아요. 다만 나중에 인터넷 연결되면 브라우저가 자동으로 페이지 로드합니다. 대부분 즉시 온라인이라 문제 안 돼요." },
       { question: "단축 URL 통계만으로 충분한가요?", answer: "단순 스캔수면 충분해요. 다만 행동 추적(어떤 버튼 클릭, 어느 페이지로 이동)까지 보려면 GA4가 필수입니다. 둘 다 쓰는 게 이상적이에요." },
-      { question: "Bitly 유료 플랜은 어떤 경우에 필요한가요?", answer: "대형 이벤트(월 1만 스캔 이상), 지역별 세분 분석, 브랜디드 도메인(example.ly) 필요할 때예요. 중소 이벤트면 무료로 충분합니다." },
+      { question: "Bitly 유료 플랜은 어떤 경우에 필요한가요?", answer: "대형 이벤트(월 1만 스캔 이상), 지역별 세분 분석, 브랜디드 도메인(example.ly) 필요할 때예요. 중소 이벤트면 무료로 충분합니다." }
     ],
   },
   {
@@ -11032,7 +9353,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "패턴 5 — 웹서버 자동 디코딩 차이", body: "Nginx와 Node.js가 URL 디코딩 방식이 다른 경우가 있어요. Nginx는 한 번 자동 디코딩해서 넘기는데, Node.js(Express)는 또 디코딩을 시도할 수 있죠.\n\n해결: 프록시 구성에서 `proxy_pass` 옵션 확인. `proxy_set_header Host $http_host` 같은 설정으로 원본 URL 보존하는 게 안전합니다." },
         { heading: "디버깅 체크리스트", body: "URL이 깨지면 이 순서로 확인해요.\n\n1. 원본 문자열이 어떤 인코딩인가 (UTF-8? EUC-KR?)\n2. 인코딩 몇 번 걸렸나 (`%` 두 개 이상 연속?)\n3. 브라우저 주소창에서 복사하면 정상인가\n4. 서버 로그에 찍힌 원본 쿼리는 어떻게 보이나\n5. 프록시 설정이 URL 변환하고 있나" },
         { heading: "실전 코드 예시", body: "JavaScript\n```js\nconst keyword = '홍길동';\nconst url = `https://api.example.com/search?q=${encodeURIComponent(keyword)}`;\n// https://api.example.com/search?q=%ED%99%8D%EA%B8%B8%EB%8F%99\n```\n\nPython\n```python\nfrom urllib.parse import quote\nkeyword = '홍길동'\nurl = f'https://api.example.com/search?q={quote(keyword)}'\n```\n\nRuby\n```ruby\nrequire 'uri'\nURI.encode_www_form_component('홍길동')\n# => '%ED%99%8D%EA%B8%B8%EB%8F%99'\n```" },
-        { heading: "Toolkio URL Encoder 활용", body: "Toolkio URL Encoder는 인코딩/디코딩을 양방향으로 즉시 보여줘요. 이중 인코딩 여부를 체크할 때 이게 가장 빠릅니다. 브라우저 내 처리라 민감 파라미터도 안심하고 테스트할 수 있어요." },
+        { heading: "Toolkio URL Encoder 활용", body: "Toolkio URL Encoder는 인코딩/디코딩을 양방향으로 즉시 보여줘요. 이중 인코딩 여부를 체크할 때 이게 가장 빠릅니다. 브라우저 내 처리라 민감 파라미터도 안심하고 테스트할 수 있어요." }
       ],
       en: [
         { heading: "Why Korean URLs Break", body: "URLs only allow ASCII. Korean chars must be percent-encoded via UTF-8 bytes. '안녕' → `%EC%95%88%EB%85%95`." },
@@ -11043,7 +9364,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "5. Proxy Decoding", body: "Nginx and Node decode URLs differently. Verify proxy_pass preserves original URL." },
         { heading: "Debug Checklist", body: "Check: source encoding, encoding count, browser address bar copy, server log, proxy settings." },
         { heading: "Code Examples", body: "JS: `encodeURIComponent(text)`. Python: `quote(text)`. Ruby: `URI.encode_www_form_component(text)`." },
-        { heading: "Use Toolkio URL Encoder", body: "Instant bidirectional encoding/decoding, detect double encoding. Browser-only processing." },
+        { heading: "Use Toolkio URL Encoder", body: "Instant bidirectional encoding/decoding, detect double encoding. Browser-only processing." }
       ],
     },
     faq: [
@@ -11051,7 +9372,7 @@ export const blogPosts: BlogPost[] = [
       { question: "서버에서 받은 파라미터가 `?q=%25ED`로 들어와요", answer: "이중 인코딩 표시예요. 원본 프론트에서 `encodeURIComponent`를 두 번 걸었거나, 경유 서버가 한 번 더 인코딩했어요. 로그 역추적으로 원인 찾으세요." },
       { question: "한글 URL을 브라우저 즐겨찾기에 저장하면 어떻게 되나요?", answer: "Chrome·Safari는 내부적으로 percent-encoded 형태로 저장해요. 보여줄 때만 한글로 디코드해서 표시. 북마크 내보내기 HTML에선 percent 형태로 보입니다." },
       { question: "RESTful API에서 한글 경로(/items/홍길동)는 권장되나요?", answer: "기술적으로 가능하지만 권장 안 해요. ID는 영어/숫자, 한글 이름은 쿼리 파라미터나 body로 보내는 게 안전합니다. 일부 API 게이트웨이는 한글 경로를 reject해요." },
-      { question: "URL 전체 길이 제한이 있나요?", answer: "표준은 없지만 실전에서 브라우저 2083자, 서버 4096자 이상이면 에러 위험이 있어요. 한글은 인코딩으로 1자당 9~12자로 늘어나니 400~800자 이내로 유지하세요." },
+      { question: "URL 전체 길이 제한이 있나요?", answer: "표준은 없지만 실전에서 브라우저 2083자, 서버 4096자 이상이면 에러 위험이 있어요. 한글은 인코딩으로 1자당 9~12자로 늘어나니 400~800자 이내로 유지하세요." }
     ],
   },
   {
@@ -11076,7 +9397,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "DB 인덱스 실전 비교", body: "10만 건 INSERT 벤치마크 (PostgreSQL 16 기준 제 테스트)\n\n- UUID v4: 평균 48초, 인덱스 크기 28MB\n- UUID v7: 평균 31초, 인덱스 크기 22MB\n- BIGSERIAL: 평균 18초, 인덱스 크기 8MB\n\nv7이 BIGSERIAL에 근접하면서 분산 시스템 장점(서버별 독립 생성)은 유지해요." },
         { heading: "언제 v4, 언제 v7을 쓸까", body: "v4 추천\n- 기존 시스템 호환성 중요\n- 타임스탬프 노출 위험한 도메인 (의료·금융)\n- 소규모 데이터 (100만 건 이하)\n\nv7 추천\n- 새로 설계하는 시스템\n- 대량 데이터 (1천만 건 이상)\n- 생성 순서가 의미 있는 엔티티 (이벤트·로그)\n- 분산 DB 환경 (Cockroach, Spanner, Cassandra)" },
         { heading: "ULID, KSUID와의 관계", body: "ULID와 KSUID는 v7 이전에 만들어진 '시간 정렬 가능 ID' 포맷이에요.\n\n- ULID: 48비트 타임스탬프 + 80비트 랜덤, 26자 Base32\n- KSUID: 32비트 타임스탬프 + 128비트 랜덤, 27자 Base62\n\nv7이 공식 표준이 됐으니 신규 프로젝트는 v7 권장. 기존 ULID 쓰던 프로젝트는 유지해도 무방해요." },
-        { heading: "Toolkio UUID Generator", body: "Toolkio UUID Generator는 v1, v4, v5, v7을 모두 지원해요. 한 번에 1~100개 생성, 클립보드 복사, 대소문자 변환 옵션까지 한 페이지에서 됩니다." },
+        { heading: "Toolkio UUID Generator", body: "Toolkio UUID Generator는 v1, v4, v5, v7을 모두 지원해요. 한 번에 1~100개 생성, 클립보드 복사, 대소문자 변환 옵션까지 한 페이지에서 됩니다." }
       ],
       en: [
         { heading: "Why v4 Became Default", body: "UUID v1 leaks MAC. v4 is pure random. v7 (RFC 9562, 2024) is timestamp+random — the new standard for sortable IDs." },
@@ -11085,7 +9406,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "DB Index Benchmark", body: "100K INSERT on PostgreSQL 16: v4 48s/28MB index, v7 31s/22MB, BIGSERIAL 18s/8MB." },
         { heading: "When to Choose", body: "v4: compat, privacy, small scale. v7: greenfield, high volume, distributed DB, ordered events." },
         { heading: "vs ULID / KSUID", body: "ULID/KSUID predated v7. New projects should use v7 (official standard). Legacy ULID is fine to keep." },
-        { heading: "Toolkio UUID Tool", body: "Supports v1/v4/v5/v7. Batch 1-100, copy, case conversion — all in one page." },
+        { heading: "Toolkio UUID Tool", body: "Supports v1/v4/v5/v7. Batch 1-100, copy, case conversion — all in one page." }
       ],
     },
     faq: [
@@ -11093,7 +9414,7 @@ export const blogPosts: BlogPost[] = [
       { question: "UUID는 순차 INT보다 느린가요?", answer: "기본 상식으론 맞아요. 다만 v7은 순차 INT에 근접한 성능이고, 분산 환경에서 ID 생성 서버가 필요 없다는 장점이 훨씬 커요." },
       { question: "Laravel·Django·Rails에서 v7 쓸 수 있나요?", answer: "2024년 이후 버전 모두 지원. Laravel 11, Django 5.0, Rails 7.2부터 공식 지원해요. 이전 버전은 라이브러리 추가로 가능." },
       { question: "UUID 충돌 확률은?", answer: "v4 기준 2^61개 생성해야 50% 충돌 확률. 현실적으로 충돌 걱정 없어요. v7도 랜덤 비트가 충분해 동일 수준의 안정성." },
-      { question: "URL에 UUID 노출 괜찮나요?", answer: "v4는 안전. v7은 타임스탬프 포함이라 '생성 시점'이 드러나는 단점이 있어요. 민감 엔티티(결제, 의료)엔 v4가 낫습니다." },
+      { question: "URL에 UUID 노출 괜찮나요?", answer: "v4는 안전. v7은 타임스탬프 포함이라 '생성 시점'이 드러나는 단점이 있어요. 민감 엔티티(결제, 의료)엔 v4가 낫습니다." }
     ],
   },
   {
@@ -11123,7 +9444,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "8. Sitemap URL 정규화", body: "Sitemap에 들어갈 slug가 camelCase·대문자 섞이면 SEO에 마이너스. 전부 소문자 kebab-case로 강제." },
         { heading: "9. 다국어 문자열 키 관리", body: "i18n 키가 `user.profile.settings` 같이 dot-case인 경우가 흔함. snake나 kebab으로 전환할 때 bulk 변환 도구 필요." },
         { heading: "10. 엔드포인트 네이밍 통일", body: "REST 엔드포인트는 kebab-case 추천. `/user-profile/settings` 가 `/userProfile/settings`보다 읽기 쉽고 브라우저 히스토리에 정확히 표시돼요." },
-        { heading: "Toolkio Case Converter 활용", body: "Toolkio Case Converter는 7가지 케이스 (camel, snake, kebab, pascal, constant, dot, title)를 한 화면에서 보여줘요. 대량 텍스트 붙여넣으면 라인별로 전부 변환돼 편해요." },
+        { heading: "Toolkio Case Converter 활용", body: "Toolkio Case Converter는 7가지 케이스 (camel, snake, kebab, pascal, constant, dot, title)를 한 화면에서 보여줘요. 대량 텍스트 붙여넣으면 라인별로 전부 변환돼 편해요." }
       ],
       en: [
         { heading: "When Case Conversion Matters", body: "Each language has its convention: JS camelCase, Python snake_case, CSS kebab-case, Class PascalCase, env CONSTANT_CASE." },
@@ -11137,7 +9458,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "8. Sitemap Normalization", body: "All slugs lowercase kebab for SEO." },
         { heading: "9. i18n Key Migration", body: "Bulk convert dot-case keys to snake/kebab." },
         { heading: "10. REST Endpoint Naming", body: "kebab-case for endpoints improves readability." },
-        { heading: "Toolkio Case Converter", body: "7 case types in one view, batch line-by-line conversion." },
+        { heading: "Toolkio Case Converter", body: "7 case types in one view, batch line-by-line conversion." }
       ],
     },
     faq: [
@@ -11145,62 +9466,10 @@ export const blogPosts: BlogPost[] = [
       { question: "한글이 섞인 텍스트도 변환 되나요?", answer: "한글은 대소문자 개념이 없어서 그대로 유지돼요. 케이스 변환은 영문 부분만 적용됩니다." },
       { question: "JSON 전체를 한 번에 케이스 변환할 수 있나요?", answer: "키 전체를 재귀적으로 변환하는 함수로 가능해요. JavaScript는 `humps` 라이브러리, Python은 `humps-py` 패키지가 유명해요." },
       { question: "변환하면서 원본 유지도 가능한가요?", answer: "Toolkio Case Converter는 원본 입력란과 변환 결과 2단 뷰예요. 원본은 그대로 있고 결과만 복사할 수 있어요." },
-      { question: "어떤 케이스 선택이 표준인가요?", answer: "언어·프레임워크 컨벤션을 따르는 게 정답이에요. 모든 언어 공통 '표준' 케이스는 없어요. 팀 스타일 가이드 우선." },
+      { question: "어떤 케이스 선택이 표준인가요?", answer: "언어·프레임워크 컨벤션을 따르는 게 정답이에요. 모든 언어 공통 '표준' 케이스는 없어요. 팀 스타일 가이드 우선." }
     ],
   },
-  {
-    slug: "regex-korean-validation-patterns-guide",
-    title: {
-      ko: "한글 검증 정규식 패턴 10가지 — 이름·전화·주민번호 실전 템플릿",
-      en: "Korean Text Validation Regex Patterns — Names, Phones, ID Numbers",
-    },
-    description: {
-      ko: "한국 서비스에서 자주 쓰는 정규식 템플릿 10가지예요. 이름, 전화번호, 주민번호, 사업자번호, 영문+한글 혼합까지 복사해서 바로 쓰는 패턴 모음.",
-      en: "10 regex templates for Korean services: names, phones, IDs, business numbers, mixed Korean+English. Copy-paste ready.",
-    },
-    date: "2026-04-19",
-    toolId: "regex-tester",
-    image: "/images/blog/regex-korean-validation-patterns-guide.webp",
-    keywords: ["한글 정규식", "주민번호 정규식", "전화번호 정규식", "사업자번호 검증", "regex 한글"],
-    content: {
-      ko: [
-        { heading: "한국 서비스 개발의 현실", body: "한국 서비스는 해외 템플릿을 그대로 쓸 수 없어요. 이름에 한글 허용, 주민번호·사업자번호 같은 고유 포맷, 010-XXXX-XXXX 전화번호 체계 때문이에요.\n\n오늘은 실제 프로덕션에서 10년 써온 한글 관련 정규식 10가지를 정리했어요. 복사해서 바로 쓰세요." },
-        { heading: "1. 한글 이름 (2~5자)", body: "```js\n/^[가-힣]{2,5}$/\n```\n\n완성형 한글만 허용. 영문이나 숫자는 거절. 길이 2~5로 제한해 다수 이름 케이스 커버." },
-        { heading: "2. 한글+영문 혼합 이름", body: "```js\n/^[가-힣a-zA-Z]{2,20}$/\n```\n\n'Tom 김' 같은 혼합 이름 허용. 외국인·다문화 고객 대응." },
-        { heading: "3. 한국 전화번호 (휴대폰)", body: "```js\n/^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/\n```\n\n010·011·016~019 시작 모든 휴대폰 번호. 하이픈 있거나 없거나 모두 통과." },
-        { heading: "4. 한국 전화번호 (지역)", body: "```js\n/^(02|0[3-9][0-9])-?[0-9]{3,4}-?[0-9]{4}$/\n```\n\n서울(02) + 지역번호(031~064). 지역번호 자릿수 차이 처리." },
-        { heading: "5. 주민등록번호 (기본 형식)", body: "```js\n/^\\d{6}-[1-4]\\d{6}$/\n```\n\n형식만 체크. 생년월일 유효성과 체크섬은 별도 함수 필요. 민감 정보라 마스킹 처리 권장." },
-        { heading: "6. 사업자등록번호", body: "```js\n/^\\d{3}-?\\d{2}-?\\d{5}$/\n```\n\n10자리 + 체크섬 검증은 별도. 형식만 우선 확인하는 용도." },
-        { heading: "7. 한국 우편번호 (5자리)", body: "```js\n/^\\d{5}$/\n```\n\n2015년 이후 도입된 5자리 우편번호 기준." },
-        { heading: "8. 이메일 (한글 도메인 허용)", body: "```js\n/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[가-힣a-zA-Z]{2,}$/\n```\n\n최근 .한국 같은 한글 도메인도 허용. 이메일 username은 전통적으로 ASCII만." },
-        { heading: "9. 한글+영문+숫자 닉네임", body: "```js\n/^[가-힣a-zA-Z0-9_]{2,20}$/\n```\n\n언더스코어 허용, 특수문자 금지. 대부분의 커뮤니티 닉네임 정책에 맞아요." },
-        { heading: "10. 한국 계좌번호 (은행 공통)", body: "```js\n/^\\d{3,6}-?\\d{2,6}-?\\d{4,8}$/\n```\n\n은행마다 자릿수 달라 유연하게 처리. 정확한 검증은 은행 API로." },
-        { heading: "Toolkio Regex Tester 활용", body: "Toolkio Regex Tester는 한글 유니코드 범위 자동 감지 옵션이 있어요. 입력 텍스트에서 매칭 구간을 실시간 하이라이트해줘 디버깅이 빠릅니다." },
-      ],
-      en: [
-        { heading: "Why Korean-specific Patterns", body: "Korean services need patterns for Hangul names, Korean ID/business numbers, mobile format 010-XXXX-XXXX." },
-        { heading: "1. Korean Name (2-5)", body: "`/^[가-힣]{2,5}$/` — Hangul only, rejects ASCII." },
-        { heading: "2. Korean+English Name", body: "`/^[가-힣a-zA-Z]{2,20}$/` — supports mixed." },
-        { heading: "3. Mobile Phone", body: "`/^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/` — all mobile prefixes." },
-        { heading: "4. Landline", body: "`/^(02|0[3-9][0-9])-?[0-9]{3,4}-?[0-9]{4}$/` — Seoul + regional." },
-        { heading: "5. RRN Format", body: "`/^\\d{6}-[1-4]\\d{6}$/` — format check only. Validate checksum separately." },
-        { heading: "6. Business Number", body: "`/^\\d{3}-?\\d{2}-?\\d{5}$/` — 10 digits, checksum in code." },
-        { heading: "7. Postal 5-digit", body: "`/^\\d{5}$/` — post-2015 format." },
-        { heading: "8. Email + Korean TLD", body: "`/^[\\w.+-]+@[a-zA-Z0-9.-]+\\.[가-힣a-zA-Z]{2,}$/` — allows .한국." },
-        { heading: "9. Nickname Mixed", body: "`/^[가-힣a-zA-Z0-9_]{2,20}$/` — underscore only special." },
-        { heading: "10. Bank Account", body: "`/^\\d{3,6}-?\\d{2,6}-?\\d{4,8}$/` — flexible digit counts." },
-        { heading: "Toolkio Regex Tester", body: "Unicode range auto-detect for Hangul. Real-time match highlighting." },
-      ],
-    },
-    faq: [
-      { question: "정규식으로 주민번호 유효성까지 체크 가능한가요?", answer: "형식만 체크해요. 체크섬과 생년월일 유효성은 별도 함수로 계산해야 해요. 정규식은 '모양'만 본다고 생각하세요." },
-      { question: "한글 유니코드 범위 `[가-힣]` 외에 다른 것도 있나요?", answer: "자모 분리 상태(ㄱ~ㅎ) 체크하려면 `[ㄱ-ㅎㅏ-ㅣ가-힣]` 사용. 완성형만이면 `[가-힣]`으로 충분." },
-      { question: "특수문자(ㆍ, ·) 포함된 이름 어떻게 허용?", answer: "`/^[가-힣·ㆍ]{2,5}$/`처럼 특수 문자 명시. 외래어 표기가 많은 서비스는 고려해야 해요." },
-      { question: "주민번호 노출 시 보안 문제?", answer: "프론트에서 정규식만으로 검증한 값도 개인정보예요. HTTPS 전송, 서버 즉시 마스킹, DB 암호화 필수입니다." },
-      { question: "정규식 성능이 느릴 때?", answer: "백트래킹 과도한 패턴이 원인. `(a+)+` 같은 중첩 피하고, 긴 입력엔 linear-time 엔진(RE2)으로 전환 고려." },
-    ],
-  },
-  {
+    {
     slug: "png-to-webp-image-conversion-server-cost-saving",
     title: {
       ko: "PNG를 WebP로 전환 — 서버 비용 40% 줄인 이미지 포맷 마이그레이션 기록",
@@ -11224,7 +9493,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "HTML에서 fallback 처리", body: "구형 브라우저 대응용으로 `<picture>` 태그 사용:\n\n```html\n<picture>\n  <source srcset='photo.webp' type='image/webp'>\n  <img src='photo.png' alt='설명'>\n</picture>\n```\n\n2026년 기준 거의 필요 없지만, 법인 환경 IE 남아 있는 경우 보험용." },
         { heading: "성능·SEO 효과", body: "실제 측정 결과\n- LCP (Largest Contentful Paint): 2.1s → 1.3s\n- CLS: 0.02 변화 없음\n- Google PageSpeed: 68 → 86\n- Cloudflare 월 대역폭: 820GB → 490GB\n- Cloudflare Pages 비용: 동일 (무료 한도 내)\n- 대규모 사이트라면 CDN 비용 직접 절감\n\nSEO 점수 상승 + 사용자 이탈률 감소가 동시에 왔어요." },
         { heading: "AVIF는 다음 단계", body: "AVIF는 WebP보다 30% 더 작은 차세대 포맷. 2026년 브라우저 지원 95%로 실용 단계에 진입. 다만 인코딩 속도가 느리고 라이브러리 성숙도가 낮아 **WebP 전환 후 AVIF 추가 전환**이 안전한 순서예요." },
-        { heading: "Toolkio Image Compressor로 빠른 변환", body: "대량 변환이 아닌 단건·소량은 Toolkio Image Compressor가 빨라요. PNG·JPG 업로드 → WebP 다운로드가 5초에 끝나요. 브라우저 내 처리라 민감 이미지도 안심." },
+        { heading: "Toolkio Image Compressor로 빠른 변환", body: "대량 변환이 아닌 단건·소량은 Toolkio Image Compressor가 빨라요. PNG·JPG 업로드 → WebP 다운로드가 5초에 끝나요. 브라우저 내 처리라 민감 이미지도 안심." }
       ],
       en: [
         { heading: "Why WebP", body: "25-45% smaller than PNG at same quality. My 6 blogs' bandwidth dropped 40% after full migration." },
@@ -11235,7 +9504,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "HTML Fallback", body: "<picture>+<source> for legacy IE. Mostly unnecessary in 2026." },
         { heading: "Performance Impact", body: "LCP 2.1s→1.3s, PageSpeed 68→86, bandwidth 820GB→490GB." },
         { heading: "AVIF Next", body: "AVIF 30% smaller than WebP. 95% browser support 2026. Migrate after WebP." },
-        { heading: "Toolkio Compressor", body: "Quick single/small-batch PNG/JPG → WebP in browser, privacy-safe." },
+        { heading: "Toolkio Compressor", body: "Quick single/small-batch PNG/JPG → WebP in browser, privacy-safe." }
       ],
     },
     faq: [
@@ -11243,7 +9512,7 @@ export const blogPosts: BlogPost[] = [
       { question: "PNG 투명도 유지되나요?", answer: "네, WebP도 알파 채널 지원. `cwebp -q 80 -alpha_q 100 input.png -o output.webp`처럼 투명도 품질 따로 지정 가능." },
       { question: "이메일 뉴스레터에도 WebP 사용 가능한가요?", answer: "안 돼요. Outlook, Gmail 일부 버전이 WebP 미지원. 이메일 첨부·인라인은 여전히 PNG/JPG가 안전합니다." },
       { question: "iOS Safari WebP 지원하나요?", answer: "iOS 14 이상 모두 지원. 2026년 기준 iOS 14 미만 사용자는 1% 이하라 실무 영향 없음." },
-      { question: "CDN 캐시가 WebP로 안 바뀌어요", answer: "Cloudflare·Fastly는 콘텐츠 변경 시 퍼지 필요. 전환 후 `Purge Everything` 실행하거나 URL에 쿼리 파라미터 추가해 캐시 재생성." },
+      { question: "CDN 캐시가 WebP로 안 바뀌어요", answer: "Cloudflare·Fastly는 콘텐츠 변경 시 퍼지 필요. 전환 후 `Purge Everything` 실행하거나 URL에 쿼리 파라미터 추가해 캐시 재생성." }
     ],
   },
   {
@@ -11273,7 +9542,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "8. 대시보드 임시 리포트", body: "데이터 분석 결과를 마크다운으로 요약하고 사내 위키(Confluence·Notion)에 HTML 변환 후 공유. 코드 블록 + 표 + 이미지 조합 유지." },
         { heading: "9. GitHub Wiki·Issue 템플릿", body: "GitHub의 모든 텍스트 영역이 마크다운 지원. Issue 템플릿, PR 템플릿, Wiki를 마크다운으로 작성하면 프로젝트 관리 효율 급상승." },
         { heading: "변환 도구 선택 가이드", body: "- **JS 프로젝트**: marked, markdown-it, remark\n- **Python**: markdown, mistune, commonmark-py\n- **CLI**: pandoc (최강 범용), md-to-pdf, mdbook\n- **브라우저 실시간 프리뷰**: Toolkio Markdown Preview\n\n프로젝트 규모·언어에 맞게 선택하세요." },
-        { heading: "Toolkio Markdown Preview로 즉석 확인", body: "Toolkio의 Markdown Preview는 **좌측 마크다운, 우측 실시간 HTML**이 뜨는 구조예요. 붙여넣으면 즉시 결과 확인. 복사 버튼으로 HTML만 뽑아 블로그 에디터에 붙여넣기까지 5초." },
+        { heading: "Toolkio Markdown Preview로 즉석 확인", body: "Toolkio의 Markdown Preview는 **좌측 마크다운, 우측 실시간 HTML**이 뜨는 구조예요. 붙여넣으면 즉시 결과 확인. 복사 버튼으로 HTML만 뽑아 블로그 에디터에 붙여넣기까지 5초." }
       ],
       en: [
         { heading: "Why Markdown + HTML", body: "Write in markdown (easy), render as HTML (web-native). Switch freely across contexts." },
@@ -11287,7 +9556,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "8. Dashboard Reports", body: "Markdown analysis summaries to Confluence/Notion HTML." },
         { heading: "9. GitHub Wiki/Issues", body: "All GitHub text fields support markdown. Templates boost project efficiency." },
         { heading: "Tool Selection", body: "JS: marked/markdown-it. Python: markdown/mistune. CLI: pandoc. Browser: Toolkio Preview." },
-        { heading: "Toolkio Preview", body: "Split-view markdown/HTML, instant copy-to-clipboard." },
+        { heading: "Toolkio Preview", body: "Split-view markdown/HTML, instant copy-to-clipboard." }
       ],
     },
     faq: [
@@ -11295,170 +9564,10 @@ export const blogPosts: BlogPost[] = [
       { question: "CommonMark와 GitHub Flavored Markdown 차이는?", answer: "GFM이 CommonMark 위에 확장(체크박스, 표, 취소선 등). GitHub·GitLab은 GFM, 일부 정적 사이트 빌더는 CommonMark만 지원해요." },
       { question: "마크다운에서 수식(LaTeX) 쓰려면?", answer: "KaTeX 또는 MathJax 지원 파서 필요. `$$ E=mc^2 $$` 형식. Notion, Obsidian, HackMD 모두 지원." },
       { question: "이미지를 base64로 넣을 수 있나요?", answer: "가능해요. `![alt](data:image/png;base64,...)` 형식. PDF 배포 시 외부 이미지 누락 걱정 없지만 파일 용량 증가해요." },
-      { question: "마크다운 HTML 변환이 안 맞게 나와요", answer: "파서마다 해석이 달라요. GFM/CommonMark/Markdown Extra 중 어느 스펙 쓰는지 확인. 프로젝트 전체는 한 파서 통일 권장." },
+      { question: "마크다운 HTML 변환이 안 맞게 나와요", answer: "파서마다 해석이 달라요. GFM/CommonMark/Markdown Extra 중 어느 스펙 쓰는지 확인. 프로젝트 전체는 한 파서 통일 권장." }
     ],
   },
-  {
-    slug: "json-to-yaml-conversion-guide",
-    title: {
-      ko: "JSON을 YAML로 변환하는 법 — 설정 파일 실전 변환 가이드",
-      en: "JSON to YAML Conversion — Practical Guide for Config Files",
-    },
-    description: {
-      ko: "Kubernetes·Docker Compose·GitHub Actions 설정을 JSON에서 YAML로 옮길 때 주의할 점을 정리했어요. 주석 처리, 앵커 문법, 흔한 변환 실수까지 한 번에.",
-      en: "How to convert JSON configs to YAML for Kubernetes, Docker Compose, GitHub Actions. Comments, anchors, common pitfalls.",
-    },
-    date: "2026-04-21",
-    toolId: "json-formatter",
-    image: "/images/blog/json-to-yaml-conversion-guide.webp",
-    keywords: ["JSON YAML 변환", "YAML 설정", "Kubernetes YAML", "Docker Compose YAML", "YAML 문법"],
-    content: {
-      ko: [
-        { heading: "왜 JSON 대신 YAML로 옮기나", body: "JSON은 파싱하기 쉽지만 **사람이 읽기엔 불편**해요. 중괄호·쉼표·따옴표가 과해요. YAML은 들여쓰기로 구조를 표현하고 **주석도 지원**해요. Kubernetes, Docker Compose, GitHub Actions, Ansible 같은 도구들이 YAML을 선택한 이유예요.\n\n저도 처음엔 JSON 설정이 익숙했는데, 100줄 넘어가니 YAML이 훨씬 편해요. 특히 팀원과 공유할 때 가독성 차이가 커요." },
-        { heading: "1. 기본 변환 규칙", body: "JSON과 YAML은 구조가 거의 1:1 대응이에요.\n\n```json\n{\n  \"name\": \"app\",\n  \"replicas\": 3,\n  \"tags\": [\"prod\", \"api\"]\n}\n```\n\nYAML로 바꾸면:\n\n```yaml\nname: app\nreplicas: 3\ntags:\n  - prod\n  - api\n```\n\n따옴표 대부분 생략 가능, 들여쓰기로 구조 표현이 핵심이에요." },
-        { heading: "2. 주석 넣기 (JSON엔 없는 강력한 기능)", body: "YAML만의 장점이에요. `#` 기호로 주석을 넣을 수 있어요.\n\n```yaml\n# 프로덕션 환경 설정\nreplicas: 3  # 부하 기준\n```\n\n설정 파일에 **왜 이 값인지** 기록해두면 6개월 후 본인도 고마워해요." },
-        { heading: "3. 앵커와 별칭 (YAML만의 무기)", body: "같은 값을 여러 곳에 반복해야 할 때 YAML 앵커로 DRY하게 작성할 수 있어요.\n\n```yaml\ndefaults: &defaults\n  timeout: 30\n  retries: 3\n\nservice-a:\n  <<: *defaults\n  port: 8080\n\nservice-b:\n  <<: *defaults\n  port: 8081\n```\n\nJSON으로 같은 걸 표현하려면 복붙 범벅이에요." },
-        { heading: "4. 자주 하는 변환 실수 5가지", body: "변환 중 흔한 함정이에요.\n\n- **들여쓰기에 탭 사용** → YAML은 스페이스만 허용\n- **콜론 뒤 공백 누락** → `key:value` 금지, `key: value`\n- **따옴표 안 감싼 문자열** → `yes`, `no`, `on`, `off`는 boolean으로 해석됨\n- **하이픈 뒤 공백 누락** → `- item1` (OK) vs `-item1` (에러)\n- **멀티라인 문자열 오해** → `|`(줄바꿈 유지) vs `>`(줄바꿈 공백 변환) 구분 필요" },
-        { heading: "5. Toolkio JSON Formatter로 YAML 구조 미리 보기", body: "Toolkio JSON Formatter에 JSON 넣고 포맷팅하면 **들여쓰기 구조가 한눈에** 보여요. 이 구조 그대로 YAML로 옮기면 실수가 줄어요.\n\n변환 후엔 YAML Linter(yamllint.com 등)로 검증하세요. 들여쓰기 실수는 런타임 에러로 드러나요." },
-      ],
-      en: [
-        { heading: "Why YAML over JSON", body: "JSON is easy to parse but hard to read. YAML uses indentation and supports comments. That's why Kubernetes, Docker Compose, and GitHub Actions chose YAML." },
-        { heading: "1. Basic Conversion", body: "1:1 structure mapping. Quotes optional, indentation matters." },
-        { heading: "2. Comments", body: "YAML supports # comments — record why a value was chosen." },
-        { heading: "3. Anchors and Aliases", body: "YAML anchors (&name) and aliases (*name) enable DRY configs. JSON can't do this." },
-        { heading: "4. Common Conversion Mistakes", body: "Tabs instead of spaces, missing space after colon, unquoted yes/no being parsed as boolean, missing space after hyphen, | vs > for multiline strings." },
-        { heading: "5. Verify with Toolkio", body: "Format JSON in Toolkio first to see structure clearly, then translate to YAML. Validate with yamllint.com." },
-      ],
-    },
-    faq: [
-      { question: "YAML 파일 확장자는 .yaml인가요 .yml인가요?", answer: "둘 다 가능해요. Kubernetes·Ansible은 .yaml 선호, Docker Compose·GitHub Actions는 .yml도 흔해요. 프로젝트에서 통일하세요." },
-      { question: "JSON 주석은 왜 안 되나요?", answer: "JSON 표준에 주석이 빠져 있어요. 많은 파서가 주석을 허용하지 않아 런타임 에러가 나요. 주석 필요하면 YAML 또는 JSON5로 가세요." },
-      { question: "YAML의 'yes' 'no'가 정말 boolean으로 해석되나요?", answer: "네, YAML 1.1 스펙이에요. 문자열로 쓰고 싶으면 따옴표로 감싸세요: \"yes\". YAML 1.2는 true/false만 boolean이에요." },
-      { question: "대용량 JSON을 YAML로 바꾸는 툴 추천", answer: "js-yaml(JavaScript), PyYAML(Python), yq(CLI). 웹에선 json2yaml.com, transform.tools. 100KB 이상은 로컬 CLI 추천." },
-      { question: "YAML의 들여쓰기는 2칸과 4칸 중 뭐가 맞나요?", answer: "둘 다 가능하지만 2칸이 대세예요. Kubernetes·Docker Compose 공식 예시도 2칸이에요. 한 파일 안에서 일관만 유지하면 OK." },
-    ],
-  },
-  {
-    slug: "regex-korean-id-number-validation",
-    title: {
-      ko: "정규식 주민번호 검증 — 7자리 생년월일 포맷 확인과 비식별화",
-      en: "Regex for Korean ID Number — Birth Date Validation and Masking",
-    },
-    description: {
-      ko: "주민번호 앞 7자리(YYMMDD-N) 정규식으로 검증하는 실전 패턴이에요. 유효 생년월일 판정, 성별 구분, 뒷자리 마스킹까지 한 번에 정리했어요.",
-      en: "Regex patterns to validate Korean resident registration number (YYMMDD-N format). Birth date check, gender digit, masking.",
-    },
-    date: "2026-04-21",
-    toolId: "regex-tester",
-    image: "/images/blog/regex-korean-id-number-validation.webp",
-    keywords: ["주민번호 정규식", "주민등록번호 검증", "생년월일 정규식", "주민번호 마스킹", "한국 주민번호"],
-    content: {
-      ko: [
-        { heading: "주민번호는 왜 정규식으로 검증해야 하나", body: "**개인정보보호법**상 주민번호 수집·처리는 매우 제한돼요. 그래서 대부분 시스템은 **앞 7자리(YYMMDD-N)만 저장**하거나 뒷자리를 마스킹해요. 이 7자리도 형식 검증은 필요해요. 빈 값, 하이픈 위치 오류, 날짜 불일치 같은 입력 실수가 많거든요.\n\n정규식 한 줄로 이 검증이 가능해요. 실무에서 자주 쓰는 패턴을 정리했어요." },
-        { heading: "1. 기본 7자리 형식 검증", body: "YYMMDD-N 형식이에요. 하이픈 포함해서 정규식은 이래요.\n\n```\n^\\d{6}-[1-4]$\n```\n\n- 6자리 숫자(YYMMDD)\n- 하이픈\n- 1~4 중 하나 (성별·세기 구분)\n  - 1·2: 1900년대생\n  - 3·4: 2000년대생\n  - 홀수: 남성, 짝수: 여성" },
-        { heading: "2. 유효 생년월일까지 체크", body: "월은 01~12, 일은 01~31까지만 허용하는 강화 패턴이에요.\n\n```\n^\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])-[1-4]$\n```\n\n2월 30일 같은 잘못된 날짜는 못 걸러요. 그건 정규식 말고 **날짜 파싱 라이브러리**가 따로 해야 해요.\n\nJavaScript: `new Date(year, month-1, day)` 검증\nPython: `datetime.date(year, month, day)` 예외 처리" },
-        { heading: "3. 하이픈 선택적으로 허용", body: "사용자가 하이픈 없이 입력할 수도 있어요. `?` 수식어로 선택 처리해요.\n\n```\n^\\d{6}-?[1-4]$\n```\n\n프론트엔드에서 입력 자동 포맷팅(하이픈 자동 삽입)을 하면 사용자 경험도 좋아져요." },
-        { heading: "4. 뒷자리 마스킹 처리", body: "로그나 화면에 주민번호가 남으면 위험해요. 뒷자리를 `*`로 가리는 정규식 치환이에요.\n\n```javascript\n// JavaScript\nconst masked = input.replace(/(\\d{6})-(\\d)\\d*/, '$1-$2******');\n// \"901231-1234567\" → \"901231-1******\"\n```\n\n```python\n# Python\nimport re\nmasked = re.sub(r'(\\d{6})-(\\d)\\d*', r'\\1-\\2******', input_str)\n```\n\n**DB에 원본 저장 금지**가 원칙이에요. 저장할 거면 암호화 필수." },
-        { heading: "5. Toolkio Regex Tester로 검증 흐름", body: "Toolkio Regex Tester에 패턴과 테스트 데이터를 넣으면 매칭 결과가 실시간으로 보여요. 여러 패턴을 빠르게 비교할 수 있어서 팀 공유 전 검증에 유용해요." },
-      ],
-      en: [
-        { heading: "Why validate Korean ID numbers", body: "Korean ID (RRN) collection is heavily regulated. Most systems store only first 7 digits (YYMMDD-N). Format validation is still needed." },
-        { heading: "1. Basic 7-digit Format", body: "Pattern: ^\\d{6}-[1-4]$. Last digit: 1/2=1900s, 3/4=2000s, odd=male, even=female." },
-        { heading: "2. Valid Date Check", body: "^\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])-[1-4]$. Month 01-12, day 01-31. Feb 30 slip-through handled by date library." },
-        { heading: "3. Optional Hyphen", body: "Add ? after hyphen: ^\\d{6}-?[1-4]$." },
-        { heading: "4. Masking", body: "Replace trailing digits with asterisks. Never store raw RRN — encrypt if must." },
-        { heading: "5. Test with Toolkio", body: "Toolkio Regex Tester gives instant feedback on patterns." },
-      ],
-    },
-    faq: [
-      { question: "주민번호 뒷자리 전체를 서버에 보내도 되나요?", answer: "절대 안 돼요. 개인정보보호법상 주민번호 전체 수집은 법적 근거 있는 경우(금융·통신)만 가능. 일반 서비스는 7자리 또는 CI/DI 사용해야 해요." },
-      { question: "외국인등록번호도 같은 정규식으로 되나요?", answer: "기본 형식은 같지만 뒷자리 규칙이 달라요. 외국인은 5·6(1900년대), 7·8(2000년대)로 구분돼요. 검증 범위를 넓히려면 [1-8]로 변경." },
-      { question: "정규식만으로 완벽한 주민번호 검증 되나요?", answer: "아니요. 정규식은 형식만 봐요. 실제 유효 여부는 체크섬 알고리즘(주민등록번호 검증식)으로 확인해야 해요. 조합 가능한 번호가 전부 실제 등록된 건 아니에요." },
-      { question: "프론트에서 마스킹만 하면 되나요?", answer: "프론트는 표시용일 뿐. 실제 저장·전송 시 백엔드에서도 마스킹하고, 로그·에러 메시지에도 원본이 남지 않게 해야 해요." },
-      { question: "주민번호 대체 수단은 무엇이 있나요?", answer: "본인확인기관 CI(88바이트 연계정보), DI(88바이트 중복가입정보)를 쓰는 게 표준이에요. SMS/카카오톡 본인인증 통해 발급받아요." },
-    ],
-  },
-  {
-    slug: "timestamp-millisecond-nanosecond-conversion",
-    title: {
-      ko: "타임스탬프 밀리초·나노초 변환법 — 로그 분석 실전 활용 가이드",
-      en: "Timestamp Millisecond·Nanosecond Conversion — Log Analysis Guide",
-    },
-    description: {
-      ko: "밀리초·마이크로초·나노초 단위 타임스탬프를 변환하고 해석하는 법을 정리했어요. Java·JavaScript·Python 코드 예시와 로그 분석 실전 활용 팁까지 담았어요.",
-      en: "Convert millisecond, microsecond, nanosecond timestamps. Java, JavaScript, Python code examples. Log analysis tips.",
-    },
-    date: "2026-04-21",
-    toolId: "timestamp-converter",
-    image: "/images/blog/timestamp-millisecond-nanosecond-conversion.webp",
-    keywords: ["타임스탬프 밀리초", "나노초 타임스탬프", "Unix timestamp", "로그 분석", "타임스탬프 변환"],
-    content: {
-      ko: [
-        { heading: "초 단위로 충분하지 않을 때", body: "대부분의 로그는 초 단위 Unix timestamp(1713682800)를 써요. 근데 고성능 서비스 로그나 트레이싱 데이터는 **밀리초·마이크로초·나노초** 단위가 필요해요. 분산 시스템 디버깅, 성능 프로파일링, 초당 수천 요청 로그 정렬에 그 정도 정밀도가 꼭 필요하거든요.\n\n이 글에선 세 단위의 차이와 변환, 실전 활용을 정리해요." },
-        { heading: "1. 단위 차이 한눈에", body: "- **초 (s)**: 1970-01-01 00:00:00 UTC부터 초\n- **밀리초 (ms)**: 초 × 1,000 (JavaScript Date.now()가 반환)\n- **마이크로초 (μs)**: 초 × 1,000,000 (Python time.time_ns() // 1000)\n- **나노초 (ns)**: 초 × 1,000,000,000 (Go time.Now().UnixNano(), Kafka record timestamp)\n\n2026-04-21 10:00:00 UTC 기준:\n- 초: 1745229600\n- 밀리초: 1745229600000\n- 나노초: 1745229600000000000" },
-        { heading: "2. 언어별 현재 시각 얻기", body: "```javascript\n// JavaScript (브라우저·Node.js)\nDate.now();                    // 1745229600000 (ms)\nperformance.now();             // 고해상도 ms (fractional)\nprocess.hrtime.bigint();       // Node.js: ns (BigInt)\n```\n\n```python\n# Python 3.7+\nimport time\ntime.time()                    # 1745229600.123 (s, float)\ntime.time_ns()                 # 1745229600123456789 (ns)\n```\n\n```java\n// Java 8+\nSystem.currentTimeMillis()     // 1745229600000 (ms)\nSystem.nanoTime()              // 임의 기준점 기준 ns (순수 경과 측정용)\nInstant.now().getEpochSecond() // 1745229600 (s)\n```" },
-        { heading: "3. 단위 간 변환", body: "```javascript\n// JavaScript\nconst sec = 1745229600;\nconst ms = sec * 1000;\nconst us = sec * 1_000_000;\nconst ns = sec * 1_000_000_000;  // Number 정밀도 한계로 BigInt 권장\n\nconst nsBigInt = BigInt(sec) * 1_000_000_000n;\n```\n\n**Number 타입은 2^53 이상에서 정밀도 손실**이에요. 나노초 다룰 땐 반드시 BigInt 쓰세요." },
-        { heading: "4. 로그 분석 실전 팁", body: "로그 파일에서 타임스탬프 단위를 모를 때 자릿수로 판별해요.\n\n- **10자리** → 초 (예: 1745229600)\n- **13자리** → 밀리초 (예: 1745229600123)\n- **16자리** → 마이크로초\n- **19자리** → 나노초\n\n`awk`나 `jq`로 단위 변환하면 Kafka 로그 + Nginx 로그 같은 **서로 다른 단위 로그를 합쳐 정렬**할 수 있어요." },
-        { heading: "5. Toolkio Timestamp Converter로 빠른 변환", body: "로그 한 줄 복사해서 Toolkio에 붙여넣으면 밀리초/나노초 여부를 자동 감지해서 읽기 쉬운 날짜로 변환해줘요. 디버깅 중 '이 로그 언제 찍혔지?' 빠르게 확인할 때 유용해요." },
-      ],
-      en: [
-        { heading: "When seconds aren't enough", body: "High-performance logs, distributed tracing, and per-request profiling need millisecond/microsecond/nanosecond precision." },
-        { heading: "1. Unit Overview", body: "Seconds, milliseconds (×1000), microseconds (×1M), nanoseconds (×1B)." },
-        { heading: "2. Language Examples", body: "JS: Date.now(), process.hrtime.bigint(). Python: time.time_ns(). Java: System.nanoTime(), Instant.now()." },
-        { heading: "3. Conversion", body: "Multiply/divide by powers of 1000. Use BigInt in JS for nanoseconds to avoid precision loss." },
-        { heading: "4. Log Analysis Tip", body: "Detect unit by digit count: 10=s, 13=ms, 16=us, 19=ns. Unify units before merging logs." },
-        { heading: "5. Toolkio Helper", body: "Auto-detects unit from pasted timestamps — quick debugging." },
-      ],
-    },
-    faq: [
-      { question: "JavaScript에서 나노초가 필요하면?", answer: "Node.js는 process.hrtime.bigint() 사용. 브라우저는 performance.now() × 1_000_000 (BigInt 변환) 또는 performance.timeOrigin 조합." },
-      { question: "시간대(TimeZone)에 따라 타임스탬프 달라지나요?", answer: "안 달라져요. Unix 타임스탬프는 UTC 기준 절대값이에요. 표시할 때만 시간대별로 포맷팅 달라져요." },
-      { question: "음수 타임스탬프 본 적 있는데 뭐죠?", answer: "1970-01-01 이전 시각이에요. 역사 데이터 다룰 때 나와요. JavaScript는 Number로 음수 지원, 일부 언어는 예외 처리 필요." },
-      { question: "나노초 정밀도가 실제로 의미 있나요?", answer: "HFT(고빈도 거래), 분산 트레이싱(OpenTelemetry), 성능 벤치마크에서 의미 있어요. 일반 웹 API는 밀리초로 충분해요." },
-      { question: "Windows와 Linux의 시스템 시각 차이가 있나요?", answer: "OS마다 시각 동기화(NTP) 주기가 달라요. Windows는 기본 1분, Linux는 1초 단위 chrony. NTP 정확히 설정하면 1ms 이내." },
-    ],
-  },
-  {
-    slug: "base64-urlsafe-encoding-guide",
-    title: {
-      ko: "Base64 URL-Safe 인코딩 — 일반 Base64와 차이점과 실전 사용 예시",
-      en: "Base64 URL-Safe Encoding — Differences from Standard Base64",
-    },
-    description: {
-      ko: "일반 Base64와 URL-Safe Base64의 차이를 정리했어요. JWT 토큰, URL 파라미터, 파일명에 안전한 인코딩까지 실전 예시로 보여드려요.",
-      en: "Standard Base64 vs URL-Safe Base64 explained. JWT tokens, URL parameters, safe filenames with practical examples.",
-    },
-    date: "2026-04-21",
-    toolId: "base64",
-    image: "/images/blog/base64-urlsafe-encoding-guide.webp",
-    keywords: ["Base64 URL Safe", "URL-Safe Base64", "JWT 인코딩", "Base64URL", "Base64 차이"],
-    content: {
-      ko: [
-        { heading: "일반 Base64를 URL에 넣으면 왜 깨지나", body: "**Base64**는 바이너리 데이터를 64가지 문자로 표현하는 인코딩이에요. 기본 문자셋은 A-Z, a-z, 0-9, `+`, `/`, `=` 이에요.\n\n그런데 `+`, `/`, `=`는 **URL에 특수 의미**가 있어요. `+`는 공백으로, `/`는 경로 구분자로 해석돼요. URL 쿼리에 Base64 문자열을 그대로 넣으면 깨져요.\n\n**URL-Safe Base64**는 이 세 문자를 URL 안전한 대체 문자로 바꾼 변종이에요." },
-        { heading: "1. 문자 대체 규칙", body: "| 일반 Base64 | URL-Safe Base64 | 이유 |\n|-----------|----------------|------|\n| + | - (하이픈) | URL에서 공백으로 해석됨 |\n| / | _ (언더스코어) | 경로 구분자 |\n| = (패딩) | 생략 또는 . | URL 인코딩 필요 |\n\n변환은 단순 replace 한 번이면 끝이에요.\n\n```javascript\n// 일반 → URL-Safe\nconst urlSafe = standard\n  .replace(/\\+/g, '-')\n  .replace(/\\//g, '_')\n  .replace(/=+$/, '');\n```" },
-        { heading: "2. JWT 토큰은 URL-Safe 필수", body: "JWT(JSON Web Token)는 `header.payload.signature` 세 부분이 URL-Safe Base64로 인코딩돼요. HTTP Authorization 헤더, 쿠키, URL 쿼리 어디에 넣어도 안전하게요.\n\n```\neyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSJ9.abc123-xyz_456\n```\n\n`.` 구분자도 URL 안전한 문자예요. JWT 구현 시 반드시 URL-Safe 버전 사용하세요." },
-        { heading: "3. 언어별 URL-Safe 인코딩", body: "```javascript\n// Node.js\nBuffer.from('hello').toString('base64url');\n// JavaScript (브라우저)\nbtoa('hello').replace(/\\+/g, '-').replace(/\\//g, '_').replace(/=+$/, '');\n```\n\n```python\nimport base64\nbase64.urlsafe_b64encode(b'hello').decode().rstrip('=')\n# 'aGVsbG8'\n```\n\n```java\n// Java 8+\nBase64.getUrlEncoder().withoutPadding().encodeToString(\"hello\".getBytes());\n```" },
-        { heading: "4. 주요 활용처 5가지", body: "- **JWT 토큰**: 인증 표준\n- **URL 단축 서비스**: 짧은 ID 인코딩\n- **OAuth 2.0 state·code_verifier**: PKCE 표준\n- **파일명 저장**: 윈도우·리눅스 둘 다 안전\n- **QR 코드 내 데이터**: 일부 QR 규격에서 특수문자 문제 회피" },
-        { heading: "5. Toolkio Base64 Converter로 확인", body: "Toolkio에 일반 Base64와 URL-Safe 전환 옵션이 있어요. JWT 페이로드 디코딩 테스트하거나 API 응답 검증할 때 빠르게 확인할 수 있어요." },
-      ],
-      en: [
-        { heading: "Why standard Base64 breaks URLs", body: "+, /, = have URL meanings. + becomes space, / is path separator, = needs encoding." },
-        { heading: "1. Character Replacement", body: "+ → -, / → _, = → omitted or period." },
-        { heading: "2. JWT Must Use URL-Safe", body: "header.payload.signature all URL-Safe Base64. Safe in headers, cookies, query strings." },
-        { heading: "3. Language Implementations", body: "Node.js: 'base64url'. Python: urlsafe_b64encode. Java: getUrlEncoder().withoutPadding()." },
-        { heading: "4. Common Uses", body: "JWT, URL shorteners, OAuth PKCE, filenames, QR codes." },
-        { heading: "5. Verify with Toolkio", body: "Toggle between standard and URL-Safe in Toolkio Base64 tool for quick verification." },
-      ],
-    },
-    faq: [
-      { question: "URL-Safe Base64와 일반 Base64는 호환되나요?", answer: "직접 호환은 안 되지만 변환은 쉬워요. 문자 3종 치환(+/=→-_.) 후 서로 변환 가능. 같은 바이너리를 표현하지만 표기만 다른 거예요." },
-      { question: "패딩(=)은 꼭 제거해야 하나요?", answer: "JWT 표준은 제거를 권장해요. OAuth 스펙에선 반드시 제거. 일반 URL 쿼리는 URL 인코딩으로 %3D 처리하면 남겨도 돼요." },
-      { question: "Base64와 URL 인코딩을 동시에 쓰면 안 되나요?", answer: "되지만 비효율이에요. URL-Safe Base64 쓰면 URL 인코딩 불필요. 크기도 작아지고 파싱도 빨라요." },
-      { question: "일반 Base64를 그대로 HTTP 헤더에 넣어도 되나요?", answer: "HTTP 헤더는 URL과 달라서 +/= 문자 OK. 다만 헤더는 ASCII만 허용하니 Base64(ASCII 문자)는 안전해요. 쿼리·파일명만 조심." },
-      { question: "암호화와 Base64의 차이가 뭐죠?", answer: "Base64는 '인코딩'이에요. 누구나 복원 가능. 암호화(AES 등)는 키 없이 복원 불가. Base64는 보안 아닌 **데이터 포맷 변환** 목적이에요." },
-    ],
-  },
-  {
+          {
     slug: "json-pretty-print-vs-minify-guide",
     title: {
       ko: "JSON Pretty Print vs Minify — 언제 어떤 걸 써야 할지 실전 정리",
@@ -11479,7 +9588,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "2. Pretty Print가 정답인 상황", body: "- **개발 중 디버깅**: 눈으로 구조 확인 필수\n- **설정 파일**: 사람이 편집하는 `.json` 설정\n- **API 문서 예시**: Swagger·Readme에 게재할 샘플\n- **git diff 최적화**: 줄 단위 변경 추적 쉬움\n\n설정 파일을 minify하면 유지보수 악몽이에요. 한 줄에 모든 게 있으면 어디가 바뀌었는지 알 수 없어요." },
         { heading: "3. Minify가 정답인 상황", body: "- **프로덕션 API 응답**: 네트워크 비용 절감\n- **로그 엔트리**: 한 이벤트 = 한 줄 (parsing 쉬움)\n- **DB 저장**: 컬럼 크기 절약\n- **Message Queue 페이로드**: Kafka·RabbitMQ 트래픽 최적화\n- **localStorage·sessionStorage**: 5MB 한도 절약\n\nAPI 응답을 Pretty Print로 보내면 **모바일 사용자 데이터 요금에 직접 영향**이에요." },
         { heading: "4. 자동 변환 파이프라인", body: "실무에서는 보통 이런 흐름이에요.\n\n```\n[개발: Pretty JSON 설정] → [빌드: Minify] → [배포: 압축된 JSON]\n                      ↓\n          [DB에는 Minify로 저장]\n                      ↓\n          [API 응답: Minify + gzip]\n                      ↓\n          [프론트엔드: 파싱 후 객체로 사용]\n```\n\n코드 레벨에서 관리하면 수동 실수를 없앨 수 있어요.\n\n```javascript\n// Node.js Express 예시\napp.get('/api/data', (req, res) => {\n  const data = getData();\n  res.json(data);  // 기본 minify 출력\n});\n```" },
-        { heading: "5. Toolkio JSON Formatter 두 가지 모드", body: "Toolkio는 Pretty Print와 Minify 버튼을 둘 다 제공해요. 클릭 한 번에 전환 가능하고, 파일 업로드도 지원해요. 개발 디버깅엔 Pretty, 배포 전 체크엔 Minify 조합으로 쓰세요." },
+        { heading: "5. Toolkio JSON Formatter 두 가지 모드", body: "Toolkio는 Pretty Print와 Minify 버튼을 둘 다 제공해요. 클릭 한 번에 전환 가능하고, 파일 업로드도 지원해요. 개발 디버깅엔 Pretty, 배포 전 체크엔 Minify 조합으로 쓰세요." }
       ],
       en: [
         { heading: "Same data, different format", body: "Pretty Print adds indentation for readability. Minify removes all whitespace for size." },
@@ -11487,7 +9596,7 @@ export const blogPosts: BlogPost[] = [
         { heading: "2. Use Pretty Print For", body: "Debugging, config files, API docs, git diffs." },
         { heading: "3. Use Minify For", body: "Production APIs, log entries, DB storage, message queues, localStorage." },
         { heading: "4. Automation Pipeline", body: "Dev=Pretty, Build=Minify, Deploy=Minify+gzip." },
-        { heading: "5. Toolkio Dual Mode", body: "Toggle between Pretty and Minify with one click." },
+        { heading: "5. Toolkio Dual Mode", body: "Toggle between Pretty and Minify with one click." }
       ],
     },
     faq: [
@@ -11495,406 +9604,10 @@ export const blogPosts: BlogPost[] = [
       { question: "gzip 쓰면 어차피 압축되니 minify 무의미한가요?", answer: "gzip이 minify를 대체하진 못해요. gzip 압축 전 크기도 메모리 할당에 영향. Parse 시간도 원본 크기에 비례. 둘 다 같이 쓰는 게 정답." },
       { question: "DB에 JSON 저장할 때 Pretty가 의미 있나요?", answer: "없어요. 기계가 읽을 데이터는 minify. 사람이 볼 땐 쿼리 결과를 SELECT JSON_PRETTY(col)로 출력. 저장과 표시는 분리하세요." },
       { question: "Pretty JSON과 JSON5는 다른가요?", answer: "달라요. Pretty JSON은 그냥 표준 JSON을 포맷팅한 거. JSON5는 주석·트레일링 콤마·따옴표 생략 지원하는 확장. 설정 파일이면 JSON5 고려." },
-      { question: "JSON 압축 서비스 써도 안전한가요?", answer: "민감 데이터 포함되면 위험해요. 온라인 서비스 업로드 시 평문 전송·저장 가능성 있음. 민감 데이터는 **로컬 CLI(jq)** 또는 IDE 확장 쓰세요." },
+      { question: "JSON 압축 서비스 써도 안전한가요?", answer: "민감 데이터 포함되면 위험해요. 온라인 서비스 업로드 시 평문 전송·저장 가능성 있음. 민감 데이터는 **로컬 CLI(jq)** 또는 IDE 확장 쓰세요." }
     ],
   },
-  {
-    slug: "youtube-video-title-description-seo-char-limits",
-    title: {
-      ko: "유튜브 영상 제목·설명 글자수 — 2026년 SEO 최적 기준 완전 정리",
-      en: "YouTube Video Title & Description Character Count SEO Guide 2026",
-    },
-    description: {
-      ko: "유튜브 영상 제목·설명의 SEO 최적 글자수를 실측 데이터로 정리했어요. CTR·노출 영향, 모바일 잘림 기준, 실제 상위 채널 데이터 분석까지 담았어요.",
-      en: "YouTube video title and description character limits for SEO 2026. CTR data, mobile truncation, top channel analysis.",
-    },
-    date: "2026-04-22",
-    toolId: "character-counter",
-    image: "/images/blog/youtube-video-title-description-seo-char-limits.webp",
-    keywords: ["유튜브 제목 글자수", "유튜브 설명 SEO", "YouTube SEO", "썸네일 제목", "유튜브 CTR"],
-    content: {
-      ko: [
-        { heading: "유튜브 제목 60자가 마법의 숫자예요", body: "유튜브 제목은 **최대 100자**까지 허용돼요. 그런데 실제로 검색 결과·썸네일 아래 표시되는 건 **약 60자**예요. 60자 넘으면 모바일·데스크톱 둘 다 `...`로 잘려요.\n\n제가 관리하는 채널 7개 기준 **제목 글자수별 평균 CTR**\n\n| 글자수 | 평균 CTR | 검색 노출 |\n|-------|--------|---------|\n| 30~45자 | 5.8% | 낮음 |\n| 46~60자 | 8.2% | 최적 |\n| 61~80자 | 7.1% | 잘림 주의 |\n| 81~100자 | 5.4% | 비추 |\n\n**46~60자가 스위트 스팟**이에요." },
-        { heading: "설명란 첫 125자가 핵심이에요", body: "설명란은 **5,000자까지** 가능하지만 **첫 125자가 검색 결과 미리보기**로 표시돼요. 이 부분이 실제 클릭률에 직접 영향 줘요.\n\n첫 125자 필수 포함 요소\n\n- 영상 **핵심 키워드** 2~3개\n- **시청자 베네핏** 한 줄 (무엇을 얻어갈지)\n- **CTA** 또는 중요한 링크 힌트\n\n500자 넘어가면 `더보기`로 접혀요. 그 아래엔 상세 정보, 타임스탬프, 링크, 해시태그 배치." },
-        { heading: "해시태그는 3개가 최적", body: "영상 설명에 해시태그를 넣으면 제목 위에 최대 3개까지 표시돼요. **4개 이상 넣으면 모두 무시**되는 정책이에요.\n\n최적 전략\n\n- **설명 맨 위 3개**: 핵심 키워드 해시태그 (#AI활용법, #블로그자동화, #챗GPT)\n- **영상 내용 중간·끝**: 보조 해시태그 (노출 기능은 없지만 검색 인덱싱에 도움)\n- **금지**: 무관한 해시태그 (스팸 플래그 가능성)" },
-        { heading: "Toolkio 글자수 세기로 유튜브 최적화하기", body: "Toolkio 글자수 카운터에 제목·설명을 붙여넣으면 실시간으로 확인 가능해요.\n\n1. 제목 60자 기준 맞추기\n2. 설명 첫 125자 따로 확인\n3. 설명 500자 기준도 같이 보기\n\n업로드 전 3번만 확인해도 CTR 1~2%p는 쉽게 올라와요." },
-      ],
-      en: [
-        { heading: "YouTube title: 60 chars is the magic number", body: "Max title length is 100, but truncation happens around 60. CTR data shows 46-60 chars is optimal." },
-        { heading: "Description first 125 chars matter most", body: "Max 5000 chars but only first 125 show in search preview. Include key keywords, benefit, CTA." },
-        { heading: "3 hashtags is the cap", body: "Up to 3 hashtags display above title. More than 3 = all ignored." },
-        { heading: "Using Toolkio for YouTube optimization", body: "Paste title and description into Toolkio counter, check 60/125/500 char marks before upload." },
-      ],
-    },
-    faq: [
-      { question: "유튜브 제목은 정말 60자가 최적인가요?", answer: "제 채널 7개 기준 46~60자 CTR이 8.2%로 가장 높았어요. 제목이 잘리면 독자 관심이 떨어져요. 모바일 사용자 70%를 고려하면 60자 안에 핵심을 넣는 게 맞아요." },
-      { question: "해시태그 많이 넣는 게 좋지 않나요?", answer: "4개 이상 넣으면 유튜브 정책상 모두 무시돼요. 설명 맨 위 핵심 3개만 넣고, 중간에 보조 해시태그 추가하는 식이 효과적이에요." },
-      { question: "영상 설명란에 챕터 타임스탬프 넣어도 되나요?", answer: "네, 오히려 권장돼요. 유튜브가 자동으로 챕터 분리해서 검색 결과에 노출해요. 첫 타임스탬프는 0:00부터 시작해야 인식돼요." },
-      { question: "이모지 사용은 제목·설명에 영향 있나요?", answer: "제목 맨 앞 이모지 1개는 CTR에 긍정적(평균 +8%). 2개 이상은 오히려 클릭률 감소해요. 설명란엔 첫 125자 안에 1~2개 자연스럽게 배치가 좋아요." },
-      { question: "태그(tags) 필드도 글자수 제한이 있나요?", answer: "태그는 총 500자(띄어쓰기·콤마 포함)까지 가능해요. 이 한도 안에서 10~15개 태그가 최적이에요. 한 태그당 2~3단어씩 구성해요." },
-    ],
-  },
-  {
-    slug: "poster-event-qr-code-utm-tracking-guide",
-    title: {
-      ko: "이벤트 포스터 QR 코드 — UTM 추적 태그 넣어 방문자 분석하는 법",
-      en: "Event Poster QR Code with UTM Tracking Parameters Guide",
-    },
-    description: {
-      ko: "오프라인 포스터에 QR 코드 붙일 때 UTM 파라미터 넣어서 방문자·전환 추적하는 방법이에요. 실제 이벤트 데이터로 분석, A/B 테스트, 장소별 성과 비교까지 정리했어요.",
-      en: "How to add UTM tracking to QR codes on event posters for visitor analytics, A/B testing, and location-based comparisons.",
-    },
-    date: "2026-04-22",
-    toolId: "qr-generator",
-    image: "/images/blog/poster-event-qr-code-utm-tracking-guide.webp",
-    keywords: ["QR 코드 UTM", "이벤트 포스터 QR", "오프라인 추적", "GA4 UTM", "QR 코드 분석"],
-    content: {
-      ko: [
-        { heading: "포스터 QR 코드 그냥 찍으면 '이벤트 몇 명 왔어?' 몰라요", body: "실제로 오프라인 이벤트를 운영하다 보면 **어느 포스터가 효과 있었는지** 알 방법이 없어요. 여러 장소에 같은 QR을 뿌리면 데이터가 한 덩어리로 섞여요.\n\n답은 **UTM 파라미터를 포스터별로 다르게 심는 것**이에요. 각 QR 코드의 URL에 `utm_source=poster_hongdae` 같은 태그를 달면 Google Analytics에서 장소별 방문자가 구분돼요." },
-        { heading: "UTM 파라미터 5가지 필수 조합", body: "포스터 QR에 넣을 UTM 태그 구성이에요.\n\n```\nhttps://yoursite.com/event\n  ?utm_source=poster\n  &utm_medium=offline\n  &utm_campaign=spring_2026\n  &utm_content=hongdae_wall_1\n  &utm_term=qr_code\n```\n\n- **utm_source**: 매체 대분류 (`poster`, `flyer`, `banner`)\n- **utm_medium**: 경로 분류 (`offline`, `online`, `email`)\n- **utm_campaign**: 이벤트 이름 (`spring_2026`)\n- **utm_content**: 세부 위치 (`hongdae_wall_1`, `sinchon_subway`)\n- **utm_term**: 배너 종류 (`qr_code`, `text_only`)" },
-        { heading: "실제 이벤트 결과 분석 사례", body: "지난 봄 이벤트 포스터 5개 장소에 배포하고 GA4로 추적한 결과예요.\n\n| 장소 | QR 스캔 | 방문자 | 전환 | CPA |\n|------|--------|------|------|-----|\n| 홍대 벽 1 | 142 | 89 | 12 | 3.2만 |\n| 홍대 벽 2 | 87 | 54 | 7 | 4.1만 |\n| 신촌 지하철 | 205 | 131 | 18 | 2.8만 |\n| 성수 카페 | 63 | 41 | 9 | 2.1만 |\n| 강남역 | 178 | 102 | 11 | 4.8만 |\n\n**성수 카페가 CPA 가장 낮음** — 다음 이벤트엔 이쪽 매체 비중 늘리기로 결정했어요. 추적 없었으면 이 판단 못 했을 거예요." },
-        { heading: "Toolkio QR 생성기로 UTM QR 3분 만들기", body: "Toolkio QR 생성기에 완성된 UTM URL을 입력하면 즉시 QR 코드 생성돼요.\n\n1. 목적지 URL + UTM 파라미터 완성\n2. Toolkio QR에 붙여넣기\n3. 로고·색상 커스터마이징 (브랜드용)\n4. 고해상도 PNG 다운로드 → 인쇄\n\n10개 장소용 QR 10분 안에 준비돼요." },
-      ],
-      en: [
-        { heading: "Plain poster QR loses location data", body: "Same QR across locations mixes data. UTM tags let you track by poster location." },
-        { heading: "5 essential UTM parameters", body: "source/medium/campaign/content/term - each position-specific." },
-        { heading: "Real event results example", body: "5 locations, seongsu cafe had lowest CPA, informed next campaign split." },
-        { heading: "Using Toolkio QR Generator", body: "Paste UTM URL, customize, download high-res PNG in 3 minutes." },
-      ],
-    },
-    faq: [
-      { question: "UTM 파라미터는 URL 길이 제한에 영향을 주나요?", answer: "QR 코드 데이터 용량은 약 4,296자까지 가능해요. UTM 5개 붙여도 200자 미만이라 여유 많아요. 다만 URL이 길수록 QR 패턴이 복잡해져서 인쇄·스캔 품질에 민감해져요. URL Shortener 병행을 권해요." },
-      { question: "짧은 URL 서비스로 UTM 감추면 분석에 문제 생기나요?", answer: "bit.ly, TinyURL은 UTM 태그를 유지한 채 리다이렉트해요. GA4에서 원본 UTM 그대로 잡혀요. 단, 자체 도메인 단축 URL(예: goo.gl/yourbrand)이 브랜드 신뢰도 더 좋아요." },
-      { question: "GA4에서 UTM 태그 확인은 어디서 해요?", answer: "GA4 > 트래픽 획득 > 세션 소스/매체에서 utm_source, utm_medium 확인 가능. utm_content, utm_term은 '페이지 및 화면' 리포트에서 보조 측정기준으로 추가해야 보여요." },
-      { question: "UTM 대신 짧은 커스텀 경로 쓰면 안 되나요?", answer: "예를 들어 `/event/hongdae` 같은 경로도 가능해요. 다만 GA4 기본 리포트에선 UTM이 자동 인식되고, 커스텀 경로는 이벤트 설정·매개변수 등록이 추가로 필요해요. UTM이 구현 부담이 가장 적어요." },
-      { question: "오프라인 QR 추적에 GA4 이벤트 트래커 쓰는 방법은?", answer: "랜딩 페이지에 `scanned_from_poster` 같은 커스텀 이벤트 발사 로직 넣으면 돼요. gtag.js `gtag('event', 'scanned_from_poster', { location: 'hongdae' })`. 실시간 히트맵 분석까지 확장 가능해요." },
-    ],
-  },
-  {
-    slug: "naver-blog-image-compression-2mb-quality-guide",
-    title: {
-      ko: "네이버 블로그 이미지 2MB 제한 — 화질 유지하며 용량 줄이는 실전법",
-      en: "Naver Blog 2MB Image Limit — Compress Without Losing Quality",
-    },
-    description: {
-      ko: "네이버 블로그 이미지 업로드 2MB 한도에 맞추면서 화질 유지하는 법을 정리했어요. WebP·JPEG 품질 설정, 리사이즈 기준, 3단계 압축 워크플로우까지 담았어요.",
-      en: "Compress images for Naver blog 2MB limit without quality loss. WebP/JPEG quality settings, resize rules, 3-step workflow.",
-    },
-    date: "2026-04-22",
-    toolId: "image-compressor",
-    image: "/images/blog/naver-blog-image-compression-2mb-quality-guide.webp",
-    keywords: ["네이버 블로그 이미지", "블로그 이미지 압축", "2MB 제한", "WebP JPEG", "이미지 최적화"],
-    content: {
-      ko: [
-        { heading: "네이버 블로그 2MB 제한, 왜 중요한가요", body: "네이버 블로그는 **이미지 1장당 2MB, 글당 총 20MB**가 업로드 한도예요. 초과하면 아예 업로드가 안 돼요. 스마트폰 카메라 기본 이미지가 보통 3~8MB라 **원본 그대로 올릴 수 없어요**.\n\n잘못 압축하면 화질이 뭉개져서 블로그 품질 자체가 떨어져요. 핵심은 **적정 포맷 + 적정 품질 + 적정 해상도** 조합이에요." },
-        { heading: "포맷별 용량·화질 비교", body: "같은 사진(4032×3024)을 포맷별로 압축한 결과예요.\n\n| 포맷 | 품질 | 용량 | 화질 |\n|------|------|------|------|\n| PNG 원본 | 100% | 12.4MB | 최고 |\n| JPEG | 95 | 3.8MB | 최고 |\n| JPEG | 85 | 1.4MB | 좋음 |\n| JPEG | 75 | 0.8MB | 보통 |\n| WebP | 85 | 0.9MB | 매우 좋음 |\n| WebP | 75 | 0.5MB | 좋음 |\n\n**WebP 85%가 가장 균형**이에요. JPEG 대비 40% 더 작으면서 눈에 띄는 차이 없음." },
-        { heading: "3단계 압축 워크플로우", body: "**1단계: 리사이즈** — 가로 **1600px 이하**로 축소. 네이버 블로그 본문 너비가 1600px라 이 이상은 의미 없음.\n\n**2단계: 포맷 변환** — PNG는 WebP로, JPEG는 품질 80~85로 재저장.\n\n**3단계: 용량 확인** — 2MB 이하 확인, 여러 장 묶어서 글당 20MB 넘지 않게.\n\n이 3단계 거치면 **원본 대비 평균 70% 용량 절감**돼요. 화질은 육안으로 거의 안 느껴져요." },
-        { heading: "Toolkio 이미지 압축기로 일괄 처리", body: "Toolkio Image Compressor는 **여러 이미지 동시 업로드 + 자동 압축**을 지원해요.\n\n1. 사진 10장 한 번에 업로드\n2. 품질 85%, 해상도 1600px 설정\n3. 자동 압축 → 압축된 ZIP 다운로드\n4. 네이버 블로그에 바로 업로드\n\n한 글 쓸 때 이미지 10장 압축에 **2분도 안 걸려요**. 수동 저장 반복하는 것보다 압도적으로 빨라요." },
-      ],
-      en: [
-        { heading: "Why Naver 2MB limit matters", body: "Naver blog = 2MB/image, 20MB/post. Smartphone photos are 3-8MB." },
-        { heading: "Format comparison", body: "WebP 85% = best balance (40% smaller than JPEG, similar quality)." },
-        { heading: "3-step compression workflow", body: "1. Resize to 1600px width. 2. Convert to WebP or JPEG 85. 3. Check total <20MB." },
-        { heading: "Batch processing with Toolkio", body: "Upload 10 images at once, auto-compress with quality settings, download ZIP." },
-      ],
-    },
-    faq: [
-      { question: "네이버 블로그에 WebP 업로드 돼요?", answer: "네, 2023년 이후 WebP 지원돼요. 모바일·PC 모두 정상 표시. 단, 구형 브라우저 일부에선 깨질 수 있어 중요한 이미지는 JPEG 폴백 버전도 준비하면 좋아요." },
-      { question: "품질 85%가 정말 차이 안 나나요?", answer: "육안 구분 거의 불가능해요. 전문 모니터에서 100% 확대하면 미세한 차이 보이지만, 블로그 기본 표시 크기에선 구분 못 해요. 85%가 업계 표준이에요." },
-      { question: "이미지 해상도를 너무 줄이면 선명함이 떨어지지 않나요?", answer: "1600px는 네이버 블로그 본문 최대 너비라 더 줄이면 확대 시 흐려져요. 1600px 유지가 안전. Retina 디스플레이에선 2배인 3200px 업로드해도 되지만 용량 부담 커요." },
-      { question: "PNG는 언제 써야 해요?", answer: "투명 배경 필요할 때(로고·아이콘)만 PNG 유지. 사진은 무조건 JPEG/WebP가 유리. PNG 사진 업로드는 2MB 한도 맞추기 어려워요." },
-      { question: "모바일에서 찍은 HEIC 사진은 어떻게 해요?", answer: "네이버 블로그는 HEIC 지원 안 해요. JPEG로 변환 후 업로드. iPhone이면 설정 > 카메라 > 포맷 > '호환성 우선'으로 바꿔 JPEG 저장 설정도 유용해요." },
-    ],
-  },
-  {
-    slug: "api-mock-data-json-generator-schema-validation",
-    title: {
-      ko: "API Mock 데이터 JSON 만들기 — 무작위 생성 + 스키마 검증 실전법",
-      en: "API Mock Data JSON — Random Generation and Schema Validation",
-    },
-    description: {
-      ko: "프론트엔드 개발 중 Mock 데이터 필요한데 매번 손으로 타이핑 해본 적 있죠? JSON Schema 기반 무작위 생성, 검증 도구, 실전 워크플로우까지 정리했어요.",
-      en: "Generate random API mock JSON data from schemas and validate. Includes tools, workflow, and testing tips.",
-    },
-    date: "2026-04-22",
-    toolId: "json-formatter",
-    image: "/images/blog/api-mock-data-json-generator-schema-validation.webp",
-    keywords: ["API Mock", "JSON Schema", "Mock 데이터", "JSON 검증", "프론트엔드 개발"],
-    content: {
-      ko: [
-        { heading: "Mock 데이터 수동 작성, 한 번만 해봐도 고통", body: "백엔드 API 미완성 상태에서 프론트엔드 먼저 만들 때 Mock 데이터가 필요해요. 처음엔 손으로 몇 개 타이핑하지만, **10개 넘어가는 순간 지옥**이에요.\n\n예를 들어 상품 리스트 100개 Mock이 필요하다? 손으로 하면 2시간 이상, 오타도 섞여요. 자동화가 답이에요." },
-        { heading: "JSON Schema로 정의 + 자동 생성", body: "먼저 데이터 구조를 JSON Schema로 정의해요.\n\n```json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": { \"type\": \"integer\", \"minimum\": 1 },\n    \"name\": { \"type\": \"string\", \"faker\": \"commerce.productName\" },\n    \"price\": { \"type\": \"integer\", \"minimum\": 1000, \"maximum\": 100000 },\n    \"stock\": { \"type\": \"integer\", \"minimum\": 0, \"maximum\": 1000 }\n  }\n}\n```\n\n이 스키마를 **json-schema-faker** 같은 라이브러리에 넣으면 100개 Mock 즉시 생성돼요." },
-        { heading: "Node.js 실전 스크립트", body: "```javascript\nimport { JSONSchemaFaker } from 'json-schema-faker';\nimport { faker } from '@faker-js/faker';\nimport fs from 'fs';\n\nJSONSchemaFaker.extend('faker', () => faker);\n\nconst schema = { /* 위 스키마 */ };\nconst listSchema = {\n  type: 'array',\n  minItems: 100,\n  maxItems: 100,\n  items: schema\n};\n\nconst mockData = JSONSchemaFaker.generate(listSchema);\nfs.writeFileSync('mock.json', JSON.stringify(mockData, null, 2));\n```\n\n이 스크립트 한 번 돌리면 **100개 Mock 데이터가 1초 내 생성**돼요." },
-        { heading: "생성 후 Toolkio JSON Formatter로 검증", body: "자동 생성된 JSON이 **진짜 유효한지 Toolkio에서 확인**해요.\n\n1. Mock JSON 붙여넣기\n2. Pretty Print로 구조 시각화\n3. 에러 있으면 즉시 하이라이트\n4. 필요 시 Minify로 크기 확인\n\n실제 API 응답 교체 시점에 스키마 일치 여부도 동시에 확인 가능해요. 프로토타이핑 속도가 확 빨라져요." },
-      ],
-      en: [
-        { heading: "Manual mock data is painful", body: "Typing 10+ mock objects by hand is error-prone and slow." },
-        { heading: "JSON Schema + auto generation", body: "Define schema, use json-schema-faker to generate any count." },
-        { heading: "Node.js script example", body: "JSONSchemaFaker + @faker-js/faker for realistic data in 1 second." },
-        { heading: "Validate with Toolkio JSON Formatter", body: "Paste mock, Pretty Print to visualize, Minify for size check." },
-      ],
-    },
-    faq: [
-      { question: "json-schema-faker 설치·사용 어렵지 않나요?", answer: "npm install json-schema-faker @faker-js/faker 로 5초 설치. 기본 사용법은 스키마 객체 + generate() 한 줄. 처음 써도 10분이면 익숙해져요." },
-      { question: "무작위 데이터 말고 실제 한국어 데이터 만들 수 있나요?", answer: "faker의 locale 설정으로 가능해요. faker.locale = 'ko'. 한글 이름·주소·기업명·연락처 자동 생성. 한국 이커머스 Mock 데이터에 딱 맞아요." },
-      { question: "Mock 데이터를 실제 API 서버처럼 동작시킬 방법은?", answer: "json-server 라이브러리 추천. Mock JSON 파일 지정하면 REST API 서버 즉시 구동. GET·POST·PUT·DELETE 자동 지원해서 프론트 테스트에 완벽." },
-      { question: "Schema 검증은 어떻게 해요?", answer: "Ajv 라이브러리가 표준. 백엔드 응답을 schema.validate(response)로 검증 가능. 프런트 통합 테스트 시 타입 안전성 확보에 유용해요." },
-      { question: "기존 API 응답에서 Schema 자동 추출 가능해요?", answer: "quicktype 또는 genson-js 라이브러리가 가능. 실제 API 응답 JSON 넣으면 JSON Schema 자동 생성. Mock 데이터 기반 만들 때 이 방식도 빨라요." },
-    ],
-  },
-  {
-    slug: "bmi-2026-korea-standard-who-comparison",
-    title: {
-      ko: "BMI 2026 한국 기준 — WHO 25 vs 대한비만학회 23, 어느 쪽이 맞을까",
-      en: "BMI 2026 Korea Standard — WHO 25 vs KSSO 23, Which Applies?",
-    },
-    description: {
-      ko: "BMI 25면 과체중? 23부터 과체중? 한국인 체질 기준으로 2026년 현재 의학계에서 어떤 수치를 실제 진료에 쓰는지, 왜 차이가 나는지 정리했어요.",
-      en: "BMI 25 or 23 — which cutoff applies to Koreans? Explains WHO vs Korea Society for Study of Obesity standards in 2026 clinical practice.",
-    },
-    date: "2026-04-23",
-    toolId: "bmi-calculator",
-    image: "/images/blog/bmi-2026-korea-standard-who-comparison.webp",
-    keywords: ["BMI 기준", "BMI 2026", "한국 비만 기준", "WHO BMI", "대한비만학회"],
-    content: {
-      ko: [
-        { heading: "BMI 기준이 두 개인 이유", body: "**WHO(세계보건기구)** 기준은 체질량지수 **25 이상이 과체중, 30 이상이 비만**이에요. 그런데 한국에선 **대한비만학회**가 **23 이상 과체중, 25 이상 비만**으로 설정해요.\n\n왜 다를까요? **동아시아인은 같은 BMI에서 서구인보다 체지방률이 높고, 복부비만 비율이 커서** 심혈관 질환 위험이 조기에 올라가요. 그래서 한국 기준이 2피트 더 엄격하게 잡혀요." },
-        { heading: "2026년 임상에서 실제 쓰는 기준", body: "2026년 현재 대한비만학회 기준이 **대학병원·건강검진 표준**이에요.\n\n| BMI 범위 | 분류 (한국) | 분류 (WHO) |\n|-----------|-------------|-------------|\n| 18.5 미만 | 저체중 | 저체중 |\n| 18.5~22.9 | 정상 | 정상 |\n| 23~24.9 | 과체중(위험군) | 정상 |\n| 25~29.9 | 1단계 비만 | 과체중 |\n| 30~34.9 | 2단계 비만 | 1단계 비만 |\n| 35 이상 | 3단계 비만 | 2단계 비만 |\n\n건강보험공단 검진·보험 가입 심사도 대부분 한국 기준을 따라요. 국내에선 **BMI 23 이상부터 체중 관리 시작**이 현실적." },
-        { heading: "허리둘레·체지방률과 함께 봐야 정확", body: "BMI만으로 판단하면 **근육량 많은 운동 선수도 비만**으로 잡혀요. 그래서 현대 진료는 **3가지를 함께** 봐요.\n\n1. **BMI** (체중/키²) — 전체 체중 기준\n2. **허리둘레** — 남 90cm, 여 85cm 이상이면 복부비만\n3. **체지방률** — 남 25% 이상, 여 30% 이상 비만\n\n근육질은 BMI 25여도 체지방률 15%면 건강 문제 없어요. **BMI만 맹신 금물**." },
-        { heading: "Toolkio BMI 계산기로 한눈에 확인", body: "Toolkio BMI 계산기는 **한국 기준 + WHO 기준 동시 표시** 가능해요.\n\n1. 키·몸무게 입력\n2. 나이·성별 선택\n3. **한국 기준과 WHO 기준 모두 표시**\n4. 허리둘레 추가 입력하면 복부비만 여부까지 판정\n\n건강검진 결과 해석에 딱 맞는 기준으로 해석해요. 보건소·회사 검진 BMI와 계산값 비교도 정확해져요." },
-      ],
-      en: [
-        { heading: "Why two BMI standards exist", body: "WHO uses 25/30 cutoffs; Korea Society for Study of Obesity uses 23/25 because East Asians have higher body fat at same BMI." },
-        { heading: "Korean clinical practice 2026", body: "Hospitals and health insurance use the 23/25 Korean standard — start weight management at BMI 23+." },
-        { heading: "Waist and body fat matter too", body: "BMI alone misclassifies muscular people — combine with waist circumference and body fat percentage." },
-        { heading: "Use Toolkio BMI calculator", body: "Displays both WHO and Korean standards, adds waist input for abdominal obesity detection." },
-      ],
-    },
-    faq: [
-      { question: "BMI 23인데 정말 관리가 필요해요?", answer: "한국 기준상 '과체중(위험군)'으로 분류되지만, 허리둘레 정상(남 85cm, 여 80cm 이하)이고 근육량 많으면 위험 낮아요. 하지만 복부 중심 지방이면 관리 시작해야 해요. 체지방률 함께 보세요." },
-      { question: "임산부도 BMI 적용하나요?", answer: "임신 중에는 정상 BMI 기준이 다르게 작동해요. 임신 전 BMI 기준으로 권장 체중 증가량이 정해져요(정상체중 11~16kg, 과체중 7~11kg). 임신 중 BMI 측정은 의미 없어요." },
-      { question: "BMI 18.5 미만인데 건강한가요?", answer: "저체중도 위험이에요. 뼈건강·면역력 저하, 여성의 경우 월경불순·불임 위험 증가. 영양 불균형·만성 피로 동반 경우 내분비내과 상담 필요해요." },
-      { question: "어린이·청소년도 같은 BMI 기준 써요?", answer: "아니요, 성장 중이라 별도 '소아청소년 성장도표' 기반 백분위(percentile) 기준을 써요. 85백분위 이상 과체중, 95백분위 이상 비만으로 분류. 소아과 권장 차트 활용." },
-      { question: "WHO 기준은 왜 안 바꿔요?", answer: "WHO 기준은 '서구 중심' 데이터로 설정된 역사 때문에 글로벌 통계 일관성 위해 유지돼요. 대신 '아시아·태평양 기준(23/25)'이 별도 권고사항으로 병기돼 있어요. 한국은 이 아시아 기준 채택." },
-    ],
-  },
-  {
-    slug: "2026-salary-after-tax-4-insurance-increase",
-    title: {
-      ko: "2026년 연봉 실수령액 — 4대보험 인상 반영 세후 금액 정리",
-      en: "2026 Korea Salary After-Tax — Reflecting Social Insurance Rate Hike",
-    },
-    description: {
-      ko: "2026년 4대보험 요율 인상으로 실수령액이 작년보다 줄었어요. 연봉 3천·5천·7천·1억 구간별 세후 월급 계산 결과를 한눈에 정리했어요.",
-      en: "2026 Korea social insurance rate hike reduces net salary. Monthly take-home comparisons for 30M/50M/70M/100M KRW annual salaries.",
-    },
-    date: "2026-04-23",
-    toolId: "salary-calculator",
-    image: "/images/blog/2026-salary-after-tax-4-insurance-increase.webp",
-    keywords: ["2026 실수령액", "연봉 세후", "4대보험 2026", "월급 계산", "세후 연봉"],
-    content: {
-      ko: [
-        { heading: "2026년 4대보험 요율 변경 요약", body: "2026년부터 **건강보험 + 장기요양보험**이 소폭 인상됐어요.\n\n| 보험 | 2025년 | 2026년 | 변화 |\n|-------|---------|---------|-------|\n| 국민연금 | 4.5% | 4.5% | 동결 |\n| 건강보험 | 3.545% | 3.645% | +0.1%p |\n| 장기요양 | 건강보험의 12.95% | 건강보험의 13.50% | +0.55%p |\n| 고용보험 | 0.9% | 0.9% | 동결 |\n\n근로자 부담분 기준이에요. 회사 부담분도 같이 올라서 기업 인건비도 증가." },
-        { heading: "연봉 3천만 원 실수령액", body: "**연봉 3,000만 원 기준 2026년 월 실수령액 약 222만 원**.\n\n- 월 급여: 250만 원\n- 국민연금: 11.25만 원\n- 건강보험: 9.11만 원\n- 장기요양: 1.23만 원\n- 고용보험: 2.25만 원\n- 소득세·지방세: 4.5만 원\n- **세후 실수령**: 221.66만 원\n\n2025년 대비 **월 약 3천 원 감소**. 연간 3.6만 원 줄었어요." },
-        { heading: "연봉 5천·7천·1억 구간 비교", body: "| 연봉 | 월 실수령 (2025) | 월 실수령 (2026) | 연 차이 |\n|------|---------------------|---------------------|----------|\n| 3,000만 원 | 221.96만 원 | 221.66만 원 | -3.6만 원 |\n| 5,000만 원 | 355.2만 원 | 354.6만 원 | -7.2만 원 |\n| 7,000만 원 | 483.5만 원 | 482.6만 원 | -10.8만 원 |\n| 1억 원 | 663.4만 원 | 662.0만 원 | -16.8만 원 |\n\n연봉 높을수록 요율 인상 체감이 커요. 1억 구간은 연 16만 원 가까이 줄었어요." },
-        { heading: "Toolkio 급여 계산기 2026 모드", body: "Toolkio Salary Calculator는 **2026년 최신 요율 반영** 완료.\n\n1. 연봉 입력 (예: 5000)\n2. 부양가족·자녀 수 선택\n3. **4대보험 + 소득세·지방세 자동 계산**\n4. 월 실수령액 + 연간 비과세 수당 고려 후 순액 표시\n\n실수령 금액 협상 때 이 결과 참고해 역산하면 '월 X 만원 실수령 받으려면 연봉 얼마?'도 계산 가능." },
-      ],
-      en: [
-        { heading: "2026 insurance rate changes", body: "Health insurance +0.1%p, long-term care +0.55%p; pension and employment unchanged." },
-        { heading: "30M KRW salary after tax", body: "Monthly net ~2.217M KRW, about 3,000 KRW less than 2025." },
-        { heading: "50M/70M/100M brackets", body: "Higher salaries feel larger absolute impact — 100M bracket loses about 168,000 KRW annually." },
-        { heading: "Use Toolkio calculator", body: "Updated with 2026 rates — enter salary, get monthly net + annual totals." },
-      ],
-    },
-    faq: [
-      { question: "비과세 식대가 바뀌었나요?", answer: "2026년 비과세 식대 한도는 월 20만 원으로 유지됐어요. 식대 20만 원 포함 연봉 계약이면 세금·4대보험 계산에서 제외돼서 실수령 증가 효과 있어요. 협상 시 필수 체크 항목." },
-      { question: "연봉 1억 넘으면 국민연금 계속 오르나요?", answer: "국민연금은 기준소득월액 상한(2026년 월 590만 원, 연 7,080만 원)까지만 오르고 이후 고정이에요. 그래서 고연봉자는 국민연금 부담 비율이 상대적으로 낮아져요." },
-      { question: "성과급은 어떻게 반영되나요?", answer: "성과급도 근로소득이라 과세 대상. 단, 지급 시점에 원천징수해서 연말정산 때 정산돼요. 월 실수령과 별도로 연간 총소득 기준 세율 구간이 결정되니 성과급 받는 달 세후 실수령이 줄어들 수 있어요." },
-      { question: "연말정산 환급은 실수령액과 별도인가요?", answer: "네, 연말정산 환급금은 '과세 기간 동안 낸 세금 중 공제로 줄어든 부분'의 환급이에요. 월 실수령액은 예정세액 기준 원천징수 결과고, 연말에 소득공제·세액공제 반영해 최종 확정. 환급 성공은 '월급 외 보너스' 개념." },
-      { question: "프리랜서는 실수령 계산이 어떻게 달라요?", answer: "프리랜서는 4대보험 대신 사업소득세 3.3% 원천징수. 다만 지역가입자 건강보험·국민연금 별도 납부. 연 소득 3천만 원 수준이면 합산 월 부담 약 60~70만 원이라, 근로자 세후 실수령보다 부담 큰 경우도 있어요." },
-    ],
-  },
-  {
-    slug: "text-diff-contract-change-detection-10s",
-    title: {
-      ko: "텍스트 2개 비교 — 계약서·문서 변경점 10초 안에 찾기",
-      en: "Text Diff Comparison — Find Contract Changes in 10 Seconds",
-    },
-    description: {
-      ko: "계약서 수정본과 원본, 초안과 최종본 사이에 무엇이 바뀌었는지 눈으로 찾기 힘들죠. Diff Checker로 추가·삭제·변경을 자동 하이라이트하는 실전 활용법이에요.",
-      en: "Comparing contract revisions or draft versions is error-prone. Use a diff checker to auto-highlight additions, deletions, and changes.",
-    },
-    date: "2026-04-23",
-    toolId: "diff-checker",
-    image: "/images/blog/text-diff-contract-change-detection-10s.webp",
-    keywords: ["텍스트 비교", "Diff Checker", "계약서 변경점", "문서 비교", "문서 검토"],
-    content: {
-      ko: [
-        { heading: "육안 비교, 한 번만 해봐도 피곤해요", body: "계약서·제안서·이력서 수정본을 받으면 '**어디가 바뀌었지**' 먼저 궁금하죠. 상대가 '몇 군데 수정했다'고만 알려주면 전체 스크롤하면서 비교해야 해요.\n\n10페이지짜리 계약서면 30분 넘게 걸려요. **놓치는 조항이 생기면 법적·재정적 리스크**까지 올라가요." },
-        { heading: "Diff Checker가 찾아주는 3가지", body: "텍스트 비교 도구는 **자동으로 3가지를 하이라이트**해요.\n\n- **추가된 내용** (녹색): 새로 들어간 문장·단어\n- **삭제된 내용** (빨간색): 원본에서 빠진 부분\n- **변경된 내용** (노란색): 표현이 바뀐 부분\n\n눈으로 30분 걸릴 작업이 **5초 안에 시각적으로 완료**. 심지어 문장 순서가 바뀐 것도 감지해요." },
-        { heading: "계약서 검토 실전 3단계", body: "**1단계**: 원본과 수정본 모두 워드·PDF에서 텍스트 복사.\n\n**2단계**: Toolkio Diff Checker에 좌우 붙여넣기.\n\n**3단계**: 하이라이트된 부분 집중 검토.\n- 조항 번호 변경 → 전체 구조 변동 가능성\n- 숫자(금액·일수) 변경 → 가장 중요한 포인트\n- '또는' → '그리고' 같은 접속어 변경 → 의미 뒤바뀜\n\n**팁**: 법무 검토 전 Diff 결과를 공유하면 변호사 검토 시간 40% 절약 가능." },
-        { heading: "개발·블로그·코드 검토에도 유용", body: "Diff Checker는 계약서뿐 아니라 **코드·블로그·번역 교정**에도 써요.\n\n- **블로그 리비전**: 초안 vs 최종본 변경 확인\n- **코드 리뷰**: Git 없이 스니펫 비교\n- **번역 교정**: 원문 vs 번역본 정합성 확인\n- **스크립트 수정**: 동료 편집 전후 차이 찾기\n\nGit 툴 없어도 **브라우저 한 탭으로** 가능해요." },
-      ],
-      en: [
-        { heading: "Why visual comparison fails", body: "Manually spotting changes in a 10-page contract takes 30+ minutes and misses details." },
-        { heading: "Diff Checker highlights 3 things", body: "Additions (green), deletions (red), modifications (yellow) — auto-detected in seconds." },
-        { heading: "3-step contract review", body: "Paste original and revised, scan highlights, focus on clause numbers, amounts, and conjunction changes." },
-        { heading: "Also useful for code, blogs, translations", body: "Compare drafts, code snippets, translation accuracy — all in one browser tab, no Git needed." },
-      ],
-    },
-    faq: [
-      { question: "PDF는 어떻게 비교해요?", answer: "PDF를 먼저 텍스트로 변환해야 해요. Adobe Acrobat 'Export as Text' 또는 무료 PDF-to-Text 변환기로 추출 후 Toolkio Diff Checker에 붙여넣기. 스캔 PDF는 OCR 거친 후 가능." },
-      { question: "한글 문서도 정확히 비교되나요?", answer: "네, 한글·영문·일본어 모두 정상. 띄어쓰기·줄바꿈 차이는 옵션으로 무시 가능. '단어 단위 비교' 모드가 한글 계약서 검토에 특히 유용해요." },
-      { question: "비공개 문서 업로드해도 안전해요?", answer: "Toolkio Diff Checker는 **브라우저 로컬에서만 실행**돼요. 서버 전송 없음. 계약서·내부 문서 비교에도 정보 유출 걱정 없어요. 단, 공용 PC 사용 시엔 브라우저 기록 정리 권장." },
-      { question: "매우 긴 문서(100페이지+) 비교도 가능해요?", answer: "브라우저 성능상 약 10만 자까지 원활. 100페이지 문서면 챕터 단위로 쪼개서 비교하는 게 나아요. 너무 길면 하이라이트 렌더링 느려질 수 있어요." },
-      { question: "Excel·표 데이터 비교에도 쓸 수 있어요?", answer: "Excel은 CSV로 내보낸 후 Diff Checker에 붙이면 행·열 단위 변경 확인 가능. 단, 표 정합성 검토는 전용 Excel Compare 도구가 더 정확해요. 간단한 텍스트 데이터면 Diff Checker로 충분." },
-    ],
-  },
-  {
-    slug: "2026-password-passkey-era-hacking-prevention",
-    title: {
-      ko: "2026년 비밀번호 생성 — Passkey 시대에도 여전히 필요한 4가지 규칙",
-      en: "2026 Password Generation — 4 Rules Still Needed in the Passkey Era",
-    },
-    description: {
-      ko: "Passkey 시대라고 비밀번호가 없어지는 건 아니에요. 2026년 기준 해킹 방지 비밀번호 생성 규칙 4가지와 관리 전략을 정리했어요.",
-      en: "Passkeys are rising but passwords remain. Four essential password-generation rules and management tips for 2026.",
-    },
-    date: "2026-04-23",
-    toolId: "password-generator",
-    image: "/images/blog/2026-password-passkey-era-hacking-prevention.webp",
-    keywords: ["비밀번호 생성", "2026 보안", "Passkey", "해킹 방지", "비밀번호 관리"],
-    content: {
-      ko: [
-        { heading: "Passkey가 모든 비밀번호를 대체하지 못해요", body: "2026년 현재 Apple·Google·Microsoft가 Passkey 지원을 확대했지만, **여전히 비밀번호 필요한 곳이 70% 이상**이에요.\n\n- 구형 웹사이트(공공기관·은행 일부)\n- 레거시 기업 시스템\n- Wi-Fi 공유기\n- 서버 SSH\n- 암호화 파일\n\nPasskey 시대라고 방심하면 오히려 비밀번호가 보안 약점이 돼요." },
-        { heading: "2026년 강력한 비밀번호 4가지 규칙", body: "**1. 최소 16자 이상**\n양자 컴퓨팅 발전으로 8자 비밀번호는 5분 안에 깨져요. 16자 이상이면 현재 기술로는 수백 년.\n\n**2. 영문 대소 + 숫자 + 특수문자**\n조합 복잡도가 기하급수로 올라가요.\n\n**3. 사전 단어 조합 금지**\n'password123' 같은 흔한 패턴은 사전 공격에 5초. '예측 불가능한 무작위'가 필수.\n\n**4. 사이트별 다른 비밀번호**\n한 사이트 유출되면 다른 사이트도 위험. 절대 재사용 금지." },
-        { heading: "비밀번호 관리자 필수", body: "16자 무작위 비밀번호를 **외우는 건 불가능**. 비밀번호 관리자를 쓰세요.\n\n- **1Password** (유료, 연 $36): 가족 공유 기능 강력\n- **Bitwarden** (무료/유료): 오픈소스, 자체 서버 호스팅 가능\n- **Apple iCloud Keychain** (무료): iOS·macOS 사용자 기본\n- **Google Password Manager** (무료): Android·Chrome 사용자 기본\n\n**한 마스터 비밀번호만 외우고, 나머지는 관리자에 위임**이 현대 보안의 기본." },
-        { heading: "Toolkio 비밀번호 생성기 활용", body: "Toolkio Password Generator는 **4가지 규칙 기본값 준수**예요.\n\n1. 길이 16~32자 선택\n2. 대소문자·숫자·특수문자 체크\n3. 헷갈리는 문자(`0`과 `O`, `l`과 `1`) 제외 옵션\n4. **발음 가능 모드**: 외울 일 있을 때\n\n생성 즉시 복사 → 관리자 붙여넣기 → 저장까지 15초. 매번 직접 타이핑하거나 고민할 필요 없어요." },
-      ],
-      en: [
-        { heading: "Passkeys don't replace all passwords", body: "70%+ of sites still need traditional passwords — legacy systems, Wi-Fi, SSH, encryption keys." },
-        { heading: "4 rules for 2026 passwords", body: "16+ characters, mixed case+digits+symbols, no dictionary words, unique per site." },
-        { heading: "Use a password manager", body: "1Password, Bitwarden, Apple Keychain, Google — remember one master, delegate the rest." },
-        { heading: "Toolkio password generator", body: "Built-in length/charset options, look-alike exclusion, pronounceable mode for manual entry cases." },
-      ],
-    },
-    faq: [
-      { question: "Passkey는 무엇이고 왜 안전한가요?", answer: "Passkey는 공개키 암호 기반으로 기기(폰·PC)에 저장되는 인증 정보예요. 서버엔 공개키만 저장되고 개인키는 기기를 떠나지 않아 피싱·유출 위험이 사실상 제로. 다만 모든 사이트가 아직 지원 안 하니 비밀번호도 계속 필요해요." },
-      { question: "2FA(2단계 인증)는 여전히 필요해요?", answer: "필수예요. Passkey 미지원 사이트는 비밀번호 + 2FA가 기본 공식. SMS 2FA보다 Authenticator 앱(Google·Authy·1Password) 또는 하드웨어 키(YubiKey) 추천. SMS는 SIM 스왑 공격 취약해요." },
-      { question: "비밀번호 관리자가 해킹되면 큰일 아닌가요?", answer: "메이저 관리자는 마스터 비밀번호를 서버에 저장하지 않아요(제로 지식 아키텍처). 2022년 LastPass 유출도 암호화된 데이터만 유출됐고 마스터 비번이 강력했던 사용자는 안전했어요. 마스터 비번을 16자 이상 무작위로 설정이 핵심." },
-      { question: "비밀번호를 메모장·엑셀에 저장해도 돼요?", answer: "절대 금지. 랜섬웨어·트로이목마가 가장 먼저 훑는 파일이에요. 한 번 유출되면 모든 계정 털려요. 종이 메모도 분실 위험. 비밀번호 관리자 전환이 유일한 안전 방법." },
-      { question: "제가 쓰던 옛날 비밀번호도 여전히 안전해요?", answer: "한 번이라도 유출된 경험 있으면 즉시 변경. Have I Been Pwned(haveibeenpwned.com)에서 이메일 입력하면 유출 이력 확인 가능. 유출된 비밀번호는 다크웹에서 거래되니 '한 번이라도 유출 = 폐기' 기준 유지." },
-    ],
-  },
-  {
-    slug: "currency-unit-converter-overseas-direct-purchase",
-    title: {
-      ko: "환율·단위 변환 한 번에 — 해외직구 가격 체크 5가지 실전 패턴",
-      en: "Currency + Unit Converter — 5 Practical Patterns for Overseas Shopping",
-    },
-    description: {
-      ko: "해외직구할 때 환율, 사이즈, 무게, 인치 한 번에 바꿔야 진짜 가격이 보여요. 아마존·알리·이베이 직구 시 자주 쓰는 5가지 변환 패턴을 정리했어요.",
-      en: "Overseas shopping requires currency, size, weight, and inch conversions. 5 patterns covering Amazon, Aliexpress, eBay use cases.",
-    },
-    date: "2026-04-24",
-    toolId: "unit-converter",
-    image: "/images/blog/currency-unit-converter-overseas-direct-purchase.webp",
-    keywords: ["환율 변환", "단위 변환", "해외직구 가격", "아마존 직구", "사이즈 변환"],
-    content: {
-      ko: [
-        { heading: "해외직구는 변환 실수 한 번이 가격을 바꿔요", body: "아마존에서 'USD 49.99'에 마음이 흔들리지만, **관세·배송비·환율** 모두 합치면 한국 가격보다 비싼 경우 흔해요. 직구 입문자는 USD → KRW 환산만 하고 결제하다가 **예상보다 30% 비싼 청구서**를 받기 쉬워요.\n\n반대로 단위 변환 헷갈려서 사이즈 안 맞는 옷·가구 받는 사례도 많아요. 환율 + 단위까지 한 번에 정리하는 게 직구 입문 첫걸음이에요." },
-        { heading: "패턴 1 — 가격 변환 (USD/EUR/JPY → KRW)", body: "현금 카드 환율과 카드 결제 환율은 달라요. 직구 결제는 보통 **카드사 매매기준율 + 1~3% 수수료** 적용.\n\n- 표시 가격(USD 49.99)\n- × 환율(1,440원 가정) = 71,985원\n- × 1.025(카드 수수료 2.5%) = 73,785원\n- + 관세·배송비(평균 1만~3만 원)\n- = 실제 결제 추정 8.4만~10.4만 원\n\n**Toolkio 단위 변환기**에 환율 + 수수료 합산 모드 적용하면 이 계산 1초에 끝나요. 30% 가격 차 잡아내는 첫 단계." },
-        { heading: "패턴 2 — 사이즈 변환 (US/EU/UK ↔ KR)", body: "옷·신발 사이즈가 가장 많이 헷갈리는 부분.\n\n**남성 신발**\n- US 10 = EU 43 = UK 9.5 = **KR 280mm**\n- US 11 = EU 44 = UK 10.5 = **KR 285mm**\n\n**여성 옷**\n- US S = EU 36 = UK 8 = **KR 55(S)**\n- US M = EU 38 = UK 10 = **KR 66(M)**\n\nToolkio 단위 변환기는 의류·신발 사이즈 환산표 자동 표시. 사이즈 잘못 시켜서 반품하면 배송비 + 관세 환급 안 돼요." },
-        { heading: "패턴 3·4·5 — 무게·인치·온도", body: "**무게 (lb ↔ kg)**\n- 1lb = 0.4536kg\n- 100lb = 45.36kg\n- 직구 가구·운동기구 무게 확인 필수\n\n**인치 (inch ↔ cm)**\n- 1inch = 2.54cm\n- 27inch 모니터 = 68.58cm\n- TV·모니터·가구 사이즈 변환\n\n**온도 (°F ↔ °C)**\n- (°F − 32) × 5/9 = °C\n- 95°F = 35°C\n- 미국 사이트 날씨·요리 레시피용\n\n**Toolkio 단위 변환기**는 위 5가지 모두 1초 내 변환. 직구 결제 직전 한 번 더 체크하는 습관이 가격 손실 막아요." },
-      ],
-      en: [
-        { heading: "Conversion mistakes change prices", body: "Direct overseas shopping requires combining currency, customs, sizing — single missed conversion ruins value." },
-        { heading: "Pattern 1: currency conversion", body: "USD 49.99 with FX 1440 + 2.5% card fee + customs/shipping = ~84-104k KRW reality." },
-        { heading: "Pattern 2: clothing sizes", body: "US/EU/UK to KR conversion tables for shoes and clothes — always verify before purchase." },
-        { heading: "Patterns 3-5: weight, inch, temperature", body: "lb/kg, inch/cm, °F/°C — Toolkio handles all 5 in one converter." },
-      ],
-    },
-    faq: [
-      { question: "직구 시 관세는 언제 붙나요?", answer: "150 USD 초과(미국)나 200 USD 초과(미국 외 일반)일 때 붙어요. 단 식품·의약품·전자제품은 별도 기준 적용. Toolkio 환율 변환 후 실제 결제액이 한도 안에 있는지 확인하세요." },
-      { question: "신발 사이즈 변환표 신뢰할 수 있나요?", answer: "기본 환산표는 정확하지만 브랜드별로 1cm 정도 편차 있어요. 나이키·아디다스는 '약간 작게', 뉴발란스는 '정사이즈'로 알려져 있어요. 같은 브랜드 한국 매장 사이즈 기준 비교 추천." },
-      { question: "환율은 실시간 반영되나요?", answer: "Toolkio 환율 데이터는 1시간 간격 업데이트. 카드 결제 시점 환율과 약간 차이 가능. 큰 금액 결제는 카드사 앱에서 실시간 환율 한 번 더 체크 권장." },
-      { question: "무게 변환 시 lb와 oz 차이?", answer: "1lb = 16oz. 미국에서 작은 식품·화장품은 oz 단위 흔해요. 1oz = 28.35g. Toolkio는 lb·oz·kg·g 다단계 변환 지원해서 식품 직구 시 유용해요." },
-      { question: "TV 인치는 대각선 길이 맞아요?", answer: "네, 화면 대각선 인치예요. 65inch TV = 165.1cm 대각선. 가로 길이는 비율(16:9)로 계산: 65inch × 0.872 = 가로 약 144cm. 거실 공간 확인 시 가로 폭 환산도 같이 하세요." },
-    ],
-  },
-  {
-    slug: "uuid-v7-postgres-mongodb-migration-2026",
-    title: {
-      ko: "UUID v7 도입 가이드 2026 — Postgres·MongoDB 실전 마이그레이션 사례",
-      en: "UUID v7 Adoption 2026 — Postgres and MongoDB Migration Cases",
-    },
-    description: {
-      ko: "UUID v4에서 v7로 옮긴 실제 프로젝트 사례를 정리했어요. 인덱스 성능, 정렬 가능성, 데이터 마이그레이션 절차, Postgres·MongoDB 양쪽 적용 팁까지.",
-      en: "Real-world v4 to v7 migration case for Postgres and MongoDB. Index performance, sortability, and data migration steps explained.",
-    },
-    date: "2026-04-24",
-    toolId: "uuid-generator",
-    image: "/images/blog/uuid-v7-postgres-mongodb-migration-2026.webp",
-    keywords: ["UUID v7", "UUID 마이그레이션", "Postgres UUID", "MongoDB UUID", "uuid 인덱스 성능"],
-    content: {
-      ko: [
-        { heading: "UUID v4의 인덱스 성능 문제", body: "**UUID v4는 완전 무작위 값**이라 데이터베이스 인덱스에서 큰 비용을 만들어요. 신규 행 INSERT마다 인덱스 트리의 무작위 위치에 들어가서 페이지 분할·캐시 미스가 폭증해요.\n\n실제 측정값으로, **5천만 행 Postgres 테이블에서 v4 INSERT가 자동증가 ID 대비 3~5배 느려요**. 캐시 적중률은 절반 이하. 트래픽 큰 서비스는 이 비용 무시 못 해요." },
-        { heading: "UUID v7이 해결하는 것", body: "**UUID v7은 앞 48bit가 Unix 밀리초 타임스탬프**예요. 시간순으로 자동 정렬되니까 신규 INSERT가 인덱스 끝쪽에 차례로 쌓여요.\n\n장점\n- 인덱스 분할 거의 없음 → INSERT 속도 자동증가 ID에 근접\n- 시간순 정렬 가능 (created_at 별도 컬럼 불필요인 경우)\n- 분산 시스템에서도 충돌 없음\n- 외부 노출 가능 (자동증가 ID와 달리 추측 불가)\n\nv4의 보안 + 자동증가의 성능을 절충한 방식이에요." },
-        { heading: "Postgres 마이그레이션 절차", body: "기존 v4 사용 테이블에 v7 도입할 때 절차예요.\n\n```sql\n-- 1. v7 컬럼 추가\nALTER TABLE orders ADD COLUMN id_v7 UUID;\n\n-- 2. 기존 행 v7 채우기 (생성 시점 알면 정확한 시간 인코딩)\nUPDATE orders SET id_v7 = uuidv7_from_timestamp(created_at);\n\n-- 3. 신규 INSERT는 v7 사용\nALTER TABLE orders ALTER COLUMN id_v7 SET DEFAULT uuidv7();\n\n-- 4. 인덱스 교체\nCREATE INDEX CONCURRENTLY idx_orders_id_v7 ON orders(id_v7);\nDROP INDEX idx_orders_id_v4;\n\n-- 5. PRIMARY KEY 교체 (다운타임 짧게)\nBEGIN;\nALTER TABLE orders DROP CONSTRAINT orders_pkey;\nALTER TABLE orders ADD PRIMARY KEY (id_v7);\nALTER TABLE orders DROP COLUMN id;\nALTER TABLE orders RENAME COLUMN id_v7 TO id;\nCOMMIT;\n```\n\nPostgres 17+은 `gen_random_uuid()`에 v7 옵션 추가됐어요. 16 이하는 `pg_uuidv7` 익스텐션 또는 애플리케이션 레벨 생성." },
-        { heading: "MongoDB·실제 사례 + Toolkio UUID 생성기", body: "MongoDB도 마찬가지로 ObjectId 대신 UUID v7 권장 추세. ObjectId는 v7과 비슷하지만 표준 UUID 호환성 부족.\n\n**실제 사례 (이커머스 주문 DB)**\n- 5천만 행 / 일 신규 50만 행\n- v4 → v7 전환 후 INSERT 평균 응답 6.2ms → 1.8ms\n- 인덱스 크기 18% 감소\n- created_at 컬럼 제거 가능 (v7 자체에 시간 인코딩)\n\n**Toolkio UUID 생성기**는 v1·v4·v7·v8 모두 지원. 마이그레이션 검증용 샘플 ID 즉시 생성. UUID 디코딩으로 v7의 타임스탬프 부분도 바로 확인 가능해요." },
-      ],
-      en: [
-        { heading: "v4 index performance issue", body: "Random v4 inserts cause page splits and cache misses — 3-5x slower than auto-increment at scale." },
-        { heading: "v7 fixes ordering", body: "v7 encodes Unix ms timestamp in first 48 bits — sequential inserts, no fragmentation." },
-        { heading: "Postgres migration steps", body: "Add v7 column, backfill from created_at, swap primary key with concurrent index creation." },
-        { heading: "MongoDB and Toolkio", body: "MongoDB benefits similarly. Toolkio supports v1/v4/v7/v8 generation and decoding." },
-      ],
-    },
-    faq: [
-      { question: "v7이 v4보다 보안이 약하지 않나요?", answer: "타임스탬프가 노출돼서 생성 시점은 추측 가능하지만, 나머지 80bit는 무작위라 ID 추측은 불가능. 자동증가 ID처럼 순차 추측은 안 돼요. 보안성은 v4 대비 약간 낮지만 실용적 손해 없어요." },
-      { question: "v7은 모든 DB가 지원하나요?", answer: "표준 UUID로 저장 가능해서 거의 모든 DB에서 사용 가능. 다만 자동 생성 함수는 Postgres 17+, MySQL 8.4+, MongoDB 6+ 등 최신 버전 필요. 옛 버전은 애플리케이션 레벨 생성하면 됩니다." },
-      { question: "기존 v4 데이터를 v7으로 못 바꾸지 않나요?", answer: "v4 자체를 v7로 변환할 수는 없지만, 새로 v7 ID를 발급해서 기존 v4를 대체 가능. 외래키 참조 있으면 마이그레이션 시 모든 참조도 함께 갱신해야 해요." },
-      { question: "분산 시스템에서 v7 충돌 가능성?", answer: "v7은 타임스탬프 + 무작위 80bit. 같은 밀리초에 같은 80bit 무작위가 나올 확률은 2^-80 = 거의 0. 분산 시스템에서도 안전하게 사용 가능." },
-      { question: "Toolkio에서 v7 디코딩 가능해요?", answer: "네, v7 ID 입력하면 타임스탬프 부분 자동 추출해서 사람이 읽을 수 있는 시간으로 표시. 디버깅·로그 분석 시 유용해요." },
-    ],
-  },
-  {
-    slug: "percent-calculator-discount-increase-compound-5-patterns",
-    title: {
-      ko: "퍼센트 계산기 실전 5패턴 — 할인율·인상률·복리·인상폭 한 번에",
-      en: "Percent Calculator 5 Patterns — Discount, Increase, Compound, Margin",
-    },
-    description: {
-      ko: "퍼센트 계산을 매번 수식 떠올리며 손으로 하느라 헷갈리셨죠. 할인율·인상률·복리·증감폭·이익률 5가지 자주 쓰는 패턴을 한 번에 정리했어요.",
-      en: "Stop calculating percentages manually. 5 common patterns: discount, increase, compound interest, change rate, profit margin.",
-    },
-    date: "2026-04-24",
-    toolId: "percent-calculator",
-    image: "/images/blog/percent-calculator-discount-increase-compound-5-patterns.webp",
-    keywords: ["퍼센트 계산기", "할인율 계산", "인상률 계산", "복리 계산", "증감률"],
-    content: {
-      ko: [
-        { heading: "퍼센트 계산이 헷갈리는 이유", body: "퍼센트는 **'무엇을 기준으로 하느냐'**가 매번 달라져요. 할인은 원가 기준, 인상은 인하 가격 기준, 복리는 이전 기간 기준. 기준이 바뀌면 결과가 완전 달라지죠.\n\n특히 '20% 할인 후 다시 10% 추가 할인'이 '30% 할인'이 아닌 점은 누구나 한 번씩 헷갈리는 함정이에요. 자주 쓰는 5가지 패턴 정리해드릴게요." },
-        { heading: "패턴 1·2 — 할인율과 인상률", body: "**할인율 계산**\n\n- 원가 50,000원, 35,000원에 판매\n- 할인 금액: 50,000 − 35,000 = 15,000원\n- 할인율: 15,000 / 50,000 × 100 = **30% 할인**\n\n**중복 할인 함정**\n\n- 50,000원에서 20% 할인 → 40,000원\n- 추가 10% 할인 → 36,000원\n- 합산 할인율: (50,000 − 36,000) / 50,000 = **28%** (30% 아님)\n\n**인상률 계산**\n\n- 작년 30,000원 → 올해 33,000원\n- 인상 금액: 3,000원\n- 인상률: 3,000 / 30,000 × 100 = **10% 인상**\n\n임금·물가·매출 비교 시 가장 자주 쓰는 패턴이에요." },
-        { heading: "패턴 3·4 — 복리와 증감폭", body: "**복리 계산 (연 이자)**\n\n- 원금 1,000만원, 연 5% 복리, 3년\n- 1년 후: 1,000 × 1.05 = 1,050만원\n- 2년 후: 1,050 × 1.05 = 1,102.5만원\n- 3년 후: 1,102.5 × 1.05 = 1,157.6만원\n\n공식: 원금 × (1 + 이율)^년수\n\n**증감률 (전년 대비)**\n\n- 작년 매출 1,200만원, 올해 매출 1,500만원\n- 증감률: (1,500 − 1,200) / 1,200 × 100 = **+25%**\n\n반대로 매출 감소도 같은 공식. 마이너스 결과가 나오면 그게 감소율이에요." },
-        { heading: "패턴 5 + Toolkio 활용", body: "**이익률 계산 (마진)**\n\n- 매출 100,000원, 비용 70,000원\n- 이익: 30,000원\n- 이익률: 30,000 / 100,000 × 100 = **30% 마진**\n\n사업·자영업자 핵심 지표. 매출보다 이익률이 진짜 중요한 수익성 척도.\n\n**Toolkio 퍼센트 계산기**는 위 5가지 패턴 모두 한 페이지에서 가능. 5가지 모드 탭 전환만 하면 돼요. 모바일에서도 빠른 계산 가능. 결과 자동 복사 기능 있어서 메신저로 바로 공유도 됩니다." },
-      ],
-      en: [
-        { heading: "Why percentages confuse", body: "The base value changes per pattern — discount uses original, increase uses reduced, compound uses prior period." },
-        { heading: "Patterns 1-2: discount and increase", body: "Discount = (orig - sale) / orig × 100. Stacked discounts don't sum (20% + 10% ≠ 30%)." },
-        { heading: "Patterns 3-4: compound and change rate", body: "Compound = principal × (1+rate)^years. Change rate = (new - old) / old × 100." },
-        { heading: "Pattern 5 + Toolkio", body: "Profit margin = profit / revenue × 100. Toolkio handles all 5 in tabbed interface." },
-      ],
-    },
-    faq: [
-      { question: "할인율 30%와 50% 할인 후 30% 추가 할인은 같지 않아요?", answer: "다릅니다. 50% × 30% 추가 = 50,000 → 25,000 → 17,500원이라 실제 할인율 65%. 30% 단독 할인은 35,000원으로 35% 할인. 중복 할인이 절대 합산 아니라는 점 기억하세요." },
-      { question: "복리 vs 단리 차이?", answer: "단리: 매년 원금에만 이자. 복리: 누적된 금액에 이자. 1,000만원 5% 10년이면 단리 1,500만원, 복리 1,628.9만원. 장기일수록 차이 커요." },
-      { question: "이익률과 마진율이 같은가요?", answer: "비슷하지만 정확히는 달라요. 이익률(매출액 기준): 이익 / 매출. 마진율(원가 기준): 이익 / 원가. 본인 사업 환경에서 어떤 기준 쓰는지 확인하세요." },
-      { question: "퍼센트 포인트(%p)와 퍼센트 차이?", answer: "퍼센트 포인트는 절대 차이. 5%에서 7%로 오르면 '2%p 상승, 40% 상승'. %는 상대 변화율. 금융·통계 보도에 자주 등장." },
-      { question: "할인율 100% 가능한가요?", answer: "이론상 불가능. 100% 할인은 '무료 증정'을 뜻하지만 실제론 99% 이하로 표시. 100%면 할인 개념이 무너져요. 사은품·증정 같은 다른 마케팅 용어로 표현해요." },
-    ],
-  },
-  {
+                        {
     slug: "instagram-line-break-caption-bio-fix-guide",
     title: {
       ko: "인스타 줄바꿈 안 되는 이유와 해결법 — 캡션·바이오 양쪽 다",
@@ -11913,13 +9626,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "왜 인스타 줄바꿈이 자꾸 사라지나요", body: "**인스타그램은 빈 줄을 자동으로 제거**해요. Enter 두 번 쳐서 한 줄 띄워도 게시 직후 한 줄로 합쳐져요. 알고리즘상 캡션을 압축해서 노출 면적을 줄이려는 의도예요.\n\n2026년 현재도 공식 기능 추가 안 됐고, 사용자가 우회 방법으로 해결해야 해요. 다만 우회 방법 3가지가 안정적으로 통해요." },
         { heading: "방법 1 — 보이지 않는 문자 삽입", body: "가장 안정적인 방법이에요. **인스타가 '빈 줄'은 제거하지만 '눈에 안 보이는 문자만 있는 줄'은 유지**해요.\n\n사용 문자: 제로 폭 공백(Zero Width Space, U+200B) 또는 점(·)\n\n```\n첫 번째 문장이에요\n·\n두 번째 문단 시작이에요\n·\n세 번째 문단 시작이에요\n```\n\n점은 너무 눈에 띄어서 제로 폭 공백이 더 자연스러워요. **Toolkio 인스타 줄바꿈 도구**는 입력 텍스트에 자동으로 제로 폭 공백을 삽입해서 복사 가능한 형태로 만들어줘요." },
         { heading: "방법 2·3 — 메모장 복사·외부 앱 활용", body: "**방법 2: 메모장 복사**\n\n1. 메모장(또는 메모 앱)에 본문 작성\n2. Enter로 줄바꿈\n3. 전체 복사 후 인스타에 붙여넣기\n\n**아이폰 메모장은 줄바꿈이 거의 유지**되고, 안드로이드는 앱마다 다름. 빠른 임시 방법이에요.\n\n**방법 3: 외부 앱 활용**\n\n- **Plann**: 인스타 캡션 미리보기 + 줄바꿈 자동 처리\n- **Later**: 비슷한 기능 + 예약 발행\n- **Toolkio**: 무료, 가입 없이 1분 안에 결과 생성\n\n웹 기반이면 Toolkio가 가장 빠르고, 본격 인스타 운영자는 Plann/Later 같은 SaaS가 종합 관리에 유리해요." },
-        { heading: "바이오와 답글 줄바꿈도 같은 원리", body: "캡션뿐 아니라 **바이오(소개글)와 댓글 답글**도 같은 문제 + 같은 해결법이에요.\n\n**바이오 줄바꿈**\n\n- 인스타 앱 자체에서는 안 됨\n- 사파리(아이폰) 또는 PC 브라우저로 인스타 접속\n- 프로필 편집 화면에서 줄바꿈 입력 후 저장\n- 또는 위 제로 폭 공백 방법 사용\n\n**댓글 답글**\n\n- 캡션과 동일하게 제로 폭 공백 활용\n- 긴 답글에서 가독성 크게 향상\n\n바이오는 **PC 브라우저 + 줄바꿈**이 가장 안정적이에요. 모바일 앱만 쓰면 한계가 있으니 큰 변경은 PC에서 한 번 정리하세요." },
+        { heading: "바이오와 답글 줄바꿈도 같은 원리", body: "캡션뿐 아니라 **바이오(소개글)와 댓글 답글**도 같은 문제 + 같은 해결법이에요.\n\n**바이오 줄바꿈**\n\n- 인스타 앱 자체에서는 안 됨\n- 사파리(아이폰) 또는 PC 브라우저로 인스타 접속\n- 프로필 편집 화면에서 줄바꿈 입력 후 저장\n- 또는 위 제로 폭 공백 방법 사용\n\n**댓글 답글**\n\n- 캡션과 동일하게 제로 폭 공백 활용\n- 긴 답글에서 가독성 크게 향상\n\n바이오는 **PC 브라우저 + 줄바꿈**이 가장 안정적이에요. 모바일 앱만 쓰면 한계가 있으니 큰 변경은 PC에서 한 번 정리하세요." }
       ],
       en: [
         { heading: "Why Instagram strips line breaks", body: "Instagram auto-removes empty lines to compress captions for feed display." },
         { heading: "Fix 1: invisible characters", body: "Use Zero Width Space (U+200B) — appears blank but counts as content, preserving line break." },
         { heading: "Fix 2-3: notepad and apps", body: "Notepad copy works (especially iOS); SaaS like Plann, Later, or free Toolkio handle this automatically." },
-        { heading: "Bio and replies same fix", body: "Same techniques work; bios are most stable when edited via PC browser." },
+        { heading: "Bio and replies same fix", body: "Same techniques work; bios are most stable when edited via PC browser." }
       ],
     },
     faq: [
@@ -11927,7 +9640,7 @@ export const blogPosts: BlogPost[] = [
       { question: "한국 인스타 사용자에게도 적용되나요?", answer: "네, 인스타그램 본사 정책이라 전 세계 동일. 한국어·영어·일본어 모두 같은 우회법 통해요." },
       { question: "Toolkio 도구가 인스타 정책 위반 아니에요?", answer: "위반 아닙니다. 단순히 텍스트에 일반 유니코드 문자를 추가할 뿐이에요. 인스타 약관에서 명시적으로 금지된 행위 아님." },
       { question: "비즈니스 계정도 같은 문제 있나요?", answer: "네, 일반 계정과 비즈니스 계정 둘 다 같은 줄바꿈 제거 정책. 광고용 캡션도 우회법 적용해야 해요." },
-      { question: "Threads(스레드)도 같은 문제예요?", answer: "Threads는 줄바꿈 정상 작동. 인스타와 같은 메타 소속이지만 별도 정책. 스레드는 우회법 불필요." },
+      { question: "Threads(스레드)도 같은 문제예요?", answer: "Threads는 줄바꿈 정상 작동. 인스타와 같은 메타 소속이지만 별도 정책. 스레드는 우회법 불필요." }
     ],
   },
   {
@@ -11949,13 +9662,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "2026년에도 나이가 헷갈리는 이유", body: "2023년 6월 만 나이 통일법 시행 후 **공식 문서·법령·계약은 모두 만 나이**로 통일됐어요. 그런데 일상 대화·관습·일부 제도는 여전히 한국 나이로 운영돼요.\n\n결과적으로 **'만 나이'와 '한국 나이' 둘을 머릿속에 동시에 갖고 다녀야 하는 상황**이 계속 이어지고 있어요. 5가지 상황 정리해드릴게요." },
         { heading: "상황 1·2 — 청약과 보험", body: "**청약 (만 나이 기준)**\n\n- 청년주택드림 청약: 만 19~39세\n- 신혼부부 특공: 만 나이 적용 X (혼인 7년 이내)\n- 청년 우대 적금: 만 19~34세\n\n청약 자격 따질 때는 **무조건 만 나이로만 계산**. 1살 차이로 자격 갈리는 경우 많으니 본인 만 나이 정확히 알아야 해요.\n\n**보험 가입 (만 나이 기준)**\n\n- 생명보험 가입 한도: 만 나이 기준\n- 자동차 보험 운전자 연령 특약: 만 나이\n- 실손의료보험 갱신: 만 나이 기준 보험료 산정\n\n**나이가 1살 올라가면 보험료 5~10% 인상**되니 만 나이 생일 직전 가입이 절세." },
         { heading: "상황 3·4 — 투표와 음주", body: "**투표권 (만 나이 기준)**\n\n- 대통령·국회의원 선거: 만 18세부터\n- 지방선거: 만 18세부터\n- 국민투표: 만 19세부터\n\n선거일 기준 만 나이가 충족돼야 투표 가능. 생일이 선거 다음날이면 불가능.\n\n**주류·담배 (한국식 + 만 나이 혼용)**\n\n- 만 19세부터 구매 가능 (법적 기준)\n- 단, 청소년보호법상 '연 19세'(한국식)로 해석되는 경우 있음\n- 즉 **그 해 1월 1일 기준 만 18세인 경우 12월부터 사실상 구매 가능**\n\n실제 편의점·마트는 신분증으로 만 나이 확인 + 그해 만 19세 도달자도 구매 허용." },
-        { heading: "상황 5 + Toolkio 활용", body: "**정년퇴직 (만 나이 기준)**\n\n- 법정 정년: 만 60세\n- 공무원 정년: 직급별 만 60~65세\n- 군인·경찰 정년: 계급별 만 53~63세\n\n정년 결정 시 **만 나이 도달일 기준**으로 퇴직 시점 산정. 같은 직장 동료라도 생일 차이로 6개월 정도 퇴직일이 갈려요.\n\n**Toolkio 나이 계산기 활용법**\n\n1. 본인 생년월일 입력\n2. **만 나이·한국 나이·연 나이 동시 표시**\n3. 다음 생일까지 남은 일수 표시\n4. 청약·보험 자격 시점 자동 계산\n\n청약 신청 직전·보험 가입 직전 1분만 투자해서 본인 만 나이 정확히 확인하세요. **1살 차이가 자격을 가르는 결정적 디테일**이 됩니다." },
+        { heading: "상황 5 + Toolkio 활용", body: "**정년퇴직 (만 나이 기준)**\n\n- 법정 정년: 만 60세\n- 공무원 정년: 직급별 만 60~65세\n- 군인·경찰 정년: 계급별 만 53~63세\n\n정년 결정 시 **만 나이 도달일 기준**으로 퇴직 시점 산정. 같은 직장 동료라도 생일 차이로 6개월 정도 퇴직일이 갈려요.\n\n**Toolkio 나이 계산기 활용법**\n\n1. 본인 생년월일 입력\n2. **만 나이·한국 나이·연 나이 동시 표시**\n3. 다음 생일까지 남은 일수 표시\n4. 청약·보험 자격 시점 자동 계산\n\n청약 신청 직전·보험 가입 직전 1분만 투자해서 본인 만 나이 정확히 확인하세요. **1살 차이가 자격을 가르는 결정적 디테일**이 됩니다." }
       ],
       en: [
         { heading: "Why age is still confusing in 2026", body: "Korea adopted international age legally in 2023 but daily life still mixes Korean age in colloquial speech and some traditions." },
         { heading: "Situation 1-2: housing and insurance", body: "Housing subscription and insurance use international age strictly — being 1 year off changes eligibility and premiums." },
         { heading: "Situation 3-4: voting and alcohol", body: "Voting at 18 international; alcohol legally 19 international but practically 'born in the year you turn 19'." },
-        { heading: "Situation 5 + Toolkio", body: "Retirement age uses international age. Toolkio calculator shows international, Korean, and year-age side by side." },
+        { heading: "Situation 5 + Toolkio", body: "Retirement age uses international age. Toolkio calculator shows international, Korean, and year-age side by side." }
       ],
     },
     faq: [
@@ -11963,82 +9676,10 @@ export const blogPosts: BlogPost[] = [
       { question: "한국 나이는 완전 폐지된 거 아니에요?", answer: "법적 기준은 만 나이로 통일됐지만 한국 나이 자체는 여전히 일상에서 사용. 가족 모임, 친구 사이, 일부 전통 행사(돌, 백일)에서는 한국 나이가 자연스럽게 통용." },
       { question: "외국에서 한국 나이 말하면 통하나요?", answer: "안 통해요. 한국 외에는 모두 만 나이 사용. 외국 친구 만나거나 비자 신청 시 무조건 만 나이로 통일하세요." },
       { question: "주민등록증과 만 나이 계산?", answer: "주민등록증 발급 가능 만 나이 17세. 그 전엔 청소년증 발급 가능. 주민등록증 발급 시점이 만 17세 도달 시점이지만 본인 거주지 주민센터 방문 시 한 달 정도 여유는 있어요." },
-      { question: "운전면허 만 나이 기준?", answer: "1종·2종 보통 면허: 만 18세부터. 1종 대형: 만 19세부터. 2종 원동기: 만 16세부터. Toolkio 나이 계산기로 본인 응시 가능 시점 정확히 확인 가능." },
+      { question: "운전면허 만 나이 기준?", answer: "1종·2종 보통 면허: 만 18세부터. 1종 대형: 만 19세부터. 2종 원동기: 만 16세부터. Toolkio 나이 계산기로 본인 응시 가능 시점 정확히 확인 가능." }
     ],
   },
-  {
-    slug: "regex-test-5-patterns-validation-real-cases",
-    title: {
-      ko: "정규식 5패턴 검증 — 이메일·전화·주민번호·IP·한글 실전 매칭",
-      en: "Regex 5 Patterns — Real-World Email, Phone, ID, IP, Korean Validation",
-    },
-    description: {
-      ko: "실무에서 가장 많이 쓰는 정규식 5패턴을 정리했어요. 이메일·전화·주민번호·IP·한글 검증을 정규식 테스터로 즉시 확인하고 코드에 바로 붙이는 가이드.",
-      en: "5 most used regex patterns in real projects: email, phone, Korean ID, IP, Korean text. Test instantly and copy to your code.",
-    },
-    date: "2026-04-25",
-    toolId: "regex-tester",
-    image: "/images/blog/regex-test-5-patterns-validation.webp",
-    keywords: ["정규식 테스트", "정규식 이메일", "정규식 전화번호", "regex pattern", "정규식 검증"],
-    content: {
-      ko: [
-        { heading: "정규식이 왜 5패턴만 알면 충분한가", body: "실무에서 정규식 검증은 거의 다 5가지 카테고리예요. 이메일, 전화번호, 주민번호, IP 주소, 한글 텍스트.\n\n이 5패턴만 본인 코드 라이브러리에 갖고 있으면 신규 프로젝트 시작할 때 검증 로직 90% 커버됩니다. Toolkio 정규식 테스터로 즉시 검증하고 코드에 붙이세요." },
-        { heading: "패턴 1·2 — 이메일과 전화번호", body: "**이메일 정규식 (실무 표준)**\n\n`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`\n\n- 영문·숫자·점·하이픈 모두 허용\n- @ 뒤 도메인 + 최소 2자 TLD\n- abc@example.com → 통과\n- abc@ → 거절\n- @com → 거절\n\n**전화번호 정규식 (한국 형식)**\n\n`^01[0-9]-?[0-9]{3,4}-?[0-9]{4}$`\n\n- 010·011·016·017·018·019 시작\n- 하이픈 있어도 없어도 허용\n- 010-1234-5678 → 통과\n- 01012345678 → 통과\n- 010-12345-678 → 거절" },
-        { heading: "패턴 3·4 — 주민번호와 IP", body: "**주민번호 정규식 (한국)**\n\n`^[0-9]{6}-[1-4][0-9]{6}$`\n\n- 앞 6자리 + 하이픈 + 뒤 7자리\n- 뒤 첫 자리 1~4만 허용 (성별·세대 코드)\n- 901225-1234567 → 통과\n- 901225-5234567 → 거절 (5는 외국인 코드라 별도 처리)\n\n**보안 주의**: 주민번호는 클라이언트 검증 후 서버 전송 시 즉시 마스킹 또는 해시. 평문 저장 절대 금지.\n\n**IP 주소 정규식 (IPv4)**\n\n`^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$`\n\n- 0~255 4개 + 점\n- 192.168.1.1 → 통과\n- 256.1.1.1 → 거절\n- 길어 보이지만 0~255 범위 검증 위해 필수" },
-        { heading: "패턴 5 + Toolkio 활용", body: "**한글 텍스트 정규식**\n\n`^[가-힣ㄱ-ㅎㅏ-ㅣ\\s]+$`\n\n- 한글 음절 + 자모 + 공백 허용\n- '홍길동' → 통과\n- 'Hong길동' → 거절\n- '홍 길동' → 통과 (공백 허용)\n\n**한글 + 영문 혼합 허용 시**\n\n`^[가-힣a-zA-Z\\s]+$`\n\n**Toolkio 정규식 테스터 활용 5단계**\n\n1. 정규식 입력란에 위 패턴 붙여넣기\n2. 테스트 문자열에 검증할 데이터 입력\n3. 매칭 결과 즉시 확인 (초록 = 통과, 빨강 = 거절)\n4. 매칭 그룹별 추출 결과 표시\n5. 검증 통과 후 본인 코드에 복사\n\n5패턴 한 번에 라이브러리화 해두면 신규 프로젝트마다 30분 이상 절약됩니다." },
-      ],
-      en: [
-        { heading: "Why only 5 patterns matter", body: "90% of validation in real projects is email, phone, ID, IP, Korean text. Master these 5 to cover most use cases." },
-        { heading: "Patterns 1-2: email and phone", body: "Email pattern handles standard format. Korean phone pattern accepts both with and without hyphens." },
-        { heading: "Patterns 3-4: Korean ID and IP", body: "Korean Resident Registration Number 6-7 digit format. IPv4 pattern with proper 0-255 range validation." },
-        { heading: "Pattern 5 + Toolkio", body: "Korean text validation includes all Hangul + spaces. Toolkio tester validates instantly with color-coded match groups." },
-      ],
-    },
-    faq: [
-      { question: "정규식이 어렵게 느껴져요", answer: "처음엔 누구나 그래요. 5패턴만 외우지 말고 Toolkio 테스터로 100번 정도 직접 입력해보면 패턴 직관적으로 이해돼요. 머리로 외우는 게 아니라 손에 익히는 게 답이에요." },
-      { question: "Python re 모듈에서 그대로 쓸 수 있나요?", answer: "네 가능. Python, JavaScript, Java, C# 모두 PCRE 호환이라 위 5패턴 그대로 사용 가능. 다만 Python에선 raw string 표기 r'pattern' 권장." },
-      { question: "주민번호 검증이 형식만 통과하면 끝인가요?", answer: "아니에요. 형식 통과 후 실제 유효한 번호인지 체크섬 검증 별도. 마지막 자리가 앞 12자리 가중치 합 mod 11 결과여야 진짜 주민번호. 정규식은 1차 필터일 뿐." },
-      { question: "이메일 정규식이 RFC 5322 준수 맞나요?", answer: "엄격한 RFC 5322 검증은 더 복잡하지만 실무에선 위 패턴이 99% 커버. 학술적 정확성보다 실용성 우선." },
-      { question: "한글 정규식에서 'ㄱ-ㅎㅏ-ㅣ'가 왜 필요해요?", answer: "한글 자모(ㄱ, ㄴ, ㅏ, ㅣ)도 검증 대상에 포함시키려면 필요. 입력 중간에 자모가 잠시 떨어져 있는 IME 상태도 허용하려면 추가 권장." },
-    ],
-  },
-  {
-    slug: "unix-timestamp-sql-db-migration-5-cases",
-    title: {
-      ko: "Unix 타임스탬프 SQL DB 마이그레이션 — 실전 5케이스 변환 가이드",
-      en: "Unix Timestamp SQL DB Migration — 5 Real Cases of Conversion",
-    },
-    description: {
-      ko: "DB 마이그레이션에서 Unix 타임스탬프를 한국시간으로 변환하는 5가지 실전 케이스를 정리했어요. PostgreSQL·MySQL·MongoDB 변환 SQL 한 줄까지 포함.",
-      en: "5 real DB migration cases for converting Unix timestamps. Includes PostgreSQL, MySQL, MongoDB SQL one-liners.",
-    },
-    date: "2026-04-25",
-    toolId: "timestamp-converter",
-    image: "/images/blog/unix-timestamp-sql-db-migration.webp",
-    keywords: ["Unix 타임스탬프", "타임스탬프 변환", "DB 마이그레이션", "PostgreSQL 시간", "MySQL 시간"],
-    content: {
-      ko: [
-        { heading: "DB 마이그레이션에서 타임스탬프가 골치 아픈 이유", body: "DB 옮길 때마다 시간 형식이 달라서 한 번씩 사고 나는 항목이 타임스탬프예요. Unix 타임스탬프(epoch)는 초 단위 정수인데, 받아들이는 쪽 DB가 datetime이면 변환 필요하고 시간대(KST/UTC) 처리도 따로 해야 해요.\n\n실무 5케이스를 직접 다뤄본 변환 SQL과 함께 정리했어요. Toolkio 타임스탬프 변환기로 검증 후 SQL에 그대로 붙이세요." },
-        { heading: "케이스 1·2 — PostgreSQL과 MySQL", body: "**케이스 1 — PostgreSQL: Unix → KST datetime**\n\n```sql\nSELECT to_timestamp(unix_ts) AT TIME ZONE 'Asia/Seoul' AS kst_time\nFROM logs;\n```\n\n- to_timestamp() 함수로 epoch → timestamp 변환\n- AT TIME ZONE으로 KST 변환\n- 1714032000 → 2026-04-25 17:00:00 KST\n\n**케이스 2 — MySQL: Unix → KST datetime**\n\n```sql\nSELECT FROM_UNIXTIME(unix_ts) AS kst_time\nFROM logs;\n```\n\n- FROM_UNIXTIME() 자동 KST 변환 (서버 타임존 KST 가정)\n- 서버 UTC면 CONVERT_TZ() 추가 필요\n\n```sql\nSELECT CONVERT_TZ(FROM_UNIXTIME(unix_ts), 'UTC', 'Asia/Seoul') AS kst_time\nFROM logs;\n```" },
-        { heading: "케이스 3·4 — MongoDB와 BigQuery", body: "**케이스 3 — MongoDB: ISODate → KST**\n\n```javascript\ndb.logs.aggregate([\n  { $project: {\n    kst_time: { $dateToString: {\n      date: '$created_at',\n      format: '%Y-%m-%d %H:%M:%S',\n      timezone: 'Asia/Seoul'\n    }}\n  }}\n]);\n```\n\n- ISODate는 자동 UTC 저장\n- $dateToString으로 KST 변환 + 포맷팅\n\n**케이스 4 — BigQuery: Unix → KST**\n\n```sql\nSELECT TIMESTAMP_SECONDS(unix_ts) AS utc_time,\n       FORMAT_TIMESTAMP('%Y-%m-%d %H:%M:%S', \n         TIMESTAMP_SECONDS(unix_ts), 'Asia/Seoul') AS kst_str\nFROM `project.dataset.logs`;\n```\n\n- TIMESTAMP_SECONDS()로 epoch → UTC\n- FORMAT_TIMESTAMP() 3번째 인자에 'Asia/Seoul' 지정 → KST 출력" },
-        { heading: "케이스 5 + Toolkio 활용", body: "**케이스 5 — 마이그레이션 안전 체크 (모든 DB)**\n\nDB 마이그레이션 시 변환된 시간이 정확한지 검증하는 5가지 체크예요.\n\n1. **샘플 1건 확인**: Toolkio에 unix_ts 입력 → KST 결과와 SQL 결과 비교\n2. **자정 경계**: UTC 자정 ↔ KST 오전 9시 정확히 나오는지\n3. **윤초 처리**: 윤초가 들어간 시점 (1970~2026 누적 27초) 확인\n4. **밀리초 vs 초**: 자바스크립트는 밀리초, 유닉스는 초. 1000으로 나눠야 정확\n5. **시간대 누적**: 일부 DB는 변환을 두 번 해서 시간대가 18시간 차이나는 사고 발생\n\n**Toolkio 타임스탬프 변환기 활용**\n\n- 입력: 1714032000 (10자리 = 초) 또는 1714032000000 (13자리 = 밀리초)\n- 출력: 자동으로 UTC + KST 동시 표시\n- DB SQL 결과와 즉시 비교 → 1초라도 어긋나면 변환 로직 점검\n\n프로덕션 마이그레이션 전 샘플 100건 정도 Toolkio 검증 후 진행하면 사고 거의 없어요." },
-      ],
-      en: [
-        { heading: "Why timestamps matter in migration", body: "DB migrations often fail at timestamps because epoch integers and datetime types differ across DBs and timezones." },
-        { heading: "Cases 1-2: PostgreSQL, MySQL", body: "PostgreSQL uses to_timestamp() with AT TIME ZONE; MySQL uses FROM_UNIXTIME() and CONVERT_TZ()." },
-        { heading: "Cases 3-4: MongoDB, BigQuery", body: "MongoDB uses $dateToString aggregation; BigQuery uses TIMESTAMP_SECONDS and FORMAT_TIMESTAMP." },
-        { heading: "Case 5 + Toolkio", body: "Sample-verify 100 rows with Toolkio before production migration. Cross-check UTC vs KST output." },
-      ],
-    },
-    faq: [
-      { question: "Unix 타임스탬프 10자리 13자리 차이?", answer: "10자리는 초 단위(s), 13자리는 밀리초 단위(ms). JavaScript Date.now()는 13자리 ms, Unix epoch는 10자리 s. 변환 시 1000으로 곱하거나 나눠야 정확. Toolkio 자동 인식." },
-      { question: "마이그레이션 중 시간이 9시간 어긋나면?", answer: "타임존 오인. UTC를 KST로 한 번 더 변환했거나 KST를 UTC로 변환 안 했거나. 한 번에 한 번만 변환하는 게 핵심. 변환 로그 남기고 검증 권장." },
-      { question: "MongoDB의 ISODate 그대로 쓰면 안 돼요?", answer: "쓸 수 있지만 클라이언트 표시할 때 UTC라 KST 변환 필요. 백엔드에서 응답할 때 KST로 변환해서 ISO 8601 문자열로 보내는 게 안전." },
-      { question: "윤초 처리가 진짜 필요해요?", answer: "정밀 로깅·금융·과학 분야면 필요. 일반 웹 서비스는 무시해도 거의 무관. 1초 차이로 결정적 사고 나는 분야에서만 신경 쓰세요." },
-      { question: "타임스탬프 -1 또는 0이 들어오면?", answer: "-1은 보통 \"미설정\" 표시. 0은 1970-01-01 00:00:00 UTC. 마이그레이션 시 이 두 값을 NULL로 변환할지 그대로 둘지 정책 결정 필요." },
-    ],
-  },
-  {
+      {
     slug: "markdown-table-alignment-4-tricks",
     title: {
       ko: "마크다운 표 정렬 4가지 트릭 — GitHub README·Notion 깔끔 정리",
@@ -12057,13 +9698,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "마크다운 표가 안 예쁜 이유", body: "마크다운 표는 만들기 쉬운데 정렬이 자주 깨져요. GitHub에서는 잘 보이는데 Notion에서는 어긋나고, 한글이 들어가면 셀 폭이 들쭉날쭉해지는 게 흔한 문제예요.\n\n4가지 트릭만 알면 어디서나 깔끔하게 보이는 표를 만들 수 있어요. Toolkio 마크다운 미리보기로 즉시 결과 확인하면서 따라가세요." },
         { heading: "트릭 1·2 — 정렬과 줄바꿈", body: "**트릭 1 — 좌·중앙·우 정렬**\n\n```markdown\n| 좌측 | 중앙 | 우측 |\n|:-----|:----:|-----:|\n| 데이터 | 데이터 | 데이터 |\n```\n\n- `:---` 좌측 정렬 (기본)\n- `:---:` 중앙 정렬\n- `---:` 우측 정렬\n- 숫자 컬럼은 우측, 텍스트는 좌측, 헤더는 중앙이 보기 좋아요\n\n**트릭 2 — 셀 안 줄바꿈**\n\n```markdown\n| 항목 | 설명 |\n|------|------|\n| A | 첫째 줄<br>둘째 줄 |\n```\n\n- 셀 안에서 줄바꿈은 `<br>` 태그 사용\n- `\\n`이나 엔터 키로는 안 됨\n- GitHub·Notion 모두 호환" },
         { heading: "트릭 3·4 — 셀 병합과 한글 폭", body: "**트릭 3 — 셀 병합 우회**\n\n마크다운은 표준 셀 병합 미지원. 우회 방법 2가지예요.\n\n```markdown\n| 카테고리 | 항목 | 값 |\n|---------|------|-----|\n| 음식 | 김치 | A |\n|     | 떡볶이 | B |\n|     | 라면 | C |\n```\n\n- 같은 카테고리는 첫 행만 채우고 나머지 빈칸\n- 시각적으로 병합처럼 보임\n\n**HTML 테이블 직접 사용 (GitHub Pages 호환)**\n\n```html\n<table>\n  <tr><td rowspan=\"3\">음식</td><td>김치</td><td>A</td></tr>\n  <tr><td>떡볶이</td><td>B</td></tr>\n  <tr><td>라면</td><td>C</td></tr>\n</table>\n```\n\n**트릭 4 — 한글 폭 맞추기**\n\n한글은 영문 대비 폭이 1.5~2배라 표가 어긋나요.\n\n```markdown\n| 한글     | 영문   |\n|----------|--------|\n| 안녕하세요 | Hi     |\n| 잘가요   | Bye    |\n```\n\n- 마크다운 원본에서 한글 셀 폭 맞추기 (스페이스로 패딩)\n- 렌더링 결과는 자동 정렬되니 시각적 정렬은 미리보기에서 확인" },
-        { heading: "Toolkio 마크다운 미리보기 활용 5단계", body: "표를 한 번에 깔끔하게 만드는 워크플로예요.\n\n1. **데이터 입력**: 표 구조 + 데이터 마크다운 작성\n2. **정렬 지정**: `:---`, `:---:`, `---:` 추가\n3. **줄바꿈**: 긴 셀에 `<br>` 추가\n4. **Toolkio 미리보기**: 좌측 입력 → 우측 즉시 렌더링 확인\n5. **GitHub/Notion 붙여넣기**: 미리보기 결과 OK 시 복사\n\n**자주 발생하는 실수 5가지**\n\n- `|` 앞뒤 스페이스 누락 → 일부 렌더러에서 인식 안 됨\n- 헤더 구분선(`---`) 칼럼 수 안 맞춤\n- 셀 안에 `|` 직접 사용 (탈출 `\\|` 필요)\n- 한글 폭 차이 무시 → 원본 어긋남 (렌더링은 OK)\n- 셀 안 빈 줄 → 표 분리됨\n\nToolkio 미리보기에서 이상하게 보이면 위 5가지 체크하세요. 거의 다 해결돼요." },
+        { heading: "Toolkio 마크다운 미리보기 활용 5단계", body: "표를 한 번에 깔끔하게 만드는 워크플로예요.\n\n1. **데이터 입력**: 표 구조 + 데이터 마크다운 작성\n2. **정렬 지정**: `:---`, `:---:`, `---:` 추가\n3. **줄바꿈**: 긴 셀에 `<br>` 추가\n4. **Toolkio 미리보기**: 좌측 입력 → 우측 즉시 렌더링 확인\n5. **GitHub/Notion 붙여넣기**: 미리보기 결과 OK 시 복사\n\n**자주 발생하는 실수 5가지**\n\n- `|` 앞뒤 스페이스 누락 → 일부 렌더러에서 인식 안 됨\n- 헤더 구분선(`---`) 칼럼 수 안 맞춤\n- 셀 안에 `|` 직접 사용 (탈출 `\\|` 필요)\n- 한글 폭 차이 무시 → 원본 어긋남 (렌더링은 OK)\n- 셀 안 빈 줄 → 표 분리됨\n\nToolkio 미리보기에서 이상하게 보이면 위 5가지 체크하세요. 거의 다 해결돼요." }
       ],
       en: [
         { heading: "Why markdown tables break", body: "Tables look fine on GitHub but break on Notion, and Korean text widths are inconsistent." },
         { heading: "Tricks 1-2: alignment and line breaks", body: "Use :--- for left, :---: for center, ---: for right alignment. Use <br> for in-cell line breaks." },
         { heading: "Tricks 3-4: merge workaround and Korean width", body: "Markdown lacks cell merge — use empty cells or HTML <table> with rowspan. Pad Korean cells in source for visual alignment." },
-        { heading: "Toolkio preview workflow", body: "Type → preview → fix → paste. 5 common mistakes covered: spacing, header divider count, escaping pipes, Korean width, blank lines." },
+        { heading: "Toolkio preview workflow", body: "Type → preview → fix → paste. 5 common mistakes covered: spacing, header divider count, escaping pipes, Korean width, blank lines." }
       ],
     },
     faq: [
@@ -12071,7 +9712,7 @@ export const blogPosts: BlogPost[] = [
       { question: "표 안에 코드 블록 넣을 수 있어요?", answer: "한 줄 인라인 코드 `code`는 가능. 여러 줄 코드 블록(```)은 표 셀 안에선 작동 안 해요. <br>로 줄바꿈하면서 인라인 코드 여러 개로 쪼개는 우회법 사용." },
       { question: "표가 너무 길면 화면 밖으로 나가요", answer: "마크다운 자체엔 가로 스크롤 미지원. GitHub·Notion은 자동 스크롤. 정 안 되면 표를 두 개로 쪼개거나 HTML <table>로 max-width 지정." },
       { question: "한글 셀 폭이 너무 들쭉날쭉해요", answer: "원본 마크다운만 어긋남. 렌더링 결과는 자동 정렬되니 미리보기에서 확인. 원본 정리는 VSCode 'Markdown All in One' 확장 추천." },
-      { question: "표 안 텍스트 정렬을 셀별로 다르게 가능해요?", answer: "마크다운으론 컬럼 단위까지만 가능. 셀별 다른 정렬은 HTML <td align='right'>처럼 직접 작성 필요. 일반적으론 컬럼 단위 정렬로 충분." },
+      { question: "표 안 텍스트 정렬을 셀별로 다르게 가능해요?", answer: "마크다운으론 컬럼 단위까지만 가능. 셀별 다른 정렬은 HTML <td align='right'>처럼 직접 작성 필요. 일반적으론 컬럼 단위 정렬로 충분." }
     ],
   },
   {
@@ -12093,13 +9734,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "JSON 에러 95%는 5가지 패턴", body: "API 응답에서 JSON parse 에러 만나면 막막하죠. 그런데 실무에서 보는 JSON 에러 95%는 5가지 패턴 안에 들어가요. 이 5가지만 알면 디버깅 시간 90% 줄어들어요.\n\nToolkio JSON 포맷터에 의심 JSON 붙여넣고 단계별로 체크하면 어디가 문제인지 즉시 알 수 있어요." },
         { heading: "단계 1·2 — 후행 콤마와 따옴표", body: "**단계 1 — 후행 콤마 (Trailing Comma)**\n\n가장 흔한 에러. JSON 표준은 후행 콤마 미허용.\n\n```json\n// 에러\n{\n  \"name\": \"홍길동\",\n  \"age\": 30,   ← 마지막 요소 뒤 콤마\n}\n\n// 정상\n{\n  \"name\": \"홍길동\",\n  \"age\": 30\n}\n```\n\nJavaScript 객체에선 허용되지만 JSON은 엄격. ESLint·Prettier가 자동으로 잡아내지만 수동 작성 시 주의.\n\n**단계 2 — 따옴표 종류**\n\nJSON은 큰따옴표(\")만 허용. 작은따옴표(') 사용 시 에러.\n\n```json\n// 에러\n{ 'name': 'value' }\n\n// 정상\n{ \"name\": \"value\" }\n```\n\n복사해서 붙여넣을 때 스마트 따옴표(“”)로 변환되는 사고도 있음. 일반 큰따옴표(\") 확인." },
         { heading: "단계 3·4 — 이스케이프와 BOM", body: "**단계 3 — 이스케이프 누락**\n\n특수 문자는 백슬래시 이스케이프 필수.\n\n```json\n// 에러\n{ \"path\": \"C:\\Users\\test\" }\n\n// 정상\n{ \"path\": \"C:\\\\Users\\\\test\" }\n```\n\n**자주 놓치는 이스케이프 5가지**\n\n- `\\\"` → 큰따옴표\n- `\\\\` → 백슬래시\n- `\\n` → 줄바꿈\n- `\\t` → 탭\n- `\\u0000` → 유니코드\n\n**단계 4 — BOM (Byte Order Mark)**\n\nUTF-8 with BOM으로 저장된 파일은 첫 바이트에 보이지 않는 문자(EF BB BF)가 있어요. JSON 파서가 첫 문자를 못 읽어서 에러.\n\n**해결법**\n\n- 텍스트 에디터에서 'UTF-8 (BOM 없이)' 옵션으로 저장\n- VSCode: 우하단 인코딩 → UTF-8 선택 (UTF-8 with BOM 아님)\n- Notepad++: 인코딩 → UTF-8 (without BOM) 선택" },
-        { heading: "단계 5 + Toolkio 활용", body: "**단계 5 — 중복 키 (Duplicate Keys)**\n\nJSON 표준은 중복 키 처리가 모호. 일부 파서는 마지막 값만 받고, 일부는 에러.\n\n```json\n// 위험\n{\n  \"name\": \"A\",\n  \"name\": \"B\"   ← 중복\n}\n```\n\n실무에선 중복 키 자체를 에러로 취급. JSON 검증 도구가 잡아내요.\n\n**Toolkio JSON 포맷터 활용 5단계**\n\n1. 의심 JSON 붙여넣기\n2. 'Format' 클릭 → 들여쓰기 정리\n3. 빨간 에러 표시 → 정확한 행·열 표시\n4. 위 5가지 패턴 중 어디 해당하는지 확인\n5. 수정 → 재검증 → 통과 시 복사\n\n**팁: 큰 JSON에서 빠르게 찾기**\n\n- 1MB 이상 JSON은 화면에서 못 찾음\n- Toolkio는 행·열 단위 에러 위치 표시\n- 에러 위치 ± 50자 잘라내서 좁게 검사\n- 95% 5분 안에 해결됨\n\nJSON 에러는 어렵지 않아요. 5단계만 순서대로 따라가면 거의 다 풀려요." },
+        { heading: "단계 5 + Toolkio 활용", body: "**단계 5 — 중복 키 (Duplicate Keys)**\n\nJSON 표준은 중복 키 처리가 모호. 일부 파서는 마지막 값만 받고, 일부는 에러.\n\n```json\n// 위험\n{\n  \"name\": \"A\",\n  \"name\": \"B\"   ← 중복\n}\n```\n\n실무에선 중복 키 자체를 에러로 취급. JSON 검증 도구가 잡아내요.\n\n**Toolkio JSON 포맷터 활용 5단계**\n\n1. 의심 JSON 붙여넣기\n2. 'Format' 클릭 → 들여쓰기 정리\n3. 빨간 에러 표시 → 정확한 행·열 표시\n4. 위 5가지 패턴 중 어디 해당하는지 확인\n5. 수정 → 재검증 → 통과 시 복사\n\n**팁: 큰 JSON에서 빠르게 찾기**\n\n- 1MB 이상 JSON은 화면에서 못 찾음\n- Toolkio는 행·열 단위 에러 위치 표시\n- 에러 위치 ± 50자 잘라내서 좁게 검사\n- 95% 5분 안에 해결됨\n\nJSON 에러는 어렵지 않아요. 5단계만 순서대로 따라가면 거의 다 풀려요." }
       ],
       en: [
         { heading: "95% of JSON errors are 5 patterns", body: "Trailing comma, quote types, escapes, BOM, duplicate keys cover most real-world JSON parsing errors." },
         { heading: "Steps 1-2: trailing comma, quotes", body: "JSON forbids trailing commas. Only double quotes allowed; single quotes and smart quotes fail." },
         { heading: "Steps 3-4: escapes, BOM", body: "Escape special chars: \\\\ \\\" \\n \\t. UTF-8 BOM (EF BB BF) breaks parsers — save as UTF-8 without BOM." },
-        { heading: "Step 5 + Toolkio", body: "Duplicate keys are ambiguous in spec — most parsers reject. Toolkio shows exact row/col of error for fast fix." },
+        { heading: "Step 5 + Toolkio", body: "Duplicate keys are ambiguous in spec — most parsers reject. Toolkio shows exact row/col of error for fast fix." }
       ],
     },
     faq: [
@@ -12107,7 +9748,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JSON5는 뭐가 달라요?", answer: "JSON5는 후행 콤마, 작은따옴표, 주석 모두 허용하는 확장 표준. 사람이 작성하기 편함. 다만 표준 JSON 파서로는 못 읽으니 JSON5 전용 파서 필요." },
       { question: "JSON 안에 주석 쓸 수 있어요?", answer: "표준 JSON은 주석 미지원. /* */ 또는 // 사용 시 에러. 주석 필요하면 JSON5 사용 또는 별도 'comment' 키 추가." },
       { question: "유니코드가 깨져 보여요", answer: "한글이 \\uXXXX 로 표시되는 건 정상. JSON은 ASCII 표현 권장. JSON.stringify() 옵션 ensure_ascii=False 또는 UTF-8 직접 출력으로 한글 그대로 가능." },
-      { question: "큰 JSON 파일 (10MB 이상) 어떻게 처리?", answer: "텍스트 에디터로 못 열면 jq CLI 도구나 streaming 파서(JSONStream) 사용. Toolkio도 1~2MB까지는 처리 가능하나 그 이상은 분할 권장." },
+      { question: "큰 JSON 파일 (10MB 이상) 어떻게 처리?", answer: "텍스트 에디터로 못 열면 jq CLI 도구나 streaming 파서(JSONStream) 사용. Toolkio도 1~2MB까지는 처리 가능하나 그 이상은 분할 권장." }
     ],
   },
   {
@@ -12129,13 +9770,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "CRLF와 LF 차이가 진짜 문제인가요?", body: "맞아요. 매일 일하다 보면 한 번씩 사고 나는 항목이 줄바꿈이에요.\n\n**CRLF (\\r\\n)**: Windows 표준. 텍스트 파일 한 줄 끝에 캐리지 리턴(CR) + 라인 피드(LF) 두 문자.\n\n**LF (\\n)**: Mac·Linux 표준. 라인 피드 한 문자.\n\n같은 코드 파일을 Windows와 Mac에서 번갈아 편집하면 Git이 줄바꿈 차이 때문에 \"전체 파일이 변경됐다\"고 표시. 실제 변경은 1줄인데 100줄 diff가 뜨는 사고가 생겨요." },
         { heading: "방지 1·2 — .gitattributes와 autocrlf", body: "**방지 1 — .gitattributes 설정 (가장 강력)**\n\n프로젝트 루트에 `.gitattributes` 파일 생성:\n\n```\n* text=auto\n*.sh text eol=lf\n*.bat text eol=crlf\n*.png binary\n*.jpg binary\n```\n\n- `text=auto`: Git이 자동 감지\n- `eol=lf`: 강제 LF (셸 스크립트)\n- `eol=crlf`: 강제 CRLF (Windows 배치)\n- `binary`: 변환 안 함 (이미지·폰트)\n\n팀원 모두 .gitattributes 적용되니 OS 다 달라도 안전.\n\n**방지 2 — git config autocrlf**\n\n`git config --global core.autocrlf input` (Mac/Linux)\n`git config --global core.autocrlf true` (Windows)\n\n- input: commit 시 LF로 변환, checkout 시 그대로\n- true: commit 시 LF, checkout 시 CRLF로 변환\n- false: 변환 안 함 (.gitattributes 있으면 권장)" },
         { heading: "방지 3·4 — 에디터와 도구", body: "**방지 3 — 에디터 기본 줄바꿈 통일**\n\nVSCode 설정 (`settings.json`):\n```json\n{\n  \"files.eol\": \"\\n\"\n}\n```\n\n- `\\n`: LF (Mac/Linux 호환)\n- `\\r\\n`: CRLF (Windows 전용)\n\n프로젝트 워크스페이스 단위로 LF 통일이 일반적. 모든 OS 호환.\n\n**방지 4 — 일괄 변환 도구**\n\n기존 파일 일괄 변환 시 명령줄 도구 활용.\n\n**dos2unix (Linux/Mac)**\n```bash\ndos2unix file.txt\nfind . -name '*.js' -exec dos2unix {} \\;\n```\n\n**unix2dos (Windows)**\n```bash\nunix2dos file.txt\n```\n\n**sed (모든 OS)**\n```bash\nsed -i 's/\\r$//' file.txt   # CRLF → LF\n```" },
-        { heading: "Toolkio 활용 + 사고 사례", body: "**Toolkio 변환 도구 활용 4단계**\n\n1. 변환할 텍스트 입력란에 붙여넣기\n2. 'CRLF → LF' 또는 'LF → CRLF' 선택\n3. 변환 결과 즉시 미리보기\n4. 복사 → 본인 프로젝트에 붙여넣기\n\n작은 파일·코드 일부 변환에 적합. 대량 파일은 dos2unix CLI 권장.\n\n**실제 사고 사례**\n\n사례 1: Mac 개발자가 작성한 셸 스크립트를 Windows에서 편집 후 Linux 서버에 올림 → 줄 끝에 보이지 않는 \\r 때문에 스크립트 실행 에러 (`bad interpreter: /bin/bash\\r`)\n\n해결: `.gitattributes`에 `*.sh eol=lf` 추가\n\n사례 2: Windows 팀과 Mac 팀이 같이 작업 → Git diff에 \"전체 파일 변경\" 표시. 실제 변경 라인 1개. PR 리뷰 불가능.\n\n해결: `core.autocrlf input` 통일 + `.gitattributes` 적용\n\n사례 3: SQL 파일 줄바꿈이 BOM과 함께 깨져서 DB 에러\n\n해결: 에디터 인코딩 'UTF-8 (BOM 없이)' + LF로 통일\n\n3가지 사고 예방하는 가장 안전한 방법은 **프로젝트 시작 시 `.gitattributes` 작성 + 팀 전체 autocrlf 통일**이에요. 30분 투자면 평생 사고 0." },
+        { heading: "Toolkio 활용 + 사고 사례", body: "**Toolkio 변환 도구 활용 4단계**\n\n1. 변환할 텍스트 입력란에 붙여넣기\n2. 'CRLF → LF' 또는 'LF → CRLF' 선택\n3. 변환 결과 즉시 미리보기\n4. 복사 → 본인 프로젝트에 붙여넣기\n\n작은 파일·코드 일부 변환에 적합. 대량 파일은 dos2unix CLI 권장.\n\n**실제 사고 사례**\n\n사례 1: Mac 개발자가 작성한 셸 스크립트를 Windows에서 편집 후 Linux 서버에 올림 → 줄 끝에 보이지 않는 \\r 때문에 스크립트 실행 에러 (`bad interpreter: /bin/bash\\r`)\n\n해결: `.gitattributes`에 `*.sh eol=lf` 추가\n\n사례 2: Windows 팀과 Mac 팀이 같이 작업 → Git diff에 \"전체 파일 변경\" 표시. 실제 변경 라인 1개. PR 리뷰 불가능.\n\n해결: `core.autocrlf input` 통일 + `.gitattributes` 적용\n\n사례 3: SQL 파일 줄바꿈이 BOM과 함께 깨져서 DB 에러\n\n해결: 에디터 인코딩 'UTF-8 (BOM 없이)' + LF로 통일\n\n3가지 사고 예방하는 가장 안전한 방법은 **프로젝트 시작 시 `.gitattributes` 작성 + 팀 전체 autocrlf 통일**이에요. 30분 투자면 평생 사고 0." }
       ],
       en: [
         { heading: "Why CRLF vs LF matters", body: "Windows uses CRLF, Mac/Linux LF. Cross-OS editing causes 'whole file changed' diffs in Git." },
         { heading: "Prevent 1-2: .gitattributes, autocrlf", body: ".gitattributes is strongest. autocrlf input on Mac, true on Windows for cross-team consistency." },
         { heading: "Prevent 3-4: editors and tools", body: "VSCode files.eol setting unifies. dos2unix/unix2dos for bulk conversion. sed works everywhere." },
-        { heading: "Toolkio + real cases", body: "Toolkio for small text. CLI for large files. 3 real incidents covered: shell script bad interpreter, full-file diff, SQL BOM error." },
+        { heading: "Toolkio + real cases", body: "Toolkio for small text. CLI for large files. 3 real incidents covered: shell script bad interpreter, full-file diff, SQL BOM error." }
       ],
     },
     faq: [
@@ -12143,46 +9784,10 @@ export const blogPosts: BlogPost[] = [
       { question: ".gitattributes vs core.autocrlf 어느 쪽이 우선?", answer: ".gitattributes가 우선. 팀 단위로 통일된 정책 적용 가능하니 .gitattributes를 먼저 설정하고 core.autocrlf는 보조로." },
       { question: "이미지·폰트도 변환되면 깨지나요?", answer: "네. 바이너리 파일은 변환 시 깨져요. .gitattributes에 `*.png binary`, `*.ttf binary` 명시하면 변환 안 함." },
       { question: "Git에서 이미 CRLF로 들어간 파일 어떻게 정리?", answer: "`git rm --cached -r .` → `git reset --hard` → 다시 add → commit. 또는 `git add --renormalize .` 사용. .gitattributes 적용 후 한 번 정리하면 끝." },
-      { question: "Markdown·텍스트 파일은 어떻게 통일?", answer: "일반적으로 LF 통일 권장. .gitattributes에 `*.md text eol=lf` 명시. GitHub·GitLab도 LF 기반이라 호환성 좋아요." },
+      { question: "Markdown·텍스트 파일은 어떻게 통일?", answer: "일반적으로 LF 통일 권장. .gitattributes에 `*.md text eol=lf` 명시. GitHub·GitLab도 LF 기반이라 호환성 좋아요." }
     ],
   },
-  {
-    slug: "case-converter-camel-snake-kebab-5-differences",
-    title: {
-      ko: "케이스 변환 5가지 - camelCase·snake_case·kebab-case 언제 무엇을 쓰나",
-      en: "Case Conversion 5 Types - When to Use camelCase, snake_case, kebab-case",
-    },
-    description: {
-      ko: "변수명·파일명·URL에 쓰이는 5가지 케이스 표기법 차이와 언어별 표준 정리. 케이스 잘못 쓰면 라이브러리 호환성 깨지고 SEO 영향까지.",
-      en: "Differences between 5 case conventions for variables, files, URLs and language standards.",
-    },
-    date: "2026-04-26",
-    toolId: "case-converter",
-    image: "/images/blog/case-converter-camel-snake-kebab-5-differences.webp",
-    keywords: ["케이스 변환", "camelCase snake_case 차이", "kebab-case 사용", "변수명 표기법", "case convention"],
-    content: {
-      ko: [
-        { heading: "5가지 케이스 표기법 한눈에", body: "**camelCase (낙타)**\n- 예: `userName`, `getTotalPrice`\n- 시작 소문자 + 단어 시작마다 대문자\n- JavaScript·Java 변수·함수 표준\n\n**PascalCase (파스칼)**\n- 예: `UserProfile`, `ApiClient`\n- 모든 단어 시작 대문자\n- 클래스·컴포넌트 (React) 표준\n\n**snake_case (뱀)**\n- 예: `user_name`, `total_price`\n- 단어 사이 언더스코어 + 모두 소문자\n- Python·Ruby·DB 컬럼 표준\n\n**kebab-case (꼬치)**\n- 예: `user-name`, `total-price`\n- 단어 사이 하이픈 + 모두 소문자\n- HTML 속성·CSS 클래스·URL 표준\n\n**SCREAMING_SNAKE_CASE**\n- 예: `MAX_RETRY`, `API_KEY`\n- 모두 대문자 + 언더스코어\n- 상수(constants) 표준" },
-        { heading: "언어별 표준 케이스", body: "**JavaScript / TypeScript**\n- 변수·함수: camelCase\n- 클래스·컴포넌트: PascalCase\n- 상수: SCREAMING_SNAKE\n- 파일명: kebab-case 또는 PascalCase\n\n**Python**\n- 변수·함수: snake_case\n- 클래스: PascalCase\n- 상수: SCREAMING_SNAKE\n- 파일명: snake_case\n\n**Ruby**\n- 변수·메서드: snake_case\n- 클래스·모듈: PascalCase\n- 상수: SCREAMING_SNAKE\n\n**Go**\n- 공개 변수·함수: PascalCase (export)\n- 비공개: camelCase\n- 파일명: snake_case\n\n**HTML / CSS / URL**\n- 모두 kebab-case\n- HTML 속성: `data-user-id`\n- CSS 클래스: `.btn-primary`\n- URL: `/user-profile`\n\n**SQL / DB**\n- 테이블·컬럼: snake_case\n- 일관성 유지가 가독성 핵심" },
-        { heading: "케이스 잘못 쓰면 생기는 사고", body: "**사고 1: 라이브러리 호환성 깨짐**\n\nReact 컴포넌트는 PascalCase 필수. `<userprofile />` → 인식 안 됨. `<UserProfile />`만 React가 컴포넌트로 인식.\n\n**사고 2: SEO 영향**\n\nURL에 camelCase 쓰면 (`/userProfile`) 일부 검색엔진이 단어 분리 못함. kebab-case (`/user-profile`)이 SEO 안전.\n\n**사고 3: 데이터베이스 마이그레이션 실패**\n\nDB 컬럼 `userName` (camelCase) → API 응답 `user_name` (snake_case) 변환 누락 시 프론트엔드 데이터 누락.\n\n**사고 4: Linter 에러**\n\nESLint·Pylint 같은 도구가 케이스 위반 자동 감지. PR 시 자동 reject 가능성.\n\n**사고 5: 팀 컨벤션 충돌**\n\n같은 프로젝트 내 케이스 혼용 시 가독성 폭락. 팀 시작 시 케이스 컨벤션 문서화 필수." },
-        { heading: "Toolkio 케이스 변환 도구 활용", body: "**5가지 변환 한 번에**\n\n1. 텍스트 입력란에 변환할 단어 입력\n2. 케이스 5종 결과 동시 표시\n3. 클릭 한 번으로 복사\n4. URL·CSS·DB 컬럼 등 즉시 적용\n\n**활용 사례**\n\n- 신규 프로젝트 변수명 통일\n- 다른 언어 → 본인 언어 케이스 변환\n- 파일명 일괄 변경 (CMS·블로그)\n- API 응답 매핑 (snake → camel)\n\n**팁**\n\n팀 작업 시 케이스 컨벤션 README에 명시. 자동 변환 라이브러리 (lodash camelCase·snakeCase) 활용으로 사고 예방." },
-      ],
-      en: [
-        { heading: "5 case conventions", body: "camelCase (JS variables), PascalCase (classes), snake_case (Python·DB), kebab-case (URL·CSS), SCREAMING_SNAKE (constants)." },
-        { heading: "Language standards", body: "JS uses camel, Python snake, HTML kebab. Mixing causes lib incompatibility." },
-        { heading: "Common mistakes", body: "React PascalCase required. URLs use kebab for SEO. DB column / API mapping is common bug source." },
-        { heading: "Toolkio converter", body: "Convert all 5 cases in one click. Use lodash for runtime conversion in code." },
-      ],
-    },
-    faq: [
-      { question: "왜 React 컴포넌트는 PascalCase 강제인가요?", answer: "React가 소문자 시작 태그를 HTML 요소로 인식하고 대문자 시작을 컴포넌트로 인식. `<button>` (HTML) vs `<Button>` (React 컴포넌트) 구분 위해." },
-      { question: "URL에 snake_case 써도 괜찮나요?", answer: "기술적으로 가능하지만 SEO 비추. 검색엔진은 하이픈을 단어 구분자로 더 잘 인식. `/user-profile`이 `/user_profile`보다 SEO 유리." },
-      { question: "Python에서 클래스도 snake_case 쓰면 안 되나요?", answer: "PEP 8 표준 위반. Pylint 에러. 가독성 폭락. 클래스는 PascalCase, 함수·변수는 snake_case 엄격 분리." },
-      { question: "케이스 변환 자동 도구 라이브러리 추천?", answer: "JavaScript: lodash (`_.camelCase`, `_.snakeCase`), Python: `inflection` 라이브러리. 본인 프로젝트 일관성 유지에 유용." },
-      { question: "API 응답 케이스가 snake인데 프론트는 camel이면?", answer: "응답 받자마자 camelCase로 변환하는 헬퍼 함수 또는 axios interceptor 사용. 프론트 코드는 일관된 camel 유지." },
-    ],
-  },
-  {
+    {
     slug: "ai-prompt-writing-5-stages-chatgpt-claude",
     title: {
       ko: "AI 프롬프트 작성 5단계 - ChatGPT·Claude 답변 품질 2배 만드는 법",
@@ -12201,13 +9806,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "1단계 — 역할 부여", body: "AI에게 '누구로서 답변할지' 명확히 지정.\n\n**나쁜 예**\n\"마케팅 전략 알려줘\"\n\n**좋은 예**\n\"당신은 B2B SaaS 회사의 10년 경력 마케팅 디렉터입니다. 직원 30명 스타트업의 분기별 마케팅 전략을 알려주세요.\"\n\n**효과**\n\n- 답변의 깊이·전문성 즉시 향상\n- 일반론 → 본인 상황에 맞는 답변\n- 톤·어휘 자동 조정\n\n**역할 종류 예시**\n\n- 직업: 마케터·개발자·의사·교사\n- 경력: 신입·5년·10년·전문가\n- 분야: B2B·B2C·헬스케어·금융\n- 목적: 컨설턴트·코치·멘토" },
         { heading: "2단계 — 컨텍스트 제공", body: "본인 상황을 구체적으로 알려주기.\n\n**필수 컨텍스트**\n\n- 본인 분야·상황\n- 목표·기대 결과\n- 제약 조건 (예산·시간)\n- 이전 시도와 결과\n- 본인 수준·경험\n\n**예시**\n\n\"우리는 직원 30명 B2B SaaS 회사입니다. 월 마케팅 예산 500만원, 현재 LinkedIn 광고 + 콘텐츠 마케팅 중. 리드 월 50건 → 100건 목표. CRM은 HubSpot 사용.\"\n\n**컨텍스트 양**\n\n- 너무 적으면 일반론\n- 너무 많으면 핵심 흐림\n- 5~10문장이 적정\n\n**팁**\n\n프로젝트 문서·이전 대화 요약을 메모리(ChatGPT Memory)에 저장하면 매번 컨텍스트 반복 안 해도 됨." },
         { heading: "3단계 — 예시·제약 추가", body: "**Few-shot 예시**\n\n원하는 결과의 좋은 예 1~3개 제공.\n\n예: \"다음 형식으로 답해주세요:\n- 제목 (10자 이내)\n- 핵심 메시지 (1줄)\n- 행동 유도 (1줄)\n\n예시:\n- 제목: AI 부업 시작\n- 메시지: 월 50만원 추가 수입 가능\n- 행동: 무료 가이드 다운로드\"\n\n**제약 조건**\n\n- 분량: \"500자 이내\"\n- 톤: \"친근하고 전문적\"\n- 금지: \"광고성 표현 금지\"\n- 형식: \"표 또는 불릿 사용\"\n- 언어: \"한국어로 답변, 전문 용어는 영어 병기\"\n\n**효과**\n\n- 답변 일관성 향상\n- 후처리 시간 절감\n- 본인 의도 정확 전달" },
-        { heading: "4단계 — 출력 형식 + 5단계 검증", body: "**출력 형식 명시**\n\n- 표 (비교표·항목 정리)\n- 불릿 리스트 (단순 항목)\n- 단계별 (튜토리얼)\n- JSON (자동화 후속 처리)\n- 마크다운 (블로그·문서)\n\n예: \"답변을 마크다운 형식으로, H2 제목 3개 + 각 H2 아래 3~5문장 + 마지막 결론 1문단.\"\n\n**5단계 검증 (Toolkio 활용)**\n\n1. AI 답변 받기\n2. 본인이 1차 검토 (정확성·관련성)\n3. AI에게 \"이 답변에서 빠진 게 있나?\" 재질문\n4. 답변 수정·보강\n5. 최종 사용\n\n**프롬프트 템플릿 저장**\n\n자주 쓰는 프롬프트는 Notion·Obsidian에 템플릿 저장. 매번 새로 쓰는 시간 90% 절감.\n\nToolkio AI Prompt Generator는 5요소 자동 조합 도와주는 도구로 본인 작업에 특화된 프롬프트 빠르게 생성." },
+        { heading: "4단계 — 출력 형식 + 5단계 검증", body: "**출력 형식 명시**\n\n- 표 (비교표·항목 정리)\n- 불릿 리스트 (단순 항목)\n- 단계별 (튜토리얼)\n- JSON (자동화 후속 처리)\n- 마크다운 (블로그·문서)\n\n예: \"답변을 마크다운 형식으로, H2 제목 3개 + 각 H2 아래 3~5문장 + 마지막 결론 1문단.\"\n\n**5단계 검증 (Toolkio 활용)**\n\n1. AI 답변 받기\n2. 본인이 1차 검토 (정확성·관련성)\n3. AI에게 \"이 답변에서 빠진 게 있나?\" 재질문\n4. 답변 수정·보강\n5. 최종 사용\n\n**프롬프트 템플릿 저장**\n\n자주 쓰는 프롬프트는 Notion·Obsidian에 템플릿 저장. 매번 새로 쓰는 시간 90% 절감.\n\nToolkio AI Prompt Generator는 5요소 자동 조합 도와주는 도구로 본인 작업에 특화된 프롬프트 빠르게 생성." }
       ],
       en: [
         { heading: "Stage 1: Role assignment", body: "Specify who the AI should be: profession, experience, domain. Improves answer depth instantly." },
         { heading: "Stage 2: Context", body: "Provide situation, goals, constraints, prior attempts. 5-10 sentences ideal." },
         { heading: "Stage 3: Examples and constraints", body: "Few-shot examples + format/tone/length restrictions for consistent output." },
-        { heading: "Stage 4: Output format and validation", body: "Specify markdown/table/JSON. Validate with re-question. Save templates for reuse." },
+        { heading: "Stage 4: Output format and validation", body: "Specify markdown/table/JSON. Validate with re-question. Save templates for reuse." }
       ],
     },
     faq: [
@@ -12215,7 +9820,7 @@ export const blogPosts: BlogPost[] = [
       { question: "프롬프트가 너무 길면 답변 질이 떨어지나요?", answer: "1만 토큰 (한국어 약 5천자) 넘으면 핵심 흐릿. 컨텍스트는 5-10문장, 예시는 1-3개로 압축." },
       { question: "역할 부여 없이 그냥 물어보면 안 되나요?", answer: "가능하지만 답변이 일반론. 전문성·깊이 필요한 작업은 역할 부여로 즉시 답변 품질 2배." },
       { question: "프롬프트 엔지니어링이 정말 효과 있나요?", answer: "검증된 효과. OpenAI·Anthropic 공식 가이드도 5요소 강조. 같은 질문 다른 프롬프트 → 답변 깊이 2-3배 차이." },
-      { question: "프롬프트 템플릿 어디서 찾나요?", answer: "Anthropic Prompt Library, OpenAI Cookbook, awesome-chatgpt-prompts (GitHub) 등 무료 공개. 본인 작업에 맞춰 커스터마이징." },
+      { question: "프롬프트 템플릿 어디서 찾나요?", answer: "Anthropic Prompt Library, OpenAI Cookbook, awesome-chatgpt-prompts (GitHub) 등 무료 공개. 본인 작업에 맞춰 커스터마이징." }
     ],
   },
   {
@@ -12237,13 +9842,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "함정 1 — 타임존 누락", body: "**문제**\n\n타임스탬프는 UTC 기준 절대 시간이지만, 사람이 보는 시간은 본인 타임존 기준. 변환 시 타임존 명시 안 하면 9시간 차이 발생 (한국 KST = UTC+9).\n\n**잘못된 예 (JavaScript)**\n```js\nnew Date(1714180800).toString()\n// \"Wed Apr 27 2026 09:00:00 GMT+0900\"\n// 하지만 이건 2024-04-27 00:00:00 UTC를 의미!\n```\n\n**해결**\n```js\nnew Date(1714180800 * 1000).toISOString()\n// \"2024-04-27T00:00:00.000Z\"\n```\n\n**팁**\n\n- 모든 타임스탬프는 UTC로 저장\n- 표시할 때만 본인 타임존으로 변환\n- DB 저장 시 UTC + ISO 8601 형식 권장" },
         { heading: "함정 2 — 초 vs 밀리초 혼동", body: "**문제**\n\n언어마다 단위 다름.\n\n- Unix epoch (전통): 초(seconds) 단위\n- JavaScript Date: 밀리초(ms) 단위\n- Python time.time(): 초 단위 (소수점 ms)\n- DB (PostgreSQL): 마이크로초\n\n**1714180800 = ?**\n\n- 초로 해석: 2024-04-27 00:00:00 UTC ✓\n- 밀리초로 해석: 1970-01-20 04:09:40 UTC ✗\n\n**잘못된 변환**\n```js\nnew Date(1714180800)  // 1970년!\n```\n\n**올바른 변환**\n```js\nnew Date(1714180800 * 1000)  // 2024년\nnew Date(1714180800000)       // 2024년\n```\n\n**팁**\n\n10자리 = 초, 13자리 = 밀리초로 자릿수로 빠른 식별." },
         { heading: "함정 3 — 1970년 이전 날짜", body: "**문제**\n\n유닉스 타임스탬프는 1970-01-01 00:00:00 UTC 이후만 양수. 이전 날짜는 음수.\n\n**예**\n\n- 1969-12-31 00:00:00 UTC = -86400 초\n- 1900-01-01 = -2208988800 초\n\n**언어별 처리**\n\n- JavaScript: 음수도 정상 처리\n- Python time: 일부 OS에서 음수 에러\n- DB: 컬럼 타입에 따라 음수 거부 가능\n\n**해결**\n\n역사적 날짜 다룰 때 ISO 8601 문자열 (`1900-01-01T00:00:00Z`) 사용. 타임스탬프는 1970년 이후 데이터에만." },
-        { heading: "함정 4·5 + Toolkio 활용", body: "**함정 4 — 2038년 문제 (Y2K38)**\n\n32비트 정수 타임스탬프 최대값 = 2^31 - 1 = 2147483647\n= 2038-01-19 03:14:07 UTC\n\n이후 정수 오버플로 → 1901년으로 회귀.\n\n**해결**\n\n- 64비트 정수 사용 (현대 시스템 표준)\n- 32비트 임베디드·구형 DB는 별도 마이그레이션\n- 새 프로젝트는 무조건 64비트\n\n**함정 5 — 일광절약시간(DST)**\n\n미국·유럽은 봄·가을에 시간 1시간 변경. 같은 로컬 시간이 두 번 발생하거나 사라짐.\n\n**예**\n\n- 미국 서머타임 종료: 새벽 2시 → 1시로 (1시간 반복)\n- 같은 로컬 시간 \"2026-11-02 01:30\"이 두 번 존재\n\n**해결**\n\n- 모든 시간 UTC 저장\n- DST 영향 받는 지역은 IANA 타임존 (`America/New_York`) 명시\n- moment-timezone, luxon, date-fns-tz 라이브러리 활용\n\n**Toolkio 타임스탬프 변환 도구**\n\n- 초·밀리초 자동 감지\n- 타임존 선택 가능\n- 양방향 변환 (타임스탬프 ↔ 날짜)\n- ISO 8601 / Unix / 사용자 정의 형식\n\n5가지 함정 모두 자동 처리해서 사고 예방." },
+        { heading: "함정 4·5 + Toolkio 활용", body: "**함정 4 — 2038년 문제 (Y2K38)**\n\n32비트 정수 타임스탬프 최대값 = 2^31 - 1 = 2147483647\n= 2038-01-19 03:14:07 UTC\n\n이후 정수 오버플로 → 1901년으로 회귀.\n\n**해결**\n\n- 64비트 정수 사용 (현대 시스템 표준)\n- 32비트 임베디드·구형 DB는 별도 마이그레이션\n- 새 프로젝트는 무조건 64비트\n\n**함정 5 — 일광절약시간(DST)**\n\n미국·유럽은 봄·가을에 시간 1시간 변경. 같은 로컬 시간이 두 번 발생하거나 사라짐.\n\n**예**\n\n- 미국 서머타임 종료: 새벽 2시 → 1시로 (1시간 반복)\n- 같은 로컬 시간 \"2026-11-02 01:30\"이 두 번 존재\n\n**해결**\n\n- 모든 시간 UTC 저장\n- DST 영향 받는 지역은 IANA 타임존 (`America/New_York`) 명시\n- moment-timezone, luxon, date-fns-tz 라이브러리 활용\n\n**Toolkio 타임스탬프 변환 도구**\n\n- 초·밀리초 자동 감지\n- 타임존 선택 가능\n- 양방향 변환 (타임스탬프 ↔ 날짜)\n- ISO 8601 / Unix / 사용자 정의 형식\n\n5가지 함정 모두 자동 처리해서 사고 예방." }
       ],
       en: [
         { heading: "Pitfall 1: Timezone", body: "Always store UTC, convert at display. ISO 8601 recommended for DB." },
         { heading: "Pitfall 2: ms vs s", body: "10 digits = seconds, 13 digits = ms. JavaScript uses ms, Python time uses s." },
         { heading: "Pitfall 3: Pre-1970", body: "Negative timestamps. Use ISO 8601 strings for historical dates." },
-        { heading: "Pitfall 4-5: 2038 + DST", body: "32-bit overflow in 2038. Always use 64-bit. UTC + IANA timezones for DST." },
+        { heading: "Pitfall 4-5: 2038 + DST", body: "32-bit overflow in 2038. Always use 64-bit. UTC + IANA timezones for DST." }
       ],
     },
     faq: [
@@ -12251,7 +9856,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JavaScript에서 현재 타임스탬프 어떻게 얻나요?", answer: "`Date.now()` (밀리초) 또는 `Math.floor(Date.now() / 1000)` (초). `new Date().getTime()`도 동일." },
       { question: "타임스탬프를 사람이 읽기 쉬운 형식으로 변환?", answer: "`new Date(timestamp * 1000).toLocaleString('ko-KR', {timeZone: 'Asia/Seoul'})`. 한국 시간으로 자동 변환." },
       { question: "DB에 시간 저장 시 어떤 형식이 좋나요?", answer: "PostgreSQL: TIMESTAMP WITH TIME ZONE (UTC 자동 변환). MySQL: TIMESTAMP (UTC 저장 + 표시 시 변환). 절대 로컬 시간 그대로 저장 금지." },
-      { question: "JavaScript Date 객체 대신 권장하는 라이브러리?", answer: "Luxon (Moment.js 후속), date-fns, day.js. 타임존·DST·포맷팅 안전. 큰 프로젝트는 luxon 추천." },
+      { question: "JavaScript Date 객체 대신 권장하는 라이브러리?", answer: "Luxon (Moment.js 후속), date-fns, day.js. 타임존·DST·포맷팅 안전. 큰 프로젝트는 luxon 추천." }
     ],
   },
   {
@@ -12273,13 +9878,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "원칙 1 — 길이가 핵심 (16자 이상)", body: "**핵심**\n\n길이가 복잡도보다 중요. 짧고 복잡한 (`P@s$1!`) 보다 길고 단순한 (`coffee-morning-blue-2026`)이 해킹 어려움.\n\n**해킹 시간 비교**\n\n- 8자 (대소문자+숫자+특수): 8시간\n- 12자 (대소문자+숫자+특수): 34년\n- 16자 (대소문자+숫자+특수): 1조 년\n- 20자 (대소문자+숫자+특수): 우주 수명 초과\n\n**권장 길이**\n\n- 일반 사이트: 16자 이상\n- 금융·암호화폐: 20자 이상\n- 마스터 패스워드: 24자 이상\n\n**팁**\n\n외우기 어려우면 패스워드 매니저 사용. 본인이 외우는 건 마스터 패스워드 1개만." },
         { heading: "원칙 2 — 복잡도 (4종 문자 조합)", body: "**4종 문자**\n\n- 대문자 (A-Z)\n- 소문자 (a-z)\n- 숫자 (0-9)\n- 특수문자 (!@#$%^&*)\n\n**좋은 예**\n\n`Tr0pic@l-Sun5et!2026`\n\n**나쁜 예 (예측 가능)**\n\n- `Password123!` (사전 단어)\n- `Qwerty123!` (키보드 패턴)\n- `Hong2026!` (개인 정보)\n- `Iloveyou1!` (흔한 표현)\n\n**팁**\n\n특수문자는 사이트마다 허용 다름. 안전한 조합: `!@#$%^&*-_+=`" },
         { heading: "원칙 3 — 사이트마다 고유 (재사용 금지)", body: "**핵심**\n\n한 사이트 해킹 → 다른 사이트도 같은 비밀번호면 도미노 해킹.\n\n**실제 사례**\n\n- 2019년 LinkedIn 해킹 → 1억 6천만 계정 유출\n- 같은 비밀번호 쓴 Gmail·페이스북 등 도미노 해킹\n- 본인은 로그인 실패 후 알게 됨\n\n**해결: 패스워드 매니저**\n\n- 1Password (월 3달러)\n- Bitwarden (무료·오픈소스)\n- Dashlane (월 3달러)\n- LastPass (무료·유료)\n- Apple iCloud Keychain (Apple 사용자)\n\n**활용**\n\n- 사이트마다 고유 32자 비밀번호 자동 생성\n- 로그인 시 자동 입력\n- 본인은 마스터 패스워드 1개만 외움" },
-        { heading: "원칙 4·5 + Toolkio 활용", body: "**원칙 4 — 안전한 관리**\n\n**금지 사항**\n\n- 종이에 적어두기\n- 메모장 파일·이메일에 저장\n- 브라우저 저장 (마스터 패스워드 없으면 평문)\n- 카톡·메일로 공유\n\n**권장**\n\n- 패스워드 매니저 (암호화 저장)\n- 2단계 인증 (2FA) 필수 (SMS·OTP 앱)\n- 마스터 패스워드는 종이에 손글씨 → 금고 보관 (백업)\n\n**원칙 5 — 정기 갱신**\n\n**갱신 주기**\n\n- 일반 사이트: 1년\n- 금융·암호화폐: 6개월\n- 회사 시스템: 90일 (정책 따름)\n- 유출 의심 시: 즉시\n\n**유출 확인**\n\nhaveibeenpwned.com 사이트에서 본인 이메일 입력 → 유출 이력 자동 확인.\n\n**Toolkio 비밀번호 생성 도구**\n\n- 길이 8~64자 자유 설정\n- 4종 문자 조합 선택\n- 특수문자 종류 커스텀\n- 발음 가능 옵션 (외우기 쉬움)\n- 생성 즉시 복사\n\n5원칙 모두 만족하는 비밀번호 1초 생성." },
+        { heading: "원칙 4·5 + Toolkio 활용", body: "**원칙 4 — 안전한 관리**\n\n**금지 사항**\n\n- 종이에 적어두기\n- 메모장 파일·이메일에 저장\n- 브라우저 저장 (마스터 패스워드 없으면 평문)\n- 카톡·메일로 공유\n\n**권장**\n\n- 패스워드 매니저 (암호화 저장)\n- 2단계 인증 (2FA) 필수 (SMS·OTP 앱)\n- 마스터 패스워드는 종이에 손글씨 → 금고 보관 (백업)\n\n**원칙 5 — 정기 갱신**\n\n**갱신 주기**\n\n- 일반 사이트: 1년\n- 금융·암호화폐: 6개월\n- 회사 시스템: 90일 (정책 따름)\n- 유출 의심 시: 즉시\n\n**유출 확인**\n\nhaveibeenpwned.com 사이트에서 본인 이메일 입력 → 유출 이력 자동 확인.\n\n**Toolkio 비밀번호 생성 도구**\n\n- 길이 8~64자 자유 설정\n- 4종 문자 조합 선택\n- 특수문자 종류 커스텀\n- 발음 가능 옵션 (외우기 쉬움)\n- 생성 즉시 복사\n\n5원칙 모두 만족하는 비밀번호 1초 생성." }
       ],
       en: [
         { heading: "Principle 1: Length", body: "16+ chars more important than complexity. 'coffee-morning-blue-2026' beats 'P@s$1!'." },
         { heading: "Principle 2: Complexity", body: "4 char types: upper, lower, digit, special. Avoid dictionary words and patterns." },
         { heading: "Principle 3: Uniqueness", body: "Never reuse. Use password manager (1Password, Bitwarden) for unique site passwords." },
-        { heading: "Principle 4-5: Management + rotation", body: "Password manager + 2FA. Rotate yearly, immediately if breach. Check haveibeenpwned." },
+        { heading: "Principle 4-5: Management + rotation", body: "Password manager + 2FA. Rotate yearly, immediately if breach. Check haveibeenpwned." }
       ],
     },
     faq: [
@@ -12287,7 +9892,7 @@ export const blogPosts: BlogPost[] = [
       { question: "2단계 인증(2FA)이 정말 필요한가요?", answer: "필수. 비밀번호 유출돼도 2단계 인증 있으면 해커가 로그인 못함. SMS보다 Authenticator 앱(Google Authenticator·Authy) 안전." },
       { question: "비밀번호 5원칙 다 따르기 어려워요. 우선순위는?", answer: "1순위 패스워드 매니저 + 2단계 인증. 이 2가지만 해도 99% 안전. 나머지는 매니저가 자동 처리." },
       { question: "회사 비밀번호 정책이 90일 갱신인데 너무 자주 아닌가요?", answer: "현대 보안 표준은 '정기 갱신 강제'보다 '유출 시 즉시 갱신'을 권장. 단, 회사 정책 따라야 하니 패스워드 매니저로 부담 줄이세요." },
-      { question: "Passkey가 비밀번호 대체할 수 있나요?", answer: "네. Apple·Google·Microsoft 모두 Passkey 표준 채택. 본인 기기 (지문·얼굴) 인증으로 비밀번호 없이 로그인. 단, 모든 사이트 지원 안 함. 점진 전환 중." },
+      { question: "Passkey가 비밀번호 대체할 수 있나요?", answer: "네. Apple·Google·Microsoft 모두 Passkey 표준 채택. 본인 기기 (지문·얼굴) 인증으로 비밀번호 없이 로그인. 단, 모든 사이트 지원 안 함. 점진 전환 중." }
     ],
   },
   {
@@ -12309,13 +9914,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "활용 1 — 코드 리뷰", body: "**상황**\n\nPR 받았는데 변경 파일 50개. 어디부터 봐야 할지.\n\n**Diff 도구 활용**\n\n- 변경된 줄만 강조 표시 (추가 녹색·삭제 빨강)\n- 변경 전후 나란히 비교 (side-by-side)\n- 인라인 비교 (한 줄에 차이만)\n- 공백·줄바꿈 무시 옵션\n\n**리뷰 순서**\n\n1. 큰 파일·중요 파일 먼저\n2. 함수 추가·삭제 확인\n3. 로직 변경 부분 깊이\n4. 테스트 코드 변경\n5. 설정 파일 변경 (위험 영역)\n\n**팁**\n\n- 50줄 넘는 변경은 리뷰 어려움 → 작은 PR로 분리 요청\n- 자동 포매터 변경(prettier·black)이면 별도 PR로 분리" },
         { heading: "활용 2 — git diff 읽는 법", body: "**기본 명령**\n\n```\ngit diff           # 워킹 트리 변경\ngit diff --staged  # 스테이지 변경\ngit diff main..HEAD # 브랜치 비교\n```\n\n**git diff 출력 해석**\n\n```\ndiff --git a/file.js b/file.js\n@@ -10,5 +10,7 @@\n const userName = 'old';\n-console.log('debug');\n+console.log('production');\n+const newVar = true;\n```\n\n- `@@ -10,5 +10,7 @@`: 원본 10번 줄 5줄 → 새로운 10번 줄 7줄\n- `-`: 삭제\n- `+`: 추가\n- 공백 줄: 컨텍스트 (변경 없음)\n\n**고급 옵션**\n\n```\ngit diff --stat   # 파일별 변경 줄 수\ngit diff -w       # 공백 무시\ngit diff --color-words  # 단어 단위 강조\ngit log -p file.js  # 파일 변경 이력\n```" },
         { heading: "활용 3·4 — 문서·번역·설정 비교", body: "**활용 3 — 문서 비교**\n\n계약서·정책 문서 버전 비교.\n\n- 변경된 조항 빠르게 식별\n- 양쪽 비교로 누락 방지\n- 워드 'Track Changes' 대안\n\n**활용 4 — 번역 검수**\n\n원문 → 번역 → 재검토.\n\n- 영문 vs 한국어 길이 비교\n- 누락된 문장 식별\n- 용어 일관성 체크\n\n**활용 5 — 설정 파일 비교**\n\n환경별(dev·staging·prod) 설정 비교.\n\n- 환경 변수 누락 방지\n- 보안 설정 통일\n- 배포 전 최종 검증\n\n**자주 하는 실수**\n\n- 공백·줄바꿈 차이로 \"전체 변경\" 표시 → `-w` 옵션으로 공백 무시\n- BOM 문자 차이 → 인코딩 통일 (UTF-8 BOM 없이)\n- 줄 끝 CRLF vs LF → .gitattributes 통일" },
-        { heading: "Toolkio Diff 도구 + 도구 비교", body: "**Toolkio Diff 도구**\n\n- 두 텍스트 입력 → 즉시 비교\n- 줄 단위·단어 단위 강조\n- 공백 무시 옵션\n- 결과 복사·다운로드\n\n**활용 사례**\n\n- 코드 일부 비교 (전체 git 안 쓸 때)\n- 메일·문서 텍스트 차이\n- 설정 파일 변경 추적\n\n**다른 도구 비교**\n\n- VSCode Diff: IDE 통합 (개발자 표준)\n- Beyond Compare: 폴더 단위 비교 (유료)\n- Meld: 무료 GUI (Linux·Windows)\n- diff (CLI): 명령줄 표준\n- DiffNow: 웹 기반 무료\n\n**선택 기준**\n\n- 개발: VSCode Diff\n- 비개발자: Toolkio·DiffNow (웹)\n- 폴더 비교: Beyond Compare\n- 자동화: diff CLI" },
+        { heading: "Toolkio Diff 도구 + 도구 비교", body: "**Toolkio Diff 도구**\n\n- 두 텍스트 입력 → 즉시 비교\n- 줄 단위·단어 단위 강조\n- 공백 무시 옵션\n- 결과 복사·다운로드\n\n**활용 사례**\n\n- 코드 일부 비교 (전체 git 안 쓸 때)\n- 메일·문서 텍스트 차이\n- 설정 파일 변경 추적\n\n**다른 도구 비교**\n\n- VSCode Diff: IDE 통합 (개발자 표준)\n- Beyond Compare: 폴더 단위 비교 (유료)\n- Meld: 무료 GUI (Linux·Windows)\n- diff (CLI): 명령줄 표준\n- DiffNow: 웹 기반 무료\n\n**선택 기준**\n\n- 개발: VSCode Diff\n- 비개발자: Toolkio·DiffNow (웹)\n- 폴더 비교: Beyond Compare\n- 자동화: diff CLI" }
       ],
       en: [
         { heading: "Use 1: Code review", body: "Side-by-side or inline diff. Review big files first, then logic, then tests." },
         { heading: "Use 2: git diff", body: "git diff basics, --stat, --color-words. Understand @@ markers." },
         { heading: "Use 3-4: Documents and translation", body: "Contract versions, translation review, config comparison." },
-        { heading: "Toolkio + alternatives", body: "Toolkio for quick text diff. VSCode for code, Beyond Compare for folders." },
+        { heading: "Toolkio + alternatives", body: "Toolkio for quick text diff. VSCode for code, Beyond Compare for folders." }
       ],
     },
     faq: [
@@ -12323,7 +9928,7 @@ export const blogPosts: BlogPost[] = [
       { question: "공백 차이만 있는데 전체 변경으로 표시돼요.", answer: "`git diff -w` 옵션으로 공백 무시. CRLF vs LF 차이면 .gitattributes에 `* text=auto` 추가하고 한 번 정리." },
       { question: "Diff 결과를 다른 사람과 공유하는 법?", answer: "`git diff > changes.patch`로 파일 저장 → 공유. 또는 GitHub PR 링크 공유. 작은 변경은 텍스트 복사로 충분." },
       { question: "Diff에서 너무 많은 변경이 표시되는데 어떻게 정리?", answer: "큰 PR은 리뷰 어려움. 변경을 기능 단위로 분리해 작은 PR 여러 개로. 또는 자동 포매터 변경은 별도 commit." },
-      { question: "Diff 도구에서 단어 단위 비교 가능한가요?", answer: "`git diff --color-words`, VSCode Diff (자동 단어 강조), Toolkio (옵션 선택). 줄 안에서 정확히 어떤 단어 변경됐는지 확인 시 유용." },
+      { question: "Diff 도구에서 단어 단위 비교 가능한가요?", answer: "`git diff --color-words`, VSCode Diff (자동 단어 강조), Toolkio (옵션 선택). 줄 안에서 정확히 어떤 단어 변경됐는지 확인 시 유용." }
     ],
   },
   {
@@ -12345,13 +9950,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "활용 1 — 시험·자격증 카운트다운", body: "**시험 디데이 활용**\n\n- 큰 시험 (수능·자격증·공무원) 동기 부여\n- 학습 계획 역산 (D-100, D-50, D-30)\n- 진도 체크 기준\n\n**효과적 활용**\n\n- 책상·핸드폰 잠금화면에 디데이 표시\n- 매일 아침 디데이 확인 + 오늘 할 일 정리\n- D-30, D-7, D-1 시점 학습 강도 조정\n\n**시험별 권장 학습 기간**\n\n- 수능: D-365 (1년)\n- 토익: D-90 (3개월)\n- 자격증 (정보처리기사): D-60\n- 공무원 (9급): D-180~365\n\n**팁**\n\n시험 전날(D-1)은 가벼운 복습만. 시험 당일 컨디션 우선." },
         { heading: "활용 2 — 결혼·기념일", body: "**결혼 디데이**\n\n- 결혼식 D-day 카운트다운\n- 단계별 준비 일정 역산\n  - D-180: 예식장 예약\n  - D-90: 청첩장 발송\n  - D-30: 본식 리허설\n  - D-7: 최종 점검\n\n**기념일 디데이**\n\n- 만난 날 (사귄 날) 카운트\n- 100일·200일·1000일\n- 결혼기념일\n- 가족·친구 생일\n\n**활용 팁**\n\n- 100일·1주년 미리 알림 → 선물·이벤트 준비\n- 부모님 생신 D-30 → 선물 검색·예약\n- 결혼 5년·10년 큰 단위 기념일 챙기기" },
         { heading: "활용 3·4 — 여행·다이어트", body: "**활용 3 — 여행 D-day**\n\n- 여행 출발일 카운트다운\n- 단계별 준비\n  - D-90: 항공권·숙소 예약\n  - D-30: 비자·여행자보험\n  - D-7: 짐 패킹·환전\n  - D-1: 최종 점검\n\n**여행별 준비 기간**\n\n- 국내 1박 2일: D-7\n- 국내 3박 4일: D-14\n- 동남아: D-30\n- 유럽: D-60~90\n- 미국·남미: D-90~120\n\n**활용 4 — 다이어트·운동 목표**\n\n- 결혼식 D-100 다이어트\n- 마라톤 D-90 훈련\n- 보디 프로필 D-60\n\n**효과**\n\n- 마감 임박 압박감 → 행동력 증가\n- 진행률 시각화 (50% 지남, 30% 남음)\n- 중간 목표 설정 (D-50 절반 달성)" },
-        { heading: "Toolkio 디데이 + 응용 5가지", body: "**Toolkio D-day 계산기**\n\n- 시작일 + 목표일 입력 → 디데이 즉시 계산\n- 양방향 (D-day 또는 +day)\n- 다양한 형식 (D-30, 30일 후, 4주 2일 등)\n- 여러 디데이 동시 관리\n\n**응용 5가지**\n\n1. **나이 계산**\n   - 만나이·연나이·한국나이\n   - 본인 + 가족 동시 확인\n\n2. **계약 만료일**\n   - 임대 계약·구독 서비스\n   - 갱신 알림 D-30\n\n3. **이력서 경력 계산**\n   - 입사일 ~ 현재\n   - 정확한 경력 일수\n\n4. **임신 출산 예정일**\n   - 마지막 생리일 + 280일\n   - 주차별 변화 추적\n\n5. **태어난 지 며칠**\n   - 생일 ~ 오늘\n   - 1만 일·2만 일 기념\n\n**활용 팁**\n\n중요한 디데이는 핸드폰 위젯·캘린더 동시 등록. 잊지 않고 챙김." },
+        { heading: "Toolkio 디데이 + 응용 5가지", body: "**Toolkio D-day 계산기**\n\n- 시작일 + 목표일 입력 → 디데이 즉시 계산\n- 양방향 (D-day 또는 +day)\n- 다양한 형식 (D-30, 30일 후, 4주 2일 등)\n- 여러 디데이 동시 관리\n\n**응용 5가지**\n\n1. **나이 계산**\n   - 만나이·연나이·한국나이\n   - 본인 + 가족 동시 확인\n\n2. **계약 만료일**\n   - 임대 계약·구독 서비스\n   - 갱신 알림 D-30\n\n3. **이력서 경력 계산**\n   - 입사일 ~ 현재\n   - 정확한 경력 일수\n\n4. **임신 출산 예정일**\n   - 마지막 생리일 + 280일\n   - 주차별 변화 추적\n\n5. **태어난 지 며칠**\n   - 생일 ~ 오늘\n   - 1만 일·2만 일 기념\n\n**활용 팁**\n\n중요한 디데이는 핸드폰 위젯·캘린더 동시 등록. 잊지 않고 챙김." }
       ],
       en: [
         { heading: "Use 1: Exam countdown", body: "Big exam D-day for motivation. Plan studies backwards from D-100." },
         { heading: "Use 2: Wedding and anniversary", body: "Wedding D-day phases. Anniversary 100-day, 1000-day milestones." },
         { heading: "Use 3-4: Travel and diet", body: "Travel prep timeline. Body goal countdown for action." },
-        { heading: "Toolkio D-day + 5 apps", body: "Bidirectional, multiple D-days. Apps: age, contract, career, pregnancy, days alive." },
+        { heading: "Toolkio D-day + 5 apps", body: "Bidirectional, multiple D-days. Apps: age, contract, career, pregnancy, days alive." }
       ],
     },
     faq: [
@@ -12359,7 +9964,7 @@ export const blogPosts: BlogPost[] = [
       { question: "윤년·일광절약시간 영향 받나요?", answer: "디데이는 단순 일수 계산이라 윤년 영향 없음 (2/29 자동 처리). 일광절약시간(DST)도 영향 없음. 시간 단위 계산이면 영향 가능." },
       { question: "디데이를 핸드폰 위젯으로 보고 싶어요.", answer: "iOS·Android 무료 앱 (Days Counter, Countdown 등) 다양. Toolkio 웹은 빠른 계산용, 장기 추적은 앱 권장." },
       { question: "여러 디데이 한 번에 관리 가능한가요?", answer: "Toolkio는 한 번에 1~2개. 여러 개는 Notion·Obsidian에 정리. Notion 'Date' 필드로 자동 디데이 표시 가능." },
-      { question: "디데이 마이너스로 표시되는 의미는?", answer: "이미 지난 날짜를 디데이로 입력하면 -로 표시 (예: D+30 = 30일 지남). 시작일 기준으로 순방향 카운트." },
+      { question: "디데이 마이너스로 표시되는 의미는?", answer: "이미 지난 날짜를 디데이로 입력하면 -로 표시 (예: D+30 = 30일 지남). 시작일 기준으로 순방향 카운트." }
     ],
   },
   {
@@ -12381,13 +9986,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "한국 vs 미국 학점 척도 차이", body: "**한국 (대부분 대학)**\n\n4.5 만점 척도\n- A+: 4.5\n- A: 4.0\n- B+: 3.5\n- B: 3.0\n- C+: 2.5\n- C: 2.0\n- D+: 1.5\n- D: 1.0\n- F: 0\n\n**미국 (대부분 대학)**\n\n4.0 만점 척도\n- A: 4.0\n- A-: 3.7\n- B+: 3.3\n- B: 3.0\n- B-: 2.7\n- C+: 2.3\n- C: 2.0\n- C-: 1.7\n- D: 1.0\n- F: 0\n\n**일부 한국 대학**\n\n4.3 만점 척도 (서울대·고려대 일부 학과)\n- A+: 4.3\n- A: 4.0\n- A-: 3.7\n- ...\n\n**중요**\n\n본인 대학 척도 학사 안내에서 정확히 확인. 같은 점수도 척도 다르면 의미 다름." },
         { heading: "GPA 자가 계산 5단계", body: "**1단계 — 본인 척도 확인**\n\n4.5 / 4.3 / 4.0 중 본인 대학 척도.\n\n**2단계 — 과목별 학점·이수단위 정리**\n\n예시:\n- 자료구조 3학점 A+ (4.5)\n- 영어회화 2학점 B+ (3.5)\n- 경영학원론 3학점 A (4.0)\n\n**3단계 — 평점 × 학점 합산**\n\n- 4.5 × 3 = 13.5\n- 3.5 × 2 = 7.0\n- 4.0 × 3 = 12.0\n- 합계: 32.5\n\n**4단계 — 총 학점 합산**\n\n3 + 2 + 3 = 8학점\n\n**5단계 — GPA = 합산 ÷ 학점**\n\n32.5 ÷ 8 = 4.06\n\n**Toolkio GPA 계산기 활용**\n\n과목별 학점·이수단위 입력 → 자동 GPA 계산. 본인 대학 척도 선택 가능." },
         { heading: "유학 GPA 환산", body: "**4.5 → 4.0 환산 (단순)**\n\n본인 GPA × (4.0 / 4.5) = 미국 환산 GPA\n\n예: 4.0 (한국) × 0.889 = 3.56 (미국)\n\n**WES (World Education Services) 표준**\n\n미국 대학원 지원 시 WES 평가 표준.\n\n- A+ (4.5): A (4.0)\n- A (4.0): A- (3.7)\n- B+ (3.5): B+ (3.3)\n- B (3.0): B (3.0)\n\n**유학 지원 GPA 기준**\n\n- 미국 명문 대학원: 3.7+\n- 미국 일반 대학원: 3.3+\n- 영국 명문 (옥스브리지): 한국 4.0+ (Distinction)\n- 일본 명문 (도쿄대): 한국 3.5+\n\n**팁**\n\n유학 지원 시 본인 대학 영문 성적증명서 + 영문 학사 안내 (척도 명시) 함께 제출. 환산은 학교마다 자체 기준." },
-        { heading: "취업 GPA 영향 + 향상 팁", body: "**한국 취업 GPA 영향**\n\n- 대기업 공채: 3.5 이상 (서류 통과 무난)\n- 외국계: 3.7 이상 (영문 성적 함께)\n- 공기업·공무원: GPA보다 시험 점수 우선\n- 스타트업: GPA 영향 적음 (포트폴리오 우선)\n\n**미국 취업 GPA 영향**\n\n- 컨설팅 (맥킨지·BCG): 3.7+ 필수\n- 투자은행: 3.5+ 필수\n- 빅테크 (구글·메타): 3.3+ + 코딩 인터뷰\n- 일반 기업: 3.0+ 무난\n\n**GPA 향상 5가지 팁**\n\n1. **재수강 제도 활용**\n   - 낮은 학점 과목 재수강\n   - 높은 학점으로 대체 (대학마다 정책)\n\n2. **선택 과목 신중**\n   - 본인 강점 과목 우선\n   - 교수 평점 미리 확인\n\n3. **학기 학점 분산**\n   - 어려운 과목 + 쉬운 과목 조합\n   - 한 학기에 어려운 과목만 X\n\n4. **출석·과제 관리**\n   - 출석 점수 확실히\n   - 과제 마감 엄수\n\n5. **시험 직전 1주 집중**\n   - 평소 60% + 시험 전 40%\n   - 모범 답안·기출 분석" },
+        { heading: "취업 GPA 영향 + 향상 팁", body: "**한국 취업 GPA 영향**\n\n- 대기업 공채: 3.5 이상 (서류 통과 무난)\n- 외국계: 3.7 이상 (영문 성적 함께)\n- 공기업·공무원: GPA보다 시험 점수 우선\n- 스타트업: GPA 영향 적음 (포트폴리오 우선)\n\n**미국 취업 GPA 영향**\n\n- 컨설팅 (맥킨지·BCG): 3.7+ 필수\n- 투자은행: 3.5+ 필수\n- 빅테크 (구글·메타): 3.3+ + 코딩 인터뷰\n- 일반 기업: 3.0+ 무난\n\n**GPA 향상 5가지 팁**\n\n1. **재수강 제도 활용**\n   - 낮은 학점 과목 재수강\n   - 높은 학점으로 대체 (대학마다 정책)\n\n2. **선택 과목 신중**\n   - 본인 강점 과목 우선\n   - 교수 평점 미리 확인\n\n3. **학기 학점 분산**\n   - 어려운 과목 + 쉬운 과목 조합\n   - 한 학기에 어려운 과목만 X\n\n4. **출석·과제 관리**\n   - 출석 점수 확실히\n   - 과제 마감 엄수\n\n5. **시험 직전 1주 집중**\n   - 평소 60% + 시험 전 40%\n   - 모범 답안·기출 분석" }
       ],
       en: [
         { heading: "Korea 4.5 vs US 4.0", body: "Korean A+ = 4.5, US A = 4.0. Different scales mean same letter different value." },
         { heading: "5-step calculation", body: "Confirm scale, list courses, multiply grade x credit, sum, divide by total credits." },
         { heading: "Study abroad conversion", body: "WES standard for US grad. Korean 4.0 ≈ US 3.56. Top schools want 3.7+." },
-        { heading: "Job impact + improvement", body: "Korean Big4: 3.5+. Consulting: 3.7+. Improve via retake, course choice, attendance." },
+        { heading: "Job impact + improvement", body: "Korean Big4: 3.5+. Consulting: 3.7+. Improve via retake, course choice, attendance." }
       ],
     },
     faq: [
@@ -12395,7 +10000,7 @@ export const blogPosts: BlogPost[] = [
       { question: "재수강이 GPA에 어떻게 반영되나요?", answer: "대학마다 다름. 일반적으로 ① 새 학점으로 대체 (이전 학점 무효) ② 평균 적용 ③ 두 학점 모두 표기 (이수단위는 한 번). 본인 대학 학사 안내 확인 필수." },
       { question: "GPA 3.0 미만이면 취업 어려운가요?", answer: "대기업 서류 어렵지만 가능. 포트폴리오·인턴·자격증으로 보강. 외국계·스타트업·중소기업은 GPA 영향 적음. 면접 강점 부각이 핵심." },
       { question: "유학 지원 시 GPA가 부족하면 어떻게 하나요?", answer: "GRE/GMAT 고득점 + 추천서·SOP 강화. 일부 대학은 'Conditional Admission' (조건부 입학) 가능. 또는 석사 후 박사 단계 입학." },
-      { question: "GPA 외에 대학원 입학에 중요한 것은?", answer: "GRE·연구 경험·추천서·SOP·인터뷰. 명문 대학원은 GPA 3.7+ 기본 + 연구 경험·논문 출판이 차별화." },
+      { question: "GPA 외에 대학원 입학에 중요한 것은?", answer: "GRE·연구 경험·추천서·SOP·인터뷰. 명문 대학원은 GPA 3.7+ 기본 + 연구 경험·논문 출판이 차별화." }
     ],
   },
   {
@@ -12417,13 +10022,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "색상 코드 5종 한눈에", body: "**RGB (Red-Green-Blue)**\n- 표기: `rgb(255, 0, 0)` (빨강)\n- 0~255 정수\n- 모니터·웹 표준\n- 이해 직관적이지만 색상 조정 어려움\n\n**HEX (16진수)**\n- 표기: `#FF0000` (빨강)\n- RGB 16진수 표기\n- CSS·디자인 도구 표준\n- 짧고 복사·붙여넣기 편함\n\n**HSL (Hue-Saturation-Lightness)**\n- 표기: `hsl(0, 100%, 50%)`\n- 색상(0~360)·채도·명도\n- 색상 조정 직관적\n- 같은 색조에서 명도만 변경 쉬움\n\n**HSV (Hue-Saturation-Value)**\n- 표기: `hsv(0, 100%, 100%)`\n- 색상·채도·값(밝기)\n- 디자인 도구 (Photoshop·Sketch) 표준\n- HSL과 비슷하지만 V는 명도 다름\n\n**OKLCH (2026 트렌드)**\n- 표기: `oklch(60% 0.2 30)`\n- 시각적 균일 색상\n- 명도 정확 일치\n- 색상 시스템 디자인 최적" },
         { heading: "각 코드의 강점·활용", body: "**RGB·HEX 활용**\n\n- 디자인 → 코드 옮길 때\n- CSS·HTML 기본\n- 색상 정확히 지정\n- 단점: 색조 조정 어려움\n\n**HSL 활용**\n\n- 디자인 시스템 (다크 모드)\n- 같은 색조 + 명도 변형\n- 컬러 팔레트 자동 생성\n- 예: 메인 컬러 + L 90%, 70%, 50%, 30%, 10% 5단계\n\n**HSV 활용**\n\n- Photoshop·Sketch 작업\n- 디자이너 색상 선택\n- 컬러 휠 조작\n\n**OKLCH 활용 (2026 트렌드)**\n\n- 시각적 균일 색상 시스템\n- 명도 일치 (HSL은 같은 L도 시각적 명도 다름)\n- 접근성 (WCAG 대비) 자동 보장\n- 다크 모드 색상 변환 자연스러움\n\n**선택 기준**\n\n- 코드 작성: HEX (짧음)\n- 디자인 시스템: HSL 또는 OKLCH\n- 그래픽 도구: HSV\n- 미래 표준: OKLCH" },
         { heading: "디자이너 색상 활용 5가지", body: "**1. 브랜드 컬러 정의**\n\n- 메인 컬러 (HEX 1개)\n- 보조 컬러 2~3개\n- 액센트 컬러 1개\n- 모두 동일 형식으로 문서화\n\n**2. 다크 모드 색상**\n\n- HSL 또는 OKLCH로 명도 변형\n- 라이트 모드 L 50% → 다크 모드 L 70~80%\n- 채도는 약간 낮춤 (다크 모드는 채도 낮은 게 자연스러움)\n\n**3. 색상 대비 (접근성)**\n\n- WCAG 2.1 기준 4.5:1 이상 (본문)\n- 3:1 이상 (큰 텍스트)\n- 색상 대비 도구 (WebAIM Contrast) 활용\n\n**4. 색상 팔레트 생성**\n\n- 메인 컬러 → HSL 변환 → L 변경 5~9단계\n- 50, 100, 200, 300, 400, 500 (메인), 600, 700, 800, 900\n- Tailwind CSS 같은 디자인 시스템 표준\n\n**5. 색조 변환 (Color Harmony)**\n\n- 보색 (Complementary): H + 180\n- 삼각 (Triadic): H + 120, +240\n- 사각 (Tetradic): H + 90, +180, +270\n- HSL의 H 값 조정으로 즉시 가능" },
-        { heading: "Toolkio 색상 변환기 + 도구 비교", body: "**Toolkio 색상 변환기**\n\n- HEX ↔ RGB ↔ HSL ↔ HSV 양방향\n- 색상 미리보기\n- 알파 채널 (투명도) 지원\n- 색상 코드 즉시 복사\n\n**비교 도구**\n\n- Coolors (coolors.co): 팔레트 생성\n- Adobe Color: 컬러 휠 + 트렌드\n- ColorZilla: 브라우저 확장 (스포이드)\n- Tailwind Color Palette: 디자인 시스템\n- Material Design Color Tool: Google 표준\n\n**디자이너 워크플로**\n\n1. 메인 컬러 결정 (Coolors)\n2. Toolkio로 5종 형식 변환\n3. CSS·디자인 도구에 적용\n4. WebAIM으로 접근성 검증\n5. 다크 모드 색상 자동 생성\n\n**OKLCH 학습 자료**\n\n- evilmartians.com (OKLCH 가이드)\n- oklch.com (변환 도구)\n- Tailwind v4 (OKLCH 채택)\n\n2026년 새 프로젝트는 OKLCH 채택 검토. 색상 시스템 미래." },
+        { heading: "Toolkio 색상 변환기 + 도구 비교", body: "**Toolkio 색상 변환기**\n\n- HEX ↔ RGB ↔ HSL ↔ HSV 양방향\n- 색상 미리보기\n- 알파 채널 (투명도) 지원\n- 색상 코드 즉시 복사\n\n**비교 도구**\n\n- Coolors (coolors.co): 팔레트 생성\n- Adobe Color: 컬러 휠 + 트렌드\n- ColorZilla: 브라우저 확장 (스포이드)\n- Tailwind Color Palette: 디자인 시스템\n- Material Design Color Tool: Google 표준\n\n**디자이너 워크플로**\n\n1. 메인 컬러 결정 (Coolors)\n2. Toolkio로 5종 형식 변환\n3. CSS·디자인 도구에 적용\n4. WebAIM으로 접근성 검증\n5. 다크 모드 색상 자동 생성\n\n**OKLCH 학습 자료**\n\n- evilmartians.com (OKLCH 가이드)\n- oklch.com (변환 도구)\n- Tailwind v4 (OKLCH 채택)\n\n2026년 새 프로젝트는 OKLCH 채택 검토. 색상 시스템 미래." }
       ],
       en: [
         { heading: "5 color formats", body: "RGB, HEX (web), HSL (system), HSV (design tools), OKLCH (2026 trend, perceptually uniform)." },
         { heading: "Strengths", body: "HEX for code, HSL for systems, HSV for design tools, OKLCH for accessibility." },
         { heading: "5 designer uses", body: "Brand colors, dark mode, accessibility, palette generation, color harmony." },
-        { heading: "Toolkio + tools", body: "Toolkio for conversion. Coolors for palettes, Tailwind for systems, Adobe Color for trends." },
+        { heading: "Toolkio + tools", body: "Toolkio for conversion. Coolors for palettes, Tailwind for systems, Adobe Color for trends." }
       ],
     },
     faq: [
@@ -12431,7 +10036,7 @@ export const blogPosts: BlogPost[] = [
       { question: "OKLCH가 정말 HSL보다 좋나요?", answer: "시각적 균일성에서 우수. 같은 L 값이라도 HSL은 색상마다 시각적 명도 다름. OKLCH는 일치. 접근성·다크 모드에 큰 장점. 단, 브라우저 지원 점진 확산 중." },
       { question: "RGB와 HEX 차이가 뭔가요?", answer: "표기법만 다르고 같은 색. RGB는 10진수 (255), HEX는 16진수 (FF). HEX가 짧지만 RGB가 사람에게 직관적. 변환은 즉시 가능." },
       { question: "Tailwind CSS의 색상 팔레트 어떻게 만들어진 건가요?", answer: "각 색상별 50, 100~900 11단계. HSL의 명도(L) 변경으로 생성. Tailwind v4부터는 OKLCH 채택해서 더 균일한 명도." },
-      { question: "다크 모드 색상은 어떻게 만드나요?", answer: "라이트 모드 색상 → HSL 변환 → 명도(L) 반전 (라이트 70% → 다크 30%). 채도(S) 약간 낮춤 (다크는 채도 낮은 게 자연스러움). OKLCH 사용 시 자동." },
+      { question: "다크 모드 색상은 어떻게 만드나요?", answer: "라이트 모드 색상 → HSL 변환 → 명도(L) 반전 (라이트 70% → 다크 30%). 채도(S) 약간 낮춤 (다크는 채도 낮은 게 자연스러움). OKLCH 사용 시 자동." }
     ],
   },
   {
@@ -12453,13 +10058,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "실수 1 — 표 정렬", body: "**잘못된 예 (정렬 안 됨)**\n\n```\n| 이름 | 나이 | 점수 |\n| 홍길동 | 30 | 85 |\n```\n\n**올바른 예 (구분 라인 필수)**\n\n```\n| 이름 | 나이 | 점수 |\n|------|------|------|\n| 홍길동 | 30 | 85 |\n```\n\n**정렬 옵션**\n\n```\n| 이름 | 나이 | 점수 |\n|:-----|:----:|-----:|\n| 홍길동 | 30 | 85 |\n```\n\n- `:----` 왼쪽 정렬\n- `:---:` 가운데 정렬\n- `----:` 오른쪽 정렬\n\n**팁**\n\n- 셀 수와 구분 라인 셀 수 일치 필수\n- 셀 안에 `|` 쓸 땐 `\\|`로 이스케이프\n- 큰 표는 별도 도구 (Tablesgenerator) 활용" },
         { heading: "실수 2 — 코드 블록 언어 명시", body: "**잘못된 예 (구문 강조 안 됨)**\n\n````\n```\nfunction hello() {\n  console.log('hello');\n}\n```\n````\n\n**올바른 예**\n\n````\n```javascript\nfunction hello() {\n  console.log('hello');\n}\n```\n````\n\n**언어 명시 효과**\n\n- 구문 강조 (Syntax Highlighting)\n- 가독성 향상\n- GitHub·Notion·VSCode 모두 적용\n\n**자주 쓰는 언어 코드**\n\n- `javascript` 또는 `js`\n- `typescript` 또는 `ts`\n- `python` 또는 `py`\n- `bash` 또는 `sh`\n- `html`, `css`, `sql`\n- `json`, `yaml`, `xml`\n- `diff`, `markdown`\n\n**인라인 코드**\n\n```\n`코드` 또는 `<code>`\n```\n\n백틱 1개 ↔ 코드 블록 백틱 3개 구분." },
         { heading: "실수 3·4 — 링크와 이미지", body: "**실수 3 — 링크 형식**\n\n**잘못된 예**\n\n- `[제목] (https://example.com)` (공백 있음)\n- `[제목](example.com)` (https:// 없음)\n\n**올바른 예**\n\n- `[제목](https://example.com)`\n- `[Toolkio](https://toolkio.com 'Toolkio 홈')` (툴팁)\n- `[참고 링크][ref]` + `[ref]: https://example.com`\n\n**자동 링크**\n\n- `<https://example.com>` (자동 링크 생성)\n- `<email@example.com>` (이메일 자동 링크)\n\n**실수 4 — 이미지 형식**\n\n**잘못된 예**\n\n- `(image.png)` (느낌표 없음)\n- `![](image.png)` (alt 없음 — SEO·접근성 마이너스)\n\n**올바른 예**\n\n- `![홍길동 프로필 사진](image.png)`\n- `![alt 텍스트](image.png 'title 텍스트')`\n- 절대 경로: `![alt](https://example.com/image.png)`\n- 상대 경로: `![alt](./images/photo.png)`\n\n**팁**\n\n- alt 텍스트 필수 (검색엔진·스크린리더)\n- 이미지 크기 조정은 마크다운 표준 X → HTML `<img>` 사용 또는 Notion/GitHub 별도 처리" },
-        { heading: "실수 5 + Toolkio 활용", body: "**실수 5 — 중첩 리스트 들여쓰기**\n\n**잘못된 예 (들여쓰기 부족)**\n\n```\n- 1단계\n - 2단계 (한 칸 들여쓰기)\n```\n\n**올바른 예**\n\n```\n- 1단계\n  - 2단계 (2칸 또는 4칸 들여쓰기)\n    - 3단계 (4칸 또는 8칸)\n```\n\n**렌더러별 차이**\n\n- GitHub: 2칸\n- Notion: 자동 처리\n- VSCode: 4칸\n- 안전한 선택: 2칸 통일\n\n**번호 리스트 + 중첩**\n\n```\n1. 첫째\n2. 둘째\n   - 하위 항목\n   - 하위 항목 2\n3. 셋째\n```\n\n**Toolkio 마크다운 미리보기**\n\n- 작성 즉시 렌더링 확인\n- GitHub Flavored Markdown (GFM) 지원\n- 표·코드·체크박스·이모지 모두 지원\n- 결과물 HTML 변환·복사\n\n**활용 사례**\n\n- README 작성\n- Notion·GitHub 문서\n- 블로그 초안\n- 회의록·정리 문서\n\n**팁**\n\n- 자주 쓰는 형식은 스니펫·템플릿 저장\n- 큰 문서는 VSCode + Markdown All in One 확장 추천\n- 발행 전 Toolkio 미리보기로 최종 확인" },
+        { heading: "실수 5 + Toolkio 활용", body: "**실수 5 — 중첩 리스트 들여쓰기**\n\n**잘못된 예 (들여쓰기 부족)**\n\n```\n- 1단계\n - 2단계 (한 칸 들여쓰기)\n```\n\n**올바른 예**\n\n```\n- 1단계\n  - 2단계 (2칸 또는 4칸 들여쓰기)\n    - 3단계 (4칸 또는 8칸)\n```\n\n**렌더러별 차이**\n\n- GitHub: 2칸\n- Notion: 자동 처리\n- VSCode: 4칸\n- 안전한 선택: 2칸 통일\n\n**번호 리스트 + 중첩**\n\n```\n1. 첫째\n2. 둘째\n   - 하위 항목\n   - 하위 항목 2\n3. 셋째\n```\n\n**Toolkio 마크다운 미리보기**\n\n- 작성 즉시 렌더링 확인\n- GitHub Flavored Markdown (GFM) 지원\n- 표·코드·체크박스·이모지 모두 지원\n- 결과물 HTML 변환·복사\n\n**활용 사례**\n\n- README 작성\n- Notion·GitHub 문서\n- 블로그 초안\n- 회의록·정리 문서\n\n**팁**\n\n- 자주 쓰는 형식은 스니펫·템플릿 저장\n- 큰 문서는 VSCode + Markdown All in One 확장 추천\n- 발행 전 Toolkio 미리보기로 최종 확인" }
       ],
       en: [
         { heading: "Mistake 1: Table alignment", body: "Separator line required. :--- left, :---: center, ---: right." },
         { heading: "Mistake 2: Code language", body: "Specify language for syntax highlighting. js, py, bash, sql etc." },
         { heading: "Mistake 3-4: Links and images", body: "No space in [text](url). Always include alt text for images." },
-        { heading: "Mistake 5 + Toolkio", body: "2-space indent for nested lists. Toolkio preview for instant rendering check." },
+        { heading: "Mistake 5 + Toolkio", body: "2-space indent for nested lists. Toolkio preview for instant rendering check." }
       ],
     },
     faq: [
@@ -12467,7 +10072,7 @@ export const blogPosts: BlogPost[] = [
       { question: "코드 블록에 언어 명시 안 해도 되나요?", answer: "기능적으론 OK. 단, 구문 강조 안 됨. 가독성 떨어지고 SEO에도 마이너스. 5초 투자해서 언어 명시 권장." },
       { question: "이미지 크기 조정은 어떻게 하나요?", answer: "마크다운 표준엔 없음. HTML `<img width='500'>` 사용 또는 Notion·GitHub 자체 기능 사용. 표준 마크다운만 쓰면 크기 조정 불가." },
       { question: "마크다운 vs MDX 차이가 뭔가요?", answer: "마크다운은 텍스트 중심, MDX는 마크다운 + JSX (React 컴포넌트). MDX는 블로그·문서에서 인터랙티브 컴포넌트 삽입 가능. 일반 문서는 마크다운으로 충분." },
-      { question: "GitHub README 작성에 추천하는 도구는?", answer: "VSCode + Markdown All in One 확장이 표준. 미리보기·표 자동 정렬·링크 검증 모두 지원. Toolkio는 빠른 변환·미리보기에 좋음." },
+      { question: "GitHub README 작성에 추천하는 도구는?", answer: "VSCode + Markdown All in One 확장이 표준. 미리보기·표 자동 정렬·링크 검증 모두 지원. Toolkio는 빠른 변환·미리보기에 좋음." }
     ],
   },
   {
@@ -12489,13 +10094,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "BMR vs TDEE 기본", body: "**BMR (Basal Metabolic Rate)**\n\n- 기초대사량\n- 본인이 가만히 있어도 소비하는 칼로리\n- 호흡·체온 유지·뇌 활동 등\n- 하루 총 소비의 60~75%\n\n**TDEE (Total Daily Energy Expenditure)**\n\n- 일일 총 소비 칼로리\n- BMR + 활동 + 운동 + 음식 소화\n- 다이어트·증량 기준\n\n**BMR 계산 공식 (Mifflin-St Jeor)**\n\n- 남성: 10 × 체중(kg) + 6.25 × 키(cm) - 5 × 나이 + 5\n- 여성: 10 × 체중(kg) + 6.25 × 키(cm) - 5 × 나이 - 161\n\n**예시 (30세 여성, 65kg, 165cm)**\n\nBMR = 10×65 + 6.25×165 - 5×30 - 161\n    = 650 + 1031 - 150 - 161\n    = 1370 kcal\n\n**활동량 계수 (TDEE 계산)**\n\n- 거의 안 움직임: × 1.2\n- 가벼운 활동 (주 1~3일 운동): × 1.375\n- 보통 활동 (주 3~5일): × 1.55\n- 활발 (주 6~7일): × 1.725\n- 매우 활발 (육체 노동 + 운동): × 1.9" },
         { heading: "활용 1·2 — 다이어트와 증량", body: "**활용 1 — 다이어트**\n\n- TDEE - 500 kcal = 다이어트 칼로리\n- 주 0.5kg 감량 목표\n- 너무 적으면 (BMR 이하) 요요·근육 손실\n\n**예시 (TDEE 2,200 kcal)**\n\n- 다이어트 칼로리: 1,700 kcal\n- BMR 1,370 미만 금지\n- 단백질 1.5g/kg (97g) 유지\n\n**감량 페이스**\n\n- 주 0.5kg: -500 kcal/일 (안전)\n- 주 1kg: -1000 kcal/일 (어려움·근손실 위험)\n- 주 1.5kg+: 권장 안 함\n\n**활용 2 — 근육 증량**\n\n- TDEE + 300~500 kcal = 증량 칼로리\n- 단백질 1.6~2.2g/kg\n- 주 0.25~0.5kg 증량 목표\n\n**과도한 증량 부작용**\n\n- 지방 과다 축적\n- 다이어트 시 손실 증가\n- 천천히 깔끔하게 증량 권장" },
         { heading: "활용 3·4 — 운동·식단", body: "**활용 3 — 운동 칼로리 계산**\n\n**유산소 운동 소모 칼로리 (체중 65kg 기준)**\n\n- 걷기 (5km/h): 시간당 200 kcal\n- 빠른 걷기 (6.5km/h): 300 kcal\n- 조깅 (8km/h): 500 kcal\n- 자전거 (보통): 400 kcal\n- 수영: 500~700 kcal\n- 줄넘기: 700 kcal\n\n**무게 운동 (시간당)**\n\n- 일반 헬스: 250~400 kcal\n- HIIT: 500~700 kcal\n\n**팁**\n\n- 운동 칼로리는 추정치 (개인차 ±20%)\n- 운동 후 식사 → 운동 효과 상쇄 가능\n- 운동 + 식단 동시 관리가 핵심\n\n**활용 4 — 식단 계획**\n\n**다이어트 식단 (1,700 kcal 예시)**\n\n- 아침: 400 kcal (탄수+단백)\n- 점심: 600 kcal (균형식)\n- 저녁: 500 kcal (단백 위주)\n- 간식: 200 kcal (견과·과일)\n\n**증량 식단 (2,500 kcal 예시)**\n\n- 아침: 600 kcal (탄수+단백+지방)\n- 점심: 800 kcal\n- 저녁: 700 kcal\n- 간식 2회: 400 kcal\n\n**팁**\n\n- 칼로리 추적 앱 활용 (FatSecret·Lose It·Cronometer)\n- 1주일 평균으로 판단 (일일 변동 정상)" },
-        { heading: "활용 5 + Toolkio 활용", body: "**활용 5 — 체중 유지**\n\n- TDEE 그대로 = 체중 유지\n- 활동량 변화 시 재계산\n- 나이 들면서 BMR 감소 (10년에 약 -100 kcal)\n\n**체중 유지 팁**\n\n- 매주 같은 시간 체중 측정\n- ±1kg 변동은 정상 (수분 등)\n- 2~3kg 변동 시 식단 조정\n\n**Toolkio BMR 계산기**\n\n- 성별·나이·키·체중 입력\n- BMR + TDEE 동시 계산\n- 활동량 5단계 선택\n- 다이어트·유지·증량 칼로리 자동\n\n**5가지 자주 하는 실수**\n\n1. 운동 칼로리 과대 평가 → 식사로 상쇄\n2. BMR 이하로 다이어트 → 요요·근손실\n3. 단백질 부족 → 근육 손실\n4. 일일 변동 과민 반응 → 1주 평균으로 판단\n5. 활동량 자가 평가 부정확 → 처음엔 한 단계 낮게 잡고 조정\n\n**팁**\n\nBMR·TDEE는 추정치(±10%). 실제 체중 변화 보고 2~4주마다 조정. 칼로리 100% 정확보다 일관된 추적이 더 중요." },
+        { heading: "활용 5 + Toolkio 활용", body: "**활용 5 — 체중 유지**\n\n- TDEE 그대로 = 체중 유지\n- 활동량 변화 시 재계산\n- 나이 들면서 BMR 감소 (10년에 약 -100 kcal)\n\n**체중 유지 팁**\n\n- 매주 같은 시간 체중 측정\n- ±1kg 변동은 정상 (수분 등)\n- 2~3kg 변동 시 식단 조정\n\n**Toolkio BMR 계산기**\n\n- 성별·나이·키·체중 입력\n- BMR + TDEE 동시 계산\n- 활동량 5단계 선택\n- 다이어트·유지·증량 칼로리 자동\n\n**5가지 자주 하는 실수**\n\n1. 운동 칼로리 과대 평가 → 식사로 상쇄\n2. BMR 이하로 다이어트 → 요요·근손실\n3. 단백질 부족 → 근육 손실\n4. 일일 변동 과민 반응 → 1주 평균으로 판단\n5. 활동량 자가 평가 부정확 → 처음엔 한 단계 낮게 잡고 조정\n\n**팁**\n\nBMR·TDEE는 추정치(±10%). 실제 체중 변화 보고 2~4주마다 조정. 칼로리 100% 정확보다 일관된 추적이 더 중요." }
       ],
       en: [
         { heading: "BMR vs TDEE", body: "BMR is rest calories, TDEE includes activity. Mifflin-St Jeor formula standard." },
         { heading: "Use 1-2: Diet and bulk", body: "Diet: TDEE - 500. Bulk: TDEE + 300~500. Never below BMR." },
         { heading: "Use 3-4: Exercise and meals", body: "Cardio 300~700/hr, weights 250~400/hr. Track meals with apps." },
-        { heading: "Use 5 + Toolkio", body: "Weight maintain at TDEE. Toolkio auto-calculates 5 scenarios. Adjust monthly." },
+        { heading: "Use 5 + Toolkio", body: "Weight maintain at TDEE. Toolkio auto-calculates 5 scenarios. Adjust monthly." }
       ],
     },
     faq: [
@@ -12503,7 +10108,7 @@ export const blogPosts: BlogPost[] = [
       { question: "운동 안 해도 BMR 늘릴 수 있나요?", answer: "근육량 증가가 가장 효과적. 근육 1kg = BMR +13~22 kcal/일. 단순 다이어트는 BMR 감소 (요요 위험). 근력 운동 병행 권장." },
       { question: "BMR보다 적게 먹으면 무조건 안 좋은가요?", answer: "장기적 BMR 이하 식단은 위험 (대사 적응·근손실·영양 부족). 단기 (1~2주) 빠른 다이어트는 가능하지만 의사·영양사 상담 권장." },
       { question: "여성·남성 BMR 차이 왜 그런가요?", answer: "남성이 평균적으로 근육량 많고 체격 큼. 같은 키·체중이라도 남성 BMR이 161 kcal 정도 높음. 호르몬 차이도 영향." },
-      { question: "BMR 계산이 정확한가요?", answer: "추정치 (±10%). 실제 측정은 의료기관 (간접 측정 칼로리미터). 일반 사용은 Mifflin-St Jeor 공식으로 충분. 본인 체중 변화 보고 조정." },
+      { question: "BMR 계산이 정확한가요?", answer: "추정치 (±10%). 실제 측정은 의료기관 (간접 측정 칼로리미터). 일반 사용은 Mifflin-St Jeor 공식으로 충분. 본인 체중 변화 보고 조정." }
     ],
   },
   {
@@ -12525,13 +10130,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "이력서·자기소개서 표준 한도", body: "**기업 자기소개서 평균**\n\n- 항목당 500자 (가장 흔함)\n- 공백 포함 1,000자 (대기업 특정 항목)\n- 1,500자 이상 (특이 케이스)\n\n**대기업별 차이**\n\n- 삼성: 항목당 700자\n- 현대차: 항목당 1,000자\n- LG: 항목당 1,500자\n- SK: 항목당 1,000자\n- 카카오·네이버: 항목당 500~1,000자\n\n**이력서 특화 한도**\n\n- 자기소개 한 줄: 50자\n- 직무 요약: 200자\n- 경력 사항 (한 회사): 300~500자\n- 자기소개서 (전체): 1,500~3,000자\n\n**팁**\n\n공백 포함 vs 제외는 기업마다 다름. 입력란에 카운터 있는지 먼저 확인. 안전하게는 공백 제외 기준으로 작성." },
         { heading: "SNS·블로그 글자수 한도", body: "**Twitter/X**\n\n- 트윗: 280자 (영문 기준)\n- 한국어: 약 140자 (한 글자 = 2바이트)\n- 프리미엄 가입: 25,000자\n\n**Instagram**\n\n- 캡션: 2,200자 (해시태그 포함)\n- 댓글: 2,200자\n- 바이오 (프로필): 150자\n- 첫 줄 (피드 표시): 125자 — 이 안에 후킹 필수\n\n**Facebook**\n\n- 게시물: 63,206자 (사실상 무제한)\n- 권장: 80자 이내 (참여율 최고)\n\n**네이버 블로그**\n\n- 제목: 50자\n- 본문: 무제한 (실질 한도 약 6만자)\n- 권장: 1,500~3,000자 (SEO 최적)\n\n**카카오톡 채널**\n\n- 메시지: 1,000자\n- 알림톡: 1,000자\n\n**유튜브**\n\n- 제목: 100자\n- 설명: 5,000자\n- 댓글: 10,000자" },
         { heading: "카드뉴스·전단지 한도", body: "**인스타 카드뉴스**\n\n- 한 장 추천: 60~100자\n- 최대: 150자 (가독성 한계)\n- 핵심 메시지: 30자 이내\n- 한 줄당 12~16자 (모바일 가독성)\n\n**전단지·포스터**\n\n- 헤드라인: 15자\n- 서브 헤드라인: 30자\n- 본문 (1단): 100~200자\n- CTA: 10~15자\n\n**카카오톡 카드뉴스**\n\n- 한 장: 80~120자\n- 4~6장 시리즈 권장\n\n**팁**\n\n- 한 장에 너무 많이 = 안 읽음\n- 핵심 1개씩 — 다음 장으로 유도\n- 모바일 화면 기준 16자 × 6줄 = 96자가 황금 비율" },
-        { heading: "Toolkio 글자수 + 활용 팁", body: "**Toolkio 글자수 카운터**\n\n- 공백 포함/제외 동시 표시\n- 바이트 (UTF-8) 표시 — 한글 3바이트, 영문 1바이트\n- 단어 수·줄 수 표시\n- 실시간 입력 카운트\n\n**활용 시나리오**\n\n1. **자기소개서 작성**\n   - 항목별 카운트\n   - 공백 포함/제외 둘 다 확인\n   - 마감 직전 마지막 점검\n\n2. **SNS 작성**\n   - 인스타 첫 줄 125자\n   - 트위터 280자\n   - 카카오 1,000자\n\n3. **카드뉴스 디자인**\n   - 한 장 100자 룰\n   - 한 줄 16자 룰\n\n**자주 하는 실수**\n\n- 공백 포함 한도인데 공백 제외로 작성 → 부족\n- HTML 태그 포함 카운트 (블로그 쪽) → 실제보다 길게 보임\n- 이모지 카운트 (1~4 바이트 차이) → 의외의 초과\n\n팁: 마감 30분 전 카운터로 최종 점검 필수." },
+        { heading: "Toolkio 글자수 + 활용 팁", body: "**Toolkio 글자수 카운터**\n\n- 공백 포함/제외 동시 표시\n- 바이트 (UTF-8) 표시 — 한글 3바이트, 영문 1바이트\n- 단어 수·줄 수 표시\n- 실시간 입력 카운트\n\n**활용 시나리오**\n\n1. **자기소개서 작성**\n   - 항목별 카운트\n   - 공백 포함/제외 둘 다 확인\n   - 마감 직전 마지막 점검\n\n2. **SNS 작성**\n   - 인스타 첫 줄 125자\n   - 트위터 280자\n   - 카카오 1,000자\n\n3. **카드뉴스 디자인**\n   - 한 장 100자 룰\n   - 한 줄 16자 룰\n\n**자주 하는 실수**\n\n- 공백 포함 한도인데 공백 제외로 작성 → 부족\n- HTML 태그 포함 카운트 (블로그 쪽) → 실제보다 길게 보임\n- 이모지 카운트 (1~4 바이트 차이) → 의외의 초과\n\n팁: 마감 30분 전 카운터로 최종 점검 필수." }
       ],
       en: [
         { heading: "Resume limits", body: "Korean corporate self-intro: 500-1,500 chars per item. Samsung 700, Hyundai/LG/SK 1000-1500." },
         { heading: "SNS limits", body: "Twitter 280, Instagram 2200, Naver blog title 50, YouTube title 100." },
         { heading: "Card news limits", body: "Per slide 60-150 chars. 16 chars per line on mobile. CTA under 15." },
-        { heading: "Toolkio + tips", body: "Counter shows with/without spaces, bytes. Watch for HTML tags and emoji counting." },
+        { heading: "Toolkio + tips", body: "Counter shows with/without spaces, bytes. Watch for HTML tags and emoji counting." }
       ],
     },
     faq: [
@@ -12539,7 +10144,7 @@ export const blogPosts: BlogPost[] = [
       { question: "한글 한 글자가 몇 바이트인가요?", answer: "UTF-8 기준 3바이트 (대부분 시스템). EUC-KR 기준 2바이트 (구형 시스템). 일반적으론 3바이트로 계산." },
       { question: "이모지가 글자수에 어떻게 카운트되나요?", answer: "기본 이모지 1~2 바이트, 결합 이모지 4~8 바이트. 시스템마다 다름. 정확한 카운트는 Toolkio 같은 도구로 측정." },
       { question: "인스타 캡션 첫 줄에 후킹 왜 필수?", answer: "피드 표시는 첫 125자만. 그 다음은 \"더 보기\" 클릭. 첫 줄에 핵심 메시지 + 후킹 없으면 스크롤로 넘어감. 첫 줄이 광고 카피의 90%." },
-      { question: "네이버 블로그 SEO에 글자수 영향 있나요?", answer: "직접적 한도는 없지만 1,500자 미만은 SEO 평가 낮음. 1,500~3,000자가 가장 좋음. 너무 길어도 (5,000자+) 분산되어 효과 떨어짐." },
+      { question: "네이버 블로그 SEO에 글자수 영향 있나요?", answer: "직접적 한도는 없지만 1,500자 미만은 SEO 평가 낮음. 1,500~3,000자가 가장 좋음. 너무 길어도 (5,000자+) 분산되어 효과 떨어짐." }
     ],
   },
   {
@@ -12561,13 +10166,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "한국형 QR 결제 5종 비교", body: "**카카오페이 QR**\n\n- 4,500만 가입자 (국내 1위)\n- 매장 결제 + 친구 송금\n- 카카오톡 통합\n- 수수료: 매장 0.5~1.0%\n\n**토스 QR**\n\n- 2,000만 가입자\n- 송금 무료 (5만원 이하)\n- 빠른 UX\n- 수수료: 매장 0.5~0.8%\n\n**삼성페이 QR**\n\n- 갤럭시 폰 기본 탑재\n- NFC + QR 듀얼\n- 신용카드 연동 강함\n- 수수료: 신용카드 수수료 (2~3%)\n\n**제로페이**\n\n- 정부 주도 (소상공인)\n- 수수료 0% (8억원 이하 매장)\n- 30% 소득공제\n- 사용자 적음 (1,500만)\n\n**네이버페이 QR**\n\n- 네이버 통합 (쇼핑·블로그)\n- 포인트 적립 강함\n- 매장 적음\n- 수수료: 매장 0.7~1.2%" },
         { heading: "활용 1·2 — 매장 도입·송금", body: "**활용 1 — 매장 QR 결제 도입**\n\n5분 만에 가능.\n\n- 카카오페이 비즈 신청 (사업자번호 필요)\n- 토스 비즈 등록\n- 매장 QR 스티커 인쇄\n- 결제 알림 받을 핸드폰 설정\n\n**도입 효과**\n\n- 카드 단말기 없어도 OK (소규모 매장)\n- 수수료 절감 (제로페이 0%)\n- 빠른 결제 (3초 내)\n- 비대면 결제 (코로나 이후 표준)\n\n**활용 2 — 친구 송금**\n\n- 카카오: 카카오톡 친구 → QR로 송금\n- 토스: 비밀번호 4자리만 → 즉시 이체\n- 1일 한도: 카카오 200만원, 토스 100만원\n- 무료 한도: 카카오 5만원/회, 토스 5만원/일\n\n**활용 사례**\n\n- 회식비 1/N 정산\n- 친구 빌린 돈 즉시 갚기\n- 결혼식·돌잔치 축의금\n- 부모님 용돈" },
         { heading: "활용 3·4·5 — 이벤트·명함·세금", body: "**활용 3 — 이벤트 QR**\n\n오프라인 매장·전시 부스에서.\n\n- 출석 체크 QR\n- 설문조사 QR\n- 사은품 응모 QR\n- 인스타 팔로우 QR\n- 카카오톡 채널 추가 QR\n\n**활용 4 — 디지털 명함**\n\n- 이름·연락처·이메일 정보 QR\n- 명함 뒷면에 인쇄\n- 받은 사람이 스캔 → 자동 연락처 저장\n- 환경 친화 (종이 절감)\n\n**디지털 명함 정보 표준 (vCard)**\n\n```\nBEGIN:VCARD\nVERSION:3.0\nFN:홍길동\nORG:회사명\nTEL:010-1234-5678\nEMAIL:hong@example.com\nEND:VCARD\n```\n\n**활용 5 — 부가세 신고 QR (현금영수증)**\n\n- 매장에서 QR 스캔 → 자동 현금영수증 발행\n- 국세청 홈택스 연동\n- 소득공제 자동 적용\n- 영수증 보관 부담 X" },
-        { heading: "Toolkio QR + 도입 팁", body: "**Toolkio QR 생성기**\n\n- URL·텍스트·연락처·WiFi·이메일 등 다양한 형식\n- 색상·로고 추가 (브랜드 QR)\n- PNG·SVG 다운로드\n- 무료·무제한·로그인 X\n\n**매장 QR 도입 5단계**\n\n1. **사업자 등록증 준비** (개인사업자 OK)\n2. **카카오페이 비즈·토스 비즈 가입**\n3. **매장 QR 스티커 신청** (무료 발송)\n4. **결제 알림 설정** (소리 + 진동)\n5. **첫 결제 테스트** (본인 폰으로 1,000원 결제)\n\n**비용 비교 (월 매출 1,000만원 기준)**\n\n- 카드 단말기: 수수료 2.5% = 25만원\n- QR 결제: 수수료 0.5~1.0% = 5~10만원\n- 제로페이: 수수료 0% = 0원\n\n월 15~25만원 절약. 1년 200~300만원 차이.\n\n**자주 하는 실수**\n\n- QR 스티커 코팅 안 함 → 손님 손때로 인식 안 됨\n- 매장 깊숙이 부착 → 손님이 못 봄\n- 결제 알림 안 받음 → 결제 누락\n\n팁: 카운터 정면 + A5 크기 + 코팅 + 알림 30dB 이상." },
+        { heading: "Toolkio QR + 도입 팁", body: "**Toolkio QR 생성기**\n\n- URL·텍스트·연락처·WiFi·이메일 등 다양한 형식\n- 색상·로고 추가 (브랜드 QR)\n- PNG·SVG 다운로드\n- 무료·무제한·로그인 X\n\n**매장 QR 도입 5단계**\n\n1. **사업자 등록증 준비** (개인사업자 OK)\n2. **카카오페이 비즈·토스 비즈 가입**\n3. **매장 QR 스티커 신청** (무료 발송)\n4. **결제 알림 설정** (소리 + 진동)\n5. **첫 결제 테스트** (본인 폰으로 1,000원 결제)\n\n**비용 비교 (월 매출 1,000만원 기준)**\n\n- 카드 단말기: 수수료 2.5% = 25만원\n- QR 결제: 수수료 0.5~1.0% = 5~10만원\n- 제로페이: 수수료 0% = 0원\n\n월 15~25만원 절약. 1년 200~300만원 차이.\n\n**자주 하는 실수**\n\n- QR 스티커 코팅 안 함 → 손님 손때로 인식 안 됨\n- 매장 깊숙이 부착 → 손님이 못 봄\n- 결제 알림 안 받음 → 결제 누락\n\n팁: 카운터 정면 + A5 크기 + 코팅 + 알림 30dB 이상." }
       ],
       en: [
         { heading: "5 Korean QR services", body: "Kakao Pay (45M users), Toss (20M), Samsung Pay, Zero Pay (gov), Naver Pay." },
         { heading: "Store and transfer", body: "Free 5min setup. P2P transfer free under 50k won. Zero Pay 0% fee for small biz." },
         { heading: "Events, cards, tax", body: "Event check-in, vCard digital cards, auto cash receipt for tax filing." },
-        { heading: "Toolkio + tips", body: "Free unlimited QR. Store setup 5 steps. Save 15-25万원/month vs card terminals." },
+        { heading: "Toolkio + tips", body: "Free unlimited QR. Store setup 5 steps. Save 15-25万원/month vs card terminals." }
       ],
     },
     faq: [
@@ -12575,7 +10180,7 @@ export const blogPosts: BlogPost[] = [
       { question: "QR 결제 수수료가 정말 0%인가요?", answer: "제로페이는 매출 8억원 이하 매장 수수료 0%. 카카오·토스·네이버는 0.5~1.2% 부과. 단, 카드 결제 (2~3%)보다 절반 이하." },
       { question: "외국인 관광객도 한국 QR 결제 쓸 수 있나요?", answer: "기본은 한국 계좌·카드 연동 필요해서 어려움. 알리페이·위챗페이는 한국 매장 일부 호환. 외국인은 신용카드가 일반적." },
       { question: "QR 스티커 어떻게 만드나요?", answer: "Toolkio 같은 무료 QR 생성기 → PNG 다운로드 → 일반 인쇄소에서 코팅 인쇄 (1장 1,000~3,000원). 카카오·토스 비즈 신청하면 무료 스티커 발송." },
-      { question: "QR 결제할 때 보안 안전한가요?", answer: "결제 시 비밀번호·생체인증 필수라 도난당해도 결제 어려움. 다만 QR 자체는 누구나 스캔 가능 → 결제 비밀번호 절대 노출 X." },
+      { question: "QR 결제할 때 보안 안전한가요?", answer: "결제 시 비밀번호·생체인증 필수라 도난당해도 결제 어려움. 다만 QR 자체는 누구나 스캔 가능 → 결제 비밀번호 절대 노출 X." }
     ],
   },
   {
@@ -12597,13 +10202,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "Base64 기본 원리", body: "**Base64는 무엇인가**\n\n- 이진 데이터(바이너리)를 텍스트 64개 문자로 변환\n- 사용 문자: A-Z, a-z, 0-9, +, /, = (패딩)\n- 데이터 크기 약 33% 증가\n- 인코딩이지 암호화 아님 (보안 X)\n\n**왜 필요한가**\n\n- 텍스트만 처리하는 시스템에 바이너리 전달\n- 이메일·HTTP 헤더·JSON 등\n- URL 안전 변환\n\n**기본 변환 예시**\n\n- 원본: `Hello`\n- Base64: `SGVsbG8=`\n\n**URL Safe Base64**\n\n- 일반 Base64의 `+`, `/`을 `-`, `_`로 대체\n- URL 파라미터·쿼리스트링에 안전\n- JWT 토큰 등에 사용\n\n**디코딩**\n\n- Base64 → 원본 바이너리\n- 텍스트·이미지·PDF 등 복원" },
         { heading: "활용 1·2 — 이메일·이미지", body: "**활용 1 — 이메일 첨부 (MIME)**\n\n이메일 표준은 텍스트만 전송. 첨부파일은 Base64 인코딩.\n\n```\nContent-Type: image/png; name=\"photo.png\"\nContent-Transfer-Encoding: base64\n\niVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAA...\n```\n\n**활용 사례**\n\n- 자동화 이메일 발송 (Python·Node.js)\n- API로 이메일 첨부 보내기 (SendGrid·Mailgun)\n- 첨부 데이터 데이터베이스 저장\n\n**활용 2 — 이미지 인라인 임베딩 (Data URL)**\n\nHTML·CSS에 이미지를 외부 파일 없이 직접 삽입.\n\n```\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEU...\" />\n```\n\n**언제 좋은가**\n\n- 작은 아이콘 (10KB 이하)\n- 외부 요청 줄여 빠른 로딩\n- 이메일 본문 이미지 (외부 차단 회피)\n\n**언제 나쁜가**\n\n- 큰 이미지 (Base64는 33% 증가)\n- HTTP 캐싱 안 됨\n- 가독성 떨어짐 (HTML 길어짐)" },
         { heading: "활용 3·4 — API·인증", body: "**활용 3 — API 헤더 (바이너리 전송)**\n\nHTTP 헤더는 텍스트만 — 바이너리 전송 시 Base64.\n\n**예시 — 이미지 업로드 API**\n\n```\nPOST /upload\nX-Image-Data: iVBORw0KGgoAAAANSUhEU...\nContent-Type: application/json\n\n{\"filename\": \"photo.png\"}\n```\n\n**JSON 안에 바이너리 포함**\n\n```json\n{\n  \"name\": \"photo.png\",\n  \"data\": \"iVBORw0KGgoAAAANSUhEU...\",\n  \"size\": 12345\n}\n```\n\n**활용 4 — Basic 인증 (HTTP)**\n\nHTTP Basic Auth 표준.\n\n```\nAuthorization: Basic dXNlcjpwYXNz\n```\n\n**디코딩**\n\n- `dXNlcjpwYXNz` → `user:pass`\n- 형식: `username:password`\n\n**보안 주의**\n\n- Base64는 암호화 아님 — HTTPS 필수\n- 누구나 디코딩 가능 → 평문 노출\n- 운영에선 OAuth·JWT 권장" },
-        { heading: "활용 5 + Toolkio + 보안", body: "**활용 5 — 웹훅 서명 검증**\n\n웹훅 (GitHub·Slack·Stripe) 서명에 Base64 사용.\n\n**Stripe 웹훅 예시**\n\n```\nStripe-Signature: t=1614556800,v1=Base64인코딩서명...\n```\n\n**검증 단계**\n\n1. 페이로드 + 시크릿 → HMAC SHA256\n2. 결과를 Base64 인코딩\n3. 헤더의 v1과 비교\n4. 일치하면 정상 웹훅\n\n**Node.js 검증 코드**\n\n```javascript\nconst crypto = require('crypto');\nconst hash = crypto.createHmac('sha256', secret)\n  .update(payload)\n  .digest('base64');\nconst valid = hash === signature;\n```\n\n**Toolkio Base64 변환기**\n\n- 텍스트 ↔ Base64 양방향\n- 파일 → Base64 (이미지·PDF)\n- URL Safe 옵션\n- 결과 즉시 복사\n\n**보안 주의**\n\n- Base64는 암호화 아니에요 — 누구나 디코딩\n- 비밀번호·API 키를 Base64로 \"숨겼다\"고 안전한 게 아님\n- 진짜 보안은 AES·RSA 같은 암호화\n- HTTPS는 필수 (Base64만으론 평문 노출)\n\n**활용 결정 가이드**\n\n- 바이너리 → 텍스트 전송: ✅ Base64\n- 이메일 첨부: ✅ Base64 (MIME 표준)\n- API 인증: ⚠️ HTTPS + Basic 또는 OAuth\n- 비밀번호 저장: ❌ Base64 X (해시 사용)\n- 데이터 암호화: ❌ Base64 X (AES 사용)" },
+        { heading: "활용 5 + Toolkio + 보안", body: "**활용 5 — 웹훅 서명 검증**\n\n웹훅 (GitHub·Slack·Stripe) 서명에 Base64 사용.\n\n**Stripe 웹훅 예시**\n\n```\nStripe-Signature: t=1614556800,v1=Base64인코딩서명...\n```\n\n**검증 단계**\n\n1. 페이로드 + 시크릿 → HMAC SHA256\n2. 결과를 Base64 인코딩\n3. 헤더의 v1과 비교\n4. 일치하면 정상 웹훅\n\n**Node.js 검증 코드**\n\n```javascript\nconst crypto = require('crypto');\nconst hash = crypto.createHmac('sha256', secret)\n  .update(payload)\n  .digest('base64');\nconst valid = hash === signature;\n```\n\n**Toolkio Base64 변환기**\n\n- 텍스트 ↔ Base64 양방향\n- 파일 → Base64 (이미지·PDF)\n- URL Safe 옵션\n- 결과 즉시 복사\n\n**보안 주의**\n\n- Base64는 암호화 아니에요 — 누구나 디코딩\n- 비밀번호·API 키를 Base64로 \"숨겼다\"고 안전한 게 아님\n- 진짜 보안은 AES·RSA 같은 암호화\n- HTTPS는 필수 (Base64만으론 평문 노출)\n\n**활용 결정 가이드**\n\n- 바이너리 → 텍스트 전송: ✅ Base64\n- 이메일 첨부: ✅ Base64 (MIME 표준)\n- API 인증: ⚠️ HTTPS + Basic 또는 OAuth\n- 비밀번호 저장: ❌ Base64 X (해시 사용)\n- 데이터 암호화: ❌ Base64 X (AES 사용)" }
       ],
       en: [
         { heading: "Base64 basics", body: "Encode binary to 64-char text. 33% size increase. NOT encryption." },
         { heading: "Email and image", body: "MIME email attachments, HTML data URL for small icons. Avoid for large images." },
         { heading: "API and auth", body: "Binary in HTTP headers, JSON. Basic Auth: base64(user:pass). HTTPS required." },
-        { heading: "Webhook + Toolkio", body: "Stripe/GitHub webhook signature validation. Toolkio for instant conversion." },
+        { heading: "Webhook + Toolkio", body: "Stripe/GitHub webhook signature validation. Toolkio for instant conversion." }
       ],
     },
     faq: [
@@ -12611,7 +10216,7 @@ export const blogPosts: BlogPost[] = [
       { question: "Base64 vs URL Encoding 차이?", answer: "Base64는 바이너리 → 텍스트 전체 변환 (33% 증가). URL Encoding은 특수문자만 % 형식 변환 (가벼움). 용도 다름. URL 파라미터에 바이너리 넣으려면 Base64 + URL Encoding 둘 다 사용." },
       { question: "Base64 디코딩이 깨지면 어떻게 하나요?", answer: "원인: 1) 패딩 = 누락 2) URL Safe vs 일반 Base64 차이 3) 줄바꿈·공백 포함. Toolkio는 자동 처리. 수동 디코딩 시 패딩 보충 후 시도." },
       { question: "이미지를 Base64로 바꿀 때 크기 증가가 문제 안 되나요?", answer: "10KB 이하 아이콘은 OK (HTTP 요청 절감 효과). 큰 이미지는 일반 외부 파일이 빠름 (캐싱 작동). 1MB 이미지는 Base64 1.3MB → 매번 다운로드 → 느림." },
-      { question: "Basic Auth가 보안에 안전한가요?", answer: "HTTPS와 함께 쓰면 OK (전송 중 암호화). HTTPS 없으면 평문 노출 (Wireshark로 볼 수 있음). 운영 환경은 OAuth 2.0 또는 JWT 토큰 권장. 내부 API는 Basic 가능." },
+      { question: "Basic Auth가 보안에 안전한가요?", answer: "HTTPS와 함께 쓰면 OK (전송 중 암호화). HTTPS 없으면 평문 노출 (Wireshark로 볼 수 있음). 운영 환경은 OAuth 2.0 또는 JWT 토큰 권장. 내부 API는 Basic 가능." }
     ],
   },
   {
@@ -12633,13 +10238,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "MD5와 SHA-256 핵심 차이", body: "**MD5 (Message Digest 5)**\n\n- 출력: 128비트 (16바이트, 32 헥사 문자)\n- 발표: 1992년\n- 속도: 매우 빠름 (CPU 5GB/초)\n- 보안: ❌ 깨짐 (2004년 충돌 발견)\n- 용도: 단순 무결성 체크 (보안 X)\n\n**SHA-256 (Secure Hash Algorithm 256)**\n\n- 출력: 256비트 (32바이트, 64 헥사 문자)\n- 발표: 2001년\n- 속도: 빠름 (CPU 1.5GB/초, MD5의 1/3)\n- 보안: ✅ 안전 (충돌 미발견)\n- 용도: 보안 + 무결성 모두\n\n**길이 차이 시각화**\n\n```\nMD5:     5d41402abc4b2a76b9719d911017c592\nSHA-256: 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824\n```\n\n**핵심 결론**\n\n- 보안 필요 → SHA-256\n- 보안 무관·속도 우선 → MD5 OK\n- 비밀번호 → 둘 다 X (bcrypt·argon2 사용)" },
         { heading: "보안 차이 — 충돌·역산", body: "**MD5의 약점**\n\n**1. 충돌 (Collision) 공격 가능**\n\n다른 두 입력이 같은 MD5 해시를 만들 수 있음.\n\n```\n입력 A: \"Hello\"      → 8b1a9953c4611296a827abf8c47804d7\n입력 B: 조작된 바이너리 → 8b1a9953c4611296a827abf8c47804d7\n```\n\n2004년 발견, 현재 노트북으로 분 단위 가능.\n\n**2. 사전 공격 (Preimage Attack)**\n\n- MD5 해시 → 원본 추정 가능 (특정 조건)\n- 짧은 비밀번호는 무지개 테이블로 즉시 깨짐\n\n**SHA-256의 강점**\n\n**1. 충돌 발견 안 됨**\n\n- 이론상 2^128 시도 필요 — 현실 불가능\n- Bitcoin·HTTPS 등 핵심 시스템 사용\n\n**2. 사전 공격 어려움**\n\n- 256비트 출력 → 2^256 가능성\n- 무차별 대입 시간 우주 나이 초과\n\n**실전 영향**\n\n- 디지털 서명: MD5 ❌ → SHA-256 필수\n- SSL/TLS 인증서: SHA-256 표준\n- Bitcoin: SHA-256 사용\n- 정부·금융: SHA-256 의무" },
         { heading: "용도별 어떤 걸 써야 하나", body: "**1. 비밀번호 저장**\n\n- ❌ MD5: 깨지기 너무 쉬움\n- ❌ SHA-256: 너무 빠름 (무차별 대입 가능)\n- ✅ bcrypt: 의도적 느림 (적정 보안)\n- ✅ argon2: 최신 표준\n- ✅ scrypt: 메모리 기반\n\n**2. 파일 무결성 (다운로드 검증)**\n\n- ⚠️ MD5: 일반 파일 OK (악의적 변조 위험 시 X)\n- ✅ SHA-256: 표준 권장\n- ✅ SHA-3: 차세대\n\n**3. 디지털 서명·인증서**\n\n- ❌ MD5: 절대 X (충돌 공격)\n- ✅ SHA-256: 현재 표준\n- ✅ SHA-3: 미래 대비\n\n**4. 데이터베이스 인덱스**\n\n- ✅ MD5: 빠르고 충돌 거의 없음\n- ⚠️ SHA-256: 가능하지만 길이 증가 → 인덱스 크기↑\n\n**5. 캐시 키·중복 검사**\n\n- ✅ MD5: 충분 (속도 우선)\n- ✅ SHA-256: 더 안전하지만 오버킬\n\n**6. 블록체인·암호화폐**\n\n- ❌ MD5: 보안 핵심 분야 절대 X\n- ✅ SHA-256: Bitcoin 표준\n- ✅ Keccak-256: Ethereum" },
-        { heading: "Toolkio 해시 + 실전 가이드", body: "**Toolkio 해시 생성기**\n\n- MD5·SHA-1·SHA-256·SHA-512 모두 지원\n- 텍스트·파일 입력\n- 결과 즉시 복사\n- 무료·무제한\n\n**실전 활용 5가지**\n\n1. **다운로드 파일 무결성 검증**\n   - 공식 사이트 SHA-256 비교\n   - 변조·손상 확인\n\n2. **데이터 중복 검사**\n   - 큰 파일 같은지 빠르게 확인\n   - MD5로 충분 (속도 우선)\n\n3. **Git 커밋 해시**\n   - SHA-1 사용 (이력만 추적, 보안 X)\n\n4. **블록체인 트랜잭션**\n   - SHA-256 표준\n\n5. **API 서명**\n   - HMAC-SHA-256 표준\n\n**명령줄 도구**\n\n```bash\n# Linux/Mac\nmd5sum file.zip\nsha256sum file.zip\n\n# Windows PowerShell\nGet-FileHash file.zip -Algorithm MD5\nGet-FileHash file.zip -Algorithm SHA256\n```\n\n**자주 하는 실수**\n\n- MD5로 비밀번호 저장 → 즉시 깨짐\n- SHA-256으로 비밀번호 → 무차별 대입에 약함\n- HTTPS 없이 해시 전송 → 중간자 공격\n- 솔트 (Salt) 없이 해시 → 무지개 테이블 깨짐\n\n**결론**\n\n- 일반 무결성: MD5 또는 SHA-256\n- 보안 필요: SHA-256 무조건\n- 비밀번호: bcrypt·argon2 (해시 함수 X)" },
+        { heading: "Toolkio 해시 + 실전 가이드", body: "**Toolkio 해시 생성기**\n\n- MD5·SHA-1·SHA-256·SHA-512 모두 지원\n- 텍스트·파일 입력\n- 결과 즉시 복사\n- 무료·무제한\n\n**실전 활용 5가지**\n\n1. **다운로드 파일 무결성 검증**\n   - 공식 사이트 SHA-256 비교\n   - 변조·손상 확인\n\n2. **데이터 중복 검사**\n   - 큰 파일 같은지 빠르게 확인\n   - MD5로 충분 (속도 우선)\n\n3. **Git 커밋 해시**\n   - SHA-1 사용 (이력만 추적, 보안 X)\n\n4. **블록체인 트랜잭션**\n   - SHA-256 표준\n\n5. **API 서명**\n   - HMAC-SHA-256 표준\n\n**명령줄 도구**\n\n```bash\n# Linux/Mac\nmd5sum file.zip\nsha256sum file.zip\n\n# Windows PowerShell\nGet-FileHash file.zip -Algorithm MD5\nGet-FileHash file.zip -Algorithm SHA256\n```\n\n**자주 하는 실수**\n\n- MD5로 비밀번호 저장 → 즉시 깨짐\n- SHA-256으로 비밀번호 → 무차별 대입에 약함\n- HTTPS 없이 해시 전송 → 중간자 공격\n- 솔트 (Salt) 없이 해시 → 무지개 테이블 깨짐\n\n**결론**\n\n- 일반 무결성: MD5 또는 SHA-256\n- 보안 필요: SHA-256 무조건\n- 비밀번호: bcrypt·argon2 (해시 함수 X)" }
       ],
       en: [
         { heading: "Core differences", body: "MD5: 128-bit, broken since 2004. SHA-256: 256-bit, secure standard." },
         { heading: "Security gap", body: "MD5 collision attacks easy. SHA-256 collision impossible in practice." },
         { heading: "Use cases", body: "Passwords: bcrypt/argon2. Files: SHA-256. DB index: MD5 OK. Crypto: SHA-256." },
-        { heading: "Toolkio + tips", body: "Toolkio supports all hashes. Use HMAC-SHA-256 for API. Always salt passwords." },
+        { heading: "Toolkio + tips", body: "Toolkio supports all hashes. Use HMAC-SHA-256 for API. Always salt passwords." }
       ],
     },
     faq: [
@@ -12647,7 +10252,7 @@ export const blogPosts: BlogPost[] = [
       { question: "SHA-256보다 더 안전한 해시 있나요?", answer: "SHA-3 (Keccak), SHA-512 더 안전. 다만 SHA-256이 현재 산업 표준. 미래 대비 SHA-3 채택 늘어나는 중. 비트코인·이더리움도 SHA-256·Keccak." },
       { question: "비밀번호 해싱에 SHA-256 왜 안 되나요?", answer: "너무 빠름. 무차별 대입 (GPU로 초당 수십억) 가능. bcrypt·argon2는 의도적으로 느려서 (1초 1회) 무차별 대입 어려움. 비밀번호용 전용 함수." },
       { question: "Salt가 뭐고 왜 필요한가요?", answer: "비밀번호에 무작위 문자열 추가 후 해시. 같은 비밀번호도 다른 해시 결과. 무지개 테이블 (사전) 공격 방어. bcrypt·argon2는 자동 솔트 포함." },
-      { question: "내 비밀번호 안전한지 어떻게 확인?", answer: "Have I Been Pwned (haveibeenpwned.com)에서 이메일 검색. 유출됐으면 즉시 변경. 매니저(1Password·Bitwarden) 사용 + 2FA 활성화." },
+      { question: "내 비밀번호 안전한지 어떻게 확인?", answer: "Have I Been Pwned (haveibeenpwned.com)에서 이메일 검색. 유출됐으면 즉시 변경. 매니저(1Password·Bitwarden) 사용 + 2FA 활성화." }
     ],
   },
   {
@@ -12669,13 +10274,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "왜 한국어 더미 텍스트가 필요한가", body: "**Lorem Ipsum의 한계**\n\n- 라틴어 기반 → 한글 디자인엔 어색\n- 글자 너비 다름 → 실제 레이아웃과 차이\n- 행간·자간 검증 어려움\n- 클라이언트가 \"가독성 모르겠다\" 피드백\n\n**한국어 더미가 필요한 시나리오**\n\n1. 한글 웹사이트 디자인 시안\n2. 모바일 앱 UI 시제품\n3. 카드뉴스·SNS 콘텐츠\n4. 출판물 (책·잡지) 레이아웃\n5. 한글 폰트 테스트\n\n**좋은 더미 텍스트 조건**\n\n- 한글 자모 균등 분포 (모든 자음·모음 포함)\n- 길이 다양 (짧은 단어 + 긴 단어)\n- 문장 구조 자연스러움\n- 띄어쓰기 정상\n- 의미 너무 강하지 않음 (디자인 집중 방해 X)" },
         { heading: "5가지 한국어 더미 텍스트 옵션", body: "**옵션 1 — 한국어 Lorem Ipsum 생성 사이트**\n\n- ko.lipsum.com\n- jaeminhan.github.io/korean-lorem-ipsum\n- 무료·즉시 사용\n- 단점: 의미 없는 한글 음절 나열 (자연스럽지 않음)\n\n**옵션 2 — 김춘수 시·한글 명문**\n\n- 김춘수 \"꽃\" 시 발췌\n- 김소월 \"진달래꽃\"\n- 윤동주 \"서시\"\n- 장점: 한글 자모 균등 분포\n- 단점: 의미 강해 디자인 집중 방해\n\n**옵션 3 — 위키백과 임의 문서**\n\n- ko.wikipedia.org/wiki/특수:임의 문서\n- 진짜 한국어 자연스러운 문장\n- 길이 다양\n- 단점: 매번 다른 내용\n\n**옵션 4 — Toolkio Lorem Ipsum + 한국어 변환**\n\n- 영문 Lorem Ipsum → 한국어 번역\n- 길이 조절 가능\n- 자연스러운 문장 구조\n- 무료·무제한\n\n**옵션 5 — 자체 작성 더미 (브랜드 적합)**\n\n- 본인 산업 관련 단어 + 자연스러운 문장\n- 클라이언트 시연 시 효과 큼\n- 단점: 시간 소요" },
         { heading: "사이트별 권장 더미 선택 가이드", body: "**기업 웹사이트 시안**\n\n- 옵션 4 (Toolkio + 번역) 또는 옵션 5 (자체 작성)\n- 자연스러운 비즈니스 문장\n- 클라이언트 신뢰도 ↑\n\n**모바일 앱 UI 프로토타입**\n\n- 옵션 1 (한국어 Lorem) 또는 옵션 4\n- 짧은 텍스트 위주 (앱 특성)\n- 길이 빠르게 조절\n\n**카드뉴스·SNS**\n\n- 옵션 5 (자체 작성)\n- 실제 콘텐츠와 톤·느낌 비슷해야\n- 클라이언트 피드백 정확\n\n**출판물 (책·잡지)**\n\n- 옵션 2 (시·명문) 또는 옵션 4\n- 긴 문장 + 다양한 구조\n- 행간·자간 검증\n\n**한글 폰트 테스트**\n\n- \"동해물과 백두산이 마르고 닳도록\"\n- \"키스의 고유 조건은 함박꽃\"\n- 자모 균등 분포 우선\n- 폰트 디자이너 표준 문장" },
-        { heading: "Toolkio + 실전 팁", body: "**Toolkio Lorem Ipsum 활용**\n\n- 영문 Lorem 생성\n- 길이 조절 (단어 수·단락 수)\n- 즉시 복사\n- 한국어 번역은 별도 도구 (DeepL·Papago)\n\n**실전 워크플로**\n\n1. **시안 단계**: Lorem Ipsum (영문) → 빠른 레이아웃\n2. **검수 단계**: 한국어 더미 → 한글 가독성 확인\n3. **클라이언트 시연**: 자체 작성 더미 → 신뢰도\n4. **최종 단계**: 실제 콘텐츠로 교체\n\n**자주 하는 실수**\n\n- Lorem Ipsum 그대로 클라이언트 보여줌 → \"이거 무슨 내용?\"\n- 너무 강한 의미의 텍스트 → 디자인보다 텍스트에 집중\n- 모든 영역 같은 더미 → 단조로움\n- 길이 일정 → 실제 데이터 변동성 미반영\n\n**디자이너 추천 더미 모음**\n\n```\n짧은 문장: \"한국어 디자인 시안에 쓸 더미 텍스트입니다.\"\n중간 문장: \"이 영역은 본문 내용이 들어갈 자리예요. 폰트 가독성과 행간을 확인하기 좋습니다.\"\n긴 문장: \"제품 상세 설명이 들어갈 영역입니다. 실제 콘텐츠는 클라이언트 측에서 제공할 예정이며, 디자인 단계에서는 임시 더미 텍스트로 레이아웃을 검증합니다.\"\n```\n\n**효율 팁**\n\n- 자주 쓰는 더미 5종 미리 저장\n- Figma·Sketch 컴포넌트로 등록\n- 1초 만에 적용·교체" },
+        { heading: "Toolkio + 실전 팁", body: "**Toolkio Lorem Ipsum 활용**\n\n- 영문 Lorem 생성\n- 길이 조절 (단어 수·단락 수)\n- 즉시 복사\n- 한국어 번역은 별도 도구 (DeepL·Papago)\n\n**실전 워크플로**\n\n1. **시안 단계**: Lorem Ipsum (영문) → 빠른 레이아웃\n2. **검수 단계**: 한국어 더미 → 한글 가독성 확인\n3. **클라이언트 시연**: 자체 작성 더미 → 신뢰도\n4. **최종 단계**: 실제 콘텐츠로 교체\n\n**자주 하는 실수**\n\n- Lorem Ipsum 그대로 클라이언트 보여줌 → \"이거 무슨 내용?\"\n- 너무 강한 의미의 텍스트 → 디자인보다 텍스트에 집중\n- 모든 영역 같은 더미 → 단조로움\n- 길이 일정 → 실제 데이터 변동성 미반영\n\n**디자이너 추천 더미 모음**\n\n```\n짧은 문장: \"한국어 디자인 시안에 쓸 더미 텍스트입니다.\"\n중간 문장: \"이 영역은 본문 내용이 들어갈 자리예요. 폰트 가독성과 행간을 확인하기 좋습니다.\"\n긴 문장: \"제품 상세 설명이 들어갈 영역입니다. 실제 콘텐츠는 클라이언트 측에서 제공할 예정이며, 디자인 단계에서는 임시 더미 텍스트로 레이아웃을 검증합니다.\"\n```\n\n**효율 팁**\n\n- 자주 쓰는 더미 5종 미리 저장\n- Figma·Sketch 컴포넌트로 등록\n- 1초 만에 적용·교체" }
       ],
       en: [
         { heading: "Why Korean dummy text", body: "Lorem Ipsum is Latin, doesn't reflect Korean character widths, kerning, line height." },
         { heading: "5 options", body: "Korean Lorem sites, classic poems, Wikipedia, Toolkio + translation, custom written." },
         { heading: "Use case guide", body: "Web: option 4-5. App: option 1-4. Cards: option 5. Print: option 2-4." },
-        { heading: "Toolkio + tips", body: "Lorem English → translate. 4-step workflow: rough → review → demo → real content." },
+        { heading: "Toolkio + tips", body: "Lorem English → translate. 4-step workflow: rough → review → demo → real content." }
       ],
     },
     faq: [
@@ -12683,7 +10288,7 @@ export const blogPosts: BlogPost[] = [
       { question: "어떤 한국어 시·문장이 더미로 쓰기 좋아요?", answer: "한국어능력시험 (TOPIK) 지문, 김춘수·김소월 시, 위키백과 \"한국어\" 문서. 자모 균등 분포 + 자연스러운 문장 구조. 의미 너무 강하지 않은 게 좋음." },
       { question: "한국어 더미와 실제 콘텐츠 차이가 있나요?", answer: "있음. 실제 콘텐츠는 브랜드 톤·전문 용어·CTA 표현 포함. 더미는 일반 문장. 디자인 검수 단계에선 더미 OK, 최종 단계에선 반드시 실제 콘텐츠 교체." },
       { question: "디자이너 표준 한글 자모 균등 문장 있나요?", answer: "\"키스의 고유 조건은 함박꽃 입술이다\" (자모 거의 모두 포함), \"동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세\" (애국가). 한글 폰트 디자이너 표준." },
-      { question: "Toolkio Lorem Ipsum을 한국어로 바로 만들 수 없나요?", answer: "현재 Toolkio는 영문 Lorem만. 한국어는 DeepL·Papago로 번역하거나 ko.lipsum.com 같은 한국어 전용 사이트 사용. 향후 Toolkio 한국어 옵션 추가 검토 가치 있음." },
+      { question: "Toolkio Lorem Ipsum을 한국어로 바로 만들 수 없나요?", answer: "현재 Toolkio는 영문 Lorem만. 한국어는 DeepL·Papago로 번역하거나 ko.lipsum.com 같은 한국어 전용 사이트 사용. 향후 Toolkio 한국어 옵션 추가 검토 가치 있음." }
     ],
   },
   {
@@ -12705,13 +10310,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "BMI 계산식 — 1초로 끝", body: "**공식**: BMI = 체중(kg) ÷ (키(m) × 키(m))\n\n**예시**: 키 170cm, 체중 70kg → 70 ÷ (1.70 × 1.70) = 24.2\n\n**WHO 국제 기준**\n\n- 18.5 미만: 저체중\n- 18.5~24.9: 정상\n- 25~29.9: 과체중\n- 30 이상: 비만\n\n**대한비만학회 한국인 기준 (더 엄격)**\n\n- 18.5 미만: 저체중\n- 18.5~22.9: 정상\n- 23~24.9: 과체중\n- 25~29.9: 비만 1단계\n- 30~34.9: 비만 2단계\n- 35 이상: 비만 3단계\n\n한국인은 같은 BMI에서 내장지방이 더 많아서 기준이 낮음." },
         { heading: "BMI 한계 5가지", body: "BMI만 보면 안 돼요.\n\n1. **근육량 무시** — 운동선수는 BMI 30이어도 건강\n2. **체지방률 미반영** — 같은 BMI 22여도 체지방률 15%와 30% 다름\n3. **연령 차이 미반영** — 노인은 같은 BMI에서 근감소증 위험\n4. **인종 차이** — 한국·일본은 같은 BMI에서 당뇨 위험 높음\n5. **체형 무시** — 마른비만 (skinny fat) 식별 불가\n\n**보완 지표**\n\n- 허리둘레: 남 90cm, 여 85cm 이상 = 복부비만\n- 체지방률: 인바디 측정\n- 허리·엉덩이 비율 (WHR)\n- 근육량 (인바디 SMM)\n\n**가장 정확한 건강 평가**: BMI + 허리둘레 + 체지방률 3박자." },
         { heading: "BMI별 건강 위험도", body: "**BMI 23~24.9 (과체중)**\n\n- 당뇨병 위험 1.5배\n- 고혈압 위험 2배\n- 지방간 위험 1.8배\n- 권장: 5kg 감량 목표\n\n**BMI 25~29.9 (비만 1단계)**\n\n- 심혈관 질환 위험 2배\n- 당뇨병 위험 3배\n- 무릎 관절 부담 4배\n- 권장: 식이 + 운동, 의사 상담\n\n**BMI 30 이상 (비만 2~3단계)**\n\n- 모든 만성질환 위험 급증\n- 사망률 1.5~2배\n- 권장: 의학적 비만 치료 (약물·수술 검토)\n\n**BMI 18.5 미만 (저체중)**\n\n- 골다공증 위험\n- 면역력 저하\n- 빈혈\n- 권장: 단백질 + 근력 운동" },
-        { heading: "Toolkio + 다이어트 활용 팁", body: "**Toolkio BMI 계산기 활용**\n\n1. 키·체중 입력 → BMI 즉시 계산\n2. WHO·한국 기준 동시 표시\n3. 정상 체중 범위 자동 계산\n4. 목표 체중 시뮬레이션\n\n**다이어트 목표 설정 4단계**\n\n- **1단계**: 현재 BMI 측정 (시작점)\n- **2단계**: 목표 BMI 설정 (보통 정상 상한 22.9)\n- **3단계**: 주 0.5~1kg 감량 (안전 속도)\n- **4단계**: 4주마다 재측정\n\n**예시 — 키 165cm, 현재 70kg (BMI 25.7)**\n\n- 정상 상한 BMI 22.9 → 목표 체중 62.3kg\n- 감량 목표: 7.7kg\n- 주 0.5kg 기준 → 약 15주 (3.5개월)\n- 식이 -300kcal/일 + 운동 -200kcal/일\n\n**다이어트 시 흔한 실수**\n\n- 너무 빠른 감량 (요요)\n- 근육량 무시 (체중만 본다)\n- 식이만 + 운동 X (대사 저하)\n- 단기 목표만 (장기 유지 X)" },
+        { heading: "Toolkio + 다이어트 활용 팁", body: "**Toolkio BMI 계산기 활용**\n\n1. 키·체중 입력 → BMI 즉시 계산\n2. WHO·한국 기준 동시 표시\n3. 정상 체중 범위 자동 계산\n4. 목표 체중 시뮬레이션\n\n**다이어트 목표 설정 4단계**\n\n- **1단계**: 현재 BMI 측정 (시작점)\n- **2단계**: 목표 BMI 설정 (보통 정상 상한 22.9)\n- **3단계**: 주 0.5~1kg 감량 (안전 속도)\n- **4단계**: 4주마다 재측정\n\n**예시 — 키 165cm, 현재 70kg (BMI 25.7)**\n\n- 정상 상한 BMI 22.9 → 목표 체중 62.3kg\n- 감량 목표: 7.7kg\n- 주 0.5kg 기준 → 약 15주 (3.5개월)\n- 식이 -300kcal/일 + 운동 -200kcal/일\n\n**다이어트 시 흔한 실수**\n\n- 너무 빠른 감량 (요요)\n- 근육량 무시 (체중만 본다)\n- 식이만 + 운동 X (대사 저하)\n- 단기 목표만 (장기 유지 X)" }
       ],
       en: [
         { heading: "BMI formula", body: "BMI = weight(kg) / (height(m))^2. Korean standard is stricter than WHO." },
         { heading: "5 limitations", body: "Ignores muscle, body fat %, age, ethnicity, body shape (skinny fat undetectable)." },
         { heading: "Risk by BMI", body: "23-24.9: 1.5-2x diabetes/hypertension. 25-29.9: 2-3x. 30+: severe risk." },
-        { heading: "Diet use + tips", body: "Set target BMI 22.9. Lose 0.5-1kg/week. Re-measure monthly. Combine BMI + waist + body fat %." },
+        { heading: "Diet use + tips", body: "Set target BMI 22.9. Lose 0.5-1kg/week. Re-measure monthly. Combine BMI + waist + body fat %." }
       ],
     },
     faq: [
@@ -12719,7 +10324,7 @@ export const blogPosts: BlogPost[] = [
       { question: "운동선수인데 BMI 30이에요. 비만인가요?", answer: "근육량 많으면 BMI 높아도 건강. BMI는 근육·지방 구분 안 함. 인바디로 체지방률 확인. 체지방률 남 25% 미만, 여 30% 미만이면 비만 아님." },
       { question: "한국 기준이 WHO보다 엄격한 이유는?", answer: "한국인·일본인은 같은 BMI에서 내장지방이 서구인보다 많아서 당뇨·심혈관 위험 더 큼. 그래서 대한비만학회는 비만 기준을 25 이상으로 더 엄격하게 설정." },
       { question: "어린이도 BMI 같은 기준 적용하나요?", answer: "어린이는 성장 중이라 성인 기준 적용 안 함. 소아·청소년 BMI 백분위수표 사용. 같은 나이·성별 또래 대비 위치로 판단. 소아과 진료 필수." },
-      { question: "BMI보다 정확한 건강 지표 있나요?", answer: "체성분 분석(인바디)이 더 정확. 체지방률·근육량·내장지방 수준 세부 측정. BMI는 빠른 스크리닝, 인바디는 정밀 평가. 둘 다 활용이 베스트." },
+      { question: "BMI보다 정확한 건강 지표 있나요?", answer: "체성분 분석(인바디)이 더 정확. 체지방률·근육량·내장지방 수준 세부 측정. BMI는 빠른 스크리닝, 인바디는 정밀 평가. 둘 다 활용이 베스트." }
     ],
   },
   {
@@ -12741,13 +10346,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "D-day 효과 — 동기부여 심리학", body: "**왜 D-day가 효과적인가**\n\n- **시간 시각화** — 추상적 '미래'를 구체적 '7일 후'로 변환\n- **긴급감 형성** — 마감 임박 시 집중력 2~3배 (Parkinson's Law)\n- **진행률 측정** — 매일 D-day 갱신으로 성취감\n- **목표 명확화** — 모호한 '나중에' → 명확한 '5월 15일까지'\n\n**연구 결과**\n\n- 명확한 마감 + 카운트다운 = 작업 완료율 67% 상승 (Harvard Business Review)\n- 시각적 D-day 표시 = 미루기 30% 감소\n- 매일 알림 = 목표 달성률 2배\n\n**D-day 잘못 쓰면 역효과**\n\n- 너무 먼 미래 (D-365): 긴급감 없음\n- 너무 많은 D-day: 주의 분산\n- 비현실적 마감: 스트레스 + 포기" },
         { heading: "활용 1~3 — 시험·자격증·취업", body: "**1. 시험 카운트다운**\n\n- 수능, 토익, 자격증 시험\n- 매일 책상에 D-day 표시\n- 주차별 학습 계획 역산\n- 예시: 수능 D-100 → 단원별 학습 분배\n\n**2. 자격증 취득 일정**\n\n- 시험 일자 → 등록 마감 → 학습 시작\n- 단계별 D-day (D-90: 학습 시작, D-30: 모의고사, D-7: 최종 정리)\n- 합격수기 단계별 D-day 분석 활용\n\n**3. 취업 준비**\n\n- 공채 마감일 기준 자기소개서·면접 준비\n- 인적성 시험 D-day\n- 면접일 D-7 → 모의 면접 5회 일정\n- 입사 첫날 D-day → 회사 사전 학습" },
         { heading: "활용 4~7 — 기념일·프로젝트·목표·여행", body: "**4. 기념일 관리**\n\n- 100일·1주년·결혼기념일 D-day\n- 부모님 생신·자녀 생일\n- D-30 알림 → 선물·예약 준비\n- D-7 → 식당 예약·이벤트 디테일\n\n**5. 프로젝트 마감 관리**\n\n- 회사 프로젝트 납기일\n- 단계별 마일스톤 D-day\n- 팀 공유 캘린더 + D-day 표시\n- 예시: 신제품 출시 D-90 → 시제품 D-60 → 마케팅 D-30 → 출시 D-0\n\n**6. 개인 목표 추적**\n\n- 다이어트 목표일 (3개월)\n- 책 출간 목표 (6개월)\n- 운동 챌린지 (30일)\n- 학습 목표 (영어 회화 100일)\n\n**7. 여행·이사·이벤트**\n\n- 여행 출발일 D-day → 항공권·숙박 예약 일정\n- 이사 D-day → 짐 정리·계약·청소 일정\n- 결혼식 D-day → 단계별 준비 (드레스, 청첩장, 식순)" },
-        { heading: "Toolkio D-day + 효과적 활용 팁", body: "**Toolkio D-day 계산기 활용**\n\n1. 목표 날짜 입력\n2. D-day 자동 계산\n3. 남은 일수·시간·분 단위 표시\n4. 과거 날짜는 +day로 표시 (기념일)\n\n**효과 극대화 5가지 팁**\n\n- **눈에 보이는 곳에** — 책상·핸드폰 잠금화면·노트북\n- **단계별 D-day** — 1개 마감보다 5개 단계 D-day\n- **현실적 목표** — D-7~D-90 사이가 가장 효과적\n- **매일 갱신** — 자동화 (위젯·알림)\n- **함께 공유** — 친구·가족·팀과 D-day 공유 시 책임감 ↑\n\n**D-day 함정 5가지**\n\n- D-day만 보고 진척 없음 (계획 없는 카운트다운)\n- 너무 많은 D-day → 우선순위 혼란\n- 마감 임박 시 벼락치기 (D-day 효과 부정)\n- 실패 시 좌절 (D-day 망상)\n- D-day 의존 (스스로 동기부여 못 함)\n\n**추천 D-day 조합**\n\n- 큰 목표 1개 (D-90~D-180)\n- 중간 목표 3개 (D-30~D-60)\n- 단기 목표 5개 (D-7~D-14)\n- 일일 작업 (D-1~D-3)" },
+        { heading: "Toolkio D-day + 효과적 활용 팁", body: "**Toolkio D-day 계산기 활용**\n\n1. 목표 날짜 입력\n2. D-day 자동 계산\n3. 남은 일수·시간·분 단위 표시\n4. 과거 날짜는 +day로 표시 (기념일)\n\n**효과 극대화 5가지 팁**\n\n- **눈에 보이는 곳에** — 책상·핸드폰 잠금화면·노트북\n- **단계별 D-day** — 1개 마감보다 5개 단계 D-day\n- **현실적 목표** — D-7~D-90 사이가 가장 효과적\n- **매일 갱신** — 자동화 (위젯·알림)\n- **함께 공유** — 친구·가족·팀과 D-day 공유 시 책임감 ↑\n\n**D-day 함정 5가지**\n\n- D-day만 보고 진척 없음 (계획 없는 카운트다운)\n- 너무 많은 D-day → 우선순위 혼란\n- 마감 임박 시 벼락치기 (D-day 효과 부정)\n- 실패 시 좌절 (D-day 망상)\n- D-day 의존 (스스로 동기부여 못 함)\n\n**추천 D-day 조합**\n\n- 큰 목표 1개 (D-90~D-180)\n- 중간 목표 3개 (D-30~D-60)\n- 단기 목표 5개 (D-7~D-14)\n- 일일 작업 (D-1~D-3)" }
       ],
       en: [
         { heading: "D-day psychology", body: "Visualizes time, creates urgency, measures progress. Parkinson's Law boosts focus 2-3x." },
         { heading: "Uses 1-3", body: "Exams, certifications, job hunting. Multi-stage D-days (D-90 study, D-30 mock, D-7 review)." },
         { heading: "Uses 4-7", body: "Anniversaries, projects, personal goals, travel/wedding planning." },
-        { heading: "Toolkio + tips", body: "Visible spot, multi-stage, realistic 7-90 days, daily auto-update, shared accountability." },
+        { heading: "Toolkio + tips", body: "Visible spot, multi-stage, realistic 7-90 days, daily auto-update, shared accountability." }
       ],
     },
     faq: [
@@ -12755,7 +10360,7 @@ export const blogPosts: BlogPost[] = [
       { question: "D-day 알림 빈도는 어느 정도가 좋나요?", answer: "매일 1회(아침 또는 저녁)가 효과적. 너무 자주(시간마다)는 알림 무시 시작. D-7 이내는 매일 2회(아침·저녁) 권장." },
       { question: "기념일 D-day와 마감 D-day 차이는?", answer: "기념일은 +day(지난 날 카운트), 마감은 D-day(남은 날). Toolkio 계산기는 둘 다 자동 처리. 결혼기념일 +1825일(5주년)로 표시." },
       { question: "팀 프로젝트 D-day 공유는 어떻게?", answer: "구글 캘린더·노션·슬랙에 D-day 표시. 팀 단위 카운트다운 위젯. 매주 1회 'D-X 진척률 회의' 정례화. 단계별 마일스톤 표시." },
-      { question: "D-day 실패 시 어떻게 회복하나요?", answer: "실패 분석 → 새 D-day 재설정. '실패한 D-day' 자체보다 '다음 시도' 중요. 너무 비현실적이었다면 목표 자체 재조정. 실패 → 학습 → 재도전 사이클." },
+      { question: "D-day 실패 시 어떻게 회복하나요?", answer: "실패 분석 → 새 D-day 재설정. '실패한 D-day' 자체보다 '다음 시도' 중요. 너무 비현실적이었다면 목표 자체 재조정. 실패 → 학습 → 재도전 사이클." }
     ],
   },
   {
@@ -12777,13 +10382,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "연봉 → 실수령액 공제 구조 (2026)", body: "**연봉 5,000만원 예시**\n\n- 월 급여(세전): 약 4,166,667원\n- 4대보험 (근로자 부담분):\n  - 국민연금 4.5% — 약 187,500원\n  - 건강보험 3.545% — 약 147,710원\n  - 장기요양 0.4591% — 약 19,127원\n  - 고용보험 0.9% — 약 37,500원\n  - **소계**: 약 391,837원\n- 소득세 (간이세액표): 약 165,540원\n- 지방소득세 (소득세 10%): 약 16,554원\n- **총 공제**: 약 573,931원\n- **월 실수령**: 약 3,592,736원\n- **연 실수령**: 약 4,311만원\n\n실수령률 약 86.2%. 연봉 5천만원 → 실수령 4,311만원.\n\n**연봉별 실수령 비율 (대략)**\n\n- 3천만원: 약 89% (267만원/월)\n- 4천만원: 약 87% (290만원/월)\n- 5천만원: 약 86% (359만원/월)\n- 6천만원: 약 84% (421만원/월)\n- 8천만원: 약 81% (540만원/월)\n- 1억원: 약 78% (650만원/월)\n\n연봉 올라갈수록 실수령률 떨어짐 (누진세 효과)." },
         { heading: "4대보험 세부 (2026 기준)", body: "**국민연금 (기준 소득월액 기준)**\n\n- 근로자 4.5% + 회사 4.5% = 9%\n- 상한선 월 590만원 (소득 무관 53.1만원 한도)\n- 노후 연금 수령\n\n**건강보험 (보수월액 기준)**\n\n- 근로자 3.545% + 회사 3.545% = 7.09%\n- 상한선 없음\n- 의료비 보장\n\n**장기요양보험 (건강보험료의 12.95%)**\n\n- 건강보험에 자동 포함\n- 노인 요양 서비스 재원\n\n**고용보험 (실업급여)**\n\n- 근로자 0.9% + 회사 1.05~1.55%\n- 상한선 없음\n- 실업·육아휴직 급여\n\n**산재보험**\n\n- 회사 100% 부담 (근로자 부담 없음)\n- 업종별 0.7~18.6%\n\n**총 부담률 (근로자)**\n\n- 4대보험 합계 약 9.4%\n- + 소득세·지방세 = 약 12~22% (연봉별)" },
         { heading: "비과세 항목 — 세금 절약법", body: "**대표 비과세 항목**\n\n1. **식대** — 월 20만원까지 비과세\n2. **자가운전보조금** — 월 20만원까지\n3. **출산·보육 수당** — 월 20만원까지 (만 6세 이하)\n4. **육아휴직급여** — 전액 비과세\n5. **연구활동비** — 월 20만원까지 (연구원)\n6. **벽지수당** — 월 20만원까지\n7. **건강보험·국민연금 본인 부담분** — 소득공제\n\n**연봉 5,000만원 + 식대 240만원 비과세 적용 시**\n\n- 과세 대상: 4,760만원\n- 세금 절약: 약 30~40만원/년\n\n**비과세 활용 팁**\n\n- 채용 협상 시 '식대·운전보조금 별도' 요청\n- 회사 복지로 분리 (직접 지급 대신 회사 카드)\n- 연말정산 시 비과세 항목 누락 점검\n\n**비과세 한도 초과 시**\n\n- 한도 넘는 부분은 과세 대상\n- 식대 25만원 → 5만원 과세, 20만원 비과세" },
-        { heading: "Toolkio + 연봉 협상 활용 팁", body: "**Toolkio 연봉 계산기 활용**\n\n1. 연봉(세전) 입력\n2. 4대보험·소득세 자동 계산\n3. 비과세 항목 옵션 추가\n4. 월 실수령·연 실수령 동시 표시\n5. 연봉 인상 시뮬레이션 (예: +500만원 시 실수령 변화)\n\n**연봉 협상 시 5가지 체크**\n\n- **세전 vs 세후** — 협상은 세전, 비교는 세후\n- **비과세 분리** — 식대 240만원 비과세 추가 시 실수령 30~40만원/년 ↑\n- **성과급 포함 여부** — 약정 vs 변동\n- **복지 환산** — 식대·교통비·교육비 합산\n- **퇴직금 누적** — 1년 평균 임금의 1개월\n\n**연봉 인상 vs 실수령 인상 차이**\n\n- 연봉 5천 → 6천 (+1천만원, +20%)\n- 실수령: 4,311 → 5,055만원 (+744만원, +17%)\n- 차이 256만원은 세금·보험으로 사라짐\n- 누진세 영향으로 인상률 감소\n\n**이직 시 실수령 비교 표 작성**\n\n```\n현 직장: 연 5천(세전) - 4,311(세후) - 식대 0\n이직 A:  연 5,500 - 4,712 - 식대 240\n이직 B:  연 5,200 - 4,485 - 식대 360\n```\n\n실수령 + 비과세 + 복지 종합 비교 필수." },
+        { heading: "Toolkio + 연봉 협상 활용 팁", body: "**Toolkio 연봉 계산기 활용**\n\n1. 연봉(세전) 입력\n2. 4대보험·소득세 자동 계산\n3. 비과세 항목 옵션 추가\n4. 월 실수령·연 실수령 동시 표시\n5. 연봉 인상 시뮬레이션 (예: +500만원 시 실수령 변화)\n\n**연봉 협상 시 5가지 체크**\n\n- **세전 vs 세후** — 협상은 세전, 비교는 세후\n- **비과세 분리** — 식대 240만원 비과세 추가 시 실수령 30~40만원/년 ↑\n- **성과급 포함 여부** — 약정 vs 변동\n- **복지 환산** — 식대·교통비·교육비 합산\n- **퇴직금 누적** — 1년 평균 임금의 1개월\n\n**연봉 인상 vs 실수령 인상 차이**\n\n- 연봉 5천 → 6천 (+1천만원, +20%)\n- 실수령: 4,311 → 5,055만원 (+744만원, +17%)\n- 차이 256만원은 세금·보험으로 사라짐\n- 누진세 영향으로 인상률 감소\n\n**이직 시 실수령 비교 표 작성**\n\n```\n현 직장: 연 5천(세전) - 4,311(세후) - 식대 0\n이직 A:  연 5,500 - 4,712 - 식대 240\n이직 B:  연 5,200 - 4,485 - 식대 360\n```\n\n실수령 + 비과세 + 복지 종합 비교 필수." }
       ],
       en: [
         { heading: "Net pay structure 2026", body: "Salary 50M KRW: 4 insurances ~9.4% + income tax + local tax = ~14% deduction. Net ~86%." },
         { heading: "4 insurances detail", body: "Pension 4.5% + Health 3.545% + Long-term care 12.95% of health + Unemployment 0.9%." },
         { heading: "Non-taxable items", body: "Meal 200K, car 200K, childcare 200K, parental leave 100% non-taxable." },
-        { heading: "Toolkio + tips", body: "Negotiate gross + non-taxable separately. Compare net + benefits, not gross." },
+        { heading: "Toolkio + tips", body: "Negotiate gross + non-taxable separately. Compare net + benefits, not gross." }
       ],
     },
     faq: [
@@ -12791,7 +10396,7 @@ export const blogPosts: BlogPost[] = [
       { question: "연봉 인상보다 비과세 늘리는 게 나은가요?", answer: "낮은 연봉 구간에선 인상이 유리. 고연봉(7천만원+)에선 누진세 효과로 비과세가 더 효율적. 식대·교육비 비과세는 100% 절세." },
       { question: "프리랜서·사업자도 실수령 계산이 같나요?", answer: "다름. 프리랜서는 4대보험 직접 가입(이중 부담 없음, 단 100% 본인 부담), 사업소득세는 종합소득세로 별도 계산." },
       { question: "성과급은 실수령 계산에 포함되나요?", answer: "포함되지만 별도 계산. 정기 성과급은 평균 임금 합산, 일시 보너스는 받는 달에만 세율 인상. 성과급 천만원 받으면 그 달만 세율 6~38% 적용 후 환급." },
-      { question: "연봉 1억 실수령 얼마인가요?", answer: "약 7,800만원/년 (월 650만원). 실수령률 78%. 4대보험 540만원 + 소득세·지방세 1,660만원 공제. 비과세 활용 시 약 7,900만원까지 가능." },
+      { question: "연봉 1억 실수령 얼마인가요?", answer: "약 7,800만원/년 (월 650만원). 실수령률 78%. 4대보험 540만원 + 소득세·지방세 1,660만원 공제. 비과세 활용 시 약 7,900만원까지 가능." }
     ],
   },
   {
@@ -12813,13 +10418,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "퍼센트 계산 기본 공식", body: "**3가지 핵심 공식**\n\n1. **A의 X%는?** = A × (X / 100)\n   - 예: 50,000원의 30% = 50,000 × 0.3 = 15,000원\n\n2. **A는 B의 몇 %인가?** = (A / B) × 100\n   - 예: 30,000원은 50,000원의 60%\n\n3. **A에서 B로 변화율** = ((B − A) / A) × 100\n   - 예: 100 → 130: ((130-100)/100) × 100 = +30%\n   - 예: 100 → 70: ((70-100)/100) × 100 = -30%\n\n**자주 헷갈리는 차이**\n\n- 30% 인상 ≠ 30%p 인상\n- 30% 할인 + 30% 할인 ≠ 60% 할인\n- 1.3 → 1.0이 -23% (1.0 → 1.3이 +30%와 다름)\n\n**복합 할인 계산**\n\n- 30% 할인 → 다시 20% 추가 할인\n- 100,000 × 0.7 × 0.8 = 56,000\n- 총 할인율 44% (50%가 아님)" },
         { heading: "활용 1~3 — 쇼핑·연봉·통계", body: "**1. 쇼핑 할인 계산**\n\n- 50,000원 35% 할인 → 32,500원\n- 추가 카드 5% → 30,875원\n- 적립 3% → 실 부담 29,949원\n- 할인 적용 순서 중요 (선할인 → 카드 → 적립)\n\n**2. 연봉·임금 인상**\n\n- 4,500만원 → 5,000만원: +11.1%\n- 실수령 기준 확인 (세금·보험 누진)\n- 인플레이션 4% 차감 시 실질 인상 7.1%\n- 5년 누적 인상률 = (1.05)^5 = 27.6% (단순 합산 25% ≠)\n\n**3. 통계 비교 — 증감률 정확히**\n\n- 회사 매출 작년 100억 → 올해 130억: +30%\n- 부서별 점유율 변화\n- 소비자 물가 지수 (전년 대비)\n- 흔한 오류: 2배 = 100% 증가 (200% 증가 X)" },
         { heading: "활용 4~5 — 부가세·이자율", body: "**4. 부가세 (VAT) 계산**\n\n- 한국 부가세 10%\n- 공급가액 → 부가세 포함 금액: ×1.10\n- 부가세 포함 금액 → 공급가액: ÷1.10\n- 부가세 자체: 부가세 포함 금액 ÷ 1.10 × 0.10\n\n**예시**\n\n- 공급가액 100,000원 → 부가세 포함 110,000원\n- 부가세 포함 110,000원 → 공급가액 100,000원, 부가세 10,000원\n- 영수증 110,000원 = 100,000 + 10,000\n\n**5. 이자율·복리 계산**\n\n- 단리: 원금 × 이자율 × 기간\n- 복리: 원금 × (1 + 이자율)^기간\n- 1,000만원 연 5% 5년\n  - 단리: 1,000 × 0.05 × 5 = 250만원 이자\n  - 복리: 1,000 × (1.05)^5 - 1,000 = 276만원 이자\n  - 차이 26만원 (5년 기준)\n\n**복리 마법 (장기)**\n\n- 1,000만원 연 5% 30년\n  - 단리: +1,500만원 (총 2,500)\n  - 복리: +3,322만원 (총 4,322)\n  - 차이 1,822만원 (단리의 2배 이상)" },
-        { heading: "Toolkio + 흔한 실수 5가지", body: "**Toolkio 퍼센트 계산기 활용**\n\n1. A의 X% 계산\n2. A는 B의 몇 % 계산\n3. A → B 증감률 계산\n4. 할인율·할증률 시뮬레이션\n5. 복합 할인 자동 계산\n\n**흔한 실수 5가지**\n\n- **30% + 20% = 50% 착각** — 실제는 44% (복합 할인)\n- **2배 = 200% 증가 착각** — 실제는 100% 증가\n- **30% 인상 후 30% 할인 = 원위치 착각** — 실제는 -9% (100→130→91)\n- **퍼센트(%)와 퍼센트포인트(%p) 혼동** — 5% → 7%는 +2%p (40% 증가가 아님)\n- **단리·복리 혼동** — 장기 투자는 복리, 단기는 단리\n\n**비즈니스 퍼센트 활용**\n\n- **마진율 vs 마크업 차이**\n  - 마진율: 이익 / 판매가 = 30%\n  - 마크업: 이익 / 원가 = 43%\n- **이익률 분류**\n  - 매출총이익률 = (매출 - 매출원가) / 매출\n  - 영업이익률 = 영업이익 / 매출\n  - 순이익률 = 당기순이익 / 매출\n\n**투자 수익률 계산**\n\n- 매수가 100만원 → 매도가 130만원\n- 수익률 30%, 수익액 30만원\n- 보유 기간 1년 = 연 30%\n- 보유 기간 6개월 = 연 환산 60%\n- 세금 (양도세 22%) 차감 시 실 수익 23.4%" },
+        { heading: "Toolkio + 흔한 실수 5가지", body: "**Toolkio 퍼센트 계산기 활용**\n\n1. A의 X% 계산\n2. A는 B의 몇 % 계산\n3. A → B 증감률 계산\n4. 할인율·할증률 시뮬레이션\n5. 복합 할인 자동 계산\n\n**흔한 실수 5가지**\n\n- **30% + 20% = 50% 착각** — 실제는 44% (복합 할인)\n- **2배 = 200% 증가 착각** — 실제는 100% 증가\n- **30% 인상 후 30% 할인 = 원위치 착각** — 실제는 -9% (100→130→91)\n- **퍼센트(%)와 퍼센트포인트(%p) 혼동** — 5% → 7%는 +2%p (40% 증가가 아님)\n- **단리·복리 혼동** — 장기 투자는 복리, 단기는 단리\n\n**비즈니스 퍼센트 활용**\n\n- **마진율 vs 마크업 차이**\n  - 마진율: 이익 / 판매가 = 30%\n  - 마크업: 이익 / 원가 = 43%\n- **이익률 분류**\n  - 매출총이익률 = (매출 - 매출원가) / 매출\n  - 영업이익률 = 영업이익 / 매출\n  - 순이익률 = 당기순이익 / 매출\n\n**투자 수익률 계산**\n\n- 매수가 100만원 → 매도가 130만원\n- 수익률 30%, 수익액 30만원\n- 보유 기간 1년 = 연 30%\n- 보유 기간 6개월 = 연 환산 60%\n- 세금 (양도세 22%) 차감 시 실 수익 23.4%" }
       ],
       en: [
         { heading: "Basic formulas", body: "X% of A = A * X/100. A is X% of B = A/B * 100. Change rate = (B-A)/A * 100." },
         { heading: "Uses 1-3", body: "Shopping discounts (compound), salary raise (vs inflation), statistics (year-over-year)." },
         { heading: "Uses 4-5", body: "VAT 10% (multiply 1.10), interest (simple vs compound, 30yr makes 2x difference)." },
-        { heading: "Toolkio + 5 mistakes", body: "30%+20% != 50%. 2x != 200%. % vs %p. Simple vs compound. Margin vs markup." },
+        { heading: "Toolkio + 5 mistakes", body: "30%+20% != 50%. 2x != 200%. % vs %p. Simple vs compound. Margin vs markup." }
       ],
     },
     faq: [
@@ -12827,7 +10432,7 @@ export const blogPosts: BlogPost[] = [
       { question: "퍼센트(%)와 퍼센트포인트(%p) 차이는?", answer: "퍼센트는 비율 변화, 퍼센트포인트는 절대값 변화. 금리 5% → 7%: +2%p (절대 변화), +40% (상대 변화). 뉴스에서 '금리 0.25%p 인상'은 절대 변화 0.25%." },
       { question: "단리와 복리 차이는?", answer: "단리는 원금에만 이자, 복리는 원금+이자에 이자. 1,000만원 5% 30년: 단리 +1,500만원, 복리 +3,322만원. 장기 투자는 복리가 압도적." },
       { question: "마진율과 마크업 차이는?", answer: "마진율 = 이익 ÷ 판매가, 마크업 = 이익 ÷ 원가. 1,000원 사서 1,300원 판매: 마진율 23%, 마크업 30%. 사업자는 둘 다 알아야 함." },
-      { question: "물가 상승률 4%일 때 연봉 5% 인상은?", answer: "실질 인상률 약 1% (5% - 4%). 인플레이션 차감 후 진짜 구매력 상승. 매년 물가만 2~4% 오르므로 연봉 인상 4% 미만은 사실상 후퇴." },
+      { question: "물가 상승률 4%일 때 연봉 5% 인상은?", answer: "실질 인상률 약 1% (5% - 4%). 인플레이션 차감 후 진짜 구매력 상승. 매년 물가만 2~4% 오르므로 연봉 인상 4% 미만은 사실상 후퇴." }
     ],
   },
   {
@@ -12849,13 +10454,13 @@ export const blogPosts: BlogPost[] = [
         { heading: "유튜브 썸네일 4가지 사이즈", body: "**유튜브 썸네일 URL 패턴**\n\n```\nhttps://img.youtube.com/vi/{영상ID}/{사이즈}.jpg\n```\n\n**사이즈 옵션**\n\n- **maxresdefault** (1280×720) — HD, 최고 품질\n- **hqdefault** (480×360) — High Quality\n- **mqdefault** (320×180) — Medium Quality\n- **sddefault** (640×480) — Standard\n- **default** (120×90) — 가장 작음\n\n**예시 (영상 ID: dQw4w9WgXcQ)**\n\n- HD: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg\n- High: https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg\n\n**maxresdefault 주의**\n\n- 일부 오래된 영상은 HD 썸네일 없음 (404 에러)\n- 그 경우 hqdefault로 fallback\n- Toolkio는 자동 fallback 처리\n\n**영상 ID 추출법**\n\n- youtube.com/watch?v=**dQw4w9WgXcQ** ← v= 뒤\n- youtu.be/**dQw4w9WgXcQ** ← / 뒤\n- youtube.com/shorts/**dQw4w9WgXcQ** ← /shorts/ 뒤" },
         { heading: "썸네일 활용 5가지", body: "**1. 영상 분석 (벤치마킹)**\n\n- 인기 채널 썸네일 디자인 분석\n- 텍스트·색상·구도 패턴 학습\n- 클릭률 높은 썸네일 공통점 파악\n\n**2. 블로그 임베드**\n\n- 추천 영상 소개 시 썸네일 + 링크\n- 영상 임베드보다 가벼움 (페이지 속도 ↑)\n- 클릭 시 유튜브 이동\n\n**3. SNS 콘텐츠 제작**\n\n- 유튜브 영상 홍보 인스타·X 게시물\n- 썸네일 + 짧은 설명 → 채널 유입\n- 카드뉴스 시리즈 (주간 베스트)\n\n**4. 자료·발표 활용**\n\n- 강의 자료에 영상 미리보기\n- 회의 자료에 참고 영상 썸네일\n- 보고서·기획서 시각 자료\n\n**5. 본인 영상 백업**\n\n- 본인 채널 썸네일 백업\n- A/B 테스트 결과 비교 자료\n- 채널 성장 기록" },
         { heading: "Toolkio + 저작권 주의사항", body: "**Toolkio 유튜브 썸네일 추출 사용법**\n\n1. 유튜브 URL 또는 영상 ID 입력\n2. 4가지 사이즈 자동 표시\n3. 원하는 사이즈 클릭 → 다운로드\n4. 모든 처리는 브라우저 (서버 전송 X)\n\n**저작권·이용 약관**\n\n- 유튜브 썸네일은 **영상 제작자 저작물**\n- 개인적 학습·분석 목적은 OK\n- 상업적 사용 시 제작자 허락 필요\n- 무단 사용 + 본인 콘텐츠로 게시 = 저작권 침해\n\n**합법 사용 가이드**\n\n- 영상 임베드 또는 링크 (저작권 안전)\n- 분석·리뷰 콘텐츠에 fair use\n- 출처 명시 + 원작자 채널 링크\n- 본인 채널 영상 썸네일은 자유\n\n**불법 사용 사례**\n\n- 다른 채널 썸네일 그대로 본인 영상에 사용\n- 썸네일 도용해서 클릭 유도\n- 유튜버 얼굴 무단 사용 (초상권)\n- 상업 광고에 무단 사용\n\n**썸네일 디자인 팁 (본인 영상용)**\n\n- 1280×720 (HD) 사이즈\n- 큰 텍스트 (3~5단어, 90pt+)\n- 대비 강한 색상\n- 인물 표정 (감정 전달)\n- 일관된 채널 브랜딩" },
-        { heading: "고급 활용 — API·자동화", body: "**YouTube Data API**\n\n- 영상 ID로 정확한 썸네일 URL 획득\n- 채널 전체 영상 썸네일 자동 다운로드\n- 무료 할당량 일일 10,000 units\n- 개발자만 활용 (코딩 필요)\n\n**자동화 시나리오**\n\n- 채널 신규 영상 알림 → 썸네일 자동 분석\n- 경쟁 채널 모니터링 (썸네일 패턴 변화)\n- 본인 영상 썸네일 일괄 백업\n- 썸네일 A/B 테스트 결과 추적\n\n**자동화 도구**\n\n- Make.com (시나리오 빌더)\n- Zapier\n- n8n (셀프호스팅)\n- 직접 코드 (Python·Node.js)\n\n**보안·윤리**\n\n- API 키 노출 금지 (.env 또는 시크릿 매니저)\n- Rate limit 준수\n- 무단 대량 다운로드 금지 (서버 부담)\n- 개인정보 포함 썸네일 처리 주의" },
+        { heading: "고급 활용 — API·자동화", body: "**YouTube Data API**\n\n- 영상 ID로 정확한 썸네일 URL 획득\n- 채널 전체 영상 썸네일 자동 다운로드\n- 무료 할당량 일일 10,000 units\n- 개발자만 활용 (코딩 필요)\n\n**자동화 시나리오**\n\n- 채널 신규 영상 알림 → 썸네일 자동 분석\n- 경쟁 채널 모니터링 (썸네일 패턴 변화)\n- 본인 영상 썸네일 일괄 백업\n- 썸네일 A/B 테스트 결과 추적\n\n**자동화 도구**\n\n- Make.com (시나리오 빌더)\n- Zapier\n- n8n (셀프호스팅)\n- 직접 코드 (Python·Node.js)\n\n**보안·윤리**\n\n- API 키 노출 금지 (.env 또는 시크릿 매니저)\n- Rate limit 준수\n- 무단 대량 다운로드 금지 (서버 부담)\n- 개인정보 포함 썸네일 처리 주의" }
       ],
       en: [
         { heading: "4 thumbnail sizes", body: "maxresdefault (1280x720), hqdefault (480x360), mqdefault, sddefault. URL: img.youtube.com/vi/{ID}/{size}.jpg" },
         { heading: "5 use cases", body: "Analysis, blog embed, SNS content, presentations, backup own videos." },
         { heading: "Copyright + Toolkio", body: "Personal study OK. Commercial requires permission. Toolkio runs in browser, no server." },
-        { heading: "API + automation", body: "YouTube Data API for batch download. Make/Zapier for monitoring. Mind rate limits." },
+        { heading: "API + automation", body: "YouTube Data API for batch download. Make/Zapier for monitoring. Mind rate limits." }
       ],
     },
     faq: [
@@ -12863,7 +10468,7 @@ export const blogPosts: BlogPost[] = [
       { question: "유튜브 쇼츠 썸네일도 가능한가요?", answer: "가능. URL 형식 youtube.com/shorts/{ID}에서 ID 추출 후 동일하게 처리. 단 쇼츠는 세로 영상이라 썸네일도 세로 비율로 자동 크롭됨." },
       { question: "썸네일 무단 사용하면 어떻게 되나요?", answer: "유튜브 약관 + 저작권법 위반. 신고 시 삭제 + 채널 경고. 반복 시 채널 삭제·법적 분쟁 가능. 분석·리뷰 fair use는 OK, 본인 콘텐츠로 위장 사용은 위험." },
       { question: "썸네일 다운로드 도구 안전한가요?", answer: "Toolkio는 100% 브라우저 처리, 서버 전송 X. URL 직접 호출 방식이라 광고·트래커 없음. 일부 무료 사이트는 광고·악성 코드 있을 수 있어 주의." },
-      { question: "본인 영상 썸네일 일괄 다운로드 방법은?", answer: "YouTube Data API + Python 스크립트로 채널 전체 영상 ID 획득 → 일괄 처리. 또는 YouTube Studio에서 영상별 직접 다운로드. 100개 이상은 API 자동화 권장." },
+      { question: "본인 영상 썸네일 일괄 다운로드 방법은?", answer: "YouTube Data API + Python 스크립트로 채널 전체 영상 ID 획득 → 일괄 처리. 또는 YouTube Studio에서 영상별 직접 다운로드. 100개 이상은 API 자동화 권장." }
     ],
   },
   {
@@ -12909,7 +10514,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 타임스탬프 변환기 사용법",
           body: "1. 변환기에 13자리·10자리 숫자 붙여넣기\n2. 자동으로 단위 감지 (초·밀리초)\n3. UTC·KST 두 시간대 동시 표시\n4. 반대 방향(날짜 → 타임스탬프)도 가능\n\n브라우저 안에서만 처리되니까 API 키·민감 시간 데이터 입력해도 외부 전송 안 돼요.",
-        },
+        }
       ],
       en: [
         {
@@ -12939,7 +10544,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio Timestamp Converter",
           body: "Auto-detects seconds vs milliseconds. Shows UTC and local time simultaneously. Works fully in your browser — no data sent to servers.",
-        },
+        }
       ],
     },
     faq: [
@@ -12948,7 +10553,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JavaScript에서 타임스탬프 변환 방법은?", answer: "new Date(1735689600 * 1000)으로 Date 객체 생성. 13자리는 *1000 곱하지 않음. toISOString()으로 UTC 문자열 출력 가능해요." },
       { question: "엑셀에서 Unix 타임스탬프 변환은?", answer: "수식: =A1/86400+DATE(1970,1,1) 후 셀 서식을 날짜로 변경. 86400은 하루 초 수. KST 변환은 +9/24 추가." },
       { question: "ISO 8601 형식과 Unix 타임스탬프 차이는?", answer: "ISO 8601은 사람이 읽기 쉬운 '2025-01-01T00:00:00Z' 형식, Unix 타임스탬프는 '1735689600' 숫자. API에서 ISO 8601 권장(시간대 정보 포함). 내부 저장은 Unix가 효율적." },
-      { question: "윤초(leap second)는 어떻게 처리되나요?", answer: "Unix 타임스탬프는 윤초를 무시하고 계산. POSIX 표준이 그렇게 정의돼 있어서. 윤초 정확도가 필요한 시스템(천문·금융 정밀)은 별도 처리 필요." },
+      { question: "윤초(leap second)는 어떻게 처리되나요?", answer: "Unix 타임스탬프는 윤초를 무시하고 계산. POSIX 표준이 그렇게 정의돼 있어서. 윤초 정확도가 필요한 시스템(천문·금융 정밀)은 별도 처리 필요." }
     ],
   },
   {
@@ -12998,7 +10603,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio UUID 생성기 사용법",
           body: "1. 생성 버튼 클릭 시 즉시 UUID v4 생성\n2. 한 번에 1·10·100개까지 일괄 생성 가능\n3. 클릭 한 번으로 클립보드 복사\n4. 대시 제거 옵션(짧은 형식 필요 시)\n\n로컬 브라우저에서 crypto.randomUUID() API로 생성. 서버 전송 없어서 안전해요.",
-        },
+        }
       ],
       en: [
         {
@@ -13032,7 +10637,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio UUID Generator",
           body: "Generate 1-100 UUIDs at once, copy with one click, with optional dash removal. Uses browser crypto.randomUUID() — fully local.",
-        },
+        }
       ],
     },
     faq: [
@@ -13041,7 +10646,7 @@ export const blogPosts: BlogPost[] = [
       { question: "MySQL에서 UUID 저장 방식은?", answer: "CHAR(36) 문자열 또는 BINARY(16) 바이너리. BINARY가 4배 작고 빠름. UUID_TO_BIN()/BIN_TO_UUID() 함수 활용 권장이에요." },
       { question: "UUID와 GUID 차이는?", answer: "기본적으로 같은 개념. GUID는 마이크로소프트에서 부르는 이름이고 UUID는 IETF 표준 명칭. 형식·기능 동일해요." },
       { question: "v7 UUID는 언제 표준화됐나요?", answer: "2024년 5월 RFC 9562로 정식 표준화. v1·v4를 대체할 수 있는 차세대 표준으로 신규 프로젝트에 추천돼요." },
-      { question: "URL에 UUID 노출해도 안전한가요?", answer: "추측 불가능하긴 하지만 SEO·공유 측면에서 짧은 슬러그 + 내부 UUID 조합 권장. 인증 토큰은 URL 노출 절대 금지(쿠키 사용)." },
+      { question: "URL에 UUID 노출해도 안전한가요?", answer: "추측 불가능하긴 하지만 SEO·공유 측면에서 짧은 슬러그 + 내부 UUID 조합 권장. 인증 토큰은 URL 노출 절대 금지(쿠키 사용)." }
     ],
   },
   {
@@ -13091,7 +10696,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 해시 생성기 사용법",
           body: "1. 텍스트 입력 또는 파일 업로드\n2. MD5·SHA-1·SHA-256·SHA-512 동시 생성\n3. 결과값 클릭으로 복사\n4. 대용량 파일도 브라우저 안에서 처리\n\nWeb Crypto API 사용하니까 입력값이 외부 서버로 전송되지 않아요. 비밀번호·민감 데이터도 안전하게 해싱 가능.",
-        },
+        }
       ],
       en: [
         {
@@ -13125,7 +10730,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio Hash Generator",
           body: "Generate MD5, SHA-1, SHA-256, SHA-512 simultaneously. Works fully in browser via Web Crypto API — your data never leaves your device.",
-        },
+        }
       ],
     },
     faq: [
@@ -13134,7 +10739,7 @@ export const blogPosts: BlogPost[] = [
       { question: "bcrypt와 Argon2 중 뭘 써야 하나요?", answer: "신규 프로젝트는 Argon2id 권장(2015년 PHC 우승, 2021년 RFC 9106 표준화, OWASP 권장). 호환성·성숙도 중요하면 bcrypt도 충분. PBKDF2는 옛 시스템 호환용." },
       { question: "Salt가 뭐고 왜 필요한가요?", answer: "비밀번호 해싱 시 추가하는 랜덤 데이터. 같은 비밀번호여도 사용자마다 다른 해시 생성. Rainbow Table 공격 방어용. bcrypt·Argon2는 자동 처리해줘요." },
       { question: "해시값으로 원본 비밀번호 알 수 있나요?", answer: "이론상 불가능. 단 짧고 흔한 비밀번호(123456 등)는 사전 공격(미리 계산해둔 해시 매칭)으로 깨질 수 있어요. 그래서 길이 + 복잡도 + 솔트가 필요해요." },
-      { question: "체크섬과 해시는 같은 건가요?", answer: "체크섬(CRC32 등)은 단순 오류 검출용, 해시는 보안용. 의도적 변조 방어는 SHA-256 같은 암호학적 해시 필요. 둘 다 입력→고정 길이 출력 점은 비슷해요." },
+      { question: "체크섬과 해시는 같은 건가요?", answer: "체크섬(CRC32 등)은 단순 오류 검출용, 해시는 보안용. 의도적 변조 방어는 SHA-256 같은 암호학적 해시 필요. 둘 다 입력→고정 길이 출력 점은 비슷해요." }
     ],
   },
   {
@@ -13184,7 +10789,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio Diff 체커 사용법",
           body: "1. 좌측에 원본, 우측에 비교 텍스트 붙여넣기\n2. 자동으로 차이점 색상 표시\n3. 줄 단위·단어 단위 토글\n4. 공백·대소문자 무시 옵션\n\n브라우저 안에서만 처리되니까 계약서·코드 같은 민감 텍스트도 안전하게 비교할 수 있어요. 외부 서버 전송 없음.",
-        },
+        }
       ],
       en: [
         {
@@ -13218,7 +10823,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio Diff Checker",
           body: "Paste original on left, comparison on right. Toggle line/word mode. Ignore whitespace and case. Fully browser-based — secure for sensitive texts.",
-        },
+        }
       ],
     },
     faq: [
@@ -13227,7 +10832,7 @@ export const blogPosts: BlogPost[] = [
       { question: "한국어도 정확히 비교되나요?", answer: "네, UTF-8 텍스트면 한국어·영어·일본어·중국어 모두 정확히 비교. 단 단어 단위 비교는 한국어 형태소 분석 안 해서 띄어쓰기 단위로 처리돼요." },
       { question: "큰 파일은 어떻게 비교하나요?", answer: "1MB 이상 텍스트는 분할 권장. 또는 데스크톱 도구(WinMerge·Beyond Compare) 사용. 웹 도구는 보통 100KB~1MB 한도예요." },
       { question: "공백만 차이 나는 부분 무시 가능한가요?", answer: "Toolkio 포함 대부분 도구가 '공백 무시' 옵션 제공. 들여쓰기·줄바꿈 차이만 있는 변경 안 보이게 처리. 코드 리뷰 시 유용해요." },
-      { question: "Diff 결과 공유 방법은?", answer: "HTML export 또는 스크린샷이 일반적. GitHub Gist에 두 파일 올려서 link 공유도 좋음. Diff 체커 자체에는 공유 기능 없는 경우 많아요." },
+      { question: "Diff 결과 공유 방법은?", answer: "HTML export 또는 스크린샷이 일반적. GitHub Gist에 두 파일 올려서 link 공유도 좋음. Diff 체커 자체에는 공유 기능 없는 경우 많아요." }
     ],
   },
   {
@@ -13273,7 +10878,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio AI 프롬프트 생성기 사용법",
           body: "1. 분야 선택 (이미지·코딩·글쓰기·이메일 등)\n2. 빈칸 채우기 형식으로 5요소 입력\n3. 자동으로 최적화된 프롬프트 생성\n4. 클립보드에 복사 후 ChatGPT·Claude에 바로 사용\n\n분야별 템플릿이 미리 준비돼 있어서 처음부터 안 짜도 돼요. 본인 자주 쓰는 패턴을 즐겨찾기 저장도 가능해요.",
-        },
+        }
       ],
       en: [
         {
@@ -13303,7 +10908,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio AI Prompt Generator",
           body: "Select domain, fill in 5 elements, get optimized prompt. Copy to clipboard, paste into ChatGPT/Claude. Save favorites for reuse.",
-        },
+        }
       ],
     },
     faq: [
@@ -13312,7 +10917,7 @@ export const blogPosts: BlogPost[] = [
       { question: "Midjourney와 DALL-E 프롬프트가 다른가요?", answer: "기본 구조는 비슷하지만 Midjourney는 짧고 키워드 위주, DALL-E는 자연어 문장 잘 받아들임. Midjourney는 --ar, --v 같은 파라미터 사용." },
       { question: "프롬프트 결과가 매번 다른 이유는?", answer: "AI는 확률 기반이라 같은 프롬프트도 매번 다른 답. temperature 파라미터로 일관성 조절 가능(0=일관, 1=창의). 정형화 필요하면 temperature 낮게." },
       { question: "프롬프트 인젝션 공격이 뭔가요?", answer: "사용자 입력에 'ignore previous instructions'처럼 시스템 프롬프트를 무력화하는 명령 삽입. AI 서비스 만들 때 입력 검증·sandboxing 필수예요." },
-      { question: "프롬프트 엔지니어링은 정말 학습할 가치가 있나요?", answer: "있어요. AI가 결과의 80%를 만들고 사람이 20% 다듬는 시대. 프롬프트 잘 짜는 사람과 못 짜는 사람의 생산성 차이가 5~10배. 1~2주 투자로 평생 활용 가능." },
+      { question: "프롬프트 엔지니어링은 정말 학습할 가치가 있나요?", answer: "있어요. AI가 결과의 80%를 만들고 사람이 20% 다듬는 시대. 프롬프트 잘 짜는 사람과 못 짜는 사람의 생산성 차이가 5~10배. 1~2주 투자로 평생 활용 가능." }
     ],
   },
   {
@@ -13362,7 +10967,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio QR 생성기 사용법",
           body: "Toolkio QR 생성기는 가입 없이 브라우저에서 바로 사용해요.\n\n1. URL·텍스트·vCard 등 데이터 타입 선택\n2. 내용 입력\n3. 색상·크기 설정\n4. PNG 또는 SVG 다운로드\n5. 핸드폰으로 스캔 테스트\n\n생성된 QR은 서버로 전송되지 않고 브라우저 안에서 처리돼서 비밀 URL·내부 링크도 안전해요. 더 자세한 색상 설계 팁은 [색상 코드 변환 가이드](/blog/color-code-converter-rgb-hex-guide)에서, 데이터 타입 비교는 [QR 명함 마케팅 7가지 활용](/blog/qr-code-practical-uses-guide)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13396,7 +11001,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio QR Generator",
           body: "Choose data type, enter content, customize color and size, download PNG or SVG. Generated entirely in your browser — secure for private links.",
-        },
+        }
       ],
     },
     faq: [
@@ -13405,7 +11010,7 @@ export const blogPosts: BlogPost[] = [
       { question: "흰 배경 말고 다른 색 배경도 가능한가요?", answer: "가능하지만 전경(어두운 색)과 배경 명도 차가 50% 이상이어야 해요. 노란 배경에 검정 QR은 OK, 회색 배경에 검정은 인식률 떨어져요." },
       { question: "인쇄용 QR은 어떤 포맷으로 다운로드해야 하나요?", answer: "벡터 포맷(SVG·PDF·EPS) 추천. 확대해도 안 깨져요. PNG·JPG는 웹 전용. QRCode Monkey·goqr.me가 무료 SVG 다운로드 지원해요." },
       { question: "동적 QR과 정적 QR 차이는?", answer: "정적은 QR 자체에 데이터 직접 저장(URL 변경 불가). 동적은 중간 서버 거쳐서 연결 URL을 나중에 바꿀 수 있음. 명함처럼 인쇄 후 변경 가능성 있으면 동적 추천." },
-      { question: "QR 인식률 높이는 가장 중요한 요인은?", answer: "여백(quiet zone). QR 외곽에 흰 여백을 4모듈(약 QR 크기의 10%) 이상 두세요. 여백 없이 다른 디자인 요소에 딱 붙이면 카메라가 QR 경계를 못 찾아요." },
+      { question: "QR 인식률 높이는 가장 중요한 요인은?", answer: "여백(quiet zone). QR 외곽에 흰 여백을 4모듈(약 QR 크기의 10%) 이상 두세요. 여백 없이 다른 디자인 요소에 딱 붙이면 카메라가 QR 경계를 못 찾아요." }
     ],
   },
   {
@@ -13455,7 +11060,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio JSON 포맷터 사용법",
           body: "1. JSON 데이터 붙여넣기\n2. '포맷팅' 클릭 → 들여쓰기 적용\n3. '미니파이' 클릭 → 한 줄로 압축\n4. 문법 오류 위치 자동 표시\n5. 결과 복사·다운로드\n\n모든 처리가 브라우저 안에서 일어나서 외부 서버 전송 없음. 인증 토큰·고객 데이터 같은 민감 JSON도 안심하고 정리할 수 있어요. 더 깊은 디버깅 패턴은 [JSON Lint 5단계 디버깅](/blog/json-lint-debug-5-steps)에서, 개발자용 10가지 활용은 [JSON 포맷터 10가지 패턴](/blog/json-formatter-developer-10-use-cases)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13489,7 +11094,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio JSON Formatter",
           body: "Paste JSON, click format or minify. Errors highlighted with location. All processing in browser — safe for sensitive data.",
-        },
+        }
       ],
     },
     faq: [
@@ -13498,7 +11103,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JSON에 주석 쓸 수 있나요?", answer: "표준 JSON은 주석 금지. JSON5·JSONC(JSON with Comments) 같은 변형은 주석 허용. VS Code의 settings.json은 JSONC라 주석 가능. API 통신용은 표준 JSON만 쓰세요." },
       { question: "큰 JSON 파일(10MB+)은 어떻게 처리하나요?", answer: "온라인 도구는 보통 1~5MB 한도. 큰 파일은 jq(CLI), VS Code, 또는 데스크톱 도구 사용. 스트리밍 파서(JSONStream·oboe.js)로 메모리 절약도 가능." },
       { question: "JSON과 JSON5 차이가 뭔가요?", answer: "JSON5는 JSON 확장으로 주석·후행 쉼표·작은따옴표 허용. 사람이 편집하는 설정 파일에 편함. 단 표준 JSON 파서는 JSON5 못 읽어요. 호환성 중요하면 표준 JSON만." },
-      { question: "JSON 들여쓰기는 2칸과 4칸 중 뭐가 표준?", answer: "표준 없음. 관습은 2칸이 다수(읽기 좋고 가로 공간 절약). Python·Java 진영은 4칸. 팀 내 통일이 핵심. ESLint·Prettier로 자동화 권장." },
+      { question: "JSON 들여쓰기는 2칸과 4칸 중 뭐가 표준?", answer: "표준 없음. 관습은 2칸이 다수(읽기 좋고 가로 공간 절약). Python·Java 진영은 4칸. 팀 내 통일이 핵심. ESLint·Prettier로 자동화 권장." }
     ],
   },
   {
@@ -13552,7 +11157,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 마크다운 미리보기 사용법",
           body: "1. 좌측에 마크다운 입력\n2. 우측에 실시간 렌더링\n3. GFM(GitHub Flavored Markdown) 스타일 기본 적용\n4. 결과 HTML 복사 또는 다운로드\n\n브라우저 안에서 처리되므로 회사 내부 문서·기밀 메모도 안전해요. 표·코드 블록 호환성 점검은 [마크다운 표·코드 5가지 흔한 실수](/blog/markdown-table-code-5-common-mistakes)에서, 표 정렬 트릭은 [마크다운 표 정렬 4가지](/blog/markdown-table-alignment-4-tricks)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13590,7 +11195,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio Markdown Preview",
           body: "Paste markdown left, see rendered HTML right. GFM style by default. Browser-processed — safe for confidential notes.",
-        },
+        }
       ],
     },
     faq: [
@@ -13599,7 +11204,7 @@ export const blogPosts: BlogPost[] = [
       { question: "마크다운으로 PDF 만드는 가장 쉬운 방법은?", answer: "Marp(VS Code 확장) 또는 Pandoc CLI. Marp는 슬라이드 형식, Pandoc은 일반 문서. 둘 다 무료. 디자인 더 세밀하면 HTML 변환 후 브라우저 인쇄 PDF." },
       { question: "Mermaid 다이어그램은 어디서 보이나요?", answer: "GitHub README·VS Code(Markdown Preview Enhanced 확장)·Notion·Obsidian 모두 지원. Toolkio 미리보기는 표준 마크다운 위주라 Mermaid는 별도 도구 필요." },
       { question: "마크다운 표 작성이 너무 번거로운데?", answer: "Tables Generator(tablesgenerator.com), VS Code Markdown Table Editor 확장 사용. CSV·엑셀에서 변환도 가능. 손으로 `|` 그리는 건 행 5개 넘으면 비효율적." },
-      { question: "MDX는 일반 마크다운과 뭐가 다른가요?", answer: "MDX는 마크다운 + JSX(React 컴포넌트). 마크다운 안에 인터랙티브 요소·차트 삽입 가능. Next.js·Gatsby에서 주로 사용. 단 GitHub·Notion 같은 표준 환경에서는 안 보여요." },
+      { question: "MDX는 일반 마크다운과 뭐가 다른가요?", answer: "MDX는 마크다운 + JSX(React 컴포넌트). 마크다운 안에 인터랙티브 요소·차트 삽입 가능. Next.js·Gatsby에서 주로 사용. 단 GitHub·Notion 같은 표준 환경에서는 안 보여요." }
     ],
   },
   {
@@ -13653,7 +11258,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio Lorem Ipsum 생성기 사용법",
           body: "1. 단어 수·문단 수·문장 수 선택\n2. '생성' 클릭\n3. 자동으로 라틴어 더미 텍스트 출력\n4. 클립보드에 복사 → Figma·코드·PPT 어디든 붙여넣기\n\n100단어부터 5,000단어까지 자유롭게 생성. 작성 결과는 외부 전송 없이 브라우저에서만 처리돼요. 더 자세한 활용은 [Lorem Ipsum 활용법](/blog/lorem-ipsum-dummy-text-usage-guide)에서, 한국어 더미 5종은 [한국어 더미 텍스트 5종](/blog/korean-lorem-ipsum-dummy-text-5-types)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13691,7 +11296,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio Lorem Ipsum Generator",
           body: "Choose words/paragraphs/sentences count, click generate, copy to clipboard. 100 to 5,000 words supported. Browser-processed.",
-        },
+        }
       ],
     },
     faq: [
@@ -13700,7 +11305,7 @@ export const blogPosts: BlogPost[] = [
       { question: "Lorem Ipsum 단어 수는 보통 얼마나 쓰나요?", answer: "디자인 시안 한 카드: 30~50단어. 블로그 본문 더미: 300~500단어. 책·잡지 페이지: 200~400단어. 너무 길면 시안 검토자가 텍스트 읽으려 해서 디자인 집중 흐려져요." },
       { question: "더미 데이터로 진짜 고객 데이터를 써도 되나요?", answer: "절대 금지. 개인정보보호법 위반·데이터 유출 위험. Faker.js·Mockaroo로 가짜 데이터 생성 권장. 이름·이메일·주소·전화번호 모두 합리적으로 보이는 가짜 생성 가능." },
       { question: "Lorem Ipsum이 SEO에 영향이 있나요?", answer: "있어요. 라이브 사이트에 Lorem Ipsum 남아있으면 Google이 'thin content'로 분류. 검색 순위 하락. 배포 전 모든 더미 텍스트 제거 필수. 자동 검사 스크립트 권장." },
-      { question: "이미지 더미는 어디서 받나요?", answer: "Lorem Picsum(picsum.photos)·Unsplash·placeholder.com 같은 사이트에서 무료 더미 이미지 받기 가능. CSS·JS에서 URL 직접 호출도 가능해요." },
+      { question: "이미지 더미는 어디서 받나요?", answer: "Lorem Picsum(picsum.photos)·Unsplash·placeholder.com 같은 사이트에서 무료 더미 이미지 받기 가능. CSS·JS에서 URL 직접 호출도 가능해요." }
     ],
   },
   {
@@ -13750,7 +11355,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio CSS Minifier 사용법",
           body: "1. CSS 코드 붙여넣기\n2. '미니파이' 클릭\n3. 압축 결과와 절감 비율 확인\n4. 클립보드 복사 또는 다운로드\n\n빌드 도구를 따로 셋업할 시간 없을 때나 한두 파일만 빠르게 압축할 때 유용해요. 모든 처리는 브라우저 안에서 이뤄지므로 회사 내부 CSS도 안전. 더 깊은 웹 성능 최적화는 [웹사이트 이미지 최적화 가이드](/blog/website-image-optimization-speed-guide)에서, CSS 압축의 다른 측면은 [CSS 압축 웹 성능 가이드](/blog/css-minifier-web-performance-guide)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13784,7 +11389,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Using Toolkio CSS Minifier",
           body: "Paste CSS, click minify, see reduction ratio, copy or download. All processing in browser. Useful for one-off compression.",
-        },
+        }
       ],
     },
     faq: [
@@ -13793,7 +11398,7 @@ export const blogPosts: BlogPost[] = [
       { question: "미니파이와 gzip 중 뭘 먼저 적용해야 하나요?", answer: "둘 다. 미니파이가 먼저(빌드 단계), gzip은 서버에서 자동(런타임). 미니파이된 CSS를 gzip으로 압축하면 효과 극대화. Cloudflare·Vercel은 gzip 자동 적용." },
       { question: "Tailwind CSS는 미니파이 효과가 큰가요?", answer: "Tailwind JIT 모드는 사용한 클래스만 생성하므로 이미 최적. PurgeCSS 같은 추가 도구 거의 불필요. 빌드 결과 보통 10~30KB로 작음. 미니파이는 +5~10% 추가 절감." },
       { question: "Critical CSS 추출이 정말 필요한가요?", answer: "사이트 트래픽 큰 경우 LCP 점수에 큰 영향. 트래픽 적으면 우선순위 낮음. 먼저 미니파이·gzip·Tree Shaking 적용 후 PageSpeed 80점 미만일 때 도입 고려." },
-      { question: "CSS 변수(--color)도 미니파이되나요?", answer: "변수 이름은 보존(브라우저가 런타임에 사용). 단 PostCSS 플러그인으로 변수 이름 짧게 변환 가능(`--primary-color` → `--p`). 이름 짧을수록 추가 절감되지만 가독성과 트레이드오프." },
+      { question: "CSS 변수(--color)도 미니파이되나요?", answer: "변수 이름은 보존(브라우저가 런타임에 사용). 단 PostCSS 플러그인으로 변수 이름 짧게 변환 가능(`--primary-color` → `--p`). 이름 짧을수록 추가 절감되지만 가독성과 트레이드오프." }
     ],
   },
   {
@@ -13843,7 +11448,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 글자수 세기 도구로 정확하게 측정",
           body: "엑셀 LENB는 EUC-KR 기준이라 UTF-8 환경(웹·DB·API)에서는 부정확해요. 그럴 땐 [Toolkio 글자수 세기](https://toolkio.com/tools/character-counter)를 쓰세요.\n\n장점.\n\n1. **UTF-8·EUC-KR 동시 표시**: 같은 문자열의 두 인코딩 바이트 동시 확인\n2. **공백 포함·제외 자동 구분**\n3. **한글 음절 vs 자모 분리 옵션** (예: '가' vs 'ㄱ+ㅏ')\n4. **이모지·특수문자 정확 처리**\n\n자기소개서는 엑셀 LEN으로, SMS·DB 컬럼은 Toolkio로 — 용도별로 나눠 쓰면 실수 없어요. 더 자세한 글자수 활용은 [한국어 자기소개서 글자수](/blog/korean-resume-char-count)에서, 영어 글자수는 [영어 글자수 세기](/blog/english-character-counter-guide)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13877,7 +11482,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio for UTF-8 Accuracy",
           body: "Excel LENB is EUC-KR based. For UTF-8 environments (web/DB/API), Toolkio character counter shows both encodings simultaneously plus emoji-correct handling.",
-        },
+        }
       ],
     },
     faq: [
@@ -13886,7 +11491,7 @@ export const blogPosts: BlogPost[] = [
       { question: "이모지가 들어간 텍스트 글자수는 어떻게 세요?", answer: "엑셀은 이모지를 1글자로 세지만 실제 메모리는 4바이트. SMS·DB·API에서는 4바이트로 차감되므로 LENB도 부정확. Toolkio나 Python `len(text.encode('utf-8'))`로 확인 권장." },
       { question: "셀 안에 줄바꿈(Alt+Enter) 있을 때 LEN은?", answer: "줄바꿈 문자(CHAR(10))도 1글자로 셈. 줄바꿈 제외하려면 `=LEN(SUBSTITUTE(A1,CHAR(10),\"\"))`. 자기소개서 글자수 셀 때 줄바꿈 포함·제외 기준 모집 요강 확인 필수." },
       { question: "LEN과 LEFT·RIGHT·MID 같이 쓸 때 주의점은?", answer: "LEN으로 가변 길이 처리. `=RIGHT(A1,LEN(A1)-FIND(\"@\",A1))`처럼 위치 + LEN 조합으로 동적 추출. 단 FIND는 못 찾으면 #VALUE! 에러 — `IFERROR(...,\"\")`로 감싸기." },
-      { question: "엑셀 LENB와 한컴오피스(셀) 글자수가 다른 이유는?", answer: "한컴오피스는 한글 워드 자체 함수 사용, 엑셀과 약간 다름. 자기소개서·공문서는 한컴 기준이 표준일 때가 많으니 한컴에서 한 번 더 확인 권장." },
+      { question: "엑셀 LENB와 한컴오피스(셀) 글자수가 다른 이유는?", answer: "한컴오피스는 한글 워드 자체 함수 사용, 엑셀과 약간 다름. 자기소개서·공문서는 한컴 기준이 표준일 때가 많으니 한컴에서 한 번 더 확인 권장." }
     ],
   },
   {
@@ -13936,7 +11541,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 이미지 압축 도구 사용법",
           body: "Toolkio [이미지 압축](https://toolkio.com/tools/image-compressor)은 브라우저에서 바로 실행돼요. 사진을 서버로 보내지 않으니 개인정보 걱정 없이 증명사진도 안전.\n\n1. 사진 드래그 또는 클릭 업로드\n2. 품질 슬라이더 80~85 설정\n3. 최대 너비 295px(이력서) 또는 354px(여권)\n4. 출력 포맷 JPEG 선택\n5. EXIF 자동 제거 체크\n6. 압축 결과 확인 (원본·압축 용량 비교)\n7. 다운로드\n\n여러 장 한 번에 압축도 가능. 더 자세한 압축 원리는 [이미지 압축 알고리즘](/blog/image-compression-algorithm-explained)에서, 웹용 최적화는 [웹 이미지 최적화](/blog/web-image-optimization-guide)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -13970,7 +11575,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio Image Compressor",
           body: "Drag/upload, set quality 80-85, max width 295/354px, JPEG output, auto-EXIF strip, compare sizes, download. All in browser, no server upload.",
-        },
+        }
       ],
     },
     faq: [
@@ -13979,7 +11584,7 @@ export const blogPosts: BlogPost[] = [
       { question: "300×400 같은 픽셀 크기는 어디 기준이에요?", answer: "이력서 표준 3×4cm를 300dpi 인쇄 해상도로 환산. 295×413이 정확. 채용 사이트가 250×350 또는 200×280 요구하면 그 규격에 맞추세요." },
       { question: "JPEG 품질 100으로 저장해도 200KB 안 들어가요. 어떻게 해요?", answer: "픽셀 크기를 더 줄이세요. 4000×3000을 600×800로 줄이면 품질 100이라도 200KB 가능. 너무 줄이면 인쇄 시 깨지므로 295×413 이상 유지 권장." },
       { question: "PNG는 200KB로 못 줄여요?", answer: "PNG는 무손실이라 사진은 줄이기 어려움. JPEG로 변환이 정답. 단 로고·차트·스크린샷처럼 색이 적은 이미지는 PNG가 더 작을 수 있어요." },
-      { question: "압축 후 사진이 흐릿해 보여요. 어떻게 해요?", answer: "JPEG 품질을 5~10 올리세요. 80→85로 올리면 용량 약간 늘지만 화질 개선. 그래도 안 되면 픽셀 크기를 키운 뒤 압축 — 295→400 늘리면 같은 품질에 화질 좋아져요." },
+      { question: "압축 후 사진이 흐릿해 보여요. 어떻게 해요?", answer: "JPEG 품질을 5~10 올리세요. 80→85로 올리면 용량 약간 늘지만 화질 개선. 그래도 안 되면 픽셀 크기를 키운 뒤 압축 — 295→400 늘리면 같은 품질에 화질 좋아져요." }
     ],
   },
   {
@@ -14029,7 +11634,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio Base64 도구로 빠르게 처리",
           body: "터미널 명령어가 익숙하지 않거나 빠르게 한두 번만 변환할 때는 [Toolkio Base64 인코더/디코더](https://toolkio.com/tools/base64)가 편해요.\n\n장점.\n\n1. **OS 상관없이 동일하게 동작** — 브라우저만 있으면 됨\n2. **표준·URL-safe 둘 다 지원**\n3. **이미지 → Base64 미리보기** — Data URL로 바로 활용 가능\n4. **개행 옵션** — 64자마다 vs 한 줄\n5. **서버 전송 없음** — 시크릿·API 키도 안전\n\n명령어는 자동화·반복 작업, Toolkio는 일회성·테스트에 — 용도별로 나눠 쓰면 좋아요. 더 자세한 Base64 활용은 [Base64 5가지 활용](/blog/base64-5-uses-email-image-api-auth-webhook)에서, 디코딩 트러블슈팅은 [Base64 디코딩 문제 해결](/blog/base64-decode-troubleshooting-guide)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -14063,7 +11668,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio Base64 Tool",
           body: "Browser-based, OS-independent, supports standard and URL-safe, image-to-DataURL, line break toggle, no server upload.",
-        },
+        }
       ],
     },
     faq: [
@@ -14072,7 +11677,7 @@ export const blogPosts: BlogPost[] = [
       { question: "JWT 토큰은 왜 한 줄이어야 해요?", answer: "JWT는 헤더.페이로드.서명 형식의 한 줄 토큰. 표준 base64 64자 줄바꿈이 들어가면 파싱 실패. `base64 -w 0` 또는 `openssl base64 -A`로 한 줄 인코딩 필수." },
       { question: "한글 텍스트가 디코딩 후 깨져요. 왜 그래요?", answer: "인코딩할 때와 디코딩할 때 캐릭터셋 불일치 가능성. UTF-8로 통일 권장. Windows에서는 `chcp 65001`로 코드페이지 변경 후 처리. PowerShell은 `[Text.Encoding]::UTF8` 명시." },
       { question: "Base64 인코딩하면 용량이 33% 늘어나요. 왜 그래요?", answer: "3바이트를 4문자로 표현하는 구조. 33% 증가는 정상. 그래서 Base64는 압축이 아니라 인코딩(텍스트 안전 전송용). 용량 줄이려면 gzip → base64 순서로." },
-      { question: "URL-safe Base64와 표준 Base64 호환되나요?", answer: "데이터는 같지만 문자가 달라 직접 호환 X. URL-safe `-_` ↔ 표준 `+/` 치환, 패딩 `=` 추가/제거 처리 필요. JWT는 URL-safe 의무, 이메일 첨부는 표준." },
+      { question: "URL-safe Base64와 표준 Base64 호환되나요?", answer: "데이터는 같지만 문자가 달라 직접 호환 X. URL-safe `-_` ↔ 표준 `+/` 치환, 패딩 `=` 추가/제거 처리 필요. JWT는 URL-safe 의무, 이메일 첨부는 표준." }
     ],
   },
   {
@@ -14126,7 +11731,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 마크다운 미리보기 도구로 빠르게",
           body: "VS Code 안 켜고 빠르게 마크다운 미리보기 하고 싶을 때 [Toolkio 마크다운 미리보기](https://toolkio.com/tools/markdown-preview)가 편해요.\n\n장점.\n\n1. **설치 불필요** — 브라우저에서 즉시\n2. **GitHub 스타일 렌더링**\n3. **표·코드 블록·이미지 모두 지원**\n4. **모바일에서도 가능** — 회사 PC에서 작성, 폰으로 확인\n5. **공유 링크 생성** — 다른 사람에게 보여주기 편함\n\nVS Code는 정식 글, Toolkio는 짧은 노트·즉석 확인 — 용도별로 나누면 좋아요. 더 자세한 마크다운 활용은 [마크다운 미리보기 7가지 활용](/blog/markdown-preview-7-uses-vscode-github-notion)에서, 표 작성 팁은 [마크다운 표 정렬 4가지 트릭](/blog/markdown-table-alignment-4-tricks)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -14164,7 +11769,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio Markdown Preview",
           body: "Browser-based, no installation, GitHub-style rendering, mobile-friendly. Pair with VS Code: VS Code for serious docs, Toolkio for quick checks.",
-        },
+        }
       ],
     },
     faq: [
@@ -14173,7 +11778,7 @@ export const blogPosts: BlogPost[] = [
       { question: "미리보기에서 한국어가 깨져요. 인코딩 어떻게 설정해요?", answer: "VS Code 우측 하단 'UTF-8' 표시 확인. 다르면 클릭해서 'UTF-8 with BOM' 또는 'UTF-8'로 변경. 기본은 거의 UTF-8이라 보통 문제 없어요." },
       { question: "VS Code 외에 마크다운 잘 되는 에디터 있어요?", answer: "Typora, Obsidian, Mark Text 등. VS Code는 개발 통합 + 확장 생태계가 강점. Typora는 WYSIWYG로 글쓰기 자체가 편함. 용도 따라 선택." },
       { question: "마크다운 미리보기 폰트 바꾸고 싶어요", answer: "VS Code → settings.json → `\"markdown.preview.fontFamily\": \"Noto Sans KR, sans-serif\"` 추가. 한글 폰트 지정하면 미리보기 가독성 향상." },
-      { question: "VS Code에서 마크다운 자동 저장은 어떻게 해요?", answer: "파일 → 자동 저장 체크. 또는 settings.json `\"files.autoSave\": \"afterDelay\"` 추가. 마크다운 + Markdown All in One TOC 자동 갱신과 함께 쓰면 워크플로 매끄러움." },
+      { question: "VS Code에서 마크다운 자동 저장은 어떻게 해요?", answer: "파일 → 자동 저장 체크. 또는 settings.json `\"files.autoSave\": \"afterDelay\"` 추가. 마크다운 + Markdown All in One TOC 자동 갱신과 함께 쓰면 워크플로 매끄러움." }
     ],
   },
   {
@@ -14223,7 +11828,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio QR 생성기로 안전하게",
           body: "[Toolkio QR 생성기](https://toolkio.com/tools/qr-generator)는 ISO 표준 기본값으로 자동 설정.\n\n자동 보호 기능.\n\n1. **명도 검증** — 전경·배경 색이 너무 비슷하면 경고\n2. **자동 4모듈 여백**\n3. **로고 삽입 시 H 레벨 자동 전환**\n4. **권장 크기 가이드** — 스캔 거리 입력하면 권장 크기 표시\n5. **벡터 SVG 다운로드** — 인쇄 시 깨짐 방지\n\n사용 흐름.\n\n1. URL·텍스트 입력\n2. 색상·로고 추가\n3. 미리보기에서 핸드폰으로 직접 스캔 테스트\n4. SVG·PNG 다운로드\n\n명함·메뉴판·포스터 모두 한 번에 OK. 더 자세한 QR 디자인은 [QR코드 무료 만들기 5단계](/blog/qr-code-free-with-logo-color-5-step-guide)에서, 색상 커스텀은 [QR 색상 커스터마이징](/blog/qr-code-color-customization)에서 이어 보세요.",
-        },
+        }
       ],
       en: [
         {
@@ -14257,7 +11862,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio QR Generator",
           body: "Auto-validates contrast, applies 4-module margin, switches to H level for logos, suggests size by distance. SVG export for print.",
-        },
+        }
       ],
     },
     faq: [
@@ -14266,7 +11871,7 @@ export const blogPosts: BlogPost[] = [
       { question: "QR 안에 로고 크게 넣고 싶은데 가능한가요?", answer: "오류 정정 레벨 H로 설정하고 로고는 QR 면적의 25% 이내. 30% 넘으면 H 레벨로도 인식 실패 급증. 로고 배경에 흰 사각형(둥근 모서리) 깔고 그 위에 로고 권장." },
       { question: "어두운 색 배경에 QR 넣어도 되나요?", answer: "기술적으로 가능하지만 인식률 떨어짐. 어두운 배경 → QR 부분만 흰 사각형으로 깔고 그 위에 검정 QR이 안전. 또는 QR 자체를 흰색으로 하고 배경을 검정 — 일부 카메라가 못 읽으므로 권장 X." },
       { question: "QR 모서리 둥글게 만들면 인식이 안 되나요?", answer: "코너 마커(3개 큰 사각형) 모양 변경하면 일부 카메라 인식 실패. 디자인 QR 도구(QRCode Monkey)는 마커 변형 옵션 있는데 표준 사각형 유지가 가장 안전. 데이터 모듈은 둥글게 해도 OK." },
-      { question: "QR 스캔이 핸드폰별로 다르게 동작해요. 표준 어디서 확인해요?", answer: "ISO/IEC 18004:2024 표준이 공식. iOS는 카메라 자동 인식, Android는 기종별로 별도 앱 필요한 경우 있음. 두 OS·다양한 기종에서 테스트 권장 — 가장 까다로운 환경(저가 안드로이드)에서 통과해야 안전." },
+      { question: "QR 스캔이 핸드폰별로 다르게 동작해요. 표준 어디서 확인해요?", answer: "ISO/IEC 18004:2024 표준이 공식. iOS는 카메라 자동 인식, Android는 기종별로 별도 앱 필요한 경우 있음. 두 OS·다양한 기종에서 테스트 권장 — 가장 까다로운 환경(저가 안드로이드)에서 통과해야 안전." }
     ],
   },
   {
@@ -14332,7 +11937,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Toolkio 연봉 계산기로 정확하게",
           body: "퇴직금은 평균임금·통상임금 두 가지 다 계산해서 큰 쪽으로 받는 게 권리. [Toolkio 연봉 계산기](https://toolkio.com/tools/salary-calculator)에서 연봉을 입력하면 통상임금 기반 시급·일급이 자동 계산돼요.\n\n계산 흐름.\n\n1. 연봉 입력 → 월 통상임금 자동 (연봉 ÷ 12)\n2. 209시간으로 나눈 시급 표시\n3. 일급(시급 × 8) 표시\n4. 근속연수 입력 → 통상임금 기준 퇴직금 계산\n5. 평균임금은 직전 3개월 임금 합 ÷ 89일로 직접 계산 후 비교\n\n세금. 퇴직소득세는 별도. 근속 10년 이상이면 세율 낮음. [연봉 실수령액 가이드](/blog/salary-calculator-2026-net-pay-tax-insurance)에서 4대보험·소득세 공제 확인. 더 자세한 세후 계산은 [2026 연봉 실수령액](/blog/2026-salary-after-tax-4-insurance-increase)에서 이어 보세요.\n\n퇴사 결정하기 전 두 금액 다 계산하고, 회사가 적게 주려 하면 고용노동부 1350 신고가 답이에요.",
-        },
+        }
       ],
       en: [
         {
@@ -14374,7 +11979,7 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "Use Toolkio Salary Calculator",
           body: "Input annual salary → auto compute hourly (÷209), daily (×8), severance by years of service. Compare with average wage from 3-month total ÷ 89 days.",
-        },
+        }
       ],
     },
     faq: [
@@ -14383,7 +11988,7 @@ export const blogPosts: BlogPost[] = [
       { question: "정기상여금은 평균임금에 포함되나요?", answer: "정기적으로 받는 상여금은 포함. 3개월 안에 한 번 받았다면 받은 금액 그대로 산입. 1년에 한 번 받는 상여금은 안분 — 600만/12 = 50만씩 3개월에 걸쳐 산입." },
       { question: "퇴직금 중간정산 받으면 손해예요?", answer: "퇴직 시점에 받는 게 보통 더 유리. 중간정산하면 임금 인상분 반영 X. 단 주택 구입·요양비처럼 당장 큰 돈 필요할 때 활용. 가능하면 IRP 계좌로 받아 세금 이연." },
       { question: "퇴직소득세는 얼마인가요?", answer: "근속 10년 미만은 세율 높음, 10년 이상부터 점차 감면. 퇴직금 1억, 근속 10년이면 세금 약 5~7%. 정확한 계산은 국세청 홈택스 모의계산. IRP로 받으면 55세까지 과세 이연 가능." },
-      { question: "회사가 부도나면 퇴직금 어떻게 받나요?", answer: "근로기준법 제38조 임금채권 최우선변제. 회사 자산이 있으면 다른 채권보다 먼저 받음. 자산 부족 시 고용노동부 '체당금' 제도로 일부 정부가 지급(상한 있음). 30일 안에 신청." },
+      { question: "회사가 부도나면 퇴직금 어떻게 받나요?", answer: "근로기준법 제38조 임금채권 최우선변제. 회사 자산이 있으면 다른 채권보다 먼저 받음. 자산 부족 시 고용노동부 '체당금' 제도로 일부 정부가 지급(상한 있음). 30일 안에 신청." }
     ],
-  },
+  }
 ];

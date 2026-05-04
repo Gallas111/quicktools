@@ -386,12 +386,6 @@
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/case-converter-camel-snake-kebab-5-differences/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/crlf-lf-line-ending-windows-mac-converter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -410,18 +404,6 @@
     <lastmod>2026-04-25</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/unix-timestamp-sql-db-migration-5-cases/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-25</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/regex-test-5-patterns-validation-real-cases/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-25</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/korean-age-vs-international-age-2026-5-situations/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -434,97 +416,7 @@
     <lastmod>2026-04-24</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/percent-calculator-discount-increase-compound-5-patterns/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-24</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/uuid-v7-postgres-mongodb-migration-2026/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-24</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/currency-unit-converter-overseas-direct-purchase/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-24</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/2026-password-passkey-era-hacking-prevention/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/text-diff-contract-change-detection-10s/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/2026-salary-after-tax-4-insurance-increase/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/bmi-2026-korea-standard-who-comparison/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/api-mock-data-json-generator-schema-validation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-22</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/naver-blog-image-compression-2mb-quality-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-22</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/poster-event-qr-code-utm-tracking-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-22</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/youtube-video-title-description-seo-char-limits/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-22</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/json-pretty-print-vs-minify-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/base64-urlsafe-encoding-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/timestamp-millisecond-nanosecond-conversion/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/regex-korean-id-number-validation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/json-to-yaml-conversion-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-21</lastmod>
@@ -566,12 +458,6 @@
     <lastmod>2026-04-19</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/regex-korean-validation-patterns-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-19</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/text-case-converter-practical-examples/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -590,34 +476,10 @@
     <lastmod>2026-04-18</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/date-difference-calculation-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-18</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/markdown-checkbox-todo-list-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-18</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/credit-card-number-regex-validation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-18</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/json-array-remove-duplicates-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-18</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/csv-to-json-conversion-method-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-17</lastmod>
   </url>
   <url>
     <loc>https://toolkio.com/blog/sha256-md5-hash-generator-guide/</loc>
@@ -660,54 +522,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-16</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/base64-email-attachment-size-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-14</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/business-card-qr-design-tips-2026/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-14</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/json-error-debugging-10min-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-14</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/seo-blog-optimal-char-count-2026/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-14</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/bmi-calculator-healthy-weight-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-11</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/salary-calculator-net-pay-tax-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-11</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/unit-converter-everyday-conversions-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-11</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/number-base-converter-binary-hex-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-11</lastmod>
   </url>
   <url>
     <loc>https://toolkio.com/blog/text-counter-document-analysis-guide/</loc>
@@ -800,43 +614,13 @@
     <lastmod>2026-04-08</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/regex-tester-practical-patterns-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-07</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/base64-encoding-practical-use-cases/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-07</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/password-generator-secure-tips-2026/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-07</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/unit-converter-complete-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/percent-calculator-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-06</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/instagram-line-break-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/bmi-calculator-health-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-06</lastmod>
@@ -855,12 +639,6 @@
   </url>
   <url>
     <loc>https://toolkio.com/blog/youtube-thumbnail-download-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-04-05</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/gpa-calculator-university-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-05</lastmod>
@@ -1044,42 +822,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/bmr-calculator-diet-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/unit-converter-tips-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/percent-calculator-practical-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/gpa-calculator-complete-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-28</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/salary-after-tax-calculation-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/bmi-calculator-health-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-27</lastmod>
   </url>
   <url>
     <loc>https://toolkio.com/blog/secure-password-creation-tips-2026/</loc>
@@ -1460,31 +1202,7 @@
     <lastmod>2026-03-13</lastmod>
   </url>
   <url>
-    <loc>https://toolkio.com/blog/how-to-convert-number-bases/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-13</lastmod>
-  </url>
-  <url>
     <loc>https://toolkio.com/blog/how-to-minify-css/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-13</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/how-to-generate-uuid/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-13</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/how-to-convert-text-case/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-13</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/how-to-test-regex/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-13</lastmod>
@@ -1521,12 +1239,6 @@
   </url>
   <url>
     <loc>https://toolkio.com/blog/how-to-create-strong-password/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-03-13</lastmod>
-  </url>
-  <url>
-    <loc>https://toolkio.com/blog/how-to-create-qr-code/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-03-13</lastmod>
