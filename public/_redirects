@@ -1,0 +1,14 @@
+# AdSense Phase 5.1 응급 정리 (2026-05-04)
+# Thin/duplicate posts removed from blog.ts → 301 redirect to tool page or pillar post.
+
+# === Phase A: 한글 200자 미만 거의 빈 글 10개 → 도구 페이지 ===
+/blog/letter-case-converter-developer-usage/  /tools/case-converter/  301
+/blog/hex-rgb-hsl-difference-designer-guide/  /tools/color-converter/  301
+/blog/markdown-syntax-10-essentials/  /tools/markdown-preview/  301
+/blog/discount-percent-calculator-shopping-scenarios/  /tools/percent-calculator/  301
+/blog/password-strength-change-frequency/  /tools/password-generator/  301
+/blog/exam-dday-motivation-strategy/  /tools/dday-calculator/  301
+/blog/image-file-size-reduction-methods/  /tools/image-compressor/  301
+/blog/regex-common-patterns-10-examples/  /tools/regex-tester/  301
+/blog/lorem-ipsum-design-effective-use/  /tools/lorem-ipsum/  301
+/blog/qr-code-color-customization/  /tools/qr-generator/  301
