@@ -403,59 +403,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "how-to-convert-colors",
-    title: {
-      ko: "색상 변환 가이드 - HEX, RGB, HSL 색상 코드 변환하는 법",
-      en: "Color Conversion Guide - How to Convert Between HEX, RGB, and HSL",
-    },
-    description: {
-      ko: "디자인과 개발에 필요한 색상 코드 변환 방법. HEX, RGB, HSL 차이점과 사용법 총정리.",
-      en: "Convert color codes for design and development. Complete guide to HEX, RGB, and HSL differences and usage.",
-    },
-    date: "2026-03-13",
-    toolId: "color-converter",
-    image: "/images/blog/how-to-convert-colors.webp",
-    keywords: ["색상 변환", "HEX RGB 변환", "색상 코드", "color converter", "컬러 코드 변환"],
-    content: {
-      ko: [
-        {
-          heading: "색상 코드의 종류와 차이점",
-          body: "웹과 디자인에서 사용하는 주요 색상 코드 형식은 세 가지입니다:\n\n- HEX(헥스): #FF5733처럼 # 뒤에 6자리 16진수로 표현합니다. CSS에서 가장 널리 사용됩니다.\n- RGB: rgb(255, 87, 51)처럼 빨강, 초록, 파랑 값을 0~255로 지정합니다. 프로그래밍에서 색상을 다룰 때 직관적입니다.\n- HSL: hsl(14, 100%, 60%)처럼 색상(Hue), 채도(Saturation), 명도(Lightness)로 표현합니다. 색상 조합을 만들 때 유용합니다.\n\n같은 색상이라도 사용 환경에 따라 다른 형식이 필요하기 때문에 색상 변환 도구가 필수입니다.",
-        },
-        {
-          heading: "디자이너와 개발자의 색상 코드 활용",
-          body: "디자이너와 개발자는 작업 환경에 따라 다른 색상 형식을 사용합니다:\n\n- Figma/Sketch: 기본적으로 HEX 코드를 사용합니다\n- CSS 스타일링: HEX, RGB, HSL 모두 사용 가능하지만 HEX가 가장 흔합니다\n- JavaScript: rgba() 형식으로 투명도 포함 색상을 다룰 때 유용합니다\n- iOS/Android: 플랫폼마다 선호하는 색상 형식이 다릅니다\n\n디자이너가 Figma에서 HEX로 전달한 색상을 개발자가 CSS에서 rgba로 변환해야 하는 경우가 흔합니다.",
-        },
-        {
-          heading: "색상 조합과 배색 팁",
-          body: "HSL 형식을 이해하면 조화로운 색상 조합을 쉽게 만들 수 있습니다:\n\n- 보색: Hue 값을 180도 반대로 설정 (예: 0 → 180)\n- 유사색: Hue 값을 30도 간격으로 배치\n- 삼각 배색: Hue 값을 120도 간격으로 배치\n- 명도 변화: 같은 Hue에서 Lightness만 조절하면 같은 톤의 밝기 변형을 만들 수 있습니다\n\n브랜드 컬러에서 밝은 버전이나 어두운 버전을 만들 때 HSL의 Lightness 값을 조절하는 것이 가장 자연스럽습니다.",
-        },
-        {
-          heading: "Toolkio 색상 변환기 사용법",
-          body: "Toolkio의 색상 변환기를 사용하면 HEX, RGB, HSL 간 변환을 즉시 할 수 있습니다.\n\n1. 아무 형식으로든 색상 코드를 입력\n2. 나머지 형식으로 자동 변환 결과 확인\n3. 색상 미리보기로 실제 색상 확인\n4. 필요한 형식의 코드를 복사\n\n컬러 피커도 제공되어 시각적으로 색상을 선택한 후 모든 형식의 코드를 한번에 얻을 수 있습니다.",
-        },
-      ],
-      en: [
-        {
-          heading: "Types of Color Codes",
-          body: "Three main color code formats are used in web and design:\n\n- HEX: Uses 6 hexadecimal digits after #, like #FF5733. Most common in CSS.\n- RGB: Specifies Red, Green, Blue values from 0-255, like rgb(255, 87, 51). Intuitive for programming.\n- HSL: Uses Hue, Saturation, Lightness, like hsl(14, 100%, 60%). Great for creating color schemes.\n\nDifferent environments need different formats, making a color converter essential.",
-        },
-        {
-          heading: "Color Codes for Designers and Developers",
-          body: "Designers and developers use different color formats depending on their tools:\n\n- Figma/Sketch: Default to HEX codes\n- CSS styling: HEX, RGB, and HSL all work, but HEX is most common\n- JavaScript: rgba() is useful for colors with transparency\n- iOS/Android: Each platform prefers different formats\n\nIt's common for designers to hand off HEX colors from Figma that developers need to convert to rgba for CSS.",
-        },
-        {
-          heading: "Color Harmony Tips",
-          body: "Understanding HSL makes it easy to create harmonious color schemes:\n\n- Complementary: Set Hue 180 degrees apart (e.g., 0 and 180)\n- Analogous: Space Hue values 30 degrees apart\n- Triadic: Space Hue values 120 degrees apart\n- Lightness variations: Adjust only Lightness to create tints and shades of the same color\n\nFor brand colors, adjusting HSL Lightness is the most natural way to create light and dark variants.",
-        },
-        {
-          heading: "How to Use Toolkio Color Converter",
-          body: "Toolkio's color converter instantly converts between HEX, RGB, and HSL.\n\n1. Enter a color code in any format\n2. See automatic conversions to all other formats\n3. Preview the actual color visually\n4. Copy the code in any format you need\n\nA color picker is also available to visually select colors and get all format codes at once.",
-        },
-      ],
-    },
-  },
-  {
     slug: "how-to-encode-base64",
     title: {
       ko: "Base64 인코딩 방법 - 텍스트와 파일을 Base64로 변환하기",
@@ -5416,73 +5363,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "web-design-color-code-conversion",
-    title: {
-      ko: "웹 디자인 색상 코드 변환 가이드 - HEX, RGB, HSL 한번에 이해하기",
-      en: "Web Design Color Code Conversion Guide - Understanding HEX, RGB, and HSL",
-    },
-    description: {
-      ko: "디자이너가 준 색상 코드가 HEX인데 CSS에서 RGB가 필요할 때, 헷갈리지 않게 변환하는 방법을 정리했어요.",
-      en: "When the designer gives you HEX but your CSS needs RGB, here's how to convert color codes without confusion.",
-    },
-    date: "2026-03-25",
-    toolId: "color-converter",
-    image: "/images/blog/web-design-color-code-conversion.webp",
-    keywords: ["색상 코드 변환", "HEX RGB 변환", "HSL 색상", "웹 디자인 색상", "CSS 색상 코드", "color converter"],
-    content: {
-      ko: [
-        {
-          heading: "색상 코드가 왜 이렇게 여러 개일까?",
-          body: "웹 개발하다 보면 같은 빨간색인데 표현 방식이 다 달라서 헷갈리죠?\n\n- HEX: #FF0000\n- RGB: rgb(255, 0, 0)\n- HSL: hsl(0, 100%, 50%)\n\n전부 같은 빨간색이에요. 그런데 왜 이렇게 여러 가지가 있을까요?\n\nHEX는 디자인 툴에서 주로 쓰이고, RGB는 CSS와 프로그래밍에서, HSL은 색상 조절이 직관적이라 UI 작업에서 많이 써요. 상황에 따라 필요한 형식이 다르거든요.",
-        },
-        {
-          heading: "HEX, RGB, HSL 쉽게 이해하기",
-          body: "각 색상 체계를 쉽게 설명해드릴게요:\n\nHEX (16진수): #RRGGBB 형태예요. R(빨강), G(초록), B(파랑) 값을 16진수로 표현한 거예요. 00이 가장 어둡고 FF가 가장 밝아요.\n\nRGB (빨강-초록-파랑): rgb(0~255, 0~255, 0~255) 형태예요. 세 가지 빛을 섞어서 색을 만드는 방식이에요. 모니터가 빛을 쏘는 원리와 같아요.\n\nHSL (색상-채도-명도): hsl(0~360, 0~100%, 0~100%) 형태예요. 색상환에서 각도를 골라서 색을 정해요. 사람의 직관과 가장 가까워요.\n\n저는 개인적으로 HSL을 좋아해요. '이 색을 좀 더 밝게' 하려면 명도 값만 올리면 되거든요.",
-        },
-        {
-          heading: "Toolkio 색상 변환기로 바로 변환하기",
-          body: "Toolkio 색상 변환기는 하나만 입력하면 나머지를 전부 보여줘요:\n\n1. toolkio.com에서 색상 변환기 선택\n2. HEX, RGB, HSL 중 아무거나 입력\n3. 나머지 형식이 자동으로 변환돼요\n4. 색상 미리보기도 바로 확인\n\n디자이너한테 #3B82F6 받았는데 CSS에서 투명도가 필요하면? RGB로 변환해서 rgba(59, 130, 246, 0.5) 이렇게 쓰면 돼요.\n\n매번 구글에 'HEX to RGB' 검색할 필요 없이 Toolkio 즐겨찾기 해두세요.",
-        },
-        {
-          heading: "실무에서 바로 쓰는 색상 팁",
-          body: "웹 디자인에서 색상 다룰 때 알아두면 좋은 팁이에요:\n\n- 투명도가 필요하면 RGBA 사용: rgba(255, 0, 0, 0.5)로 반투명 처리\n- 색상 톤 조절은 HSL이 편해요: 명도(L)만 바꾸면 같은 계열의 밝은/어두운 색을 만들 수 있어요\n- CSS 변수에 HSL 저장하면 테마 변경이 쉬워요\n- 접근성 체크: 배경과 글자 색상의 대비 비율이 4.5:1 이상인지 확인하세요\n\n지금 작업 중인 프로젝트의 주요 색상 코드를 Toolkio에서 변환해보세요. HEX, RGB, HSL을 한눈에 정리할 수 있어요.",
-        },
-      ],
-      en: [
-        {
-          heading: "Why Are There So Many Color Code Formats?",
-          body: "The same red color can be written three different ways:\n\n- HEX: #FF0000\n- RGB: rgb(255, 0, 0)\n- HSL: hsl(0, 100%, 50%)\n\nAll represent the exact same red. But why so many formats?\n\nHEX is popular in design tools, RGB is standard in CSS and programming, and HSL is intuitive for color adjustments in UI work. Different situations call for different formats.",
-        },
-        {
-          heading: "HEX, RGB, and HSL Explained Simply",
-          body: "HEX (Hexadecimal): Format is #RRGGBB. Red, Green, and Blue values in hexadecimal. 00 is darkest, FF is brightest.\n\nRGB (Red-Green-Blue): Format is rgb(0-255, 0-255, 0-255). Mixes three light colors to create any color. Matches how monitors actually display colors.\n\nHSL (Hue-Saturation-Lightness): Format is hsl(0-360, 0-100%, 0-100%). Picks a color from the color wheel by angle. Most intuitive for humans.\n\nHSL is especially handy. Want a lighter shade? Just increase the lightness value.",
-        },
-        {
-          heading: "Convert Instantly with Toolkio Color Converter",
-          body: "Toolkio's Color Converter shows all formats from a single input:\n\n1. Go to Color Converter on toolkio.com\n2. Enter any HEX, RGB, or HSL value\n3. All other formats auto-convert instantly\n4. See a live color preview\n\nGot #3B82F6 from your designer but need transparency? Convert to RGB and use rgba(59, 130, 246, 0.5).\n\nNo more Googling 'HEX to RGB' every time. Bookmark Toolkio.",
-        },
-        {
-          heading: "Practical Color Tips for Web Design",
-          body: "Useful tips for working with colors in web design:\n\n- Need transparency? Use RGBA: rgba(255, 0, 0, 0.5) for semi-transparent red\n- Adjusting tones? HSL is easiest: change Lightness for lighter/darker shades of the same hue\n- Store colors as HSL in CSS variables for easy theme switching\n- Accessibility: Ensure text-to-background contrast ratio is at least 4.5:1\n\nTry converting your current project's main colors in Toolkio. See HEX, RGB, and HSL side by side.",
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "HEX 코드에서 #을 빼고 입력해도 되나요?",
-        answer: "네, Toolkio 색상 변환기에서는 # 없이 FF0000만 입력해도 인식해요. CSS에서는 #을 반드시 붙여야 하지만 도구에서는 유연하게 처리해줘요.",
-      },
-      {
-        question: "CMYK 색상도 변환할 수 있나요?",
-        answer: "CMYK는 인쇄용 색상 체계라서 웹용 RGB/HEX와 정확히 1:1 대응이 안 돼요. 웹 디자인에서는 HEX, RGB, HSL만 사용하면 충분해요. 인쇄물 작업이라면 전용 디자인 도구를 사용하세요.",
-      },
-      {
-        question: "다크 모드에서 색상은 어떻게 조절하나요?",
-        answer: "HSL 형식을 쓰면 쉬워요. 라이트 모드의 색상에서 명도(L) 값만 반전시키면 다크 모드 색상을 만들 수 있거든요. 예를 들어 hsl(220, 90%, 90%)을 hsl(220, 90%, 20%)으로 바꾸면 돼요.",
-      },
-    ],
-  },
-  {
     slug: "css-code-cleanup-workflow",
     title: {
       ko: "CSS 코드 정리 워크플로우 — 압축, 포맷팅, 배포까지 3단계",
@@ -8299,73 +8179,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "color-code-converter-rgb-hex-guide",
-    title: {
-      ko: "색상 코드 변환 완벽 가이드 - RGB, HEX, HSL 한번에 변환하기",
-      en: "Color Code Converter Guide - Convert RGB, HEX, HSL Instantly",
-    },
-    description: {
-      ko: "RGB, HEX, HSL 색상 코드를 서로 변환하는 방법을 정리했습니다. 디자이너와 개발자를 위한 색상 변환 실전 가이드예요.",
-      en: "Learn how to convert between RGB, HEX, and HSL color codes. A practical guide for designers and developers.",
-    },
-    date: "2026-04-03",
-    toolId: "color-converter",
-    image: "/images/blog/color-code-converter-rgb-hex-guide.webp",
-    keywords: ["색상 코드 변환", "RGB HEX 변환", "색상 코드 변환기", "RGB CMYK 변환", "color converter"],
-    content: {
-      ko: [
-        {
-          heading: "색상 코드, 왜 이렇게 종류가 많을까?",
-          body: "웹 개발하다 보면 HEX 코드를 써야 할 때가 있고, 디자인 툴에서는 RGB를 쓰고, CSS에서는 HSL을 쓰기도 하잖아요. 같은 색인데 표현 방식이 다른 거예요.\n\nHEX는 #FF5733처럼 16진수로 표현하는 방식이에요. 웹에서 가장 많이 쓰이죠.\n\nRGB는 빨강(Red), 초록(Green), 파랑(Blue) 세 가지 빛의 조합으로 rgb(255, 87, 51)처럼 표현해요.\n\nHSL은 색상(Hue), 채도(Saturation), 명도(Lightness)로 hsl(14, 100%, 60%)처럼 표현하고요. 색 조합을 만들 때 가장 직관적이에요.\n\n각 방식의 장점이 다르기 때문에 상황에 맞게 변환해서 써야 해요."
-        },
-        {
-          heading: "HEX와 RGB 변환 원리",
-          body: "HEX 코드는 사실 RGB를 16진수로 표현한 거예요. #FF5733을 분해하면 FF(빨강 255), 57(초록 87), 33(파랑 51)이 돼요.\n\n변환 공식은 간단해요. HEX 두 자리를 10진수로 바꾸면 RGB 값이 나오거든요. FF는 15x16+15 = 255, 57은 5x16+7 = 87이에요.\n\n반대로 RGB를 HEX로 바꿀 때는 각 값을 16진수로 변환하면 돼요. 255를 16진수로 바꾸면 FF가 되는 거죠.\n\n직접 계산하기 번거로우니까 [Toolkio 색상 변환기](/color-converter)를 쓰면 값을 넣는 즉시 모든 형식으로 변환해줘요."
-        },
-        {
-          heading: "HSL이 디자인에서 유용한 이유",
-          body: "HSL은 사람이 색을 인식하는 방식과 가장 비슷해요. H(색상)은 0~360도 색상환, S(채도)는 0~100%, L(명도)은 0~100%로 표현하거든요.\n\n예를 들어 빨간색 계열로 밝은 색부터 어두운 색까지 만들고 싶으면, H를 0으로 고정하고 L만 바꾸면 돼요. RGB로는 이런 작업이 직관적이지 않거든요.\n\n버튼 호버 색상을 만들 때도 HSL이 편해요. 기본 색상의 L값만 10% 낮추면 자연스러운 어두운 변형이 되거든요."
-        },
-        {
-          heading: "실전에서 색상 코드 활용하기",
-          body: "CSS에서는 세 가지 형식 모두 사용 가능해요. background-color: #FF5733, rgb(255,87,51), hsl(14,100%,60%) 전부 같은 결과가 나와요.\n\nFigma에서 색상을 복사하면 HEX로 나오는데, CSS에서 투명도가 필요하면 rgba로 변환해야 해요. rgba(255, 87, 51, 0.8)처럼 네 번째 값이 투명도예요.\n\n인쇄물이라면 CMYK 변환도 필요해요. 화면용 RGB 색상과 인쇄용 CMYK 색상은 색 영역이 다르기 때문에 변환 후 색이 달라 보일 수 있어요.\n\n[색상 팔레트 조합 가이드](/blog/color-palette-combination-guide)에서 조화로운 색 조합을 만드는 방법도 확인해보세요."
-        },
-      ],
-      en: [
-        {
-          heading: "Why Are There So Many Color Code Formats?",
-          body: "Different tools and platforms prefer different color formats. HEX (#FF5733) is standard in web development. RGB (255, 87, 51) represents light mixing. HSL (14, 100%, 60%) is most intuitive for creating color variations.\n\nEach format represents the same color differently, and you'll often need to convert between them depending on your workflow."
-        },
-        {
-          heading: "How HEX and RGB Conversion Works",
-          body: "HEX is simply RGB in hexadecimal. #FF5733 breaks down to FF (red 255), 57 (green 87), 33 (blue 51).\n\nTo convert HEX to RGB, convert each pair of hex digits to decimal. FF = 255, 57 = 87, 33 = 51.\n\nFor RGB to HEX, convert each decimal value to two-digit hexadecimal. Use Toolkio's color converter to do this instantly."
-        },
-        {
-          heading: "Why HSL Is Great for Design",
-          body: "HSL matches human color perception. H (hue) is a 0-360 degree color wheel, S (saturation) is 0-100%, L (lightness) is 0-100%.\n\nCreating color variations is easy: keep H constant and adjust L for lighter/darker shades. For hover states, just decrease L by 10% for a natural darkened version."
-        },
-        {
-          heading: "Using Color Codes in Practice",
-          body: "CSS supports all three formats. For transparency, use rgba() with a fourth alpha value (0-1).\n\nWhen copying colors from Figma (HEX), convert to rgba if you need opacity. For print, convert RGB to CMYK — screen and print color spaces differ significantly."
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "HEX 코드에서 #을 빼도 되나요?",
-        answer: "CSS에서는 반드시 #을 붙여야 해요. 하지만 일부 디자인 도구나 프로그래밍에서는 # 없이 6자리 16진수만 써도 인식해요.",
-      },
-      {
-        question: "RGB와 CMYK는 왜 색이 다르게 보이나요?",
-        answer: "RGB는 빛의 혼합(가산혼합)이고 CMYK는 잉크의 혼합(감산혼합)이에요. 표현 가능한 색 범위가 달라서 화면에서 보이는 색과 인쇄물 색이 다를 수 있어요.",
-      },
-      {
-        question: "투명도를 포함한 색상 코드는 어떻게 쓰나요?",
-        answer: "HEX는 8자리(#FF573380), RGB는 rgba(255,87,51,0.5), HSL은 hsla(14,100%,60%,0.5)로 마지막에 투명도 값을 추가하면 돼요.",
-      },
-    ],
-  },
-  {
     slug: "base64-encoding-decoding-practical-guide",
     title: {
       ko: "Base64 변환 완벽 가이드 - 이미지 인코딩부터 API 인증까지",
@@ -9706,73 +9519,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "color-code-converter-rgb-hex-guide",
-    title: {
-      ko: "색상 코드 변환 완벽 가이드 — RGB, HEX, HSL 쉽게 바꾸기",
-      en: "Color Code Converter Guide — Easily Convert Between RGB, HEX, and HSL",
-    },
-    description: {
-      ko: "RGB, HEX, HSL 색상 코드를 쉽게 변환하는 방법을 정리했어요. 디자이너와 개발자를 위한 색상 변환 실전 가이드.",
-      en: "How to convert between RGB, HEX, and HSL color codes. A practical guide for designers and developers.",
-    },
-    date: "2026-04-07",
-    toolId: "color-converter",
-    image: "/images/blog/color-code-converter-rgb-hex-guide.webp",
-    keywords: ["색상 코드 변환", "RGB 변환", "HEX 색상", "색상 코드 변환기", "color code converter"],
-    content: {
-      ko: [
-        {
-          heading: "색상 코드, 왜 여러 종류가 있을까?",
-          body: "같은 빨간색이라도 표현 방식이 달라요:\n\n- HEX: #FF0000 (웹에서 가장 많이 사용)\n- RGB: rgb(255, 0, 0) (CSS, 디자인 도구)\n- HSL: hsl(0, 100%, 50%) (색상 조절이 직관적)\n- CMYK: 0, 100, 100, 0 (인쇄용)\n\n웹 개발은 HEX나 RGB를, 디자인은 HSL을, 인쇄는 CMYK를 주로 써요. 그래서 변환이 자주 필요하거든요."
-        },
-        {
-          heading: "HEX 색상 코드 이해하기",
-          body: "HEX는 16진수(Hexadecimal)로 색상을 표현해요. #RRGGBB 형식으로 각 2자리가 빨강, 초록, 파랑 값이에요.\n\n- #000000 = 검정 (모든 값 0)\n- #FFFFFF = 흰색 (모든 값 최대)\n- #FF0000 = 빨강\n- #00FF00 = 초록\n- #0000FF = 파랑\n\n축약형도 있어요. #F00은 #FF0000과 같아요. CSS에서 많이 쓰이는 형식이에요.\n\n[JSON 포맷터](/blog/json-formatter-guide-complete)로 디자인 토큰 파일을 정리할 때도 HEX 코드를 자주 다루게 돼요."
-        },
-        {
-          heading: "RGB와 HSL 차이점",
-          body: "RGB는 빛의 3원색(빨강, 초록, 파랑)을 0~255 범위로 조합해요. 컴퓨터가 이해하기 쉬운 방식이에요.\n\nHSL은 색상(Hue, 0~360도), 채도(Saturation, 0~100%), 명도(Lightness, 0~100%)로 표현해요. 사람이 이해하기 쉬운 방식이죠.\n\n예를 들어 \"이 빨간색을 좀 더 연하게\" 하고 싶으면:\n- RGB: 세 값을 동시에 조절해야 해서 복잡\n- HSL: Lightness만 올리면 끝\n\n디자인 작업에서는 HSL이 훨씬 직관적이에요."
-        },
-        {
-          heading: "Toolkio 색상 변환기 사용법",
-          body: "Toolkio의 색상 변환기는 하나의 형식을 입력하면 나머지 형식을 자동으로 변환해줘요.\n\n1. HEX, RGB, HSL 중 아는 값 입력\n2. 나머지 형식이 실시간 자동 변환\n3. 컬러 피커로 색상을 직접 선택도 가능\n4. 원클릭 복사로 코드에 바로 붙여넣기\n\nCSS 작업할 때 디자이너가 HEX로 전달한 색상을 HSL로 변환하면 밝기 조절이 편해져요."
-        },
-      ],
-      en: [
-        {
-          heading: "Why Multiple Color Code Formats?",
-          body: "Same red, different notations: HEX (#FF0000), RGB (255,0,0), HSL (0,100%,50%), CMYK (0,100,100,0). Web uses HEX/RGB, design uses HSL, print uses CMYK."
-        },
-        {
-          heading: "Understanding HEX Codes",
-          body: "#RRGGBB format. Each pair is 0-FF (0-255). #000000=black, #FFFFFF=white. Shorthand: #F00 = #FF0000."
-        },
-        {
-          heading: "RGB vs HSL",
-          body: "RGB: computer-friendly (0-255 per channel). HSL: human-friendly (hue 0-360, saturation/lightness 0-100%). HSL makes lightness adjustments intuitive."
-        },
-        {
-          heading: "Using Toolkio Color Converter",
-          body: "Enter any format, get instant conversion to all others. Use the color picker for visual selection. One-click copy for direct use in code."
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "HEX 색상 코드에서 투명도는 어떻게 표현하나요?",
-        answer: "#RRGGBBAA 형식으로 뒤에 2자리를 추가하면 돼요. FF는 불투명, 80은 50%, 00은 완전 투명이에요. 예: #FF000080은 50% 투명한 빨간색이에요.",
-      },
-      {
-        question: "디자이너가 준 색상 코드가 안 맞을 때는?",
-        answer: "모니터 색상 프로필이 다를 수 있어요. sRGB 프로필을 기준으로 맞추고, 동일한 HEX 코드를 사용하면 대부분 해결돼요.",
-      },
-      {
-        question: "웹 접근성을 위한 색상 대비는 어떻게 확인하나요?",
-        answer: "WCAG 기준으로 일반 텍스트는 4.5:1 이상, 큰 텍스트는 3:1 이상의 대비가 필요해요. Toolkio 색상 변환기에서 두 색상의 대비율을 확인할 수 있어요.",
-      },
-    ],
-  },
-  {
     slug: "base64-encoding-practical-use-cases",
     title: {
       ko: "Base64 변환 실전 활용법 — 이미지 인코딩부터 API 인증까지",
@@ -10238,73 +9984,6 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Base64 이미지가 SEO에 영향을 주나요?",
         answer: "Base64 이미지는 검색엔진이 별도 이미지로 인식하지 못해요. SEO가 중요한 이미지는 일반 파일로 올리고 alt 태그를 넣는 게 좋아요. 장식용 아이콘에만 Base64를 쓰세요.",
-      },
-    ],
-  },
-  {
-    slug: "color-code-rgb-cmyk-conversion-guide",
-    title: {
-      ko: "RGB CMYK 색상 코드 변환 — 디자인과 인쇄 색상 맞추기",
-      en: "RGB to CMYK Color Code Conversion — Matching Screen and Print Colors",
-    },
-    description: {
-      ko: "RGB와 CMYK 색상 코드의 차이와 변환 방법을 정리했어요. 화면 색상을 인쇄물에 정확히 재현하는 팁을 알려드려요.",
-      en: "Understanding RGB vs CMYK color systems and how to convert between them. Tips for matching on-screen colors to printed materials.",
-    },
-    date: "2026-04-08",
-    toolId: "color-converter",
-    image: "/images/blog/color-code-rgb-cmyk-conversion-guide.webp",
-    keywords: ["rgb cmyk 색상 코드 변환", "색상 코드 변환", "rgb to cmyk", "색상 코드 변환기", "cmyk 색상 코드 변환"],
-    content: {
-      ko: [
-        {
-          heading: "RGB와 CMYK의 차이",
-          body: "색상 코드 변환을 이해하려면 먼저 이 둘의 차이를 알아야 해요.\n\nRGB (빛의 삼원색):\n- Red, Green, Blue\n- 모니터, TV, 스마트폰 등 화면용\n- 빛을 더할수록 밝아짐 (가산혼합)\n- 값 범위: 0-255\n\nCMYK (잉크의 사원색):\n- Cyan, Magenta, Yellow, Key(Black)\n- 인쇄물, 출판, 명함 등 프린트용\n- 잉크를 더할수록 어두워짐 (감산혼합)\n- 값 범위: 0-100%\n\n화면에서 예쁜 색이 인쇄하면 탁하게 나오는 건 이 차이 때문이에요."
-        },
-        {
-          heading: "RGB를 CMYK로 변환하는 방법",
-          body: "Toolkio [색상 변환기](/tools/color-converter)에서 RGB 값을 입력하면 CMYK, HEX 등으로 바로 변환돼요.\n\n변환 공식 (간략):\nC = 1 - (R/255)\nM = 1 - (G/255)\nY = 1 - (B/255)\nK = min(C, M, Y)\n\n하지만 이 공식은 근사치예요. 실제 인쇄에서는 프린터와 종이에 따라 색이 달라지기 때문에 ICC 프로파일을 사용한 정밀 변환이 필요해요.\n\n일반적인 디자인 작업에서는 온라인 변환기로 충분하고, 전문 인쇄물은 Photoshop이나 Illustrator의 색상 모드 변환을 사용하세요."
-        },
-        {
-          heading: "변환 시 색상 차이가 나는 이유",
-          body: "RGB와 CMYK의 색역(gamut)이 다르기 때문이에요.\n\nRGB에서는 표현 가능하지만 CMYK에서는 불가능한 색:\n- 형광 초록, 네온 파랑 같은 밝은 색\n- 매우 채도 높은 빨강\n- 화면에서 빛나는 느낌의 색상\n\n이런 색은 CMYK로 변환하면 가장 가까운 색으로 대체돼요. 이걸 '색역 외(out of gamut)'라고 해요.\n\n팁: 인쇄물을 만들 때는 처음부터 CMYK 모드로 디자인하면 나중에 색상 차이로 당황하지 않아요.\n\n[Hex 색상 변환 가이드](/blog/color-code-converter-rgb-hex-guide)도 함께 참고하면 웹과 인쇄 모두 정확한 색상 관리가 가능해요."
-        },
-        {
-          heading: "실전 활용 팁",
-          body: "디자인과 인쇄에서 색상을 정확하게 맞추는 팁이에요:\n\n1. 인쇄물은 CMYK 모드로 시작: Photoshop에서 Image > Mode > CMYK\n2. 웹용은 RGB/HEX 유지: CSS에서는 항상 RGB 또는 HEX\n3. 브랜드 컬러는 양쪽 다 정의: 로고 가이드에 RGB + CMYK 모두 명시\n4. 중요한 인쇄물은 색교정(proof) 요청\n5. Pantone 색상 매칭: 정확한 색이 중요하면 팬톤 컬러 사용\n\n실무에서 가장 많이 하는 실수는 RGB로 디자인한 파일을 그대로 인쇄 보내는 거예요. 반드시 CMYK로 변환 후 보내세요."
-        },
-      ],
-      en: [
-        {
-          heading: "RGB vs CMYK Explained",
-          body: "RGB: additive (light), for screens, 0-255 range. CMYK: subtractive (ink), for print, 0-100% range. Screen colors look different when printed due to this fundamental difference."
-        },
-        {
-          heading: "How to Convert",
-          body: "Use Toolkio Color Converter for quick conversion. For professional print: use ICC profiles in Photoshop/Illustrator. Online converters give approximate results."
-        },
-        {
-          heading: "Why Colors Look Different",
-          body: "RGB has a wider gamut than CMYK. Neon/fluorescent colors cannot be reproduced in print. Design in CMYK mode from the start for print projects."
-        },
-        {
-          heading: "Practical Tips",
-          body: "Start print projects in CMYK mode. Keep web projects in RGB/HEX. Define brand colors in both systems. Request color proofs for important prints. Use Pantone for exact matching."
-        },
-      ],
-    },
-    faq: [
-      {
-        question: "HEX 색상 코드도 CMYK로 변환할 수 있나요?",
-        answer: "네, HEX는 RGB의 다른 표기법이라서 HEX → RGB → CMYK 순서로 변환하면 돼요. Toolkio 색상 변환기에서 HEX를 입력하면 RGB와 CMYK가 동시에 나와요.",
-      },
-      {
-        question: "인쇄소에서 RGB 파일을 보내면 안 되나요?",
-        answer: "보내도 인쇄소에서 자동 변환하지만, 의도한 색과 다르게 나올 수 있어요. 색상이 중요한 인쇄물이라면 반드시 CMYK 모드로 변환해서 보내세요.",
-      },
-      {
-        question: "모니터에서 보이는 색을 인쇄물에서 정확히 재현할 수 있나요?",
-        answer: "100% 동일하게는 어려워요. 모니터는 빛으로, 인쇄는 잉크로 색을 만들기 때문이에요. 최대한 가깝게 맞추려면 캘리브레이션된 모니터와 ICC 프로파일을 사용하세요.",
       },
     ],
   },
@@ -12055,66 +11734,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "hex-rgb-color-conversion-guide",
-    title: {
-      ko: "HEX RGB 색상 변환 가이드 — 디자이너와 개발자 모두를 위한",
-      en: "HEX RGB Color Conversion Guide — For Designers and Developers",
-    },
-    description: {
-      ko: "HEX 색상 코드와 RGB 값을 서로 변환하는 방법을 정리했습니다. HSL 변환, 색상 팔레트 만들기, 실무 활용 팁까지 담았어요.",
-      en: "Learn how to convert between HEX and RGB color codes. Includes HSL conversion, palette creation tips, and practical usage.",
-    },
-    date: "2026-04-17",
-    toolId: "color-converter",
-    image: "/images/blog/hex-rgb-color-conversion-guide.webp",
-    keywords: ["HEX RGB 변환", "색상 변환", "color converter", "색상 코드", "HEX 코드"],
-    content: {
-      ko: [
-        {
-          heading: "HEX와 RGB, 뭐가 다를까?",
-          body: "같은 색상을 표현하는 두 가지 방식이에요.\n\n- HEX: #FF5733 — 웹에서 가장 많이 쓰이는 6자리 16진수 코드\n- RGB: rgb(255, 87, 51) — 빨강, 초록, 파랑 각각 0~255 값\n\n둘 다 같은 색을 나타내지만 사용하는 상황이 달라요. CSS에서는 HEX를 주로 쓰고, JavaScript나 디자인 도구에서는 RGB를 많이 써요. 디자이너가 피그마에서 RGB 값을 주면 개발자는 HEX로 바꿔서 CSS에 넣어야 하거든요.",
-        },
-        {
-          heading: "HEX → RGB 변환 원리",
-          body: "HEX 코드 #FF5733을 RGB로 바꾸는 원리는 간단해요.\n\n6자리를 2자리씩 끊으면 돼요.\n- FF → 빨강: 255\n- 57 → 초록: 87\n- 33 → 파랑: 51\n\n16진수를 10진수로 변환하는 거예요. F는 15, FF는 15x16+15 = 255. 이런 계산을 매번 할 수는 없으니 Toolkio 색상 변환기에 HEX 코드를 넣으면 RGB 값이 바로 나와요.",
-        },
-        {
-          heading: "HSL도 알아두면 좋은 이유",
-          body: "HSL은 Hue(색조), Saturation(채도), Lightness(명도)로 색을 표현해요.\n\n- H: 0~360 (0=빨강, 120=초록, 240=파랑)\n- S: 0~100% (0%=회색, 100%=순색)\n- L: 0~100% (0%=검정, 100%=흰색)\n\nHSL이 좋은 이유는 색상 팔레트를 만들기 쉽기 때문이에요. 같은 H 값에서 S와 L만 바꾸면 자연스러운 그라데이션이 만들어져요. 브랜드 컬러의 밝은 버전, 어두운 버전을 만들 때 정말 편하거든요.\n\nToolkio 색상 변환기에서 HEX, RGB, HSL 세 가지를 동시에 확인할 수 있어요.",
-        },
-        {
-          heading: "실무에서 색상 변환이 필요한 순간",
-          body: "**1. 피그마 → CSS 코딩**\n디자이너가 준 RGB 값을 CSS의 HEX로 변환할 때\n\n**2. 다크모드 구현**\nHSL에서 L(명도)만 조절하면 라이트/다크 모드 색상을 쉽게 만들 수 있어요\n\n**3. 투명도 적용**\nHEX 8자리(예: #FF573380)의 마지막 2자리가 투명도예요. 80은 약 50% 투명\n\n**4. 브랜드 가이드 색상 통일**\n같은 색인데 HEX, RGB, CMYK 등 여러 형태로 표기해야 할 때\n\nToolkio 색상 변환기에 아무 형식으로 넣으면 나머지 형식을 모두 보여줘요.",
-        },
-      ],
-      en: [
-        {
-          heading: "HEX vs RGB",
-          body: "HEX uses 6 hexadecimal digits (#FF5733), RGB uses three 0-255 values (255, 87, 51). Same color, different notation. CSS prefers HEX, JavaScript/design tools prefer RGB.",
-        },
-        {
-          heading: "Conversion Logic",
-          body: "Split HEX into pairs: FF=255(R), 57=87(G), 33=51(B). Each pair is a hexadecimal-to-decimal conversion. Use Toolkio for instant results.",
-        },
-        {
-          heading: "HSL Benefits",
-          body: "HSL (Hue/Saturation/Lightness) makes palette creation easy. Keep H constant, adjust S and L for natural gradients and dark mode variants.",
-        },
-        {
-          heading: "Practical Uses",
-          body: "Figma-to-CSS conversion, dark mode implementation, transparency (8-digit HEX), brand guide color consistency.",
-        },
-      ],
-    },
-    faq: [
-      { question: "HEX 3자리 코드는 뭔가요?", answer: "#F53처럼 3자리로 쓰면 각 자리를 두 번 반복한 거예요. #F53 = #FF5533이에요. 축약형이지만 정확한 색 지정이 어려워서 6자리를 쓰는 게 좋아요." },
-      { question: "RGBA에서 A는 뭔가요?", answer: "Alpha(투명도)예요. 0이면 완전 투명, 1이면 완전 불투명이에요. rgba(255, 87, 51, 0.5)면 50% 투명한 주황색이에요." },
-      { question: "CSS에서 HEX와 RGB 중 뭘 쓰는 게 좋나요?", answer: "성능 차이는 없어요. 팀 컨벤션에 따르면 되는데, 보통 HEX가 코드가 짧아서 많이 써요. 투명도가 필요하면 RGBA를 쓰고요." },
-      { question: "Tailwind CSS에서 커스텀 색상을 넣으려면?", answer: "tailwind.config.js의 colors에 HEX 값을 넣으면 돼요. Toolkio에서 변환한 HEX 코드를 바로 복사해서 붙여넣으면 됩니다." },
-      { question: "CMYK랑 RGB는 뭐가 다른가요?", answer: "RGB는 화면용(빛의 삼원색), CMYK는 인쇄용(잉크 혼합)이에요. 화면에서 본 색과 인쇄물 색이 다른 이유가 이 차이 때문이에요." },
-    ],
-  },
-  {
     slug: "sha256-md5-hash-generator-guide",
     title: {
       ko: "SHA256 MD5 해시 생성 가이드 — 파일 무결성 검증 실전",
@@ -12550,52 +12169,6 @@ export const blogPosts: BlogPost[] = [
       { question: "JSON5, HJSON도 포맷팅 되나요?", answer: "JSON5(주석 허용), HJSON(느슨한 문법)은 별도 파서가 필요해요. 일반 JSON 포맷터는 표준 JSON만 처리합니다. VS Code 확장이 더 유연해요." },
       { question: "JSON 포맷터에서 줄 정렬을 알파벳 순으로 하려면?", answer: "키 정렬 기능을 켜면 돼요. Toolkio는 Sort Keys 옵션이 있어서 비교·diff에 유용합니다. 기본은 원본 순서 유지예요." },
       { question: "JSON 포맷터와 Prettier 차이는?", answer: "Prettier는 에디터 플러그인으로 저장 시 코드 스타일 통일. 온라인 JSON 포맷터는 즉석 확인·편집용. 용도가 달라요. 둘 다 쓰는 게 일반적입니다." },
-    ],
-  },
-  {
-    slug: "dark-mode-color-design-developer-guide",
-    title: {
-      ko: "다크모드 색상 설계 원칙 — 개발자가 실수 없이 구현하는 6단계",
-      en: "Dark Mode Color Design Principles — 6 Steps for Developers to Get It Right",
-    },
-    description: {
-      ko: "다크모드를 단순히 배경 반전으로 만들면 눈이 아파요. 대비·계층·브랜드 색을 유지하는 6단계 설계 원칙과 HEX·RGB·HSL 조합 실전 예시를 정리했어요.",
-      en: "Flipping background alone isn't dark mode. 6 design principles maintaining contrast, hierarchy, brand with real HEX/RGB/HSL examples.",
-    },
-    date: "2026-04-20",
-    toolId: "color-converter",
-    image: "/images/blog/dark-mode-color-design-developer-guide.webp",
-    keywords: ["다크모드 디자인", "다크모드 색상", "HSL 다크모드", "WCAG 대비", "Tailwind 다크모드"],
-    content: {
-      ko: [
-        { heading: "단순 배경 반전은 다크모드가 아니에요", body: "흔한 실수는 흰 배경을 검은색으로, 검은 텍스트를 흰색으로만 바꾸는 거예요. 결과는 눈부심, 블러 느낌, 이미지 과대비 등이 동시에 터져요.\n\n제대로 된 다크모드는 **색상 계층, 대비비, 브랜드 유지**가 설계 원칙이에요. 오늘 6단계를 정리하면서 실전 HEX 예시도 같이 드릴게요." },
-        { heading: "1단계 — 순검정(#000000)을 피하세요", body: "순검정 배경은 OLED에서 잘 보이지만 LCD 모니터에서는 텍스트 경계가 너무 날카로워져요. 실제로 많은 프로 다크모드는 `#121212` 또는 `#1A1A1A`를 씁니다.\n\nGitHub: `#0D1117`, Material Design: `#121212`, YouTube: `#0F0F0F`. 모두 순검정이 아니에요. 눈 피로를 크게 줄이는 작은 차이예요." },
-        { heading: "2단계 — 색상 계층을 3~5단계로", body: "다크모드에는 배경 계층이 보통 이 정도로 나뉩니다.\n\n- Layer 0 (페이지): `#121212`\n- Layer 1 (카드): `#1E1E1E`\n- Layer 2 (입력): `#2C2C2C`\n- Layer 3 (활성): `#3A3A3A`\n- Layer 4 (호버): `#4A4A4A`\n\n각 레이어가 약 10~15% 밝기 차이예요. HSL로 접근하면 더 체계적이에요: L값을 8%, 12%, 18%, 24%, 30%로 계단식." },
-        { heading: "3단계 — 텍스트는 순백색 대신 Off-white", body: "`#FFFFFF`는 너무 눈부셔요. 고계층 텍스트는 `#E1E1E1`(약 87% 투명도)나 `#F1F1F1` 정도를 권장해요.\n\n보조 텍스트는 `#A1A1A1`, 비활성은 `#6A6A6A`. 3단계 정도로 나눠야 정보 위계가 보입니다." },
-        { heading: "4단계 — 브랜드 색상은 채도 낮추기", body: "라이트모드에서 쓰던 브랜드 색을 그대로 쓰면 다크 배경에서 형광처럼 튀어요. HSL의 S(채도)를 20~30% 낮추고 L(명도)을 조금 올리세요.\n\n예시: 라이트 `hsl(220, 90%, 50%)` → 다크 `hsl(220, 70%, 65%)`. 같은 파랑 계열이지만 눈에 훨씬 편해요." },
-        { heading: "5단계 — WCAG 대비비 최소 4.5:1", body: "접근성 기준이에요. 텍스트 색 vs 배경 대비비가 4.5 이상이어야 합니다. 큰 제목(18pt+)은 3.0도 허용되지만 본문은 4.5가 안전선.\n\n직접 계산하기 어렵다면 Toolkio 색상 변환기의 Contrast Ratio 기능을 쓰세요. HEX 두 개 입력하면 통과 여부가 바로 보여요." },
-        { heading: "6단계 — 이미지와 아이콘 보정", body: "흰 배경 전제로 만든 이미지는 다크모드에서 흰 사각형이 튀어나와요. `filter: invert(1)` 또는 **alpha 채널 버전**을 따로 제공하세요.\n\n아이콘은 SVG라면 `currentColor`를 쓰면 자동으로 텍스트 색에 맞춰 변해요. 이게 유지보수 가장 편한 패턴입니다." },
-        { heading: "Tailwind CSS 다크모드 실전 예시", body: "```html\n<div class=\"bg-neutral-100 dark:bg-neutral-900\n            text-neutral-900 dark:text-neutral-100\n            border dark:border-neutral-700\">\n```\nTailwind의 `neutral` 팔레트는 다크모드 친화적으로 설계돼 있어요. 1단계 배경에 `neutral-900`, 2단계 카드에 `neutral-800`을 쓰면 계층이 자연스럽습니다." },
-        { heading: "Toolkio 색상 변환기로 빠르게 검증", body: "HEX를 HSL로 바꿔서 L 값을 조정하면 다크모드 팔레트를 5분에 만들 수 있어요. Contrast Ratio 체크까지 한 화면에서 됩니다. 디자인 툴 열기 귀찮을 때 가장 먼저 쓰는 도구예요." },
-      ],
-      en: [
-        { heading: "Dark Mode Isn't Just Inversion", body: "Simply flipping white to black causes glare, blur, and over-contrast. Proper dark mode needs layered hierarchy, maintained contrast, and adjusted brand colors." },
-        { heading: "1. Avoid Pure Black", body: "Pure #000000 creates harsh edges on LCD. Use #121212 or #1A1A1A. GitHub: #0D1117, Material: #121212." },
-        { heading: "2. 3-5 Background Layers", body: "Layer 0: #121212, Layer 1: #1E1E1E, Layer 2: #2C2C2C. Use HSL L values in 8%, 12%, 18%, 24% steps." },
-        { heading: "3. Off-white Text", body: "#FFFFFF is glaring. Use #E1E1E1 primary, #A1A1A1 secondary, #6A6A6A disabled." },
-        { heading: "4. Desaturate Brand Colors", body: "Reduce HSL saturation by 20-30%, raise lightness. Example: `hsl(220, 90%, 50%)` → `hsl(220, 70%, 65%)`." },
-        { heading: "5. WCAG Contrast 4.5:1", body: "Minimum for body text. Large headings can use 3.0. Use contrast ratio tools to verify." },
-        { heading: "6. Adjust Images & Icons", body: "Apply `filter: invert(1)` or provide alpha versions. SVG icons with `currentColor` adapt automatically." },
-        { heading: "Tailwind Example", body: "Use `neutral-900` for background layer 1, `neutral-800` for cards. Neutral palette is dark-mode friendly." },
-        { heading: "Use Toolkio Color Converter", body: "HEX to HSL for L adjustment, Contrast Ratio check — build dark palette in 5 minutes without opening design tools." },
-      ],
-    },
-    faq: [
-      { question: "OLED 기기만 타겟이면 순검정 써도 되나요?", answer: "OLED는 순검정 픽셀을 꺼서 배터리를 아껴요. 모바일 앱이 OLED 기기 위주면 순검정이 유리합니다. 다만 웹은 LCD도 고려해야 하니 #0A0A0A처럼 미세한 회색이 안전합니다." },
-      { question: "다크모드 CSS 토글은 어떻게 구현해요?", answer: "CSS 변수 + `data-theme` 속성 조합이 가장 유연해요. `:root { --bg: white }` / `[data-theme='dark'] { --bg: #121212 }` 같이요. Tailwind는 `dark:` 프리픽스로 더 쉽습니다." },
-      { question: "시스템 설정 따라 자동 전환하려면?", answer: "`prefers-color-scheme` 미디어 쿼리를 쓰세요. Tailwind는 `darkMode: 'media'` 설정이면 자동이에요. 사용자 수동 토글도 지원하려면 `darkMode: 'class'`로 바꿔요." },
-      { question: "이미지가 다크모드에서 흰 네모로 튀어나와요", answer: "PNG/JPG 배경이 흰색인 게 원인이에요. Alpha 채널 있는 SVG 또는 PNG로 교체하거나 `filter: brightness(0.8)`로 명도 낮추세요." },
-      { question: "WCAG 대비 기준 3.0과 4.5 언제 어떤 걸 쓰나요?", answer: "본문 텍스트는 4.5:1, 18pt 이상 또는 14pt 굵은 글씨는 3:1이면 AA 통과예요. AAA(더 엄격)는 각각 7:1, 4.5:1입니다. 다크모드는 대비가 극단적이라 AA로도 충분해요." },
     ],
   },
   {
@@ -13168,42 +12741,6 @@ export const blogPosts: BlogPost[] = [
       { question: "영상 설명란에 챕터 타임스탬프 넣어도 되나요?", answer: "네, 오히려 권장돼요. 유튜브가 자동으로 챕터 분리해서 검색 결과에 노출해요. 첫 타임스탬프는 0:00부터 시작해야 인식돼요." },
       { question: "이모지 사용은 제목·설명에 영향 있나요?", answer: "제목 맨 앞 이모지 1개는 CTR에 긍정적(평균 +8%). 2개 이상은 오히려 클릭률 감소해요. 설명란엔 첫 125자 안에 1~2개 자연스럽게 배치가 좋아요." },
       { question: "태그(tags) 필드도 글자수 제한이 있나요?", answer: "태그는 총 500자(띄어쓰기·콤마 포함)까지 가능해요. 이 한도 안에서 10~15개 태그가 최적이에요. 한 태그당 2~3단어씩 구성해요." },
-    ],
-  },
-  {
-    slug: "oklch-p3-color-modern-web-design-guide",
-    title: {
-      ko: "OKLCH·P3 색 공간 — 2026년 웹 디자인 최신 컬러 표준 정리",
-      en: "OKLCH and P3 Color Spaces — Modern Web Design Color Standards 2026",
-    },
-    description: {
-      ko: "HEX·RGB 시대는 저물고 OKLCH·P3가 주류로 올라왔어요. 최신 iPhone·Mac 스크린에서 제대로 보이는 색 고르는 법, Tailwind 4 OKLCH 전환까지 정리했어요.",
-      en: "OKLCH and P3 color spaces are replacing HEX/RGB. How to pick colors that display correctly on modern screens and Tailwind 4 migration.",
-    },
-    date: "2026-04-22",
-    toolId: "color-converter",
-    image: "/images/blog/oklch-p3-color-modern-web-design-guide.webp",
-    keywords: ["OKLCH", "P3 color", "CSS 컬러", "Tailwind 4", "모던 웹 디자인"],
-    content: {
-      ko: [
-        { heading: "왜 HEX·RGB가 구식이 됐을까요", body: "HEX·sRGB는 1996년 기준 표준이에요. 2026년 iPhone·Mac·삼성 Galaxy 화면은 **Display P3** 색 공간을 지원해요. sRGB 색은 P3 화면에서 덜 생생하게 보여요.\n\n또 HEX는 **인지적 균일성**이 없어요. `#ff0000` → `#ff8800` 변화가 수학적으론 같은 거리지만 사람 눈엔 다르게 보여요. 테마 색 자동 생성·팔레트 설계에 치명적이에요." },
-        { heading: "OKLCH가 뭐가 다른가요", body: "OKLCH는 **L(명도)·C(채도)·H(색상)** 3개 축으로 색을 표현해요. `oklch(70% 0.2 150)` 같은 식이에요.\n\n장점 3가지\n\n- **인지적 균일**: L값 +10%가 눈에도 균일하게 밝아 보여요\n- **P3 색역 지원**: sRGB 초과 채도 표현 가능\n- **테마 생성 자동화**: H값만 바꾸면 일관된 톤 팔레트 완성\n\n이 장점들 때문에 **Tailwind 4는 전 색 시스템을 OKLCH로 재설계**했어요." },
-        { heading: "Tailwind 4로 OKLCH 전환 3단계", body: "```css\n/* Tailwind 4 기본 */\n@theme {\n  --color-brand-500: oklch(70% 0.2 240);\n  --color-brand-700: oklch(50% 0.2 240);\n}\n```\n\n같은 색상(H)을 유지하면서 명도(L)만 조정하면 자동으로 조화로운 팔레트가 만들어져요. 수동으로 HEX 10개 뽑던 과거에 비해 10배 빨라요." },
-        { heading: "Toolkio Color Converter로 P3 색 고르기", body: "Toolkio Color Converter에 HEX 입력하면 **OKLCH·P3·RGB** 동시 변환돼요. P3 색역을 초과하는 색도 경고 표시해요.\n\n디자이너가 Figma에서 P3 색을 선택했을 때, 개발자는 이 도구로 CSS 코드 바로 추출 가능해요. 협업 시간 30% 단축돼요." },
-      ],
-      en: [
-        { heading: "Why HEX and RGB are outdated", body: "HEX is 1996 standard. Modern iPhones use Display P3. HEX also lacks perceptual uniformity." },
-        { heading: "What makes OKLCH different", body: "L/C/H axes: perceptually uniform, supports P3, easier theme generation." },
-        { heading: "3 steps to Tailwind 4 OKLCH migration", body: "Define custom OKLCH theme colors. Adjust L only for palette variants." },
-        { heading: "Using Toolkio for P3 color picking", body: "Paste HEX to see OKLCH/P3/RGB simultaneously with P3 warnings." },
-      ],
-    },
-    faq: [
-      { question: "OKLCH 모든 브라우저에서 지원되나요?", answer: "2026년 4월 기준 Chrome·Safari·Firefox·Edge 최신 버전 모두 지원해요. IE 지원은 없지만 이미 EOL이에요. `@supports(color: oklch(0 0 0))` fallback으로 안전하게 쓸 수 있어요." },
-      { question: "Figma에서 P3 색 골라서 HEX로 내보내면 안 되나요?", answer: "되지만 **색역 외 색이 sRGB로 clamp**돼요. 채도 높은 색일수록 손실 크고 Figma에서 본 색과 실제 다르게 보일 수 있어요. P3 그대로 CSS로 가져오는 게 안전해요." },
-      { question: "P3 지원 안 되는 구형 스크린에선 어떻게 보이나요?", answer: "브라우저가 자동으로 sRGB 가장 가까운 색으로 변환해요. 약간 덜 생생해 보이지만 색은 유사. 대부분의 사용자에겐 시각적 차이를 못 느껴요." },
-      { question: "OKLCH와 OKLab 차이가 뭔가요?", answer: "OKLab은 직교좌표(L·a·b), OKLCH는 극좌표(L·C·H). 같은 색 공간이지만 OKLCH가 디자인 작업에 더 직관적이에요. 코드로도 OKLCH가 읽기 좋아요." },
-      { question: "Tailwind 3에서 4로 업그레이드 시 색이 변하나요?", answer: "약간 변해요. Tailwind 4 기본 팔레트가 OKLCH 기반이라 특정 색상은 P3 확장 영역을 활용해요. 브랜드 색은 수동으로 OKLCH 재설정을 권해요." },
     ],
   },
   {
