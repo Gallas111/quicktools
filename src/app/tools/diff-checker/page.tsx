@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 interface DiffLine {
   type: "unchanged" | "removed" | "added";
@@ -191,16 +193,7 @@ export default function DiffChecker() {
         </div>
       )}
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "텍스트 비교 도구란?" : "What is a Diff Checker?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "텍스트 비교 도구(Diff Checker)는 두 텍스트 간의 차이점을 줄 단위로 비교하여 보여주는 무료 온라인 도구입니다. 코드 변경 사항 확인, 문서 수정 내역 비교, 텍스트 파일의 차이점 분석 등에 유용합니다. 추가된 줄은 초록색, 삭제된 줄은 빨간색으로 표시되어 한눈에 변경 사항을 파악할 수 있습니다."
-            : "A Diff Checker compares two texts line by line and highlights the differences. It is useful for reviewing code changes, comparing document revisions, and analyzing text file differences. Added lines are shown in green, removed lines in red, making changes easy to spot at a glance."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["diff-checker"]} />
     </div>
   );
 }

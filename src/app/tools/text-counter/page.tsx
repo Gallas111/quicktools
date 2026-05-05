@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 function isKorean(text: string): boolean {
   const koreanChars = text.match(/[\uAC00-\uD7AF]/g);
@@ -196,16 +198,7 @@ export default function TextCounterPro() {
         </div>
       )}
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "텍스트 분석기란?" : "What is a Text Analyzer?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "텍스트 분석기는 입력한 텍스트의 글자수, 공백 제외 글자수, 단어수, 문장수, 문단수, 예상 읽기 시간, 말하기 시간, 단어 빈도를 상세히 분석하는 무료 온라인 도구입니다. 한국어는 분당 200단어, 영어는 분당 250단어 기준으로 읽기 시간을 계산하며, 말하기 시간은 분당 120단어 기준으로 산출합니다. 블로그 글쓰기, 프레젠테이션 준비, 번역 작업 등에 유용합니다."
-            : "A text analyzer is a free online tool that provides detailed analysis of your text including character count, word count, sentence count, paragraph count, estimated reading time, speaking time, and word frequency. Reading time is calculated at 200 words/min for Korean and 250 words/min for English, while speaking time uses 120 words/min. It's useful for blog writing, presentation preparation, and translation work."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["text-counter"]} />
     </div>
   );
 }

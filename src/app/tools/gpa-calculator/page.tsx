@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 interface Course {
   id: number;
@@ -306,6 +308,7 @@ export default function GpaCalculator() {
           </>
         )}
       </div>
+      <ToolGuide data={toolGuides["gpa-calculator"]} />
     </div>
   );
 }

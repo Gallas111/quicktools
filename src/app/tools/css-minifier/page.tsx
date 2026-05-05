@@ -2,6 +2,8 @@
 
 import { useState, useCallback } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type Mode = "css" | "js";
 
@@ -282,16 +284,7 @@ export default function CssMinifier() {
         )}
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "코드 압축이란?" : "What is Code Minification?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "코드 압축(Minification)은 CSS나 JavaScript 파일에서 주석, 불필요한 공백, 줄바꿈 등을 제거하여 파일 크기를 줄이는 최적화 기법입니다. 압축된 코드는 기능은 동일하지만 파일 크기가 작아져 웹 페이지 로딩 속도가 향상됩니다. 이 도구는 외부 라이브러리 없이 브라우저에서 직접 압축을 수행합니다."
-            : "Code minification removes comments, unnecessary whitespace, and newlines from CSS or JavaScript files to reduce file size. Minified code functions identically but loads faster due to its smaller size. This tool performs minification directly in your browser without any external libraries."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["css-minifier"]} />
     </div>
   );
 }

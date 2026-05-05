@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type Gender = "male" | "female";
 
@@ -229,6 +231,7 @@ export default function BmrCalculator() {
             : "TDEE (Total Daily Energy Expenditure) is your BMR multiplied by your activity level, representing the total calories you burn per day. To lose weight, consuming about 500 kcal below TDEE is generally recommended, while gaining weight requires about 500 kcal above TDEE. This translates to roughly 0.5 kg (1 lb) per week."}
         </p>
       </div>
+      <ToolGuide data={toolGuides["bmr-calculator"]} />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 interface BmiResult {
   bmi: number;
@@ -204,6 +206,7 @@ export default function BmiCalculator() {
             : "This calculator uses Korean Obesity Society standards. While the WHO classifies overweight as BMI ≥ 25, Asian populations including Koreans tend to have higher body fat percentages and metabolic risks at lower BMI levels, so overweight is classified from BMI 23."}
         </p>
       </div>
+      <ToolGuide data={toolGuides["bmi-calculator"]} />
     </div>
   );
 }

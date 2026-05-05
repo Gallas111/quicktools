@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 interface MatchDetail {
   fullMatch: string;
@@ -239,16 +241,7 @@ export default function RegexTester() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "정규식 테스터란?" : "What is a Regex Tester?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "정규식 테스터는 정규표현식(Regular Expression)을 테스트하고 매칭 결과를 실시간으로 확인할 수 있는 무료 온라인 도구입니다. 패턴에 맞는 문자열을 하이라이트로 표시하고, 매칭된 그룹과 인덱스 정보를 보여줍니다. 플래그(g, i, m, s)를 조합하여 다양한 매칭 옵션을 설정할 수 있습니다. 브라우저에서 바로 실행되며 데이터가 서버로 전송되지 않습니다."
-            : "Regex Tester is a free online tool for testing regular expressions and seeing matches in real-time. It highlights matching text, shows captured groups and index positions. You can combine flags (g, i, m, s) for various matching options. It runs entirely in your browser — no data is sent to any server."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["regex-tester"]} />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import { useState, useRef, useCallback } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 interface CompressedImage {
   original: { name: string; size: number; url: string };
@@ -236,16 +238,7 @@ export default function ImageCompressor() {
         </div>
       )}
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "이미지 압축이란?" : "What is Image Compression?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "이미지 압축은 이미지의 파일 크기를 줄여 웹사이트 로딩 속도를 높이고 저장 공간을 절약하는 도구입니다. 이 도구는 브라우저에서 직접 처리되므로 이미지가 서버로 전송되지 않아 개인정보가 안전합니다."
-            : "Image compression reduces file sizes to improve website loading speeds and save storage space. This tool processes everything in your browser, so your images are never uploaded to any server."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["image-compressor"]} />
     </div>
   );
 }

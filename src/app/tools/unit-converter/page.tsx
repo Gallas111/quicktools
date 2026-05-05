@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type Category = "length" | "weight" | "temperature" | "area" | "volume" | "speed";
 
@@ -259,6 +261,7 @@ export default function UnitConverter() {
           <li>1 gallon = 3.78541 L</li>
         </ul>
       </div>
+      <ToolGuide data={toolGuides["unit-converter"]} />
     </div>
   );
 }

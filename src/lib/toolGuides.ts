@@ -743,6 +743,536 @@ export const toolGuides: Record<string, ToolGuideData> = {
     ],
   },
 
+  "diff-checker": {
+    intro: {
+      ko: "텍스트 비교(Diff)는 두 글의 차이를 줄 단위로 보여 줘요. 코드 리뷰·계약서 변경 추적·번역 검수에서 매번 손이 가는 도구거든요.",
+      en: "Diff checkers compare two texts line by line. Essential for code review, contract revisions, and translation QA.",
+    },
+    sections: [
+      {
+        heading: { ko: "Line diff vs Word diff vs Char diff", en: "Line vs Word vs Char Diff" },
+        body: {
+          ko: "- **Line diff(줄 단위)**: 코드·로그처럼 줄 자체가 의미 단위인 경우. Git diff 표준\n- **Word diff(단어 단위)**: 문장 안의 작은 변경을 봐야 할 때. 번역·계약서 검수\n- **Char diff(글자 단위)**: 짧은 문자열에서 한 글자 차이까지 보여줌. 키·해시 비교\n\n비교 종류를 잘못 고르면 '거의 똑같은 줄'도 완전 다른 줄로 표시되거든요. 본문 검수에는 word diff가 답이에요.",
+          en: "- **Line diff**: When lines are the unit of meaning (code, logs) — Git's default\n- **Word diff**: For prose changes — translation, contracts\n- **Char diff**: Tiny short strings — keys, hashes\n\nWrong granularity makes near-identical lines look totally different. Use word diff for prose review.",
+        },
+      },
+      {
+        heading: { ko: "diff 결과 해석", en: "Reading Diff Output" },
+        body: {
+          ko: "- **추가된 줄(녹색, +)**: 새 텍스트에만 있음\n- **삭제된 줄(빨강, -)**: 옛 텍스트에만 있음\n- **변경된 줄**: 한 줄 통째로 빨강+녹색 쌍\n- **컨텍스트(회색)**: 변경되지 않은 주변 줄. 보통 위·아래 3줄\n\nGit `diff --stat`은 파일별 +/- 합계만 보여 줘서 큰 변경 빠르게 훑을 때 좋아요.",
+          en: "- **Green (+)**: Added in new text\n- **Red (−)**: Removed (only in old)\n- **Changed line**: Red + green pair\n- **Context (grey)**: Unchanged surrounding lines (typically 3 above/below)\n\n`git diff --stat` summarizes +/- counts per file — useful for big changes.",
+        },
+      },
+      {
+        heading: { ko: "공백·줄바꿈 함정", en: "Whitespace Pitfalls" },
+        body: {
+          ko: "- **CRLF vs LF**: 윈도(`\\r\\n`)와 리눅스(`\\n`) 줄바꿈 다름. 같은 내용도 모든 줄이 변경된 것처럼 보여요. `git config core.autocrlf` 또는 도구의 'ignore line ending' 옵션 켜기\n- **탭 vs 스페이스**: 코드에서 자주 발생. 들여쓰기 정책 통일\n- **trailing whitespace**: 줄 끝 공백 삭제만으로 diff 폭발. ESLint·Prettier로 자동 정리",
+          en: "- **CRLF vs LF**: Windows vs Unix line endings — every line looks changed. Enable `git config core.autocrlf` or 'ignore line ending'\n- **Tabs vs spaces**: Common in code — agree on indentation policy\n- **Trailing whitespace**: Stripping it inflates diffs. Auto-fix with ESLint/Prettier",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "두 PDF 본문도 비교할 수 있나요?", en: "Can I compare two PDFs?" },
+        a: {
+          ko: "PDF에서 텍스트 추출 후 붙여넣으세요. 표·이미지가 많으면 결과가 어그러질 수 있어 PDF 전용 비교 도구를 추천해요.",
+          en: "Extract text from each PDF first and paste. For tables/images, use dedicated PDF comparison tools.",
+        },
+      },
+      {
+        q: { ko: "JSON 두 개 비교에 줄 diff가 안 맞아요", en: "Line diff doesn't work well for JSON" },
+        a: {
+          ko: "JSON은 키 순서·들여쓰기에 따라 줄이 어긋나요. 비교 전에 양쪽 모두 같은 포맷으로 beautify·정렬한 뒤 비교하세요.",
+          en: "JSON line diffs misalign due to key order or indentation. Beautify and sort keys on both sides before comparing.",
+        },
+      },
+      {
+        q: { ko: "결과를 공유하려면?", en: "How to share results?" },
+        a: {
+          ko: "도구의 'export' 또는 화면 캡처를 활용하세요. 민감한 코드라면 이미지보다 텍스트로만 공유하는 게 안전해요.",
+          en: "Use the tool's export or take a screenshot. For sensitive code, prefer plain text over images.",
+        },
+      },
+    ],
+  },
+
+  "text-counter": {
+    intro: {
+      ko: "텍스트 분석기는 글자수·단어수·문장수에 더해 읽기 시간·말하기 시간·단어 빈도까지 보여 줘요. 블로그·연설·번역 분량 산정에 자주 써요.",
+      en: "Text analyzers go beyond char counts — reading time, speaking time, and word frequency too. Useful for blog posts, speeches, and translation estimates.",
+    },
+    sections: [
+      {
+        heading: { ko: "읽기 시간 vs 말하기 시간", en: "Reading vs Speaking Time" },
+        body: {
+          ko: "- **읽기 시간**: 한국어 분당 500자(또는 200단어), 영어 분당 200~250 words\n- **말하기 시간**: 분당 120~150 words(영문 기준). 발표·낭독은 분당 100단어가 안전선\n\n블로그 5분 분량이 발표로는 8~10분이에요. 영상 스크립트 만드시면 말하기 기준으로 잡으세요.",
+          en: "- **Reading time**: 200–250 wpm (English), 500 chars/min (Korean)\n- **Speaking time**: 120–150 wpm; safer at 100 wpm for presentations\n\nA 5-min reading post is 8–10 min spoken. Use speaking time for video scripts.",
+        },
+      },
+      {
+        heading: { ko: "단어 빈도 분석 활용", en: "Word Frequency Analysis" },
+        body: {
+          ko: "본문에서 자주 쓴 단어를 찾아 글의 톤·키워드 밀도를 점검할 수 있어요.\n\n- **SEO**: 타겟 키워드가 본문 100자당 1~2회 나오는지\n- **반복 점검**: 같은 단어를 너무 자주 써서 글이 단조로워졌는지\n- **번역 견적**: 자주 등장하는 용어집(glossary) 만들기\n- **연설·강연**: 핵심 메시지가 충분히 강조됐는지",
+          en: "Frequent-word analysis reveals tone and keyword density.\n\n- **SEO**: Target keyword appears 1–2× per 100 chars\n- **Repetition check**: Spot overused words\n- **Translation estimates**: Build glossaries for recurring terms\n- **Speech writing**: Verify key message emphasis",
+        },
+      },
+      {
+        heading: { ko: "용도별 권장 분량", en: "Recommended Lengths by Purpose" },
+        body: {
+          ko: "- **블로그 SEO 글**: 한글 1,500~3,000자\n- **자기소개서 항목**: 800~1,000자, 95% 이상 채우기\n- **연설(5분)**: 영문 750 words / 한글 2,000자\n- **유튜브 쇼츠(60초)**: 150 words 이내\n- **이메일**: 영문 50~125 words 답장률 가장 높음\n- **트위터·X 1편**: 영문 280 / 한글 140자",
+          en: "- **SEO blog**: 1,000–2,000 EN words / 1,500–3,000 KR chars\n- **Self-intro essay (KR)**: 800–1,000 chars, 95%+ filled\n- **5-min speech**: ~750 EN words\n- **YouTube Short (60s)**: ≤150 words\n- **Email**: 50–125 words gets highest reply rate\n- **X (Twitter)**: 280 EN / 140 KR",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "한국어와 영어 단어 수가 같은 글이 글자수가 다른 이유는?", en: "Why differing chars vs same word count?" },
+        a: {
+          ko: "한국어 한 단어는 평균 2~3자, 영어 한 단어는 평균 5자거든요. 같은 정보량이라도 한국어가 짧아지는 경우가 많아요.",
+          en: "Korean words average 2–3 chars, English ~5 chars. Same meaning, fewer characters in Korean.",
+        },
+      },
+      {
+        q: { ko: "유튜브 영상 분량 가늠은 어떻게 해요?", en: "How to estimate YouTube length?" },
+        a: {
+          ko: "스크립트의 말하기 시간 기준 영상 길이 잡으세요. 분당 130 words(영문) / 분당 350자(한글)로 계산하면 실측과 거의 맞아요.",
+          en: "Use speaking time at ~130 wpm (EN) or 350 chars/min (KR). Closely matches actual video length.",
+        },
+      },
+      {
+        q: { ko: "분석 결과 어디에 저장되나요?", en: "Is analysis stored?" },
+        a: {
+          ko: "전부 브라우저 메모리에서만 처리해요. 새로고침하면 사라져요. 외부 전송 0건.",
+          en: "Everything stays in browser memory and is gone on refresh. No external requests.",
+        },
+      },
+    ],
+  },
+
+  "age-calculator": {
+    intro: {
+      ko: "나이 계산기는 만나이·연나이·한국나이·띠·별자리까지 한 번에 알려 줘요. 2023년 6월부터 한국이 만나이로 통일됐지만 일상 대화에서는 한국나이가 여전히 쓰여요.",
+      en: "Age calculators show international age (만나이), Korean age (한국나이), zodiac sign, and Chinese zodiac at once. Korea officially adopted international age in June 2023, but Korean age is still common in daily conversation.",
+    },
+    sections: [
+      {
+        heading: { ko: "만나이 vs 연나이 vs 한국나이", en: "International vs Year vs Korean Age" },
+        body: {
+          ko: "- **만나이(국제 표준)**: 출생 시 0세, 생일마다 +1세. 2023-06-28부터 한국 법·행정 기준\n- **연나이**: 현재 연도 - 출생 연도. 병역·청소년보호법 등 일부 법률에서 사용\n- **한국나이**: 출생 시 1세, 매년 1월 1일 +1세. 일상 대화·관습\n\n예: 12월 31일생 신생아는 만 0세, 한국나이 1세. 다음 날 1월 1일에는 만 0세, 한국나이 2세가 돼요. 그래서 신생아가 하루 만에 두 살이 된 셈이에요.",
+          en: "- **International age**: 0 at birth, +1 each birthday. Korean legal/admin standard since 2023-06-28\n- **Year age (연나이)**: Current year − birth year. Used in military and youth protection laws\n- **Korean age**: 1 at birth, +1 every January 1. Conversational/traditional\n\nExample: A baby born on Dec 31 is 0 internationally but 1 in Korean age, then 2 in Korean age the next day. Hence 'two years old in two days'.",
+        },
+      },
+      {
+        heading: { ko: "어디서 어떤 나이가 쓰이나요?", en: "Where Each Age Applies" },
+        body: {
+          ko: "- **공식 문서·계약·의료**: 만나이\n- **민증·여권**: 만나이\n- **주민등록증 발급**: 만 17세 (만나이)\n- **선거권**: 만 18세\n- **음주·흡연**: 만 19세\n- **병역 신체검사**: 연나이 19세\n- **청소년보호법**: 연나이 19세 미만\n- **일상 대화·소개**: 한국나이가 여전히 흔해요",
+          en: "- **Legal docs, contracts, medical**: International age\n- **ID/passport**: International age\n- **Voting**: Age 18 (intl)\n- **Alcohol/tobacco**: Age 19 (intl)\n- **Military physical**: Year age 19\n- **Youth protection law**: Year age <19\n- **Casual conversation**: Korean age still common",
+        },
+      },
+      {
+        heading: { ko: "띠·별자리 자동 산출", en: "Zodiac Auto-Calculation" },
+        body: {
+          ko: "**띠(12지)**: 출생 연도 기준 (2024 갑진년 = 청룡띠)\n**별자리(서양)**: 출생 월·일 기준 (3.21~4.19 양자리 등)\n\n띠 기준이 입춘(2월 초)인지 1월 1일인지 논쟁이 있어요. 사주 명리학은 입춘 기준, 일반 풍속은 1월 1일 기준이 많아요. 도구는 1월 1일 기준으로 계산해요.",
+          en: "**Chinese zodiac (animals)**: Birth year (2024 = Wood Dragon)\n**Western zodiac**: Birth month/day (Aries 3.21–4.19, etc.)\n\nFor Chinese zodiac there's debate over Lunar New Year vs Jan 1 boundaries. Saju astrology uses 立春 (early Feb); folk practice uses Jan 1. The tool uses Jan 1.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "만나이는 언제부터 적용됐나요?", en: "When did Korea switch to international age?" },
+        a: {
+          ko: "2023년 6월 28일부터 행정·법령상 만나이로 통일했어요. 이전에 한국나이로 쓰여 있던 문서는 자동으로 만나이로 해석돼요.",
+          en: "Effective June 28, 2023. Existing documents using Korean age are now interpreted as international age.",
+        },
+      },
+      {
+        q: { ko: "병역·청소년보호법은 만나이를 따르나요?", en: "Do military and youth laws use international age?" },
+        a: {
+          ko: "아니요. 일부 법률은 명시적으로 '연나이'를 쓴다고 적혀 있어서 그대로 유지돼요. 행정·민사가 만나이지만 법률 일부는 예외예요.",
+          en: "No — certain laws explicitly use year age and remain unchanged. Civil/administrative use international age, but specific laws keep year age.",
+        },
+      },
+      {
+        q: { ko: "음력 생일도 계산되나요?", en: "Lunar birthdays?" },
+        a: {
+          ko: "도구는 양력 입력만 받아요. 음력 생일은 변환 도구로 양력으로 바꾼 뒤 입력하세요.",
+          en: "The tool accepts solar dates only. Convert lunar to solar first.",
+        },
+      },
+    ],
+  },
+
+  "image-compressor": {
+    intro: {
+      ko: "이미지 압축기는 사진·스크린샷 용량을 50~90% 줄여서 웹 로딩 속도와 저장 공간을 한 번에 잡아 줘요. 모든 처리가 브라우저에서 끝나서 사진이 외부 서버로 안 빠져요.",
+      en: "Image compressors shrink photos and screenshots by 50–90%, improving page speed and saving storage. Everything happens locally — your images never leave the browser.",
+    },
+    sections: [
+      {
+        heading: { ko: "JPG vs PNG vs WebP", en: "JPG vs PNG vs WebP" },
+        body: {
+          ko: "- **JPG**: 사진·풍경·복잡한 색감. 손실 압축이라 작지만 텍스트·라인은 흐려져요\n- **PNG**: 로고·아이콘·스크린샷. 무손실, 투명 배경 지원. 사진은 용량 큼\n- **WebP**: 두 장점 결합. JPG 대비 25~35% 더 작음. 2024년 모든 메이저 브라우저 지원\n- **AVIF**: WebP보다 또 30% 작음. 사파리 16+·크롬·파이어폭스 지원\n\n웹용은 WebP, 인쇄·아이콘은 PNG, 사진은 JPG가 무난해요.",
+          en: "- **JPG**: Photos, complex colors — lossy, but blurs text/lines\n- **PNG**: Logos, icons, screenshots — lossless, supports transparency, large for photos\n- **WebP**: Combines both — 25–35% smaller than JPG, supported in all major browsers (2024)\n- **AVIF**: 30% smaller than WebP — Safari 16+, Chrome, Firefox\n\nUse WebP for web, PNG for print/icons, JPG for photos.",
+        },
+      },
+      {
+        heading: { ko: "품질 설정 가이드", en: "Quality Setting Guide" },
+        body: {
+          ko: "JPG·WebP의 품질(quality) 옵션은 0~100이에요.\n\n- **95~100**: 사실상 무손실. 인쇄·아카이브\n- **80~90**: 웹 표준. 눈에 안 띄는 손실 + 50%+ 용량 감소\n- **60~75**: 썸네일·소셜 미디어. 큰 손실 가능\n- **50 이하**: 비추천. 가시적 압축 흔적\n\n블로그 본문 이미지는 75~85가 무난해요. 너무 낮추면 SEO 측 이미지 품질 평가에서 불리해질 수 있어요.",
+          en: "JPG/WebP quality 0–100:\n\n- **95–100**: Visually lossless — print, archive\n- **80–90**: Web standard — invisible loss, 50%+ size reduction\n- **60–75**: Thumbnails, social — visible loss possible\n- **<50**: Avoid — obvious artifacts\n\nFor blog body images, 75–85 is the sweet spot. Going too low can hurt SEO image-quality scores.",
+        },
+      },
+      {
+        heading: { ko: "압축 전 해상도 점검", en: "Resize Before Compressing" },
+        body: {
+          ko: "스마트폰 사진은 4000×3000(12MP) 정도예요. 블로그 본문에는 1200~1600px가 적정이거든요. 원본 해상도 그대로 압축하면 용량은 줄어도 모바일 로딩이 느려요.\n\n작업 순서:\n1. 가로 1600px 이하로 리사이즈\n2. WebP 또는 JPG 품질 80\n3. 결과 비교 후 업로드\n\n이렇게만 해도 원본 5MB → 200KB(96% 감소)가 흔해요.",
+          en: "Phone photos are ~4000×3000 (12MP). Blogs need 1200–1600px. Compressing without resizing keeps mobile loads slow.\n\nWorkflow:\n1. Resize to ≤1600px wide\n2. WebP or JPG quality 80\n3. Compare and upload\n\nTypical result: 5MB original → 200KB (96% reduction).",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "원본 화질 손상 없이 압축할 수 있나요?", en: "Can I compress without quality loss?" },
+        a: {
+          ko: "PNG는 무손실 압축이 가능해요. JPG·WebP는 품질 95+로 설정해도 미세 손실은 있지만 눈으로는 구분 어려워요.",
+          en: "PNG is lossless. JPG/WebP at quality 95+ has imperceptible loss.",
+        },
+      },
+      {
+        q: { ko: "투명 배경이 사라졌어요", en: "Transparency disappeared" },
+        a: {
+          ko: "JPG로 변환했기 때문이에요. JPG는 투명도 미지원이라 배경이 흰색·검은색으로 채워져요. 투명 유지하려면 PNG나 WebP를 쓰세요.",
+          en: "You converted to JPG — JPG doesn't support transparency. Use PNG or WebP to preserve it.",
+        },
+      },
+      {
+        q: { ko: "EXIF 메타데이터가 보존되나요?", en: "Is EXIF preserved?" },
+        a: {
+          ko: "도구는 압축 시 EXIF를 제거해요. 위치 정보 같은 민감 데이터가 빠져서 SNS 업로드에 안전해요. 보존 옵션은 제공 안 해요.",
+          en: "EXIF is stripped on compression — strips sensitive data like GPS, safer for sharing. No preserve option.",
+        },
+      },
+    ],
+  },
+
+  "bmi-calculator": {
+    intro: {
+      ko: "BMI 계산기는 키·체중을 넣으면 한국 기준·WHO 기준 동시에 비만도를 알려 줘요. 정상 범위·권장 체중·복부비만(허리둘레)까지 함께 점검할 수 있어요.",
+      en: "Enter your height and weight to get BMI under both Korean and WHO standards, plus healthy weight range and abdominal obesity check via waist circumference.",
+    },
+    sections: [
+      {
+        heading: { ko: "한국 기준이 더 엄격한 이유", en: "Why Korean Standards Are Stricter" },
+        body: {
+          ko: "WHO 기준은 BMI 25부터 과체중인데, 한국(대한비만학회)은 23부터 과체중이에요. 아시아인이 같은 BMI에서도 체지방률이 높고 당뇨·고혈압 같은 대사질환 위험이 크거든요.\n\n특히 인도·동남아인은 BMI 23부터 당뇨 위험이 가파르게 올라간다는 연구가 다수예요. 그래서 외국 자료에서 'BMI 24면 정상'이라고 봤다고 안심하면 안 돼요. 한국에서는 과체중이거든요.",
+          en: "WHO classifies overweight at BMI ≥25; Korea (Korean Obesity Society) at ≥23. Asians have higher body fat % and metabolic risk at lower BMI.\n\nDiabetes risk rises steeply for Indians/Southeast Asians from BMI 23. Don't rely on WHO-only norms in Korea.",
+        },
+      },
+      {
+        heading: { ko: "BMI의 한계 — 보완 지표 함께 보기", en: "BMI Limitations — Companion Metrics" },
+        body: {
+          ko: "BMI는 근육량·체지방 분포를 못 봐요.\n\n- **운동선수**: 근육이 많으면 BMI 28이어도 건강\n- **노년층(65세+)**: BMI 23~27이 사망률 가장 낮음. 살짝 통통한 쪽이 안전\n- **사과형 vs 서양배형**: 같은 BMI여도 복부비만이 더 위험\n- **소아청소년**: 성장기라 별도 백분위 차트 필요\n\n같이 보면 좋은 지표\n- 허리둘레: 남성 90cm·여성 85cm 이상이면 복부비만\n- 체지방률: 남성 25%·여성 30% 이상\n- 허리-키 비율: 0.5 이상이면 위험",
+          en: "BMI ignores muscle and fat distribution.\n\n- **Athletes**: BMI 28 with low body fat — still healthy\n- **Elderly (65+)**: BMI 23–27 has lowest mortality\n- **Apple vs pear shape**: Same BMI, abdominal fat is more dangerous\n- **Children**: Use percentile charts, not adult BMI\n\nCompanion metrics:\n- Waist: M ≥90cm, F ≥85cm = abdominal obesity\n- Body fat %: M ≥25%, F ≥30%\n- Waist-to-height: ≥0.5 raises risk",
+        },
+      },
+      {
+        heading: { ko: "BMI 구간별 권장 액션", en: "Action by BMI Range" },
+        body: {
+          ko: "- **저체중(<18.5)**: 단백질 비중 ↑, 면역력·골다공증 주의\n- **정상(18.5~22.9)**: 유지. 주 3회 유산소 + 주 2회 근력\n- **과체중(23~24.9)**: 식이·운동만으로 정상 복귀 가능. 한 달 1~2kg 감량\n- **1단계 비만(25~29.9)**: 6개월 5~10% 감량 목표(의학적 표준)\n- **2단계 비만(30~34.9)**: 의사 상담, GLP-1 약물 옵션 검토\n- **3단계 비만(35+)**: 비만 클리닉·외과적 시술 상담\n\n주 1kg 이상 급격한 감량은 요요·근손실 위험이 커요. 0.5~0.7kg/주가 안전선이에요.",
+          en: "- **Underweight (<18.5)**: Boost protein; watch immunity and bone density\n- **Normal (18.5–22.9)**: Maintain — 3 cardio + 2 strength sessions/week\n- **Overweight (23–24.9)**: Diet + exercise; lose 1–2kg/month\n- **Obesity I (25–29.9)**: 5–10% weight loss in 6 months\n- **Obesity II (30–34.9)**: Consult doctor; consider GLP-1 medication\n- **Obesity III (35+)**: Bariatric clinic\n\n>1kg/week is rebound-prone. 0.5–0.7kg/week is safe.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "BMI가 정상인데 뱃살이 나와요", en: "Normal BMI but big belly?" },
+        a: {
+          ko: "BMI는 분포를 못 봐요. 허리둘레가 남성 90cm·여성 85cm 이상이면 복부비만이고, 대사증후군 위험이 높아요. 식단보다 운동(특히 유산소) 비중을 늘리세요.",
+          en: "BMI ignores fat distribution. Waist ≥90cm (M)/≥85cm (F) = abdominal obesity, raising metabolic syndrome risk. Increase cardio over diet alone.",
+        },
+      },
+      {
+        q: { ko: "운동을 많이 해서 BMI가 25예요", en: "BMI 25 from heavy training?" },
+        a: {
+          ko: "근육질 체형은 BMI가 높게 나와요. 체지방률(남 25%↓·여 30%↓)과 허리둘레가 정상이면 건강해요.",
+          en: "Muscle elevates BMI. If body fat (<25% M / <30% F) and waist are normal, you're healthy.",
+        },
+      },
+      {
+        q: { ko: "어린이 BMI도 같은 기준인가요?", en: "Same BMI for children?" },
+        a: {
+          ko: "아니요. 만 19세 미만은 성장 단계라 질병관리청 소아청소년 표준성장도표(2017)의 백분위로 봐야 해요.",
+          en: "No — under 19, use Korea KDCA pediatric growth percentile charts (2017 update).",
+        },
+      },
+    ],
+  },
+
+  "css-minifier": {
+    intro: {
+      ko: "CSS 미니파이어는 공백·주석·불필요한 세미콜론을 제거해서 파일 크기를 30~70% 줄여 줘요. 페이지 로딩 속도·CDN 비용 모두에 영향을 미치는 표준 빌드 단계예요.",
+      en: "CSS minifiers strip whitespace, comments, and redundant semicolons — shrinking files 30–70%. Standard step in any production build, affecting page speed and CDN costs.",
+    },
+    sections: [
+      {
+        heading: { ko: "왜 minify하나요?", en: "Why Minify?" },
+        body: {
+          ko: "- **로딩 속도**: 다운로드·파싱 모두 빨라짐. 모바일 3G에서 체감 큼\n- **대역폭 비용**: CDN 사용량 감소. 트래픽 많은 사이트는 월 단위로 비용 차이 큼\n- **gzip과 별개로 효과**: 미니파이된 CSS는 gzip 후에도 추가 절감 5~15%\n- **Critical CSS**: 첫 화면용 인라인 CSS는 minify 필수\n\n프로덕션 배포 전 빌드 도구(webpack/vite/parcel)가 자동으로 minify하지만, 직접 작성한 인라인 스타일·커스텀 빌드 단계에서는 수동 minify가 필요할 때가 있어요.",
+          en: "- **Load speed**: Faster downloads and parsing — crucial on mobile 3G\n- **Bandwidth**: Lower CDN usage scales monthly\n- **Beyond gzip**: Minified CSS still saves 5–15% post-gzip\n- **Critical CSS**: Inline styles for first paint must be minified\n\nProduction bundlers (webpack/vite/parcel) handle this, but hand-written or custom builds may need manual minification.",
+        },
+      },
+      {
+        heading: { ko: "minify 시 깨지는 패턴", en: "What Breaks During Minification" },
+        body: {
+          ko: "- **마지막 세미콜론**: `color: red;}` → `color:red}` 가능 (원치 않는 단축)\n- **CSS hack**: `_property: value` 같은 옛 IE 핵은 일부 minifier가 제거\n- **calc 안 공백**: `calc(100% - 10px)` 의 공백은 필수. 일부 도구가 잘못 제거\n- **vendor prefix 순서**: 모든 prefix가 표준 위에 와야 호환\n- **!important**: 자체적으로는 안전하지만 specificity 변화 주의\n\n결과를 라이브 환경에 올리기 전에 시각적 회귀 테스트(visual regression) 한 번 돌리는 게 안전해요.",
+          en: "- **Final semicolons**: Removed by aggressive minifiers — usually safe\n- **CSS hacks**: `_property: value` (old IE) may be stripped\n- **calc() spaces**: `calc(100% - 10px)` requires spaces — some tools strip them incorrectly\n- **Vendor prefix order**: All prefixes must precede the standard for fallback\n- **!important**: Safe in itself but watch specificity\n\nRun visual regression tests before deploying minified CSS.",
+        },
+      },
+      {
+        heading: { ko: "minify 후 추가 최적화", en: "Beyond Minification" },
+        body: {
+          ko: "Minify 다음 단계 최적화도 검토해보세요.\n\n- **PurgeCSS**: 안 쓰는 CSS 셀렉터 제거 (Tailwind는 기본 적용)\n- **Critical CSS 추출**: 첫 화면용만 인라인, 나머지는 lazy load\n- **HTTP/2 push 또는 preload**: CSS 빠른 도착\n- **gzip/brotli**: 서버 측 압축. brotli가 gzip 대비 15~25% 추가 감소\n- **CSS 나누기**: 페이지별 별도 CSS 번들\n\nLighthouse 점수에서 'Eliminate render-blocking resources' 항목이 이 최적화의 측정 지표예요.",
+          en: "Steps after minification:\n\n- **PurgeCSS**: Remove unused selectors (Tailwind does this by default)\n- **Critical CSS extraction**: Inline first-paint CSS, lazy-load rest\n- **HTTP/2 push or preload**: Speed delivery\n- **gzip/brotli**: Server compression — brotli is 15–25% better than gzip\n- **CSS splitting**: Per-route bundles\n\nLighthouse measures this under 'Eliminate render-blocking resources'.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "minify된 CSS를 디버깅하기 힘들어요", en: "Hard to debug minified CSS" },
+        a: {
+          ko: "Source map을 켜세요. 빌드 도구에서 `sourceMap: true` 옵션이면 dev 환경에서 원본 파일·줄번호로 디버깅 가능해요. 프로덕션에는 sourceMap 노출 안 하는 게 보안에 좋아요.",
+          en: "Enable source maps. Set `sourceMap: true` in your bundler for dev. Don't expose source maps in production for security.",
+        },
+      },
+      {
+        q: { ko: "SCSS/SASS도 minify되나요?", en: "Can SCSS/SASS be minified?" },
+        a: {
+          ko: "SCSS/SASS는 먼저 일반 CSS로 컴파일한 뒤 minify해요. 빌드 파이프라인이 두 단계로 처리해요.",
+          en: "Compile SCSS/SASS to CSS first, then minify. Two-step pipeline.",
+        },
+      },
+      {
+        q: { ko: "minify가 SEO에 영향 주나요?", en: "Does minification affect SEO?" },
+        a: {
+          ko: "긍정적이에요. 페이지 로딩 속도가 Core Web Vitals(LCP·FCP)에 직결되거든요. 단, robots.txt나 보안 헤더에는 영향 없어요.",
+          en: "Positive — page speed feeds into Core Web Vitals (LCP, FCP). No effect on robots.txt or security headers.",
+        },
+      },
+    ],
+  },
+
+  "regex-tester": {
+    intro: {
+      ko: "정규식 테스터는 패턴이 의도한 문자열에만 매칭되는지 실시간으로 확인해 줘요. 입력 검증·로그 파싱·검색 치환에서 매번 손이 가요.",
+      en: "Regex testers verify your pattern matches intended strings in real-time. Daily essential for input validation, log parsing, and search/replace.",
+    },
+    sections: [
+      {
+        heading: { ko: "정규식 핵심 메타문자", en: "Core Regex Metacharacters" },
+        body: {
+          ko: "- `.` 임의 한 글자 (줄바꿈 제외)\n- `*` 0회 이상 반복 / `+` 1회 이상 / `?` 0~1회\n- `^` 줄 시작 / `$` 줄 끝\n- `\\d` 숫자 / `\\w` 단어문자 / `\\s` 공백\n- `[abc]` 문자 집합 / `[^abc]` 부정\n- `(...)` 캡처 그룹 / `(?:...)` 비캡처\n- `|` OR\n- `\\b` 단어 경계\n\n예시: `^010-\\d{4}-\\d{4}$` → 한국 핸드폰 번호\n`\\b\\w+@\\w+\\.\\w+\\b` → 간단한 이메일 매칭",
+          en: "- `.` Any char (except newline)\n- `*` 0+ / `+` 1+ / `?` 0–1\n- `^` start / `$` end\n- `\\d` digit / `\\w` word / `\\s` whitespace\n- `[abc]` set / `[^abc]` negation\n- `(...)` capture / `(?:...)` non-capture\n- `|` OR\n- `\\b` word boundary\n\nExamples:\n`^\\d{3}-\\d{4}-\\d{4}$` → US phone\n`\\b\\w+@\\w+\\.\\w+\\b` → simple email",
+        },
+      },
+      {
+        heading: { ko: "플래그(g, i, m, s, u)", en: "Flags (g, i, m, s, u)" },
+        body: {
+          ko: "- `g` 전역 검색 (모든 매치)\n- `i` 대소문자 무시\n- `m` 멀티라인 (`^`/`$`이 각 줄에 적용)\n- `s` dotall (`.`이 줄바꿈도 포함)\n- `u` 유니코드 (이모지·한글 제대로 처리)\n\n한글 매칭에는 `u` 플래그가 안전해요. 안 켜면 일부 한글이 제대로 안 잡혀요.\n\n조합 예: `/\\bemail\\b/gi` → 단어 경계 + 전역 + 대소문자 무시",
+          en: "- `g` global (all matches)\n- `i` case-insensitive\n- `m` multiline (`^`/`$` per line)\n- `s` dotall (`.` matches newlines)\n- `u` unicode (handles emoji/Korean correctly)\n\nUse `u` for non-ASCII text. Combine: `/\\bemail\\b/gi` → word boundary + global + case-insensitive.",
+        },
+      },
+      {
+        heading: { ko: "흔한 함정", en: "Common Pitfalls" },
+        body: {
+          ko: "- **탐욕(Greedy) vs 비탐욕(Lazy)**: `.*`는 가능한 한 길게 매치. `.*?`로 최단 매치. HTML 파싱·따옴표 안 추출에서 자주 실수\n- **이메일·URL 정규식 신뢰성**: 표준 100% 매치는 매우 길고 복잡. 실전에서는 라이브러리(`validator.js`) 추천\n- **백트래킹 폭발**: `(a+)+` 같은 중첩 반복은 입력에 따라 ReDoS 공격 가능. 테스트 필수\n- **이스케이프**: `.` `?` `*` `+` `(` `)` `[` `\\` 같은 메타는 `\\.` 처럼 escape\n- **한글 범위**: `[가-힣]`이 한글 음절 범위, `[ㄱ-ㅎㅏ-ㅣ]`은 자모 분리",
+          en: "- **Greedy vs lazy**: `.*` matches longest possible; `.*?` matches shortest — common HTML/quote-extraction mistake\n- **Email/URL regex**: True spec regex is huge — use a library like validator.js\n- **Catastrophic backtracking**: Nested repeats `(a+)+` can DoS. Test with malicious inputs\n- **Escape**: `.`, `?`, `*`, `+`, `(`, `)`, `[`, `\\` need `\\.`\n- **Korean ranges**: `[가-힣]` for Hangul syllables, `[ㄱ-ㅎㅏ-ㅣ]` for jamo",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "JavaScript regex와 Python regex가 다른가요?", en: "Is JS regex same as Python regex?" },
+        a: {
+          ko: "기본 문법은 비슷하지만 미묘한 차이가 있어요. JS는 lookbehind를 ES2018부터 지원, Python은 더 풍부한 기능. PCRE(Perl 호환)가 가장 풍부.",
+          en: "Similar core, subtle differences. JS got lookbehind in ES2018; Python supports more advanced features. PCRE (Perl) is most extensive.",
+        },
+      },
+      {
+        q: { ko: "정규식 성능을 어떻게 측정해요?", en: "How to measure regex performance?" },
+        a: {
+          ko: "여러 입력 길이에서 매칭 시간 측정. 100k자 이상에서 갑자기 느려지면 backtracking 의심. regex101이 step count로 알려줘요.",
+          en: "Measure across input sizes. Sudden slowdown at 100k+ chars suggests backtracking. regex101 shows step counts.",
+        },
+      },
+      {
+        q: { ko: "이메일 정규식 어디서 가져와요?", en: "Where to get a good email regex?" },
+        a: {
+          ko: "RFC 5322 완전 매치는 너무 길어서 비실용. HTML5 spec의 단순 패턴 또는 라이브러리(`validator.js`) 사용 추천.",
+          en: "Full RFC 5322 regex is impractical. Use HTML5's pragmatic regex or `validator.js`.",
+        },
+      },
+    ],
+  },
+
+  "bmr-calculator": {
+    intro: {
+      ko: "BMR(기초대사량) 계산기는 가장 정확한 Mifflin-St Jeor 공식을 써서 하루에 가만히 있어도 소비되는 칼로리를 알려 줘요. 활동량(TDEE)까지 곱하면 다이어트·증량 칼로리 계산이 정확해져요.",
+      en: "BMR calculators use the Mifflin-St Jeor equation — the most accurate modern formula — to estimate resting energy expenditure. Multiply by activity level for TDEE, the foundation of any diet plan.",
+    },
+    sections: [
+      {
+        heading: { ko: "BMR vs RMR vs TDEE", en: "BMR vs RMR vs TDEE" },
+        body: {
+          ko: "- **BMR(Basal Metabolic Rate)**: 완전 안정 상태(공복·잠 직후)에서 생명 유지에 필요한 에너지. 12~14h 공복 + 22℃ 환경 측정\n- **RMR(Resting Metabolic Rate)**: 일반 휴식 상태. BMR보다 5~10% 높음. 실측 가능\n- **TDEE(Total Daily Energy Expenditure)**: BMR × 활동계수. 실제 하루 소비 칼로리\n\n다이어트 계산은 TDEE 기준이에요. BMR만 보면 너무 적게 먹게 돼서 근손실·기초대사량 저하 위험이 커요.",
+          en: "- **BMR**: Resting energy in fully fasted, post-sleep state (12–14h fast, 22°C)\n- **RMR**: Casual rest — 5–10% higher than BMR, easier to measure\n- **TDEE**: BMR × activity factor — total daily burn\n\nUse TDEE for diet planning, not BMR alone. BMR-only diets risk muscle loss and metabolic adaptation.",
+        },
+      },
+      {
+        heading: { ko: "활동량 계수 가이드", en: "Activity Factor Guide" },
+        body: {
+          ko: "- **1.2 (sedentary)**: 사무직 + 운동 거의 없음\n- **1.375 (light)**: 주 1~3회 가벼운 운동\n- **1.55 (moderate)**: 주 3~5회 운동\n- **1.725 (active)**: 주 6~7회 강도 높은 운동\n- **1.9 (extra)**: 매일 강도 높은 운동 + 육체 노동\n\n대부분 자기 활동량을 과대평가해요. 실제로 만보 미만 + 헬스 주 2회면 1.375가 맞아요. 이걸 1.55로 잡으면 매일 200kcal 이상 잘못 계산하고 다이어트가 안 빠지는 원인이 돼요.",
+          en: "- **1.2 (sedentary)**: Desk job, no exercise\n- **1.375 (light)**: 1–3 light workouts/week\n- **1.55 (moderate)**: 3–5 workouts/week\n- **1.725 (active)**: 6–7 hard workouts/week\n- **1.9 (extra)**: Daily intense work + manual labor\n\nMost people overestimate. <10k steps + 2 gym sessions/week is 1.375, not 1.55. Overestimating mis-counts 200+ kcal/day, stalling diets.",
+        },
+      },
+      {
+        heading: { ko: "다이어트·증량 칼로리 계산", en: "Cutting/Bulking Calorie Math" },
+        body: {
+          ko: "**감량(cut)**\n- 목표: TDEE − 300~500 kcal\n- 결과: 주 0.3~0.5kg 감량 (안전선)\n- 단백질: 체중 1kg당 1.6~2.2g 유지\n- 너무 적자: 근손실·기초대사량 저하·요요\n\n**증량(bulk)**\n- 목표: TDEE + 200~400 kcal\n- 결과: 주 0.2~0.4kg 증량\n- 단백질: 체중 1kg당 1.6~2.0g\n- 너무 많이: 지방만 늘어남\n\n**유지(recomp)**\n- TDEE 그대로, 단백질·근력 운동 강도 높여 근육 + 지방 동시 변화\n- 가장 어렵지만 처음 헬스 시작 6개월·복귀자에게 효과적",
+          en: "**Cut**\n- Target: TDEE − 300–500 kcal\n- Result: 0.3–0.5kg/week loss (safe)\n- Protein: 1.6–2.2g per kg\n- Going lower risks muscle loss and metabolic slowdown\n\n**Bulk**\n- Target: TDEE + 200–400 kcal\n- Result: 0.2–0.4kg/week gain\n- Protein: 1.6–2.0g per kg\n\n**Recomp**\n- TDEE maintenance with high protein + heavy lifting\n- Hardest but works for beginners and returning lifters",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "공식이 여러 개인데 어느 게 정확해요?", en: "Which BMR formula is most accurate?" },
+        a: {
+          ko: "현재 표준은 Mifflin-St Jeor(1990). 옛 Harris-Benedict(1919)보다 5~10% 더 정확해요. Katch-McArdle은 체지방률 알 때 가장 정확.",
+          en: "Mifflin-St Jeor (1990) is today's standard, 5–10% more accurate than Harris-Benedict (1919). Katch-McArdle is best if you know body fat %.",
+        },
+      },
+      {
+        q: { ko: "근육 많으면 BMR 더 높아져요?", en: "Does muscle raise BMR?" },
+        a: {
+          ko: "네. 근육 1kg이 하루 13kcal 소비. 5kg 근육 더 붙으면 하루 65kcal. 큰 차이는 아니지만 장기적으로 누적 효과 있음.",
+          en: "Yes — 1kg muscle burns ~13 kcal/day. 5kg more muscle = +65 kcal/day. Modest but accumulates.",
+        },
+      },
+      {
+        q: { ko: "다이어트 중 정체기가 와요", en: "Diet plateau?" },
+        a: {
+          ko: "체중 줄면 BMR도 줄어요. 2~3주마다 새 BMR로 TDEE 다시 계산하세요. 또는 1주 maintenance(diet break)으로 호르몬 정상화.",
+          en: "BMR drops as weight drops. Recalculate every 2–3 weeks. Or take a 1-week diet break at maintenance to reset hormones.",
+        },
+      },
+    ],
+  },
+
+  "unit-converter": {
+    intro: {
+      ko: "단위 변환기는 길이·무게·온도·면적·부피·속도까지 한 화면에서 양방향 변환해요. 한국 평·미국 마일·헨리 사이즈·요리 컵 단위까지 한꺼번에 처리해요.",
+      en: "Unit converters handle length, weight, temperature, area, volume, and speed bidirectionally — including Korean pyeong, US miles, Henry sizes, and cooking cups.",
+    },
+    sections: [
+      {
+        heading: { ko: "한국에서 자주 쓰는 비표준 단위", en: "Korean Non-Standard Units" },
+        body: {
+          ko: "- **평**: 1평 = 3.3058m². 부동산 면적 표기. 25평 = 82.6㎡(공급) ≈ 59㎡(전용)\n- **돈**: 1돈 = 3.75g. 금·귀금속 무게\n- **근**: 1근 = 600g(육류). 한약재는 375g, 채소는 400g 등 변동\n- **마지기**: 1마지기 = 660~1,000m². 농지 면적 (지역마다 차이)\n- **자(척)**: 1자 = 30.3cm. 한복·전통 건축\n- **푼·치·자**: 한자 단위. 1치 = 3.03cm",
+          en: "- **Pyeong (평)**: 1 pyeong = 3.3058 m². Real estate. 25 pyeong = 82.6 m² (supply) ≈ 59 m² (private)\n- **Don (돈)**: 1 don = 3.75 g. Gold/jewelry\n- **Geun (근)**: 1 geun = 600 g (meat). Varies for herbs/vegetables\n- **Majigi (마지기)**: 660–1,000 m² farmland (region-dependent)\n- **Ja/Cheok (자)**: 30.3 cm. Hanbok and traditional building\n- **Pun/Chi/Ja**: Hanja units. 1 chi = 3.03 cm",
+        },
+      },
+      {
+        heading: { ko: "미국·영국 단위 함정", en: "US vs UK Unit Pitfalls" },
+        body: {
+          ko: "- **갤런**: 미국 1 gal = 3.785L, 영국 1 gal = 4.546L (20% 차이!)\n- **온스**: 무게(28.35g) vs 액체(29.57ml) 다름\n- **파인트**: 미국 473ml, 영국 568ml\n- **쿼터**: 미국 946ml, 영국 1.137L\n- **마일**: 통일(1.609km). 해리(nautical mile)는 1.852km\n- **인치/피트**: 통일(2.54cm/30.48cm)\n\n레시피·여행에서 헷갈리기 쉬워요. 도구는 미국 기준이 기본이지만 영국 단위 옵션도 있어요.",
+          en: "- **Gallons**: US = 3.785 L, UK = 4.546 L (20% diff!)\n- **Ounces**: Weight (28.35 g) vs liquid (29.57 ml)\n- **Pints**: US 473 ml, UK 568 ml\n- **Quarts**: US 946 ml, UK 1.137 L\n- **Miles**: Unified (1.609 km). Nautical mile = 1.852 km\n- **Inches/feet**: Unified (2.54 cm / 30.48 cm)\n\nDefault to US units; the tool toggles UK.",
+        },
+      },
+      {
+        heading: { ko: "온도 변환 공식 외우기", en: "Memorizing Temperature Conversions" },
+        body: {
+          ko: "**℃ ↔ ℉**: ℉ = ℃ × 9/5 + 32 / ℃ = (℉ − 32) × 5/9\n\n빠른 머릿셈\n- 0℃ = 32℉ (얼음)\n- 20℃ = 68℉ (실온)\n- 30℃ = 86℉ (한여름)\n- 100℃ = 212℉ (끓는점)\n- 37℃ = 98.6℉ (체온)\n\n**K(절대온도)**: K = ℃ + 273.15. 과학·우주\n**Re(랭킨)**: ℉의 절대온도 버전. 미국 공학 일부",
+          en: "**°C ↔ °F**: °F = °C × 9/5 + 32 / °C = (°F − 32) × 5/9\n\nMental shortcuts:\n- 0°C = 32°F (ice)\n- 20°C = 68°F (room)\n- 30°C = 86°F (hot summer)\n- 100°C = 212°F (boiling)\n- 37°C = 98.6°F (body)\n\n**Kelvin**: K = °C + 273.15 — science\n**Rankine**: °F absolute — US engineering",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "공급 면적과 전용 면적이 뭐가 달라요?", en: "Supply vs private area in real estate?" },
+        a: {
+          ko: "전용 면적: 실제 거주 공간. 공급 면적: 전용 + 주거공용(복도·계단). 25평 아파트 = 공급 82.6㎡, 전용 약 59㎡.",
+          en: "Private = actual living space. Supply = private + shared corridors/stairs. 25 pyeong apartment ≈ 82.6 m² supply, ~59 m² private.",
+        },
+      },
+      {
+        q: { ko: "한국 운전면허로 미국에서 시속 표시 헷갈려요", en: "Confusing mph for Korean drivers?" },
+        a: {
+          ko: "60mph = 100km/h, 70mph = 113km/h, 100mph = 161km/h. 1.609 곱하면 km/h로 바뀌어요.",
+          en: "60 mph = 100 km/h, 70 mph = 113 km/h, 100 mph = 161 km/h. Multiply by 1.609.",
+        },
+      },
+      {
+        q: { ko: "1근 = 600g인가요 400g인가요?", en: "Is 1 geun 600g or 400g?" },
+        a: {
+          ko: "용도마다 달라요. 육류 600g, 한약재 375g, 야채 400g, 곡물 600g. 정육점·한약방·시장 표기를 확인하세요.",
+          en: "Depends — meat 600g, herbs 375g, vegetables 400g, grains 600g. Check the source market.",
+        },
+      },
+    ],
+  },
+
+  "gpa-calculator": {
+    intro: {
+      ko: "학점(GPA) 계산기는 한국 4.5·4.3 만점, 미국 4.0 만점을 모두 지원해요. 학기·전공별 GPA·졸업 GPA·환산 점수까지 한 화면에서 확인할 수 있어요.",
+      en: "GPA calculators support Korean 4.5/4.3 scales and US 4.0 scale. Compute term, major, and cumulative GPAs, plus US conversion in one place.",
+    },
+    sections: [
+      {
+        heading: { ko: "한국 4.5 vs 4.3 vs 미국 4.0", en: "Korean 4.5/4.3 vs US 4.0" },
+        body: {
+          ko: "- **한국 4.5 만점**: 대부분 대학. A+ = 4.5, A = 4.0, B+ = 3.5...\n- **한국 4.3 만점**: 서울대 등 일부. A+ = 4.3, A = 4.0... A+만 다르고 나머지 같음\n- **미국 4.0 만점**: A = 4.0, A− = 3.7, B+ = 3.3...\n\n유학 지원 시 한국 GPA를 미국 4.0으로 환산해요. 단순 비례는 부정확. 대부분 대학원·인증기관(WES, ECE)이 자체 환산표 사용해요.",
+          en: "- **Korean 4.5**: Most universities. A+ = 4.5, A = 4.0, B+ = 3.5...\n- **Korean 4.3**: Seoul National Univ. and some others. A+ = 4.3, rest same\n- **US 4.0**: A = 4.0, A− = 3.7, B+ = 3.3...\n\nSimple proportional conversion is inaccurate for grad school applications. WES/ECE use their own tables.",
+        },
+      },
+      {
+        heading: { ko: "GPA 계산 공식", en: "How GPA Is Calculated" },
+        body: {
+          ko: "**GPA = Σ(학점 × 평점) ÷ Σ(학점)**\n\n예시: 3학점 A+(4.5) + 2학점 B+(3.5)\n= (3 × 4.5 + 2 × 3.5) ÷ (3 + 2)\n= (13.5 + 7) ÷ 5\n= 4.10\n\n주의\n- F 학점도 평점 0으로 계산에 포함 → 큰 페널티\n- P/F(통과/낙제)는 보통 GPA 계산 제외\n- 재수강은 학교마다 정책 다름. 둘 다 계산 vs 최종만\n- 휴학 학기는 계산에서 빠짐",
+          en: "**GPA = Σ(credits × grade points) ÷ Σ(credits)**\n\nExample: 3-credit A+ (4.5) + 2-credit B+ (3.5)\n= (3 × 4.5 + 2 × 3.5) ÷ (3 + 2) = 4.10\n\nNotes:\n- F counts as 0 — big penalty\n- P/F (pass/fail) usually excluded\n- Retakes vary: some count both, some only final\n- Leave-of-absence terms excluded",
+        },
+      },
+      {
+        heading: { ko: "장학금·취업·유학 GPA 기준", en: "GPA Cutoffs for Scholarships, Jobs, Grad School" },
+        body: {
+          ko: "- **국가장학금 1등급**: 평균 평점 80% 이상 (4.5 만점에서 약 3.6+)\n- **성적우수장학금**: 학과별 다르지만 보통 상위 5% (대략 4.0+)\n- **삼성·SK 등 대기업 서류**: 명시적 기준은 없으나 평균 3.5+ 통과율 유리\n- **외국계·금융권**: 3.7+가 안전선\n- **미국 대학원**: 환산 GPA 3.0+ 필수, 명문은 3.5+\n- **MBA**: 3.5+가 평균. GMAT·경력으로 보완 가능\n\n매 학기 후 GPA 추적하시고, 학기별 목표 GPA 잡고 가는 게 효과적이에요.",
+          en: "- **Korean national scholarship grade 1**: ~80% percentile (~3.6+ on 4.5)\n- **Merit scholarships**: Top 5% (~4.0+)\n- **Major corps (Samsung, SK)**: No explicit cutoff but 3.5+ improves screening\n- **Finance/foreign firms**: 3.7+ safer\n- **US grad school**: ≥3.0 required, ≥3.5 for top schools\n- **MBA**: 3.5+ average; GMAT and experience can offset\n\nTrack term GPAs and set per-term goals.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "재수강 GPA 계산이 학교마다 달라요", en: "Retake GPA varies by school?" },
+        a: {
+          ko: "맞아요. 둘 다 계산(평균), 최종만 계산, 최고만 계산 등. 학교 학사 안내 또는 학사관리시스템에서 정책 확인.",
+          en: "Yes — average both, final only, or best only. Check your school's academic regulations.",
+        },
+      },
+      {
+        q: { ko: "한국 GPA를 미국으로 어떻게 환산해요?", en: "Convert Korean to US GPA?" },
+        a: {
+          ko: "단순 비례(4.5 ÷ 4.5 × 4.0)는 부정확. WES·ECE 같은 기관이 자체 표 사용. 대학원 지원 시 학교 요구 환산표 따르세요.",
+          en: "Proportional (×4.0/4.5) is inaccurate. Use WES/ECE official tables for grad school applications.",
+        },
+      },
+      {
+        q: { ko: "P/F 학점이 GPA에 영향 있나요?", en: "Does P/F affect GPA?" },
+        a: {
+          ko: "보통 GPA 계산에서 제외돼요. 단, 졸업 학점에는 포함. 학교마다 다르니 안내 확인.",
+          en: "Usually excluded from GPA but counted toward graduation credits. School-dependent.",
+        },
+      },
+    ],
+  },
+
   "number-base-converter": {
     intro: {
       ko: "10·2·8·16진수를 한 화면에서 동시에 비교할 수 있는 진법 변환기예요. 네트워크·임베디드·웹 색상까지 폭넓게 활용돼요.",
