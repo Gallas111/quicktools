@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function CharacterCounter() {
   const [text, setText] = useState("");
@@ -80,16 +82,7 @@ export default function CharacterCounter() {
         )}
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "글자수 세기란?" : "What is a Character Counter?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "글자수 세기는 입력한 텍스트의 글자수, 공백 제외 글자수, 단어수, 문장수, 문단수, 바이트 수를 실시간으로 확인할 수 있는 무료 온라인 도구입니다. 블로그 글, 자기소개서, SNS 포스팅 등 글자수 제한이 있는 곳에서 유용하게 사용할 수 있습니다."
-            : "A character counter is a free online tool that counts characters, words, sentences, paragraphs, and bytes in real-time. It's useful for social media posts, essays, articles, and any writing with character limits."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["character-counter"]} />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import { useState, useCallback } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type Algorithm = "SHA-1" | "SHA-256" | "SHA-512";
 
@@ -91,16 +93,7 @@ export default function HashGenerator() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "해시란?" : "What is a Hash?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "해시(Hash)는 입력 데이터를 고정 길이의 고유한 문자열로 변환하는 암호학적 함수입니다. 파일 무결성 검증, 비밀번호 저장, 디지털 서명 등에 사용됩니다. SHA-256은 현재 가장 널리 사용되는 해시 알고리즘입니다. 이 도구는 Web Crypto API를 사용하여 브라우저에서 안전하게 실행됩니다."
-            : "A hash function converts input data into a fixed-length unique string. It's used for file integrity verification, password storage, and digital signatures. SHA-256 is the most widely used hash algorithm today. This tool uses the Web Crypto API and runs securely in your browser."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["hash-generator"]} />
     </div>
   );
 }

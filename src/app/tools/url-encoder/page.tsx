@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function UrlEncoder() {
   const [input, setInput] = useState("");
@@ -117,16 +119,7 @@ export default function UrlEncoder() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "URL 인코딩이란?" : "What is URL Encoding?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "URL 인코딩(퍼센트 인코딩)은 URL에서 사용할 수 없는 특수문자를 %XX 형식으로 변환하는 방식입니다. 한글, 공백, 특수문자가 포함된 URL을 안전하게 전송할 때 필요합니다."
-            : "URL encoding (percent encoding) converts special characters into a %XX format safe for use in URLs. It's essential for handling non-ASCII characters, spaces, and special symbols in web addresses."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["url-encoder"]} />
     </div>
   );
 }

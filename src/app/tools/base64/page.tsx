@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function Base64Tool() {
   const [input, setInput] = useState("");
@@ -117,16 +119,7 @@ export default function Base64Tool() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "Base64란?" : "What is Base64?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "Base64는 바이너리 데이터를 ASCII 문자열로 변환하는 인코딩 방식입니다. 이메일 첨부파일, 데이터 URI, API 토큰 등에서 널리 사용됩니다. 이 도구는 브라우저에서 바로 실행되며 데이터가 서버로 전송되지 않습니다."
-            : "Base64 is an encoding scheme that converts binary data to ASCII strings. It's widely used in email attachments, data URIs, and API tokens. This tool runs entirely in your browser — no data is sent to any server."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["base64"]} />
     </div>
   );
 }

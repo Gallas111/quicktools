@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type Base = "bin" | "oct" | "dec" | "hex";
 
@@ -127,16 +129,7 @@ export default function NumberBaseConverter() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "진법 변환기란?" : "What is a Number Base Converter?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "진법 변환기는 2진수(Binary), 8진수(Octal), 10진수(Decimal), 16진수(Hexadecimal) 사이의 숫자를 실시간으로 변환하는 무료 온라인 도구입니다. 프로그래밍, 컴퓨터 과학, 디지털 회로 설계 등에서 유용합니다."
-            : "A number base converter converts numbers between binary (base 2), octal (base 8), decimal (base 10), and hexadecimal (base 16) in real-time. Useful for programming, computer science, and digital circuit design."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["number-base-converter"]} />
     </div>
   );
 }
