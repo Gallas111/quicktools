@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import QRCode from "qrcode";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function QRGenerator() {
   const [text, setText] = useState("https://");
@@ -150,16 +152,7 @@ export default function QRGenerator() {
 
       <canvas ref={canvasRef} className="hidden" />
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "QR코드 생성기란?" : "What is a QR Code Generator?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "QR코드 생성기는 URL, 텍스트, 연락처 정보 등을 QR코드로 변환하는 무료 온라인 도구입니다. 생성된 QR코드는 PNG, SVG 형식으로 다운로드할 수 있으며, 크기와 색상을 자유롭게 변경할 수 있습니다."
-            : "A QR code generator converts URLs, text, and other data into QR codes. Download in PNG or SVG format with custom sizes and colors."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["qr-generator"]} />
     </div>
   );
 }

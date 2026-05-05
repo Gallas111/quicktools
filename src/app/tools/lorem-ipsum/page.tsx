@@ -2,6 +2,8 @@
 
 import { useState, useCallback } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 const WORDS = [
   "lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit",
@@ -132,16 +134,7 @@ export default function LoremIpsum() {
         )}
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "Lorem Ipsum이란?" : "What is Lorem Ipsum?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "Lorem Ipsum은 출판 및 디자인 업계에서 사용하는 표준 더미 텍스트입니다. 실제 콘텐츠 없이 레이아웃과 디자인을 미리 확인할 때 사용합니다. 1500년대부터 사용되어 온 전통적인 플레이스홀더 텍스트입니다."
-            : "Lorem Ipsum is the standard dummy text used in publishing and design. It helps preview layouts without actual content. This traditional placeholder text has been in use since the 1500s."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["lorem-ipsum"]} />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 function escapeHtml(text: string): string {
   return text
@@ -201,16 +203,7 @@ export default function MarkdownPreview() {
         .md-preview em { font-style: italic; }
       `}</style>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "마크다운 미리보기란?" : "What is Markdown Preview?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "마크다운 미리보기는 마크다운 문법으로 작성한 텍스트를 실시간으로 렌더링하여 보여주는 무료 온라인 도구입니다. 제목, 굵은 글씨, 기울임, 코드 블록, 링크, 목록, 인용문 등 다양한 마크다운 문법을 지원합니다. 브라우저에서 바로 실행되며 데이터가 서버로 전송되지 않습니다."
-            : "Markdown Preview is a free online tool that renders markdown text in real-time. It supports headers, bold, italic, code blocks, links, lists, blockquotes, and more. It runs entirely in your browser — no data is sent to any server."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["markdown-preview"]} />
     </div>
   );
 }

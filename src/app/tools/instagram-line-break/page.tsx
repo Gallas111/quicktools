@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 const INVISIBLE_CHAR = "\u2800"; // Braille Pattern Blank
 
@@ -157,24 +159,7 @@ export default function InstagramLineBreak() {
         </ol>
       </div>
 
-      {/* Info section */}
-      <div className="mt-6 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko"
-            ? "인스타 줄바꿈이란?"
-            : "What is the Instagram Line Break Tool?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "인스타그램에서는 캡션을 작성할 때 연속된 빈 줄(엔터)을 자동으로 제거합니다. 이 때문에 원하는 곳에 줄바꿈을 넣어도 게시물에서는 사라져 버리는 문제가 있습니다. 이 도구는 빈 줄에 보이지 않는 특수문자(점자 공백, U+2800)를 삽입하여 인스타그램이 줄바꿈을 유지하도록 만들어줍니다."
-            : "Instagram automatically removes consecutive blank lines from captions. This means your carefully formatted text loses its spacing when posted. This tool inserts an invisible character (Braille Pattern Blank, U+2800) into blank lines, which prevents Instagram from stripping them away."}
-        </p>
-        <p>
-          {locale === "ko"
-            ? "변환된 텍스트를 복사하여 인스타그램에 붙여넣으면 줄바꿈이 완벽하게 유지됩니다. 눈에 보이지 않는 문자를 사용하므로 게시물의 외관에는 영향을 주지 않습니다."
-            : "Simply copy the converted text and paste it into Instagram. The line breaks will be preserved perfectly. Since invisible characters are used, they won't affect the visual appearance of your post."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["instagram-line-break"]} />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function PasswordGenerator() {
   const [password, setPassword] = useState("");
@@ -143,16 +145,7 @@ export default function PasswordGenerator() {
         </button>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "비밀번호 생성기란?" : "What is a Password Generator?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "비밀번호 생성기는 대문자, 소문자, 숫자, 특수문자를 조합하여 강력하고 안전한 비밀번호를 자동으로 만들어주는 무료 온라인 도구입니다. 브라우저의 암호학적 난수 생성기(crypto.getRandomValues)를 사용하여 예측 불가능한 비밀번호를 생성합니다."
-            : "A password generator creates strong, secure passwords using uppercase, lowercase, numbers, and symbols. It uses your browser's cryptographic random number generator for truly unpredictable passwords."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["password-generator"]} />
     </div>
   );
 }

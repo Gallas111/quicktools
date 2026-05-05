@@ -2,6 +2,8 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function UuidGenerator() {
   const [uuid, setUuid] = useState("");
@@ -165,16 +167,7 @@ export default function UuidGenerator() {
         )}
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "UUID란?" : "What is a UUID?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "UUID(Universally Unique Identifier)는 128비트 고유 식별자입니다. UUID v4는 난수를 기반으로 생성되며, 데이터베이스 기본 키, API 요청 식별, 세션 관리 등에 널리 사용됩니다. 이 도구는 브라우저의 crypto.randomUUID() API를 사용하여 암호학적으로 안전한 UUID를 생성합니다."
-            : "UUID (Universally Unique Identifier) is a 128-bit unique identifier. UUID v4 is generated using random numbers and is widely used for database primary keys, API request identification, and session management. This tool uses the browser's crypto.randomUUID() API for cryptographically secure UUID generation."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["uuid-generator"]} />
     </div>
   );
 }

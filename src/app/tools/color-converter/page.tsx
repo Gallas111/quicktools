@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 function hexToRgb(hex: string) {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -174,16 +176,7 @@ export default function ColorConverter() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "색상 코드 변환기란?" : "What is a Color Converter?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "색상 코드 변환기는 HEX, RGB, HSL 형식의 색상 코드를 실시간으로 변환하는 무료 온라인 도구입니다. 웹 디자인, CSS 작업 시 필요한 색상 코드를 빠르게 변환하고 복사할 수 있습니다."
-            : "A color converter transforms color codes between HEX, RGB, and HSL formats in real-time. Quickly convert and copy color codes for web design and CSS work."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["color-converter"]} />
     </div>
   );
 }

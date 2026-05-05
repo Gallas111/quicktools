@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function TimestampConverter() {
   const [timestamp, setTimestamp] = useState("");
@@ -145,16 +147,7 @@ export default function TimestampConverter() {
         )}
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "Unix 타임스탬프란?" : "What is a Unix Timestamp?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "Unix 타임스탬프(Epoch time)는 1970년 1월 1일 00:00:00 UTC부터 경과한 초(seconds)의 수입니다. 프로그래밍, 데이터베이스, API에서 날짜/시간을 표현하는 표준적인 방법으로, 시간대에 관계없이 동일한 시점을 나타냅니다."
-            : "A Unix timestamp (Epoch time) is the number of seconds since January 1, 1970, 00:00:00 UTC. It's the standard way to represent dates in programming, databases, and APIs — timezone-independent and universally consistent."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["timestamp-converter"]} />
     </div>
   );
 }

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
 import CopyButton from "@/components/CopyButton";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 export default function JsonFormatter() {
   const [input, setInput] = useState("");
@@ -147,16 +149,7 @@ export default function JsonFormatter() {
         </div>
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "JSON 포맷터란?" : "What is a JSON Formatter?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "JSON 포맷터는 JSON 데이터를 보기 좋게 정렬(beautify)하거나 압축(minify)하는 무료 온라인 도구입니다. 잘못된 JSON 문법을 검증하고 오류 위치를 알려줍니다. 개발자들이 API 응답 확인, 설정 파일 편집 등에 매일 사용합니다."
-            : "A JSON formatter beautifies or minifies JSON data. It validates JSON syntax and shows error locations. Developers use it daily for checking API responses, editing config files, and more."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["json-formatter"]} />
     </div>
   );
 }

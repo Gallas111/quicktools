@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "@/components/LocaleProvider";
 import CopyButton from "@/components/CopyButton";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type CaseType =
   | "uppercase"
@@ -185,16 +187,7 @@ export default function CaseConverter() {
         />
       </div>
 
-      <div className="mt-12 space-y-4 text-sm text-gray-500 dark:text-gray-400">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {locale === "ko" ? "대소문자 변환기란?" : "What is a Case Converter?"}
-        </h2>
-        <p>
-          {locale === "ko"
-            ? "대소문자 변환기는 텍스트를 UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case, CONSTANT_CASE, 문장형 등 다양한 형식으로 변환하는 무료 온라인 도구입니다. 프로그래밍 시 변수명 변환, 텍스트 서식 변경 등에 유용합니다."
-            : "A Case Converter transforms text into various formats including UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case, CONSTANT_CASE, and Sentence case. It is useful for converting variable names in programming and reformatting text."}
-        </p>
-      </div>
+      <ToolGuide data={toolGuides["case-converter"]} />
     </div>
   );
 }
