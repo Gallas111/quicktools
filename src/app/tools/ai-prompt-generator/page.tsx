@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 /* ──────────────────────── types ──────────────────────── */
 
@@ -774,6 +776,7 @@ export default function AIPromptGenerator() {
           </ul>
         </div>
       </section>
+      <ToolGuide data={toolGuides["ai-prompt-generator"]} />
     </div>
   );
 }

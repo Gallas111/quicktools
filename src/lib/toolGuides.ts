@@ -1273,6 +1273,271 @@ export const toolGuides: Record<string, ToolGuideData> = {
     ],
   },
 
+  "percent-calculator": {
+    intro: {
+      ko: "퍼센트 계산기는 일상의 4가지 핵심 시나리오(부분%·비율%·할인%·증감%)를 한 화면에서 처리해 줘요. 쇼핑·시험·매출 분석에 매번 손이 가요.",
+      en: "Percent calculators handle the four daily scenarios — % of, ratio %, discount %, and change % — all in one screen. Useful for shopping, exams, and business analytics.",
+    },
+    sections: [
+      {
+        heading: { ko: "4가지 계산 모드", en: "Four Calculation Modes" },
+        body: {
+          ko: "- **부분% (X의 P%는?)**: 50,000원의 30% = 15,000원\n- **비율% (X는 Y의 몇 %?)**: 240은 800의 30%\n- **할인% (할인 후 가격)**: 100,000원에서 20% 할인 = 80,000원\n- **증감% (변화율)**: 80→100은 +25% 증가, 100→80은 −20% 감소\n\n증감 계산은 기준점을 어디 잡느냐에 따라 결과가 달라요. 100→80은 −20%지만 80→100은 +25%거든요. 이걸 헷갈리는 게 가장 흔한 실수예요.",
+          en: "- **% of (X% of Y)**: 30% of 50,000 = 15,000\n- **Ratio (X is Y% of Z)**: 240 is 30% of 800\n- **Discount price**: 100,000 with 20% off = 80,000\n- **Change %**: 80→100 is +25%, 100→80 is −20%\n\nChange % depends on which value you take as the base. 100→80 is −20% but 80→100 is +25% — most common confusion.",
+        },
+      },
+      {
+        heading: { ko: "할인 계산의 함정", en: "Discount Calculation Pitfalls" },
+        body: {
+          ko: "- **이중 할인**: 30% + 20% ≠ 50%. 첫 할인 후 남은 금액에서 두 번째 할인 적용 → 100,000 → 70,000 → 56,000원 (실제 44% 할인)\n- **할인 후 부가세**: 부가세 포함 가격에서 할인하면 부가세까지 줄어듦. 매출 신고 시 주의\n- **쿠폰 vs 캐시백**: 쿠폰은 결제 직전 차감, 캐시백은 사후 환급. 실질 할인율 다름\n- **무이자 할부**: 원금은 그대로, 이자만 면제. 할인이 아님",
+          en: "- **Stacked discounts**: 30% + 20% ≠ 50%. Applied sequentially: 100,000 → 70,000 → 56,000 (actual 44% off)\n- **Tax-inclusive discounts**: Discounting a price including VAT also reduces VAT. Check accounting.\n- **Coupon vs cashback**: Coupon reduces at checkout; cashback returns later — effective discount differs\n- **Interest-free installments**: Principal unchanged, only interest waived — not a discount",
+        },
+      },
+      {
+        heading: { ko: "증감률 해석 — 함정 사례", en: "Change % Interpretation — Common Traps" },
+        body: {
+          ko: "- **회복 계산**: 50% 손실 후 50% 회복은 원금 75%만 회복. 원금 복구하려면 +100%가 필요\n- **'평균 수익률'**: 단순 평균이 아닌 기하평균(CAGR) 사용. 단순 평균은 변동성이 크면 부정확\n- **+200% vs ×3배**: 같은 의미. 100 → 300\n- **백분율 포인트(%p)**: 5% → 8%는 +3%p 또는 +60%. 둘 다 맞지만 쓰는 곳이 다름\n\n주식·환율·금리 뉴스 보면 'X% 상승'이 절대 변화인지 상대 변화인지 확인하는 습관이 중요해요.",
+          en: "- **Recovery from loss**: 50% loss + 50% gain returns only 75% of original. You need +100% to fully recover\n- **'Average return'**: Use geometric mean (CAGR), not arithmetic mean — accuracy diverges with volatility\n- **+200% = ×3**: Same thing — 100 → 300\n- **Percentage points (%p)**: 5% → 8% is +3 %p or +60% — both correct, used differently\n\nWhen reading stock/forex/interest news, always verify whether 'X% up' is absolute or relative.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "팁 계산은 어떻게 해요?", en: "How to calculate tips?" },
+        a: {
+          ko: "미국 표준은 식사비의 18~20%. 부분%(X의 P%) 모드에서 식사비와 18~20% 입력하면 바로 나와요.",
+          en: "US standard is 18–20% of meal cost. Use the '% of' mode with meal price and 18–20%.",
+        },
+      },
+      {
+        q: { ko: "부가세 빼고 받은 가격에 부가세는?", en: "Adding VAT to a tax-excluded price?" },
+        a: {
+          ko: "한국은 10%. 100,000원 × 1.1 = 110,000원. 부분% 모드로 10% 추가 후 더하기.",
+          en: "Korea VAT is 10%. 100,000 × 1.1 = 110,000. Use % of for 10% then add.",
+        },
+      },
+      {
+        q: { ko: "두 회사 매출 증감률 비교가 안 맞아요", en: "Two-company revenue % comparison off?" },
+        a: {
+          ko: "기준점이 다르면 비교 무의미. 같은 시점·같은 기간으로 정규화한 뒤 비교하세요. CAGR(연복합성장률) 추천.",
+          en: "Different bases make comparison meaningless. Normalize to same period and use CAGR for comparable growth rates.",
+        },
+      },
+    ],
+  },
+
+  "dday-calculator": {
+    intro: {
+      ko: "D-day 계산기는 시험·기념일·프로젝트 마감을 자동으로 추적해 줘요. 매일 갱신되는 카운트다운이 동기부여 효과가 커서 학습·다이어트·런칭 준비에 효과적이에요.",
+      en: "D-day calculators track exams, anniversaries, and project deadlines automatically. Daily countdowns drive motivation — proven for studying, diets, and product launches.",
+    },
+    sections: [
+      {
+        heading: { ko: "D-day 활용 7가지", en: "7 D-day Use Cases" },
+        body: {
+          ko: "1. **시험 카운트다운** — 수능·토익·자격증\n2. **자격증 단계 학습** — D-90 시작 / D-30 모의 / D-7 정리\n3. **취업 준비** — 공채 마감·면접일 역산\n4. **기념일** — 100일·1주년·생신\n5. **프로젝트 마감** — 시제품·마케팅·출시 단계별\n6. **개인 목표** — 다이어트·운동 챌린지\n7. **여행·이사·결혼식** — 항공권·청첩장·드레스 일정\n\n같은 마감이라도 단계별로 쪼개면 진척이 보여요. D-180 한 개보다 D-180/90/30/7 네 개가 효과적이에요.",
+          en: "1. **Exam countdowns** — SAT, college entrance, certifications\n2. **Multi-stage cert prep** — D-90 start / D-30 mock / D-7 review\n3. **Job hunting** — application deadline reverse plan\n4. **Anniversaries** — relationships, birthdays, milestones\n5. **Project deadlines** — prototype, marketing, launch phases\n6. **Personal goals** — diets, fitness challenges\n7. **Travel, moving, weddings** — flights, invitations, dress fitting\n\nMulti-stage D-days (D-180/90/30/7) outperform single deadlines.",
+        },
+      },
+      {
+        heading: { ko: "D-day 효과 극대화 팁", en: "Maximizing D-day Effectiveness" },
+        body: {
+          ko: "- **눈에 보이는 곳에**: 책상·잠금화면·노트북 위젯\n- **현실적 거리**: D-7~D-90 구간이 가장 효과. D-180+는 긴급감 약함\n- **단계별 마일스톤**: 큰 D-day 1개를 작은 D-day 3~5개로\n- **매일 갱신**: 자동 위젯·알림 설정\n- **공유**: 친구·가족·팀과 공유하면 책임감 ↑\n- **실패 후 재설정**: 실패 분석 → 새 D-day. 실패한 D-day 무시 금지\n\n주의: D-day만 보고 진척 없는 게 가장 흔한 함정이에요. D-day는 알람이지 계획이 아니거든요.",
+          en: "- **Place it visibly**: Desk, lock screen, laptop widget\n- **Realistic horizon**: D-7 to D-90 most effective; D-180+ feels distant\n- **Milestone breakdown**: One big D-day → 3–5 sub D-days\n- **Daily refresh**: Auto widgets/notifications\n- **Share with others**: Accountability boost\n- **Reset after failure**: Analyze, set new D-day, don't ignore failures\n\nWarning: Watching D-day without a plan is the #1 trap. D-day is the alarm, not the plan.",
+        },
+      },
+      {
+        heading: { ko: "기념일·과거 날짜 카운트", en: "Anniversaries and Past-Date Counting" },
+        body: {
+          ko: "도구는 미래 날짜는 D-N(남은 일수), 과거 날짜는 +N day(경과 일수)로 자동 표시해요.\n\n자주 쓰는 기념일\n- **연인**: 100일(약 3.3개월), 200일, 1주년(365일), 결혼기념일\n- **자녀**: 100일, 첫돌(365일), 입학식 카운트다운\n- **부모님**: 결혼기념일, 회갑(60세), 칠순(70세)\n- **추모일**: 매년 자동 갱신되는 +day\n\n음력 기념일은 해마다 양력 날짜가 다르니 음력 기준 별도 계산이 필요해요. 도구는 양력만 지원하므로 음력→양력 변환 후 입력하세요.",
+          en: "The tool shows future dates as D-N (days remaining) and past dates as +N day (days elapsed).\n\nCommon anniversaries:\n- **Couples**: 100 days, 200 days, 1 year, wedding anniversary\n- **Children**: 100 days, 1st birthday, school enrollment\n- **Parents**: Wedding anniversary, 60th (Hwangap), 70th (Chilsun)\n- **Memorials**: Auto-refreshing +day each year\n\nLunar anniversaries shift solar dates each year — convert to solar first.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "D-day가 너무 멀면 효과 없나요?", en: "Distant D-days less effective?" },
+        a: {
+          ko: "맞아요. D-180+ 는 긴급감 약함. 큰 목표는 단계별 D-day(180→90→30→7)로 분할하세요.",
+          en: "Yes — D-180+ feels distant. Break large goals into stages (180 → 90 → 30 → 7).",
+        },
+      },
+      {
+        q: { ko: "팀 공유는 어떻게?", en: "How to share with team?" },
+        a: {
+          ko: "구글 캘린더·노션·슬랙 위젯에 D-day 표기. 매주 1회 'D-X 진척률' 회의 정례화.",
+          en: "Add D-days to Google Calendar, Notion, or Slack widgets. Schedule weekly 'D-X progress' check-ins.",
+        },
+      },
+      {
+        q: { ko: "음력 생일도 자동 갱신되나요?", en: "Auto-update for lunar birthdays?" },
+        a: {
+          ko: "이 도구는 양력만 지원해요. 음력 양력 변환 후 입력하면 다음 해는 다시 변환 필요해요.",
+          en: "Solar dates only. Lunar dates need annual reconversion.",
+        },
+      },
+    ],
+  },
+
+  "salary-calculator": {
+    intro: {
+      ko: "연봉 계산기는 세전 연봉을 입력하면 4대 보험·소득세·지방소득세를 차감한 실수령액을 알려 줘요. 부양가족 수·자녀 수까지 반영해서 정확도가 높아요.",
+      en: "Salary calculators compute take-home pay after national insurance, income tax, and local tax — adjusted for dependents and children for accurate Korean payroll estimates.",
+    },
+    sections: [
+      {
+        heading: { ko: "4대 보험 요율 (2026 기준)", en: "Four Major Insurances (2026 rates)" },
+        body: {
+          ko: "근로자 부담분만 표시 (회사 부담 제외).\n\n- **국민연금**: 4.5% (월소득 590만원 상한)\n- **건강보험**: 3.545% (전체) + 장기요양 12.95% × 건보료\n- **고용보험**: 0.9%\n- **산재보험**: 0% (회사 100%)\n\n4대 보험만으로 약 8~9% 차감돼요. 여기에 소득세(누진)와 지방소득세(소득세의 10%)가 추가로 빠져요. 결과적으로 세전 5,000만원 → 실수령 약 4,200~4,300만원이 표준이에요.",
+          en: "Employee portion only (excludes employer contribution).\n\n- **National Pension**: 4.5% (capped at ₩5.9M monthly)\n- **National Health Insurance**: 3.545% + Long-term care 12.95% of NHI premium\n- **Employment Insurance**: 0.9%\n- **Industrial Accident**: 0% (100% employer)\n\nTotal ~8–9% from 4 insurances, plus progressive income tax + local tax (10% of income tax). A pre-tax ₩50M typically nets ~₩42–43M.",
+        },
+      },
+      {
+        heading: { ko: "소득세 누진세율", en: "Progressive Income Tax" },
+        body: {
+          ko: "과세표준 구간별 세율 (2026)\n\n- 1,400만원 이하: 6%\n- 1,400~5,000만원: 15%\n- 5,000~8,800만원: 24%\n- 8,800만원~1억5천만원: 35%\n- 1억5천만원~3억원: 38%\n- 3억원~5억원: 40%\n- 5억원~10억원: 42%\n- 10억원 초과: 45%\n\n전체 소득에 최고 세율이 붙는 게 아니라 구간별로 누진 적용이에요. 연봉 6,000만원이면 24% 구간에 들지만 평균 실효세율은 약 15%거든요.",
+          en: "2026 brackets (taxable income basis):\n\n- ≤14M won: 6%\n- 14–50M: 15%\n- 50–88M: 24%\n- 88–150M: 35%\n- 150–300M: 38%\n- 300–500M: 40%\n- 500M–1B: 42%\n- >1B: 45%\n\nProgressive — top bracket applies only to income within it. ₩60M earner falls in 24% bracket but effective rate is ~15%.",
+        },
+      },
+      {
+        heading: { ko: "공제 항목으로 실수령 늘리기", en: "Deductions That Boost Take-Home" },
+        body: {
+          ko: "연말정산에서 추가 공제 받으면 실질 세금이 줄어요.\n\n- **인적공제**: 본인 150만원 + 부양가족 1인당 150만원\n- **신용카드 등 사용액**: 총급여 25% 초과분의 15~30%\n- **의료비**: 총급여 3% 초과분 (5%p 추가 공제)\n- **교육비**: 본인·자녀 교육비 공제\n- **기부금**: 정치자금 10만원까지 100% 공제, 그 외 15~30%\n- **연금저축·IRP**: 연 700만원까지 13.2~16.5% 세액공제\n- **주택청약저축**: 연 240만원까지 40% 공제\n\n특히 IRP·연금저축은 가장 효율적이에요. 연 700만원 납입 시 약 92만원 환급이거든요.",
+          en: "Year-end tax filing deductions reduce actual tax burden.\n\n- **Personal/dependent credit**: ₩1.5M each\n- **Card spending**: 15–30% of amount exceeding 25% of gross\n- **Medical**: Excess over 3% of gross (extra 5%pt deduction)\n- **Education**: Self and children's tuition\n- **Donations**: 100% for political donations up to ₩100k; 15–30% otherwise\n- **Pension savings/IRP**: 13.2–16.5% credit on up to ₩7M/year\n- **Housing savings**: 40% on up to ₩2.4M/year\n\nIRP/pension are highest ROI — ~₩920k refund on max ₩7M contribution.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "연봉이 1,000만원 늘어도 실수령은 600만원만 늘어요?", en: "Why does +10M raise only +6M take-home?" },
+        a: {
+          ko: "고소득 구간 진입 시 소득세 누진세율 + 4대 보험 → 약 35~40% 세금. 1,000만원 인상에서 약 350~400만원이 세금으로 빠지는 게 표준이에요.",
+          en: "Higher brackets push income tax + 4 insurances to ~35–40% marginal. ₩10M raise sees ~₩3.5–4M in taxes — standard for higher earners.",
+        },
+      },
+      {
+        q: { ko: "프리랜서·외주 계약은?", en: "Freelancer/contract income?" },
+        a: {
+          ko: "이 계산기는 근로자 기준이에요. 프리랜서는 3.3% 원천징수 후 종합소득세 신고. 사업소득세는 별도 계산기 추천.",
+          en: "This calculator is for salaried employees. Freelancers face 3.3% withholding then comprehensive income tax filing — use a separate tool.",
+        },
+      },
+      {
+        q: { ko: "퇴직금은 어떻게 계산해요?", en: "How is severance calculated?" },
+        a: {
+          ko: "법정 퇴직금 = 1일 평균임금 × 30 × (재직년수). 평균임금은 직전 3개월 임금 ÷ 90일. 회사 별도 규정 있으면 더 받을 수 있어요.",
+          en: "Statutory severance = avg daily wage × 30 × years served. Avg daily wage = last 3 months ÷ 90 days. Some employers offer more by policy.",
+        },
+      },
+    ],
+  },
+
+  "youtube-thumbnail": {
+    intro: {
+      ko: "유튜브 썸네일 도구는 영상 ID나 URL만 넣으면 1280×720 권장 해상도로 즉시 다운받을 수 있어요. 경쟁 영상 분석·자기 영상 백업·에셋 정리에 유용해요.",
+      en: "Drop a YouTube URL or video ID to instantly download the 1280×720 thumbnail. Useful for competitor research, backups, and content asset management.",
+    },
+    sections: [
+      {
+        heading: { ko: "썸네일 해상도별 용도", en: "Thumbnail Resolutions" },
+        body: {
+          ko: "유튜브는 영상 1개당 여러 해상도의 썸네일을 자동 생성해요.\n\n- **maxresdefault.jpg (1280×720)**: 최고 화질. 풀 HD 업로드 영상만 존재\n- **sddefault.jpg (640×480)**: 표준 화질\n- **hqdefault.jpg (480×360)**: 고품질, 모든 영상 존재\n- **mqdefault.jpg (320×180)**: 중간 품질\n- **default.jpg (120×90)**: 작은 썸네일\n\n1280×720이 안 받아지면 영상 화질이 720p 미만이거나 옛날 영상이에요. hqdefault로 폴백하세요.",
+          en: "YouTube auto-generates thumbnails in multiple resolutions per video.\n\n- **maxresdefault.jpg (1280×720)**: Highest — only for HD-uploaded videos\n- **sddefault.jpg (640×480)**: Standard\n- **hqdefault.jpg (480×360)**: High — exists for all videos\n- **mqdefault.jpg (320×180)**: Medium\n- **default.jpg (120×90)**: Tiny\n\nIf 1280×720 fails, the video is sub-720p or old. Fall back to hqdefault.",
+        },
+      },
+      {
+        heading: { ko: "썸네일이 클릭률을 좌우하는 이유", en: "Why Thumbnails Drive CTR" },
+        body: {
+          ko: "유튜브 알고리즘이 영상을 노출하면 첫 7초 안에 클릭 결정이 나요. 썸네일·제목 두 요소가 핵심이고, 썸네일 영향이 더 커요.\n\n좋은 썸네일 공통점\n- **얼굴 표정 또는 명확한 시각적 객체** (감정 인식 → 클릭)\n- **고대비 색상** (배경에서 튀어나옴)\n- **굵은 텍스트 3~5단어 이내** (모바일에서도 읽힘)\n- **썸네일과 제목 정보 중복 X** (서로 보완 관계)\n- **숫자 또는 화살표** (구체성)\n\n경쟁 영상의 썸네일을 다운받아 패턴 분석하면 자기 채널 톤이 잡혀요.",
+          en: "When YouTube surfaces a video, viewers decide within 7 seconds. Thumbnail + title both matter, with thumbnail dominating.\n\nWinning thumbnails share:\n- **Facial expressions or clear visual subjects** (emotion = click)\n- **High-contrast colors** to pop in feed\n- **Bold 3–5 word text** legible on mobile\n- **Thumbnail and title complement, not repeat** info\n- **Numbers or arrows** for specificity\n\nDownload competitors' thumbnails to identify patterns for your channel tone.",
+        },
+      },
+      {
+        heading: { ko: "저작권·사용 가이드", en: "Copyright & Usage Guide" },
+        body: {
+          ko: "유튜브 썸네일은 영상 제작자의 저작물이에요. 그대로 복제·재게시는 저작권 위반이거든요.\n\n안전한 사용\n- **개인 보관·연구용**: 본인 채널 분석, 트렌드 리서치\n- **백업**: 자기 영상 썸네일 다운로드는 자유\n- **인용·리뷰**: '이 영상의 썸네일은 이렇다' 식으로 출처 명기 후 인용 (Fair Use 범위)\n\n금지\n- 자기 채널에 그대로 사용\n- 공식 채널처럼 사칭\n- 상업적 재배포",
+          en: "Thumbnails are creators' copyrighted work. Re-uploading is infringement.\n\nSafe uses:\n- **Personal/research**: Channel analysis, trend research\n- **Backups**: Your own thumbnails free to keep\n- **Citation/reviews**: With attribution under Fair Use\n\nProhibited:\n- Reusing on your channel\n- Impersonating official channels\n- Commercial redistribution",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "1280×720 썸네일이 안 받아져요", en: "1280×720 not available?" },
+        a: {
+          ko: "원본 영상이 720p 이상으로 업로드 안 됐거나 옛 영상이에요. hqdefault.jpg(480×360)으로 자동 폴백되도록 설정하세요.",
+          en: "The original video wasn't uploaded in HD or it's an old video. Use hqdefault.jpg (480×360) as fallback.",
+        },
+      },
+      {
+        q: { ko: "썸네일 추출이 API 키가 필요한가요?", en: "Does thumbnail download need API keys?" },
+        a: {
+          ko: "아니요. 유튜브 썸네일은 공개 CDN URL이에요. `https://img.youtube.com/vi/{VIDEO_ID}/maxresdefault.jpg` 형식이거든요.",
+          en: "No — thumbnails are public CDN URLs (`https://img.youtube.com/vi/{VIDEO_ID}/maxresdefault.jpg`).",
+        },
+      },
+      {
+        q: { ko: "쇼츠 썸네일도 가능해요?", en: "YouTube Shorts thumbnails?" },
+        a: {
+          ko: "쇼츠는 일반 비디오와 같은 URL 패턴이라 가능해요. 다만 쇼츠는 9:16 비율이라 다운로드된 썸네일은 16:9에 맞춰 일부가 잘려 있어요.",
+          en: "Yes — Shorts use the same URL pattern. However, Shorts are 9:16 so the downloaded 16:9 thumbnail crops parts of the original.",
+        },
+      },
+    ],
+  },
+
+  "ai-prompt-generator": {
+    intro: {
+      ko: "AI 프롬프트 생성기는 ChatGPT·Claude·Midjourney·Stable Diffusion에 그대로 쓸 수 있는 분야별 템플릿을 만들어 줘요. 매번 처음부터 짜지 말고 검증된 패턴부터 쌓으세요.",
+      en: "Generate ready-to-use prompts for ChatGPT, Claude, Midjourney, and Stable Diffusion. Stop reinventing — start from proven templates.",
+    },
+    sections: [
+      {
+        heading: { ko: "좋은 프롬프트 5가지 요소", en: "Five Elements of Good Prompts" },
+        body: {
+          ko: "1. **역할(Role)**: '당신은 10년차 시니어 프론트엔드 개발자입니다'\n2. **맥락(Context)**: 작업 배경·제약·목표\n3. **태스크(Task)**: 구체적이고 검증 가능한 결과물\n4. **포맷(Format)**: '한 줄 요약 + 표 + 코드 블록'\n5. **예시(Examples)**: few-shot으로 톤·스타일 학습\n\n같은 질문이라도 위 5개를 다 명시하면 답변 품질이 2~10배 차이 나요. ChatGPT·Claude 같은 LLM은 맥락 정보가 풍부할수록 정확해지거든요.",
+          en: "1. **Role**: 'You are a senior frontend engineer with 10 years of experience'\n2. **Context**: Background, constraints, goals\n3. **Task**: Specific, verifiable outcome\n4. **Format**: 'One-line summary + table + code block'\n5. **Examples**: Few-shot to teach tone and style\n\nWith all five, output quality jumps 2–10×. LLMs reward dense context.",
+        },
+      },
+      {
+        heading: { ko: "분야별 핵심 패턴", en: "Domain-Specific Patterns" },
+        body: {
+          ko: "- **이미지 생성(Midjourney)**: subject + scene + style + lighting + quality tags. 예: 'cyberpunk samurai, neon Tokyo street, cinematic lighting, hyper-detailed --ar 16:9'\n- **이미지 생성(Stable Diffusion)**: 쉼표 구분 키워드 + 품질 태그(masterpiece, 8k, sharp focus). 부정 프롬프트(negative prompt)도 활용\n- **코딩 도움(ChatGPT/Claude)**: 언어 + 프레임워크 명시 + 입력·출력 예시 + 제약(시간 복잡도, 메모리)\n- **글쓰기**: 톤(친근/공식) + 분량(1,500자) + 타깃 독자 + 키워드\n- **번역**: 원문 + 분야(법률/의학/마케팅) + 톤 + 용어집\n- **데이터 분석**: 데이터 형식 + 질문 + 시각화 형식\n\n분야가 명확할수록 프롬프트가 짧아져도 결과가 좋아요.",
+          en: "- **Image (Midjourney)**: subject + scene + style + lighting + quality tags. E.g., 'cyberpunk samurai, neon Tokyo street, cinematic lighting, hyper-detailed --ar 16:9'\n- **Image (Stable Diffusion)**: Comma-separated keywords + quality tags (masterpiece, 8k, sharp focus). Use negative prompts.\n- **Coding (ChatGPT/Claude)**: Language + framework + I/O examples + constraints (time/memory)\n- **Writing**: Tone (casual/formal) + length + target reader + keywords\n- **Translation**: Source + domain (legal/medical/marketing) + tone + glossary\n- **Data analysis**: Data shape + question + chart format\n\nClearer domain = shorter prompts that still produce strong results.",
+        },
+      },
+      {
+        heading: { ko: "프롬프트 디버깅 — 결과 안 나올 때", en: "Debugging — When Prompts Fail" },
+        body: {
+          ko: "원하는 결과가 안 나오면 프롬프트의 어떤 부분이 부족한지 점검해보세요.\n\n- **장황한 답변**: '핵심 3가지만'·'최대 200자'로 제약\n- **잘못된 사실**: 'WebSearch 후 검증' 또는 '근거 출처 명시' 추가\n- **너무 일반적**: 구체적 시나리오·도메인 명시\n- **포맷 안 맞음**: 명확한 출력 구조 지정 (JSON, 마크다운 표, 단계별 리스트)\n- **톤 안 맞음**: 톤 예시 1~2개 제공 (few-shot)\n- **반복 응답**: temperature 0.7~0.9로 다양성 ↑, 또는 'Try 3 different angles' 추가\n\nClaude는 system prompt + user message 구조에 민감하니 system에 역할·제약, user에 구체 task를 분리해서 넣는 게 좋아요.",
+          en: "When output disappoints, audit the prompt:\n\n- **Verbose**: Constrain with 'top 3 only' / 'max 200 chars'\n- **Hallucinations**: Add 'verify with WebSearch' or 'cite sources'\n- **Too generic**: Provide concrete scenarios/domain\n- **Wrong format**: Specify output structure (JSON, markdown table, step-list)\n- **Wrong tone**: Give 1–2 example outputs (few-shot)\n- **Repetitive**: Increase temperature to 0.7–0.9 or 'Try 3 different angles'\n\nClaude is sensitive to system vs user separation — put role and constraints in system, task in user message.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        q: { ko: "ChatGPT와 Claude 프롬프트가 같은가요?", en: "Same prompt for ChatGPT and Claude?" },
+        a: {
+          ko: "기본 구조는 같지만 미세한 차이가 있어요. Claude는 더 긴 컨텍스트·세밀한 instruction following에 강하고, ChatGPT는 짧은 명령에도 빠릿하게 반응해요. 같은 프롬프트로 둘 다 시험해 보고 더 나은 쪽 선택.",
+          en: "Core structure same, subtle differences. Claude excels with longer context and detailed instructions; ChatGPT responds quickly to short commands. Test both with the same prompt and pick the winner.",
+        },
+      },
+      {
+        q: { ko: "Midjourney 프롬프트에 한국어 써도 돼요?", en: "Korean prompts in Midjourney?" },
+        a: {
+          ko: "Midjourney는 영어 학습 비중이 압도적이라 영어 프롬프트가 결과 좋아요. 한국어 → 영어 번역 후 사용 추천.",
+          en: "Midjourney is heavily English-trained. Translate Korean prompts to English for better results.",
+        },
+      },
+      {
+        q: { ko: "negative prompt는 뭐예요?", en: "What's a negative prompt?" },
+        a: {
+          ko: "Stable Diffusion에서 '결과에 포함되지 않게 할 요소'를 지정하는 옵션이에요. 'blurry, low quality, deformed' 같은 부정적 단어를 넣으면 그런 특징을 피하려고 해요.",
+          en: "In Stable Diffusion, lists features to avoid. Adding 'blurry, low quality, deformed' steers the model away from those traits.",
+        },
+      },
+    ],
+  },
+
   "number-base-converter": {
     intro: {
       ko: "10·2·8·16진수를 한 화면에서 동시에 비교할 수 있는 진법 변환기예요. 네트워크·임베디드·웹 색상까지 폭넓게 활용돼요.",

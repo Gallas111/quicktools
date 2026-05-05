@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 type Mode = "of" | "is" | "discount" | "change";
 
@@ -341,6 +343,7 @@ export default function PercentCalculator() {
           <li>{ko ? "팁이나 세금 계산" : "Calculate tips or tax amounts"}</li>
         </ul>
       </div>
+      <ToolGuide data={toolGuides["percent-calculator"]} />
     </div>
   );
 }

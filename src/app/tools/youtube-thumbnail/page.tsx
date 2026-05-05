@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 /* ─── Template type ─── */
 interface ThumbnailTemplate {
@@ -809,6 +811,7 @@ export default function YouTubeThumbnail() {
           </li>
         </ul>
       </div>
+      <ToolGuide data={toolGuides["youtube-thumbnail"]} />
     </div>
   );
 }

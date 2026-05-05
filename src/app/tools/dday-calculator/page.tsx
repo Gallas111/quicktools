@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 function toLocalDateString(d: Date): string {
   const y = d.getFullYear();
@@ -276,6 +278,7 @@ export default function DdayCalculator() {
           </li>
         </ul>
       </div>
+      <ToolGuide data={toolGuides["dday-calculator"]} />
     </div>
   );
 }

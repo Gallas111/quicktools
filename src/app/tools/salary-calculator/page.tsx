@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import ToolGuide from "@/components/ToolGuide";
+import { toolGuides } from "@/lib/toolGuides";
 
 function formatNumber(n: number): string {
   return Math.round(n).toLocaleString("ko-KR");
@@ -340,6 +342,7 @@ export default function SalaryCalculator() {
           </div>
         </div>
       </div>
+      <ToolGuide data={toolGuides["salary-calculator"]} />
     </div>
   );
 }
