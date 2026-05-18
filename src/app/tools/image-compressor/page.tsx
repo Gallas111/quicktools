@@ -199,6 +199,10 @@ export default function ImageCompressor() {
                 <img
                   src={img.compressed.url}
                   alt=""
+                  width={64}
+                  height={64}
+                  loading="lazy"
+                  decoding="async"
                   className="h-16 w-16 rounded-lg object-cover"
                 />
                 <div>

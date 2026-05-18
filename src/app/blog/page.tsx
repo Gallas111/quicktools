@@ -35,8 +35,11 @@ export default function BlogList() {
                 <img
                   src={post.image}
                   alt={post.title[locale]}
-                  className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                  width={800}
+                  height={400}
                   loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
             )}

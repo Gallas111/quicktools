@@ -102,8 +102,12 @@ export default function BlogPost() {
               <img
                 src={post.image}
                 alt={post.title[locale]}
-                className="h-auto w-full object-cover"
+                width={1200}
+                height={675}
                 loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="h-auto w-full object-cover"
               />
             </div>
           )}

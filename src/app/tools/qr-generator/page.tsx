@@ -140,7 +140,16 @@ export default function QRGenerator() {
         <div className="flex items-start justify-center">
           <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
             {qrDataUrl ? (
-              <img src={qrDataUrl} alt="QR Code" className="mx-auto" style={{ maxWidth: 280 }} />
+              <img
+                src={qrDataUrl}
+                alt="QR Code"
+                width={size}
+                height={size}
+                loading="lazy"
+                decoding="async"
+                className="mx-auto"
+                style={{ maxWidth: 280, height: "auto" }}
+              />
             ) : (
               <div className="flex h-64 w-64 items-center justify-center text-gray-400">
                 {locale === "ko" ? "내용을 입력하세요" : "Enter content to generate"}
