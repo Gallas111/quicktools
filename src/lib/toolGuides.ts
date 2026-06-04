@@ -318,6 +318,53 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "RFC 8259 — JSON 데이터 교환 형식 (IETF 표준)",
+          en: "RFC 8259 — The JSON Data Interchange Format (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc8259.html",
+        note: {
+          ko: "trailing comma·작은따옴표·주석 금지, 문자열은 큰따옴표만 — '쉼표는 구분자(separator)이지 종결자가 아니다'의 표준 근거",
+          en: "Basis for 'no trailing commas, single quotes, or comments' — the comma is a separator, not a terminator",
+        },
+      },
+      {
+        label: {
+          ko: "ECMA-404 — JSON 데이터 교환 구문 (2판, ECMA International)",
+          en: "ECMA-404 — The JSON Data Interchange Syntax (2nd ed.)",
+        },
+        url: "https://ecma-international.org/publications-and-standards/standards/ecma-404/",
+        note: {
+          ko: "RFC 8259와 동일하게 유지되는 JSON 문법 표준. 두 표준의 grammar는 의도적으로 일치",
+          en: "JSON grammar kept identical to RFC 8259 by design",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/diff-checker",
+        label: {
+          ko: "텍스트 비교 — 두 JSON 응답 차이 비교 (양쪽 먼저 beautify 권장)",
+          en: "Diff Checker — compare two JSON responses (beautify both first)",
+        },
+      },
+      {
+        href: "/tools/base64",
+        label: {
+          ko: "Base64 인코더 — JWT·API 페이로드의 Base64 부분 디코딩",
+          en: "Base64 encoder — decode the Base64 parts of JWTs and API payloads",
+        },
+      },
+      {
+        href: "/blog/how-to-minify-json",
+        label: {
+          ko: "글: JSON 압축(minify)으로 응답 크기 줄이는 법",
+          en: "Guide: how to minify JSON to shrink response size",
+        },
+      },
+    ],
   },
 
   "qr-generator": {
@@ -957,6 +1004,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "GitHub Flavored Markdown Spec (GFM 공식 명세)",
+          en: "GitHub Flavored Markdown Spec",
+        },
+        url: "https://github.github.com/gfm/",
+        note: {
+          ko: "표·체크박스(`- [ ]`)·취소선·자동링크 등 GFM 확장 문법의 공식 근거. CommonMark의 strict superset",
+          en: "Official basis for tables, task lists, strikethrough, autolinks — a strict superset of CommonMark",
+        },
+      },
+      {
+        label: {
+          ko: "CommonMark Spec — 마크다운 핵심 문법 표준",
+          en: "CommonMark Spec — the markdown core standard",
+        },
+        url: "https://spec.commonmark.org/",
+        note: {
+          ko: "헤더 앞 빈 줄, 리스트 들여쓰기, 코드블록 같은 핵심 렌더링 규칙의 정밀 정의",
+          en: "Precise rules for blank lines before headers, list indentation, and code fences",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/character-counter",
+        label: {
+          ko: "글자수 세기 — README·블로그 글 분량 확인",
+          en: "Character Counter — check README and blog post length",
+        },
+      },
+      {
+        href: "/tools/diff-checker",
+        label: {
+          ko: "텍스트 비교 — 마크다운 문서 버전 차이 확인",
+          en: "Diff Checker — compare two markdown document versions",
+        },
+      },
+      {
+        href: "/blog/github-markdown-guide",
+        label: {
+          ko: "글: GitHub 마크다운 작성 가이드",
+          en: "Guide: writing GitHub-flavored markdown",
+        },
+      },
+      {
+        href: "/blog/markdown-checkbox-todo-list-guide",
+        label: {
+          ko: "글: 마크다운 체크박스·할 일 목록 만들기",
+          en: "Guide: markdown checkboxes and to-do lists",
+        },
+      },
+    ],
   },
 
   "diff-checker": {
@@ -1007,6 +1108,53 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "도구의 'export' 또는 화면 캡처를 활용하세요. 민감한 코드라면 이미지보다 텍스트로만 공유하는 게 안전해요.",
           en: "Use the tool's export or take a screenshot. For sensitive code, prefer plain text over images.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "E. Myers, \"An O(ND) Difference Algorithm and Its Variations\" (Algorithmica, 1986)",
+          en: "E. Myers, \"An O(ND) Difference Algorithm and Its Variations\" (Algorithmica, 1986)",
+        },
+        url: "https://neil.fraser.name/writing/diff/myers.pdf",
+        note: {
+          ko: "git을 비롯한 대부분 diff 도구가 쓰는 기본 알고리즘. 최소 편집 거리(추가/삭제)를 계산하는 표준 근거",
+          en: "The default algorithm behind git diff and most diff tools — computes the minimal edit script",
+        },
+      },
+      {
+        label: {
+          ko: "Git 공식 문서 — git diff (diff.algorithm: myers/patience/histogram)",
+          en: "Git docs — git diff (diff.algorithm: myers/patience/histogram)",
+        },
+        url: "https://git-scm.com/docs/git-diff",
+        note: {
+          ko: "줄 단위 diff·context 3줄·CRLF 처리(core.autocrlf) 등 실무 기준의 출처",
+          en: "Source for line diff, 3-line context, and CRLF handling (core.autocrlf)",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/json-formatter",
+        label: {
+          ko: "JSON 포맷터 — 비교 전에 양쪽 JSON을 같은 포맷으로 정렬",
+          en: "JSON Formatter — normalize both JSON sides before diffing",
+        },
+      },
+      {
+        href: "/tools/markdown-preview",
+        label: {
+          ko: "마크다운 미리보기 — 문서 변경 후 렌더링 확인",
+          en: "Markdown Preview — check rendering after document edits",
+        },
+      },
+      {
+        href: "/blog/compare-json-file-differences",
+        label: {
+          ko: "글: 두 JSON 파일 차이 비교하는 법",
+          en: "Guide: comparing differences between two JSON files",
         },
       },
     ],
@@ -1431,6 +1579,53 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "Lighthouse — Minify CSS (Chrome 개발자 문서)",
+          en: "Lighthouse — Minify CSS (Chrome for Developers)",
+        },
+        url: "https://developer.chrome.com/docs/lighthouse/performance/unminified-css/",
+        note: {
+          ko: "주석·공백 제거로 줄어드는 용량을 KiB로 추정하는 공식 감사 항목. CSS는 render-blocking 자원이라 작을수록 좋다는 근거",
+          en: "The official audit estimating KiB saved by removing comments/whitespace — CSS is render-blocking, so leaner is better",
+        },
+      },
+      {
+        label: {
+          ko: "W3C — CSS Values and Units (calc() 내부 공백 규칙)",
+          en: "W3C — CSS Values and Units (calc() whitespace rule)",
+        },
+        url: "https://www.w3.org/TR/css-values-4/#calc-syntax",
+        note: {
+          ko: "`calc(100% - 10px)`의 `+`/`-` 양옆 공백은 필수 — minify 시 제거하면 깨진다는 표준 근거",
+          en: "Whitespace around `+`/`-` in `calc()` is required — stripping it breaks the value",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/json-formatter",
+        label: {
+          ko: "JSON 포맷터 — 설정·API 응답도 같은 방식으로 압축",
+          en: "JSON Formatter — minify configs and API responses too",
+        },
+      },
+      {
+        href: "/tools/image-compressor",
+        label: {
+          ko: "이미지 압축 — CSS와 함께 페이지 용량 줄이기",
+          en: "Image Compressor — cut page weight alongside CSS",
+        },
+      },
+      {
+        href: "/blog/css-minify-web-speed-optimization",
+        label: {
+          ko: "글: CSS 압축으로 웹 속도 최적화하기",
+          en: "Guide: optimizing web speed with CSS minification",
+        },
+      },
+    ],
   },
 
   "regex-tester": {
@@ -1481,6 +1676,64 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "RFC 5322 완전 매치는 너무 길어서 비실용. HTML5 spec의 단순 패턴 또는 라이브러리(`validator.js`) 사용 추천.",
           en: "Full RFC 5322 regex is impractical. Use HTML5's pragmatic regex or `validator.js`.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "MDN — 정규 표현식 (JavaScript RegExp 레퍼런스)",
+          en: "MDN — Regular expressions (JavaScript RegExp reference)",
+        },
+        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions",
+        note: {
+          ko: "이 도구가 쓰는 JavaScript 엔진 기준의 메타문자·플래그(g/i/m/s/u) 정의. lookbehind는 ES2018부터 지원",
+          en: "Definitions for the JS engine this tool uses — metacharacters and g/i/m/s/u flags (lookbehind since ES2018)",
+        },
+      },
+      {
+        label: {
+          ko: "OWASP — Regular expression Denial of Service (ReDoS)",
+          en: "OWASP — Regular expression Denial of Service (ReDoS)",
+        },
+        url: "https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS",
+        note: {
+          ko: "`(a+)+` 같은 중첩 반복이 입력에 따라 지수적으로 느려지는 백트래킹 폭발(ReDoS)의 공식 설명",
+          en: "Official explanation of catastrophic backtracking from nested quantifiers like `(a+)+`",
+        },
+      },
+      {
+        label: {
+          ko: "WHATWG HTML — 이메일 입력(type=email)의 표준 검증 정규식",
+          en: "WHATWG HTML — valid email address (type=email) regex",
+        },
+        url: "https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address",
+        note: {
+          ko: "브라우저가 실제로 쓰는 실용적 이메일 패턴 — RFC 5322 전체 매치 대신 권장되는 출처",
+          en: "The pragmatic email pattern browsers actually use — recommended over full RFC 5322",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/text-counter",
+        label: {
+          ko: "텍스트 분석기 — 패턴으로 추출하기 전 본문 구조 파악",
+          en: "Text Analyzer — inspect text before extracting with patterns",
+        },
+      },
+      {
+        href: "/tools/url-encoder",
+        label: {
+          ko: "URL 인코더 — 정규식으로 추출한 URL 인코딩·디코딩",
+          en: "URL Encoder — encode/decode URLs extracted by regex",
+        },
+      },
+      {
+        href: "/blog/regex-log-analysis-patterns",
+        label: {
+          ko: "글: 정규식으로 로그 분석하는 패턴 모음",
+          en: "Guide: regex patterns for log analysis",
         },
       },
     ],
