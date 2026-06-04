@@ -900,6 +900,57 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "법제처 — 만 나이 통일 (행정법제 혁신)",
+          en: "Korea Ministry of Government Legislation — Unified 'Man-nai' (international age)",
+        },
+        url: "https://www.moleg.go.kr/menu.es?mid=a10111060000",
+        note: {
+          ko: "민법·행정기본법 개정으로 2023-06-28부터 만 나이로 통일된 법적 근거",
+          en: "Legal basis: Civil Act & Framework Act amendments, effective 2023-06-28",
+        },
+      },
+      {
+        label: {
+          ko: "찾기쉬운 생활법령정보 — 만 나이 안내",
+          en: "Korean Easy Law — guide to international age (man-nai)",
+        },
+        url: "https://www.easylaw.go.kr",
+        note: {
+          ko: "음주·흡연(만 19세)·선거권(만 18세) 등 연령 기준 항목의 법령 확인처",
+          en: "Where to verify age thresholds (alcohol 19, voting 18, etc.)",
+        },
+      },
+      {
+        label: {
+          ko: "한국천문연구원(KASI) — 음양력 변환",
+          en: "Korea Astronomy & Space Science Institute — Lunar/Solar conversion",
+        },
+        url: "https://astro.kasi.re.kr/life/pageView/8",
+        note: {
+          ko: "음력 생일 → 양력 변환 및 띠(간지) 기준 연도 확인의 공식 출처",
+          en: "Official source for lunar-to-solar birthday conversion and zodiac year boundaries",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/dday-calculator",
+        label: {
+          ko: "D-day 계산기 — 생일·기념일까지 남은 일수 계산",
+          en: "D-Day Calculator — days remaining to birthdays and anniversaries",
+        },
+      },
+      {
+        href: "/blog/zodiac-animal-calculator-by-year",
+        label: {
+          ko: "글: 띠 계산 — 태어난 해로 12간지 띠 찾기",
+          en: "Guide: find your Chinese zodiac animal by birth year",
+        },
+      },
+    ],
   },
 
   "image-compressor": {
@@ -1003,6 +1054,57 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "아니요. 만 19세 미만은 성장 단계라 질병관리청 소아청소년 표준성장도표(2017)의 백분위로 봐야 해요.",
           en: "No — under 19, use Korea KDCA pediatric growth percentile charts (2017 update).",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "대한비만학회 — 비만 진료지침",
+          en: "Korean Society for the Study of Obesity (KSSO) — Clinical Practice Guidelines",
+        },
+        url: "https://general.kosso.or.kr/html/?pmode=BBBS0001300003",
+        note: {
+          ko: "과체중 BMI 23·비만 25·2단계 30·3단계 35 한국 기준의 근거 (사망률이 아닌 동반질환 기준)",
+          en: "Source for Korea's overweight ≥23 / obesity ≥25 / class II ≥30 / class III ≥35 thresholds",
+        },
+      },
+      {
+        label: {
+          ko: "WHO — Body Mass Index (BMI) 분류",
+          en: "World Health Organization — Body Mass Index classification",
+        },
+        url: "https://www.who.int/health-topics/obesity",
+        note: {
+          ko: "국제 기준(과체중 25·비만 30)으로 한국 기준과 비교 시 참고",
+          en: "International cut-offs (overweight ≥25, obesity ≥30) used as the WHO comparison",
+        },
+      },
+      {
+        label: {
+          ko: "질병관리청 — 소아·청소년 표준성장도표",
+          en: "Korea Disease Control & Prevention Agency — Pediatric Growth Charts",
+        },
+        url: "https://knhanes.kdca.go.kr",
+        note: {
+          ko: "만 19세 미만은 성인 BMI 대신 백분위 차트로 판정",
+          en: "Under-19s are assessed by percentile charts, not adult BMI",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/bmr-calculator",
+        label: {
+          ko: "기초대사량(BMR) 계산기 — 하루 권장 칼로리와 함께 보기",
+          en: "BMR Calculator — pair BMI with your daily calorie needs",
+        },
+      },
+      {
+        href: "/blog/how-to-calculate-bmi",
+        label: {
+          ko: "글: BMI 계산법과 한국·WHO 기준 차이 자세히",
+          en: "Guide: how to calculate BMI and Korea vs WHO standards",
         },
       },
     ],
@@ -1165,6 +1267,46 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "Mifflin MD, St Jeor ST 외 (1990) — 건강한 성인의 안정시 에너지 예측 공식",
+          en: "Mifflin & St Jeor et al. (1990) — A new predictive equation for resting energy",
+        },
+        url: "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+        note: {
+          ko: "이 도구가 쓰는 공식: 남성 10×kg + 6.25×cm − 5×나이 + 5 / 여성은 −161",
+          en: "The exact equation used here: men 10×kg + 6.25×cm − 5×age + 5; women end with −161",
+        },
+      },
+      {
+        label: {
+          ko: "보건복지부·한국영양학회 — 한국인 영양소 섭취기준",
+          en: "Ministry of Health & Korean Nutrition Society — Dietary Reference Intakes for Koreans",
+        },
+        url: "https://www.mohw.go.kr",
+        note: {
+          ko: "활동계수(1.2~1.9)와 단백질 권장량(체중 1kg당 약 0.9g 기준) 참고",
+          en: "Reference for activity factors and protein recommendations",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/bmi-calculator",
+        label: {
+          ko: "BMI 계산기 — 체중 상태를 한국 기준으로 먼저 확인",
+          en: "BMI Calculator — check your weight status by Korean standards first",
+        },
+      },
+      {
+        href: "/blog/bmr-by-age-metabolism-management",
+        label: {
+          ko: "글: 나이대별 기초대사량 변화와 관리법",
+          en: "Guide: how BMR changes by age and how to manage it",
+        },
+      },
+    ],
   },
 
   "unit-converter": {
@@ -1215,6 +1357,46 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "용도마다 달라요. 육류 600g, 한약재 375g, 야채 400g, 곡물 600g. 정육점·한약방·시장 표기를 확인하세요.",
           en: "Depends — meat 600g, herbs 375g, vegetables 400g, grains 600g. Check the source market.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "국가기술표준원(KATS) — 법정계량단위",
+          en: "Korean Agency for Technology and Standards — Legal Units of Measurement",
+        },
+        url: "https://www.kats.go.kr",
+        note: {
+          ko: "평(3.3058㎡)·돈(3.75g) 등 한국 비법정 단위의 SI 환산 근거. '평' 표기는 거래상 금지된 비법정 단위라는 점도 명시됨",
+          en: "Basis for converting Korean units like pyeong (3.3058 m²) and don (3.75 g) to SI",
+        },
+      },
+      {
+        label: {
+          ko: "BIPM — 국제단위계(SI) 정의",
+          en: "BIPM — The International System of Units (SI)",
+        },
+        url: "https://www.bipm.org/en/measurement-units",
+        note: {
+          ko: "미터·킬로그램·켈빈 등 기본 단위의 국제 정의. 미국 갤런(3.785L)·영국 갤런(4.546L) 차이의 근거",
+          en: "International definitions of base units, and the US vs UK gallon difference",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/percent-calculator",
+        label: {
+          ko: "퍼센트 계산기 — 환산한 단위로 단가·할인율 바로 계산",
+          en: "Percent Calculator — compute unit prices and discounts after converting",
+        },
+      },
+      {
+        href: "/tools/number-base-converter",
+        label: {
+          ko: "진법 변환기 — 2·8·16진수 등 숫자 체계 변환",
+          en: "Number Base Converter — convert between binary, octal, and hex",
         },
       },
     ],
@@ -1271,6 +1453,46 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "WES iGPA Calculator (World Education Services)",
+          en: "WES iGPA Calculator (World Education Services)",
+        },
+        url: "https://applications.wes.org/igpa-calculator/",
+        note: {
+          ko: "유학·이민 시 한국 4.5/4.3 학점을 미국 4.0으로 환산하는 공인 평가기관. 단일 공개표가 없어 기관·전공별로 결과가 다름",
+          en: "Accredited evaluator for converting Korean 4.5/4.3 GPAs to the US 4.0 scale",
+        },
+      },
+      {
+        label: {
+          ko: "한국장학재단 — 국가장학금 성적 기준",
+          en: "Korea Student Aid Foundation — National Scholarship grade criteria",
+        },
+        url: "https://www.kosaf.go.kr",
+        note: {
+          ko: "국가장학금 직전 학기 성적 'B학점(80점) 이상' 등 장학 성적 컷의 공식 출처",
+          en: "Official source for the 'B (80%) or higher' national scholarship grade cutoff",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/percent-calculator",
+        label: {
+          ko: "퍼센트 계산기 — 백분율 환산·상위 % 계산",
+          en: "Percent Calculator — percentage and percentile conversions",
+        },
+      },
+      {
+        href: "/blog/gpa-conversion-study-abroad-guide",
+        label: {
+          ko: "글: 유학 지원용 한국 GPA → 미국 4.0 환산 가이드",
+          en: "Guide: converting Korean GPA to US 4.0 for study abroad",
+        },
+      },
+    ],
   },
 
   "percent-calculator": {
@@ -1321,6 +1543,46 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "기준점이 다르면 비교 무의미. 같은 시점·같은 기간으로 정규화한 뒤 비교하세요. CAGR(연복합성장률) 추천.",
           en: "Different bases make comparison meaningless. Normalize to same period and use CAGR for comparable growth rates.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "국세청 — 부가가치세 세율(10%) 안내",
+          en: "National Tax Service — Value-Added Tax (10%)",
+        },
+        url: "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7720",
+        note: {
+          ko: "공급가액 × 10% = 부가세. '부가세 포함가 ÷ 1.1 = 공급가액' 역산의 법적 근거",
+          en: "Korea's 10% VAT — the basis for tax-inclusive/exclusive price math",
+        },
+      },
+      {
+        label: {
+          ko: "금융감독원 — 금융생활 / 복리·수익률 이해",
+          en: "Financial Supervisory Service — compound returns explained",
+        },
+        url: "https://www.fss.or.kr",
+        note: {
+          ko: "단순평균이 아닌 기하평균(CAGR)·복리 개념과 '손실 후 회복' 비대칭성의 출처",
+          en: "Reference for CAGR/geometric mean and the loss-then-recovery asymmetry",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/salary-calculator",
+        label: {
+          ko: "연봉 실수령액 계산기 — 세금·4대보험 공제율 적용",
+          en: "Salary Calculator — apply tax and insurance deduction rates",
+        },
+      },
+      {
+        href: "/blog/discount-rate-reverse-calculation",
+        label: {
+          ko: "글: 할인율 역산 — 할인가에서 원가·할인율 거꾸로 구하기",
+          en: "Guide: reverse-calculating original price and discount rate",
         },
       },
     ],
@@ -1377,6 +1639,46 @@ export const toolGuides: Record<string, ToolGuideData> = {
         },
       },
     ],
+    sources: [
+      {
+        label: {
+          ko: "한국천문연구원(KASI) — 음양력 변환 / 천문우주지식정보",
+          en: "Korea Astronomy & Space Science Institute — Lunar/Solar calendar conversion",
+        },
+        url: "https://astro.kasi.re.kr/life/pageView/8",
+        note: {
+          ko: "음력 기념일(설·추석·음력 생일)을 양력 날짜로 정확히 변환하는 국가 공식 출처",
+          en: "Korea's official authority for converting lunar dates (Seollal, Chuseok, lunar birthdays) to solar",
+        },
+      },
+      {
+        label: {
+          ko: "ISO 8601 — 날짜·시간 국제 표기 표준",
+          en: "ISO 8601 — international date and time representation",
+        },
+        url: "https://www.iso.org/iso-8601-date-and-time-format.html",
+        note: {
+          ko: "D-day 계산의 기준이 되는 YYYY-MM-DD 날짜 표기와 일수 차이 계산 방식",
+          en: "Standard for the YYYY-MM-DD format and day-difference logic used in D-day math",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/age-calculator",
+        label: {
+          ko: "만나이 계산기 — 회갑·칠순 등 나이 기준 기념일과 함께",
+          en: "Age Calculator — pair D-days with age-based milestones",
+        },
+      },
+      {
+        href: "/blog/dday-calculator-7-uses-exam-anniversary-deadline",
+        label: {
+          ko: "글: D-day 활용 7가지 — 시험·기념일·마감 관리법",
+          en: "Guide: 7 ways to use D-days for exams, anniversaries, deadlines",
+        },
+      },
+    ],
   },
 
   "salary-calculator": {
@@ -1427,6 +1729,57 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "법정 퇴직금 = 1일 평균임금 × 30 × (재직년수). 평균임금은 직전 3개월 임금 ÷ 90일. 회사 별도 규정 있으면 더 받을 수 있어요.",
           en: "Statutory severance = avg daily wage × 30 × years served. Avg daily wage = last 3 months ÷ 90 days. Some employers offer more by policy.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "국세청 — 근로소득 간이세액표 · 종합소득세 세율",
+          en: "National Tax Service (NTS) — Simplified Withholding Tax Table & Income Tax Rates",
+        },
+        url: "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7667",
+        note: {
+          ko: "월급에서 떼는 소득세 원천징수액과 6~45% 누진세율 구간의 1차 출처",
+          en: "Primary source for monthly withholding tax and the 6–45% progressive brackets",
+        },
+      },
+      {
+        label: {
+          ko: "4대 사회보험 정보연계센터 — 보험료 모의계산",
+          en: "4대보험 (Four Social Insurances) Portal — Premium Calculator",
+        },
+        url: "https://www.4insure.or.kr/pbiz/ntcn/inscSmlCalcView.do",
+        note: {
+          ko: "국민연금·건강보험·고용보험·산재보험 요율 공식 확인처",
+          en: "Official rates for pension, health, employment, and accident insurance",
+        },
+      },
+      {
+        label: {
+          ko: "국민연금공단 — 연금보험료율 안내",
+          en: "National Pension Service — Contribution Rate",
+        },
+        url: "https://www.nps.or.kr",
+        note: {
+          ko: "2026년 근로자 부담 4.75%(2025년 4.5%에서 인상)·월 소득 상한 적용 기준",
+          en: "2026 employee share 4.75% (up from 4.5% in 2025), with a monthly income ceiling",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/percent-calculator",
+        label: {
+          ko: "퍼센트 계산기 — 실수령 비율·인상률 직접 계산",
+          en: "Percent Calculator — work out take-home ratio and raise %",
+        },
+      },
+      {
+        href: "/blog/retirement-severance-pay-average-vs-ordinary-wage",
+        label: {
+          ko: "글: 퇴직금, 평균임금 vs 통상임금 차이로 달라지는 금액",
+          en: "Guide: severance pay — average wage vs ordinary wage",
         },
       },
     ],
