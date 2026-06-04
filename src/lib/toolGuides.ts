@@ -612,6 +612,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "Yes — keep it under 20% of total area and use error correction H. Always test before print.",
         },
       },
+      {
+        q: { ko: "WiFi QR은 어떤 형식으로 만들어요?", en: "What's the WiFi QR format?" },
+        a: {
+          ko: "`WIFI:T:WPA;S:<SSID>;P:<비밀번호>;;` 텍스트를 QR로 만들면 돼요. T는 암호화 방식(WPA/WEP/nopass), S는 네트워크 이름, P는 비밀번호예요. iOS·안드로이드 카메라가 이 형식을 인식해 자동 접속 창을 띄워줘요. SSID·비밀번호에 `;` `,` `:` 같은 특수문자가 있으면 앞에 `\\`를 붙여 이스케이프해야 인식돼요.",
+          en: "Encode the text `WIFI:T:WPA;S:<SSID>;P:<password>;;` into a QR. T is the auth type (WPA/WEP/nopass), S the network name, P the password. iOS and Android cameras recognize this format and offer auto-join. Escape any `;` `,` `:` in the SSID/password with a backslash.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "ISO/IEC 18004:2024 — QR Code 바코드 심볼 규격 (ISO)",
+          en: "ISO/IEC 18004:2024 — QR Code bar code symbology specification (ISO)",
+        },
+        url: "https://www.iso.org/standard/83389.html",
+        note: {
+          ko: "오류 정정 레벨 L(7%)·M(15%)·Q(25%)·H(30%)와 Quiet Zone(여백) 규정의 국제 표준 근거",
+          en: "International standard defining error-correction levels L(7%)/M(15%)/Q(25%)/H(30%) and the required quiet zone",
+        },
+      },
+      {
+        label: {
+          ko: "DENSO WAVE — QR코드 오류 정정 기능 (원개발사)",
+          en: "DENSO WAVE — QR Code error correction (original inventor)",
+        },
+        url: "https://www.qrcode.com/en/about/error_correction.html",
+        note: {
+          ko: "QR코드를 발명한 덴소웨이브의 공식 설명(복원 가능한 손상 비율 정의)",
+          en: "Official explanation from QR's inventor on how much damage each level can recover",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/url-encoder",
+        label: {
+          ko: "URL 인코더 — 한글·특수문자 링크를 QR에 넣기 전에 안전하게 인코딩",
+          en: "URL Encoder — safely encode links with Korean or special characters before making a QR",
+        },
+      },
+      {
+        href: "/blog/qr-code-google-form-guide",
+        label: {
+          ko: "글: 구글폼 설문을 QR코드로 배포하는 법",
+          en: "Guide: distributing a Google Form survey via QR code",
+        },
+      },
+      {
+        href: "/blog/payment-qr-code-generation",
+        label: {
+          ko: "글: 토스·카카오페이 결제 QR코드 만들기",
+          en: "Guide: generating Toss/KakaoPay payment QR codes",
+        },
+      },
     ],
   },
 
@@ -997,6 +1051,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "You passed seconds — JS expects milliseconds. Multiply by 1000.",
         },
       },
+      {
+        q: { ko: "Epoch가 왜 1970년 1월 1일이에요?", en: "Why is the epoch January 1, 1970?" },
+        a: {
+          ko: "유닉스(Unix) 운영체제가 1970년 전후에 개발되면서 그때를 기준점(POSIX epoch)으로 잡았어요. 그래서 모든 Unix timestamp는 '1970-01-01 00:00:00 UTC 이후 흐른 초'를 뜻해요. 윤초(leap second)는 무시해서, 천문 시각과는 미세하게 어긋날 수 있어요.",
+          en: "The Unix operating system was developed around 1970, so that moment was chosen as the reference (POSIX epoch). Every Unix timestamp counts seconds elapsed since 1970-01-01 00:00:00 UTC. Leap seconds are ignored, so it can drift slightly from astronomical time.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "RFC 7519 — JSON Web Token(JWT) (IETF)",
+          en: "RFC 7519 — JSON Web Token (JWT) (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc7519.html",
+        note: {
+          ko: "JWT의 `iat`·`exp`·`nbf`가 '초 단위 NumericDate'라는 표준 근거(밀리초 아님)",
+          en: "Standard basis that JWT `iat`/`exp`/`nbf` are NumericDate in seconds (not milliseconds)",
+        },
+      },
+      {
+        label: {
+          ko: "Year 2038 problem — Wikipedia (32비트 오버플로 시각)",
+          en: "Year 2038 problem — Wikipedia (32-bit overflow time)",
+        },
+        url: "https://en.wikipedia.org/wiki/Year_2038_problem",
+        note: {
+          ko: "부호 있는 32비트 timestamp가 2038-01-19 03:14:07 UTC에 오버플로한다는 근거",
+          en: "Basis for signed 32-bit timestamps overflowing at 2038-01-19 03:14:07 UTC",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/number-base-converter",
+        label: {
+          ko: "진법 변환기 — timestamp를 16진수·2진수로 다룰 때",
+          en: "Number Base Converter — when handling timestamps in hex or binary",
+        },
+      },
+      {
+        href: "/blog/timestamp-converter-guide",
+        label: {
+          ko: "글: Unix 타임스탬프 변환 완벽 가이드",
+          en: "Guide: the complete Unix timestamp conversion walkthrough",
+        },
+      },
+      {
+        href: "/blog/unix-timestamp-to-current-time",
+        label: {
+          ko: "글: Unix 타임스탬프를 현재 시각으로 바꾸기",
+          en: "Guide: converting a Unix timestamp to the current time",
+        },
+      },
     ],
   },
 
@@ -1155,6 +1263,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "RGBA로 0~1 알파, 또는 8자리 HEX(#RRGGBBAA)로 표현. CSS는 둘 다 지원해요. `rgba(255,87,51,0.5)` ≡ `#FF573380`.",
           en: "Use RGBA (alpha 0–1) or 8-digit HEX (#RRGGBBAA). CSS accepts both: `rgba(255,87,51,0.5)` ≡ `#FF573380`.",
+        },
+      },
+      {
+        q: { ko: "디자인 시안의 CMYK 색이 화면과 달라요", en: "CMYK in my design looks different on screen" },
+        a: {
+          ko: "정상이에요. 화면(RGB)은 빛을 더해 색을 만들고 인쇄(CMYK)는 잉크를 더해 빛을 빼는 방식이라 표현 범위(gamut)가 달라요. 형광·진한 청록은 인쇄하면 흐려져요. 정확한 색이 중요하면 HEX·CMYK·Pantone을 따로 정의하고, 인쇄소에 ICC 프로필을 확인하세요.",
+          en: "That's expected. Screens (RGB) add light; print (CMYK) subtracts it with ink, so the gamuts differ — neon and deep cyan dull in print. For color-critical work, define HEX, CMYK, and Pantone separately and confirm the printer's ICC profile.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "W3C — CSS Color Module Level 4 (HEX·RGB·HSL·HWB 규격)",
+          en: "W3C — CSS Color Module Level 4 (HEX/RGB/HSL/HWB syntax)",
+        },
+        url: "https://www.w3.org/TR/css-color-4/",
+        note: {
+          ko: "3자리 HEX 확장·HSL(hue 0°=빨강, sRGB 해석)·8자리 HEX 알파 표기의 표준 근거",
+          en: "Standard basis for 3-digit HEX expansion, HSL (hue 0°=red, resolved in sRGB), and 8-digit HEX alpha",
+        },
+      },
+      {
+        label: {
+          ko: "W3C — WCAG 2.1 SC 1.4.3 명도 대비(최소)",
+          en: "W3C — WCAG 2.1 SC 1.4.3 Contrast (Minimum)",
+        },
+        url: "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+        note: {
+          ko: "본문 4.5:1·큰 텍스트(18pt 또는 14pt 굵게) 3:1 대비 기준의 공식 근거",
+          en: "Official basis for the 4.5:1 body and 3:1 large-text (18pt, or 14pt bold) contrast thresholds",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/css-minifier",
+        label: {
+          ko: "CSS 압축기 — 색상 코드가 들어간 스타일시트 용량 줄이기",
+          en: "CSS Minifier — shrink stylesheets that carry your color codes",
+        },
+      },
+      {
+        href: "/tools/number-base-converter",
+        label: {
+          ko: "진법 변환기 — HEX 색상(16진수)을 RGB 10진수로 이해하기",
+          en: "Number Base Converter — see how HEX colors map to decimal RGB",
+        },
+      },
+      {
+        href: "/blog/cmyk-rgb-color-conversion",
+        label: {
+          ko: "글: CMYK·RGB 색상 변환과 인쇄 색 차이",
+          en: "Guide: CMYK vs RGB conversion and why print colors differ",
         },
       },
     ],
@@ -1733,6 +1895,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "도구는 압축 시 EXIF를 제거해요. 위치 정보 같은 민감 데이터가 빠져서 SNS 업로드에 안전해요. 보존 옵션은 제공 안 해요.",
           en: "EXIF is stripped on compression — strips sensitive data like GPS, safer for sharing. No preserve option.",
+        },
+      },
+      {
+        q: { ko: "WebP가 정말 JPG보다 작나요?", en: "Is WebP really smaller than JPG?" },
+        a: {
+          ko: "네. 구글 공식 자료 기준 WebP 손실 이미지는 같은 화질의 JPG보다 25~34% 작고, WebP 무손실은 PNG보다 약 26% 작아요. 2026년 기준 크롬·사파리(14+)·파이어폭스·엣지·오페라 등 전 세계 97% 이상 브라우저가 지원하니 웹용은 WebP가 1순위예요.",
+          en: "Yes. Per Google's official data, lossy WebP is 25–34% smaller than equivalent-quality JPEG, and lossless WebP is ~26% smaller than PNG. As of 2026 it's supported by 97%+ of browsers (Chrome, Safari 14+, Firefox, Edge, Opera), making it the first choice for the web.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "Google for Developers — WebP 이미지 포맷",
+          en: "Google for Developers — WebP image format",
+        },
+        url: "https://developers.google.com/speed/webp",
+        note: {
+          ko: "WebP 손실=JPEG 대비 25~34%↓, 무손실=PNG 대비 26%↓의 공식 수치 출처",
+          en: "Official source for 'lossy WebP 25–34% smaller than JPEG, lossless 26% smaller than PNG'",
+        },
+      },
+      {
+        label: {
+          ko: "web.dev (Google) — 이미지로 인한 LCP 최적화",
+          en: "web.dev (Google) — Optimize LCP with images",
+        },
+        url: "https://web.dev/articles/optimize-lcp",
+        note: {
+          ko: "이미지 용량·해상도가 페이지 로딩(LCP)과 SEO에 미치는 영향의 근거",
+          en: "Basis for how image size/resolution affects page-load (LCP) and SEO",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/base64",
+        label: {
+          ko: "Base64 인코더 — 작은 아이콘을 data URI로 인라인 삽입",
+          en: "Base64 Encoder — inline small icons as a data URI",
+        },
+      },
+      {
+        href: "/tools/youtube-thumbnail",
+        label: {
+          ko: "유튜브 썸네일 다운로드 — 받은 썸네일을 압축해 재활용",
+          en: "YouTube Thumbnail Downloader — compress saved thumbnails for reuse",
+        },
+      },
+      {
+        href: "/blog/web-image-optimization-guide",
+        label: {
+          ko: "글: 웹 이미지 최적화 — 용량·포맷·해상도 한 번에",
+          en: "Guide: web image optimization — size, format, and resolution",
         },
       },
     ],
@@ -2672,6 +2888,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "Yes — Shorts use the same URL pattern. However, Shorts are 9:16 so the downloaded 16:9 thumbnail crops parts of the original.",
         },
       },
+      {
+        q: { ko: "내 영상 썸네일을 직접 올릴 때 규격은?", en: "Specs for uploading my own custom thumbnail?" },
+        a: {
+          ko: "유튜브 공식 권장은 1280×720(가로 최소 640px), 16:9 비율, 2MB 이하예요. 형식은 JPG·PNG·GIF·BMP를 받아요. 16:9가 아니면 피드에서 잘리거나 자동 생성 썸네일로 대체될 수 있으니 텍스트는 가장자리 5~10% 안전 영역 안쪽에 두세요.",
+          en: "YouTube's official guidance is 1280×720 (minimum width 640px), 16:9 ratio, under 2MB, in JPG/PNG/GIF/BMP. Non-16:9 images get cropped or replaced by an auto thumbnail in some feeds, so keep text inside a 5–10% edge safe zone.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "YouTube 고객센터 — 동영상 맞춤 썸네일 추가",
+          en: "YouTube Help — Add a custom video thumbnail",
+        },
+        url: "https://support.google.com/youtube/answer/72431",
+        note: {
+          ko: "권장 1280×720·16:9·최소 너비 640px·2MB 이하·JPG/PNG/GIF/BMP의 공식 규격 근거",
+          en: "Official basis for 1280×720, 16:9, min width 640px, under 2MB, JPG/PNG/GIF/BMP",
+        },
+      },
+      {
+        label: {
+          ko: "Google — YouTube 썸네일 CDN URL 패턴(img.youtube.com)",
+          en: "Google — YouTube thumbnail CDN URL pattern (img.youtube.com)",
+        },
+        url: "https://developers.google.com/youtube/v3/docs/thumbnails",
+        note: {
+          ko: "default·mqdefault·hqdefault·sddefault·maxresdefault 해상도 키의 공식 근거",
+          en: "Official basis for the default/mqdefault/hqdefault/sddefault/maxresdefault resolution keys",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/image-compressor",
+        label: {
+          ko: "이미지 압축기 — 받은 썸네일을 2MB 이하로 줄여 재업로드",
+          en: "Image Compressor — shrink a saved thumbnail under 2MB for re-upload",
+        },
+      },
+      {
+        href: "/tools/color-converter",
+        label: {
+          ko: "색상 변환기 — 썸네일 고대비 배색을 HEX로 맞추기",
+          en: "Color Converter — dial in high-contrast thumbnail colors as HEX",
+        },
+      },
+      {
+        href: "/blog/youtube-thumbnail-competitor-analysis",
+        label: {
+          ko: "글: 경쟁 채널 썸네일 분석으로 클릭률 높이기",
+          en: "Guide: raising CTR by analyzing competitors' thumbnails",
+        },
+      },
     ],
   },
 
@@ -2723,6 +2993,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "Stable Diffusion에서 '결과에 포함되지 않게 할 요소'를 지정하는 옵션이에요. 'blurry, low quality, deformed' 같은 부정적 단어를 넣으면 그런 특징을 피하려고 해요.",
           en: "In Stable Diffusion, lists features to avoid. Adding 'blurry, low quality, deformed' steers the model away from those traits.",
+        },
+      },
+      {
+        q: { ko: "프롬프트가 길수록 좋은가요?", en: "Are longer prompts always better?" },
+        a: {
+          ko: "길이가 아니라 '구체성'이 핵심이에요. 불필요한 수식어로 길게 늘이면 모델이 핵심을 놓쳐요. 역할·맥락·태스크·포맷·예시(5요소)가 명확하면 짧은 프롬프트도 충분해요. OpenAI·Anthropic 공식 가이드도 '명확하고 구체적인 지시 + 원하는 출력 예시'를 먼저 권장하지, 무조건 길게 쓰라고 하지 않아요.",
+          en: "Specificity matters more than length. Padding with filler dilutes the signal. If role, context, task, format, and examples are clear, short prompts work fine. OpenAI's and Anthropic's official guides emphasize clear, specific instructions plus example outputs — not sheer length.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "OpenAI — Prompt engineering 가이드 (공식 문서)",
+          en: "OpenAI — Prompt engineering guide (official docs)",
+        },
+        url: "https://platform.openai.com/docs/guides/prompt-engineering",
+        note: {
+          ko: "명확한 지시·역할 부여·few-shot 예시·출력 포맷 지정 등 모범 사례의 근거",
+          en: "Basis for best practices: clear instructions, role priming, few-shot examples, output format",
+        },
+      },
+      {
+        label: {
+          ko: "Anthropic — Claude 프롬프트 엔지니어링 (공식 문서)",
+          en: "Anthropic — Prompt engineering for Claude (official docs)",
+        },
+        url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        note: {
+          ko: "system/user 역할 분리, 예시 제공, 단계적 사고 유도 등 Claude 전용 권장 근거",
+          en: "Basis for Claude-specific advice: separate system/user roles, give examples, prompt step-by-step",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/character-counter",
+        label: {
+          ko: "글자수 세기 — 모델 입력·출력 분량 제한을 미리 맞춰 보기",
+          en: "Character Counter — check prompt/output length limits up front",
+        },
+      },
+      {
+        href: "/tools/json-formatter",
+        label: {
+          ko: "JSON 포매터 — 'JSON으로 출력' 프롬프트 결과를 검증·정렬",
+          en: "JSON Formatter — validate and tidy 'output as JSON' responses",
+        },
+      },
+      {
+        href: "/blog/ai-prompt-generator-image-coding-writing-templates",
+        label: {
+          ko: "글: 이미지·코딩·글쓰기 분야별 AI 프롬프트 템플릿",
+          en: "Guide: AI prompt templates for image, coding, and writing",
         },
       },
     ],
