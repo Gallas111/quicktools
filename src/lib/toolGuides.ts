@@ -158,6 +158,71 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "Forbidden for security — practical collision attacks exist. Still fine for non-security uses like cache keys or quick checksums.",
         },
       },
+      {
+        q: { ko: "Windows에서 파일 해시를 직접 확인하려면?", en: "How do I hash a file in Windows/macOS without this tool?" },
+        a: {
+          ko: "윈도우는 PowerShell `Get-FileHash 파일명 -Algorithm SHA256`, 맥/리눅스는 `shasum -a 256 파일명` 또는 `sha256sum 파일명`이에요. 결과 hex를 이 도구에 붙여 배포처 공식 값과 한 화면에서 비교하면 눈으로 대조하기 편해요.",
+          en: "Windows: `Get-FileHash file -Algorithm SHA256` in PowerShell. macOS/Linux: `shasum -a 256 file` or `sha256sum file`. Paste the hex here to compare against the publisher's value side by side.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "FIPS 180-4 — Secure Hash Standard (NIST)",
+          en: "FIPS 180-4 — Secure Hash Standard (NIST)",
+        },
+        url: "https://csrc.nist.gov/pubs/fips/180-4/upd1/final",
+        note: {
+          ko: "SHA-1/SHA-256/SHA-512의 공식 정의·출력 길이(160/256/512비트)의 표준 근거",
+          en: "Official definitions and output sizes (160/256/512-bit) for SHA-1, SHA-256, SHA-512",
+        },
+      },
+      {
+        label: {
+          ko: "NIST — SHA-1 단계적 폐기 발표(2030년까지 퇴출)",
+          en: "NIST — Retirement of SHA-1 (phase-out by 2030)",
+        },
+        url: "https://www.nist.gov/news-events/news/2022/12/nist-retires-sha-1-cryptographic-algorithm",
+        note: {
+          ko: "보안용 MD5·SHA-1 금지 권고의 근거 — 충돌 공격으로 보안 부적합 판정",
+          en: "Basis for avoiding MD5/SHA-1 in security contexts due to practical collisions",
+        },
+      },
+      {
+        label: {
+          ko: "OWASP — Password Storage Cheat Sheet",
+          en: "OWASP — Password Storage Cheat Sheet",
+        },
+        url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+        note: {
+          ko: "비밀번호는 raw SHA가 아닌 argon2/bcrypt 같은 KDF + salt를 써야 한다는 권고 근거",
+          en: "Why passwords need a salted KDF (argon2/bcrypt), not raw SHA hashing",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/base64",
+        label: {
+          ko: "Base64 인코더 — 해시와 함께 자주 쓰는 인코딩 변환",
+          en: "Base64 encoder — the encoding often paired with hashing",
+        },
+      },
+      {
+        href: "/tools/password-generator",
+        label: {
+          ko: "비밀번호 생성기 — 해시 저장 전 강한 원본 비밀번호 만들기",
+          en: "Password generator — create strong inputs before hashing",
+        },
+      },
+      {
+        href: "/blog/file-integrity-verification-hash",
+        label: {
+          ko: "글: 다운로드 파일 위변조 검증 — SHA256 무결성 확인법",
+          en: "Guide: verify downloaded files with SHA256 integrity checks",
+        },
+      },
     ],
   },
 
@@ -207,8 +272,73 @@ export const toolGuides: Record<string, ToolGuideData> = {
       {
         q: { ko: "공백을 +로 할까 %20으로 할까?", en: "Plus or %20 for spaces?" },
         a: {
-          ko: "URL path에서는 `%20`만 안전해요. 쿼리스트링에서는 둘 다 OK지만 일관성을 위해 `%20`을 권장해요.",
-          en: "Use `%20` for safety. In query strings, `+` also works, but `%20` is universally accepted.",
+          ko: "URL path에서는 `%20`만 안전해요. 쿼리스트링에서는 둘 다 OK지만 일관성을 위해 `%20`을 권장해요. `+`=공백은 `application/x-www-form-urlencoded` 폼 인코딩 규칙(W3C)이라 path에 그대로 쓰면 진짜 더하기 기호로 오해돼요.",
+          en: "Use `%20` for safety. In query strings, `+` also works, but `%20` is universal. The `+` = space rule belongs to `application/x-www-form-urlencoded` (W3C), not URL paths.",
+        },
+      },
+      {
+        q: { ko: "한글 도메인 주소는 이걸로 인코딩하나요?", en: "Do I encode Korean domain names here?" },
+        a: {
+          ko: "아니요. `한글.kr` 같은 국제화 도메인(IDN)은 URL 퍼센트 인코딩이 아니라 Punycode(`xn--...`)로 변환해야 해요. 도메인(호스트) 부분은 RFC 3987/IDNA 표준을 따르고, path·쿼리만 퍼센트 인코딩 대상이거든요.",
+          en: "No. Internationalized domains (e.g., `한글.kr`) use Punycode (`xn--...`) per IDNA/RFC 3987, not percent-encoding. Only the path and query are percent-encoded.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "RFC 3986 — URI 일반 문법(퍼센트 인코딩) (IETF)",
+          en: "RFC 3986 — URI Generic Syntax, percent-encoding (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc3986.html",
+        note: {
+          ko: "예약문자(`&=?#/`)와 비예약문자 구분, `%XX` 퍼센트 인코딩 규칙의 표준 근거",
+          en: "Standard basis for reserved vs. unreserved characters and `%XX` percent-encoding",
+        },
+      },
+      {
+        label: {
+          ko: "MDN — encodeURIComponent (JavaScript)",
+          en: "MDN — encodeURIComponent (JavaScript)",
+        },
+        url: "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent",
+        note: {
+          ko: "쿼리값에는 encodeURI가 아닌 encodeURIComponent를 써야 하는 이유의 근거(예약문자 처리 차이)",
+          en: "Why query values need encodeURIComponent (not encodeURI) — reserved-character handling differs",
+        },
+      },
+      {
+        label: {
+          ko: "WHATWG URL Standard — application/x-www-form-urlencoded",
+          en: "WHATWG URL Standard — application/x-www-form-urlencoded",
+        },
+        url: "https://url.spec.whatwg.org/#urlencoded-serializing",
+        note: {
+          ko: "쿼리에서 공백을 `+`로 쓰는 폼 인코딩 직렬화 규칙의 근거",
+          en: "Basis for the `+`-for-space form-encoding rule used in query strings",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/base64",
+        label: {
+          ko: "Base64 인코더 — URL-safe Base64(JWT)와 함께 보기",
+          en: "Base64 encoder — pairs with URL-safe Base64 (JWT)",
+        },
+      },
+      {
+        href: "/tools/json-formatter",
+        label: {
+          ko: "JSON 포맷터 — 인코딩된 API 응답을 보기 좋게 정리",
+          en: "JSON formatter — tidy up encoded API responses",
+        },
+      },
+      {
+        href: "/blog/api-korean-url-encoding-fix",
+        label: {
+          ko: "글: API 호출 시 한글 깨짐(URL 인코딩) 해결법",
+          en: "Guide: fixing broken Korean text in API URLs",
         },
       },
     ],
@@ -262,6 +392,71 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "패딩이에요. Base64는 4글자 단위로 떨어져야 해서 부족하면 `=`로 채워요. `=` 1개나 2개가 붙어요. URL에서는 `=`도 인코딩 대상이라 Base64URL은 보통 패딩을 빼요.",
           en: "Padding. Base64 outputs in 4-char blocks, so 1-2 `=` are added when input doesn't divide evenly. Base64URL omits padding because `=` would need URL encoding.",
+        },
+      },
+      {
+        q: { ko: "JWT 토큰을 여기에 붙이면 내용이 보이나요?", en: "Can I paste a JWT to read its contents?" },
+        a: {
+          ko: "헤더·페이로드는 Base64URL이라 디코딩하면 그대로 읽혀요(암호화 아님). 다만 세 번째 마디(서명)는 바이너리라 깨져 보여요. 그리고 토큰 안에 민감정보가 있을 수 있으니 운영 중인 실제 토큰은 외부 사이트에 붙이지 마세요 — 이 도구는 브라우저에서만 처리하지만 습관을 들이는 게 안전해요.",
+          en: "JWT header/payload are Base64URL, so they decode to readable JSON (it's encoding, not encryption). The third segment (signature) is binary and looks garbled. Avoid pasting live tokens into any site as a habit — this tool runs locally, but treat tokens as secrets.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "RFC 4648 — Base16·Base32·Base64 데이터 인코딩 (IETF)",
+          en: "RFC 4648 — The Base16, Base32, and Base64 Data Encodings (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc4648.html",
+        note: {
+          ko: "표준 Base64 알파벳과 §5의 URL-safe 변형(`+`→`-`, `/`→`_`)·패딩 규칙의 표준 근거",
+          en: "Standard for the Base64 alphabet and §5 URL-safe variant (`+`→`-`, `/`→`_`) and padding",
+        },
+      },
+      {
+        label: {
+          ko: "RFC 2045 — MIME(이메일 첨부) Base64 인코딩",
+          en: "RFC 2045 — MIME (email attachments) Base64 encoding",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc2045.html",
+        note: {
+          ko: "이메일 첨부·MIME 본문이 Base64를 쓰는 근거(76자 줄바꿈 규칙 포함)",
+          en: "Why email/MIME bodies use Base64 (including the 76-char line-wrap rule)",
+        },
+      },
+      {
+        label: {
+          ko: "MDN — Data URL(`data:`) 스킴",
+          en: "MDN — Data URLs (`data:` scheme)",
+        },
+        url: "https://developer.mozilla.org/docs/Web/URI/Reference/Schemes/data",
+        note: {
+          ko: "HTML/CSS에 이미지를 인라인하는 `data:image/png;base64,...` 형식의 근거",
+          en: "Basis for inlining images as `data:image/png;base64,...` in HTML/CSS",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/url-encoder",
+        label: {
+          ko: "URL 인코더 — Base64URL을 URL에 넣을 때 함께 점검",
+          en: "URL encoder — check alongside Base64URL in URLs",
+        },
+      },
+      {
+        href: "/tools/hash-generator",
+        label: {
+          ko: "해시 생성기 — 인코딩과 함께 자주 쓰는 무결성 확인",
+          en: "Hash generator — integrity checks often paired with encoding",
+        },
+      },
+      {
+        href: "/blog/how-to-decode-base64",
+        label: {
+          ko: "글: Base64 디코딩 방법과 깨지는 경우 해결법",
+          en: "Guide: how to decode Base64 and fix common failures",
         },
       },
     ],
@@ -577,6 +772,71 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "It uses `crypto.getRandomValues` (CSPRNG) in your browser — never sent to a server, gone on refresh.",
         },
       },
+      {
+        q: { ko: "한국 사이트는 8~10자에 특수문자 강제인데 너무 짧지 않나요?", en: "Korean sites force 8–10 chars with symbols — isn't that too short?" },
+        a: {
+          ko: "맞아요. 국내 다수 사이트가 '8자 이상 + 영문·숫자·특수문자 3종 혼합'을 요구하는데, 이건 옛 권고예요. 최신 NIST는 길이를 더 중시하니 사이트가 허용하는 최대 길이(보통 16~20자)를 꽉 채우는 게 좋아요. 특수문자를 못 받는 사이트라면 길이를 20자+로 늘려 보완하세요.",
+          en: "Right — many Korean sites still require '8+ chars with 3 character classes,' which is outdated. Modern NIST prioritizes length, so fill the site's max (often 16–20). If symbols are rejected, push length to 20+ instead.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "NIST SP 800-63B — Digital Identity Guidelines (인증·비밀번호)",
+          en: "NIST SP 800-63B — Digital Identity Guidelines (authenticators)",
+        },
+        url: "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        note: {
+          ko: "최소 8자(단독 인증 시 15자)·정기 변경 미요구(유출 정황 시에만)·길이 우선의 근거(2024 Rev.4)",
+          en: "Basis for min 8 chars (15 when sole authenticator), no periodic rotation (only on breach), length-first (2024 Rev.4)",
+        },
+      },
+      {
+        label: {
+          ko: "xkcd #936 — Password Strength(패스프레이즈 엔트로피)",
+          en: "xkcd #936 — Password Strength (passphrase entropy)",
+        },
+        url: "https://xkcd.com/936/",
+        note: {
+          ko: "무관한 단어 4~6개 패스프레이즈가 짧은 무작위 문자열보다 안전·기억 쉬움의 직관적 근거",
+          en: "Intuitive basis for multi-word passphrases beating short random strings",
+        },
+      },
+      {
+        label: {
+          ko: "OWASP — Authentication Cheat Sheet(비밀번호 정책)",
+          en: "OWASP — Authentication Cheat Sheet (password policy)",
+        },
+        url: "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+        note: {
+          ko: "사이트별 고유 비밀번호·2FA·매니저 사용 권고의 실무 근거",
+          en: "Practical basis for unique-per-site passwords, 2FA, and password managers",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/hash-generator",
+        label: {
+          ko: "해시 생성기 — 비밀번호가 어떻게 저장(해싱)되는지 확인",
+          en: "Hash generator — see how passwords are stored (hashed)",
+        },
+      },
+      {
+        href: "/tools/uuid-generator",
+        label: {
+          ko: "UUID 생성기 — 토큰·세션 ID 같은 무작위 식별자 생성",
+          en: "UUID generator — random identifiers for tokens and sessions",
+        },
+      },
+      {
+        href: "/blog/recommended-password-length",
+        label: {
+          ko: "글: 안전한 비밀번호 길이는 몇 자일까 (NIST 기준)",
+          en: "Guide: how long should a secure password be (NIST)",
+        },
+      },
     ],
   },
 
@@ -788,6 +1048,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "도구의 batch 옵션을 쓰면 돼요. 모두 브라우저에서 CSPRNG로 만들어요. 충돌 걱정 없이 그대로 쓸 수 있어요.",
           en: "Use the batch option — all generated via CSPRNG in your browser. No collision concerns.",
+        },
+      },
+      {
+        q: { ko: "GUID랑 UUID는 다른 건가요?", en: "Is a GUID different from a UUID?" },
+        a: {
+          ko: "사실상 같아요. GUID(Globally Unique Identifier)는 마이크로소프트가 쓰는 이름이고, UUID는 IETF 표준 이름이에요. 둘 다 128비트 식별자이고 형식도 동일해요. 다만 MS의 일부 API는 중괄호 `{...}`를 씌워 표현해요(레지스트리·COM).",
+          en: "Practically the same. GUID is Microsoft's term; UUID is the IETF term. Both are 128-bit with identical format — though some Microsoft APIs wrap them in braces `{...}` (registry, COM).",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "RFC 9562 — Universally Unique IDentifiers (UUIDs) (IETF)",
+          en: "RFC 9562 — Universally Unique IDentifiers (UUIDs) (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc9562.html",
+        note: {
+          ko: "2024년 RFC 4122를 대체하며 v6·v7·v8 추가, v7(시간정렬) DB 기본키 권장의 표준 근거",
+          en: "2024 standard obsoleting RFC 4122; adds v6/v7/v8; basis for v7 (time-ordered) as a DB primary key",
+        },
+      },
+      {
+        label: {
+          ko: "MDN — crypto.randomUUID() (Web Crypto API)",
+          en: "MDN — crypto.randomUUID() (Web Crypto API)",
+        },
+        url: "https://developer.mozilla.org/docs/Web/API/Crypto/randomUUID",
+        note: {
+          ko: "브라우저가 CSPRNG로 v4 UUID를 생성한다는 근거(Math.random 비권장)",
+          en: "Basis for browser-generated v4 UUIDs via CSPRNG (and why not Math.random)",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/hash-generator",
+        label: {
+          ko: "해시 생성기 — 이름 기반 UUID(v3/v5)의 바탕인 MD5/SHA1 확인",
+          en: "Hash generator — MD5/SHA1 behind name-based UUIDs (v3/v5)",
+        },
+      },
+      {
+        href: "/tools/password-generator",
+        label: {
+          ko: "비밀번호 생성기 — 토큰·시크릿 만들 때 함께 쓰기",
+          en: "Password generator — for tokens and secrets",
+        },
+      },
+      {
+        href: "/blog/uuid-use-cases",
+        label: {
+          ko: "글: UUID는 언제 쓰고 자동증가 ID와 어떻게 다를까",
+          en: "Guide: when to use UUIDs vs auto-increment IDs",
         },
       },
     ],
@@ -2462,6 +2776,71 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "도구가 자동으로 처리해요. `FF`·`0xFF`·`#FF` 모두 OK예요.",
           en: "The tool handles all formats — `FF`, `0xFF`, `#FF` all work.",
+        },
+      },
+      {
+        q: { ko: "chmod 644랑 755는 진법으로 보면 뭐가 다른가요?", en: "What's the difference between chmod 644 and 755 in binary?" },
+        a: {
+          ko: "각 자리는 8진수 1자리=2진수 3비트(rwx)예요. 6=110(rw-), 4=100(r--), 7=111(rwx), 5=101(r-x). 즉 644는 '소유자 읽기·쓰기 / 그룹·기타 읽기만', 755는 '소유자 전부 / 그룹·기타 읽기·실행'이에요. 실행이 필요한 스크립트·디렉터리는 755, 일반 파일은 644가 기본이에요.",
+          en: "Each digit is one octal digit = 3 bits (rwx). 6=110(rw-), 4=100(r--), 7=111(rwx), 5=101(r-x). So 644 = owner read/write, group/others read-only; 755 = owner all, group/others read+execute. Use 755 for executables/directories, 644 for plain files.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "MDN — parseInt() / Number.toString(radix) (진법 변환)",
+          en: "MDN — parseInt() / Number.prototype.toString(radix)",
+        },
+        url: "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseInt",
+        note: {
+          ko: "2~36진수 상호 변환과 `0x` 접두 처리의 표준 동작 근거(JavaScript)",
+          en: "Standard behavior for base 2–36 conversion and `0x` prefix handling in JavaScript",
+        },
+      },
+      {
+        label: {
+          ko: "GNU Coreutils — chmod 매뉴얼(8진수 권한 모드)",
+          en: "GNU Coreutils — chmod manual (octal permission modes)",
+        },
+        url: "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+        note: {
+          ko: "`chmod 755`처럼 8진수 1자리=rwx 3비트로 권한을 표기하는 근거",
+          en: "Basis for octal permission notation where one digit = 3 rwx bits",
+        },
+      },
+      {
+        label: {
+          ko: "MDN — CSS 색상값(16진수 표기 `#RRGGBB`)",
+          en: "MDN — CSS color hex notation (`#RRGGBB`)",
+        },
+        url: "https://developer.mozilla.org/docs/Web/CSS/hex-color",
+        note: {
+          ko: "웹 색상 `#FFA500`이 R·G·B 각 8비트(00~FF=0~255) 16진수라는 근거",
+          en: "Basis for web colors as per-channel 8-bit hex (00–FF = 0–255)",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/color-converter",
+        label: {
+          ko: "색상 변환기 — HEX(#FFA500) ↔ RGB(255,165,0) 변환",
+          en: "Color converter — HEX (#FFA500) ↔ RGB (255,165,0)",
+        },
+      },
+      {
+        href: "/tools/hash-generator",
+        label: {
+          ko: "해시 생성기 — 16진수로 표시되는 SHA256 결과 확인",
+          en: "Hash generator — SHA256 output is shown in hex",
+        },
+      },
+      {
+        href: "/blog/number-base-conversion-binary-hex-guide",
+        label: {
+          ko: "글: 2진수·16진수 변환 완전 정복(서브넷·권한·색상)",
+          en: "Guide: binary/hex conversion for subnets, permissions, colors",
         },
       },
     ],
