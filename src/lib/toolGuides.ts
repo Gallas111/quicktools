@@ -51,6 +51,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "No. All processing is local to your browser. Refreshing the page erases the text. Safe for confidential drafts.",
         },
       },
+      {
+        q: { ko: "왜 한글 1글자가 3바이트인가요?", en: "Why is one Korean character 3 bytes?" },
+        a: {
+          ko: "UTF-8 인코딩 규칙 때문이에요. 한글(U+AC00~U+D7A3)은 U+0800~U+FFFF 구간이라 `1110xxxx 10xxxxxx 10xxxxxx` 3바이트로 인코딩돼요(RFC 3629). 영문·숫자는 1바이트, 일부 이모지는 4바이트예요. 그래서 SMS 80바이트는 한글 26자, 영문 80자가 한도가 돼요.",
+          en: "It's a UTF-8 rule. Hangul (U+AC00–U+D7A3) falls in the U+0800–U+FFFF range, which encodes as 3 bytes per RFC 3629. ASCII is 1 byte, some emoji are 4. That's why an 80-byte SMS holds ~26 Korean but ~80 English characters.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "RFC 3629 — UTF-8 인코딩 표준 (IETF)",
+          en: "RFC 3629 — UTF-8 Transformation Format (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc3629.html",
+        note: {
+          ko: "한글 1글자 = 3바이트(U+0800~U+FFFF 구간 3바이트 인코딩)의 표준 근거",
+          en: "Standard basis for 'Korean character = 3 bytes' (U+0800–U+FFFF maps to 3-byte sequences)",
+        },
+      },
+      {
+        label: {
+          ko: "X(트위터) 헬프센터 — 게시물 글자 수 제한",
+          en: "X (Twitter) Help Center — counting characters",
+        },
+        url: "https://help.x.com/en/using-x/how-to-tweet",
+        note: {
+          ko: "CJK(한·중·일) 문자는 2자로, 라틴 문자는 1자로 세는 X의 weighted 계산 기준",
+          en: "X weights CJK characters as 2 and Latin characters as 1 when counting toward the post limit",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/text-counter",
+        label: {
+          ko: "텍스트 분석기 — 단어 빈도·읽기/말하기 시간까지 함께 보기",
+          en: "Text Analyzer — add word frequency, reading and speaking time",
+        },
+      },
+      {
+        href: "/tools/instagram-line-break",
+        label: {
+          ko: "인스타 줄바꿈 도구 — 캡션 글자 수와 줄바꿈 동시 관리",
+          en: "Instagram Line Break tool — manage caption length and line breaks together",
+        },
+      },
+      {
+        href: "/blog/social-media-character-limits",
+        label: {
+          ko: "글: SNS 플랫폼별 글자 수 제한 한눈에 정리",
+          en: "Guide: character limits across every social platform",
+        },
+      },
     ],
   },
 
@@ -369,6 +423,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "If shipped to production, search engines flag it as thin content. Keep it confined to demos, staging, and design mocks.",
         },
       },
+      {
+        q: { ko: "왜 'lorem ipsum'으로 시작하나요?", en: "Why does it start with 'lorem ipsum'?" },
+        a: {
+          ko: "원문 키케로 'De Finibus' 1.10.32의 'Neque porro quisquam est, qui dolorem ipsum...' 문장에서 'dolorem'의 앞 'do'가 잘려 'lorem'이 됐다는 설이 유력해요. 1914년 Loeb 판본 식자 과정에서 활자가 섞이며 굳어진 거예요.",
+          en: "The leading 'do' of 'dolorem' in Cicero's 'De Finibus' (1.10.32) was cut off, leaving 'lorem'. The scramble is thought to date to a 1914 Loeb edition where galley type got mixed up.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "Lorem ipsum — 위키백과 (유래·키케로 원문)",
+          en: "Lorem ipsum — Wikipedia (origin and Cicero source)",
+        },
+        url: "https://en.wikipedia.org/wiki/Lorem_ipsum",
+        note: {
+          ko: "키케로 'De Finibus' 1.10.32~1.10.33 발췌·Richard McClintock의 출처 규명(1994) 근거",
+          en: "Basis for the Cicero 'De Finibus' 1.10.32–1.10.33 source and Richard McClintock's 1994 attribution",
+        },
+      },
+      {
+        label: {
+          ko: "Lipsum.com — Lorem Ipsum 표준 생성기",
+          en: "Lipsum.com — the canonical Lorem Ipsum generator",
+        },
+        url: "https://www.lipsum.com/",
+        note: {
+          ko: "업계에서 사실상 표준으로 통하는 원문·문단 구조의 기준 출처",
+          en: "The de-facto reference for the standard passage and paragraph structure",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/character-counter",
+        label: {
+          ko: "글자수 세기 — 생성한 더미를 실제 분량 제한과 맞춰 보기",
+          en: "Character Counter — match generated dummy text to a real length limit",
+        },
+      },
+      {
+        href: "/tools/text-counter",
+        label: {
+          ko: "텍스트 분석기 — 더미 분량을 단어·문장 단위로 확인",
+          en: "Text Analyzer — check dummy length by words and sentences",
+        },
+      },
+      {
+        href: "/blog/korean-dummy-text-generator",
+        label: {
+          ko: "글: 한글 더미 텍스트 만들기와 레이아웃 검증",
+          en: "Guide: generating Korean dummy text for layout testing",
+        },
+      },
     ],
   },
 
@@ -473,6 +581,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "기술적으로는 가능하지만 비추천. URL은 대소문자 구분이 모호한 환경(파일시스템·캐시)이 있어서 kebab-case가 안전해요. SEO에도 kebab이 표준.",
           en: "Technically possible but discouraged — case sensitivity is inconsistent across systems. kebab-case is safer and standard for SEO.",
+        },
+      },
+      {
+        q: { ko: "터키어 i 변환이 왜 깨지나요?", en: "Why does Turkish 'i' break case conversion?" },
+        a: {
+          ko: "영어는 i↔I지만, 터키어는 점 있는 i↔İ·점 없는 ı↔I로 매핑이 달라요(Unicode UTR #21). 사용자 로케일이 터키어면 `toUpperCase()`가 i를 İ로 바꿔서 도메인·코드 비교가 깨지는 유명한 'Turkish locale bug'예요. 식별자 비교는 `toUpperCase('en-US')`처럼 로케일을 고정하세요.",
+          en: "English maps i↔I, but Turkish maps dotted i↔İ and dotless ı↔I differently (Unicode UTR #21). Under a Turkish locale, `toUpperCase()` turns i into İ — the classic 'Turkish locale bug'. Pin the locale (e.g. `toUpperCase('en-US')`) for identifier comparisons.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "PEP 8 — 파이썬 코드 네이밍 규칙 (python.org)",
+          en: "PEP 8 — Style Guide for Python Code (python.org)",
+        },
+        url: "https://peps.python.org/pep-0008/",
+        note: {
+          ko: "snake_case(변수·함수)·CapWords(클래스)·UPPER_CASE(상수) 규칙의 공식 근거",
+          en: "Official basis for snake_case (vars/functions), CapWords (classes), UPPER_CASE (constants)",
+        },
+      },
+      {
+        label: {
+          ko: "Unicode UTR #21 — Case Mappings",
+          en: "Unicode Technical Report #21 — Case Mappings",
+        },
+        url: "https://www.unicode.org/reports/tr21/tr21-5.html",
+        note: {
+          ko: "로케일 의존 대소문자 변환(터키어 i/İ/ı) 함정의 표준 근거",
+          en: "Standard reference for locale-dependent case mapping pitfalls (Turkish i/İ/ı)",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/json-formatter",
+        label: {
+          ko: "JSON 포맷터 — 변환한 키를 정렬·검증해서 적용",
+          en: "JSON Formatter — sort and validate keys after renaming",
+        },
+      },
+      {
+        href: "/tools/regex-tester",
+        label: {
+          ko: "정규식 테스터 — 대량 식별자 일괄 치환 패턴 검증",
+          en: "Regex Tester — verify bulk identifier rename patterns",
+        },
+      },
+      {
+        href: "/blog/programming-naming-conventions-guide",
+        label: {
+          ko: "글: 프로그래밍 네이밍 컨벤션 — 언어별 표준 정리",
+          en: "Guide: programming naming conventions by language",
         },
       },
     ],
@@ -687,6 +849,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
           en: "Each added char counts as 1. With Instagram's 2,200-char caption limit, 5–10 added chars are negligible.",
         },
       },
+      {
+        q: { ko: "왜 하필 U+2800 문자를 쓰나요?", en: "Why specifically the U+2800 character?" },
+        a: {
+          ko: "U+2800(점자 빈 칸)은 Unicode 3.0(1999)에 추가된 문자로, 점이 하나도 없는 빈 점자 칸이에요. 일반 공백(U+0020)과 달리 인스타그램의 '연속 공백·빈 줄 제거' 로직에 걸리지 않아서 빈 줄이 살아남아요. 폭은 있지만 시각적으로 안 보여요.",
+          en: "U+2800 (Braille Pattern Blank), added in Unicode 3.0 (1999), is a braille cell with zero raised dots. Unlike a normal space (U+0020), it survives Instagram's blank-line/consecutive-space stripping while remaining visually invisible.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "Unicode U+2800 BRAILLE PATTERN BLANK (Compart)",
+          en: "Unicode U+2800 BRAILLE PATTERN BLANK (Compart)",
+        },
+        url: "https://www.compart.com/en/unicode/U+2800",
+        note: {
+          ko: "줄바꿈 유지에 쓰는 보이지 않는 문자(Unicode 3.0, 1999 추가)의 공식 명세",
+          en: "Spec for the invisible character used to preserve line breaks (added in Unicode 3.0, 1999)",
+        },
+      },
+      {
+        label: {
+          ko: "Instagram 헬프센터 — 캡션·바이오 작성",
+          en: "Instagram Help Center — captions and bio",
+        },
+        url: "https://help.instagram.com/",
+        note: {
+          ko: "캡션 2,200자·바이오 150자·첫 125자만 미리보기·해시태그 30개 한도의 출처",
+          en: "Source for 2,200-char captions, 150-char bio, 125-char preview, and 30-hashtag cap",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/character-counter",
+        label: {
+          ko: "글자수 세기 — 캡션 2,200자·바이오 150자 한도 확인",
+          en: "Character Counter — check the 2,200-char caption and 150-char bio limits",
+        },
+      },
+      {
+        href: "/tools/lorem-ipsum",
+        label: {
+          ko: "Lorem Ipsum 생성기 — 캡션 레이아웃 미리 잡아보기",
+          en: "Lorem Ipsum Generator — mock up caption layouts first",
+        },
+      },
+      {
+        href: "/blog/instagram-line-break-guide",
+        label: {
+          ko: "글: 인스타 줄바꿈 깨짐 원인과 해결 전체 가이드",
+          en: "Guide: why Instagram line breaks vanish and how to fix them",
+        },
+      },
     ],
   },
 
@@ -844,6 +1060,60 @@ export const toolGuides: Record<string, ToolGuideData> = {
         a: {
           ko: "전부 브라우저 메모리에서만 처리해요. 새로고침하면 사라져요. 외부 전송 0건.",
           en: "Everything stays in browser memory and is gone on refresh. No external requests.",
+        },
+      },
+      {
+        q: { ko: "읽기 시간 분당 200단어는 근거가 있나요?", en: "Is the 200 wpm reading speed evidence-based?" },
+        a: {
+          ko: "네. 묵독 속도를 메타분석한 연구(Brysbaert, 2019)에서 영어 비소설 평균이 분당 약 238단어로 나와요. 본 도구는 안전하게 200~250 wpm으로 잡아요. 한국어는 음절 기반이라 분당 글자 수(약 500자)로 환산하는 게 더 정확해요.",
+          en: "Yes — a meta-analysis of silent reading (Brysbaert, 2019) puts English non-fiction at about 238 wpm. The tool uses a conservative 200–250 wpm. Korean is syllable-based, so characters-per-minute (~500) is more accurate.",
+        },
+      },
+    ],
+    sources: [
+      {
+        label: {
+          ko: "Brysbaert (2019) — 묵독 속도 메타분석, Journal of Memory and Language",
+          en: "Brysbaert (2019) — Reading rate meta-analysis, Journal of Memory and Language",
+        },
+        url: "https://doi.org/10.1016/j.jml.2019.104047",
+        note: {
+          ko: "영어 비소설 평균 읽기 속도 약 238 wpm — 읽기 시간 추정의 근거",
+          en: "Average English non-fiction reading speed ~238 wpm — basis for reading-time estimates",
+        },
+      },
+      {
+        label: {
+          ko: "RFC 3629 — UTF-8 인코딩 표준 (IETF)",
+          en: "RFC 3629 — UTF-8 Transformation Format (IETF)",
+        },
+        url: "https://www.rfc-editor.org/rfc/rfc3629.html",
+        note: {
+          ko: "한글 1글자 = 3바이트 등 바이트 계산의 표준 근거",
+          en: "Standard basis for byte counts (e.g., one Korean character = 3 bytes)",
+        },
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/tools/character-counter",
+        label: {
+          ko: "글자수 세기 — 공백 포함/제외·바이트만 빠르게 보고 싶을 때",
+          en: "Character Counter — for a quick chars/bytes count with or without spaces",
+        },
+      },
+      {
+        href: "/tools/lorem-ipsum",
+        label: {
+          ko: "Lorem Ipsum 생성기 — 목표 분량의 더미 본문 만들기",
+          en: "Lorem Ipsum Generator — produce dummy text at a target length",
+        },
+      },
+      {
+        href: "/blog/how-to-count-text",
+        label: {
+          ko: "글: 글자수·단어수·읽기 시간 제대로 세는 법",
+          en: "Guide: how to count characters, words, and reading time correctly",
         },
       },
     ],
