@@ -2743,8 +2743,8 @@ export const toolGuides: Record<string, ToolGuideData> = {
       {
         heading: { ko: "4대 보험 요율 (2026 기준)", en: "Four Major Insurances (2026 rates)" },
         body: {
-          ko: "근로자 부담분만 표시 (회사 부담 제외).\n\n- **국민연금**: 4.5% (월소득 590만원 상한)\n- **건강보험**: 3.545% (전체) + 장기요양 12.95% × 건보료\n- **고용보험**: 0.9%\n- **산재보험**: 0% (회사 100%)\n\n4대 보험만으로 약 8~9% 차감돼요. 여기에 소득세(누진)와 지방소득세(소득세의 10%)가 추가로 빠져요. 결과적으로 세전 5,000만원 → 실수령 약 4,200~4,300만원이 표준이에요.",
-          en: "Employee portion only (excludes employer contribution).\n\n- **National Pension**: 4.5% (capped at ₩5.9M monthly)\n- **National Health Insurance**: 3.545% + Long-term care 12.95% of NHI premium\n- **Employment Insurance**: 0.9%\n- **Industrial Accident**: 0% (100% employer)\n\nTotal ~8–9% from 4 insurances, plus progressive income tax + local tax (10% of income tax). A pre-tax ₩50M typically nets ~₩42–43M.",
+          ko: "근로자 부담분만 표시 (회사 부담 제외).\n\n- **국민연금**: 4.75% (2026년 요율 9.5%의 절반, 월소득 637만원 상한 — 26년 7월부터 659만원)\n- **건강보험**: 3.595% (2026년 요율 7.19%의 절반) + 장기요양 약 13.14% × 건보료\n- **고용보험**: 0.9%\n- **산재보험**: 0% (회사 100%)\n\n4대 보험만으로 약 9~10% 차감돼요. 여기에 소득세(누진)와 지방소득세(소득세의 10%)가 추가로 빠져요. 결과적으로 세전 5,000만원 → 실수령 약 4,100~4,250만원이 표준이에요.",
+          en: "Employee portion only (excludes employer contribution).\n\n- **National Pension**: 4.75% (half of the 2026 rate 9.5%, capped at ₩6.37M monthly — ₩6.59M from July 2026)\n- **National Health Insurance**: 3.595% (half of the 2026 rate 7.19%) + Long-term care ~13.14% of NHI premium\n- **Employment Insurance**: 0.9%\n- **Industrial Accident**: 0% (100% employer)\n\nTotal ~9–10% from 4 insurances, plus progressive income tax + local tax (10% of income tax). A pre-tax ₩50M typically nets ~₩41–42.5M.",
         },
       },
       {

@@ -22,7 +22,8 @@ function calculateIncomeTax(annualTaxableIncome: number, dependents: number, chi
     { limit: Infinity, rate: 0.45 },
   ];
 
-  const cumulativeDeductions = [0, 1_080_000, 6_540_000, 15_660_000, 37_360_000, 94_060_000, 174_060_000];
+  // 각 구간 하한까지의 누적 세액 (2023~ 개정 구간 기준 재계산: 14M×6%=0.84M, +36M×15%=6.24M, ...)
+  const cumulativeDeductions = [0, 840_000, 6_240_000, 15_360_000, 37_060_000, 94_060_000, 174_060_000, 384_060_000];
 
   let tax = 0;
   let prev = 0;
@@ -73,15 +74,16 @@ export default function SalaryCalculator() {
   const monthlySalary = salary / 12;
   const monthlyTaxable = Math.max(0, monthlySalary - nonTax);
 
-  // 국민연금: 4.5%, capped at monthly salary of 5,900,000
-  const pensionBase = Math.min(monthlyTaxable, 5_900_000);
-  const nationalPension = pensionBase * 0.045;
+  // 국민연금: 2026년 보험료율 9.5%(연금개혁, 근로자 4.75%). 기준소득월액 상한 637만(~26.6) → 659만(26.7~)
+  const pensionCap = Date.now() >= Date.parse("2026-07-01T00:00:00+09:00") ? 6_590_000 : 6_370_000;
+  const pensionBase = Math.min(monthlyTaxable, pensionCap);
+  const nationalPension = pensionBase * 0.0475;
 
-  // 건강보험: 3.545%
-  const healthInsurance = monthlyTaxable * 0.03545;
+  // 건강보험: 2026년 7.19% (근로자 3.595%)
+  const healthInsurance = monthlyTaxable * 0.03595;
 
-  // 장기요양보험: 건강보험 × 12.81%
-  const longTermCare = healthInsurance * 0.1281;
+  // 장기요양보험: 2026년 보수월액의 0.9448% = 건강보험료 × (0.9448/7.19)
+  const longTermCare = healthInsurance * (0.9448 / 7.19);
 
   // 고용보험: 0.9%
   const employmentInsurance = monthlyTaxable * 0.009;
@@ -292,8 +294,8 @@ export default function SalaryCalculator() {
             </h3>
             <p>
               {isKo
-                ? "근로자와 사업주가 각각 4.5%씩 부담합니다. 월 소득 상한액은 590만원이며, 이를 초과하는 소득에 대해서는 추가 부담이 없습니다. 만 60세 이후 연금으로 수령합니다."
-                : "Both employee and employer contribute 4.5% each. The monthly income cap is 5.9 million KRW. You receive pension benefits after age 60."}
+                ? "2026년부터 보험료율이 9.5%로 인상되어 근로자와 사업주가 각각 4.75%씩 부담합니다. 월 소득 상한액은 637만원(2026년 7월부터 659만원)이며, 이를 초과하는 소득에 대해서는 추가 부담이 없습니다. 만 60세 이후 연금으로 수령합니다."
+                : "From 2026 the contribution rate is 9.5%, split evenly: employee and employer pay 4.75% each. The monthly income cap is 6.37 million KRW (6.59 million from July 2026). You receive pension benefits after age 60."}
             </p>
           </div>
 
@@ -303,8 +305,8 @@ export default function SalaryCalculator() {
             </h3>
             <p>
               {isKo
-                ? "근로자 부담률은 3.545%이며, 사업주도 동일하게 부담합니다. 병원 진료, 약제비 등 의료비를 지원받을 수 있습니다."
-                : "Employee contribution rate is 3.545%, matched by the employer. Covers hospital visits, prescriptions, and medical expenses."}
+                ? "2026년 건강보험료율은 7.19%로, 근로자 부담률은 3.595%이며 사업주도 동일하게 부담합니다. 병원 진료, 약제비 등 의료비를 지원받을 수 있습니다."
+                : "The 2026 health insurance rate is 7.19%; the employee pays 3.595%, matched by the employer. Covers hospital visits, prescriptions, and medical expenses."}
             </p>
           </div>
 
@@ -314,8 +316,8 @@ export default function SalaryCalculator() {
             </h3>
             <p>
               {isKo
-                ? "건강보험료의 12.81%를 추가로 부담합니다. 고령이나 노인성 질병으로 일상생활이 어려운 분들을 위한 서비스를 지원합니다."
-                : "An additional 12.81% of health insurance premium. Supports elderly or those with age-related conditions requiring daily living assistance."}
+                ? "2026년 장기요양보험료율은 보수월액의 0.9448%(건강보험료의 약 13.14%)입니다. 고령이나 노인성 질병으로 일상생활이 어려운 분들을 위한 서비스를 지원합니다."
+                : "The 2026 long-term care rate is 0.9448% of monthly salary (about 13.14% of the health insurance premium). Supports elderly or those with age-related conditions requiring daily living assistance."}
             </p>
           </div>
 

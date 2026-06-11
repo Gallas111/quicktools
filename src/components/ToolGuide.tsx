@@ -67,6 +67,21 @@ export default function ToolGuide({ data }: { data: ToolGuideData }) {
 
       {data.faqs && data.faqs.length > 0 && (
         <div className="space-y-3">
+          {/* FAQPage 스키마 — 아래 가시 FAQ와 동일 데이터(ko). 30개 도구 공통 (2026-06-11) */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: data.faqs.map((f) => ({
+                  "@type": "Question",
+                  name: f.q.ko,
+                  acceptedAnswer: { "@type": "Answer", text: f.a.ko },
+                })),
+              }),
+            }}
+          />
           <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
             {locale === "ko" ? "자주 묻는 질문" : "Frequently Asked Questions"}
           </h2>
